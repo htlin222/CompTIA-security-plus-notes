@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Board and Executive Involvement?
+> Security rules only work if the principal backs them up. When the top leaders care about security, set the rules, and give it money and attention, everyone else takes it seriously too.
+
 ## Definition
 
 Effective security governance requires active involvement from the board of directors and executive leadership, who set the organization's risk appetite, approve security policies, allocate security budgets, and establish the overall tone for the organization's security culture. Without executive sponsorship, security programs lack authority, resources, and organizational priority. Regulatory frameworks like SOX and GDPR explicitly hold executives accountable for security and privacy outcomes.

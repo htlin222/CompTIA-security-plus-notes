@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Real-time Alerting?
+> Real-time alerting sends a warning the instant something happens. It is like a doorbell that rings the second someone steps on your porch, not an hour later.
+
 ## Definition
 
 Real-time alerting is the SIEM capability that generates immediate notifications to security analysts when correlation rules, threshold conditions, or pattern matches are triggered by incoming log data. Real-time alerts minimize the time between attack activity and analyst awareness, reducing attacker dwell time and limiting the damage from incidents.

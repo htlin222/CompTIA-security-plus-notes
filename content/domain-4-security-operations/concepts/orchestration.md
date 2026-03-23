@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Orchestration?
+> Orchestration connects multiple security tools and makes them work together in a specific order, like a conductor leading an orchestra so every instrument plays at the right time.
+
 ## Definition
 
 Security orchestration is the process of connecting and coordinating multiple security tools and systems through APIs and automated workflows to enable them to work together as a unified, coordinated response capability. It is a core component of SOAR (Security Orchestration, Automation, and Response) and allows disparate tools to share data and trigger actions in sequence without manual human intervention between steps.

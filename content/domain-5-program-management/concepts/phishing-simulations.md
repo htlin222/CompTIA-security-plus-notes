@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Phishing Simulations?
+> It's like a fire drill, but for fake emails. The security team sends a pretend trick email to see who clicks on it. If you click, you get a short lesson instead of getting in trouble -- the goal is to help everyone learn to spot fakes.
+
 ## Definition
 
 Phishing simulations are controlled, simulated phishing attacks conducted by the security team (or a third-party vendor) to test employee susceptibility to phishing emails without the risk of a real attack. When an employee clicks a simulated phishing link, they are redirected to a training page rather than an actual malicious site. Results are used to measure awareness levels, identify high-risk individuals or departments, and target additional training where needed.

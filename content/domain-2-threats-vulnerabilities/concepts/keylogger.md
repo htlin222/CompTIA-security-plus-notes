@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Keylogger?
+> It secretly watches every key you press on your keyboard -- like an invisible person looking over your shoulder and writing down everything you type, including passwords.
+
 ## Definition
 
 A keylogger is a type of malware (or legitimate monitoring software) that records keystrokes entered on a keyboard, capturing sensitive information such as passwords, credit card numbers, private messages, and other credentials. Keyloggers can be implemented in software (kernel-level drivers, API hooks, form grabbers) or hardware (physical devices inserted between keyboard and computer).

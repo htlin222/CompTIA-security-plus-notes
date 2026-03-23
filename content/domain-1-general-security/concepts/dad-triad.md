@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is the DAD Triad?
+> The DAD Triad is what bad guys try to do: peek at your secrets (disclosure), change your homework answers (alteration), or destroy your project so you can't use it (destruction). It's the opposite of keeping things safe.
+
 ## Definition
 
 The DAD Triad (Disclosure, Alteration, Destruction) represents the three ways an attacker can undermine information security, directly opposing the CIA Triad (Confidentiality, Integrity, Availability). Disclosure attacks compromise confidentiality; Alteration attacks compromise integrity; Destruction attacks compromise availability. Understanding DAD helps frame attacker goals and the controls needed to counter them.

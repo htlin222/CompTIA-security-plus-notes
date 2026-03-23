@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Implicit Deny?
+> It's like a club with a guest list: if your name isn't on the list, you don't get in. The default answer is always "no" unless there's a specific rule that says "yes."
+
 ## Definition
 
 Implicit deny is a fundamental security principle stating that any access not explicitly permitted by a rule or policy is automatically denied. It establishes a "default deny" security posture—the system blocks everything unless a specific rule allows it. This is the opposite of "default allow" (which permits everything not explicitly blocked) and is considered a more secure baseline.

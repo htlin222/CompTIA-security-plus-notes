@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is an Evil Twin?
+> Someone sets up a fake Wi-Fi network with the same name as the real one. When you connect to it, they can see everything you're doing online -- like a fake lemonade stand that's actually a spy booth.
+
 ## Definition
 
 An evil twin attack involves setting up a rogue wireless access point that broadcasts the same SSID (network name) as a legitimate network, often with a stronger signal, to lure users into connecting to the attacker's AP instead of the real one. Once connected, all the victim's wireless traffic passes through the attacker's device, enabling interception, credential harvesting, and malware injection.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Threat Feeds?
+> They're like a constantly updating "wanted poster" list for bad websites, files, and addresses. Security tools check this list automatically so they can block known threats the moment they show up.
+
 ## Definition
 
 Threat feeds are automated, continuously updated streams of threat intelligence—including indicators of compromise (IoCs) such as malicious IP addresses, domains, file hashes, and URLs—provided by commercial vendors, open-source projects, government agencies, and industry sharing organizations. They are consumed by security tools (SIEM, IDS/IPS, firewalls, EDR) to enable automated detection of known threats.

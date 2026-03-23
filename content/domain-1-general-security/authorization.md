@@ -11,6 +11,9 @@ aliases:
   - "AuthZ"
 ---
 
+> [!eli5] ELI5: What is Authorization?
+> Once the school knows who you are, authorization is about what you're allowed to do. A regular student can go to class but can't walk into the principal's office and read private files. A teacher can go places students can't. Authorization is the set of rules that says "you're allowed to do this, but not that." On computers, it works the same way -- after you log in, the system checks what you're actually permitted to see and change.
+
 ## Overview
 
 Authorization is the process of determining what an authenticated entity is allowed to do within a system. It occurs after authentication and defines the scope of access — which resources can be read, modified, created, or deleted. Authorization is enforced through access control models, policies, and permission structures that align with organizational security requirements.

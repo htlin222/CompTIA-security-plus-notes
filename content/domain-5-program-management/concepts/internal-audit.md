@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is an Internal Audit?
+> It's like your older sibling checking your homework before your parents do. The company's own team inspects security to catch problems early, before an outside inspector shows up.
+
 ## Definition
 
 An internal audit is an independent assessment conducted by the organization's own internal audit function or information security team, evaluating the effectiveness of controls, compliance with policies, and alignment with regulatory requirements. While internal auditors work for the organization, their independence comes from reporting to the audit committee or board (not to line management) and following professional standards (IIA standards). Internal audits provide ongoing assurance between external audits.

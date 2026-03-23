@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Typosquatting?
+> If you accidentally type "gooogle.com" instead of "google.com," a bad guy might own that misspelled address and show you a fake website. They count on people making tiny typing mistakes.
+
 ## Definition
 
 Typosquatting (also called URL hijacking) is a social engineering technique that involves registering domain names that are common misspellings, alternative spellings, or close variations of popular websites. When users accidentally type the wrong URL, they land on the attacker's site instead of the intended one—which may serve malware, host phishing content, or display advertising.

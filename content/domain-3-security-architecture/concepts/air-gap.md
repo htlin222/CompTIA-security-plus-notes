@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is an Air gap?
+> An air gap means a computer is completely disconnected from all other networks -- no wifi, no cables, nothing. It's like keeping your most important treasure on a desert island with no bridges or boats. Nobody can reach it remotely.
+
 ## Definition
 
 An air gap is a physical network isolation technique in which a system or network has absolutely no connection to any external network, including the internet or other internal networks. This complete physical separation ensures that network-based attacks cannot reach the system. Air-gapped systems are used in the most sensitive environments such as industrial control systems, military networks, and classified government systems.

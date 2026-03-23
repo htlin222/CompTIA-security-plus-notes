@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is the MITRE ATT&CK Framework?
+> MITRE ATT&CK is like a field guide to every trick bad guys use. It organizes all known attack methods into a big chart so defenders know exactly what to watch for.
+
 ## Definition
 
 MITRE ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge) is a globally accessible knowledge base of adversary tactics, techniques, and sub-techniques based on real-world observations of cyberattacks. It provides a structured taxonomy of attacker behavior organized by tactics (the "why") and techniques (the "how"), enabling security teams to understand, detect, and defend against specific attacker behaviors.

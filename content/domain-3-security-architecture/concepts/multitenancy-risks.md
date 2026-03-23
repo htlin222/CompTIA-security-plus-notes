@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Multitenancy risks?
+> Sharing a cloud computer is like sharing an apartment building. If the walls are thin, your neighbor might hear your conversations or use up all the hot water. Multitenancy risks are the dangers that come from multiple customers sharing the same physical hardware.
+
 ## Definition
 
 Multitenancy risks arise in cloud environments where multiple customers (tenants) share the same underlying physical infrastructure, hypervisors, or application platforms. While cloud providers implement strong isolation controls, sharing physical resources creates theoretical risks that do not exist in dedicated private infrastructure, including data leakage between tenants and side-channel attacks.

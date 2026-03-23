@@ -10,6 +10,9 @@ aliases:
   - PII
 ---
 
+> [!eli5] ELI5: What is Personally Identifiable Information?
+> Any detail that points back to exactly who you are -- like your full name, home address, or birthday. It's the kind of info on a name tag that only belongs to you.
+
 ## Definition
 
 Personally Identifiable Information (PII) is any data that can be used to identify, locate, or contact a specific individual, either directly or when combined with other information. PII is the central concern of privacy regulations worldwide (GDPR, CCPA, HIPAA, GLBA). It encompasses obvious identifiers (full name, Social Security Number, passport number) as well as quasi-identifiers that can identify individuals when combined (ZIP code + date of birth + gender).

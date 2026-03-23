@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Zero trust architecture?
+> "Never trust, always verify" -- even if someone is already inside the building, they still have to show their badge at every single door. Zero trust means no one gets a free pass just because they are on the network; every request is checked every time.
+
 ## Definition
 
 Zero trust architecture (ZTA) is a security model based on the principle of "never trust, always verify" — eliminating the concept of implicit trust based on network location (e.g., being inside the corporate perimeter). Every access request, whether from inside or outside the network, must be authenticated, authorized, and continuously validated based on identity, device health, and context before access is granted to any resource.

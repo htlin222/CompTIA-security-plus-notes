@@ -12,6 +12,9 @@ aliases:
   - "Honeynets"
 ---
 
+> [!eli5] ELI5: What are Deception Technologies?
+> It's like setting up a fake treasure chest in your room. If someone sneaks in and opens it, an alarm goes off -- and now you know someone was snooping. Security teams do the same thing with computers: they create fake files, fake passwords, and even fake computers that look real. No normal person would ever touch them, so if anyone does, it means a bad guy is in the system. It's a clever trap that catches intruders early.
+
 ## Overview
 
 Deception technologies are security tools and techniques that use decoy systems, files, and credentials to detect, deflect, and analyze attacker behavior. By creating fake targets that appear legitimate, organizations can identify unauthorized activity early, slow down attackers, and gather intelligence about their tactics, techniques, and procedures (TTPs).

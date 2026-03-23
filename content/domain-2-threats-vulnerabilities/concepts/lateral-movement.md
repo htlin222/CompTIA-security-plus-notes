@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Lateral Movement?
+> Once a burglar gets into one room of a building, they move room to room to steal as much as possible. Lateral movement is when an attacker hops from computer to computer across a network before striking.
+
 ## Definition
 
 Lateral movement refers to the techniques used by attackers after gaining initial access to a network to progressively access additional systems, escalate privileges, and position themselves for maximum impact. In the context of ransomware, attackers deliberately spread across the network—compromising as many systems as possible—before triggering encryption to ensure maximum damage and ransom leverage.

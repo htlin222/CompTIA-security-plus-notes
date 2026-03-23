@@ -11,6 +11,9 @@ aliases:
   - "Credential Attacks"
 ---
 
+> [!eli5] ELI5: What are Password Attacks?
+> Your password is like the combination to your locker. Password attacks are all the different ways someone might try to figure out that combination. They could try every single number one by one (brute force), guess common ones like "1234" (dictionary attack), or find a list of combinations that leaked from another school (credential stuffing). Some attackers don't even try to guess -- they just watch you type it in. That's why using long, unique passwords and not reusing them matters so much.
+
 ## Overview
 
 Password attacks target the most common authentication mechanism — passwords — using various techniques to discover, guess, or steal credentials. Despite advances in authentication, passwords remain widespread, making password attacks a persistent and high-priority threat. The Security+ exam tests knowledge of attack methods, defenses, and the relationship between password attacks and other security controls.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Write Blockers?
+> A write blocker lets you read a hard drive without accidentally changing anything on it. It is like looking at a painting through glass -- you can see everything but cannot touch it.
+
 ## Definition
 
 Write blockers are hardware devices or software tools used in digital forensics to prevent any write operations to storage media being examined, ensuring that the original evidence is not modified during acquisition or analysis. Hardware write blockers sit between the evidence drive and the forensic workstation, intercepting and blocking all write commands at the hardware level. Maintaining write protection is essential for evidence admissibility and chain of custody.

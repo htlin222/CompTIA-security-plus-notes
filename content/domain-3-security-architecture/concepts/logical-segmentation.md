@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Logical segmentation?
+> Instead of building actual walls, you use invisible lines on the floor to divide a room into sections. Logical segmentation uses software rules to split one network into separate zones without needing different physical cables.
+
 ## Definition
 
 Logical segmentation creates network boundaries using software-defined mechanisms rather than separate physical hardware. Technologies like VLANs, subnets, and software-defined networking (SDN) enable the creation of isolated network segments on shared physical infrastructure. Logical segmentation is more cost-effective and flexible than physical segmentation while providing meaningful security boundaries.

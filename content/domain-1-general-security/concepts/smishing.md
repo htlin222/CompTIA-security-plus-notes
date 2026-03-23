@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Smishing?
+> It's a scam text message on your phone that pretends to be from your bank or a delivery company, trying to get you to click a bad link. "Smishing" is just "phishing" but through text messages instead of email.
+
 ## Definition
 
 Smishing (SMS phishing) is a social engineering attack that uses text messages (SMS or messaging apps) to deceive recipients into clicking malicious links, calling fraudulent phone numbers, or revealing sensitive information. Like email phishing, smishing messages typically impersonate trusted entities—banks, delivery companies, government agencies—and create urgency to prompt immediate action.

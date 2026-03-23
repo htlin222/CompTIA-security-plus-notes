@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is VM isolation?
+> Even though multiple virtual computers live on the same physical machine, each one should be completely walled off from the others. VM isolation is like soundproof walls between apartments -- what happens in one should never leak into another.
+
 ## Definition
 
 VM isolation is the security property that ensures virtual machines running on the same physical host cannot access each other's memory, storage, CPU state, or network traffic without explicit authorization. Proper isolation is enforced by the hypervisor and hardware virtualization extensions. It is fundamental to multi-tenant cloud security — a breach of VM isolation allows one customer's workload to access another's data.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Guardrails?
+> Guardrails are safety limits built into automation, like bumpers at a bowling alley. They keep automated tasks from going off track and doing something they should not.
+
 ## Definition
 
 Guardrails are safety controls embedded into security automation workflows to prevent automated actions from causing unintended harm to the organization's systems or operations. They establish boundaries within which automation can act freely, while requiring human approval or blocking action entirely for operations that could have significant or irreversible consequences.

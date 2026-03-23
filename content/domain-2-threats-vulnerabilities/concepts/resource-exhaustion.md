@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Resource Exhaustion?
+> It's like filling every seat in a restaurant so nobody new can sit down. The attacker uses up all the computer's memory, processing power, or connections until it can't serve anyone else.
+
 ## Definition
 
 Resource exhaustion is an attack or vulnerability condition where the consumption of finite system resources (memory, CPU, disk space, network connections, file handles, threads) reaches capacity, causing the application or system to degrade or become completely unavailable. It can result from deliberate attacks (DoS), malicious application bugs, or uncontrolled resource allocation in application code.

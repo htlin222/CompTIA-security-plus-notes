@@ -10,6 +10,9 @@ aliases:
   - KRACK
 ---
 
+> [!eli5] ELI5: What is KRACK?
+> When your phone and Wi-Fi router do a secret handshake to set up a safe connection, KRACK tricks them into reusing an old handshake. That lets the attacker read your Wi-Fi traffic.
+
 ## Definition
 
 KRACK (Key Reinstallation Attack), disclosed in 2017, exploits a fundamental flaw in the WPA2 four-way handshake process. The attack tricks a client into reinstalling an already-in-use session key by replaying or manipulating handshake messages. Reinstalling a used key resets the nonce (random number used once) counter, allowing the attacker to replay, decrypt, or forge packets depending on the cipher suite in use.

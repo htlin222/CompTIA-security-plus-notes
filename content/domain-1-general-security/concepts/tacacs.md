@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is TACACS+?
+> TACACS+ is like a stricter version of the Wi-Fi bouncer. It checks who you are, what you're allowed to do, and keeps a record -- all as separate steps. Plus, it scrambles the entire conversation so nobody can eavesdrop.
+
 ## Definition
 
 TACACS+ (Terminal Access Controller Access-Control System Plus) is a Cisco-developed network AAA protocol that uses TCP (port 49) and encrypts the entire communication payload—not just the password. Unlike RADIUS, TACACS+ separates Authentication, Authorization, and Accounting into independent functions, allowing each to be handled by different servers or processes. It is primarily used for device administration (managing routers, switches, firewalls).

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Compliance Automation?
+> Instead of a teacher checking every student's homework by hand, a computer grades it instantly and flags mistakes right away. Compliance automation uses software to constantly check that security settings are correct, so problems get caught fast.
+
 ## Definition
 
 Compliance automation refers to the use of software tools to continuously assess system configurations, access controls, and security settings against defined baselines and compliance requirements, automatically flagging or remediating deviations. Rather than relying on periodic manual audits, compliance automation provides real-time or near-real-time assurance that controls remain in place, reducing audit preparation time and improving ongoing compliance posture.

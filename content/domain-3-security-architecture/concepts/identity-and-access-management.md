@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Identity and access management?
+> It's the system that answers two questions: "Who are you?" and "What are you allowed to do?" Like a wristband at a water park -- it proves you paid, and the color tells staff which rides you can go on.
+
 ## Definition
 
 Identity and Access Management (IAM) in cloud environments encompasses the policies, processes, and technologies used to manage digital identities and control what cloud resources each identity can access. Cloud IAM is a shared responsibility — cloud providers offer IAM services (AWS IAM, Azure AD, Google Cloud IAM), but customers are responsible for configuring policies correctly.

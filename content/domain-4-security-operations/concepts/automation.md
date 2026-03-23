@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Automation?
+> You know how a dishwasher washes all the dishes while you go play? Automation lets computers handle boring, repetitive security tasks on their own so people can focus on the hard stuff.
+
 ## Definition
 
 In security operations, automation refers to the use of technology to execute repetitive, rule-based security tasks without manual human intervention. Automation is a core component of SOAR platforms and allows security teams to handle higher alert volumes with the same or fewer staff by programmatically performing tasks like alert enrichment, threat containment, and routine incident handling.

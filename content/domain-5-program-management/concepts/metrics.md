@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Metrics?
+> A coach tracks how many goals the team scores and how many practices players attend. Security metrics do the same thing -- they measure numbers like how many people clicked a fake phishing email or finished their training, so you can see if things are getting better.
+
 ## Definition
 
 Security awareness program metrics are quantitative measures used to evaluate the effectiveness of training efforts and the security behavior of the workforce. Key metrics include phishing simulation click rates, training module completion rates, incident reporting volumes, and mean time to report a suspicious event. These metrics enable organizations to identify high-risk populations, measure improvement over time, and demonstrate the ROI of security awareness investments.

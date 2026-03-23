@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Misconfigurations?
+> It's like leaving your front door unlocked or your garage wide open by accident. The system itself isn't broken -- someone just forgot to set it up safely, and attackers walk right in.
+
 ## Definition
 
 Misconfigurations are security vulnerabilities arising not from flawed code but from incorrectly configured systems, services, and security controls. They are the most commonly exploited vulnerability category and include leaving default credentials, enabling unnecessary services, granting excessive permissions, improper firewall rules, and exposing sensitive data through misconfigured cloud storage. Misconfigurations are typically straightforward to fix but require ongoing vigilance to prevent.

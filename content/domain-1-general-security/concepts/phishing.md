@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Phishing?
+> A phishing email looks just like a real message from someone you trust, but it's actually from a bad guy. They want you to click a link or type in your password so they can steal it. Always double-check who really sent the message.
+
 ## Definition
 
 Phishing is a social engineering attack that uses deceptive email messages—crafted to appear as though they come from trusted, legitimate organizations (banks, employers, vendors, government agencies)—to trick recipients into revealing credentials, clicking malicious links, or opening malware-laden attachments. It remains the most prevalent initial access vector for breaches and ransomware attacks.

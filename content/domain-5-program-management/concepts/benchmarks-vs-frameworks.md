@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Benchmarks vs. Frameworks?
+> A benchmark is like a recipe that tells you exactly how much flour to add. A framework is like a cookbook that helps you plan all your meals for the week. One gives specific settings; the other gives the big picture.
+
 ## Definition
 
 Benchmarks are prescriptive, technically detailed configuration guides that specify exactly how a system or application should be hardened (e.g., CIS Benchmarks for Windows Server). Frameworks are broader, principle-based programs that provide structure for an entire security or compliance program (e.g., NIST CSF, ISO 27001). Benchmarks answer "how to configure this system securely," while frameworks answer "how to organize and manage a security program."

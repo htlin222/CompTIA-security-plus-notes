@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is PCI DSS?
+> Any store that takes credit cards must follow these safety rules to keep your card number from being stolen. It's like a set of locks and alarms specifically designed to protect payment information.
+
 ## Definition
 
 The Payment Card Industry Data Security Standard (PCI DSS) is a set of security requirements created by the PCI Security Standards Council (founded by Visa, Mastercard, American Express, Discover, and JCB) to protect cardholder data (CHD) and sensitive authentication data (SAD). Compliance is mandatory for any organization that stores, processes, or transmits payment card data, enforced through card brand agreements rather than government regulation.

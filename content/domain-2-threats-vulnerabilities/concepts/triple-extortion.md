@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Triple Extortion?
+> Lock your files, steal your secrets, AND attack your website all at once. The bad guys pile on three threats to pressure you into paying -- it's like a bully who takes your lunch, tells your secrets, and blocks the door.
+
 ## Definition
 
 Triple extortion is an evolution of ransomware tactics that adds a third layer of leverage beyond encryption (first extortion) and data theft threats (double extortion). The third layer may include launching DDoS attacks against the victim's infrastructure to add operational disruption, contacting the victim's customers, partners, or regulators to increase reputational and regulatory pressure, or extorting the third parties directly for their data.

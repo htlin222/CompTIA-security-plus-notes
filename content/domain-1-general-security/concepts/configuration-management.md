@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Configuration Management?
+> Think of it like keeping a perfect photo of how your room should look. If someone moves things around without asking, you compare against the photo and fix what changed.
+
 ## Definition
 
 Configuration management is the practice of establishing, documenting, and maintaining a known-good baseline configuration for systems, and continuously monitoring for unauthorized changes (configuration drift). It ensures that systems remain in a secure, consistent state throughout their lifecycle. Tools like SCCM, Ansible, Puppet, and Chef automate configuration enforcement and drift detection.

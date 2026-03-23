@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are File-Based Indicators?
+> These are suspicious files found on a computer -- like finding a stranger's backpack hidden in your closet. The file's name, location, or digital fingerprint doesn't match anything that should be there.
+
 ## Definition
 
 File-based indicators of compromise are artifacts found on a system that suggest the presence of malware or attacker tools. These include the cryptographic hashes of known malicious files, suspicious file names that mimic legitimate system files, files in unexpected locations (malware often drops files in temp directories or masquerades as system files), and recently modified critical system files.

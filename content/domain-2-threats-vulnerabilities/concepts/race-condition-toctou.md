@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Race Condition / TOCTOU?
+> A teacher checks that the hallway is empty, then opens the door. But in that split second, a kid sneaks in. The teacher checked first but the situation changed before they acted.
+
 ## Definition
 
 A TOCTOU (Time of Check to Time of Use) race condition is a vulnerability that arises when a program checks the state of a resource (e.g., file permissions, object state) and then uses that resource, but the state can be changed between the check and the use. An attacker who can modify the resource during this window can cause the program to act on false assumptions—bypassing security checks or corrupting program logic.

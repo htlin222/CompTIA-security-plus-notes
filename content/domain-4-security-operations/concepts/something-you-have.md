@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is "Something You Have"?
+> This is a physical thing you carry, like a key card or your phone. Even if someone knows your password, they still cannot get in without the thing in your pocket.
+
 ## Definition
 
 "Something you have" is one of the three primary MFA factors referring to a physical or digital possession that proves identity. This includes hardware devices, smart cards, and software tokens on registered devices. This factor assumes that an attacker cannot authenticate without physical possession of the device, even if they know the user's password.

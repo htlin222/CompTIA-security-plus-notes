@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What does Disabling Unnecessary Services and Ports mean?
+> Every open service on a computer is like an unlocked door. If you do not need it, close it. The fewer doors you leave open, the fewer ways a bad guy can sneak in.
+
 ## Definition
 
 Disabling unnecessary services and closing unused ports is a fundamental system hardening practice that reduces the attack surface by eliminating network-accessible services that are not required for the system's intended function. Every running service and open port represents a potential entry point for attackers; removing unused ones reduces the number of potential vulnerabilities.

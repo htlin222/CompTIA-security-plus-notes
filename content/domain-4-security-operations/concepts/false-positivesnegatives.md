@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are False Positives and Negatives?
+> A false positive is like your smoke detector going off when you burn toast -- no real fire. A false negative is when the detector stays quiet during an actual fire. Both are problems.
+
 ## Definition
 
 In vulnerability management and security monitoring, false positives are alerts or findings that indicate a vulnerability or threat that does not actually exist, while false negatives are real vulnerabilities or threats that are missed and not detected. Managing the balance between false positives and false negatives is a fundamental challenge in security operations.

@@ -10,6 +10,9 @@ aliases:
   - DRM/IRM
 ---
 
+> [!eli5] ELI5: What is Rights management (DRM/IRM)?
+> It's like lending a friend a book but telling them "you can read it, but you cannot photocopy it or give it to someone else." Rights management attaches rules directly to a file that follow it everywhere, controlling who can view, edit, or share it.
+
 ## Definition
 
 Digital Rights Management (DRM) and Information Rights Management (IRM) are technologies that attach persistent access controls directly to data files, so that permissions travel with the data regardless of where it is copied or stored. Unlike traditional access control (which controls access at the storage level), rights management controls what authorized users can do with data they have legitimately accessed.

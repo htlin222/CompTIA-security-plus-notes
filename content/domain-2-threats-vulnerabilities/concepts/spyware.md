@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Spyware?
+> It's like a hidden camera in your room that watches everything you do on your computer -- what you type, what websites you visit, what files you open -- and secretly sends it all back to the person who planted it.
+
 ## Definition
 
 Spyware is malicious software that covertly monitors and records user activity without the user's knowledge or consent. It collects sensitive information—including keystrokes, screenshots, browser history, login credentials, financial data, and personal communications—and transmits this information to the attacker. Spyware may be installed alongside legitimate software, delivered through phishing, or exploited through browser vulnerabilities.

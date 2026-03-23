@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Data Ownership and Processing Agreements?
+> If you lend your skateboard to a friend, you still own it and you set the rules -- no tricks off the roof! These agreements spell out who owns the data and exactly what another company is allowed to do with it.
+
 ## Definition
 
 Data ownership and processing agreements are contractual documents that establish who has legal ownership and control over data, and how third parties that process that data are permitted to handle, store, access, and delete it. Under GDPR, this relationship is formalized through Data Processing Agreements (DPAs) between data controllers (who determine the purpose of processing) and data processors (who process data on behalf of the controller). Similar agreements are required under HIPAA (Business Associate Agreements).

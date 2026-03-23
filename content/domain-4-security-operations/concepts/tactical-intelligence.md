@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Tactical Intelligence?
+> Tactical intelligence describes the specific tools and methods attackers are using right now. It is like scouting reports that tell a coach exactly what plays the other team runs.
+
 ## Definition
 
 Tactical threat intelligence provides information about the specific tactics, techniques, and procedures (TTPs) used by threat actors to conduct attacks. This type of intelligence is consumed by security analysts, detection engineers, and threat hunters to create detection rules, tune security tools, and identify specific attacker behaviors to hunt for in the environment.

@@ -10,6 +10,9 @@ aliases:
   - SOX
 ---
 
+> [!eli5] ELI5: What is Sarbanes-Oxley?
+> After some big companies got caught lying about their money, the government made a rule that bosses must double-check and personally sign off that their numbers are honest.
+
 ## Definition
 
 The Sarbanes-Oxley Act (SOX) of 2002 is a US federal law enacted in response to major accounting scandals (Enron, WorldCom) that requires publicly traded companies to establish, maintain, and annually assess the effectiveness of internal controls over financial reporting. Section 404 specifically mandates that management assess internal controls and that an independent auditor attest to that assessment. IT security controls that protect financial systems are within SOX scope.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Network Taps?
+> A network tap makes a copy of all the data flowing through a cable so you can look at it without slowing anything down. Like a wiretap that listens in without anyone on the line noticing.
+
 ## Definition
 
 Network taps (Test Access Points) are passive or active hardware devices inserted into a network cable or optical fiber that create an exact copy of all traffic passing through the link and send that copy to a monitoring port. Unlike port mirroring (SPAN), hardware taps are completely passive and do not affect the original traffic flow — making them more reliable for full-fidelity traffic capture.

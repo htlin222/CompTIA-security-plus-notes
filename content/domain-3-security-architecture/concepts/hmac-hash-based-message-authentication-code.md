@@ -10,6 +10,9 @@ aliases:
   - HMAC
 ---
 
+> [!eli5] ELI5: What is HMAC?
+> HMAC is like sealing a letter with a special wax stamp that only you and your friend have. When your friend opens the letter, they check the stamp to make sure it came from you and nobody changed the message inside.
+
 ## Definition
 
 HMAC (Hash-based Message Authentication Code) is a cryptographic mechanism that combines a hash function with a shared secret key to produce a message authentication code. It provides both data integrity (the message has not been altered) and authentication (the message came from someone with knowledge of the secret key). Unlike simple hashing, HMAC cannot be forged without knowing the secret key.

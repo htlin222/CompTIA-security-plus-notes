@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are the Consequences of Non-Compliance?
+> If you break school rules, you might get detention, lose recess, or your parents get called. For companies, breaking the rules can mean huge fines, getting sued, or losing customers' trust. The bigger the rule you break, the worse the punishment.
+
 ## Definition
 
 Non-compliance with regulatory requirements, industry standards, or contractual obligations can result in a range of serious consequences including financial penalties, regulatory sanctions, loss of certifications, civil lawsuits, and damage to organizational reputation. The severity of consequences depends on the regulation violated, the nature and extent of non-compliance, and whether the organization demonstrated good-faith efforts to comply.

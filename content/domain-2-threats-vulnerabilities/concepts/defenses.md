@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Defenses?
+> These are the shields and locks that protect websites -- things like scrambling messages so snoops can't read them, and adding secret stamps to forms so only the real website can send requests.
+
 ## Definition
 
 This concept covers the key technical defenses against on-path (MitM) attacks and cross-site request forgery (CSRF). For on-path attacks, the primary defenses involve encrypting communications so intercepted traffic cannot be read or modified. For CSRF, defenses focus on proving that requests originate from the legitimate application rather than an attacker-controlled site.

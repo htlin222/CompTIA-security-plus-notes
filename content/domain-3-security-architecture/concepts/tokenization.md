@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Tokenization?
+> It's like replacing your real name on a contest entry form with a random number. The contest organizers keep a secret list matching numbers to names, but anyone who sees the form only sees the number. Tokenization swaps real data for meaningless stand-ins.
+
 ## Definition
 
 Tokenization is a data protection method that substitutes sensitive data values with algorithmically generated, non-sensitive substitute values called tokens. The original data is stored in a secure, isolated token vault, while applications work with the tokens. Unlike encryption, tokens are not mathematically derived from the original data — there is no algorithm to reverse them without access to the vault.

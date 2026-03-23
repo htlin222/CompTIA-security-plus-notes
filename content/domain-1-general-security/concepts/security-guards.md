@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Security Guards?
+> A security guard is a real person standing at the door who can look at you, ask you questions, and decide whether you should be let in. Unlike a card reader, a guard can notice when something just doesn't feel right.
+
 ## Definition
 
 Security guards are personnel responsible for physical security monitoring, access control enforcement, and emergency response at facilities. Unlike automated physical controls, security guards provide **judgment-based** decision making—they can identify suspicious behavior, verify identities using context and conversation, respond flexibly to situations, and take physical action when needed. They are the human component of a layered physical security strategy.

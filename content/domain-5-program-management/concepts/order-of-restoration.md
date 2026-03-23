@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Order of Restoration?
+> After a power outage, you turn on the lights before you start cooking dinner. The order of restoration is the list that tells a company which systems to bring back first -- the ones everything else depends on come first.
+
 ## Definition
 
 The order of restoration (also called restoration sequence) defines the priority sequence in which systems and services are brought back online during disaster recovery. The order is determined by the Business Impact Analysis (BIA) — systems supporting the most critical business functions with the tightest RTOs are restored first. Infrastructure dependencies must also be considered: foundational systems (network, DNS, directory services) must be restored before application systems that depend on them.

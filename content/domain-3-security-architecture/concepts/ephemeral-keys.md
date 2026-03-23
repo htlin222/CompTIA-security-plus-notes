@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Ephemeral keys?
+> These are like single-use passwords that disappear after one conversation. Even if someone steals today's password later, they still cannot read yesterday's messages because those used a different password that no longer exists.
+
 ## Definition
 
 Ephemeral keys are cryptographic keys generated for a single session or transaction and discarded afterward. Unlike long-term static keys, ephemeral keys are never stored persistently, which means that even if a long-term private key is later compromised, past session keys cannot be derived from it. This property is called Perfect Forward Secrecy (PFS).

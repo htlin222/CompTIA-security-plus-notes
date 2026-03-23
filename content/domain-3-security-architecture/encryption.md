@@ -11,6 +11,9 @@ aliases:
   - "Encryption"
 ---
 
+> [!eli5] ELI5: What is Encryption?
+> You know how some kids write secret notes using a code only their best friend knows? Encryption works the same way. It scrambles your message so that anyone who intercepts it just sees nonsense. Only the person with the right "key" can unscramble it and read the original message. This is one of the most important ways we keep information private on computers and the internet.
+
 ## Overview
 
 Encryption is the process of converting readable data (plaintext) into an unreadable format (ciphertext) using a cryptographic algorithm and a key. Only parties with the correct key can decrypt the data back to its original form. Encryption protects confidentiality and is applied to data at rest, data in transit, and data in use. It is one of the most fundamental security controls.

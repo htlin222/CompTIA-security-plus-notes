@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Correlation Rules?
+> These are like connect-the-dots puzzles. One alert by itself might mean nothing, but when you connect it with two other alerts, a picture appears showing what is really going on.
+
 ## Definition
 
 Correlation rules are logic-based detection rules in SIEM platforms that analyze multiple events across time, systems, and users to identify patterns that indicate a potential attack. Rather than alerting on individual events (which may be benign), correlation rules connect sequences of related events that together suggest malicious activity, significantly reducing false positives compared to single-event alerts.

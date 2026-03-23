@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is IP Spoofing?
+> It's like putting someone else's return address on a letter you send. The person who gets it thinks it came from that other address, not from you.
+
 ## Definition
 
 IP spoofing involves crafting network packets with a falsified (spoofed) source IP address to impersonate another system, hide the attacker's true location, or redirect responses to a victim's IP (as in amplification attacks). Because IP is a connectionless protocol that doesn't inherently verify source addresses, spoofing is technically straightforward—though it limits the attacker's ability to receive responses.

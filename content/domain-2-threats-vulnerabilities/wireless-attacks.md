@@ -11,6 +11,9 @@ aliases:
   - "Wi-Fi Attacks"
 ---
 
+> [!eli5] ELI5: What are Wireless Attacks?
+> Wi-Fi is like an invisible conversation happening through the air between your device and a router. Since it's traveling through open air instead of a wire, anyone nearby can try to listen in or interfere. Wireless attacks are when someone sets up a fake Wi-Fi network that looks real (like a fake lemonade stand), jams the signal so you can't connect, or eavesdrops on what you're sending. It's like someone with a walkie-talkie tuned to your channel, hearing everything you say.
+
 ## Overview
 
 Wireless attacks exploit the inherent vulnerability of data transmitted over radio frequencies — anyone within range can potentially intercept or interfere with wireless communications. Wi-Fi, Bluetooth, NFC, and RFID each present unique attack surfaces. The Security+ exam tests knowledge of wireless attack techniques and the protocols and configurations that defend against them.

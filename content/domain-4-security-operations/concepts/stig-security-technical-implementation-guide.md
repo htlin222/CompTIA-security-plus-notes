@@ -10,6 +10,9 @@ aliases:
   - STIG
 ---
 
+> [!eli5] ELI5: What is a STIG?
+> STIGs are detailed security checklists from the government that tell you exactly how to lock down each type of system. They are like building codes, but for computer security.
+
 ## Definition
 
 STIGs (Security Technical Implementation Guides) are detailed, prescriptive hardening guides published by the Defense Information Systems Agency (DISA) for use by the U.S. Department of Defense and its contractors. STIGs specify required security configurations for operating systems, applications, network devices, and other IT components used in DoD environments.

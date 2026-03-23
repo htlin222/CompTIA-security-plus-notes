@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Bollards?
+> Those short, strong metal or concrete posts you see outside buildings are bollards. They stop cars from driving where they shouldn't -- like a row of sturdy tree stumps protecting the front door.
+
 ## Definition
 
 Bollards are short, sturdy vertical posts—typically made of steel or concrete—installed around buildings or critical infrastructure to prevent vehicle ramming attacks. They protect pedestrians, building entrances, and secure perimeters from unauthorized vehicle access, whether from deliberate attacks or accidental collisions. Bollards are a physical deterrent and preventive control.

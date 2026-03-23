@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Protocol Analysis?
+> Protocol analysis studies the rules that computers use to talk to each other. If a computer is speaking in a way that breaks the rules, it might be up to something shady.
+
 ## Definition
 
 Protocol analysis in network security monitoring involves deep inspection of network protocols to detect misuse, protocol violations, and covert channel techniques that attackers use to evade detection. Attackers frequently abuse legitimate protocols (DNS, HTTP, ICMP) to tunnel malicious traffic or exfiltrate data while blending in with normal network traffic.

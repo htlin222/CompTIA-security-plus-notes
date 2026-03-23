@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Directory Traversal?
+> It's like being allowed into one room at school, but finding a way to sneak through the hallways into the principal's office by going "back, back, back" through the building.
+
 ## Definition
 
 Directory traversal (also called path traversal) is a web application vulnerability where an attacker uses `../` sequences (or encoded equivalents) in file path inputs to navigate outside the web root and access sensitive files on the server's filesystem. Successful exploitation can expose configuration files, password files, private keys, and application source code.

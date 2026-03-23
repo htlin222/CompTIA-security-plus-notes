@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Transitive Trust?
+> If School A trusts School B, and School B trusts School C, then School A automatically trusts School C too. That chain can be useful but also risky if one link is weak.
+
 ## Definition
 
 Transitive trust is a property of trust relationships where trust flows through intermediaries: if organization A trusts organization B, and organization B trusts organization C, then organization A may implicitly trust organization C. In federated identity and PKI, transitive trust must be carefully understood and managed because it can unintentionally extend trust to third parties the organization did not directly vet.

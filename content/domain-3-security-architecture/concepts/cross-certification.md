@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Cross-certification?
+> It's like two schools agreeing to accept each other's hall passes. If School A trusts School B's passes, and School B trusts School A's, students from either school can move freely between both buildings.
+
 ## Definition
 
 Cross-certification is a PKI trust mechanism in which two separate Certificate Authorities (CAs) issue certificates to each other, establishing bidirectional mutual trust between their respective PKI hierarchies. This allows users in one organization to trust certificates issued by the other organization's CA, enabling interoperability between independently managed PKI systems.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is "Somewhere You Are"?
+> This checks your location before letting you in. If your account normally logs in from New York and suddenly tries from another continent, that is suspicious.
+
 ## Definition
 
 "Somewhere you are" is a contextual authentication factor that uses physical location information — such as GPS coordinates, IP geolocation, network location, or presence on a trusted Wi-Fi network — to verify or restrict authentication attempts. While not a primary MFA factor in most implementations, location context is used as an additional signal for adaptive/risk-based authentication.

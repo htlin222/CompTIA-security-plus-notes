@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Buffer Overflow?
+> You know how pouring too much water into a glass makes it spill onto the table? A buffer overflow is when a program gets more data than it can hold, and the extra spills into places it shouldn't, letting attackers take over.
+
 ## Definition
 
 A buffer overflow occurs when a program writes more data to a buffer (a fixed-size memory block) than it can hold, causing the excess data to overwrite adjacent memory regions. Attackers craft this overflow to overwrite the return address on the stack, redirecting program execution to attacker-controlled shellcode. Buffer overflows are a classic and historically significant vulnerability, particularly in C and C++ programs that do not perform bounds checking.

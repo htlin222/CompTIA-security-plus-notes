@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Revocation?
+> If your house key gets stolen, you change the locks so the old key no longer works. Revocation is the same thing for digital certificates -- it cancels a certificate so nobody can use it anymore.
+
 ## Definition
 
 Certificate revocation is the process of permanently invalidating a digital certificate before its scheduled expiration date. When a certificate must be invalidated — due to key compromise, CA compromise, change in the certificate holder's affiliation, or other reasons — the CA publishes revocation information so that relying parties can verify whether a certificate is still valid.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Sandboxing?
+> A sandbox is a safe play area where kids can dig and build without messing up the rest of the yard. In computers, sandboxing runs suspicious programs in an isolated space where they cannot damage anything real, so you can safely see what they do.
+
 ## Definition
 
 Sandboxing is the practice of using isolated, controlled environments (typically virtual machines or containers) to safely execute suspicious code, malware samples, or untested applications without risk to production systems. The sandbox provides complete isolation — any malicious actions taken by the code are contained within the sandbox and cannot affect the host system or network.

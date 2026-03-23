@@ -11,6 +11,9 @@ aliases:
   - MITB
 ---
 
+> [!eli5] ELI5: What is Man-in-the-Browser?
+> Bad software hides inside your web browser and secretly changes what you see or send. You think you're transferring $10, but it quietly changes it to $1,000 going to the attacker.
+
 ## Definition
 
 Man-in-the-Browser (MitB) is a sophisticated attack where malware is installed as a browser extension or plugin that intercepts and modifies web transactions in real time—after the user initiates them but before they are submitted to the server. Unlike traditional MitM attacks, MitB bypasses HTTPS because the interception occurs within the browser after decryption, before the user sees or submits the data.

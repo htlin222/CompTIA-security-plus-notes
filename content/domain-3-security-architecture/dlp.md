@@ -12,6 +12,9 @@ aliases:
   - "Data Loss Prevention"
 ---
 
+> [!eli5] ELI5: What is DLP?
+> Picture a guard standing at every exit of a building, checking bags to make sure nobody takes anything valuable out. DLP (Data Loss Prevention) works like that guard for your computer network. It watches emails, file transfers, and other ways data moves around, and if someone tries to send secret information outside the company -- whether on purpose or by accident -- it steps in and stops it.
+
 ## Overview
 
 Data Loss Prevention (DLP) is a set of tools and policies designed to detect and prevent the unauthorized transfer of sensitive data outside the organization. DLP systems inspect data at rest, in motion, and in use to identify sensitive content based on patterns, keywords, classification labels, and policies. When a policy violation is detected, DLP can alert, block, encrypt, or quarantine the data.

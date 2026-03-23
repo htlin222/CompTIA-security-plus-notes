@@ -11,6 +11,9 @@ aliases:
   - "AuthN"
 ---
 
+> [!eli5] ELI5: What is Authentication?
+> It's like when your school asks you to show your student ID before letting you into the building. They need to prove you are who you say you are. You might show your face, type a password, scan your fingerprint, or tap a special card. Sometimes you need more than one of these -- like both a password and a fingerprint -- to make it really hard for someone to pretend to be you.
+
 ## Overview
 
 Authentication is the process of verifying that an entity (user, device, or service) is who or what it claims to be. It is the first step in the AAA framework and serves as the gatekeeper for all subsequent authorization decisions. Strong authentication is critical to preventing unauthorized access and is a recurring theme across all five Security+ exam domains.

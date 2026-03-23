@@ -11,6 +11,9 @@ aliases:
   - "Cloud Security"
 ---
 
+> [!eli5] ELI5: What is Cloud Security?
+> You know how you might store your toys at a friend's house? You trust your friend to keep them safe, but you still want to make sure the door is locked and nobody else can take them. Cloud security is the same idea -- when companies store their data on someone else's computers (the cloud), they need rules and locks to keep that data safe, even though they do not own the building where it lives.
+
 ## Overview
 
 Cloud security addresses the unique risks and shared responsibilities of deploying resources in cloud environments. As organizations move workloads to IaaS, PaaS, and SaaS platforms, they must understand which security controls they manage versus what the cloud provider handles. Cloud security requires adapting traditional security practices to dynamic, API-driven, multi-tenant environments.

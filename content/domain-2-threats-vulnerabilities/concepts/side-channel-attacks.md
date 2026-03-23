@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Side-Channel Attacks?
+> Instead of trying to pick a lock, you listen to the tiny clicks it makes to figure out the combination. Side-channel attacks learn secrets by watching how a computer behaves -- its speed, heat, or power use -- not by attacking the code directly.
+
 ## Definition
 
 Side-channel attacks extract secret information by analyzing the physical characteristics of a cryptographic system's operation—such as execution timing, power consumption, electromagnetic radiation, or even acoustic emanations—rather than breaking the underlying algorithm. These attacks can recover cryptographic keys from hardware devices that correctly implement mathematically sound algorithms, by observing how the implementation behaves physically.

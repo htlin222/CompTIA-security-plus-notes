@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Privacy by Design?
+> It's like building a treehouse with a door that locks from the start, instead of adding a lock after someone already peeked inside. Privacy by design means thinking about protecting people's personal information from the very beginning of a project.
+
 ## Definition
 
 Privacy by Design (PbD) is a framework and philosophy developed by Ann Cavoukian that calls for privacy to be embedded into systems and processes from the earliest design stages, rather than added as an afterthought or as a compliance checkbox. It operates on 7 foundational principles: proactive not reactive, privacy as the default, privacy embedded into design, full functionality (no trade-offs), end-to-end security, visibility and transparency, and respect for user privacy. GDPR formally incorporates Privacy by Design requirements (Article 25).

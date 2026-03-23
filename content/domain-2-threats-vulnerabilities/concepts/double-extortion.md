@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Double Extortion?
+> Not only does the attacker lock up your files, they also copy your private stuff first and threaten to share it with everyone. Even if you have backups, they can still embarrass you.
+
 ## Definition
 
 Double extortion is a ransomware strategy where attackers first exfiltrate sensitive data from the victim's network before encrypting files. They then threaten to publicly release or sell the stolen data on dark web leak sites if the ransom is not paid—in addition to the traditional encryption ransom demand. This eliminates the option of recovering from backups alone, since data has already been stolen.

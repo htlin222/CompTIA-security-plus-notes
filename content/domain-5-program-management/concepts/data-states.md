@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Data States?
+> Data can be sitting still (saved on a hard drive), moving (being sent over the internet), or being used right now (open on your screen). Each state needs its own kind of protection, like how you guard a parked bike differently than one you're riding.
+
 ## Definition
 
 Data exists in three states, each requiring distinct protection controls: **data at rest** (stored on disk, tape, or other persistent storage), **data in transit** (moving across a network), and **data in use** (actively being processed in memory or a CPU). Classification level drives the protection requirements for each state. Sensitive data must be protected in all three states to prevent unauthorized access or disclosure.

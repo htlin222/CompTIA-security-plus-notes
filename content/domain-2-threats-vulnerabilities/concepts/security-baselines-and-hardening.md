@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Security Baselines and Hardening?
+> Before a new computer goes to work, you lock it down tight -- close extra doors, turn off things you don't need, and set it up by a checklist of safe settings. It's like childproofing a house before a toddler moves in.
+
 ## Definition
 
 Security baselines and hardening involve configuring systems according to established security standards to reduce their attack surface before and during deployment. Hardening removes or disables unnecessary features, services, and accounts while enabling security-relevant settings. Security baselines—such as CIS Benchmarks or DISA STIGs—provide specific, prescriptive configuration guidance for common operating systems, applications, and network devices.

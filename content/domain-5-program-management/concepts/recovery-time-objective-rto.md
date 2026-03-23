@@ -10,6 +10,9 @@ aliases:
   - RTO
 ---
 
+> [!eli5] ELI5: What is Recovery Time Objective?
+> When the power goes out at home, RTO is the longest you can wait in the dark before things start going really wrong -- like all the food in the freezer melting.
+
 ## Definition
 
 Recovery Time Objective (RTO) is the maximum acceptable length of time that a business function, application, or system can be offline after a disruption before causing unacceptable business impact. It is set during the Business Impact Analysis (BIA) and must always be less than the Maximum Tolerable Downtime (MTD). RTO drives the design of recovery capabilities — the tighter the RTO, the more investment in hot standby systems, failover automation, and recovery staff.

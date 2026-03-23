@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Session Recording?
+> Session recording captures everything an admin does on a computer, like a video camera in a control room. If something goes wrong, you can replay the tape to see exactly what happened.
+
 ## Definition
 
 Session recording is a PAM capability that captures a complete record of all activities performed during a privileged access session, including keystrokes, commands executed, files accessed, and screen activity. These recordings provide an auditable trail of what privileged users did during their sessions, supporting forensic investigations, compliance auditing, and insider threat detection.

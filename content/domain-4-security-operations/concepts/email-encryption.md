@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Email Encryption?
+> Email encryption scrambles your message so only the person you sent it to can read it. It is like writing a letter in a secret code that only your friend knows how to decode.
+
 ## Definition
 
 Email encryption protects the confidentiality of email message content from unauthorized access. It can be applied at the transport level (TLS encrypts the connection between mail servers), gateway level (the mail gateway encrypts/decrypts on behalf of users), or end-to-end (only the sender and recipient can read the message using S/MIME or PGP).

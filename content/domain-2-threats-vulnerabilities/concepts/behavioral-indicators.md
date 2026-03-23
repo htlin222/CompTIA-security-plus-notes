@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Behavioral Indicators?
+> If your dog suddenly started meowing, you'd know something was very wrong. Behavioral indicators are when a computer starts acting strangely -- like logging in at 3 AM from another country.
+
 ## Definition
 
 Behavioral indicators of compromise are anomalies in user or system behavior that suggest account compromise or insider threat activity. Unlike file-based or network IoCs, behavioral indicators focus on what a user or system is doing rather than what artifacts they leave. They are a key component of User and Entity Behavior Analytics (UEBA) and are particularly useful for detecting credential-based attacks where the attacker uses legitimate credentials.

@@ -10,6 +10,9 @@ aliases:
   - TPM
 ---
 
+> [!eli5] ELI5: What is a Trusted Platform Module (TPM)?
+> A TPM is a tiny security chip built right into your computer's main board. Think of it as a built-in safe that stores your most important keys and can prove your computer has not been tampered with when it starts up.
+
 ## Definition
 
 A Trusted Platform Module (TPM) is a secure cryptographic processor that is integrated into a computer's motherboard to provide hardware-based security functions. The TPM stores cryptographic keys, certificates, and measurements in tamper-protected storage and performs cryptographic operations in an isolated environment separate from the main CPU, providing a root of trust for the system.

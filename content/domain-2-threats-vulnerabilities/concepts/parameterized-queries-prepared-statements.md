@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Parameterized Queries?
+> The computer builds its question first and then plugs your answer into a safe slot, like a fill-in-the-blank form. No matter what you type, it can never be mistaken for a command.
+
 ## Definition
 
 Parameterized queries (also called prepared statements) are the primary and most effective defense against SQL injection. They separate the SQL code structure (the query template) from the user-supplied data (the parameters). The database compiles the query structure first, then treats all user input as literal data—not executable code—making it impossible for injected SQL syntax to alter the query structure.

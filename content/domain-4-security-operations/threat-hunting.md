@@ -11,6 +11,9 @@ aliases:
   - "Cyber Threat Hunting"
 ---
 
+> [!eli5] ELI5: What is Threat Hunting?
+> Most alarms wait for a burglar to trip them. But a threat hunter is more like a detective who goes looking for trouble before the alarm even rings. They walk through the building checking closets, looking behind doors, and following suspicious footprints -- not because an alarm went off, but because they have a hunch something might be wrong. If they find anything, they can stop the bad guy before real damage is done.
+
 ## Overview
 
 Threat hunting is the proactive, human-driven process of searching through networks, endpoints, and datasets to identify threats that have evaded automated detection systems. Unlike reactive alerting, threat hunting assumes the network may already be compromised and seeks to find evidence of adversary activity. It requires skilled analysts who form hypotheses and test them against available telemetry.

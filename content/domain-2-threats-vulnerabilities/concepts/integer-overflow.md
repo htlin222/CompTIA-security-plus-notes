@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is an Integer Overflow?
+> Remember when a car odometer hits 999,999 and rolls back to 000,000? That's what happens when a number in a program gets too big -- it wraps around and causes weird, exploitable behavior.
+
 ## Definition
 
 An integer overflow occurs when an arithmetic operation produces a value that exceeds the maximum size that the integer data type can hold, causing the value to "wrap around" to a small or negative number. In security contexts, this unexpected behavior can be exploited to bypass security checks, cause buffer overflows (by making an allocation size smaller than expected), or corrupt application logic.

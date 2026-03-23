@@ -10,6 +10,9 @@ aliases:
   - PEP
 ---
 
+> [!eli5] ELI5: What is a Policy Enforcement Point (PEP)?
+> The PEP is the actual gate or door that opens or stays shut. The brain (policy engine) decides yes or no, but the PEP is the one physically blocking or allowing you through.
+
 ## Definition
 
 The Policy Enforcement Point (PEP) is the Zero Trust Architecture component that sits in the data path and enforces access control decisions made by the policy engine. It acts as the gatekeeper—blocking, allowing, or conditionally permitting resource access based on the access decisions it receives. The PEP is what actually controls traffic flow and access at the network or application level.

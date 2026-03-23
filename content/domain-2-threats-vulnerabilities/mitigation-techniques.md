@@ -12,6 +12,9 @@ aliases:
   - "Security Controls"
 ---
 
+> [!eli5] ELI5: What are Mitigation Techniques?
+> When your house has problems -- maybe the lock is broken or a window won't close -- you fix them so burglars can't get in. Mitigation techniques are all the different ways we fix and protect computers from bad guys. Some fixes are like installing a better lock (patching software). Others are like adding a security camera (monitoring). Some are like teaching your family not to open the door for strangers (security training). The more layers of protection you add, the harder it is for anyone to break in.
+
 ## Overview
 
 Mitigation techniques are the security controls and strategies applied to reduce or eliminate the impact of identified threats and vulnerabilities. Effective mitigation follows a defense-in-depth approach, layering multiple controls so that the failure of one does not result in compromise. The Security+ exam tests knowledge of specific mitigations and the ability to select appropriate controls for given scenarios.

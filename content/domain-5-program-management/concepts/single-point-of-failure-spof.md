@@ -10,6 +10,9 @@ aliases:
   - SPOF
 ---
 
+> [!eli5] ELI5: What is a Single Point of Failure?
+> Imagine a bridge held up by just one rope. If that one rope snaps, the whole bridge falls. A single point of failure is that one rope you really need a backup for.
+
 ## Definition
 
 A single point of failure (SPOF) is any component — hardware, software, network path, personnel, or third-party service — whose failure would cause an entire system, service, or business process to become unavailable. SPOFs represent unacceptable availability risk for critical systems and should be identified during the BIA and eliminated through redundancy (RAID, clustering, load balancing, failover) or acceptance (documented risk with compensating controls).

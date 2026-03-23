@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Non-Repudiation?
+> It's like signing a receipt when you buy something. Later, you can't say "I never bought that!" because your signature proves you did. Non-repudiation means people can't deny what they did on a computer.
+
 ## Definition
 
 Non-repudiation is the security property that ensures a party cannot deny having performed an action after the fact. It is the fourth pillar of information security (beyond CIA), critical for legal accountability, digital forensics, and trust in digital transactions. Non-repudiation is achieved through mechanisms that create unforgeable, auditable proof of actions—most importantly digital signatures, comprehensive logging, and timestamping.

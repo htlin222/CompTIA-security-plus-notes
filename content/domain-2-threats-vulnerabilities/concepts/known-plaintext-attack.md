@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Known Plaintext Attack?
+> If you know that a secret coded message starts with "Dear Friend" and you can see the coded version of those words, you can start figuring out how the rest of the code works.
+
 ## Definition
 
 In a known-plaintext attack (KPA), the attacker possesses pairs of plaintext messages and their corresponding ciphertexts, which they use to analyze the relationship between the two in order to deduce the encryption key or find patterns that can be exploited to decrypt other ciphertexts. This attack model is weaker than chosen-plaintext (where the attacker can select what to encrypt) but historically significant.

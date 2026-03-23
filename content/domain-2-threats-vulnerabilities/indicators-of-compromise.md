@@ -11,6 +11,9 @@ aliases:
   - "IoC"
 ---
 
+> [!eli5] ELI5: What are Indicators of Compromise?
+> After a burglar breaks into a house, they leave clues behind -- a broken window, muddy footprints, things moved around. Indicators of compromise are the digital clues that tell you a computer or network has been broken into. Maybe there are strange files that shouldn't be there, or a program is running at 3 AM when nobody's working. Security teams look for these clues the same way detectives look for evidence, so they can figure out what happened and stop it from getting worse.
+
 ## Overview
 
 Indicators of Compromise (IoCs) are pieces of forensic evidence — such as file hashes, IP addresses, domain names, or behavioral patterns — that suggest a system or network has been compromised. IoCs are used by security tools and analysts to detect, investigate, and respond to security incidents. They represent the "breadcrumbs" left behind by attackers and are critical for threat detection and intelligence sharing.

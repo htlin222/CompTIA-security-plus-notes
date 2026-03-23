@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Monitoring and Reporting?
+> Monitoring is like a teacher keeping an eye on the classroom. Reporting is when that teacher tells the principal how things are going. Together, they make sure the leaders always know whether the security program is working.
+
 ## Definition
 
 In the governance context, monitoring and reporting refers to the continuous measurement of security program effectiveness using Key Performance Indicators (KPIs) and Key Risk Indicators (KRIs), and the regular communication of these measurements to leadership, the board, and governance committees. Effective reporting translates technical security data into business language, enabling executive decision-making about risk acceptance, resource allocation, and strategic direction.

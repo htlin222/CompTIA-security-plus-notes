@@ -10,6 +10,9 @@ aliases:
   - SFA
 ---
 
+> [!eli5] ELI5: What is Single-Factor Authentication (SFA)?
+> Using just a password to log in is single-factor authentication. It's like locking your bike with only one lock -- if someone breaks that one lock, there's nothing else stopping them.
+
 ## Definition
 
 Single-factor authentication (SFA) relies on only one authentication factor to verify identity—most commonly a password (something you know). Because a single factor can be compromised through phishing, brute force, credential stuffing, or keylogging, SFA is the least secure authentication approach. For sensitive systems and high-risk accounts, SFA alone is considered insufficient by most security standards and frameworks.

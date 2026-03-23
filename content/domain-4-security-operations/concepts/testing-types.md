@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Testing Types?
+> Testing types describe how much information a tester gets before starting -- full knowledge, partial knowledge, or none at all. It is like taking a test open-book, with a cheat sheet, or completely cold.
+
 ## Definition
 
 Penetration testing can be conducted with varying levels of information provided to the testing team about the target environment. The level of prior knowledge affects what the test simulates — an outside attacker with no information, an insider threat with full access, or something in between. Each testing approach has different value for different security assessment objectives.

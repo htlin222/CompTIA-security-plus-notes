@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Firmware Updates?
+> Firmware is the built-in software that makes hardware work. Updating it is like replacing the brain of your toaster so it does not burn your bread anymore.
+
 ## Definition
 
 Firmware updates involve applying patches to the low-level software embedded in hardware devices such as BIOS/UEFI firmware, network device firmware, printer firmware, and IoT device firmware. Firmware vulnerabilities can be exploited to achieve persistence below the OS level, making them particularly dangerous — firmware-level malware (rootkits) can survive OS reinstallation and disk formatting.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Security Awareness Training?
+> Teaching everyone at school or work how to spot tricks and scams -- like "don't click weird links" and "don't give your password to strangers." Smart people still need reminders to stay safe.
+
 ## Definition
 
 Security awareness training is an organizational program that educates employees about cybersecurity threats, safe behaviors, and their responsibilities in protecting organizational assets. It is one of the most cost-effective security investments because it directly addresses the human factor—often the most exploited attack vector. Effective programs combine formal training with simulated attacks (phishing simulations) and reinforce security culture throughout the organization.

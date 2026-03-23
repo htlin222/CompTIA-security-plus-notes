@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Chain of Custody?
+> It is like a sign-out sheet for library books. Every time evidence changes hands, someone writes down who had it and when, so you can prove nobody tampered with it.
+
 ## Definition
 
 Chain of custody is a documented and unbroken record of the chronological transfer, handling, and storage of digital or physical evidence from the time of collection through presentation in legal proceedings. Any break or gap in the chain of custody can render evidence inadmissible in court and undermine criminal prosecutions or civil litigation.

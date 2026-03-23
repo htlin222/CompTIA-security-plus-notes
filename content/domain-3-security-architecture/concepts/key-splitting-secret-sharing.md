@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Key splitting / secret sharing?
+> It's like tearing a treasure map into pieces and giving each piece to a different friend. No single friend can find the treasure alone -- they have to get together and combine their pieces to read the full map.
+
 ## Definition
 
 Key splitting and secret sharing are cryptographic techniques that divide a secret (such as a cryptographic key) into multiple shares distributed among different custodians, such that the original secret can only be reconstructed when a minimum threshold number of shares are combined. This prevents any single person from having unilateral access to critical keys.

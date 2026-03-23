@@ -10,6 +10,9 @@ aliases:
   - HOTP
 ---
 
+> [!eli5] ELI5: What is HOTP?
+> HOTP gives you a new one-time code each time you press a button on a special device. Each code can only be used once, like a raffle ticket with a unique number.
+
 ## Definition
 
 HOTP (HMAC-based One-Time Password) is a one-time password algorithm defined in RFC 4226 that generates passwords based on a counter value and a shared secret key using HMAC. Unlike TOTP (time-based), HOTP codes do not expire after a fixed time window — they remain valid until used (or until the counter advances past a resynchronization window). Each use increments the counter.

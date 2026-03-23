@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is the Hunt Maturity Model?
+> This measures how good a team is at hunting for threats, from beginners who just follow basic steps all the way to experts who create their own clever strategies.
+
 ## Definition
 
 The Hunt Maturity Model (HMM) is a framework that describes an organization's capability and sophistication in performing proactive threat hunting. Developed by David Bianco, the model defines five levels (HM0-HM4) that describe progression from reactive, alert-driven security operations to proactive, hypothesis-driven hunting that generates new detection content.

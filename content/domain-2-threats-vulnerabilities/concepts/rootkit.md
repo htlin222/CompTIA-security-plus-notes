@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Rootkit?
+> A rootkit hides so deep in your computer that even your security software can't see it. It's like a spy who puts on an invisibility cloak and lives inside your house, and none of your alarms can detect them.
+
 ## Definition
 
 A rootkit is malware designed to conceal itself and other malicious software from detection while maintaining privileged access to a system. By operating at deep system levels—kernel mode, bootloader, or firmware—rootkits can hide processes, files, network connections, and registry entries from the operating system itself, making them extremely difficult to detect using traditional security tools running on the same compromised OS.

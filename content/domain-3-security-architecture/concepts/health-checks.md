@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Health checks?
+> Like a coach checking if players are feeling okay before sending them into the game. If a server is not responding properly, the load balancer stops sending it work until it recovers.
+
 ## Definition
 
 Health checks are automated tests performed by load balancers to continuously verify that backend servers are functioning correctly and can handle requests. When a health check fails, the load balancer automatically removes the failing server from the pool and stops sending traffic to it until it recovers and passes health checks again, ensuring that only healthy servers receive user traffic.

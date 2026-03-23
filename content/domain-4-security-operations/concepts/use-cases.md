@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Use Cases?
+> Use cases are real examples of how automation solves specific problems -- like automatically disabling an account the moment an employee leaves the company.
+
 ## Definition
 
 In the context of security automation and scripting, use cases refer to specific, well-defined scenarios where automation delivers measurable security or operational value. Identifying and prioritizing automation use cases allows security teams to focus development effort on high-impact, repetitive tasks — reducing manual workload, accelerating response times, and improving consistency across security operations.

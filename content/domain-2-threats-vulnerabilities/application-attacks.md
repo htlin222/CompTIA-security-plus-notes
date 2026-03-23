@@ -11,6 +11,9 @@ aliases:
   - "Web Application Attacks"
 ---
 
+> [!eli5] ELI5: What are Application Attacks?
+> You know how some apps on your phone ask you to type things in, like your name or a search? Application attacks are when a bad person types in sneaky, harmful instructions instead of normal words. It's like someone slipping a fake note into a suggestion box that tricks the person reading it into doing something wrong. These attacks work because the app trusts what you type without double-checking, so the bad instructions get followed just like real ones. That's why apps need to carefully check everything people type in.
+
 ## Overview
 
 Application attacks exploit vulnerabilities in software applications — particularly web applications — through techniques like input manipulation, session hijacking, and exploiting logic flaws. As organizations expose more applications to the internet, the application layer has become a primary attack vector. The Security+ exam covers both attack techniques and the defenses that mitigate them.

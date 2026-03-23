@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Regulatory Compliance?
+> These are the rules the government says you must follow -- no choice about it. It's like how every car on the road must have seatbelts. If a company doesn't follow these laws, it can get fined or taken to court.
+
 ## Definition
 
 Regulatory compliance is the process of adhering to laws, regulations, and government mandates that impose security, privacy, or reporting requirements on organizations. Unlike voluntary standards, regulatory compliance is legally required; failure to comply can result in civil or criminal penalties, fines, license revocations, and enforcement actions. Key regulations tested on Security+ include GDPR, HIPAA, SOX, GLBA, FERPA, and PCI DSS (though PCI DSS is technically a contractual standard, not a law).

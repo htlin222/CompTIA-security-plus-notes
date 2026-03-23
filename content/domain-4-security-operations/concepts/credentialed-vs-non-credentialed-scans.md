@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Credentialed vs. Non-credentialed Scans?
+> A credentialed scan is like a building inspector with a master key who can open every door. A non-credentialed scan is like someone walking around the outside looking for broken windows.
+
 ## Definition
 
 Vulnerability scanners can operate in two modes: credentialed (authenticated) scans log into target systems using provided credentials to perform deep internal analysis, while non-credentialed (unauthenticated) scans test systems from the outside without credentials, simulating what an external attacker would see. Each mode provides different value to the vulnerability management program.

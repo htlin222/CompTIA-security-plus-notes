@@ -10,6 +10,9 @@ aliases:
   - SSRF
 ---
 
+> [!eli5] ELI5: What is Server-Side Request Forgery?
+> You trick the server into fetching something from behind its own locked doors on your behalf. It's like telling a librarian "Go get me the file from the principal's private cabinet" and they do it without questioning you.
+
 ## Definition
 
 Server-Side Request Forgery (SSRF) is an attack where the attacker tricks a server into making HTTP requests to an unintended location—typically internal resources that aren't accessible from the internet. By supplying attacker-controlled URLs to server-side functionality (like URL fetchers, webhooks, PDF generators, or image importers), attackers can probe and access internal network services, cloud metadata endpoints, and other resources normally protected by network controls.

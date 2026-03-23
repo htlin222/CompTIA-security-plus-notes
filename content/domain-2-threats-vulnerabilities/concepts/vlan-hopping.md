@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is VLAN Hopping?
+> A building is divided into separate sections with locked doors between them. VLAN hopping is finding a trick to jump from your section into a restricted one you're not supposed to enter.
+
 ## Definition
 
 VLAN hopping is a network attack that exploits VLAN configuration weaknesses to allow an attacker to send or receive traffic from VLANs that their port should not have access to, bypassing VLAN-based network segmentation. There are two primary techniques: switch spoofing (tricking a switch into establishing a trunk link) and double tagging (nesting 802.1Q tags to send frames to a different VLAN).

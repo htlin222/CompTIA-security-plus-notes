@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Stored Procedures?
+> Instead of letting you write your own questions for the database, the database already has pre-made questions you can use. This makes it harder to sneak in bad commands.
+
 ## Definition
 
 Stored procedures are pre-compiled database routines stored within the database server that encapsulate SQL logic. When used with parameterized input (rather than string concatenation), they can help protect against SQL injection by preventing user-supplied data from being interpreted as SQL syntax. However, stored procedures that build SQL dynamically with string concatenation internally are still vulnerable to SQLi.

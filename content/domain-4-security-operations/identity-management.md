@@ -11,6 +11,9 @@ aliases:
   - "IdM"
 ---
 
+> [!eli5] ELI5: What is Identity Management?
+> It is like the front office at a school that keeps track of every student, teacher, and visitor. They decide who gets a badge, what rooms each person can enter, and when someone leaves, they take the badge back. Identity management does the same thing for computers -- it controls who gets an account, what they are allowed to access, and makes sure old accounts get shut off when people leave. Without it, anyone could wander in and go anywhere.
+
 ## Overview
 
 Identity management (IdM) is the framework of policies, processes, and technologies used to manage digital identities and control access to organizational resources. It ensures the right individuals have the right access to the right resources at the right times for the right reasons. IdM is foundational to security operations and is heavily tested on the SY0-701 exam.

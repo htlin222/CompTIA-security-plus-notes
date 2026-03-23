@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Certificate formats?
+> Just like photos can be saved as .jpg or .png, digital certificates come in different file formats. Each format packages the same ID information in a slightly different way depending on what system needs to read it.
+
 ## Definition
 
 Digital certificates are encoded in several standard formats depending on the use case and platform requirements. Understanding certificate formats is important for importing, exporting, and deploying certificates correctly across different systems and applications. The format determines the encoding and what data is contained in the file.

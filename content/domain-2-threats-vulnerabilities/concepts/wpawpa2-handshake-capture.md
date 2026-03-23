@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is WPA/WPA2 Handshake Capture?
+> When your device connects to Wi-Fi, they do a secret handshake. The attacker records that handshake and takes it home to try guessing the Wi-Fi password offline, where nobody can stop them.
+
 ## Definition
 
 WPA/WPA2 handshake capture is a wireless attack technique that captures the 4-way authentication handshake exchanged between a wireless client and access point during connection. The captured handshake contains information derived from the Pre-Shared Key (PSK/passphrase)—allowing offline dictionary or brute-force attacks to recover the Wi-Fi password without further interaction with the network.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Credential Rotation?
+> Changing your passwords on a schedule is like changing the locks on your doors every few months. Even if someone copied a key, it stops working once you swap the lock.
+
 ## Definition
 
 Credential rotation is the practice of automatically changing privileged account passwords and secrets on a predefined schedule or immediately after each use. PAM solutions implement automatic credential rotation to ensure that even if a privileged credential is compromised, its window of validity is limited and it cannot be reused by an attacker.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Secure Areas?
+> These are the locked rooms in a building where the most important equipment lives -- like the server room. Only a few trusted people can get in, because if the wrong person touches that equipment, all the computer security in the world won't help.
+
 ## Definition
 
 Secure areas are physically restricted zones within facilities that house critical IT infrastructure—such as server rooms, data centers, network operations centers (NOCs), and wiring closets. These areas require heightened physical access controls because unauthorized physical access to the systems within them can completely bypass all technical security controls. Secure areas are protected through multiple layered physical security measures.

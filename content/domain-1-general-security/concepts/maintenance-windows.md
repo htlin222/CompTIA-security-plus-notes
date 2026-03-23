@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Maintenance Windows?
+> It's like how your school does construction work during summer break instead of during class. Maintenance windows are scheduled times when nobody's using the system, so updates and fixes can happen without bothering anyone.
+
 ## Definition
 
 Maintenance windows are pre-scheduled time periods during which IT systems can be taken offline or modified for updates, patches, configuration changes, and other maintenance activities. By concentrating changes in defined windows—typically during low-usage periods (nights, weekends)—organizations minimize disruption to users and business operations while ensuring changes are implemented in a controlled, coordinated manner.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Need to Know?
+> Even if you have the highest-level library card, you still can't check out a book unless you actually need it for your project. Need to know means you only get information that's relevant to your job right now.
+
 ## Definition
 
 The need-to-know principle restricts access to information based on whether an individual requires that specific information to perform their job function—regardless of their security clearance level. In classified environments, a person with a Top Secret clearance still cannot access Top Secret information they have no operational need for. It is a data access control principle that works alongside security clearance levels to limit information exposure.

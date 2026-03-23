@@ -12,6 +12,9 @@ aliases:
   - "DRP"
 ---
 
+> [!eli5] ELI5: What is Disaster Recovery?
+> Remember when your phone died and you were relieved your photos were backed up to the cloud? Disaster recovery is a company's plan to get its computers, files, and systems back up and running after something really bad happens -- like a flood, a fire, or a big cyberattack. It spells out exactly what to do, who does it, and in what order, so the company can get back to normal as fast as possible.
+
 ## Overview
 
 Disaster Recovery (DR) is the subset of business continuity that specifically addresses restoring IT infrastructure, systems, and data after a catastrophic event. A Disaster Recovery Plan (DRP) defines the procedures, responsibilities, and technologies needed to recover from outages caused by natural disasters, cyberattacks, hardware failures, or human error. The DRP must be regularly tested and updated.

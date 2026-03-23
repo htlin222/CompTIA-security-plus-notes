@@ -11,6 +11,9 @@ aliases:
   - "Crypto Attacks"
 ---
 
+> [!eli5] ELI5: What are Cryptographic Attacks?
+> Think of a secret code you and your best friend use to pass notes in class. Cryptographic attacks are when someone figures out how to crack your code and read your private messages. Maybe they notice patterns, or maybe your code is too simple. Some attackers even trick you into using an easier code that's simpler to break. This is why computers need really strong codes (called encryption) to keep secrets safe, and why old, weak codes need to be replaced with better ones.
+
 ## Overview
 
 Cryptographic attacks target weaknesses in cryptographic algorithms, implementations, or key management practices to decrypt protected data, forge digital signatures, or bypass security controls. While modern algorithms are generally secure when properly implemented, flaws in implementation, key management, or the use of deprecated algorithms create exploitable vulnerabilities. The exam focuses on understanding attack types and knowing which algorithms are considered secure.

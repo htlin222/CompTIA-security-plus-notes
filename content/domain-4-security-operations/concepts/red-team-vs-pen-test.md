@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Red Team vs. Pen Test?
+> A pen test checks specific walls for weakness. A red team plays the full role of a bad guy, trying every trick over days or weeks to see if anyone even notices them sneaking around.
+
 ## Definition
 
 Red team engagements and penetration tests are both authorized offensive security assessments, but they differ significantly in scope, duration, objectives, and methodology. Penetration tests are time-boxed, scope-limited technical assessments that aim to find and document vulnerabilities. Red team engagements simulate full-spectrum adversary attacks over extended periods to test the organization's overall detection and response capabilities.

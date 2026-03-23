@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Trojan?
+> Remember the story of the wooden horse that soldiers hid inside? A trojan is software that looks like a fun game or useful tool, but once you install it, the bad stuff hiding inside comes out.
+
 ## Definition
 
 A Trojan (Trojan horse) is malware that disguises itself as or is bundled with legitimate, desirable software to trick users into installing it. Unlike viruses or worms, Trojans do not self-replicate—they rely on user action to install them. Once installed, they can create backdoors, steal data, download additional malware, or give attackers remote control of the compromised system.

@@ -11,6 +11,9 @@ aliases:
   - PUPS
 ---
 
+> [!eli5] ELI5: What are Potentially Unwanted Programs?
+> These are annoying apps that sneak onto your computer when you install something else -- like browser toolbars you never asked for or pop-up ads. They're not exactly harmful, but they're definitely not welcome.
+
 ## Definition
 
 Potentially Unwanted Programs (PUPs) are software applications that users typically did not intentionally install and that may negatively impact device performance, security, or privacy. They include adware (displays unwanted advertisements), browser toolbars (that redirect searches and track browsing), and software bundled with free applications without clear disclosure. While not strictly malicious, PUPs can collect personal data, slow systems, and sometimes serve as a stepping stone to more serious malware.

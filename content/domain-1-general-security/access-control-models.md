@@ -15,6 +15,9 @@ aliases:
   - "ABAC"
 ---
 
+> [!eli5] ELI5: What are Access Control Models?
+> You know how some classrooms let the teacher decide who can borrow supplies (the teacher picks), while other classrooms have strict rules posted on the wall that nobody can change? Access control models are like different sets of rules for deciding who gets to use what. Some let the owner choose, some follow strict labels, and some give access based on your job or role. Each set of rules works better in different situations.
+
 ## Overview
 
 Access control models are formal frameworks that dictate how access decisions are made within a system. They define the relationship between subjects (users, processes) and objects (files, resources) and establish rules for granting or denying access. Choosing the correct model depends on organizational needs, regulatory requirements, and the sensitivity of data being protected.

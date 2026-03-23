@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Birthday Attack?
+> In a class of just 23 kids, there's a 50% chance two share a birthday. A birthday attack uses this same surprising math -- it's easier than you'd think to find two different files that produce the same digital fingerprint.
+
 ## Definition
 
 A birthday attack is a cryptographic attack that exploits the birthday paradox—a probability phenomenon showing that in a group of only 23 people, there's a 50% chance two share a birthday. Applied to cryptography, it means that finding any two inputs that produce the same hash output (a collision) requires far fewer attempts than finding a specific hash. This is the basis for attacking hash functions used in digital signatures and integrity verification.

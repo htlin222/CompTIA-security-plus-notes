@@ -10,6 +10,9 @@ aliases:
   - DNSSEC
 ---
 
+> [!eli5] ELI5: What is DNSSEC?
+> DNSSEC adds a special stamp to internet address lookups that proves the answer is real and hasn't been tampered with -- like a wax seal on a letter that shows it hasn't been opened.
+
 ## Definition
 
 DNSSEC (DNS Security Extensions) is a suite of extensions to the DNS protocol that adds cryptographic authentication to DNS responses. DNSSEC signs DNS records with digital signatures using public-key cryptography, allowing resolvers to verify that the records they receive are authentic and have not been tampered with. It protects against DNS spoofing and cache poisoning attacks.

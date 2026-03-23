@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are the Risks of Automation?
+> If you teach a robot to do something wrong, it will do that wrong thing really fast, over and over. Automation risks are the bad things that happen when nobody double-checks the robot's instructions.
+
 ## Definition
 
 Security automation introduces unique risks that must be carefully managed to prevent the automation itself from becoming a security liability. These risks include the amplification of incorrect processes, the challenge of securely managing credentials used by automated tools, and the creation of single points of failure in the security operation when automation is unavailable.

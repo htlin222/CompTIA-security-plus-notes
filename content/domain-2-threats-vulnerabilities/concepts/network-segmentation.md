@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Network Segmentation?
+> It's like dividing a ship into watertight sections. If one section floods, the water stays there and doesn't sink the whole ship. Segmentation keeps a hacked part of the network from spreading to everything else.
+
 ## Definition
 
 Network segmentation divides a network into isolated zones or segments—separated by firewalls, VLANs, or other controls—to contain the spread of threats and limit an attacker's ability to move laterally between systems. Even if one segment is compromised, segmentation prevents the attacker from freely accessing other parts of the network, reducing the blast radius of a security incident.

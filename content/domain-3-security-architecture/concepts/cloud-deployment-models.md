@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Cloud deployment models?
+> It's like choosing where to park your car: a public garage anyone can use, your own private garage, or a mix of both. Cloud deployment models describe who gets to share the computers and how they are set up.
+
 ## Definition
 
 Cloud deployment models define how cloud computing infrastructure is owned, managed, and shared. The choice of deployment model significantly impacts the security posture, compliance obligations, cost, and control available to the organization. Each model represents a different balance between operational flexibility and security control.

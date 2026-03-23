@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Decommissioning?
+> When a car is too old to fix safely, you scrap it properly instead of leaving it on the street. Decommissioning is safely getting rid of old computers so their leftover data doesn't fall into the wrong hands.
+
 ## Definition
 
 Decommissioning is the process of securely retiring systems, applications, or hardware that have reached end-of-life and can no longer receive security patches or vendor support. Proper decommissioning includes data sanitization (wiping or destroying storage media), revoking associated accounts and certificates, updating network documentation, and ensuring no sensitive data remains on the retired system.

@@ -10,6 +10,9 @@ aliases:
   - ABAC
 ---
 
+> [!eli5] ELI5: What is Attribute-Based Access Control?
+> Instead of just checking your name badge, ABAC checks lots of details -- like what department you are in, what time it is, and where you are -- before deciding if you can come in.
+
 ## Definition
 
 Attribute-Based Access Control (ABAC) is an access control model where access decisions are made based on attributes associated with users, resources, and the environment. Unlike RBAC which uses static roles, ABAC evaluates dynamic conditions such as a user's department, their location, the time of day, device compliance status, and resource classification to grant or deny access.

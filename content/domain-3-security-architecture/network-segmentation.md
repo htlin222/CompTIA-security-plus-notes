@@ -11,6 +11,9 @@ aliases:
   - "Network Segmentation"
 ---
 
+> [!eli5] ELI5: What is Network Segmentation?
+> You know how a submarine has separate compartments with heavy doors? If water floods one room, the doors keep it from spreading to the rest of the submarine. Network segmentation works the same way -- it divides a big network into smaller sections with barriers between them. If a hacker breaks into one section, they cannot easily reach everything else. It limits the damage.
+
 ## Overview
 
 Network segmentation is the practice of dividing a network into smaller, isolated segments or subnets, each with its own security controls and access policies. Segmentation limits the blast radius of a breach by preventing attackers from moving laterally across the entire network. It is a foundational element of zero trust architecture and defense in depth.

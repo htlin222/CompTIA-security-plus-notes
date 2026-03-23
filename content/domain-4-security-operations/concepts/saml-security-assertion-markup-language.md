@@ -10,6 +10,9 @@ aliases:
   - SAML
 ---
 
+> [!eli5] ELI5: What is SAML?
+> SAML is a language that lets one system tell another, "I checked this person's ID and they are who they say they are." It is a trusted letter of introduction between computers.
+
 ## Definition
 
 SAML (Security Assertion Markup Language) is an XML-based open standard for exchanging authentication and authorization data between an Identity Provider (IdP) and a Service Provider (SP). In SSO implementations, SAML allows a user authenticated by the IdP to access the SP's resources without re-authenticating, as the SP accepts the SAML assertion from the trusted IdP as proof of the user's identity.

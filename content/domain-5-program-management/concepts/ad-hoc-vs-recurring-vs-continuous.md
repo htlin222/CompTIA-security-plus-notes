@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Ad Hoc vs. Recurring vs. Continuous?
+> Ad hoc is checking your bike after you crash. Recurring is checking it every Saturday. Continuous is having a sensor that beeps the moment something goes wrong. Companies check their security the same three ways.
+
 ## Definition
 
 Risk and security assessments can be performed on three schedules: ad hoc assessments are triggered by a specific event (e.g., a breach, new system deployment, or regulatory change); recurring assessments happen on a defined schedule (e.g., annual penetration tests or quarterly vulnerability scans); and continuous assessments use automated tooling to monitor the environment in real time. Each approach has trade-offs in cost, depth, and timeliness.

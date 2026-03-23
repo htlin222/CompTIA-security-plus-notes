@@ -11,6 +11,9 @@ aliases:
   - "Risk Assessment"
 ---
 
+> [!eli5] ELI5: What is Risk Assessment?
+> It's like looking at all the things that could go wrong on a field trip and figuring out which ones to worry about most. Crossing a busy road? That's high risk. Getting a mosquito bite? Not great, but not a big deal. A risk assessment helps a company look at each danger, decide how likely it is to happen and how bad it would be, and then focus on fixing the scariest ones first.
+
 ## Overview
 
 A risk assessment is the evaluation phase of risk management where identified threats and vulnerabilities are analyzed to determine their likelihood and potential impact. Organizations use qualitative, quantitative, or hybrid approaches to rank risks and decide which ones require immediate attention. Regular risk assessments ensure that the security posture adapts to evolving threats.

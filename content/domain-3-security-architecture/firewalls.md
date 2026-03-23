@@ -11,6 +11,9 @@ aliases:
   - "Firewalls"
 ---
 
+> [!eli5] ELI5: What are Firewalls?
+> A firewall is like a bouncer at the door of a club. It checks everyone trying to come in or go out and only lets through the people who are on the list. If someone suspicious shows up, the bouncer turns them away. On a computer network, a firewall checks all the data trying to enter or leave and blocks anything that looks dangerous or breaks the rules.
+
 ## Overview
 
 A firewall is a network security device or software that monitors and controls incoming and outgoing traffic based on predetermined security rules. Firewalls establish a barrier between trusted internal networks and untrusted external networks. They are the most fundamental network security control and are deployed at network perimeters, between zones, and on individual hosts.

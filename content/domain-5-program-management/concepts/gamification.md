@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Gamification?
+> It's turning security training into a game with points, badges, and leaderboards so people actually want to learn. Just like earning gold stars in class makes learning fun, gamification makes security training more engaging.
+
 ## Definition
 
 Gamification in security awareness training applies game design elements — such as points, leaderboards, badges, challenges, competitions, and rewards — to training programs to increase employee engagement, motivation, and knowledge retention. Traditional compliance-driven training (click-through slides) has low retention rates; gamified approaches make learning interactive, competitive, and memorable, resulting in better security behavior change.

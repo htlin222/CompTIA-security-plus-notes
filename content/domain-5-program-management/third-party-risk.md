@@ -12,6 +12,9 @@ aliases:
   - "TPRM"
 ---
 
+> [!eli5] ELI5: What is Third-Party Risk?
+> Say you give your house key to a dog walker so they can come in while you're at school. You trust them, but what if they lose the key or leave the door unlocked? Third-party risk is the danger that comes from sharing your stuff (data, systems, or access) with outside helpers like vendors or partners. If their security is weak, bad guys could get to your data through them -- even if your own locks are strong.
+
 ## Overview
 
 Third-party risk arises whenever an organization shares data, systems, or access with external entities such as vendors, contractors, cloud providers, or business partners. A compromise at a third party can directly impact your organization. Managing this risk requires due diligence before onboarding, continuous monitoring during the relationship, and secure offboarding at termination.

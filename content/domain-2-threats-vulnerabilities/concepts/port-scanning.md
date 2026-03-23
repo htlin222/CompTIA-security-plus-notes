@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Port Scanning?
+> It's like walking down a hallway and trying every door handle to see which rooms are unlocked. The attacker checks which "doors" on a computer are open and what's behind them.
+
 ## Definition
 
 Port scanning is a reconnaissance technique used to enumerate which TCP and UDP ports are open on a target system, revealing what services and potentially what software versions are running. It is typically one of the first steps in a cyberattack or penetration test—providing attackers with a map of the target's exposed services and potential attack vectors. Nmap is the most widely used port scanning tool.

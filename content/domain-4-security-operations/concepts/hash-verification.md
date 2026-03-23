@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Hash Verification?
+> A hash is like a fingerprint for a file. If even one tiny thing changes, the fingerprint looks completely different, so you can tell right away if someone tampered with it.
+
 ## Definition
 
 Hash verification in digital forensics is the process of computing a cryptographic hash value of both the original evidence and the forensic copy (image) and comparing them to verify that the copy is identical to the original, bit-for-bit. A matching hash proves that the forensic copy has not been altered and accurately represents the original evidence, supporting its admissibility in legal proceedings.

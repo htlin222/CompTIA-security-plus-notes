@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Policies, Standards, Baselines, Guidelines, and Procedures?
+> Policies are the big rules ("be safe online"). Standards say exactly how ("use this type of lock"). Baselines are the minimum settings. Guidelines are helpful suggestions. Procedures are step-by-step instructions. Together, they go from general to specific.
+
 ## Definition
 
 The governance documentation hierarchy represents a structured approach to security governance, ranging from high-level mandatory directives down to specific flexible guidance. **Policies** are high-level mandatory statements of direction (e.g., "All data must be encrypted"). **Standards** are specific mandatory requirements that implement policies (e.g., "AES-256 must be used for data at rest"). **Baselines** are minimum security configurations. **Guidelines** are recommended (non-mandatory) best practices. **Procedures** are step-by-step instructions for performing specific tasks.

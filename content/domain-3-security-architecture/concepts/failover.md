@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Failover?
+> Failover is like having a spare tire that automatically puts itself on the car the moment the main tire goes flat. The system switches to a backup so fast that you barely notice anything went wrong.
+
 ## Definition
 
 Failover is the automatic or manual process of switching from a failed primary system to a standby secondary system in order to maintain service continuity. Automatic failover detects failure via health monitoring and switches without human intervention; manual failover requires an administrator to initiate the switch. The speed and reliability of failover is a key component of high availability (HA) design.

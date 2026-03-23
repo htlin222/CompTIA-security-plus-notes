@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Adversary Emulation?
+> It is like playing pretend as the bad guy to see if the guards can catch you. Security teams act out real attack tricks to test if their defenses actually work.
+
 ## Definition
 
 Adversary emulation is a threat-hunting and security testing technique that involves simulating the tactics, techniques, and procedures (TTPs) of known threat actors to evaluate an organization's detection and response capabilities. Unlike general penetration testing, adversary emulation is guided by threat intelligence about specific threat groups and their known attack patterns, often mapped to frameworks like MITRE ATT&CK.

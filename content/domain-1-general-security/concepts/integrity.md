@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Integrity?
+> Integrity means your information stays exactly the way you left it. Nobody sneaks in and changes your answers on a test, swaps numbers in a report, or messes with your files.
+
 ## Definition
 
 Integrity is the second pillar of the CIA Triad, ensuring that data and systems remain accurate, complete, and unmodified by unauthorized parties. Threats to integrity include data tampering, unauthorized modifications, man-in-the-middle attacks that alter data in transit, and malware that corrupts files. Controls that protect integrity include hashing, digital signatures, access controls, and checksums.

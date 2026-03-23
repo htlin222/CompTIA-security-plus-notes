@@ -10,6 +10,9 @@ aliases:
   - DMARC
 ---
 
+> [!eli5] ELI5: What is DMARC?
+> DMARC is the boss that tells email servers what to do when a message fails its identity checks -- reject it, flag it, or let it through. It also sends reports so you know who is faking your address.
+
 ## Definition
 
 DMARC (Domain-based Message Authentication, Reporting & Conformance) is an email authentication protocol that builds on SPF and DKIM by adding a policy layer that instructs receiving mail servers what to do when incoming messages fail SPF or DKIM checks. DMARC also provides reporting mechanisms that allow domain owners to monitor authentication failures and detect spoofing attempts.

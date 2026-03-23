@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Certificate-Based Authentication?
+> It's like having a special signed letter from the principal that says "this person is who they claim to be." Instead of a password, your computer shows this trusted letter to prove your identity.
+
 ## Definition
 
 Certificate-based authentication uses X.509 digital certificates issued by a trusted Certificate Authority (CA) within a Public Key Infrastructure (PKI) to verify identity. The authenticating party presents their certificate, and the relying party validates it against the CA's trust chain. This can be used for mutual authentication (both sides verify each other), such as in smart card logon, TLS client certificates, or VPN authentication.

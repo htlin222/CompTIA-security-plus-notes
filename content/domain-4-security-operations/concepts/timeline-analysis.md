@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Timeline Analysis?
+> Timeline analysis puts all the events in order by time, like reading a story from beginning to end. It helps you understand exactly how an attack unfolded, step by step.
+
 ## Definition
 
 Timeline analysis is a digital forensics technique that reconstructs the chronological sequence of events on a system by correlating timestamps from file system metadata, registry entries, browser history, event logs, and other artifacts. A detailed timeline helps investigators understand exactly what happened, when it happened, and in what order — essential for understanding the full scope of an attack.

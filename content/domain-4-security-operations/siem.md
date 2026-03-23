@@ -11,6 +11,9 @@ aliases:
   - "SIEM"
 ---
 
+> [!eli5] ELI5: What is SIEM?
+> Think of a giant bulletin board in a security guard's office where every camera, door sensor, and alarm in the building reports what it sees. A SIEM is that bulletin board for computers. It collects alerts from every device across the entire network, puts them all in one place, and connects the dots. If the front door alarm and a camera alert happen at the same time, the SIEM figures out they are probably related and warns the security team.
+
 ## Overview
 
 Security Information and Event Management (SIEM) combines Security Information Management (SIM) and Security Event Management (SEM) into a single platform. SIEM collects log data from across the organization, normalizes it, correlates events, and generates alerts for potential security incidents. It is the central nervous system of a security operations center (SOC).

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is HIPAA?
+> HIPAA is the law that keeps your doctor visits private. Hospitals and clinics can't share your health records with strangers -- they have to lock that information up tight and only let the right people see it.
+
 ## Definition
 
 The Health Insurance Portability and Accountability Act (HIPAA) of 1996 is a US federal law that establishes national standards for protecting Protected Health Information (PHI). HIPAA applies to covered entities (healthcare providers, health plans, healthcare clearinghouses) and their business associates (vendors that handle PHI on their behalf). The HIPAA Security Rule specifically addresses electronic PHI (ePHI) and requires administrative, physical, and technical safeguards.

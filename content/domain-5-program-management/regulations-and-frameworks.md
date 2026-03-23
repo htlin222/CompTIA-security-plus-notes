@@ -11,6 +11,9 @@ aliases:
   - "Regulations and Frameworks"
 ---
 
+> [!eli5] ELI5: What are Regulations and Frameworks?
+> Regulations are like traffic laws -- the government says you must stop at red lights, and you'll get a ticket if you don't. Frameworks are more like a coach's playbook -- a set of best plays you can choose to follow to win the game. Companies use both: they have to follow the laws (regulations), and they choose proven playbooks (frameworks) to build a strong security program. Together, these give the company a clear set of instructions to keep data safe.
+
 ## Overview
 
 Regulations are legally binding requirements imposed by governments, while frameworks are structured best-practice guidelines that organizations adopt voluntarily or as part of contractual obligations. Together, they provide the blueprint for building and measuring a security program. The SY0-701 exam requires familiarity with major regulations and frameworks and when each applies.

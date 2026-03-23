@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is the Windows Event Log?
+> Windows Event Log is the built-in diary that every Windows computer keeps. It records logins, errors, and security events, giving investigators a trail to follow when something goes wrong.
+
 ## Definition
 
 Windows Event Log is the built-in logging infrastructure in Windows operating systems that records security, system, application, and operational events. Security-relevant logs capture authentication events, privilege use, policy changes, and object access. Windows Event Logs are a primary data source for SIEMs in Windows-based environments, and specific Event IDs are critical indicators for detecting attacks, authentication failures, and suspicious activity.

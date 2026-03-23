@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Password hashing?
+> Instead of writing down your password in a notebook (where someone could read it), the computer scrambles it into a secret code and stores that instead. Even if a thief steals the code, they cannot easily figure out what the original password was.
+
 ## Definition
 
 Password hashing is the practice of storing a one-way cryptographic hash of a password rather than the password itself, so that even if the password database is compromised, the attacker cannot directly retrieve the plaintext passwords. Modern password hashing uses salting (adding unique random data before hashing) and key stretching (deliberately slow algorithms) to resist brute-force and rainbow table attacks.

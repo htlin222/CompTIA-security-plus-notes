@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Biometric Authentication?
+> Instead of a password, the computer looks at something unique about your body -- like your fingerprint or your face -- to know it's really you. It's hard to fake because no two people have the exact same fingerprint.
+
 ## Definition
 
 Biometric authentication uses physiological or behavioral characteristics (fingerprints, retina/iris scans, facial recognition, voice patterns) to verify identity. Biometric systems are evaluated using two error rates: the False Acceptance Rate (FAR)—the rate at which unauthorized users are incorrectly granted access—and the False Rejection Rate (FRR)—the rate at which authorized users are incorrectly denied access. These rates trade off against each other as the system's sensitivity is adjusted.

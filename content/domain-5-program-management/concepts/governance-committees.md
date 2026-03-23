@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Governance Committees?
+> It's like a student council but for security. People from different departments sit together to review the rules, approve changes, and decide how to spend the security budget.
+
 ## Definition
 
 Governance committees are formal, cross-functional bodies composed of representatives from IT, security, legal, compliance, HR, finance, and business units that oversee the organization's security and risk management program. Common examples include the Information Security Steering Committee, Risk Committee, and Privacy Committee. These bodies review the organization's security posture, approve new policies, allocate security budgets, and escalate significant risks to the board.

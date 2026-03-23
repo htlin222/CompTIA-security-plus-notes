@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is API security?
+> An API is like a drive-through window -- apps place orders through it to get data or services. API security makes sure only the right customers can place orders, nobody tampers with the menu, and no one sneaks in through the window.
+
 ## Definition
 
 API security encompasses the practices, tools, and policies used to protect Application Programming Interfaces from unauthorized access, abuse, and exploitation. In cloud environments, virtually all services are accessed and managed through APIs, making API security a critical component of the overall cloud security posture. Threats include broken authentication, injection attacks, and excessive data exposure.

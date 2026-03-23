@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Accounting?
+> You know how a teacher keeps a sign-in sheet to track who was in class and when? Accounting in security is keeping a log of everything people do on the computer so you can look back later and see who did what.
+
 ## Definition
 
 Accounting is the third component of the AAA (Authentication, Authorization, Accounting) framework. It involves recording what authenticated and authorized users do on systems and networks, creating an audit trail that supports forensic investigations, compliance reporting, and anomaly detection. Accounting data typically includes login times, commands executed, resources accessed, and session durations.

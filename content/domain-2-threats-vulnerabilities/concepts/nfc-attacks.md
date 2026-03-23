@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are NFC Attacks?
+> NFC is the "tap to pay" on your phone or card. These attacks try to eavesdrop on or mess with that tap by getting a sneaky device close enough to listen in or relay your payment somewhere else.
+
 ## Definition
 
 NFC (Near Field Communication) attacks target the short-range wireless communication protocol used in contactless payment cards, transit passes, and mobile payment systems. Because NFC operates at very close range (typically less than 10 cm), attacks were historically considered difficult, but amplification devices have extended the practical range. Attacks include eavesdropping on transactions, relay attacks, and data manipulation.

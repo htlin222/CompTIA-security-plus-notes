@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Compliance Reporting?
+> It's like bringing your report card home to show your parents. Compliance reporting is when a company writes up a summary showing regulators or bosses that it followed all the rules and fixed any problems that came up.
+
 ## Definition
 
 Compliance reporting is the process of documenting and communicating an organization's compliance status to internal stakeholders (board, executives) or external parties (regulators, auditors, customers). Reports demonstrate that required controls are in place, policies are being followed, and any exceptions or violations have been addressed. Accurate compliance reporting is a legal obligation under many regulatory frameworks.

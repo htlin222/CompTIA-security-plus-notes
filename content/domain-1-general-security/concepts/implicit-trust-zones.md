@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Implicit Trust Zones?
+> In the old days, once you got inside the building, everyone assumed you belonged there. An implicit trust zone is that "inside the building" area where nobody checks your badge anymore -- and that's exactly the weakness Zero Trust tries to fix.
+
 ## Definition
 
 Implicit trust zones are network areas where users and systems are automatically trusted simply because of their location—typically the internal network or corporate LAN. Traditional "castle and moat" security granted implicit trust to anyone inside the perimeter. Zero Trust architecture explicitly rejects this model, treating every request as potentially hostile regardless of whether it originates from inside or outside the network perimeter.

@@ -11,6 +11,9 @@ aliases:
   - "BIA"
 ---
 
+> [!eli5] ELI5: What is Business Impact Analysis?
+> Picture this: you're packing for a camping trip and you need to decide what's most important to bring. Your water bottle matters more than your playing cards. A business impact analysis is when a company makes a list of everything it does and figures out which parts matter most. If the internet goes down, which things need to come back first? How long can each thing be broken before it's a real problem? This helps them plan ahead so the most important stuff gets fixed first.
+
 ## Overview
 
 A Business Impact Analysis (BIA) is a systematic process for determining the potential effects of an interruption to critical business operations. It identifies which processes are most vital, quantifies the financial and operational impact of downtime, and establishes recovery priorities. The BIA is a foundational input to both business continuity and disaster recovery planning.

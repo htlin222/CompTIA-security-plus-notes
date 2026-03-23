@@ -11,6 +11,9 @@ aliases:
   - "IR"
 ---
 
+> [!eli5] ELI5: What is Incident Response?
+> Think about a fire drill at school. Before any fire happens, you practice what to do: who calls for help, which exit to use, where to meet outside. Incident response is a plan like that, but for cyberattacks. It spells out what the team should do step by step when something bad happens -- how to spot the problem, stop it from spreading, clean it up, and learn from it so it does not happen again.
+
 ## Overview
 
 Incident response (IR) is the organized approach to addressing and managing the aftermath of a security breach or cyberattack. The goal is to handle the situation in a way that limits damage, reduces recovery time and costs, and preserves evidence for potential legal action. A well-defined IR plan is essential for every organization and is heavily tested on the SY0-701 exam.

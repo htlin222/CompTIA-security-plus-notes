@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Secure Email Gateway?
+> A secure email gateway sits between the internet and your inbox, checking every email for threats before it reaches you. It is like a metal detector at an airport entrance.
+
 ## Definition
 
 A secure email gateway (SEG) is a security appliance or cloud service that sits in the mail flow path and inspects all inbound and outbound email messages for threats, policy violations, and unwanted content. It combines multiple security capabilities — spam filtering, anti-phishing, malware scanning, DLP, and email authentication enforcement — into a single email security solution.

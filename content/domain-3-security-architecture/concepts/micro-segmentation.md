@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Micro-segmentation?
+> Regular segmentation divides a building into floors. Micro-segmentation goes further and puts a locked door on every single room. Each individual program or service gets its own tiny protected space.
+
 ## Definition
 
 Micro-segmentation is a highly granular network security approach that creates individual security perimeters around specific workloads, applications, or even individual virtual machines — far more granular than traditional VLAN-based segmentation. Implemented primarily through software-defined networking and virtualization platforms, micro-segmentation limits lateral movement by applying zero-trust principles within the network interior.

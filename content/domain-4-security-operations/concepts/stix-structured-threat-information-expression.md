@@ -10,6 +10,9 @@ aliases:
   - STIX
 ---
 
+> [!eli5] ELI5: What is STIX?
+> STIX is a common language for describing threats so different organizations can share what they know. It is like writing a police report in a format every department can read.
+
 ## Definition
 
 STIX (Structured Threat Information eXpression) is a standardized, machine-readable language for describing cybersecurity threat information. Developed by MITRE and now maintained by OASIS, STIX provides a common format for expressing threat intelligence including threat actors, attack campaigns, indicators of compromise (IoCs), malware details, and vulnerability information.

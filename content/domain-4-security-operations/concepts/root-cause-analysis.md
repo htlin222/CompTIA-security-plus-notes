@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Root Cause Analysis?
+> Root cause analysis keeps asking "why" until you find the real reason something went wrong. The server crashed -- why? It ran out of memory -- why? A program had a bug. Now you fix the bug.
+
 ## Definition
 
 Root cause analysis in EDR/XDR is the process of tracing an attack or security incident back through the complete chain of events to identify the original entry point and the sequence of actions that led to the observed impact. EDR platforms provide the telemetry and visualization tools needed to reconstruct attack chains from initial access through lateral movement to the final impact.

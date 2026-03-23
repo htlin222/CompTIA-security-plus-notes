@@ -10,6 +10,9 @@ aliases:
   - JIT
 ---
 
+> [!eli5] ELI5: What is Just-in-time Access?
+> Instead of giving someone a permanent key, JIT access gives them a temporary key that only works for a short time. Once the job is done, the key stops working automatically.
+
 ## Definition
 
 Just-in-time (JIT) access is a privileged access management principle that eliminates standing privileged access by granting elevated permissions only when explicitly requested and needed, for a defined time period, after which access is automatically revoked. This significantly reduces the risk of compromised accounts being used for privilege escalation because no user maintains persistent elevated access.

@@ -12,6 +12,9 @@ aliases:
   - "IPS"
 ---
 
+> [!eli5] ELI5: What is IDS/IPS?
+> Think of IDS like a security camera that watches everything and sounds an alarm when it spots trouble. IPS is like a security camera plus a guard -- it does not just alert you, it actually stops the bad guy in their tracks. Together, they watch all the activity on a computer network, looking for anything suspicious, and either warn someone or block the threat right away.
+
 ## Overview
 
 Intrusion Detection Systems (IDS) monitor network traffic or host activity to identify suspicious behavior and generate alerts. Intrusion Prevention Systems (IPS) go further by actively blocking detected threats in real time. Both use signature-based, anomaly-based, or heuristic detection methods. IDS/IPS are critical components of a defense-in-depth strategy.

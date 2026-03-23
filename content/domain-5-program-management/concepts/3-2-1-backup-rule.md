@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is the 3-2-1 Backup Rule?
+> Keep 3 copies of your homework, save them in 2 different places (like your backpack and your computer), and keep 1 copy at a friend's house. That way, no single disaster can wipe out everything.
+
 ## Definition
 
 The 3-2-1 backup rule is a widely recognized best practice for data protection: maintain 3 copies of data (the original plus two backups), stored on 2 different media types (e.g., disk and tape), with at least 1 copy stored off-site. This strategy protects against hardware failure, site-level disasters, and ransomware attacks by ensuring that no single event can destroy all copies.

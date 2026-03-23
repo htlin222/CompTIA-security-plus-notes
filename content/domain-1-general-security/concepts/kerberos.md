@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Kerberos?
+> It's like getting a wristband at a fair. You show your ID once at the front gate, they give you a wristband, and then you just flash the wristband at each ride instead of showing your ID every time.
+
 ## Definition
 
 Kerberos is a network authentication protocol that uses symmetric key cryptography and a trusted third party—the Key Distribution Center (KDC)—to provide mutual authentication without transmitting passwords over the network. It issues time-limited tickets that prove identity to services, making it the foundation of Windows Active Directory authentication. Kerberos operates on port 88.

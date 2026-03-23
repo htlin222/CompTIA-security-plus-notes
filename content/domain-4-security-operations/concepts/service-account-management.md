@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Service Account Management?
+> Service accounts are used by programs instead of people. Managing them means making sure those robot accounts have only the access they need and their passwords get changed regularly.
+
 ## Definition
 
 Service account management involves the tracking, securing, and governance of non-human accounts used by applications, services, automated processes, and scripts to authenticate and perform operations. Service accounts are frequently overlooked in identity management programs, yet they often hold significant privileges and can be exploited by attackers for lateral movement or persistence.

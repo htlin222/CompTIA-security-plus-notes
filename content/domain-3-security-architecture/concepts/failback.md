@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Failback?
+> When your main bike gets a flat tire, you ride your backup bike. Failback is when the flat tire is fixed and you switch back to riding your main bike again.
+
 ## Definition
 
 Failback is the process of returning operations back to the primary system after it has been restored to normal functioning following a failure event that caused a failover to the secondary/standby system. Failback must be carefully planned and executed to minimize disruption, as moving traffic back to the primary involves another transition period and potential brief service interruption.

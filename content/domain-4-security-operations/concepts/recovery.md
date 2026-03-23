@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Recovery?
+> Recovery is getting everything back to normal after an incident. Like cleaning up after a flood -- drying things out, fixing the damage, and making sure it will not flood again.
+
 ## Definition
 
 Recovery is the incident response phase in which affected systems are restored to normal, verified-clean operations after successful eradication of the threat. Recovery must be done carefully to ensure the threat has been fully eliminated before systems return to production, and enhanced monitoring should remain in place to detect any signs of re-infection or incomplete eradication.

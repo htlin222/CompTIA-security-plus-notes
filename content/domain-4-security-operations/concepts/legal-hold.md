@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Legal Hold?
+> A legal hold means "do not delete anything" because it might be needed for a court case. It is like when a teacher says "nobody throw away your test papers" until grades are finalized.
+
 ## Definition
 
 A legal hold (also known as a litigation hold or preservation order) is a formal directive issued by legal counsel or management to suspend routine document destruction and data retention policies for data that may be relevant to anticipated or ongoing litigation, regulatory investigation, or government inquiry. Security and IT teams must immediately preserve all relevant electronically stored information (ESI) when a legal hold is issued.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is NIST SP 800-53?
+> Think of it as a giant catalog of every safety rule a government building could use -- from door locks to alarm systems to visitor sign-in sheets. Agencies pick the controls they need from this catalog to protect their computers and data.
+
 ## Definition
 
 NIST Special Publication 800-53 is a comprehensive catalog of security and privacy controls for federal information systems and organizations, maintained by the National Institute of Standards and Technology. It is the primary control framework for US federal agencies implementing the Federal Information Security Management Act (FISMA) and forms the basis for FedRAMP cloud security requirements. SP 800-53 Rev 5 organizes controls into 20 control families covering areas from access control to supply chain risk management.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are DNS Sinkholes?
+> When a bad program on your computer tries to call home to the bad guys, a DNS sinkhole redirects that call to a dead end. The bad program can't talk to anyone, and the security team knows which computer is infected.
+
 ## Definition
 
 DNS sinkholes are a defensive deception technique where known malicious domains (used for botnet command-and-control, malware distribution, or phishing) are redirected to a controlled "sinkhole" server rather than their actual malicious destination. This disrupts attacker communications and, critically, reveals which internal hosts are attempting to reach those malicious domains—identifying infected or compromised systems.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Identity Governance?
+> Identity governance is like a regular audit of who has keys to which rooms. It makes sure nobody has access they should not, and that old permissions get cleaned up.
+
 ## Definition
 
 Identity governance is the set of processes and policies used to ensure that user access rights remain appropriate, necessary, and compliant over time. It includes periodic access reviews (also called access certifications) in which managers or system owners review and either certify or revoke the access rights of their team members, preventing privilege creep and ensuring least privilege is maintained.

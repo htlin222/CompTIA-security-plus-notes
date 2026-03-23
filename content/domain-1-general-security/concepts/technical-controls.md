@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Technical Controls?
+> These are the security tools built right into the technology itself -- like a password on your phone, a firewall blocking bad websites, or software that scrambles your messages so only the right person can read them.
+
 ## Definition
 
 Technical controls (also called logical controls) are security measures implemented through technology—hardware, software, or firmware—to protect information systems and data. They are the most directly verifiable and automatable control category, and they form the middle layer of a defense-in-depth strategy between administrative (policy) controls and physical controls.

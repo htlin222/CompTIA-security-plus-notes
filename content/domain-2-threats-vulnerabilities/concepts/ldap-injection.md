@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is LDAP Injection?
+> A company has a digital address book for all its employees. LDAP injection is like tricking the search box into showing you everyone's information, even the stuff you're not supposed to see.
+
 ## Definition
 
 LDAP injection is an injection attack targeting applications that use LDAP (Lightweight Directory Access Protocol) queries to authenticate users or look up directory information. When user input is incorporated into LDAP queries without proper sanitization, attackers can modify the query structure to bypass authentication, enumerate user accounts, or access unauthorized directory information.

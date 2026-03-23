@@ -11,6 +11,9 @@ aliases:
   - VLANS
 ---
 
+> [!eli5] ELI5: What are VLANs (Virtual LANs)?
+> Imagine one big open-plan office, but you use invisible walls to create separate rooms. VLANs do this on a network switch -- they group certain computers together so they can only talk to each other, even though they all share the same physical equipment.
+
 ## Definition
 
 VLANs (Virtual Local Area Networks) are a Layer 2 network segmentation technique that logically divides a single physical switch into multiple isolated broadcast domains. Each VLAN acts as a separate network segment — traffic within a VLAN stays contained, and inter-VLAN routing requires a router or Layer 3 switch. VLANs are a foundational tool for network segmentation, enabling security isolation without requiring separate physical hardware.

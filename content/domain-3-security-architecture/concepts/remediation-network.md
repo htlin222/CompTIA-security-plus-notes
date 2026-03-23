@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Remediation network?
+> It's like the nurse's office at school. If a device is "sick" (missing updates or not following rules), it gets sent there to get fixed up before it is allowed back into the main network with everyone else.
+
 ## Definition
 
 A remediation network (also called a quarantine VLAN or remediation VLAN) is a restricted network segment to which NAC systems direct devices that fail compliance checks — such as devices with outdated antivirus, missing patches, or non-compliant configurations. While in the remediation VLAN, devices have limited network access sufficient to download required updates but cannot access production network resources.

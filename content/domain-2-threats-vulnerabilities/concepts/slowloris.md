@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Slowloris?
+> The attacker opens lots of connections to a website but talks reeeally slowly on each one, never finishing. The server politely waits for each to finish, and eventually it has no room left for real visitors.
+
 ## Definition
 
 Slowloris is an application-layer (Layer 7) denial-of-service attack tool and technique that holds many HTTP connections open simultaneously by sending partial HTTP request headers very slowly—one header at a time with long pauses between each. The server keeps each connection open waiting for the complete request, eventually exhausting its connection pool and refusing new legitimate connections.

@@ -11,6 +11,9 @@ aliases:
   - "Security Fundamentals"
 ---
 
+> [!eli5] ELI5: What are Security Concepts?
+> Security concepts are the basic rules everyone follows to keep information safe -- kind of like the safety rules you learn on the first day of school. They include ideas like "only share secrets with people who need to know," "don't give anyone more power than they need," and "keep records of who did what." These simple ideas guide every decision about protecting computers and data, no matter how big or complicated the system gets.
+
 ## Overview
 
 Security concepts form the bedrock of the CompTIA Security+ exam, encompassing the principles, terminology, and frameworks that guide all cybersecurity practices. Understanding these foundational ideas is essential for grasping how threats are identified, risks are managed, and systems are protected across an organization.

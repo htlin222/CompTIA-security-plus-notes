@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Digital signatures?
+> A digital signature is like signing a letter with invisible ink that only you can write but everyone can verify. It proves that you sent the message and that nobody changed it along the way.
+
 ## Definition
 
 A digital signature is a cryptographic mechanism that provides authenticity and integrity for digital data. The process involves the sender hashing the message content and then encrypting the hash value with their private key. The recipient decrypts the encrypted hash with the sender's public key and compares it to a freshly computed hash of the received message — if they match, the message is authentic and unaltered.

@@ -12,6 +12,9 @@ aliases:
   - "Pentest"
 ---
 
+> [!eli5] ELI5: What is Penetration Testing?
+> Have you ever asked a friend to try to sneak into your blanket fort to see if they could find a way in? Penetration testing is exactly that, but for computer systems. A company hires friendly hackers and gives them permission to try to break in. When they find a weak spot, they write a report so the company can fix it before a real bad guy finds the same hole.
+
 ## Overview
 
 Penetration testing is an authorized, simulated cyberattack performed to evaluate the security of systems, networks, and applications by attempting to exploit vulnerabilities. Unlike vulnerability scanning, pen testing actively exploits weaknesses to demonstrate real-world impact. Results inform remediation priorities and validate the effectiveness of existing security controls.

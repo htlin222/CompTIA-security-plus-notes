@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Zero-Day Vulnerabilities?
+> Nobody knows about the hole in the fence -- not even the people who built it. Since there's no fix yet, attackers who find it first can sneak through before anyone even realizes it exists.
+
 ## Definition
 
 Zero-day vulnerabilities are security flaws that are unknown to the software or hardware vendor and therefore have no official patch available. The term "zero-day" refers to the fact that developers have had zero days to address the flaw. Because no fix exists, systems remain vulnerable regardless of patch management practices, making zero-days highly valued by attackers and in the exploit market.

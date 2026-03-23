@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Threat Intelligence Enrichment?
+> Enrichment adds context to a basic alert. Instead of just seeing a suspicious address, enrichment tells you who owns it, where it is, and whether it has been seen in other attacks.
+
 ## Definition
 
 Threat intelligence enrichment is an automated process in SOAR platforms that queries external threat intelligence sources to add contextual information to security alerts before human analysts review them. By automatically looking up IP addresses, domains, file hashes, and email addresses in threat intelligence feeds, enrichment provides analysts with valuable context that speeds triage and reduces investigation time.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is OpenID Connect?
+> OpenID Connect lets you use one login (like Google) on many different websites. It is like one ID card that every store in the mall accepts.
+
 ## Definition
 
 OpenID Connect (OIDC) is a modern identity federation and authentication protocol that adds an identity layer on top of the OAuth 2.0 authorization framework. It enables service providers to verify the identity of users authenticated by an identity provider, using JSON Web Tokens (JWT) as the format for identity assertions. OIDC is widely used for web and mobile SSO, particularly for consumer-facing applications.

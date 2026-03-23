@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Honeypots?
+> A honeypot is a fake computer that looks real and valuable. It sits there waiting for a bad guy to interact with it. Since no real person would use it, anyone who touches it is up to no good -- and the alarm goes off.
+
 ## Definition
 
 Honeypots are decoy computer systems configured to simulate production servers or services, placed within or alongside a real network to attract and observe attackers. Any interaction with a honeypot is inherently suspicious—legitimate users have no reason to access it. Honeypots serve two purposes: detection (any access triggers an alert) and intelligence gathering (capturing attacker TTPs for analysis).

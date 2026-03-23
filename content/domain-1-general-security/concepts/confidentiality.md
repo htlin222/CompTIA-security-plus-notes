@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Confidentiality?
+> Confidentiality means keeping secrets secret. Only the people who are supposed to read your diary get to read it -- everyone else is locked out.
+
 ## Definition
 
 Confidentiality is the first pillar of the CIA Triad, focused on ensuring that sensitive information is accessible only to authorized individuals and protected from unauthorized disclosure. Threats to confidentiality include eavesdropping, data breaches, insider threats, and unencrypted data transmission. Controls include encryption, access controls, data classification, and need-to-know policies.

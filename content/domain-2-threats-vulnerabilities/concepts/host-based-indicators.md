@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Host-Based Indicators?
+> These are clues you find by looking directly at a computer -- unexpected programs running, new accounts nobody created, or files that were changed. It's like noticing someone rearranged your room.
+
 ## Definition
 
 Host-based indicators of compromise are artifacts and anomalies observed directly on a system that suggest malicious activity or compromise. Unlike network-based indicators, they are found through endpoint analysis—reviewing running processes, registry entries, scheduled tasks, user accounts, and file system changes. EDR (Endpoint Detection and Response) solutions are the primary tool for collecting and analyzing host-based IoCs at scale.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Jamming?
+> It's like someone blasting a loud horn right next to you while you're trying to have a conversation. The noise drowns out everything, and you can't communicate wirelessly anymore.
+
 ## Definition
 
 Wireless jamming is a denial-of-service attack that transmits radio frequency (RF) noise or interference on the same frequency band as a target wireless network, disrupting legitimate communication. By overwhelming the spectrum with noise, jamming prevents clients from connecting to or communicating with wireless access points. It is a physical-layer attack that does not require any knowledge of the target network's configuration.

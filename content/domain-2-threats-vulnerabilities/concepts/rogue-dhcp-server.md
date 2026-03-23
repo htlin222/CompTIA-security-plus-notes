@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Rogue DHCP Server?
+> When your computer joins a network, it asks for directions. A rogue DHCP server is like a fake information desk that gives you wrong directions, sending all your traffic through the attacker instead.
+
 ## Definition
 
 A rogue DHCP server is an unauthorized DHCP server on a network segment that races to respond to client DHCP requests before the legitimate server. When a client receives a response from the rogue server, it is assigned malicious network configuration—particularly a rogue default gateway (enabling traffic interception) and rogue DNS servers (enabling DNS spoofing). This enables a network-level man-in-the-middle attack.

@@ -12,6 +12,9 @@ aliases:
   - "MitM"
 ---
 
+> [!eli5] ELI5: What are On-Path Attacks?
+> Say you're passing notes to a friend in class, but someone sitting between you secretly reads each note, maybe even changes what it says, then passes it along. Neither you nor your friend realizes anyone is in the middle. That's an on-path attack -- the attacker sits between two people (or computers) who are talking, secretly reading or changing messages as they pass through. Both sides think they're talking directly to each other, but everything goes through the attacker first.
+
 ## Overview
 
 On-path attacks (formerly called man-in-the-middle attacks) occur when an attacker secretly positions themselves between two communicating parties, intercepting and potentially altering the data in transit. The attacker can eavesdrop on sensitive communications, steal credentials, inject malicious content, or modify transactions — all while both parties believe they are communicating directly with each other.

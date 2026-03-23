@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Critical Business Functions?
+> These are the things a company absolutely cannot live without -- like how you need water and food but could skip dessert. If these key activities stop, the company loses money, gets in legal trouble, or can't help its customers at all.
+
 ## Definition
 
 Critical business functions (CBFs) are the processes and operations that are essential to an organization's mission, survival, or regulatory compliance — those whose disruption would cause significant financial loss, reputational harm, safety risks, or legal liability. Identifying CBFs is the primary goal of the Business Impact Analysis (BIA), as CBFs determine recovery priorities, RTO/RPO targets, and resource allocation for continuity planning.

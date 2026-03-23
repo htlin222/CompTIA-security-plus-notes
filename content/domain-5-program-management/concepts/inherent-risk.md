@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Inherent Risk?
+> Riding a bike without a helmet, knee pads, or brakes is pretty risky. That's inherent risk -- the danger that exists before you add any safety gear. It helps you figure out how much protection you need.
+
 ## Definition
 
 Inherent risk is the level of risk that exists in a process, system, or activity before any controls are applied. It represents the raw, unmitigated exposure based on the nature of the threat and the organization's vulnerability to it. Understanding inherent risk helps organizations determine how much effort to invest in controls and how much residual risk will remain after controls are implemented.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Privileged Accounts?
+> These are the super-user accounts with the most power. They are like master keys that open every lock in the building, which makes them very valuable targets for attackers.
+
 ## Definition
 
 Privileged accounts are user accounts with elevated permissions that allow them to perform administrative or sensitive operations beyond those available to standard users. These accounts — including domain administrators, local admins, root accounts, and service accounts — represent the highest-value targets for attackers because compromising them often provides full control over systems or entire environments.

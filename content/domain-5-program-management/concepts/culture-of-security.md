@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Culture of Security?
+> It's when everyone at school looks out for each other -- if you see a stranger in the hallway, you tell a teacher instead of ignoring it. A culture of security means everyone feels safe speaking up about problems without getting in trouble.
+
 ## Definition
 
 A culture of security exists when every member of an organization understands their role in protecting information assets and feels empowered — not fearful — to report suspicious activity, ask security questions, and follow secure practices. Building this culture requires sustained effort from leadership, meaningful security awareness training, positive reinforcement for good security behaviors, and a non-punitive environment where mistakes can be reported without fear of blame.

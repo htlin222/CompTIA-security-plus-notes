@@ -13,6 +13,9 @@ aliases:
   - "High Availability"
 ---
 
+> [!eli5] ELI5: What are Resilience and Redundancy?
+> Have you ever noticed that airplanes have two engines when they really only need one to fly? That extra engine is redundancy -- a backup in case the first one fails. Resilience is the plane's ability to keep flying safely even when something goes wrong. In the computer world, this means having backup systems, extra copies of important data, and plans that kick in automatically so everything keeps working even during problems.
+
 ## Overview
 
 Resilience is the ability of a system to continue operating during adverse conditions, while redundancy eliminates single points of failure by duplicating critical components. Together, they ensure high availability and minimize downtime. Resilient architectures combine redundant hardware, diverse network paths, automated failover, and geographic distribution to withstand failures, attacks, and disasters.

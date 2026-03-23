@@ -11,6 +11,9 @@ aliases:
   - "DNS Attacks"
 ---
 
+> [!eli5] ELI5: What are DNS Attacks?
+> The internet has a phone book that turns website names (like "google.com") into the actual addresses computers use. DNS attacks mess with that phone book. It's like if someone secretly changed the phone number next to your friend's name so that when you call them, you actually reach a stranger pretending to be your friend. The stranger could trick you into sharing secrets. DNS attacks redirect people to fake websites without them ever knowing the address was swapped.
+
 ## Overview
 
 DNS attacks exploit the Domain Name System — the internet's directory service that translates domain names to IP addresses. Because nearly all internet communication begins with a DNS query, compromising DNS allows attackers to redirect users to malicious sites, intercept sensitive data, or disrupt internet access entirely. DNS was designed without security in mind, making it inherently vulnerable without additional protections.

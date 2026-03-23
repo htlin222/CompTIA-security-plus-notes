@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Phases?
+> Phases break a big process into clear steps. It is like following a recipe -- you do not frost the cake before you bake it. Each phase has to happen in the right order.
+
 ## Definition
 
 Penetration testing follows a structured set of phases that guide the tester from initial authorization through final reporting. Each phase builds on the previous one and is designed to methodically evaluate the security of the target environment in a controlled, authorized manner that mimics the approach of real attackers.

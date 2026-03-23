@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Notable Ransomware Examples?
+> These are the "famous robberies" of the computer world -- big attacks like WannaCry and LockBit that hit thousands of computers and made the news. Studying them helps us build better defenses.
+
 ## Definition
 
 Notable ransomware examples represent landmark attacks that defined the evolution of ransomware as a threat. Understanding these cases helps security professionals recognize attack patterns, understand the real-world impact of ransomware, and appreciate why specific defensive measures are emphasized. Each example introduced new techniques or demonstrated new levels of scale and impact.

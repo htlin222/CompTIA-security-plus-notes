@@ -10,6 +10,9 @@ aliases:
   - HSM
 ---
 
+> [!eli5] ELI5: What is a Hardware Security Module (HSM)?
+> An HSM is like a super-secure safe that not only stores your most important keys but can also use them without ever taking them out. Even if someone breaks into the room, they cannot copy the keys because the safe will not let them out.
+
 ## Definition
 
 A Hardware Security Module (HSM) is a dedicated, tamper-resistant physical computing device that safeguards and manages cryptographic keys and performs cryptographic operations. HSMs provide a hardened, isolated environment for key storage and crypto operations, ensuring that private keys are never exposed to software or the host operating system, even for administrators.

@@ -10,6 +10,9 @@ aliases:
   - CI/CD
 ---
 
+> [!eli5] ELI5: What is CI/CD Security?
+> Every time someone builds a new version of a program, security checks run automatically -- like a spelling checker that runs every time you save your essay, catching mistakes before anyone else sees them.
+
 ## Definition
 
 CI/CD security, also called DevSecOps, involves integrating security testing, scanning, and policy checks directly into the automated software build and deployment pipeline. Rather than performing security assessments as a separate, post-development step, security controls are embedded at each stage of the CI/CD pipeline to catch vulnerabilities early when they are cheapest to fix.

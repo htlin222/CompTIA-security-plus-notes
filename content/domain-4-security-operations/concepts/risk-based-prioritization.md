@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Risk-based Prioritization?
+> You cannot fix everything at once, so you fix the most dangerous things first. Like patching the hole near the gas stove before fixing the one in the guest room closet.
+
 ## Definition
 
 Risk-based prioritization in vulnerability management moves beyond simple CVSS severity scoring to consider multiple contextual factors when determining the order in which vulnerabilities should be remediated. By factoring in exploit availability, asset criticality, internet exposure, and environmental context, organizations focus limited remediation resources on the vulnerabilities that pose the greatest actual risk.

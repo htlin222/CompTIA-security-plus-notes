@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Syslog?
+> Syslog is one of the oldest ways computers send their diary entries to a central server. It is like a postal service that delivers log messages from many devices to one mailbox.
+
 ## Definition
 
 Syslog is the most widely used standard protocol for transmitting log messages from network devices, servers, and applications to a centralized log collection server. Originally designed for Unix systems, syslog has been adopted by virtually all network devices and many applications, making it the universal log forwarding protocol in most enterprise environments.

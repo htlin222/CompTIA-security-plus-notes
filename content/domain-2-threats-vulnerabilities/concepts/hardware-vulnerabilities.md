@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Hardware Vulnerabilities?
+> Sometimes the problem isn't the software -- it's the actual physical parts of the computer. It's like finding out the lock on your front door has a design flaw that no amount of new keys can fix.
+
 ## Definition
 
 Hardware vulnerabilities are security flaws that exist in the physical components of computing systems—processors, firmware, memory, or peripheral devices. Unlike software vulnerabilities, hardware vulnerabilities are often very difficult or impossible to patch fully without hardware replacement, and they can affect entire product generations across multiple vendors. Famous examples include the Spectre and Meltdown CPU vulnerabilities discovered in 2018.

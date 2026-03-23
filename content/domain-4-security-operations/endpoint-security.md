@@ -11,6 +11,9 @@ aliases:
   - "Endpoint Protection"
 ---
 
+> [!eli5] ELI5: What is Endpoint Security?
+> Every laptop, phone, and tablet in a company is like a door into a building. Endpoint security means putting a strong lock, an alarm, and a guard at each of those doors. If someone tries to sneak in through any single device, the protection catches them. It is not enough to just guard the front gate when there are hundreds of doors -- you need protection on every single one.
+
 ## Overview
 
 Endpoint security encompasses the tools, policies, and practices used to protect individual devices — laptops, desktops, mobile phones, servers, and IoT devices — from cyber threats. As endpoints are the primary interface between users and networks, they represent a critical attack surface. Modern endpoint security has evolved beyond traditional antivirus to include behavioral analysis and automated response.

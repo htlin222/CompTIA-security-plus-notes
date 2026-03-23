@@ -11,6 +11,9 @@ aliases:
   - "Security Governance"
 ---
 
+> [!eli5] ELI5: What is Governance?
+> Every school has a principal who sets the rules, teachers who enforce them, and a student handbook that explains what's expected. Security governance works the same way for a company. The leaders at the top decide what the security rules should be, who's in charge of what, and how much risk the company is okay with. Without this structure, everyone would make up their own rules and things would get messy fast.
+
 ## Overview
 
 Security governance is the set of responsibilities, policies, and procedures an organization follows to manage and oversee its information security strategy. It ensures that security efforts align with business objectives and that leadership is accountable for risk decisions. Governance provides the top-down structure from which all security policies, standards, and guidelines flow.

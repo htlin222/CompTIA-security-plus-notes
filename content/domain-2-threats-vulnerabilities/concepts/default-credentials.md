@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Default Credentials?
+> Many devices come with a password like "admin/password" printed right in the manual. If you never change it, anyone who reads the manual can walk right in.
+
 ## Definition
 
 Default credentials are the factory-preset username and password combinations that vendors install on devices, software, and systems for initial setup. Because these credentials are publicly documented (in manuals, vendor websites, and databases like defaultpasswords.in), any attacker who gains access to a device or service that still uses default credentials can immediately authenticate without any prior knowledge of the specific target.

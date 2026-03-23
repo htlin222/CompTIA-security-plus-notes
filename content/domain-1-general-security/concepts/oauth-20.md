@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is OAuth 2.0?
+> When a game app asks "Sign in with Google," you don't give the game your Google password. Instead, Google hands the game a temporary pass that lets it see only what you agreed to share. That handoff system is OAuth.
+
 ## Definition
 
 OAuth 2.0 is an open authorization framework that allows third-party applications to access specific resources on behalf of a user, without sharing the user's credentials. Instead, an authorization server issues access tokens that represent limited, delegated permissions. It is an authorization protocol—not an authentication protocol (that distinction belongs to OpenID Connect, which is built on top of OAuth 2.0).

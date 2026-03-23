@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is SSL/TLS Stripping?
+> You think you're using a locked mailbox (secure connection), but the attacker secretly downgrades it to a regular open mailbox. Your messages travel without protection and the attacker reads everything.
+
 ## Definition
 
 SSL/TLS stripping is an attack where an on-path attacker intercepts a user's initial HTTP connection to a website and establishes a separate HTTPS connection with the server, while maintaining an unencrypted HTTP connection with the victim. The user believes they are communicating securely with the server (the attacker's HTTPS connection is secure), but their traffic to the attacker is in plaintext—allowing credential theft and data interception.

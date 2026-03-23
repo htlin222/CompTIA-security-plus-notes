@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Quantitative Risk Assessment?
+> This is when you use math to figure out exactly how much money a bad thing could cost. If a laptop gets stolen once a year and it's worth $1,000, that's your yearly loss number. It helps decide if buying a $200 lock is worth it.
+
 ## Definition
 
 A quantitative risk assessment uses mathematical formulas and numerical data to calculate the financial impact of risks. The key metrics are: Asset Value (AV), Exposure Factor (EF), Single Loss Expectancy (SLE = AV × EF), Annual Rate of Occurrence (ARO), and Annual Loss Expectancy (ALE = SLE × ARO). This approach enables organizations to prioritize risk treatment using cost-benefit analysis — if a control costs less than the ALE it prevents, it is economically justified.

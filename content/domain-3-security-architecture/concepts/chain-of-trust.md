@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is the Chain of trust?
+> Think of it like a recommendation chain: your teacher trusts the principal, and the principal trusts the school board. If the school board says "this person is a real teacher," everyone down the chain believes it. Certificates work the same way -- trust flows from the top down.
+
 ## Definition
 
 The chain of trust (also called the certificate chain) is the hierarchical sequence of certificates from an end-entity certificate up through intermediate CAs to a root CA that is trusted by the relying party. Each certificate in the chain is digitally signed by the issuing CA above it, allowing the relying party to verify the complete trust path by tracing back to a trusted root.

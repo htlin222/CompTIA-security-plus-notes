@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Vendor Lock-In?
+> It's like building your entire LEGO city with a brand that only works with its own special pieces. If you ever want to switch brands, you'd have to start over. Vendor lock-in means a company gets so tied to one provider that leaving would be really hard and expensive.
+
 ## Definition
 
 Vendor lock-in is the situation where an organization becomes excessively dependent on a single vendor's proprietary technology, formats, or services, making it technically difficult, operationally disruptive, or financially prohibitive to switch to an alternative provider. From a security and risk perspective, vendor lock-in creates a dependency risk: if the vendor is acquired, goes out of business, raises prices significantly, or has a sustained security incident, the organization has limited options to respond quickly.

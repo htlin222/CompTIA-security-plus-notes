@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Least Privilege?
+> You only get the keys you actually need. A janitor gets the key to the supply closet but not the principal's safe. That way, if someone loses their keys, the damage is limited.
+
 ## Definition
 
 The principle of least privilege states that every user, process, system, or service should be granted only the minimum level of access rights (permissions, capabilities) necessary to perform its intended function—and nothing more. This limits the potential damage from compromised accounts, malware, insider threats, and human error by ensuring that any breach has the smallest possible blast radius.

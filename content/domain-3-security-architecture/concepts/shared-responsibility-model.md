@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is the Shared responsibility model?
+> When you rent an apartment, the landlord keeps the building standing and the roof from leaking, but you are responsible for locking your own door and not leaving the stove on. In the cloud, the provider secures the building (hardware, network) and you secure your own stuff inside it.
+
 ## Definition
 
 The shared responsibility model defines the division of security responsibilities between a cloud service provider and their customers. The cloud provider is responsible for securing the underlying infrastructure (the cloud itself), while the customer is responsible for securing what they deploy and configure within the cloud. The exact boundary between provider and customer responsibility shifts depending on the service model (IaaS, PaaS, SaaS).

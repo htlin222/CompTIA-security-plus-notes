@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is DNS Tunneling?
+> It's like hiding secret notes inside regular-looking library book requests. The messages look normal on the outside, but there's hidden data being smuggled through a channel that nobody usually checks.
+
 ## Definition
 
 DNS tunneling is a covert communication technique that encodes data (command-and-control traffic or exfiltrated data) within DNS query and response packets. Since DNS traffic is rarely blocked or deeply inspected by firewalls, attackers can establish persistent communication channels through DNS even in highly restricted network environments. Tools like iodine, dnscat2, and DNScat enable this technique.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is File integrity monitoring?
+> It's like taking a photo of your room every morning. If anything has been moved or changed, you compare today's photo to yesterday's and spot the difference right away. File integrity monitoring does this for computer files to catch tampering.
+
 ## Definition
 
 File Integrity Monitoring (FIM) is a security technology that detects changes to files and directories by computing cryptographic hash values (MD5, SHA-256) of files and comparing them against a known-good baseline. When a file's hash changes unexpectedly, an alert is triggered, indicating potential tampering, malware infection, or unauthorized modification.

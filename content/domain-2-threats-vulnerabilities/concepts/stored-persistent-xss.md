@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Stored (Persistent) XSS?
+> The attacker plants bad code on a website that stays there forever -- like graffiti on a wall. Every single person who visits that page gets hit by the trick, not just one person who clicks a link.
+
 ## Definition
 
 Stored (Persistent) Cross-Site Scripting is the most dangerous form of XSS, where malicious script code is permanently saved on the target server—typically in a database, comment field, forum post, or user profile—and then served to all users who view that content. Unlike reflected XSS (which requires the victim to click a link), stored XSS automatically executes in every visitor's browser without any additional attacker action.

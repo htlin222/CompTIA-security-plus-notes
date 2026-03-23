@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Network zones?
+> A school has different areas -- the playground, the classrooms, the principal's office -- and each has different rules about who can go there. Network zones work the same way, grouping parts of a network by how much they are trusted.
+
 ## Definition
 
 Network zones are logically or physically separated network segments, each with a distinct security posture and trust level, that control how traffic flows between them using firewalls and access control lists. Assigning systems to appropriate zones based on their function and risk profile is a fundamental network security architecture practice.

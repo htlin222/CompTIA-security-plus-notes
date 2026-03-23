@@ -11,6 +11,9 @@ aliases:
   - "Risk Management"
 ---
 
+> [!eli5] ELI5: What is Risk Management?
+> When you ride your bike, you wear a helmet, check the brakes, and avoid busy roads. You can't prevent every possible accident, but you take steps to lower the chances. Risk management is a company doing the same thing with its computers and data -- finding dangers, deciding which ones matter most, and choosing the best way to handle each one. The goal isn't zero risk (that's impossible) but bringing risk down to a level everyone is comfortable with.
+
 ## Overview
 
 Risk management is the continuous cycle of identifying threats and vulnerabilities, analyzing the potential impact and likelihood of exploitation, and selecting appropriate responses. It enables organizations to make informed decisions about where to invest security resources. The goal is not to eliminate all risk but to reduce it to an acceptable level defined by leadership.

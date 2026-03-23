@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is GLBA?
+> GLBA is a law that says banks and financial companies must keep your money information private and safe. They have to tell you how they use your data and protect it from bad guys.
+
 ## Definition
 
 The Gramm-Leach-Bliley Act (GLBA), enacted in 1999, is a US federal law that requires financial institutions — including banks, insurance companies, mortgage lenders, and financial advisors — to protect the confidentiality and security of nonpublic personal information (NPI) they collect from customers. GLBA's Safeguards Rule mandates that covered institutions develop and implement an information security program, and the Privacy Rule requires disclosure of privacy practices to customers.

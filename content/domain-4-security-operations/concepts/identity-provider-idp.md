@@ -11,6 +11,9 @@ aliases:
   - IDP
 ---
 
+> [!eli5] ELI5: What is an Identity Provider?
+> An identity provider is the trusted front desk that checks your ID. Once they confirm who you are, they tell all the other services, "Yes, this person is legit."
+
 ## Definition
 
 An Identity Provider (IdP) is a trusted system or organization that creates, maintains, and manages digital identities and is responsible for authenticating users and asserting their identity to other systems (Service Providers). In federated identity architectures, the IdP is the authoritative source of identity information, issuing assertions or tokens that Service Providers trust to grant access.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is the Open Design Principle?
+> A good lock should be safe even if everyone knows exactly how it works. The only secret should be the key itself, not how the lock was built. That's open design -- security that doesn't depend on hiding how it works.
+
 ## Definition
 
 The open design principle states that the security of a system should not depend on keeping its design or implementation secret. Security mechanisms should be secure even if an attacker knows exactly how they work—the only secrets should be keys and credentials. This principle was articulated by Kerckhoffs and reaffirmed by Claude Shannon, and it is the foundation of modern cryptographic design.

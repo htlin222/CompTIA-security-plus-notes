@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Residual Risk?
+> Even after you put on a helmet, knee pads, and elbow pads, you can still fall off your bike. The leftover danger that remains after all your safety gear is in place -- that's residual risk. You have to decide if it's small enough to accept.
+
 ## Definition
 
 Residual risk is the level of risk that remains after all planned security controls have been implemented to mitigate inherent risk. No control eliminates risk entirely; some level of risk always remains. Residual risk must be compared against the organization's risk tolerance to determine whether additional controls are needed or whether the remaining risk is acceptable. Risk acceptance is a formal decision by management to accept the residual risk without further mitigation.

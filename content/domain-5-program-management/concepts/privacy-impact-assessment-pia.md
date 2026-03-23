@@ -10,6 +10,9 @@ aliases:
   - PIA
 ---
 
+> [!eli5] ELI5: What is a Privacy Impact Assessment?
+> Before building a new app, you stop and ask "could this accidentally share people's secrets?" It's like checking the rules before starting a game to make sure nobody gets hurt.
+
 ## Definition
 
 A Privacy Impact Assessment (PIA), also called a Data Protection Impact Assessment (DPIA) under GDPR, is a formal process for evaluating the privacy risks of a new project, system, or business process before it is implemented. It identifies what personal data will be collected and processed, assesses the risks to individuals' privacy, and documents the controls that will be implemented to mitigate those risks. GDPR requires DPIAs for processing activities that present a "high risk" to individuals' rights and freedoms.

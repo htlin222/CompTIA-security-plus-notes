@@ -10,6 +10,9 @@ aliases:
   - SDN
 ---
 
+> [!eli5] ELI5: What is Software-Defined Networking (SDN)?
+> Normally, each network device makes its own decisions, like cars driving without traffic lights. SDN adds a central traffic controller that tells all the devices what to do from one place, making the whole network easier to manage and secure.
+
 ## Definition
 
 Software-Defined Networking (SDN) is a network architecture approach that separates the control plane (decision-making: routing, policies, forwarding rules) from the data plane (packet forwarding). A centralized SDN controller makes network decisions and programs the underlying network hardware through standardized APIs, enabling the network to be managed, configured, and secured programmatically.

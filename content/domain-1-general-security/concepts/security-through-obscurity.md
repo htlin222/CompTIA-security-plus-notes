@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Security Through Obscurity?
+> Hiding your house key under the doormat and hoping nobody will look there is security through obscurity. It works until someone checks under the mat. Real security means using a good lock, not just hiding the key.
+
 ## Definition
 
 Security through obscurity is the practice of relying on secrecy or concealment of system design, implementation details, or configurations as a security measure. Rather than using robust, proven security mechanisms, security through obscurity assumes that attackers won't discover the system's workings. While it may add a minor layer of difficulty, it is widely considered insufficient as a sole security measure because it fails catastrophically once the secret is discovered.

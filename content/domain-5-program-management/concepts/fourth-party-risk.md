@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Fourth-Party Risk?
+> You trust the pizza delivery person, but what about the company that made their delivery bags? Fourth-party risk is the danger from your partner's partners -- people you don't even know but who can still cause problems for you.
+
 ## Definition
 
 Fourth-party risk (also called nth-party risk) is the risk that arises from the vendors, subcontractors, and service providers used by your direct vendors (third parties). While organizations can assess and contractually obligate their direct vendors, they typically have limited visibility into what controls their vendors' vendors have in place. A breach or failure at a fourth party can cascade up through the supply chain and ultimately impact your organization.

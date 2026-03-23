@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Playbooks and Runbooks?
+> Playbooks are step-by-step instruction sheets for handling common security situations. They are like recipes in a cookbook -- follow the steps and you get a reliable result every time.
+
 ## Definition
 
 Playbooks and runbooks are documented, structured workflows that define the step-by-step procedures for responding to specific types of security incidents or operational tasks. In SOAR platforms, these workflows are codified into automation that executes the steps automatically when triggered. Even when not automated, playbooks ensure consistent, repeatable responses by guiding analysts through the correct steps.

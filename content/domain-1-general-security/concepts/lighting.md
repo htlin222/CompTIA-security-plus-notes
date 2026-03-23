@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Lighting?
+> Bad guys like to hide in the dark. Bright lights around a building make it really hard for someone to sneak around without being seen by cameras or guards.
+
 ## Definition
 
 Lighting is a physical security control that deters unauthorized access, criminal activity, and physical attacks by eliminating the concealment that darkness provides. Adequate lighting around building perimeters, parking areas, entry points, and sensitive areas makes it difficult for intruders to operate undetected. It also dramatically improves the effectiveness of video surveillance (CCTV) by ensuring cameras capture useful images.

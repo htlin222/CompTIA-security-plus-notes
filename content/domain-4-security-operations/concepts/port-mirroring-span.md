@@ -10,6 +10,9 @@ aliases:
   - SPAN
 ---
 
+> [!eli5] ELI5: What is Port Mirroring?
+> Port mirroring copies all the traffic from one network connection and sends it to a monitoring tool. Like putting a mirror at a street corner so a guard can see traffic from both directions.
+
 ## Definition
 
 Port mirroring, also called SPAN (Switched Port ANalyzer), is a switch feature that creates copies of network traffic from selected ports or VLANs and sends them to a designated monitoring port. Security monitoring tools (IDS, packet capture systems) connected to the monitoring port receive copies of the traffic for analysis without interrupting or affecting the original traffic flow.

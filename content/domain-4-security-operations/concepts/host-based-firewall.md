@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Host-based Firewall?
+> A host-based firewall is a personal bouncer for one computer. It decides which connections are allowed in and out, like a gate that only opens for people on the list.
+
 ## Definition
 
 A host-based firewall is a software firewall installed directly on an endpoint device (workstation, server) that controls network traffic entering and leaving that specific host. Unlike network firewalls that protect network segments, host-based firewalls provide granular, per-device control and continue to protect devices when they are outside the corporate network perimeter.

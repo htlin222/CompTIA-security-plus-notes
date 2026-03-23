@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Risk Register?
+> It's a master list of every danger the company knows about -- who's in charge of watching it, what's being done about it, and how serious it still is. Think of it like a to-do list for safety that never gets thrown away; it just gets updated.
+
 ## Definition
 
 A risk register is a living document (typically maintained as a spreadsheet, database, or GRC platform record) that catalogs all identified risks facing the organization, along with their likelihood and impact ratings, assigned risk owners, planned or implemented responses, current status, and residual risk ratings. It serves as the central record of the organization's risk posture and is reviewed regularly by the security team, governance committees, and management.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Evidence Collection?
+> When a detective investigates, they collect clues -- fingerprints, photos, witness statements. During an audit, the inspectors gather similar proof (logs, settings, interviews) to show whether the security rules are really being followed.
+
 ## Definition
 
 Evidence collection is the process of gathering artifacts during an audit to support findings about whether controls are operating effectively. Evidence types include logs and reports (automated evidence), configuration screenshots and exported settings (technical evidence), policy and procedure documents (documentary evidence), interviews with responsible staff (testimonial evidence), and direct observation of processes (observational evidence). The quality and sufficiency of evidence directly affects the strength of audit conclusions.

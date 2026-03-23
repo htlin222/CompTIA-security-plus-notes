@@ -10,6 +10,9 @@ aliases:
   - BEC
 ---
 
+> [!eli5] ELI5: What is Business Email Compromise?
+> A bad guy pretends to be your boss in an email and asks you to send money or secret information. It is like getting a note that looks like it is from your teacher but was actually written by a bully.
+
 ## Definition
 
 Business Email Compromise (BEC) is a sophisticated social engineering attack in which attackers impersonate executives, vendors, or trusted business partners via email to manipulate employees into transferring funds, sharing sensitive data, or changing payment instructions. BEC is one of the highest-dollar cybercrime categories tracked by the FBI and typically involves either compromising a legitimate email account or spoofing one convincingly.

@@ -12,6 +12,9 @@ aliases:
   - "Cyber Threat Intelligence"
 ---
 
+> [!eli5] ELI5: What is Threat Intelligence?
+> It is like getting a heads-up from your neighbor that someone has been trying doorknobs on your street. Threat intelligence is information about what bad guys are doing, what tools they use, and who they are targeting. When security teams get this information early, they can lock the right doors before the bad guys even show up. The better your information, the better you can prepare.
+
 ## Overview
 
 Threat intelligence is the collection, processing, and analysis of data about current and potential cyber threats to help organizations make informed security decisions. It transforms raw data into actionable intelligence that can be used to prevent, detect, and respond to attacks. Threat intelligence operates at strategic, operational, tactical, and technical levels.

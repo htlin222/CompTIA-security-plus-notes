@@ -10,6 +10,9 @@ aliases:
   - SP
 ---
 
+> [!eli5] ELI5: What is a Service Provider?
+> A service provider is the website or app you want to use. It trusts the identity provider to confirm who you are, like a movie theater trusting the ticket booth's stamp.
+
 ## Definition
 
 A Service Provider (SP) in federated identity and SSO architectures is the application or organization that provides a service to users and relies on an Identity Provider (IdP) to authenticate those users. Rather than managing its own user credentials, the SP accepts identity assertions from the trusted IdP, granting access based on the claims in the assertion.

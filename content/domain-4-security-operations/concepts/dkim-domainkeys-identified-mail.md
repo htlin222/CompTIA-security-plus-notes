@@ -10,6 +10,9 @@ aliases:
   - DKIM
 ---
 
+> [!eli5] ELI5: What is DKIM?
+> DKIM is like a wax seal on a letter. It proves the email really came from who it says and was not changed along the way.
+
 ## Definition
 
 DKIM (DomainKeys Identified Mail) is an email authentication method that allows the sending mail server to digitally sign outgoing messages using a private key. The corresponding public key is published in the domain's DNS TXT record. Receiving mail servers retrieve the public key from DNS and use it to verify the digital signature, confirming that the message originated from the claimed domain and was not altered in transit.

@@ -12,6 +12,9 @@ aliases:
   - "OS Hardening"
 ---
 
+> [!eli5] ELI5: What is Hardening?
+> When you move into a new house, you lock the doors, close the windows, and maybe remove the spare key from under the mat. Hardening a computer is the same idea -- you turn off features you do not need, remove programs that came pre-installed, and change all the default passwords. The fewer unlocked doors and open windows a system has, the harder it is for a bad guy to sneak in.
+
 ## Overview
 
 Hardening is the process of securing a system by reducing its attack surface through removing unnecessary software, disabling unused services, applying patches, and configuring security settings according to established benchmarks. Every system should be hardened before deployment and maintained through ongoing configuration management. Hardening applies to operating systems, applications, network devices, and firmware.

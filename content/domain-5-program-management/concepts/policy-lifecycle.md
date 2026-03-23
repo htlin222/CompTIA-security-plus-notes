@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is the Policy Lifecycle?
+> Rules aren't forever -- they get written, shared with everyone, checked to see if they still make sense, updated when things change, and retired when they're no longer needed. That cycle is the policy lifecycle.
+
 ## Definition
 
 The policy lifecycle describes the structured process through which security policies are created, maintained, and eventually retired. The stages are: **Create** (draft the policy based on risk, regulatory, and business requirements), **Approve** (obtain authorization from appropriate management level), **Distribute** (communicate to all relevant personnel), **Enforce** (implement technical and administrative controls), **Review** (assess effectiveness and currency, typically annually), **Revise** (update based on changes in threats, technology, or regulations), and **Retire** (formally remove outdated policies).

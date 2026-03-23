@@ -12,6 +12,9 @@ aliases:
   - "Single Sign-On"
 ---
 
+> [!eli5] ELI5: What is Single Sign-On?
+> Remember how annoying it would be if you had to show your ID at every single classroom door in school? Single sign-on is like showing your ID once at the front entrance and then being allowed into every room for the rest of the day. You log in one time, and all your apps and websites recognize you without asking for your password again. It saves time and means you only need to remember one password.
+
 ## Overview
 
 Single Sign-On (SSO) allows users to authenticate once and gain access to multiple independent applications or systems without re-entering credentials. SSO improves user experience and reduces password fatigue while centralizing authentication control. It is a key component of modern identity and access management strategies.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Compliance Monitoring?
+> It's like a hall monitor who walks around all day making sure kids are following the rules -- not just checking once a year. Compliance monitoring keeps an ongoing watch to make sure security controls stay in place between big inspections.
+
 ## Definition
 
 Compliance monitoring is the ongoing process of checking that security controls remain effective, policies are being followed, and the organization continues to meet regulatory requirements between formal audits. It encompasses log review, configuration scanning, access reviews, and policy exception tracking. Effective compliance monitoring provides early warning of control failures before they become compliance violations or security incidents.

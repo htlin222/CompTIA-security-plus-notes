@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Human Vectors?
+> Instead of breaking through a computer's defenses, bad guys trick the person using the computer. People are the "unlocked door" because they can be fooled by lies, fake stories, and urgency.
+
 ## Definition
 
 Human vectors are attack pathways that exploit human behavior, psychology, and trust rather than technical vulnerabilities. Social engineering is the primary technique—attackers manipulate people into divulging information, performing actions, or bypassing security controls. Human vectors are highly effective because they bypass technical defenses entirely and exploit the inherent human tendencies of trust, helpfulness, authority, and urgency.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Brute Force Attack?
+> It's like trying every single combination on a lock -- 0001, 0002, 0003 -- until it finally clicks open. It's slow but it always works eventually if the combination is short enough.
+
 ## Definition
 
 A brute-force attack systematically tries every possible combination of characters (for password attacks) or every possible key value (for cryptographic attacks) until the correct one is found. The feasibility of a brute-force attack depends entirely on the size of the search space—determined by key length or password complexity—and available computational resources.

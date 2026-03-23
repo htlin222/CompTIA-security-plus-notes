@@ -11,6 +11,9 @@ aliases:
   - "Security Automation"
 ---
 
+> [!eli5] ELI5: What is Automation and Scripting?
+> You know how you can set up dominoes so that knocking one over makes the rest fall automatically? Security automation is like that -- you write instructions once, and the computer follows those steps every single time without getting tired or making mistakes. Instead of a person clicking buttons all day to check if every door and window is locked, a script does it in seconds. This frees up the security team to focus on the tricky problems that need a real human brain.
+
 ## Overview
 
 Automation and scripting in security operations involves using programmatic tools to perform repetitive tasks, enforce configurations, and respond to security events consistently and at scale. Automation reduces human error, accelerates response times, and allows security teams to focus on complex analysis rather than routine operations. The SY0-701 exam tests understanding of automation benefits, use cases, and associated risks.

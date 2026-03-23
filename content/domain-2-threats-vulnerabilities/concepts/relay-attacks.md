@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Relay Attacks?
+> Two thieves stand between your car key and your car. One stands near you and picks up the key's signal, then beams it to the other thief near the car. The car thinks the key is right there and unlocks.
+
 ## Definition
 
 A relay attack intercepts authentication communications between a legitimate client and server, forwarding them in real time to complete an unauthorized authentication without breaking any cryptographic security. The attacker acts as a transparent proxy—they don't need to understand or decrypt the authentication exchange; they simply relay it. This is particularly effective against NFC/RFID-based payment and access systems.

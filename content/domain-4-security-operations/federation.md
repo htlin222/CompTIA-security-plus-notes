@@ -11,6 +11,9 @@ aliases:
   - "Federated Identity"
 ---
 
+> [!eli5] ELI5: What is Federation?
+> You know how a library card from your town sometimes works at libraries in nearby towns too? That is federation. Different organizations agree to trust each other, so when you prove who you are at one place, the others accept it without making you sign up again. Each library still controls its own books and rules, but they all honor the same card. This makes life easier for everyone while each place stays in charge of its own stuff.
+
 ## Overview
 
 Federation is a system of trust between separate organizations or security domains that allows users authenticated in one domain to access resources in another without re-authenticating. It enables seamless cross-organizational collaboration while maintaining each organization's control over its own identity management. Federation relies on standardized protocols to exchange identity assertions.

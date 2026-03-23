@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Hybrid Attack?
+> It takes common words from a dictionary and mixes in numbers and symbols -- like trying "Summer2024!" and "p@ssword1". It's smarter than random guessing because people make predictable choices.
+
 ## Definition
 
 A hybrid password attack combines the efficiency of dictionary attacks with brute-force character substitutions and appends. Instead of trying every possible combination, a hybrid attack takes dictionary words and applies rule-based transformations—capitalizing letters, appending numbers or symbols, substituting characters (l33t speak), or prepending common patterns—to cover the most common password structures humans create.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Training Frequency?
+> You wouldn't practice piano once a year and expect to play well. Security training works the same way -- you need it when you start, and then regular refreshers so you don't forget what you learned.
+
 ## Definition
 
 Training frequency refers to how often security awareness training is delivered to employees. Security awareness training should begin at onboarding (before employees access systems), with regular refresher training thereafter. Industry best practice and most regulatory frameworks require training at minimum annually, though quarterly or more frequent short-form training (microlearning, security newsletters, phishing simulations) is recommended to maintain awareness and address emerging threats between annual training events.

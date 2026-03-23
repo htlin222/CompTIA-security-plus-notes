@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Scripting Languages?
+> Scripting languages like Python and Bash are tools for writing quick instructions that computers follow. They are like giving your computer a to-do list it can work through on its own.
+
 ## Definition
 
 Scripting languages are programming languages used in security operations to automate tasks, process large data sets, interact with APIs, and build security tools. Unlike compiled languages, scripting languages are interpreted and allow rapid development and iteration, making them ideal for security automation and tooling.

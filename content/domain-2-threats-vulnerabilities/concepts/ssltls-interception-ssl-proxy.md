@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is SSL/TLS Interception?
+> Someone sits between you and a website, pretending to be the website to you and pretending to be you to the website. They unwrap your secret messages, read them, wrap them back up, and pass them along.
+
 ## Definition
 
 SSL/TLS interception (also called SSL inspection or SSL proxy) is a technique used by organizations and attackers alike to decrypt, inspect, and re-encrypt TLS-encrypted traffic. An intermediary device presents its own certificate to the client (appearing as the server) while establishing a separate TLS session with the actual server. When performed by organizations using a trusted internal CA, it enables content inspection; when performed maliciously, it's a man-in-the-middle attack.

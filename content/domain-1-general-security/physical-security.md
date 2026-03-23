@@ -11,6 +11,9 @@ aliases:
   - "Physical Controls"
 ---
 
+> [!eli5] ELI5: What is Physical Security?
+> Physical security is all the real-world stuff that keeps bad people away from your computers and buildings -- fences around the property, locks on the doors, cameras watching the hallways, and guards checking who comes in. Even the best password in the world won't help if someone can just walk up to a computer and steal it. That's why protecting the actual building and the equipment inside it is just as important as protecting what's on the screen.
+
 ## Overview
 
 Physical security encompasses the tangible controls that protect an organization's facilities, hardware, and personnel from unauthorized physical access, theft, damage, and environmental threats. It forms the outermost layer in a defense-in-depth strategy and is often the first line of defense against both external intruders and insider threats.

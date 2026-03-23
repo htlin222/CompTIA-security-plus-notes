@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Pseudonymization?
+> It's like using a secret code name instead of your real name. Your teacher has a list that connects the code name back to you, but anyone else just sees the code name and does not know who it really is.
+
 ## Definition
 
 Pseudonymization is a data protection technique that replaces directly identifying information (such as names, email addresses, or social security numbers) with artificial pseudonyms or reference codes, while maintaining a separate mapping that allows re-identification when necessary. Unlike anonymization, pseudonymization is reversible — the original data can be recovered using the mapping key.

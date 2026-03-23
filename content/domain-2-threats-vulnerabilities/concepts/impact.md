@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is the Impact of XSS and CSRF?
+> With XSS, the attacker can steal your login session and pretend to be you on a website. With CSRF, they can make your browser do things on websites you're logged into -- like transferring money -- without you knowing.
+
 ## Definition
 
 This concept covers the impacts of XSS (Cross-Site Scripting) and CSRF (Cross-Site Request Forgery) attacks. XSS enables attackers to steal session cookies, hijack accounts, deface pages, log keystrokes, and inject phishing forms into trusted sites. CSRF causes unauthorized actions—such as fund transfers, password changes, or data modifications—to be executed using the victim's authenticated session without their knowledge.

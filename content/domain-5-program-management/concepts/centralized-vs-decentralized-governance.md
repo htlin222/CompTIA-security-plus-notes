@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Centralized vs. Decentralized Governance?
+> Centralized is like one principal making all the rules for the whole school. Decentralized is like each classroom teacher making their own rules. One is more consistent; the other is more flexible.
+
 ## Definition
 
 Centralized governance concentrates security decision-making, policy creation, and enforcement within a single authority (typically the CISO and corporate security team), providing consistency and standardization across the organization. Decentralized governance delegates security authority to individual business units or regions, allowing for greater flexibility and local adaptability but potentially creating inconsistency and gaps. Many organizations adopt a hybrid model.

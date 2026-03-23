@@ -11,6 +11,9 @@ aliases:
   - "Virtualization Security"
 ---
 
+> [!eli5] ELI5: What is Virtualization Security?
+> Picture one big apartment building where each apartment is completely separate -- you cannot hear your neighbors or walk into their space. Virtualization lets one powerful computer pretend to be many smaller computers, each in its own "apartment." But if the building manager (the hypervisor) is not careful, someone could break through the walls. Virtualization security is about keeping each apartment safe and the building itself locked down.
+
 ## Overview
 
 Virtualization allows multiple virtual machines (VMs) to run on a single physical host using a hypervisor. While virtualization provides efficiency and flexibility, it introduces unique security risks including hypervisor attacks, VM escape, resource contention, and sprawl. Securing virtualized environments requires protecting the hypervisor, isolating VMs, and managing the virtual infrastructure lifecycle.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is ARP Spoofing/Poisoning?
+> On a local network, computers ask "Who has this address?" ARP spoofing is like someone yelling "That's me!" when it's not, so all the mail meant for your friend gets delivered to the liar instead.
+
 ## Definition
 
 ARP spoofing (also called ARP poisoning) is an attack on local network communication where an attacker sends forged ARP (Address Resolution Protocol) reply messages to associate their own MAC address with the IP address of another host (such as the default gateway). This causes network traffic intended for that host to be redirected through the attacker's machine, enabling man-in-the-middle interception, sniffing, or modification.

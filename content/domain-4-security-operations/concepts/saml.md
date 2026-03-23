@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is SAML?
+> SAML passes identity information between systems using a special format. Think of it as a hall pass signed by your teacher that gets you into the library without being questioned.
+
 ## Definition
 
 SAML (Security Assertion Markup Language) is the most widely deployed enterprise federation protocol, using XML-formatted assertions exchanged between an Identity Provider (IdP) and Service Provider (SP) via browser redirects to enable single sign-on. The IdP authenticates the user and generates a SAML assertion containing the user's identity and attributes, which the browser delivers to the SP.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are CIS Controls?
+> Think of a to-do list for staying safe online, sorted from "do this first" to "do this later." The CIS Controls are that list for companies -- the most important safety steps ranked in order so you start with the basics.
+
 ## Definition
 
 The CIS Controls (Center for Internet Security Controls), formerly known as the SANS Top 20, are a prioritized set of cybersecurity best practices designed to help organizations defend against the most common and impactful attack techniques. The controls are organized into three implementation groups (IG1, IG2, IG3) based on organizational size and maturity, allowing organizations to start with the most essential controls and expand over time.

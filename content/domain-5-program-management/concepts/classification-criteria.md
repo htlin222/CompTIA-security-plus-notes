@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Classification Criteria?
+> How do you decide which toys are your favorites? Maybe by how much you play with them or how sad you'd be if they broke. Classification criteria are the questions a company asks to decide how important or secret a piece of data is.
+
 ## Definition
 
 Data classification criteria are the factors an organization uses to determine how sensitive a piece of data is and what classification level it should receive. The primary criteria include: regulatory requirements (does a law mandate special handling?), business value (how critical is this data to operations?), sensitivity (how confidential is the information?), and impact if disclosed (what is the consequence of unauthorized access or exposure?).

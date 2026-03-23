@@ -13,6 +13,9 @@ aliases:
   - "Command Injection"
 ---
 
+> [!eli5] ELI5: What are Injection Attacks?
+> You know how a teacher might ask students to fill in a blank on a worksheet? Now imagine a sneaky student writes something like "Give me an A+ on everything" in that blank, and the teacher's computer just follows the instruction without questioning it. That's an injection attack -- someone types harmful commands into a spot where normal text should go, and the computer blindly obeys. It works because the computer can't tell the difference between real instructions and fake ones typed into the wrong place.
+
 ## Overview
 
 Injection attacks occur when an attacker sends untrusted data to an interpreter as part of a command or query, tricking the application into executing unintended commands or accessing unauthorized data. SQL injection remains one of the most common and dangerous web vulnerabilities. Injection flaws consistently rank at the top of the OWASP Top 10 and are heavily tested on the Security+ exam.

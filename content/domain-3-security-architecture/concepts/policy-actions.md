@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Policy actions?
+> When a security system catches something wrong, it has a list of things it can do about it: sound an alarm, block the door, lock the item in a box, or tell the teacher. Policy actions are those possible responses.
+
 ## Definition
 
 DLP policy actions define what the system does when it detects a policy violation — specifically, when sensitive data is identified in an unauthorized context. The appropriate action depends on the severity of the violation, the sensitivity of the data, and the organizational risk tolerance. Actions range from passive (log only) to active (block and quarantine).

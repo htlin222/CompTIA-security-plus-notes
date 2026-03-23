@@ -10,6 +10,9 @@ aliases:
   - PHI
 ---
 
+> [!eli5] ELI5: What is Protected Health Information?
+> It's any detail about your doctor visits, medicines, or health that also says who you are. Sharing it without permission is like reading someone's diary out loud at school.
+
 ## Definition
 
 Protected Health Information (PHI) is any individually identifiable health information that is created, received, maintained, or transmitted by a HIPAA-covered entity or business associate. PHI encompasses medical records, diagnoses, treatment information, lab results, prescription information, and any other health data that can be linked to a specific individual through 18 designated identifiers (name, address, dates, SSN, phone number, etc.). Electronic PHI (ePHI) is specifically governed by the HIPAA Security Rule.

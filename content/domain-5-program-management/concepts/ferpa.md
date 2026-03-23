@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is FERPA?
+> FERPA is the law that says your school can't share your grades or personal records with just anyone. Your parents (or you, when you're older) get to decide who sees that information.
+
 ## Definition
 
 The Family Educational Rights and Privacy Act (FERPA) is a US federal law enacted in 1974 that protects the privacy of student education records. FERPA applies to all educational institutions that receive federal funding (essentially all US public schools and most private colleges). It gives students (or their parents, for minors) the right to access, review, and request corrections to their education records, and prohibits disclosure without written consent.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Separation of Duties?
+> No single person should have all the power. It's like needing two different people to turn two keys at the same time to open a safe. That way, one person acting alone can't do anything sneaky.
+
 ## Definition
 
 Separation of duties (SoD) is a security principle that divides critical, sensitive, or fraud-prone tasks among multiple individuals so that no single person has complete control over an entire process or transaction. By requiring multiple parties to complete a sensitive action, SoD prevents any one individual from being able to commit fraud, make errors, or abuse their access without detection by others.

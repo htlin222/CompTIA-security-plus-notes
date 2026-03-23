@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Preventive, Detective, and Corrective Controls?
+> A lock on the door stops bad stuff before it happens (preventive). A smoke detector tells you something bad is happening right now (detective). A fire extinguisher fixes the problem after it starts (corrective). Good security uses all three.
+
 ## Definition
 
 Security controls are classified by the timing of their effect relative to a security incident. Preventive controls stop incidents before they occur. Detective controls identify when incidents are occurring or have occurred. Corrective controls restore systems and minimize damage after an incident. Understanding these categories helps security professionals design comprehensive control frameworks that address all phases of the security lifecycle.

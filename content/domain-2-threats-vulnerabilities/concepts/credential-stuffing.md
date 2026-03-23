@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Credential Stuffing?
+> If you use the same key for your house, your bike lock, and your locker, a thief who copies that one key can open all three. Credential stuffing tries stolen passwords from one website on lots of other websites.
+
 ## Definition
 
 Credential stuffing is an automated attack that takes advantage of the widespread practice of password reuse. Attackers use large databases of username/password pairs leaked in previous data breaches and systematically attempt to log in to other web services with those same credentials. Because many users reuse passwords across multiple sites, even a small percentage success rate yields thousands of compromised accounts.

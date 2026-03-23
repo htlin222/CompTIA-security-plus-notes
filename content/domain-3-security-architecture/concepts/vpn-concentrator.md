@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a VPN concentrator?
+> If a VPN is a secret tunnel, a VPN concentrator is the big tunnel station where hundreds of tunnels all meet in one place. It is a dedicated machine built to handle lots of secure connections at the same time.
+
 ## Definition
 
 A VPN concentrator is a dedicated network device designed to terminate and manage large numbers of simultaneous VPN connections. Unlike a general-purpose router or firewall that may support VPN as one of many functions, a VPN concentrator is purpose-built for high-throughput VPN termination, providing centralized authentication, encryption, and access policy enforcement for remote users connecting to a corporate network.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are MFA Fatigue Attacks?
+> An attacker keeps sending login approval requests to your phone until you get so annoyed you tap "approve" just to make it stop. It is like someone ringing your doorbell over and over until you open the door.
+
 ## Definition
 
 MFA fatigue attacks (also called MFA bombing or push spam) are social engineering attacks that exploit push notification-based MFA by flooding the victim with repeated authentication requests until they approve one out of frustration, confusion, or the mistaken belief that it is legitimate. This attack bypasses push-based MFA without the attacker needing to intercept or steal the OTP code.

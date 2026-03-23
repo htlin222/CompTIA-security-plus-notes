@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is VM escape?
+> A VM escape is like a prisoner breaking out of their cell and getting into the guard's control room. An attacker breaks out of their virtual computer and gains access to the system that controls all the other virtual computers -- one of the most dangerous things that can happen.
+
 ## Definition
 
 VM escape is a critical virtualization attack in which a malicious actor exploits a vulnerability in the hypervisor or virtual hardware to break out of an isolated virtual machine and gain unauthorized access to the underlying host system or other co-located VMs. Because the hypervisor controls all VMs on a host, a successful VM escape compromises every VM on that system and potentially the entire physical host.

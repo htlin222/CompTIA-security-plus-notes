@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is East-west traffic control?
+> Once someone is inside a building, you still want to make sure they cannot wander into every room. East-west traffic control is about watching and limiting movement between rooms (systems) that are already inside the same network.
+
 ## Definition
 
 East-west traffic control refers to the security monitoring and restriction of traffic flowing laterally between systems within the same network, as opposed to north-south traffic that crosses the network perimeter. Once attackers breach the perimeter, they often move laterally between internal systems to expand access — proper east-west controls limit this lateral movement.

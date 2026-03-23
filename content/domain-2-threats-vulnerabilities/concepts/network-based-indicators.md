@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Network-Based Indicators?
+> These are suspicious things spotted in network traffic -- like a computer secretly sending data to a strange address at midnight. It's like noticing a delivery truck going to a building nobody works in.
+
 ## Definition
 
 Network-based indicators of compromise are artifacts and anomalies observed in network traffic that suggest malicious activity. These include connections to known-malicious IP addresses or domains, unusual outbound traffic patterns (beaconing to C2 servers), unexpected data transfers, and protocol anomalies. Network security tools such as IDS/IPS, SIEM, and DNS security platforms collect and analyze these indicators.

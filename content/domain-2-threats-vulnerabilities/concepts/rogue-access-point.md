@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Rogue Access Point?
+> Someone plugs an unauthorized Wi-Fi router into the office network. Now anyone can connect to it from outside, completely skipping the front door's security. It's a secret back entrance nobody approved.
+
 ## Definition
 
 A rogue access point is an unauthorized wireless access point that has been connected to a corporate network—either by a malicious insider seeking to create a backdoor, or by a well-intentioned employee trying to improve wireless coverage without authorization. Rogue APs bypass perimeter security controls (firewalls, NAC) because wireless clients connecting to them enter directly onto the corporate network.

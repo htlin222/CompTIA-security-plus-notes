@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Configuration drift?
+> You know how a sandcastle slowly changes shape as waves wash over it? Configuration drift is when computer settings slowly change from what they are supposed to be, usually because people make small tweaks over time. Before you know it, the system looks nothing like the original plan.
+
 ## Definition
 
 Configuration drift occurs when the actual configuration of deployed systems gradually diverges from their intended, documented, or baseline configuration state over time — typically due to manual changes, failed updates, or unauthorized modifications. IaC tools can detect drift by comparing the current state of infrastructure against the code definition, and can automatically remediate drift by re-applying the intended configuration.

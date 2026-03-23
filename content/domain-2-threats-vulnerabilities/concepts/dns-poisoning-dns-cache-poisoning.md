@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is DNS Cache Poisoning?
+> The internet has a phone book it checks often. DNS poisoning sneaks a wrong number into that phone book, so everyone who looks up a website gets sent to the wrong place.
+
 ## Definition
 
 DNS cache poisoning is an attack in which an attacker injects fraudulent DNS records into a recursive resolver's cache, causing subsequent DNS queries for a domain to return an attacker-controlled IP address instead of the legitimate one. All users relying on that resolver are then redirected to the attacker's server, enabling credential theft, malware distribution, or traffic interception.

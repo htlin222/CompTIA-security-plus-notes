@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Disk Imaging?
+> Making a disk image is like photocopying an entire book page by page. You get an exact copy of everything on a hard drive so you can study it without touching the original.
+
 ## Definition
 
 Disk imaging in digital forensics is the process of creating an exact bit-for-bit copy (forensic image) of a storage device, including all allocated and unallocated space, deleted files, and file system metadata. All forensic analysis is performed on the image, not the original media, to preserve evidence integrity and maintain chain of custody.

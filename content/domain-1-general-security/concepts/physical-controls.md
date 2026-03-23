@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Physical Controls?
+> Physical controls are real-world barriers you can touch -- fences, locked doors, security cameras, and guards. They keep people's bodies out of places they shouldn't be.
+
 ## Definition
 
 Physical controls are security measures implemented in the physical world to restrict access to facilities, equipment, and assets. They form the outermost layer of a defense-in-depth strategy, preventing unauthorized physical access that could bypass all technical controls. Physical controls include barriers, access control mechanisms, surveillance, and personnel.

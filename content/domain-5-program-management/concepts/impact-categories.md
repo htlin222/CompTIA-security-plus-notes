@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Impact Categories?
+> When something goes wrong, it can hurt in different ways: you might lose money, lose your reputation, get in trouble with the law, or people could get hurt. Impact categories are the different types of damage a company sorts through to understand how bad a problem really is.
+
 ## Definition
 
 Impact categories in the Business Impact Analysis (BIA) and risk assessment processes define the types of harm an organization could experience if a critical business function is disrupted or a risk materializes. Standard categories include financial loss, reputational damage, regulatory penalties and legal liability, safety risks (especially in critical infrastructure), and operational disruption. Categorizing impacts helps organizations objectively compare risks and prioritize recovery and mitigation efforts.

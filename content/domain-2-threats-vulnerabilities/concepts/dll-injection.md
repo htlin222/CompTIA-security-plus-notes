@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is DLL Injection?
+> Think of sneaking a bad ingredient into someone else's recipe while they're cooking. The program thinks it loaded a normal helper file, but it's actually running the attacker's code in disguise.
+
 ## Definition
 
 DLL injection is a technique used by malware and attackers to execute malicious code within the context of a running process by loading a malicious Dynamic-Link Library (DLL) into that process's memory space. Since the malicious code runs inside a trusted process, it can evade process-based security controls, inherit the process's privileges, and access its resources and memory.

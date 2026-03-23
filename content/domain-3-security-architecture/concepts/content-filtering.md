@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Content filtering?
+> It's like a school librarian who checks what books you are picking up and says "this one is not appropriate for you." Content filtering looks at websites and files and blocks the ones that break the rules.
+
 ## Definition
 
 Content filtering is a proxy server capability that inspects network traffic and blocks or allows access to web resources based on configured policies. Policies can be based on URL categories (gambling, adult content, malware sites), specific URLs or domains, MIME types, file types, or keyword matching within content. Content filtering enforces acceptable use policies and protects users from malicious sites.

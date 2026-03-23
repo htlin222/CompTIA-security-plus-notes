@@ -26,6 +26,15 @@ $domain-5-color: #7a8c3a; // Program Management — olive
 }
 
 // Case study visual distinction
+// ELI5 callout — warm amber, lightbulb icon, friendly
+.callout[data-callout="eli5"] {
+  --color: #e6a817;
+  --border: #e6a81744;
+  --bg: #e6a81710;
+  --callout-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>');
+}
+
+// Case study visual distinction
 body[data-slug*="/cases/"] {
   .article-title {
     border-left: 4px solid #b8860b;

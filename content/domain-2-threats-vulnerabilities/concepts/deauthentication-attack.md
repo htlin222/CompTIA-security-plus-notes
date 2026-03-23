@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Deauthentication Attack?
+> It's like someone repeatedly pulling the plug on your TV every time you try to watch. The attacker sends a "disconnect now" signal to kick you off your Wi-Fi over and over.
+
 ## Definition
 
 A deauthentication attack exploits the 802.11 Wi-Fi protocol's management frames by sending forged deauthentication frames to one or more clients, forcing them to disconnect from the access point. Because management frames in older 802.11 protocols are unauthenticated, any device can forge them. This attack is used as a denial-of-service technique or as a precursor to capturing the WPA2 4-way handshake for offline cracking.

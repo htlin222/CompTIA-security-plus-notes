@@ -10,6 +10,9 @@ aliases:
   - SDP
 ---
 
+> [!eli5] ELI5: What is a Software-Defined Perimeter (SDP)?
+> Instead of giving you a key that opens every room in the building, SDP creates a private, invisible tunnel straight to the one room you need. You can't even see the other rooms exist.
+
 ## Definition
 
 A Software-Defined Perimeter (SDP) is a security framework that creates dynamic, one-to-one encrypted network connections between authenticated and authorized users and the specific resources they need to access—while keeping the existence of other resources completely hidden. Unlike traditional VPNs (which grant broad network access), SDP exposes only specific resources to specific users, treating every access request with zero-trust principles.

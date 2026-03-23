@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Detection and Analysis?
+> This is the step where you figure out if an alarm is real or just a false alarm. Like hearing a noise at night and checking if it is a burglar or just the cat.
+
 ## Definition
 
 Detection and analysis is the second phase of the NIST Incident Response lifecycle, in which the security team identifies that a security incident has occurred, determines its scope and severity, and gathers sufficient information to characterize the incident and begin containment. This phase is triggered by alerts from security tools, log analysis, user reports, or proactive threat hunting.

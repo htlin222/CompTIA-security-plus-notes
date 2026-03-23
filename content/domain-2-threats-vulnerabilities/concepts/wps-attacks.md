@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are WPS Attacks?
+> Some routers have a shortcut PIN to connect quickly. But the PIN is designed so badly that an attacker can guess it in just a few hours instead of years, giving them your Wi-Fi password.
+
 ## Definition
 
 WPS (Wi-Fi Protected Setup) attacks exploit a design vulnerability in the WPS PIN authentication mechanism that allows easy network setup using an 8-digit PIN. Due to a flaw in the WPS protocol's verification process, the 8-digit PIN is effectively split into two halves that can be attacked separately—reducing the attack space from 10^8 to roughly 11,000 combinations. This allows recovery of the WPA/WPA2 passphrase in hours.

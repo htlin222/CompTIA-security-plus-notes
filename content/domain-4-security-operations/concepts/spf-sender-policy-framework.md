@@ -10,6 +10,9 @@ aliases:
   - SPF
 ---
 
+> [!eli5] ELI5: What is SPF?
+> SPF is a list published by a company that says "only these mail servers are allowed to send email from our address." It is like a bouncer with a guest list for email.
+
 ## Definition
 
 SPF (Sender Policy Framework) is an email authentication mechanism that allows domain owners to specify which mail servers are authorized to send email on behalf of their domain. The list is published as a DNS TXT record. Receiving mail servers query the DNS record and compare the sending server's IP address against the authorized list, flagging or rejecting messages from unauthorized senders.

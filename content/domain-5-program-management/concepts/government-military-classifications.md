@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Government / Military Classifications?
+> The government sorts secrets into levels: Top Secret is like a diary you'd guard with your life, Secret is your locker combination, Confidential is your home address, and Unclassified is stuff anyone can know.
+
 ## Definition
 
 US government and military data classification uses a four-tier system established by Executive Order 13526: **Top Secret** (disclosure could cause exceptionally grave damage to national security), **Secret** (serious damage), **Confidential** (damage), and **Unclassified** (no damage from disclosure). A fifth designation, **Sensitive But Unclassified (SBU)** or **Controlled Unclassified Information (CUI)**, covers sensitive information that does not meet the formal classification threshold but still requires protection.

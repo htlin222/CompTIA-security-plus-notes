@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Break-glass Accounts?
+> These are emergency-only accounts, like the fire extinguisher behind glass that says "break in case of emergency." You only use them when everything else fails and you absolutely need access right now.
+
 ## Definition
 
 Break-glass accounts (also called emergency access accounts) are privileged accounts maintained for use only in emergency situations when normal administrative access pathways are unavailable — for example, when the primary admin account is locked out or identity systems are down. These accounts bypass normal access controls but are subject to heightened logging and alerting to detect unauthorized use.

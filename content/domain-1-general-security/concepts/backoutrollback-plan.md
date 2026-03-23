@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Backout/Rollback Plan?
+> It's like drawing your room layout before rearranging the furniture. If the new layout is terrible, you can look at the drawing and put everything back exactly the way it was.
+
 ## Definition
 
 A backout (or rollback) plan is a documented set of procedures that outlines how to reverse a change to a system if that change causes unexpected problems or failures. It is a required element of any well-structured change management process, ensuring that systems can be restored to their prior known-good state quickly and reliably when a change goes wrong.

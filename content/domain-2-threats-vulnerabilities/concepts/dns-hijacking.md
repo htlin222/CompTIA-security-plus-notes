@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is DNS Hijacking?
+> It's like someone breaking into the post office and changing the forwarding address on your mail so everything gets sent to their house instead of yours.
+
 ## Definition
 
 DNS hijacking is an attack in which an attacker gains control over a domain's DNS configuration—either by compromising the domain registrar account, the authoritative DNS server, or ISP-level DNS infrastructure—and changes DNS records to redirect traffic for legitimate domains to attacker-controlled servers. This enables mass interception of traffic, credential harvesting, and malware distribution.

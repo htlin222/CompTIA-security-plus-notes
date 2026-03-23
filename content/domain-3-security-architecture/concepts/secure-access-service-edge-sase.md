@@ -10,6 +10,9 @@ aliases:
   - SASE
 ---
 
+> [!eli5] ELI5: What is Secure Access Service Edge (SASE)?
+> Instead of having all your security guards at the front gate of one building, SASE puts security guards everywhere in the cloud. No matter where you are working from -- home, school, or a coffee shop -- the guards are right there protecting you.
+
 ## Definition
 
 Secure Access Service Edge (SASE, pronounced "sassy") is a cloud-delivered security framework that converges wide-area networking (WAN) capabilities with comprehensive network security services into a single, cloud-native service model. SASE moves security functions from the traditional data center perimeter to a distributed cloud edge, delivering consistent security to users regardless of their location.

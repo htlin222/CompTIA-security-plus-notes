@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Honeyfiles?
+> It's like leaving a folder on a desk labeled "Top Secret Passwords" that's actually empty. If someone opens it, you know they were snooping where they shouldn't be.
+
 ## Definition
 
 Honeyfiles are fictitious files placed strategically on systems or file shares with enticing names (such as "passwords.xlsx," "salary_data.csv," or "backup_keys.txt") designed to attract attackers who have already gained access to a system. Any access to a honeyfile triggers an alert, providing immediate detection of unauthorized access with minimal false positives—legitimate users have no reason to access files they don't know about.

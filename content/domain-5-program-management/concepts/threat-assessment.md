@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Threat Assessment?
+> Who might try to break in, and how skilled are they? A threat assessment is like figuring out whether you need to worry about a house cat or a bear -- it identifies the bad guys, what they can do, and how likely they are to target you.
+
 ## Definition
 
 Threat assessment is the process of identifying, analyzing, and evaluating potential threat sources — both internal and external — and their capabilities, motivations, and likelihood of targeting the organization. Threat sources include nation-state actors, organized cybercriminal groups, hacktivists, insider threats, and natural hazards. Understanding the threat landscape enables organizations to prioritize defensive investments against the most likely and impactful threats.

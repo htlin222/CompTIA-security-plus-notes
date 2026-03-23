@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Amplification/Reflection?
+> Think of writing someone else's return address on a postcard, then mailing it to a place that sends back a giant package. The package goes to the wrong person, and it's way bigger than what you sent.
+
 ## Definition
 
 Amplification/Reflection is a DDoS technique that combines two concepts: reflection (directing responses from third-party servers toward the victim by spoofing the victim's IP) and amplification (exploiting protocols where the response is much larger than the request). The attacker essentially uses the internet's open infrastructure as an involuntary weapon against the victim.

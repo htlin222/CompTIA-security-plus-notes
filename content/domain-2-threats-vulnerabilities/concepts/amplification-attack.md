@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is an Amplification Attack?
+> It's like whispering a tiny question to a loudspeaker and having it blast the answer at someone's house. The attacker sends a small message but the response that hits the target is huge.
+
 ## Definition
 
 An amplification attack is a type of distributed denial-of-service (DDoS) attack in which the attacker exploits protocols that produce responses much larger than the triggering request. By spoofing the victim's IP address as the source, the attacker directs all the amplified responses to the victim, overwhelming their bandwidth or resources with minimal effort on the attacker's part.

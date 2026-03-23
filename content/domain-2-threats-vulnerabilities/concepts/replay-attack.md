@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Replay Attack?
+> The attacker records your "password handshake" with a server and plays it back later, like recording someone saying "Open sesame" and replaying the recording to open the door.
+
 ## Definition
 
 A replay attack occurs when an attacker captures a legitimate authentication exchange or transaction and retransmits it later to gain unauthorized access or repeat a transaction. Unlike relay attacks (which are real-time), replay attacks involve recording valid communications and replaying them at a later time. They exploit authentication systems that don't include temporal components to verify freshness.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Downgrade Attack?
+> You have a strong steel lock on your door, but an attacker tricks you into swapping it for a flimsy plastic one. Then they break the weak lock easily.
+
 ## Definition
 
 A downgrade attack forces a system to abandon a secure, modern protocol in favor of an older, weaker version that the attacker can exploit. By manipulating protocol negotiation mechanisms, the attacker tricks both parties into "downgrading" to a version with known vulnerabilities. Famous examples include POODLE (forcing SSLv3), DROWN (forcing SSLv2), and FREAK/Logjam (forcing export-grade cryptography).

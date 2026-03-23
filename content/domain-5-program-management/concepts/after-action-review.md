@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is an After-Action Review?
+> After the big game, the team sits down and talks about what went well and what didn't. An after-action review is the same thing -- a meeting after an incident or drill to figure out lessons learned so next time goes better.
+
 ## Definition
 
 An after-action review (AAR) is a structured analysis conducted after a security incident, disaster recovery test, or business continuity exercise to identify what worked well, what failed, and what improvements are needed. The goal is to translate experience into actionable lessons that improve future response and preparedness. AARs are a critical component of continuous improvement in both BCP and incident response programs.

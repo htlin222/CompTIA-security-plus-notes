@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is RFID Cloning?
+> Your office badge opens doors when you tap it. RFID cloning secretly copies the badge's signal onto a blank card, giving the attacker their own copy of your key without you knowing.
+
 ## Definition
 
 RFID cloning involves reading the radio frequency identifier data from an RFID-enabled access badge or card without the owner's knowledge or consent, then writing that data to a blank RFID card or device to create a functional duplicate. The cloned card can then be used to gain physical access to secured areas that accept the original card. Many older proximity card systems (125 kHz HID) are vulnerable to this attack with low-cost tools.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Right to Audit?
+> If you hire someone to walk your dog, you'd want the right to check on them sometimes. A right-to-audit clause in a contract lets a company inspect its vendor's security whenever it needs to, instead of just taking their word for it.
+
 ## Definition
 
 A right-to-audit clause is a contractual provision that gives an organization the legal right to audit a vendor's security controls, processes, and compliance posture — either directly (on-site audit) or through documentation review. This clause is essential for third-party risk management because it ensures the organization retains oversight of how vendors handle sensitive data and maintain security obligations, rather than relying solely on vendor self-attestation.

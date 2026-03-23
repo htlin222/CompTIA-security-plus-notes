@@ -10,6 +10,9 @@ aliases:
   - UEBA
 ---
 
+> [!eli5] ELI5: What is UEBA?
+> UEBA watches how people and devices normally behave, then flags anything unusual. If someone who never works weekends suddenly downloads files at 3 AM on a Sunday, UEBA notices.
+
 ## Definition
 
 User and Entity Behavior Analytics (UEBA) is a security analytics capability that uses machine learning and statistical modeling to establish baselines of normal behavior for users, devices, applications, and other entities within an environment. UEBA then detects deviations from these baselines that may indicate insider threats, compromised accounts, data exfiltration, or lateral movement — threats that often evade rule-based detection because they don't match known attack signatures.

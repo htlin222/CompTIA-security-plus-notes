@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Declassification?
+> Once a surprise birthday party has already happened, it's not a secret anymore. Declassification is when information that used to be top-secret gets downgraded because it's no longer sensitive.
+
 ## Definition
 
 Declassification is the process of formally reducing the classification level of data when its sensitivity decreases over time or when the reason for its original classification no longer applies. For example, a business strategy document classified as "Confidential" may be declassified to "Internal" after the strategy is publicly announced, or a government document classified "Secret" may be declassified after a defined period or event. Declassification must follow a formal process documented in the data classification policy.

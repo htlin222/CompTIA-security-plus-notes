@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Attribute Mapping?
+> When two schools merge, they need to match up "Grade 5" at one school with "Year 5" at the other. Attribute mapping translates identity details between different systems so they understand each other.
+
 ## Definition
 
 Attribute mapping is the process of translating identity attributes such as roles, department names, and group memberships between the schemas used by different organizations participating in a federation. Since organizations may use different naming conventions and structures for their identity systems, attribute mapping ensures that the service provider receives the identity information in the format it expects.

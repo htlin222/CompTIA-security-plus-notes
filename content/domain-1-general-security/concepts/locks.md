@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Locks?
+> Locks on doors and cabinets are the most basic way to keep people out. Some use metal keys, some use number codes, and some even scan your fingerprint -- but they all do the same job: keep the wrong people on the other side.
+
 ## Definition
 
 Locks are fundamental physical access control devices that restrict entry to secured areas. Security+ recognizes three primary lock categories: mechanical (traditional key-based), electronic (keypad/combination or smart locks), and biometric (fingerprint, retina). The choice of lock type depends on the security level required, audit trail needs, and operational requirements such as managing access for many users.

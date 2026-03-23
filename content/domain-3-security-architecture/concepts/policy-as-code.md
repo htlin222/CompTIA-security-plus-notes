@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Policy as code?
+> Instead of writing safety rules on paper and hoping everyone follows them, you program the rules into a computer that automatically checks everything. If something breaks a rule, the computer catches it before it goes live.
+
 ## Definition
 
 Policy as code is the practice of expressing security and compliance policies as machine-readable code that can be automatically enforced during the infrastructure deployment process. Policy as code tools scan IaC templates (Terraform, CloudFormation) against defined security rules before deployment, blocking non-compliant configurations before they ever reach production.

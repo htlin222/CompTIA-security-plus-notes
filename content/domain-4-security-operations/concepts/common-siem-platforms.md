@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Common SIEM Platforms?
+> These are the brand names of the big security dashboards -- like Splunk or Microsoft Sentinel. Different companies make different versions, but they all collect and analyze security alerts in one place.
+
 ## Definition
 
 Common SIEM platforms are the leading commercial and open-source products used by organizations to implement Security Information and Event Management capabilities. Each platform offers core capabilities of log aggregation, correlation, alerting, and dashboards, with differentiating features in deployment model, integration ecosystem, analytics capabilities, and cost.

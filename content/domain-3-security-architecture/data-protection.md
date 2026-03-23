@@ -11,6 +11,9 @@ aliases:
   - "Data Protection"
 ---
 
+> [!eli5] ELI5: What is Data Protection?
+> It's like keeping your diary safe. You might put a lock on it so nobody can read it, hide it in a secret spot, and decide when to throw away old pages. Data protection means all the different ways we keep important information safe -- locking it up, controlling who can see it, and making sure it does not end up somewhere it should not be. Every step of the way, from creating data to deleting it, needs a plan.
+
 ## Overview
 
 Data protection involves implementing controls to ensure that data remains confidential, intact, and available throughout its lifecycle — from creation through storage, use, sharing, archival, and destruction. Effective data protection addresses data in all three states (at rest, in transit, in use) and applies technical controls like encryption, access controls, and data loss prevention alongside administrative controls like policies and classification.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Handling Procedures?
+> Different library books have different rules -- some you can take home, some stay in the reading room, and rare ones you can only look at with gloves on. Handling procedures tell people exactly how to store, send, and throw away data based on how sensitive it is.
+
 ## Definition
 
 Handling procedures are the specific rules that govern how data of each classification level must be stored, transmitted, accessed, retained, and destroyed. They translate classification labels into actionable requirements for employees. For example, Confidential data may require AES-256 encryption at rest, TLS in transit, strict access controls, a 7-year retention period, and secure shredding or cryptographic erasure at end of life.

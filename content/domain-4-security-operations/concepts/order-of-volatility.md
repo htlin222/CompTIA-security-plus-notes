@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Order of Volatility?
+> Some clues disappear faster than others. Order of volatility says grab the ones that vanish quickest first -- like catching a snowflake before it melts, then picking up the rock later.
+
 ## Definition
 
 The order of volatility is a forensic principle that dictates evidence should be collected starting from the most volatile (easily lost) data and progressing to the least volatile. This ensures that transient evidence that would be lost upon system shutdown or power loss is captured first, while more stable evidence is collected later.

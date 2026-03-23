@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What does Removing Default Accounts and Passwords mean?
+> Many devices come with usernames like "admin" and passwords like "password." Removing them is like changing the locks on a new house because the old owner still has copies of the key.
+
 ## Definition
 
 Removing default accounts and changing default passwords is one of the most fundamental and critical hardening steps for any device or system. Manufacturers ship devices with known default credentials (often documented publicly or easily searchable) that attackers can use immediately to gain access if they are not changed before deployment.

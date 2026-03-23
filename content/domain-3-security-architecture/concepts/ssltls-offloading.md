@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is SSL/TLS offloading?
+> Scrambling and unscrambling secret messages takes a lot of effort. SSL/TLS offloading lets a helper machine do all that heavy work so the main server can focus on actually answering your requests, like having someone else unwrap all your presents for you.
+
 ## Definition
 
 SSL/TLS offloading (also called SSL termination) is a load balancer configuration in which the load balancer handles all TLS encryption and decryption on behalf of the backend servers. The load balancer decrypts incoming HTTPS traffic, optionally inspects or modifies it, then forwards the request to backend servers in plaintext (or re-encrypts it for backend SSL). This reduces the cryptographic processing burden on backend servers.

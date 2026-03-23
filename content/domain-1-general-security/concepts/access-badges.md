@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Access Badges?
+> It's like a special library card you tap on a reader to unlock the door -- only people with the right card can get in.
+
 ## Definition
 
 Access badges are physical authentication tokens—typically RFID cards or smart cards—used to control entry to buildings, rooms, or secured areas. They work by transmitting a unique identifier to a reader, which then grants or denies access based on configured permissions. Access badges are a key component of physical security and are often integrated with visitor management and audit logging systems.

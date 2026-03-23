@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Reconnaissance?
+> Reconnaissance is gathering information about a target before attacking. It is like a burglar walking through a neighborhood, noting which houses have cameras and which leave windows open.
+
 ## Definition
 
 Reconnaissance is the first active phase of penetration testing in which testers gather information about the target organization and its systems to identify potential attack vectors. Reconnaissance can be passive (using publicly available information without directly interacting with target systems) or active (directly probing target systems, which may be detected by the target's security monitoring).

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is HTML Injection?
+> It's like someone sneaking a fake poster onto the school bulletin board that looks official but sends students to the wrong room. The attacker adds fake content to a real website.
+
 ## Definition
 
 HTML injection is a web application vulnerability where an attacker inserts malicious HTML code into a web page that is then rendered by other users' browsers. Unlike XSS (which injects scripts), HTML injection focuses on injecting markup to alter the visual appearance of a page, redirect users to phishing sites, display fake login forms to steal credentials, or insert malicious links.

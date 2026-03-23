@@ -10,6 +10,9 @@ aliases:
   - SNMP
 ---
 
+> [!eli5] ELI5: What is SNMP?
+> SNMP lets you check on your network devices from afar, like calling each room in a hotel to ask if everything is okay. The newest version adds a secret code so nobody can eavesdrop.
+
 ## Definition
 
 SNMP (Simple Network Management Protocol) is an internet protocol used to monitor, manage, and collect performance data from network devices such as routers, switches, firewalls, servers, and printers. It enables network management systems (NMS) to query device status, receive alerts (traps), and modify device configurations.

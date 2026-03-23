@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Rainbow Table Attack?
+> Instead of guessing passwords one by one, the attacker has a giant cheat sheet that already has millions of passwords matched to their scrambled versions. They just look yours up.
+
 ## Definition
 
 A rainbow table attack uses precomputed lookup tables that map plaintext passwords to their hash values, allowing an attacker to quickly reverse a hash to its plaintext password by looking it up in the table—instead of computing hashes on the fly. Rainbow tables trade storage space for speed, enabling extremely fast password cracking of unsalted hashes.

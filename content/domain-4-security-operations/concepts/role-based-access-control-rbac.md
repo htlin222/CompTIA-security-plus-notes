@@ -10,6 +10,9 @@ aliases:
   - RBAC
 ---
 
+> [!eli5] ELI5: What is Role-Based Access Control?
+> RBAC gives access based on your job title. A teacher can access grade books, a janitor can access supply closets, and neither can access the other's stuff.
+
 ## Definition
 
 Role-Based Access Control (RBAC) is an access control model in which permissions are assigned to roles (representing job functions) rather than directly to individual users. Users are then assigned to roles based on their job responsibilities, inheriting the permissions of those roles. RBAC simplifies access management at scale and makes it easier to enforce least privilege and separate duties.

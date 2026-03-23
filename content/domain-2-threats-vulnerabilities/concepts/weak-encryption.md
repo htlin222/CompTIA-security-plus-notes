@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Weak Encryption?
+> Using a flimsy lock that looks real but can be picked in seconds. Weak encryption makes your data look protected, but modern computers can crack it easily.
+
 ## Definition
 
 Weak encryption refers to the use of cryptographic algorithms that are known to be vulnerable due to mathematical flaws, computational feasibility of breaking them, or insufficient key lengths given modern computing power. Using weak encryption provides a false sense of security—data appears protected but can be decrypted by a determined attacker with the right tools.

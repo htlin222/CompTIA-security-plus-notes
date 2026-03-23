@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Hypothesis-driven Hunting?
+> It is like being a scientist who says "I bet the attacker came in through the side door" and then goes looking for evidence to prove or disprove that guess.
+
 ## Definition
 
 Hypothesis-driven hunting is a threat hunting methodology that begins with a structured hypothesis about how an attacker might be operating in the environment, then systematically searches for evidence to confirm or refute the hypothesis. The hypothesis is formed based on threat intelligence, knowledge of the environment, attacker TTPs, and analytical reasoning.

@@ -11,6 +11,9 @@ aliases:
   - "Network Traffic Analysis"
 ---
 
+> [!eli5] ELI5: What is Network Monitoring?
+> Picture a lifeguard sitting in a tall chair watching the whole swimming pool. They scan the water constantly, looking for anyone in trouble. Network monitoring is like that lifeguard, but for your computer network -- it watches all the data flowing back and forth, looking for anything unusual. If someone is sending way too much data or connecting from a strange place, the monitoring system spots it and raises the alarm.
+
 ## Overview
 
 Network monitoring involves continuously observing network traffic, bandwidth utilization, and device status to ensure availability, performance, and security. From a security perspective, network monitoring identifies anomalous traffic patterns, unauthorized connections, and potential data exfiltration. It provides visibility into what is traversing the network at any given time.

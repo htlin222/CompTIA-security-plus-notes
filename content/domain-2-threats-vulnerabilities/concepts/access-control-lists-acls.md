@@ -11,6 +11,9 @@ aliases:
   - ACLS
 ---
 
+> [!eli5] ELI5: What are Access Control Lists (ACLs)?
+> It's like a guest list at a party -- only people whose names are on the list get in, and everyone else gets turned away at the door.
+
 ## Definition
 
 Access Control Lists (ACLs) are ordered sets of permit and deny rules applied to network interfaces, firewalls, or file systems to control what traffic or users are allowed. In network security, ACLs filter packets based on attributes such as source/destination IP, port, and protocol. They are a fundamental tool for enforcing network segmentation and the principle of least privilege.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Scheduling algorithms?
+> These are the different methods for deciding who goes next, like taking turns (round-robin) or going to the shortest line at the grocery store (least connections). Load balancers use these rules to decide which server handles each request.
+
 ## Definition
 
 Load balancer scheduling algorithms (also called distribution methods) determine how the load balancer selects which backend server should handle each incoming request. The choice of algorithm affects performance, session persistence, and how evenly load is distributed across the server pool.

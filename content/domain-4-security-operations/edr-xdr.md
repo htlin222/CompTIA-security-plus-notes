@@ -12,6 +12,9 @@ aliases:
   - "XDR"
 ---
 
+> [!eli5] ELI5: What is EDR/XDR?
+> Picture a school with security cameras in every hallway. EDR is like having a smart camera on each computer that watches what programs do and sounds an alarm if something looks wrong. XDR takes it further -- it connects cameras from the hallways, parking lot, cafeteria, and playground all together so you can spot a troublemaker no matter where they go. Instead of just catching bad guys at one door, you can track them across the whole school.
+
 ## Overview
 
 Endpoint Detection and Response (EDR) continuously monitors endpoints to detect suspicious behavior, investigate threats, and enable rapid response. Extended Detection and Response (XDR) expands this capability beyond endpoints to include network, cloud, email, and identity telemetry in a unified platform. Both represent the evolution beyond traditional antivirus toward proactive threat detection.

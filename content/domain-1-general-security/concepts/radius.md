@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is RADIUS?
+> When you connect to Wi-Fi at school, a central computer checks if your username and password are correct. RADIUS is the system that handles that check -- it's like a bouncer for network connections.
+
 ## Definition
 
 RADIUS (Remote Authentication Dial-In User Service) is a networking protocol that provides centralized Authentication, Authorization, and Accounting (AAA) for network access services including Wi-Fi, VPN, and dial-up connections. It operates over UDP (ports 1812 for authentication/authorization and 1813 for accounting) and encrypts only the password field in authentication packets—not the entire payload.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Technical Intelligence?
+> Technical intelligence includes the specific clues left by attacks -- bad IP addresses, file fingerprints, and suspicious website links. It is like a list of license plate numbers for known getaway cars.
+
 ## Definition
 
 Technical threat intelligence consists of specific, machine-readable Indicators of Compromise (IoCs) that can be directly consumed by security tools to detect or block known threats. These atomic indicators include IP addresses, domain names, URLs, file hashes (MD5/SHA256), email addresses, and other concrete observables that can be matched against network traffic, logs, and endpoint activity.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Encryption?
+> It's like writing a letter in a secret language that only you and your friend know. Even if someone steals the letter, they just see gibberish.
+
 ## Definition
 
 Encryption is a fundamental security control that transforms plaintext data into an unreadable ciphertext using cryptographic algorithms, ensuring that only parties with the correct key can access the original data. As a mitigation technique, encryption protects data confidentiality both when stored (data at rest) and when transmitted across networks (data in transit), rendering intercepted or stolen data useless to attackers without the decryption key.

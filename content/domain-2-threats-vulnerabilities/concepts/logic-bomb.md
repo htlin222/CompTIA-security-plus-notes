@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Logic Bomb?
+> It's hidden bad code that sleeps inside a program until something specific happens -- like a certain date arrives or someone gets fired. Then BOOM, it goes off and causes damage.
+
 ## Definition
 
 A logic bomb is malicious code deliberately inserted into a software system or application that remains dormant until specific triggering conditions are met—such as a particular date/time, a user action, or a system event. When triggered, it executes its payload, which can include deleting files, encrypting data, creating backdoors, or disrupting operations. Logic bombs are particularly dangerous because they are often planted by insiders with legitimate access.

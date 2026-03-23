@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a CSRF Example?
+> You're logged into a website, and a bad guy tricks your browser into clicking a hidden button on that site without you knowing. It's like someone moving your hand to sign a paper while you're not looking.
+
 ## Definition
 
 A classic Cross-Site Request Forgery (CSRF) example demonstrates how an attacker tricks a victim's authenticated browser into performing an unwanted action on a trusted website. By embedding a malicious request (e.g., as a hidden image tag or form) in an attacker-controlled page, the victim's browser automatically includes their session cookie when the request is sent, making it appear as a legitimate authenticated action.

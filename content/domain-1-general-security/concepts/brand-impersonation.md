@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Brand Impersonation?
+> It's like someone making a fake lemonade stand that looks exactly like your favorite one, using the same sign and colors. You think you're buying from the real stand, but you're actually giving your money to a stranger.
+
 ## Definition
 
 Brand impersonation is a social engineering technique in which attackers create fraudulent digital assets—fake websites, spoofed email addresses, cloned social media profiles, or counterfeit mobile apps—that closely mimic trusted brands to deceive victims into divulging credentials, making payments, or downloading malware. It exploits the trust users have established with well-known organizations.

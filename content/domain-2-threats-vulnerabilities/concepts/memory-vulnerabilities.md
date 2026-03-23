@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Memory Vulnerabilities?
+> A computer's memory is like a bunch of cubbyholes for storing things. Memory vulnerabilities happen when programs put things in the wrong cubbyhole or forget to clean up, and attackers can use that mess to take control.
+
 ## Definition
 
 Memory vulnerabilities are a class of security flaws arising from improper handling of computer memory—including insufficient bounds checking, improper memory deallocation, and memory state management errors. These vulnerabilities can lead to crashes, information disclosure, or remote code execution. They are most prevalent in programs written in languages like C and C++ that provide direct memory management without built-in safety checks.

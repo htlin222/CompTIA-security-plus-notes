@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Industry Standards?
+> These are like the safety rules for a specific sport -- swimming pools have different rules than basketball courts. Each industry has its own set of security rules that companies agree to follow to show they take safety seriously.
+
 ## Definition
 
 Industry standards are security frameworks and requirements established by industry bodies or consortia that may be voluntary or contractually mandated based on the nature of an organization's business. Examples include PCI DSS (required for organizations handling payment card data), ISO 27001 (international ISMS standard, often required by enterprise customers), and NIST CSF (voluntary but widely adopted in US critical infrastructure). Adherence to industry standards demonstrates security maturity and often provides a competitive advantage.

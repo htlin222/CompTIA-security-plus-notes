@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Smurf Attack?
+> The attacker sends a "ping everyone" message to a whole network but stamps your address on it. Everyone on the network replies to you at once, burying you under a flood of responses you never asked for.
+
 ## Definition
 
 A Smurf attack is a distributed denial-of-service attack that exploits ICMP (ping) and IP broadcast addresses. The attacker sends ICMP echo request (ping) packets to a network's broadcast address with the source IP spoofed to be the victim's IP address. Every host on that network responds to the ping—sending their ICMP echo replies to the victim—flooding the victim with traffic from many sources.

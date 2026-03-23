@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Log Forwarding Agents?
+> These are little messengers installed on each computer that grab log entries and send them to the central collection point. Like mail carriers picking up letters from every house on the block.
+
 ## Definition
 
 Log forwarding agents are lightweight software components installed on endpoints, servers, and other devices to collect, filter, and forward log data to a centralized logging or SIEM platform. They enable collection of logs from systems that cannot natively send logs via syslog or other protocols, and can perform local filtering, enrichment, and formatting before transmission.

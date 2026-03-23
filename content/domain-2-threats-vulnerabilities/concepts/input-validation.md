@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Input Validation?
+> Before letting someone into a party, you check their invitation. Input validation checks everything a user types in to make sure it looks right and doesn't contain anything sneaky.
+
 ## Definition
 
 Input validation is a security control that checks all user-supplied data against defined rules before processing it, rejecting or sanitizing any input that doesn't conform to expected formats or character sets. It is a foundational defense against injection attacks (SQL, command, LDAP), XSS, and buffer overflows. Effective input validation uses allowlisting (defining what IS acceptable) rather than blocklisting (trying to identify all bad inputs).

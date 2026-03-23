@@ -10,6 +10,9 @@ aliases:
   - CCTV
 ---
 
+> [!eli5] ELI5: What is Video Surveillance (CCTV)?
+> Security cameras are like extra pairs of eyes that never blink. They watch the building all day and night, scaring off bad guys and recording everything so you can see what happened later.
+
 ## Definition
 
 Video surveillance using Closed-Circuit Television (CCTV) systems provides continuous monitoring and recording of physical areas within and around a facility. Modern systems use IP cameras, digital video recorders (DVRs/NVRs), and AI-powered analytics to monitor access points, perimeters, server rooms, and common areas. CCTV serves as both a deterrent (visible cameras discourage criminal behavior) and a detective control (recordings provide evidence after incidents).

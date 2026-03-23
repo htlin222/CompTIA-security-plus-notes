@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is the Least Functionality Principle?
+> Only install what you actually need. It is like packing for a trip -- if you bring less stuff, there is less that can get lost or stolen.
+
 ## Definition
 
 The least functionality principle is a security hardening concept that specifies that each system should be configured to provide only the minimum set of functions, services, and capabilities required for its designated role. Extra functionality represents unnecessary attack surface — every unused feature, service, or port is a potential vulnerability that serves no business purpose.

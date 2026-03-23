@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Baseline-driven Hunting?
+> You know what your neighborhood normally looks like. If a strange car suddenly parks there every day, you notice. Baseline-driven hunting means knowing what "normal" looks like so you can spot anything weird.
+
 ## Definition
 
 Baseline-driven hunting is a threat hunting methodology that starts by establishing a well-understood "normal" state for systems, networks, and users, then actively searches for deviations from that baseline. By knowing what normal looks like, analysts can identify anomalies that may indicate attacker activity, even when no signature match or alert has been triggered.

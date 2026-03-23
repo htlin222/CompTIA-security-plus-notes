@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Communication Plan?
+> During an emergency, a communication plan says who calls who and what they are allowed to say. It is like the phone tree your school uses to tell parents about a snow day.
+
 ## Definition
 
 A communication plan defines the procedures, contacts, and messaging for notifying internal and external stakeholders during a security incident or crisis. Effective communication is critical during incidents to ensure the right people receive the right information at the right time, while avoiding premature or inaccurate public disclosures that could cause additional harm or legal liability.

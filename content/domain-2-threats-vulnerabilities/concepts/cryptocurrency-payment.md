@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Cryptocurrency Payment?
+> Bad guys demand to be paid in digital money that's hard to trace -- like getting paid in invisible coins that nobody can follow back to them.
+
 ## Definition
 
 Ransomware operators demand payment in cryptocurrency—primarily Bitcoin or Monero—because these digital currencies offer relative anonymity and cross-border transferability that make it difficult for law enforcement to trace and seize funds. The pseudonymous nature of cryptocurrency transactions significantly reduces the risk of identification for ransomware operators compared to traditional banking systems.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Chosen Plaintext/Ciphertext Attack?
+> It's like giving a secret code machine specific messages to encode, then studying the results to figure out how the machine works and crack the code.
+
 ## Definition
 
 In a chosen-plaintext attack (CPA), the attacker can choose arbitrary plaintexts to encrypt and observe the resulting ciphertexts, using the patterns to deduce the encryption key. In a chosen-ciphertext attack (CCA), the attacker can choose arbitrary ciphertexts to decrypt and observe the plaintexts. These are among the strongest cryptanalytic attack models and are used to test the security of cryptographic algorithms.

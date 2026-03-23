@@ -12,6 +12,9 @@ aliases:
   - "CSRF"
 ---
 
+> [!eli5] ELI5: What are Cross-Site Scripting and Cross-Site Request Forgery?
+> These are two tricks that bad guys play on websites. Cross-site scripting is like someone taping a fake "Push this button for candy" sign on a school wall -- when kids push it, something bad happens. The website accidentally shows the attacker's trick to everyone who visits. Cross-site request forgery is different -- it's like someone secretly sending a letter to the principal with your name on it, asking to do something you never agreed to. Both attacks trick your web browser into doing things you didn't mean to do.
+
 ## Overview
 
 Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF) are client-side web vulnerabilities that exploit the trust relationship between users and web applications. XSS injects malicious scripts into web pages viewed by other users. CSRF tricks authenticated users into performing unintended actions on a web application. Both are critical topics on the Security+ exam and appear in the OWASP Top 10.

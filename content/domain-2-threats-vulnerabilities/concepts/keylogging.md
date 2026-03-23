@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Keylogging?
+> Instead of cracking your password after the fact, this attack records it the moment you type it. The attacker gets your exact password in plain text, no guessing needed.
+
 ## Definition
 
 Keylogging as a password attack technique involves capturing user credentials by recording keystrokes at the time of entry. This technique bypasses the need to crack hashed passwords—instead, credentials are captured in plaintext as the user types them. Keylogging can be performed via software malware installed on the target system or via physical hardware devices covertly attached to a computer.

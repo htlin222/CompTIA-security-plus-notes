@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Metrics and Reporting?
+> Metrics turn security work into numbers you can track, like counting how fast you fix problems or how many alerts you handle per day. Reports share those numbers with the team and bosses.
+
 ## Definition
 
 Metrics and reporting in SOAR and security operations involve the systematic measurement and communication of key performance indicators (KPIs) that reflect the effectiveness and efficiency of the security operations center and its automation capabilities. These metrics allow security leaders to demonstrate value, identify improvement opportunities, and justify investments in security tooling and staffing.

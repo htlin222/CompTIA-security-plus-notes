@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Continuous Monitoring?
+> It is like a baby monitor that never turns off. You are always watching your systems so the moment something weird happens, you know about it right away.
+
 ## Definition
 
 Continuous monitoring in endpoint security refers to the persistent collection and recording of detailed telemetry from endpoints using lightweight software agents. Unlike periodic scans, continuous monitoring captures all activity in real time, including process creation and termination, file system changes, registry modifications, network connections, and user logon events, enabling both real-time detection and retrospective investigation.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is "Something You Do"?
+> This is about how you do things -- like the way you type or the way you walk. Everyone has their own style, and computers can learn to recognize yours.
+
 ## Definition
 
 "Something you do" is a behavioral authentication factor that analyzes patterns in how a user performs specific actions, such as their typing rhythm (keystroke dynamics), mouse movement patterns, gait analysis, or signature dynamics. Unlike static biometrics (fingerprint, iris), behavioral biometrics are dynamic and continuous, enabling ongoing authentication throughout a session rather than just at login.

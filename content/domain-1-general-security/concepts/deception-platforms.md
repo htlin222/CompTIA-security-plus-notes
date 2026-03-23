@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Deception Platforms?
+> It's a system that automatically sets up hundreds of fake traps across a whole network -- like scattering trip wires everywhere so any intruder is almost guaranteed to set one off.
+
 ## Definition
 
 Deception platforms are enterprise security solutions that automate the creation, deployment, and management of a comprehensive network of decoys—including honeypots, honeyfiles, honeytokens, and fake credentials—distributed throughout the production environment. They provide centralized management, alerting, and threat intelligence integration, making large-scale deception infrastructure practical without manual effort.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is the CSRF Mechanism?
+> Your browser automatically sends your login cookie with every request to a website. The attacker hides a request on their page, and when you visit it, your browser sends that request to the real site as if you asked for it.
+
 ## Definition
 
 The CSRF attack mechanism works by exploiting the fact that browsers automatically include cookies (including session cookies) with every request to a domain, regardless of the origin of the request. An attacker crafts a malicious request—embedded in a hidden form, an image tag, or a JavaScript fetch call on their own website—that performs a state-changing action on a target site. When the victim visits the attacker's page while logged into the target, the browser sends the forged request with valid authentication.

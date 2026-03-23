@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Roles and Responsibilities?
+> On a soccer team, the goalie, defenders, and forwards all have different jobs. In security, people like the data owner, data custodian, and security chief each have clear duties so nothing falls through the cracks.
+
 ## Definition
 
 Clearly defined roles and responsibilities are a governance prerequisite for effective security and privacy management. Key roles include: the **CISO** (executive accountable for the security program), **data owner** (business leader accountable for a data set's protection), **data custodian** (IT staff responsible for day-to-day data protection), **data steward** (responsible for data quality and policy compliance), **data processor** (entity processing data on behalf of another), and **data controller** (entity determining the purpose and means of processing).

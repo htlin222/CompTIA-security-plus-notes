@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are API Attacks?
+> An API is like a drive-through window where apps order information. An API attack is when someone figures out how to trick the window into giving out free food -- or everyone else's orders.
+
 ## Definition
 
 API attacks target application programming interfaces (APIs) that expose backend services to clients. Common vulnerabilities include broken authentication (weak or missing token validation), excessive data exposure (returning more data than necessary), injection flaws in API parameters, and lack of rate limiting enabling brute-force or enumeration attacks. APIs have become a primary attack surface as organizations move to microservices and cloud architectures.

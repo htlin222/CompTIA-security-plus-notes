@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Environmental Controls?
+> Computers don't like getting too hot, too wet, or catching fire -- just like you! Environmental controls are things like air conditioning, fire sprinklers, and flood sensors that keep the room safe for the machines inside.
+
 ## Definition
 
 Environmental controls are physical security measures designed to protect IT infrastructure from non-human threats such as fire, excessive heat, humidity, flooding, and power issues. These controls are essential in data centers and server rooms where hardware failures due to environmental conditions can cause significant data loss and downtime, threatening the availability pillar of the CIA Triad.

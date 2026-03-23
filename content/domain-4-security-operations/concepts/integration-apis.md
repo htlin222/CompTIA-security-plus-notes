@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Integration APIs?
+> Integration APIs are the handshake agreements between different security tools that let them pass data back and forth, so your firewall can talk to your alert system smoothly.
+
 ## Definition
 
 Integration APIs in the context of SOAR platforms are the programmatic interfaces used to connect SOAR solutions to the diverse ecosystem of security tools they need to orchestrate. SOAR platforms use APIs to query data from SIEMs, trigger actions on firewalls, create tickets in ITSM systems, and communicate with dozens of other security tools — all within a single automated workflow.

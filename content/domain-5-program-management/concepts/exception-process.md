@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is an Exception Process?
+> Sometimes a student needs a special pass to leave class early for a doctor's appointment. An exception process is the official way to ask for permission to skip a security rule, with a good reason and a plan to get back on track.
+
 ## Definition
 
 An exception process is a formal, documented mechanism that allows individuals or business units to request approval for a temporary or permanent deviation from an established security policy when full compliance is technically infeasible or would cause unacceptable business disruption. Exceptions must be formally requested, risk-assessed, approved by an authorized authority (typically the CISO or security committee), documented, and time-limited with a remediation plan.

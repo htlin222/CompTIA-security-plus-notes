@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is HTTPS Spoofing?
+> You see the little padlock icon in your browser and think you're safe, but the attacker has set up a look-alike website with its own padlock. It's like a fake store with a real-looking "Open" sign.
+
 ## Definition
 
 HTTPS spoofing involves deceiving users into believing they have a secure HTTPS connection with a legitimate site while actually connecting to an attacker-controlled server presenting a fraudulent or misleading certificate. Techniques include using look-alike domain names with valid certificates, IDN homograph attacks (using visually similar Unicode characters), or compromising a Certificate Authority to issue rogue certificates for legitimate domains.

@@ -11,6 +11,9 @@ aliases:
   - IAC
 ---
 
+> [!eli5] ELI5: What is Infrastructure as Code?
+> Instead of clicking buttons to set up a server, you write instructions in a file. It is like building with LEGO instructions -- you get the same result every single time.
+
 ## Definition
 
 Infrastructure as Code (IaC) is the practice of managing and provisioning computing infrastructure using machine-readable configuration files rather than manual processes or interactive tools. IaC enables consistent, repeatable, and auditable infrastructure deployments while embedding security policies and hardening configurations directly into the deployment process.

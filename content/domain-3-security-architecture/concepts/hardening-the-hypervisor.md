@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Hardening the hypervisor?
+> The hypervisor is the "building manager" that controls all the virtual computers. Hardening it means locking all the doors, closing windows, and removing anything the manager does not need -- making it as tough as possible so attackers cannot take over the whole building.
+
 ## Definition
 
 Hardening the hypervisor refers to the process of securing the hypervisor layer (the software or firmware that creates and manages virtual machines) by applying security best practices to reduce its attack surface. Because the hypervisor controls all VMs running on a host, a compromised hypervisor can expose all guest VMs — making hypervisor security critically important.

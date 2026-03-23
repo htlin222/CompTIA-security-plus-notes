@@ -10,6 +10,9 @@ aliases:
   - DMZ
 ---
 
+> [!eli5] ELI5: What is a DMZ (Demilitarized Zone)?
+> Think of it as a lobby in a building. Visitors can enter the lobby and talk to the receptionist, but they cannot go past the locked door into the offices. A DMZ is a network lobby where public services live, keeping the private network safely behind the locked door.
+
 ## Definition
 
 A DMZ (Demilitarized Zone), also called a screened subnet, is a network segment that sits between the untrusted internet and the trusted internal network, hosting publicly accessible services (web servers, mail servers, DNS) while isolating them from the internal network. The DMZ provides a controlled buffer zone where public-facing systems can be accessed from the internet without directly exposing the internal network.

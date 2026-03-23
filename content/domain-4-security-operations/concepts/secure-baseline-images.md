@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Secure Baseline Images?
+> A secure baseline image is a pre-built computer setup with all the right security settings already in place. It is like a cookie cutter -- every new computer comes out the same safe shape.
+
 ## Definition
 
 Secure baseline images (also called golden images or gold masters) are pre-configured, fully hardened operating system images that include all required security settings, software, and configurations baked in from the start. When new systems are deployed using these images, they immediately meet the organization's security baseline without requiring manual hardening steps.

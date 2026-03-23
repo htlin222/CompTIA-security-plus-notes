@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Pivoting?
+> Once a tester gets into one system, pivoting means using it as a stepping stone to reach other systems. Like climbing through one window to unlock the front door from inside.
+
 ## Definition
 
 Pivoting is a post-exploitation technique used in penetration testing (and by real attackers) in which a compromised system is used as a relay or launchpad to attack other systems that are otherwise unreachable from the attacker's original position. This technique is critical for understanding how an attacker with an initial foothold could spread through an internal network.

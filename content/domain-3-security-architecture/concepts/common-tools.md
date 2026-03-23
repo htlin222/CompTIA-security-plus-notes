@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Common IaC tools?
+> These are the different brands of "instruction kits" people use to tell computers how to set themselves up automatically, kind of like how LEGO, K'NEX, and Erector sets are different brands that all let you build things from instructions.
+
 ## Definition
 
 Infrastructure as Code (IaC) tools are software platforms that enable administrators and developers to define, provision, and manage infrastructure through code rather than manual processes. These tools enable consistent, repeatable infrastructure deployment with version control, automated testing, and security policy validation built into the deployment pipeline.

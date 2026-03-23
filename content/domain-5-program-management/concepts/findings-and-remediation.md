@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Findings and Remediation?
+> Findings are the problems the inspector found -- like a broken lock on the gym door. Remediation is fixing those problems -- installing a new lock and testing it. Each finding comes with a deadline for getting it fixed.
+
 ## Definition
 
 Audit findings are documented issues, weaknesses, or deficiencies identified during an audit, along with supporting evidence. Each finding typically includes a description of the issue, the control objective that was not met, the risk or impact, and a recommendation for remediation. Remediation is the process of addressing findings through corrective action — implementing missing controls, patching vulnerabilities, updating policies, or retraining staff — within agreed timelines.

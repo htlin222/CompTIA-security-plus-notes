@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is API Integration?
+> APIs are like waiters in a restaurant -- they carry messages between the kitchen and your table. API integration connects security tools so they can share information and work together automatically.
+
 ## Definition
 
 API integration in security operations refers to the use of REST APIs and other programmatic interfaces to connect disparate security tools so they can share data and trigger actions automatically. This is the foundation of security automation and orchestration — tools like SIEM, firewalls, EDR, and ticketing systems expose APIs that allow SOAR platforms and scripts to coordinate responses without manual intervention.

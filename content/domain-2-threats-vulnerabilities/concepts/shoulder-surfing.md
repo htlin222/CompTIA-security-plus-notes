@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Shoulder Surfing?
+> Someone peeks over your shoulder while you type your password or PIN. No fancy hacking needed -- they just watch you with their own eyes (or a camera from across the room).
+
 ## Definition
 
 Shoulder surfing is a physical attack technique where an attacker observes a target entering sensitive information—such as a password, PIN, credit card number, or confidential data—by looking over their shoulder or from a nearby vantage point. It can be performed in person or using binoculars or cameras from a greater distance. It is one of the simplest attacks because it requires no technical knowledge.

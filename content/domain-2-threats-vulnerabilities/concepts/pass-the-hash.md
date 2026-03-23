@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Pass-the-Hash?
+> Instead of figuring out your password, the attacker steals the scrambled version and uses it directly to log in. It's like using a mold of a key instead of the actual key -- it still opens the door.
+
 ## Definition
 
 Pass-the-hash is an attack technique that exploits Windows NTLM authentication by using a captured password hash directly for authentication—without needing to crack it to obtain the plaintext password. Since NTLM authentication uses the hash itself as proof of knowledge, an attacker with access to a hash (e.g., extracted from LSASS memory) can authenticate to other systems using that hash.

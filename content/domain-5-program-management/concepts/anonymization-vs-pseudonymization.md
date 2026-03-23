@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Anonymization vs. Pseudonymization?
+> Anonymization is like blacking out a name with permanent marker so nobody can ever read it. Pseudonymization is like replacing a name with a code name -- you could figure out who it really is if you had the secret key.
+
 ## Definition
 
 Anonymization permanently removes or destroys all identifying information from a dataset so that individuals can never be re-identified; once anonymized, data is no longer considered personal data under regulations like GDPR. Pseudonymization replaces identifying information with a pseudonym (e.g., a token or hash) but retains a key that allows re-identification; pseudonymized data is still considered personal data and subject to privacy regulations.

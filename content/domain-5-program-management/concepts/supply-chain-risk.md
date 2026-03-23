@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Supply Chain Risk?
+> What if someone snuck a rotten ingredient into the factory that makes your favorite cereal? Supply chain risk is the danger that a product or software could be tampered with before it even reaches you, like the SolarWinds attack where bad code was hidden inside a trusted update.
+
 ## Definition
 
 Supply chain risk is the risk that malicious actors, hardware tampering, counterfeit components, or compromised software can be introduced into an organization's environment through the supply chain — before the product or service reaches the organization. The SolarWinds attack (2020) is the defining example: attackers compromised the build environment of a legitimate software vendor, inserting malware into signed software updates distributed to thousands of customers. Supply chain attacks are particularly dangerous because they bypass traditional perimeter defenses.

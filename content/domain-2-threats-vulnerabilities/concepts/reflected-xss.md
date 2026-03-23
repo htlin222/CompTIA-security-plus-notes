@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Reflected XSS?
+> The attacker hides bad code inside a link. When you click it, the website bounces that bad code right back to your browser, where it runs. The trick only works if someone clicks the specially crafted link.
+
 ## Definition
 
 Reflected Cross-Site Scripting (Reflected XSS) occurs when malicious script code included in a URL parameter or form input is immediately "reflected" back in the server's HTTP response without being stored. The script executes in the victim's browser when they click a crafted link containing the payload. It requires victim interaction (clicking the malicious link) but can be combined with phishing or social engineering to deliver the link.

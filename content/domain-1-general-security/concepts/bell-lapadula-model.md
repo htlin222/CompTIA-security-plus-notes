@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is the Bell-LaPadula Model?
+> You can read notes at your level or below, but you can't peek at the secret notes above you. And you can't write your notes down to a lower level where people without permission could see them. It keeps secrets from leaking downward.
+
 ## Definition
 
 The Bell-LaPadula Model is a formal access control model designed to protect the confidentiality of classified information in hierarchical security environments (e.g., government/military). It defines two key properties: the Simple Security Property ("no read up"—a subject cannot read data at a higher classification) and the *-property (star property, "no write down"—a subject cannot write data to a lower classification level).

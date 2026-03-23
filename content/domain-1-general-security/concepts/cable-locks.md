@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Cable Locks?
+> Just like chaining your bike to a rack so nobody walks off with it, a cable lock attaches a laptop to a desk with a steel cord. It keeps people from grabbing the computer and running.
+
 ## Definition
 
 Cable locks are physical security devices that attach to a laptop or piece of equipment via a Kensington-style security slot and anchor it to a fixed object (desk, furniture) with a steel cable and lock. They prevent opportunistic theft of devices in shared or public environments such as offices, libraries, conferences, and co-working spaces.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is GDPR?
+> GDPR is a European rule that says companies must ask before collecting your personal information, tell you what they do with it, and delete it if you ask. If they don't, they can get fined a LOT of money.
+
 ## Definition
 
 The General Data Protection Regulation (GDPR) is a comprehensive EU privacy regulation that took effect in May 2018. It establishes strict requirements for how organizations collect, process, store, and transfer personal data of EU residents — regardless of where the organization is located. GDPR introduced key rights for data subjects (right to access, right to erasure, right to portability) and significant penalties for non-compliance.

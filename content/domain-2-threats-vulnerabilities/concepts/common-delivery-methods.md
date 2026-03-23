@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Common Delivery Methods?
+> Bad software needs a way to get onto your computer, just like a cold needs a way to get into your body. The most common ways are trick emails, visiting a bad website, or a software update that secretly carries something harmful.
+
 ## Definition
 
 Ransomware reaches victim systems through several primary delivery methods. Understanding these vectors is essential for implementing targeted defenses. The most common delivery methods include phishing emails with malicious attachments or links, exploitation of exposed remote services (especially RDP), drive-by downloads from compromised websites, and supply chain attacks where trusted software updates contain malicious payloads.

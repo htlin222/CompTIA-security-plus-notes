@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is War Driving?
+> Someone drives around a neighborhood with a laptop scanning for Wi-Fi networks, making a map of which ones are open or poorly protected. It's like walking down the street checking which houses left their doors unlocked.
+
 ## Definition
 
 War driving is the practice of searching for and mapping wireless networks while traveling through an area—typically by car, hence the name—using a Wi-Fi-enabled device with scanning software. Originally a reconnaissance activity, war driving is used to find open or poorly secured networks for unauthorized access, gather intelligence on corporate Wi-Fi deployments, or identify rogue access points.

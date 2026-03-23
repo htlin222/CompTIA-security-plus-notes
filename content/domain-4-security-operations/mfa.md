@@ -12,6 +12,9 @@ aliases:
   - "Multi-Factor Authentication"
 ---
 
+> [!eli5] ELI5: What is Multi-Factor Authentication?
+> A password is like a house key -- if someone copies it, they can walk right in. Multi-factor authentication adds extra checks, like also needing your fingerprint or a special code sent to your phone. So even if a bad guy steals your password, they still cannot get in because they do not have the other pieces. It is like needing both a key and a secret handshake to open the door.
+
 ## Overview
 
 Multi-Factor Authentication (MFA) requires users to present two or more verification factors from different categories to gain access. MFA significantly reduces the risk of unauthorized access even when one factor (such as a password) is compromised. It is one of the most frequently tested topics on the Security+ exam.

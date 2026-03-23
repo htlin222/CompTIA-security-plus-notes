@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Bluetooth Attacks?
+> Bluetooth is like a short-range walkie-talkie for your devices. These attacks happen when someone nearby tunes in to steal your contacts, send you weird messages, or even take control of your phone.
+
 ## Definition
 
 Bluetooth attacks exploit weaknesses in the Bluetooth wireless protocol or its implementation to target devices within short range (typically up to 10–100 meters). The three primary Bluetooth attack types are: Bluejacking (sending unsolicited messages), Bluesnarfing (unauthorized data access), and Bluebugging (gaining full remote control over a device). These attacks require proximity and often exploit devices in discoverable mode.

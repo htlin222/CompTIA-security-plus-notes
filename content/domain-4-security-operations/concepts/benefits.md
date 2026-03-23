@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are the Benefits of Automation?
+> Automation is like having a robot helper that never gets tired, never forgets a step, and can do the same task a thousand times without a single mistake. It makes everything faster and more reliable.
+
 ## Definition
 
 The benefits of security automation and scripting refer to the operational and security improvements gained by replacing manual, repetitive security tasks with automated processes. These benefits directly address the challenges of modern security operations centers (SOCs) that face high alert volumes, skill shortages, and the need for consistent, rapid response to threats.

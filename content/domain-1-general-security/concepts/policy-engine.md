@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Policy Engine?
+> The policy engine is the brain that decides "should this person be allowed in right now?" It looks at the rules, checks who's asking, how they're asking, and whether anything looks suspicious, then gives a thumbs up or thumbs down.
+
 ## Definition
 
 The Policy Engine is the core decision-making component of a Zero Trust Architecture. It evaluates each access request against enterprise security policies, identity information, device health data, threat intelligence, and real-time risk signals to produce an access decision: allow, deny, or allow with conditions (e.g., require MFA). It operates at the control plane level, with its decisions enforced by the policy enforcement point.

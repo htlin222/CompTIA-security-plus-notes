@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Boot Integrity?
+> When your computer starts up, boot integrity checks that nobody messed with the startup instructions. It is like checking that nobody swapped your cereal box with a look-alike before you pour a bowl.
+
 ## Definition
 
 Boot integrity encompasses security mechanisms that verify the integrity of the boot process from firmware through operating system load, ensuring that a system has not been tampered with before handing control to the OS. These controls protect against rootkits and bootkits that attempt to compromise a system before security software loads.

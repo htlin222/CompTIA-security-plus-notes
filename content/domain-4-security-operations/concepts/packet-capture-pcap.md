@@ -10,6 +10,9 @@ aliases:
   - PCAP
 ---
 
+> [!eli5] ELI5: What is Packet Capture?
+> Packet capture records every single message traveling across the network, like recording every phone call so you can play them back and listen for anything suspicious.
+
 ## Definition
 
 Packet capture (PCAP) is the process of intercepting and recording all network packets traversing a network interface for analysis. Unlike flow data which captures metadata only, PCAP captures complete packet content including headers and payload, enabling deep inspection of network communications, malware traffic, and attacker command-and-control channels.

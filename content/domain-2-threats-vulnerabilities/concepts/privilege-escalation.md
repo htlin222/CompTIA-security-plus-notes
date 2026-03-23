@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Privilege Escalation?
+> A regular student finds a trick to give themselves teacher-level access to the school computer. Now they can change grades, see private files, and do things they were never supposed to do.
+
 ## Definition
 
 Privilege escalation is the act of exploiting vulnerabilities, misconfigurations, or weaknesses to gain more access rights than were originally granted. Vertical privilege escalation involves elevating from a lower privilege level to a higher one (e.g., from a regular user to an administrator or root). Horizontal privilege escalation involves accessing resources or data belonging to other users at the same privilege level.

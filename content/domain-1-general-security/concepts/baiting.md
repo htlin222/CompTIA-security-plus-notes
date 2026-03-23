@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Baiting?
+> Someone leaves a shiny USB drive labeled "Free Games" in the hallway hoping you'll plug it into your computer. Once you do, bad software sneaks onto your machine. The "free gift" was the trap all along.
+
 ## Definition
 
 Baiting is a social engineering attack in which the attacker entices a victim with something desirable—such as a free USB drive, a pirated software download, or a prize—to get them to perform an action that compromises security. The "bait" typically contains malware or leads the victim to a malicious site. Unlike phishing, baiting often relies on physical items or curiosity rather than deceptive communication.

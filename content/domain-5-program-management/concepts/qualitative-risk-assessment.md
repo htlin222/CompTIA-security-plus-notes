@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Qualitative Risk Assessment?
+> Instead of counting exact numbers, you rate dangers as "high," "medium," or "low" -- like saying a roller coaster is "super scary" vs. "a little scary." It's quick and works even when you don't have exact data.
+
 ## Definition
 
 A qualitative risk assessment uses descriptive categories (High, Medium, Low or scales like 1–5) to rate both the likelihood and impact of identified risks, based on expert judgment, experience, and stakeholder input rather than precise numerical data. The results are typically presented in a risk matrix or heat map. While less precise than quantitative methods, qualitative assessments are faster to conduct, require less data, and work well when historical loss data is unavailable.

@@ -11,6 +11,9 @@ aliases:
   - "Crypto-Malware"
 ---
 
+> [!eli5] ELI5: What is Ransomware?
+> Picture someone sneaking into your room, putting all your favorite toys and books into a locked safe, and then saying "Pay me $50 or you'll never see them again." That's ransomware. It's a type of bad software that scrambles all your computer files so you can't open them, then demands money to unlock them. Sometimes the attacker also threatens to show your private stuff to everyone if you don't pay. It's one of the scariest computer threats because people can lose everything important to them.
+
 ## Overview
 
 Ransomware is a type of malware that encrypts a victim's files or locks system access, then demands a ransom payment (typically in cryptocurrency) in exchange for the decryption key. Modern ransomware operations have evolved into sophisticated criminal enterprises using double and triple extortion tactics. Ransomware is one of the most impactful and heavily tested threat types on the SY0-701 exam.

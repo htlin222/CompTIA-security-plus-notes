@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Fake Telemetry?
+> It's like putting up fake street signs to confuse a burglar who's trying to map out your neighborhood. The bad guy gets a totally wrong picture of where everything is.
+
 ## Definition
 
 Fake telemetry is a deception technique that generates fictitious network traffic, system events, or data flows to mislead attackers who are conducting reconnaissance. By polluting the attacker's information gathering with false data—fake open ports, phantom hosts, fictitious network topology—defenders make it significantly harder for attackers to accurately map the environment and plan their attack.

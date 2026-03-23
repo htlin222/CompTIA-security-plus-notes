@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Scan Scheduling?
+> Scan scheduling decides when and how often to check systems for weaknesses. Like scheduling regular dentist checkups instead of only going when your tooth hurts.
+
 ## Definition
 
 Scan scheduling in vulnerability management defines the frequency and timing of automated vulnerability scans across the organization's systems. A well-designed scanning schedule ensures continuous visibility into the vulnerability posture while managing the performance impact of scanning on production systems.

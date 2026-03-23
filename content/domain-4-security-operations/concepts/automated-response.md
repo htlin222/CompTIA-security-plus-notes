@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Automated Response?
+> Like a sprinkler system that turns on by itself when it detects a fire -- automated response takes action the moment a threat is spotted, without waiting for a person to press a button.
+
 ## Definition
 
 Automated response is a capability of EDR/XDR and SOAR platforms that allows predefined response actions to execute automatically when specific threat conditions are detected, without requiring human approval. These actions can include terminating malicious processes, quarantining infected files, isolating endpoints from the network, or blocking IP addresses at the firewall — all in real time to minimize attacker dwell time.

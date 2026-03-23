@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Administrative Controls?
+> These are the written rules and training -- like a school handbook that says "no running in the halls." They tell people how to behave safely, rather than using a gadget or a lock to stop them.
+
 ## Definition
 
 Administrative controls are management-level security measures that govern how people behave within an organization. They include security policies, standard operating procedures, security awareness training, background checks, job rotation, and separation of duties. Unlike technical or physical controls, administrative controls primarily influence human behavior and organizational processes to reduce security risk.

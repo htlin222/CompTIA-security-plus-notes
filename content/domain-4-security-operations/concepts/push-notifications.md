@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Push Notifications for Authentication?
+> Push notifications send a message to your phone asking you to approve a login. You just tap yes or no -- it is faster and safer than typing in a code.
+
 ## Definition
 
 Push notification-based MFA is an authentication method where, after a user enters their password, the authentication system sends a push notification to the user's registered mobile device. The user reviews the notification details and taps Approve or Deny to complete or reject the authentication attempt. This provides a user-friendly MFA experience without requiring users to manually enter OTP codes.

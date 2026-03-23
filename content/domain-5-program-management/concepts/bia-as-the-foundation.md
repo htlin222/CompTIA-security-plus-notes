@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is BIA as the Foundation?
+> Before you build a house, you need a blueprint. The BIA is the blueprint for keeping a business running -- it tells you what matters most and what to fix first when things break.
+
 ## Definition
 
 The Business Impact Analysis (BIA) is the foundational activity for both business continuity planning (BCP) and disaster recovery planning (DRP). It identifies which business functions are critical, assesses the impact of their disruption, and establishes recovery priority order, RTO, RPO, and MTD values. Without a completed BIA, organizations cannot make informed decisions about which systems to recover first or how much to invest in continuity controls.

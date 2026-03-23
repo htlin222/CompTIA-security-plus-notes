@@ -10,6 +10,9 @@ aliases:
   - CSF
 ---
 
+> [!eli5] ELI5: What is the NIST Cybersecurity Framework?
+> Imagine a five-step recipe for keeping your treehouse safe: figure out what you have, protect it, watch for intruders, deal with them if they show up, and fix any damage afterward.
+
 ## Definition
 
 The NIST Cybersecurity Framework (CSF) is a voluntary, risk-based framework developed by the National Institute of Standards and Technology (NIST) to help organizations manage and reduce cybersecurity risk. Originally designed for US critical infrastructure, it has been widely adopted across all sectors globally. The framework is organized around five core functions — Identify, Protect, Detect, Respond, Recover — which together form a continuous cycle of cybersecurity risk management.

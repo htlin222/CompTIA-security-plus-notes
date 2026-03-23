@@ -10,6 +10,9 @@ aliases:
   - RAT
 ---
 
+> [!eli5] ELI5: What is a RAT (Remote Access Trojan)?
+> It's like someone secretly installing a remote control inside your computer. From anywhere in the world, the attacker can watch your screen, use your camera, and control your computer as if they were sitting right there.
+
 ## Definition
 
 A Remote Access Trojan (RAT) is a type of malware that provides the attacker with full remote control capabilities over a compromised system—including file system access, process management, screen viewing, keylogging, webcam/microphone activation, and command execution. RATs are often disguised as legitimate software and establish persistent, covert connections back to the attacker's C2 server.

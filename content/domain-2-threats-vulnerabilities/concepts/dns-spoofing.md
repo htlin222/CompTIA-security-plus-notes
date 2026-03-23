@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is DNS Spoofing?
+> When your computer asks "Where is this website?", a bad guy answers first with a fake address. Your computer trusts the answer and goes to the wrong place without knowing it.
+
 ## Definition
 
 DNS spoofing is the act of forging DNS responses to redirect DNS queries to attacker-controlled IP addresses. Unlike DNS cache poisoning (which targets the resolver's cache), DNS spoofing may also occur in real-time through on-path attacks where the attacker intercepts DNS queries and responds with fraudulent answers before the legitimate resolver does. The result is that victims are directed to malicious servers while believing they are visiting legitimate ones.

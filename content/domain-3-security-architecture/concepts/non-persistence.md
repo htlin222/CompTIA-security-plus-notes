@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Non-persistence?
+> It's like an Etch A Sketch -- you shake it and everything goes back to blank. Non-persistent systems get wiped clean and rebuilt from scratch regularly, so any sneaky changes a bad guy made just disappear.
+
 ## Definition
 
 Non-persistence is a security design approach in which system state does not persist between uses — the system is automatically reverted to a known-good baseline state at the end of each session or use. This eliminates the risk of malware persisting on endpoints between user sessions and reduces the blast radius of any compromise to a single session.

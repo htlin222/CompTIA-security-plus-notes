@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is MAC Flooding?
+> A network switch is like a mail sorter that knows which slot each letter goes to. MAC flooding fills up its memory with so many fake addresses that it panics and sends every letter to every slot, letting the attacker read them all.
+
 ## Definition
 
 MAC flooding is an attack against network switches that overwhelms the switch's Content Addressable Memory (CAM) table—which maps MAC addresses to switch ports—by flooding it with many fake MAC addresses. When the CAM table is full, the switch fails open into hub mode, broadcasting all traffic out all ports instead of only the intended destination port, allowing the attacker to capture traffic from the entire network segment.

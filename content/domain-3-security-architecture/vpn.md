@@ -11,6 +11,9 @@ aliases:
   - "VPN"
 ---
 
+> [!eli5] ELI5: What is VPN?
+> It's like having a secret underground tunnel between your house and your friend's house. Even though cars drive on the regular roads above, your tunnel is hidden and only you two can use it. A VPN creates a private, secret tunnel through the regular internet so that nobody can spy on the information you are sending back and forth. Everything inside the tunnel is scrambled so even if someone found it, they could not read it.
+
 ## Overview
 
 A Virtual Private Network (VPN) extends a private network across a public network by creating an encrypted tunnel between endpoints. VPNs provide confidentiality, integrity, and authentication for data in transit. They are used for remote worker access, site-to-site connectivity between offices, and securing communications over untrusted networks.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Influence Campaigns?
+> It's like someone spreading rumors at school to make everyone believe something that isn't true. On the internet, powerful groups spread false stories on a massive scale to change what people think and do.
+
 ## Definition
 
 Influence campaigns are coordinated, large-scale operations that use disinformation, propaganda, and social media manipulation to shape public opinion, undermine trust in institutions, or influence political outcomes. While not traditional cyberattacks, they are increasingly recognized as a threat vector that nation-state actors and sophisticated groups use alongside technical attacks as part of hybrid warfare strategies.

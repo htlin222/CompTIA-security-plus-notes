@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Preparation?
+> Preparation is everything you do before something bad happens -- writing plans, training the team, and setting up tools. It is like packing an emergency kit before a storm arrives.
+
 ## Definition
 
 Preparation is the first and foundational phase of the NIST Incident Response lifecycle, in which the organization builds its incident response capability before any incident occurs. Effective preparation is considered the most important phase — organizations that invest in preparation respond faster, more effectively, and with less damage than those who only react when incidents happen.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Log Sources?
+> Log sources are all the different places that create records -- servers, firewalls, apps, and more. Each one is like a witness who saw a different part of what happened.
+
 ## Definition
 
 Log sources are the diverse categories of systems, devices, and applications that generate log data relevant to security monitoring and incident investigation. Understanding what log sources are available and what security-relevant events they capture is essential for building an effective security monitoring program.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Nation-State Actors?
+> These are hackers who work for a country's government. They have tons of money, the best tools, and lots of time. They're like the most powerful villains in a movie -- backed by an entire nation.
+
 ## Definition
 
 Nation-state actors are threat actors sponsored or directed by governments to conduct cyberoperations against foreign governments, critical infrastructure, corporations, and individuals. They are the most sophisticated and well-resourced threat actors, capable of developing zero-day exploits, conducting long-term covert operations, and targeting the highest-value assets. They are often referred to as Advanced Persistent Threats (APTs) due to their persistence and sophistication.

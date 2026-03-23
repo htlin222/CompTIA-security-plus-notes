@@ -10,6 +10,9 @@ aliases:
   - ROE
 ---
 
+> [!eli5] ELI5: What are Rules of Engagement?
+> Rules of engagement are the ground rules for a penetration test -- what they can attack, when they can do it, and what is off limits. Like agreeing on the rules of a game before you start playing.
+
 ## Definition
 
 Rules of Engagement (ROE) is a formal, legally binding document established before a penetration test or red team engagement that defines the boundaries, authorized targets, permitted techniques, timing constraints, and emergency escalation procedures for the assessment. The ROE protects both the client and the testing team from legal exposure and ensures the assessment stays within agreed limits.

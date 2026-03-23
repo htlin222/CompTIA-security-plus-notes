@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Risk Identification?
+> Before you can fix a problem, you have to find it. Risk identification is like walking through your house with a checklist -- looking for unlocked doors, broken windows, and tripping hazards -- so you know what needs attention.
+
 ## Definition
 
 Risk identification is the first phase of the risk management process, in which an organization systematically discovers and documents potential risks to its information assets and operations. It involves building an asset inventory (knowing what you have), performing threat modeling (identifying potential threats to those assets), conducting vulnerability scanning (identifying exploitable weaknesses), and reviewing historical incident data and threat intelligence. Without comprehensive risk identification, subsequent risk assessment and treatment activities will miss significant exposures.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Guest networking?
+> When a friend visits your house, you might let them use the guest bathroom but not go into your bedroom. Guest networking gives visitors internet access on a separate network so they cannot see or touch your private stuff.
+
 ## Definition
 
 Guest networking in the context of NAC is the practice of automatically placing unrecognized or non-compliant devices (such as personal devices of visitors or employees) into an isolated guest network segment with internet access but no access to internal corporate resources. NAC systems enforce this by evaluating device posture and identity and directing non-compliant devices to the appropriate network segment.

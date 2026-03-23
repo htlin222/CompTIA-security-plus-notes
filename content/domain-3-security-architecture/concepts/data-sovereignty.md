@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Data sovereignty?
+> When your data is stored in another country, that country's rules apply to it -- just like how if you visit another country, you have to follow their laws. Data sovereignty means your information must obey the rules of wherever it physically lives.
+
 ## Definition
 
 Data sovereignty is the principle that data stored in digital form is subject to the laws and regulations of the country or jurisdiction in which the physical infrastructure storing it is located. In cloud computing, where data may be replicated across multiple geographic regions, organizations must be aware that their data may be subject to foreign laws and government access requests, potentially conflicting with their home country's privacy requirements.

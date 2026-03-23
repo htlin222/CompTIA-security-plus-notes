@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Live vs. Dead Forensics?
+> Live forensics examines a running computer -- like watching a movie while it plays. Dead forensics examines a powered-off computer -- like studying a paused screenshot.
+
 ## Definition
 
 Live forensics involves collecting and analyzing evidence from a system while it is still running, enabling capture of volatile data (RAM contents, running processes, network connections) that would be lost if the system were powered off. Dead forensics (or post-mortem forensics) involves analysis of storage media from a powered-off system, following the traditional acquire-then-analyze model.

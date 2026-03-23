@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Scalability?
+> If your lemonade stand gets really popular, you can either get a bigger table (scaling up) or set up more tables (scaling out). Scalability is about being able to handle more work by adding more power or more machines.
+
 ## Definition
 
 Scalability is the ability of a system to handle increased workload by adding resources. In security architecture, scalability is important for availability — systems that cannot scale to meet demand become unavailable under load. Cloud environments enable dynamic scalability that was previously difficult to achieve on-premises.

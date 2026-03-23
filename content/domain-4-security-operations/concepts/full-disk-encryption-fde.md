@@ -10,6 +10,9 @@ aliases:
   - FDE
 ---
 
+> [!eli5] ELI5: What is Full Disk Encryption?
+> Full disk encryption scrambles everything on your hard drive. If someone steals your laptop, all they see is gibberish -- like a diary written entirely in a secret code.
+
 ## Definition
 
 Full Disk Encryption (FDE) is a security control that encrypts all data stored on a device's storage media, including the operating system, applications, and user data. FDE ensures that if a device is lost, stolen, or physically accessed without authorization, the data remains unreadable without the correct authentication credentials or encryption key.

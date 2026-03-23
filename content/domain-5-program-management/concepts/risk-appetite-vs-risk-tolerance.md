@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Risk Appetite vs. Risk Tolerance?
+> Risk appetite is how adventurous you are in general -- "I like roller coasters." Risk tolerance is your specific limit -- "but not ones that go upside down." Companies set both to know how much risk they're willing to take overall and where the hard line is.
+
 ## Definition
 
 Risk appetite is the broad, strategic statement of how much risk an organization is willing to accept in pursuit of its objectives — set by the board and senior leadership. Risk tolerance is the more specific, operational measure of acceptable variation around the risk appetite — the acceptable deviation before action must be taken. Together, they define the boundaries within which the organization operates regarding risk-taking and risk acceptance decisions.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Command Injection?
+> It's like typing a homework answer into a school computer, but sneaking in extra words that tell the computer to do something completely different -- like showing you the answer key.
+
 ## Definition
 
 Command injection (also called OS injection) occurs when an attacker inserts malicious operating system commands into an application's input fields that are then executed by the underlying host system. This typically happens when an application passes user input to a system shell (e.g., `exec()`, `system()`, `popen()`) without proper sanitization, allowing the attacker to run arbitrary commands with the application's privileges.

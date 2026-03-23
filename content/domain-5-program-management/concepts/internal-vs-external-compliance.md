@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Internal vs. External Compliance?
+> External compliance is following the city's rules (like speed limits). Internal compliance is following your family's rules (like "no screens after 9 PM"), which might be even stricter. Companies often set their own rules above what the law requires.
+
 ## Definition
 
 External compliance refers to meeting requirements imposed by outside parties — laws (GDPR, HIPAA), regulations, industry standards (PCI DSS), and contractual obligations. Internal compliance refers to adhering to the organization's own policies, standards, and procedures, which may be more stringent than external requirements. Organizations often set internal controls that exceed regulatory minimums to provide additional security margin, demonstrate security maturity, and prepare for future regulatory changes.

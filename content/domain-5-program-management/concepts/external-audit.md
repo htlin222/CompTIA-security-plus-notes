@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is an External Audit?
+> It's like having a referee from outside your school come check that everything is fair. An external auditor is an independent outsider who inspects a company's security, which makes the results more trustworthy.
+
 ## Definition
 
 An external audit is an assessment performed by an independent third-party auditor who has no organizational affiliation with the entity being audited. External audits provide objective assurance to customers, regulators, and other stakeholders because the auditor has no conflict of interest. External audits are required for major certifications (ISO 27001, SOC 2) and regulatory compliance attestations (PCI DSS QSA assessment, HIPAA OCR investigations).

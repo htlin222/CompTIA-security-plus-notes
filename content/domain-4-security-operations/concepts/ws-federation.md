@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is WS-Federation?
+> WS-Federation is an older way for different organizations to share identity information. It works like SAML but uses a different set of rules, mostly seen in Microsoft environments.
+
 ## Definition
 
 WS-Federation (Web Services Federation) is a federation standard that defines mechanisms for sharing identity, authentication, and authorization information across different security domains and organizations. Part of the WS-* web services family, WS-Federation supports both passive (browser-based) and active (application-to-application) federation profiles. It uses security tokens (typically SAML assertions) to convey identity claims between identity providers and service providers, enabling single sign-on across organizational boundaries.

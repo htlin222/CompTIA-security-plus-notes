@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Kerberoasting?
+> In a big office network, some accounts have special passes. An attacker can ask for a copy of that pass, take it home, and try to figure out the password that made it -- all without anyone noticing.
+
 ## Definition
 
 Kerberoasting is a post-exploitation attack against Active Directory environments that exploits the Kerberos authentication protocol to extract encrypted service ticket hashes for service accounts (accounts with SPNs—Service Principal Names). Any authenticated domain user can request service tickets encrypted with the service account's NTLM hash, which can then be taken offline and cracked to recover the service account's plaintext password.

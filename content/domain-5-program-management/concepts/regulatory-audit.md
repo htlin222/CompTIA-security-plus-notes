@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Regulatory Audit?
+> This is when the government or an official agency shows up to inspect you -- like a health inspector visiting a restaurant. You don't get to say no, and failing could mean fines or even getting shut down.
+
 ## Definition
 
 A regulatory audit is an assessment required by a government body, regulatory agency, or industry authority to verify that an organization meets legally mandated security or compliance requirements. Unlike voluntary assessments, regulatory audits are non-optional and failure to comply can result in fines, loss of operating licenses, or enforcement actions. Examples include PCI DSS QSA assessments for Level 1 merchants, HIPAA compliance investigations by the Office for Civil Rights (OCR), and SOX audits for publicly traded companies.

@@ -11,6 +11,9 @@ aliases:
   - "Network Security Architecture"
 ---
 
+> [!eli5] ELI5: What is Network Security Architecture?
+> Think of a castle with walls, a moat, drawbridges, and guards at every gate. Network security architecture is like the blueprint for building all those defenses around a computer network. It plans where the walls go, who guards each entrance, and how to keep intruders from moving around inside if they do get in. The idea is that no single defense has to be perfect, because there are many layers backing it up.
+
 ## Overview
 
 Network security architecture is the design and structure of network defenses that protect data, systems, and communications from unauthorized access and attack. It applies defense-in-depth principles by layering multiple security controls throughout the network. A well-designed architecture accounts for both north-south traffic (entering/leaving the network) and east-west traffic (lateral movement within the network).

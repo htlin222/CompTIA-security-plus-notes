@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Anti-phishing Controls?
+> These are like a spam filter for trick messages. They catch fake emails pretending to be from someone you trust before those emails can fool you into clicking something bad.
+
 ## Definition
 
 Anti-phishing controls are security measures implemented primarily in email security gateways and web filtering systems to detect, block, and mitigate phishing attacks. These controls work by analyzing email content, links, attachments, and sender information to identify and quarantine messages designed to deceive users into revealing credentials or downloading malware.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Email Indicators?
+> These are the red flags in an email that tell you something is wrong -- like a weird sender address, a suspicious link, or an attachment you weren't expecting. They're clues that someone is trying to trick you.
+
 ## Definition
 
 Email indicators of compromise are artifacts found in email messages that indicate malicious activity—such as phishing campaigns, malware delivery, or business email compromise (BEC). Analysts extract these indicators from suspicious emails and use them to block future messages, search historical mail logs for related activity, and share with threat intelligence platforms.

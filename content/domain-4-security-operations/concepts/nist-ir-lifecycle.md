@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is the NIST IR Lifecycle?
+> NIST wrote the official step-by-step plan for handling a security problem: get ready, spot the problem, stop and fix it, then review what happened. It is the playbook everyone follows.
+
 ## Definition
 
 The NIST Incident Response lifecycle, defined in NIST SP 800-61 (Computer Security Incident Handling Guide), provides a four-phase framework for managing security incidents. It is the most commonly referenced IR framework for Security+ and provides a structured approach to handling incidents from preparation through post-incident improvement.

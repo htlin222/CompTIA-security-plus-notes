@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Third-Party/Supply Chain Risks?
+> Your software uses building blocks made by other companies. If one of those blocks has a hidden flaw, everything built on top of it gets the same problem -- like one bad ingredient ruining every cake at the bakery.
+
 ## Definition
 
 Third-party and supply chain risks arise from vulnerabilities in software, components, libraries, or services provided by external vendors and incorporated into an organization's technology stack. Because modern applications often depend on thousands of third-party libraries and components, a single vulnerability in a widely-used dependency can affect millions of systems simultaneously. Supply chain attacks target the build, distribution, or update mechanisms of trusted software.

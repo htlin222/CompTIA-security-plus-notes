@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Volumetric Attacks?
+> The attacker simply floods you with so much traffic that your internet pipe gets completely clogged. It's like a thousand fire hoses pointed at your front door -- nothing else can get through.
+
 ## Definition
 
 Volumetric attacks are the most common type of DDoS attack, aimed at consuming all available bandwidth between the target and the internet by flooding it with an enormous volume of traffic. The goal is to saturate the target's upstream internet connection, making the site or service unreachable—not by exploiting protocol weaknesses or application logic, but purely through traffic volume.

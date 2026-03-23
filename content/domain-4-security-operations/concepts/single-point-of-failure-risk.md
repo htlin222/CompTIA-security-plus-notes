@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Single Point of Failure Risk?
+> If your house only has one door and it gets blocked, nobody can get in or out. A single point of failure means one broken thing can bring everything to a halt.
+
 ## Definition
 
 Single point of failure risk in SSO refers to the critical security concern that because SSO centralizes authentication for all linked applications through a single identity provider, a compromise of the SSO system or an SSO credential can provide an attacker with access to all applications in the SSO ecosystem simultaneously. This concentration of authentication risk is the primary downside of SSO implementations.

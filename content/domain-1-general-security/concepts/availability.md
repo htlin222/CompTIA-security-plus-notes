@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Availability?
+> Availability means the stuff you need is there when you need it -- like making sure the water fountain at school always works. If it's broken or someone blocks it, that's an availability problem.
+
 ## Definition
 
 Availability is the third pillar of the CIA Triad, ensuring that systems, services, and data are accessible and functional for authorized users when they are needed. Threats to availability include DoS/DDoS attacks, hardware failures, ransomware, and natural disasters. Controls that protect availability include redundancy, backups, failover systems, and business continuity planning.

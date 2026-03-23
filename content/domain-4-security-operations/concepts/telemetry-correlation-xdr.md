@@ -10,6 +10,9 @@ aliases:
   - XDR
 ---
 
+> [!eli5] ELI5: What is Telemetry Correlation (XDR)?
+> XDR collects data from computers, networks, and cloud services, then connects the dots between them. Like a detective piecing together clues from the kitchen, the garage, and the backyard to solve one case.
+
 ## Definition
 
 Telemetry correlation in XDR (Extended Detection and Response) refers to the capability of XDR platforms to ingest and correlate security telemetry from multiple different security domains — endpoints, network, cloud infrastructure, identity, and email — to detect complex, multi-stage attacks that span across these domains. This cross-domain correlation is the key differentiator of XDR over traditional EDR.

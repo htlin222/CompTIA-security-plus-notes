@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Vishing?
+> Vishing is a phone call scam. Someone calls pretending to be your bank or tech support, hoping you'll believe them and hand over personal information. It's phishing, but with a voice instead of an email.
+
 ## Definition
 
 Vishing (voice phishing) is a social engineering attack conducted via telephone or VoIP calls, where an attacker impersonates a trusted entity—such as a bank, IT helpdesk, government agency, or vendor—to manipulate the victim into revealing sensitive information, providing access credentials, or taking actions that compromise security. Vishing exploits the human tendency to trust voice communication as more authentic than written messages.

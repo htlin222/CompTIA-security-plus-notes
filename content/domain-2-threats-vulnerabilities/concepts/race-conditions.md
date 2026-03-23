@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Race Conditions?
+> When two people try to grab the last cookie at the same time, weird things happen. Race conditions are when two computer tasks bump into each other because they're running at the same time and nobody took turns.
+
 ## Definition
 
 Race conditions are security vulnerabilities that arise when the security behavior of a system depends on the timing and sequence of multiple concurrent operations—and attackers can influence that timing. When two or more threads or processes access shared resources without proper synchronization, an attacker who can manipulate the ordering of operations can cause unexpected or malicious outcomes.

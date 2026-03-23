@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Fencing?
+> A fence around a building works just like a fence around your backyard -- it marks the boundary and makes it harder for people to get in. The taller the fence, the harder it is to climb over.
+
 ## Definition
 
 Fencing provides perimeter barriers that define and protect the boundaries of a secured area. The effectiveness of fencing as a security control depends heavily on its height and construction. Security+ specifically associates fence height with deterrence levels: a 3-foot fence serves as a deterrent, a 6-foot fence is difficult to climb, and an 8-foot or higher fence with additional obstacles (razor wire, anti-climb attachments) represents serious perimeter security.

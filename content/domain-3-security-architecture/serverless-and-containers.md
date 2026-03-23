@@ -12,6 +12,9 @@ aliases:
   - "Containers"
 ---
 
+> [!eli5] ELI5: What are Serverless and Containers?
+> Think of containers like lunchboxes -- each one has everything a meal needs, packed neatly so it does not mix with anyone else's food. You can stack many lunchboxes on one table. Serverless is even simpler: instead of packing your own lunch, you just tell the cafeteria what you want, and they make it for you on the spot. Both are ways to run programs on computers more efficiently, but each comes with its own safety rules to follow.
+
 ## Overview
 
 Containers package applications with their dependencies into isolated units that share the host OS kernel, providing lightweight and consistent deployment. Serverless computing abstracts the infrastructure entirely, allowing developers to deploy functions that execute on demand without managing servers. Both models accelerate development but introduce security challenges around image integrity, runtime isolation, and supply chain risks.

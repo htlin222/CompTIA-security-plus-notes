@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Snapshot management?
+> A snapshot is like saving your video game so you can go back to that exact moment later. But if you keep too many old saves, some of them might have old bugs. Snapshot management means keeping track of these saves and cleaning up the ones you no longer need.
+
 ## Definition
 
 VM snapshot management involves the creation, maintenance, and lifecycle governance of point-in-time captures of virtual machine state. While snapshots are valuable for rapid rollback after changes or incidents, poorly managed snapshots — particularly old, forgotten ones — can create security risks because they preserve outdated configurations and unpatched software that would otherwise have been updated.

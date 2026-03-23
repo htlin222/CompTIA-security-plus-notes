@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Open Service Ports?
+> Every open port on a computer is like an open window in your house. The more windows you leave open, the more ways someone can climb in. Close the ones you don't actually need.
+
 ## Definition
 
 Open service ports represent network-accessible entry points into a system—each service listening on a port is a potential attack vector. Unnecessary services that are running and accessible from the network unnecessarily expand the attack surface, providing attackers with additional opportunities to find vulnerabilities. Closing unnecessary ports is one of the most fundamental hardening steps.

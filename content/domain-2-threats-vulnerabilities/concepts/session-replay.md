@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Session Replay?
+> The attacker records your login conversation and plays it back to the server later. The server thinks it's you logging in again, but it's actually the attacker using your old recording.
+
 ## Definition
 
 Session replay is an attack where an attacker captures a valid authentication exchange or session token and replays it at a later time to gain unauthorized access. Unlike relay attacks (which are real-time), session replay uses previously captured data. It is closely related to replay attacks but specifically focuses on authentication sessions rather than individual packets or transactions.

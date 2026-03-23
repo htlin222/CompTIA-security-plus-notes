@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Audit Scope?
+> If your parent says "clean your room," the scope is your room -- not the whole house. Audit scope decides exactly which systems and areas the inspectors will look at, so they stay focused and don't waste time.
+
 ## Definition
 
 Audit scope defines the boundaries of an audit engagement — specifically which systems, business processes, locations, time periods, and security controls will be examined. A clearly defined scope ensures that the audit is focused, manageable, and produces meaningful results. Scope creep (expanding the audit beyond agreed boundaries) can delay findings and increase costs, while too narrow a scope may miss significant risks.

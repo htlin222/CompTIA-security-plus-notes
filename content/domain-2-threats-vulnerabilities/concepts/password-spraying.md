@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Password Spraying?
+> Instead of guessing one person's password a hundred times (which gets you locked out), the attacker tries one common password like "Password1" on a hundred different accounts.
+
 ## Definition
 
 Password spraying is an attack technique that inverts traditional brute-force: instead of trying many passwords against one account (which triggers lockout), the attacker tries a very small number of commonly used passwords (often just one or two) against a large number of different accounts. This stays below lockout thresholds per account while still achieving successful logins for accounts with weak passwords.

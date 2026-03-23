@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Active-active vs. active-passive?
+> Active-active is like having two cashiers both ringing up customers at the same time. Active-passive is like having one cashier working while a second one sits nearby, ready to jump in only if the first one needs a break.
+
 ## Definition
 
 In load balancing and high availability clustering, active-active configurations distribute traffic across all nodes simultaneously so every node is handling requests at all times. Active-passive configurations keep one or more nodes on standby that only take over if the primary node fails. The choice between them involves trade-offs between resource utilization and simplicity of failover.

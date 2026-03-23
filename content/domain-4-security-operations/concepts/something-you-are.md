@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is "Something You Are"?
+> This is a body-based proof of identity, like your fingerprint or your face. Nobody else has the same ones, so they are very hard to fake.
+
 ## Definition
 
 "Something you are" is one of the three primary authentication factors in multi-factor authentication, and refers to biometric characteristics unique to an individual. These include physical characteristics like fingerprints, facial geometry, iris patterns, and vein patterns, as well as behavioral characteristics like voice patterns and typing rhythms.

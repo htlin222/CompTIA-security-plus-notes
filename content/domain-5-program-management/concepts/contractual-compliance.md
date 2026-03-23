@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Contractual Compliance?
+> When you make a pinky promise with a friend, you're expected to keep it. Contractual compliance means keeping the security promises a company wrote into its business agreements. Breaking those promises can end the partnership.
+
 ## Definition
 
 Contractual compliance refers to meeting security and privacy obligations that are defined in contracts, service level agreements (SLAs), business associate agreements (BAAs), and other legally binding agreements between parties. These obligations may exceed or differ from regulatory minimums and are enforceable through contract law. Failure to meet contractual compliance obligations can result in breach of contract claims, financial penalties, and termination of the business relationship.

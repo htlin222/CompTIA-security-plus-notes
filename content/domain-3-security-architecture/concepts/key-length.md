@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Key length?
+> A combination lock with 3 digits is easy to guess, but one with 10 digits would take forever. Key length works the same way -- longer keys have more possible combinations, making them much harder to crack.
+
 ## Definition
 
 Key length refers to the number of bits in a cryptographic key, which directly determines the theoretical strength of the encryption — longer keys increase the computational work required for a brute-force attack exponentially. The appropriate minimum key length depends on the algorithm type (symmetric vs. asymmetric) and the security requirements of the data being protected.

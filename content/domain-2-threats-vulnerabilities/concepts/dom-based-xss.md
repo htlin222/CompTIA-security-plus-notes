@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is DOM-based XSS?
+> The bad code runs entirely inside your own browser without even talking to the website's server. It's like a trick that makes your own notebook write something harmful without the teacher ever seeing it.
+
 ## Definition
 
 DOM-based Cross-Site Scripting (DOM XSS) is a type of XSS attack where the vulnerability exists in client-side JavaScript code that unsafely processes data from attacker-controllable sources (like the URL fragment or `document.location`) and writes it to dangerous DOM sinks (like `innerHTML` or `eval()`). Unlike reflected or stored XSS, the malicious payload never touches the server—it executes entirely within the victim's browser.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Normalization?
+> Different devices write logs in different formats. Normalization is like translating everyone's diary into the same language so you can compare them side by side.
+
 ## Definition
 
 Normalization in SIEM and log management is the process of parsing and transforming log data from diverse sources with different formats and field names into a common, standardized data model or schema. Without normalization, writing queries and correlation rules that work across different log sources would require knowing the unique format of every source, making consistent analysis impossible.

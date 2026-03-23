@@ -12,6 +12,9 @@ aliases:
   - "BC"
 ---
 
+> [!eli5] ELI5: What is Business Continuity?
+> You know how your school has a plan for snow days -- maybe you switch to online classes so learning doesn't stop? Business continuity is the same idea for companies. It's the plan for keeping the important stuff running even when something goes wrong, like a power outage, a big storm, or a computer crash. The goal is to never have to say "sorry, we're closed" when people are counting on you.
+
 ## Overview
 
 Business Continuity Planning (BCP) is the proactive process of creating systems and procedures that enable an organization to maintain essential functions during and after a disaster or significant disruption. BCP goes beyond IT recovery to encompass people, processes, facilities, and communications. A well-tested BCP minimizes downtime, protects revenue, and ensures stakeholder confidence.

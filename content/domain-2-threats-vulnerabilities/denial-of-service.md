@@ -12,6 +12,9 @@ aliases:
   - "DDoS"
 ---
 
+> [!eli5] ELI5: What is Denial of Service?
+> Picture a school water fountain. Normally, everyone takes turns getting a drink. But what if a hundred kids all crowded around the fountain at once, blocking everyone else? Nobody who actually needs a drink can get one. That's what a denial-of-service attack does to websites and computers -- it floods them with so much fake traffic that real people can't use them anymore. Sometimes attackers even get thousands of hijacked computers to join in at once, making it way harder to stop.
+
 ## Overview
 
 Denial of Service (DoS) attacks aim to make a system, service, or network unavailable to its intended users by overwhelming it with traffic or exploiting vulnerabilities that cause crashes. Distributed Denial of Service (DDoS) attacks use multiple compromised systems (a botnet) to amplify the attack volume. DoS/DDoS attacks target availability — one of the three pillars of the CIA triad.

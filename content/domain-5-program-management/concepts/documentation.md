@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Documentation?
+> It's the instruction manual you'd follow to rebuild your LEGO set if it fell apart. Recovery documentation includes step-by-step guides, contact lists, and maps so the team knows exactly what to do during an emergency.
+
 ## Definition
 
 In the context of disaster recovery, documentation encompasses all written materials necessary to execute recovery procedures effectively: step-by-step recovery runbooks, contact lists for key personnel and vendors, system dependency maps, network diagrams, hardware/software inventories, and vendor support agreements. Without current, accurate documentation, recovery efforts become chaotic and significantly slower during high-stress incidents.

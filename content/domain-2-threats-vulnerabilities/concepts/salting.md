@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Salting?
+> Before scrambling your password, the computer mixes in a random handful of extra characters. Even if two people use the same password, the scrambled results look completely different, which stops cheat-sheet attacks.
+
 ## Definition
 
 Salting is a cryptographic technique that adds a unique random value (the "salt") to each password before hashing it. Because each password gets a different salt, identical passwords produce different hash outputs, and precomputed rainbow tables (which assume unsalted hashing) become completely useless. Salts are typically stored alongside the password hash in the database and are not secret—their value comes from their uniqueness.

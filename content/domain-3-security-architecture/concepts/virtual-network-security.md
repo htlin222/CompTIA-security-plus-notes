@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Virtual Network Security?
+> Just like physical networks need switches and firewalls, virtual networks need virtual versions of those same tools. Virtual network security means protecting the invisible connections between virtual computers using software-based guards and barriers.
+
 ## Definition
 
 Virtual network security encompasses the controls and mechanisms used to protect network traffic within virtualized environments. This includes virtual switches (vSwitches), virtual firewalls, and micro-segmentation techniques that enforce security policies between virtual machines running on the same physical host. Unlike traditional network security that relies on physical devices, virtual network security operates at the hypervisor level to inspect and control east-west traffic.

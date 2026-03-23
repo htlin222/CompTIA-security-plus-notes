@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Insider Threat Awareness?
+> Sometimes the danger comes from inside -- like a classmate who knows the combination to everyone's locker. Insider threat awareness teaches people to notice warning signs when someone they know might be misusing their access.
+
 ## Definition
 
 Insider threat awareness training teaches employees to recognize behavioral indicators that a colleague may pose an insider threat — either malicious (intentional data theft, sabotage, espionage) or unintentional (accidental data leakage, falling for phishing). Indicators include unusual access patterns, downloading large volumes of data before resignation, expressing grievances about the organization, or attempting to bypass security controls. A culture of security encourages reporting these concerns without fear of retaliation.

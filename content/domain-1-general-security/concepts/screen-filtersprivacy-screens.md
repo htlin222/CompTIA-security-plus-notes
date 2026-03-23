@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Screen Filters/Privacy Screens?
+> A privacy screen is a thin cover for your laptop that makes the screen look black to anyone peeking from the side. Only the person sitting right in front can see what's on the screen -- like blinders for your computer.
+
 ## Definition
 
 Screen filters (privacy screens) are physical overlays applied to monitors or laptop screens that use micro-louver technology to restrict the viewing angle to the user directly in front of the screen. People viewing from the sides see only a black screen, preventing shoulder surfing attacks where an unauthorized person reads sensitive information displayed on a screen.

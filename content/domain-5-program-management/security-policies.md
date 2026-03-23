@@ -11,6 +11,9 @@ aliases:
   - "Security Policies"
 ---
 
+> [!eli5] ELI5: What are Security Policies?
+> A security policy is like the student handbook your school gives out at the start of the year. It lists the rules everyone needs to follow -- no cheating, be respectful, wear your uniform. For a company, security policies are the official written rules about how to protect computers and data. They cover things like who can access what, how strong your password must be, and what happens if you break a rule. Everyone in the company has to know and follow them.
+
 ## Overview
 
 Security policies are high-level, management-approved documents that establish the rules and expectations for how an organization protects its information assets. They serve as the foundation for all security decisions and are enforced through standards, procedures, and guidelines. Policies must be living documents that are regularly reviewed, updated, and communicated to all personnel.

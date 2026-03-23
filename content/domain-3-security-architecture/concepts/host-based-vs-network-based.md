@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Host-based vs. network-based?
+> A host-based firewall is like a lock on your own bedroom door. A network-based firewall is like a gate at the entrance to the whole neighborhood. One protects a single computer; the other protects the whole network.
+
 ## Definition
 
 Host-based firewalls are installed directly on individual systems and control traffic to and from that specific host, while network-based firewalls are dedicated appliances or systems that control traffic flowing between network segments. Both types are needed in a defense-in-depth architecture — network firewalls protect the perimeter, while host-based firewalls protect each individual system from lateral attacks.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Centralized Logging?
+> Instead of having separate diaries for every room in the house, you put everything into one big diary. That way, if something happens, you only need to check one place.
+
 ## Definition
 
 Centralized logging is the practice of collecting log data from all systems, applications, network devices, and security tools across an organization and storing them in a single, unified repository. This centralization enables comprehensive security monitoring, correlation analysis, and forensic investigation across the entire environment from a single interface.

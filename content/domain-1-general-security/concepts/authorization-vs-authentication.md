@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Authorization vs. Authentication?
+> Authentication is showing your movie ticket to prove you bought one. Authorization is the ticket saying which theater room you're allowed to enter. One proves who you are; the other decides what you can do.
+
 ## Definition
 
 Authentication is the process of verifying that a user, device, or system is who or what it claims to be (proving identity). Authorization is the process of determining what an authenticated entity is permitted to do (defining permissions). These are distinct steps in the AAA framework: you must first authenticate before the system can evaluate what you are authorized to access.

@@ -12,6 +12,9 @@ aliases:
   - "Hash Functions"
 ---
 
+> [!eli5] ELI5: What is Hashing?
+> Think of hashing like a fingerprint for data. Just like every person has a unique fingerprint, hashing takes any piece of information and creates a unique code for it. If even one tiny thing changes in the original data, the fingerprint looks completely different. This makes it easy to check if something has been tampered with. Unlike encryption, you cannot turn the fingerprint back into the original -- it is a one-way process.
+
 ## Overview
 
 Hashing is a one-way cryptographic function that converts input data of any size into a fixed-length output (hash, digest, or fingerprint). Unlike encryption, hashing is irreversible. Hashing is used to verify data integrity, authenticate messages (HMAC), store passwords securely, and create digital signatures. Any change to the input produces a completely different hash.

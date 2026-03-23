@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is VM sprawl?
+> It's like creating so many copies of your homework that you lose track of them and some end up under the bed collecting dust. VM sprawl happens when people create too many virtual computers and then forget about them, leaving outdated, unprotected machines sitting around.
+
 ## Definition
 
 VM sprawl refers to the uncontrolled proliferation of virtual machines within an environment — VMs that are created for temporary purposes but never decommissioned, leaving them unpatched, unmonitored, and outside normal security management processes. Because VMs are easy to create, organizations often accumulate far more than they can effectively manage, creating a significant attack surface of forgotten, vulnerable systems.

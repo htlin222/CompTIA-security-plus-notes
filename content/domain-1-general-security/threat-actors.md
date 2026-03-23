@@ -11,6 +11,9 @@ aliases:
   - "Threat Agents"
 ---
 
+> [!eli5] ELI5: What are Threat Actors?
+> Threat actors are the different kinds of "bad guys" in the computer world. Some are like professional burglars backed by a whole country's government. Some are criminals looking to steal money. Some are angry employees who already have the keys. Others are just bored kids trying to show off. Knowing which type you're dealing with helps you figure out what they're after and how to defend against them, because each group has different skills and goals.
+
 ## Overview
 
 Threat actors are individuals or groups that pose a risk to an organization's security. Understanding their motivations, capabilities, sophistication levels, and resources is essential for effective risk assessment and building appropriate defenses. The SY0-701 exam tests the ability to distinguish between different actor types and predict their likely tactics.

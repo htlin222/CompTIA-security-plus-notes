@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Role-Based Training?
+> A goalkeeper learns different skills than a striker. Role-based training means each person learns about the specific security dangers that apply to their job, not just the same general lesson for everyone.
+
 ## Definition
 
 Role-based security awareness training delivers content tailored to the specific threats, responsibilities, and security risks associated with each employee's job function, rather than generic training for all staff. Developers need training on secure coding practices and OWASP Top 10; executives need training on business email compromise (BEC) and executive impersonation attacks; finance staff need training on wire fraud and invoice fraud; IT administrators need privileged access management and hardening guidance.

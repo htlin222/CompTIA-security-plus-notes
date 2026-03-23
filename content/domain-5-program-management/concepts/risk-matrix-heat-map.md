@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Risk Matrix / Heat Map?
+> Picture a chart with "how likely" on one side and "how bad" on the other. Risks in the red corner (likely and bad) need attention right now. Risks in the green corner (unlikely and mild) can wait. It's a color-coded way to see your biggest dangers at a glance.
+
 ## Definition
 
 A risk matrix (or risk heat map) is a visual tool that plots identified risks along two axes — likelihood (probability of occurrence) and impact (severity of consequences) — to produce a relative risk ranking. Risks appearing in the high-likelihood/high-impact quadrant (typically colored red) require immediate attention, while low-likelihood/low-impact risks (typically green) may be accepted or monitored. The heat map format makes risk prioritization visually intuitive for both technical and executive audiences.

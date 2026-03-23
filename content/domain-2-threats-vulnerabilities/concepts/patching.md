@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Patching?
+> When a company finds a hole in their software, they release a fix -- like a repair patch for a torn jacket. Installing that patch closes the hole before bad guys can crawl through it.
+
 ## Definition
 
 Patching is the process of applying vendor-supplied software updates that fix security vulnerabilities, bugs, and other flaws in operating systems, applications, and firmware. It is the single most impactful mitigation technique for reducing vulnerability exposure, as it directly eliminates known weaknesses that attackers actively exploit. Effective patch management requires a systematic process including testing, scheduling, and verification.

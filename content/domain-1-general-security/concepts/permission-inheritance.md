@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Permission Inheritance?
+> If a parent folder says "only teachers can see this," then every file inside that folder automatically follows the same rule -- like how house rules apply to every room inside the house.
+
 ## Definition
 
 Permission inheritance is a mechanism in access control systems where child objects (files, subfolders, subdirectories, child OUs in Active Directory) automatically receive the same permissions as their parent container. This simplifies permission management in hierarchical structures—permissions set at the top level propagate downward—but must be carefully managed to prevent unintended permission grants.

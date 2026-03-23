@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is East-west vs. north-south traffic?
+> North-south traffic is like people walking in and out of a building's front door. East-west traffic is people walking between rooms inside the building. Both need to be watched, but they require different kinds of security checks.
+
 ## Definition
 
 East-west traffic refers to data flowing laterally between systems within the same internal network or data center, while north-south traffic refers to data flowing vertically between internal systems and external networks (the internet or remote users). Security architectures must address both traffic flows, as they present different threat profiles and control requirements.

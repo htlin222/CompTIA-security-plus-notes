@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Intelligence-driven Hunting?
+> This means using real reports about real bad guys to guide your search. If you know a thief targets red bikes, you go check on all the red bikes in the neighborhood first.
+
 ## Definition
 
 Intelligence-driven hunting is a threat hunting methodology that uses external and internal threat intelligence as the starting point for hunting activities. Rather than forming original hypotheses, hunters begin with specific threat intelligence — such as a vendor report about a new threat actor, recently published IoCs, or MITRE ATT&CK-documented TTPs — and search for matching activity in the organization's environment.

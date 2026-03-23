@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are X.509 certificate fields?
+> A digital certificate is like an ID card, and the fields are the different pieces of info on it: your name, who issued it, when it expires, and your photo (public key). Each field tells you something important about the certificate's owner.
+
 ## Definition
 
 X.509 is the ITU-T standard defining the format of public key certificates used in PKI. An X.509 certificate contains structured fields that identify the certificate subject, bind the subject's identity to a public key, specify the certificate's validity period, and include the CA's digital signature authenticating all of these fields. Understanding X.509 fields is essential for interpreting certificates in TLS, S/MIME, code signing, and other PKI applications.

@@ -10,6 +10,9 @@ aliases:
   - CCM
 ---
 
+> [!eli5] ELI5: What is the CSA Cloud Controls Matrix?
+> Picture a giant checklist for keeping stuff safe when you store it in someone else's computer. It tells both you and the computer owner exactly who is responsible for locking which doors.
+
 ## Definition
 
 The Cloud Security Alliance (CSA) Cloud Controls Matrix (CCM) is a cybersecurity control framework specifically designed for cloud computing environments. It provides a detailed map of security controls across cloud service and deployment models, mapped to industry standards and regulations (ISO 27001, NIST SP 800-53, PCI DSS, HIPAA, GDPR). The CCM helps cloud customers and providers assess the security posture of cloud environments and ensures accountability for shared responsibility.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Passwordless Authentication?
+> Instead of remembering a password that someone could guess or steal, you log in with your fingerprint, your face, or a special key you carry. There's no password to steal because there is no password at all.
+
 ## Definition
 
 Passwordless authentication eliminates the use of shared secrets (passwords) for user authentication, replacing them with cryptographic methods that are phishing-resistant and not vulnerable to credential theft, brute-force, or password reuse attacks. The primary standards are FIDO2 and WebAuthn, which use public-key cryptography with hardware authenticators or device biometrics ("passkeys").

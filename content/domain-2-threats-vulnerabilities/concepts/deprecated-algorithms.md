@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Deprecated Algorithms?
+> Some old locks are so simple that anyone with a paperclip can open them now. Deprecated algorithms are old ways of scrambling data that smart people have figured out how to crack, so they shouldn't be used anymore.
+
 ## Definition
 
 Deprecated cryptographic algorithms are those that have been found to have significant weaknesses—due to short key lengths, mathematical vulnerabilities, or demonstrated attacks—and should no longer be used for security purposes. Using deprecated algorithms creates exploitable vulnerabilities even when implemented correctly, because the fundamental mathematics underlying them have been broken or weakened.

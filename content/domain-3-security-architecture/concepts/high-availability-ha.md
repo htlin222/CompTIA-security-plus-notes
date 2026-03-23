@@ -10,6 +10,9 @@ aliases:
   - HA
 ---
 
+> [!eli5] ELI5: What is High availability (HA)?
+> High availability means a system is almost never "closed." Think of a hospital emergency room that stays open 24/7, 365 days a year. The goal is to keep services running with as close to zero downtime as possible.
+
 ## Definition
 
 High Availability (HA) is a system design approach aimed at ensuring a system remains operational for the maximum possible time, minimizing planned and unplanned downtime. HA is measured as a percentage of uptime, commonly expressed in "nines" — the number of nines in the availability percentage. Achieving high nines requires redundant components, automatic failover, and careful design to eliminate single points of failure.

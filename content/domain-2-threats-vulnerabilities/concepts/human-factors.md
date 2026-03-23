@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Human Factors?
+> People make mistakes -- clicking bad links, choosing easy passwords, or trusting the wrong person. Human factors are all the ways that people, not computers, accidentally create weak spots in security.
+
 ## Definition
 
 Human factors are vulnerability categories rooted in human behavior, psychology, and decision-making rather than technical flaws. They represent the reality that people are often the weakest link in a security chain—susceptible to manipulation, error, and sometimes malicious intent. Addressing human factors requires security awareness training, clear policies, and technical controls that assume human fallibility.

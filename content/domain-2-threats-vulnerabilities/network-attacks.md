@@ -11,6 +11,9 @@ aliases:
   - "Network-Based Attacks"
 ---
 
+> [!eli5] ELI5: What are Network Attacks?
+> Think of computer networks like roads that connect buildings in a city. Network attacks are when bad guys mess with those roads -- they might put up fake detour signs to redirect traffic, block the road so nobody can get through, or secretly listen in on conversations happening in passing cars. Every time your computer sends information to another computer, it travels along these "roads," and attackers look for ways to intercept, redirect, or block that information before it reaches its destination.
+
 ## Overview
 
 Network attacks target the infrastructure, protocols, and communications that connect systems and users. These attacks exploit weaknesses in network protocols, configurations, and architectures to intercept data, disrupt services, or gain unauthorized access. Understanding network attacks is critical for the Security+ exam, as they represent fundamental threat categories that security controls are designed to mitigate.

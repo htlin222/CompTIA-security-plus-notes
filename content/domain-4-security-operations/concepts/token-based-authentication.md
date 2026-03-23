@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Token-based Authentication?
+> A token is a small piece of data that proves who you are. It is like a movie ticket -- you show it at the door and you get in without giving your name again.
+
 ## Definition
 
 Token-based authentication is the mechanism by which SSO and federation systems allow users to authenticate once to an Identity Provider and then access multiple Service Providers using tokens — signed digital artifacts that assert the user's identity without requiring re-authentication. Tokens carry identity claims and are cryptographically signed by the issuing authority to prevent forgery.

@@ -10,6 +10,9 @@ aliases:
   - TOTP
 ---
 
+> [!eli5] ELI5: What is TOTP?
+> TOTP generates a new code every 30 seconds based on the current time. It is like a password that keeps changing -- even if someone sees the old one, it has already expired.
+
 ## Definition
 
 TOTP (Time-based One-Time Password) is an algorithm defined in RFC 6238 that generates a new one-time password approximately every 30 seconds based on a shared secret key and the current time. It is the most widely deployed OTP algorithm, used by authenticator apps like Google Authenticator and Microsoft Authenticator as a software-based MFA factor.

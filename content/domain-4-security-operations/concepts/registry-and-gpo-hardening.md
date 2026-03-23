@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Registry and GPO Hardening?
+> The registry and group policies are the control panel settings for Windows computers. Hardening them means locking down those settings so nobody can change them to something unsafe.
+
 ## Definition
 
 Registry hardening involves configuring specific Windows registry keys to enforce security settings, disable dangerous features, and restrict user capabilities. Group Policy Objects (GPOs) in Active Directory environments provide a centralized, scalable mechanism to apply and enforce registry settings, security configurations, and restrictions across all managed Windows systems in a domain.

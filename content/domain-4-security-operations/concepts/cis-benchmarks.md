@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are CIS Benchmarks?
+> These are like recipe cards for setting up a computer safely. They tell you exactly which settings to turn on and off so your system is as secure as possible.
+
 ## Definition
 
 CIS Benchmarks are internationally recognized, consensus-based security configuration guidelines published by the Center for Internet Security (CIS). They provide prescriptive guidance for securely configuring operating systems, applications, cloud platforms, and network devices, organized into two implementation levels based on the organization's security requirements and risk tolerance.

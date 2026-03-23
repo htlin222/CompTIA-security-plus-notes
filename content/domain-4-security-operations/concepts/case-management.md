@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Case Management?
+> When something goes wrong, case management is the folder where you keep all the notes, clues, and steps you took to fix it. It keeps everything organized so nothing gets lost.
+
 ## Definition
 
 Case management in security operations is the systematic process of tracking security incidents and investigations from initial detection through full resolution, maintaining a complete record of all actions taken, evidence collected, decisions made, and communications sent. SOAR platforms and dedicated incident management tools provide case management capabilities to ensure nothing falls through the cracks during complex investigations.

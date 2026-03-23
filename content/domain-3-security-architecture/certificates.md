@@ -12,6 +12,9 @@ aliases:
   - "X.509"
 ---
 
+> [!eli5] ELI5: What are Certificates?
+> Think of a digital certificate like a school ID card. The school (a trusted authority) creates the card with your name and photo so everyone knows you are who you say you are. On the internet, certificates work the same way -- a trusted organization creates a digital ID that proves a website or person is real. Without it, you would never know if you were talking to the real website or a fake one pretending to be it.
+
 ## Overview
 
 A digital certificate is an electronic document that uses a digital signature to bind a public key with an identity (person, server, organization). Certificates are issued by a trusted Certificate Authority (CA) and follow the X.509 standard. They enable HTTPS, email encryption (S/MIME), code signing, client authentication, and VPN connections.

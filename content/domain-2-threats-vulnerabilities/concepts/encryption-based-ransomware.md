@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Encryption-Based Ransomware?
+> This type of ransomware scrambles your files with a super-strong lock that only the attacker has the key to. Without that key or a backup copy, your files are gone forever.
+
 ## Definition
 
 Encryption-based ransomware is the dominant form of ransomware that renders victim files inaccessible by encrypting them with strong cryptographic algorithms (typically AES for file encryption, with RSA or ECC to protect the AES key). The decryption key is held by the attacker and only provided upon payment of a ransom. Without the key or unencrypted backups, recovery is generally impossible.

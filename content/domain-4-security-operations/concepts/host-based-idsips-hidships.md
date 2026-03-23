@@ -10,6 +10,9 @@ aliases:
   - HIDS/HIPS
 ---
 
+> [!eli5] ELI5: What is Host-based IDS/IPS?
+> This is a guard stationed inside one specific building who watches everything happening there. If someone acts suspicious, the guard either alerts security or stops them directly.
+
 ## Definition
 
 Host-based Intrusion Detection Systems (HIDS) and Host-based Intrusion Prevention Systems (HIPS) are security tools installed directly on endpoints that monitor system activity, log file changes, registry modifications, running processes, and network connections from the host's perspective. HIDS detects and alerts; HIPS can actively block suspicious activities.

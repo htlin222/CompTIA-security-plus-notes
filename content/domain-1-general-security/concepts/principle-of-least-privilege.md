@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is the Principle of Least Privilege?
+> Give people only the access they truly need, nothing extra. If your job is to water the garden, you get the garden key -- not the key to every room in the house.
+
 ## Definition
 
 The principle of least privilege (PoLP) is a foundational security concept specifying that every user, process, service, or system component should be granted only the minimum permissions necessary to accomplish its intended task—and nothing more. It limits the blast radius of security incidents by ensuring that compromised accounts, exploited processes, or malicious insiders have constrained access to sensitive resources.

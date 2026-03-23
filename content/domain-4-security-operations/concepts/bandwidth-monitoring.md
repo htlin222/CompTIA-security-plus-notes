@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Bandwidth Monitoring?
+> It is like watching a water pipe to see how much water is flowing through. If the pipe suddenly gets way more water than normal, something might be wrong -- maybe a leak, or maybe someone turned on every faucet at once.
+
 ## Definition
 
 Bandwidth monitoring is the ongoing measurement and analysis of network traffic volume across network links and interfaces. In security operations, unusual bandwidth patterns — such as sudden spikes in outbound traffic or sustained high inbound volume — can be indicators of attacks such as DDoS attempts, data exfiltration, or botnet command-and-control communications.

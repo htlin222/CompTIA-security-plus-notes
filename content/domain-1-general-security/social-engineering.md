@@ -11,6 +11,9 @@ aliases:
   - "Social Engineering Attacks"
 ---
 
+> [!eli5] ELI5: What is Social Engineering?
+> Instead of picking a lock, what if a burglar just tricked you into handing over the key? That's social engineering. Bad guys use lies, fake stories, and pressure to get people to give up passwords, open dangerous files, or let strangers into secure places. They play on feelings like trust, fear, and helpfulness. It works because even the strongest computer security can be beaten when a person gets fooled.
+
 ## Overview
 
 Social engineering is the art of manipulating people into performing actions or divulging confidential information. Rather than exploiting technical vulnerabilities, these attacks target human psychology — trust, fear, urgency, and curiosity. Social engineering is consistently one of the most effective attack methods and is heavily tested on the SY0-701 exam.

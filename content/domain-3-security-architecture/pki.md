@@ -11,6 +11,9 @@ aliases:
   - "PKI"
 ---
 
+> [!eli5] ELI5: What is PKI?
+> Imagine a post office that hands out special ID badges. Before two people can send each other secret letters, they go to the post office and get an official badge that proves who they are. The post office keeps track of all the badges and can cancel one if it gets stolen. PKI (Public Key Infrastructure) is the whole system -- the post office, the badges, and the rules -- that lets computers prove their identity and communicate securely.
+
 ## Overview
 
 Public Key Infrastructure (PKI) is a comprehensive system for creating, distributing, managing, storing, and revoking digital certificates. PKI binds public keys to identities through a trusted Certificate Authority (CA), enabling secure communications, authentication, and digital signatures. PKI underpins HTTPS, email encryption, code signing, VPNs, and many other security services.

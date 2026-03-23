@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Tailgating/Piggybacking?
+> You know how someone might slip through a door right behind you before it closes? That's tailgating. The person didn't use their own badge -- they just followed you in. It works because most people are too polite to close a door in someone's face.
+
 ## Definition
 
 Tailgating (also called piggybacking) is a physical security bypass technique where an unauthorized person follows closely behind an authorized person through a secured door or access point without using their own credentials. The attacker exploits human politeness—people typically hold doors open for others—or follows so closely that the door closes on neither person. It is one of the most common physical security vulnerabilities.

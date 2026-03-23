@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Pretexting?
+> A pretexting attack is when someone makes up a convincing story to trick you -- like calling and saying "Hi, I'm from the IT department, I need your password to fix your computer." The whole story is fake, but it sounds believable.
+
 ## Definition
 
 Pretexting is a social engineering technique in which an attacker creates a fabricated scenario (a pretext) to manipulate a target into providing information, access, or performing actions they otherwise would not. The attacker invents a plausible identity or situation—impersonating IT support, a vendor, a bank representative, or an auditor—to establish credibility before making their actual request.

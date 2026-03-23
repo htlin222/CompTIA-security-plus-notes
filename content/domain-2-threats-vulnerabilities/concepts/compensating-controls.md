@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Compensating Controls?
+> If you can't put a lock on the front door, you put up a fence and get a guard dog instead. Compensating controls are backup safety measures used when the ideal one isn't possible.
+
 ## Definition
 
 Compensating controls are alternative security measures put in place when a primary or preferred control cannot be implemented due to technical, financial, or operational constraints. They are designed to reduce risk to an acceptable level in the absence of the ideal control. Compensating controls are recognized in frameworks like PCI DSS and are a common topic in risk management and compliance scenarios.

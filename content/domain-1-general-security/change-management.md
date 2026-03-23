@@ -11,6 +11,9 @@ aliases:
   - "Change Control"
 ---
 
+> [!eli5] ELI5: What is Change Management?
+> Before your school repaints the cafeteria or moves all the desks around, they don't just do it randomly. Someone writes a plan, the principal approves it, they pick a time when students aren't there, and they make sure they can put things back if it goes wrong. Change management for computers works the same way -- every change gets planned, approved, and tested so nothing accidentally breaks.
+
 ## Overview
 
 Change management is a structured process for proposing, evaluating, approving, implementing, and reviewing changes to IT systems and infrastructure. It ensures that modifications do not introduce security vulnerabilities, cause service disruptions, or violate compliance requirements. The SY0-701 exam emphasizes change management as a critical governance control.

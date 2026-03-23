@@ -11,6 +11,9 @@ aliases:
   - "Computer Forensics"
 ---
 
+> [!eli5] ELI5: What is Digital Forensics?
+> Think of a detective investigating a crime scene -- they take photos, dust for fingerprints, and put evidence in sealed bags so nothing gets contaminated. Digital forensics is the same thing, but for computers. When something bad happens on a computer or network, investigators carefully collect clues like files, messages, and activity logs. They have to be super careful so the evidence can be trusted later, just like a real crime scene.
+
 ## Overview
 
 Digital forensics is the process of identifying, preserving, collecting, analyzing, and presenting digital evidence in a manner that is legally admissible. It plays a critical role during and after security incidents to determine what happened, how it happened, and who was responsible. Forensic principles ensure evidence integrity so findings can support legal proceedings or internal investigations.

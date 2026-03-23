@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Access Control Vestibules?
+> Picture an airlock in a spaceship: the first door has to close and lock behind you before the second door will open. This way, only one person gets through at a time and nobody can sneak in behind you.
+
 ## Definition
 
 Access control vestibules, commonly called mantraps, are physical security mechanisms consisting of two interlocked doors where only one door can be open at a time. A person must enter the first door (which then locks) before the second door will open, preventing unauthorized individuals from following (tailgating) an authorized person into a secured area. They are common at data centers, government facilities, and other high-security environments.

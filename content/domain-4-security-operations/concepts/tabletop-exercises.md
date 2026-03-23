@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Tabletop Exercises?
+> The team gathers around a table and talks through "what would we do if this happened?" without touching any real systems. It is like a fire drill using only words and imagination.
+
 ## Definition
 
 Tabletop exercises are discussion-based simulation exercises in which key stakeholders work through a hypothetical security incident scenario in a conference room setting, without performing any actual technical actions on systems. The goal is to test incident response plans, identify gaps in procedures, and improve coordination and communication between team members and leadership.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is S/MIME?
+> S/MIME encrypts and signs your emails so only the right person can read them and they can verify you actually sent it. It is like a locked envelope with your signature on the seal.
+
 ## Definition
 
 S/MIME (Secure/Multipurpose Internet Mail Extensions) is a standard for public-key encryption and digital signing of email messages using X.509 certificates. It provides end-to-end security for email: the sender digitally signs the message with their private key (proving authenticity and integrity), and can encrypt the message body with the recipient's public key (providing confidentiality).

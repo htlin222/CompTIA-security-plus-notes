@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Faraday Cage?
+> A Faraday cage is a special metal box that blocks all radio and wireless signals from going in or out. Nothing wireless can escape, so nobody outside can listen in on what's happening inside.
+
 ## Definition
 
 A Faraday cage is an enclosure made of conductive material that blocks electromagnetic fields (EMF) from passing in or out. In information security, Faraday cages are used to prevent electromagnetic eavesdropping (TEMPEST attacks), contain wireless signals from leaking out of secure facilities (SCIF construction), and protect electronics from EMPs (electromagnetic pulses). They range from room-sized secure compartments to small bags for individual devices.

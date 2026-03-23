@@ -10,6 +10,9 @@ aliases:
   - DMZ
 ---
 
+> [!eli5] ELI5: What is a Screened subnet (DMZ)?
+> It's a waiting room between the outside world and the private offices. Visitors can sit in the waiting room and be served there, but they cannot walk past the front desk into the back where the important stuff is.
+
 ## Definition
 
 A screened subnet (commonly called a DMZ — Demilitarized Zone) is a network architecture pattern that uses firewalls to create an intermediate network segment between an untrusted external network (internet) and the trusted internal network. Public-facing servers are placed in this buffer zone, which limits exposure of the internal network while still allowing controlled public access.

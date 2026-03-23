@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Key Stretching?
+> It makes guessing passwords really slow on purpose. Instead of checking a million guesses per second, the computer takes its time with each one, so attackers would need years instead of minutes.
+
 ## Definition
 
 Key stretching is a cryptographic technique that applies a computationally expensive transformation to a password or key to make brute-force and dictionary attacks impractical. By deliberately making the hashing process slow (requiring many iterations or significant memory), key stretching ensures that even with fast hardware, an attacker can only test a relatively small number of candidates per second—dramatically increasing the time required to crack passwords.

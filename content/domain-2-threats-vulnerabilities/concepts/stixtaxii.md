@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is STIX/TAXII?
+> When one school spots a bully's trick, STIX is the standard report form they fill out, and TAXII is the system that shares that report with every other school so they can all watch out.
+
 ## Definition
 
 STIX (Structured Threat Information eXpression) and TAXII (Trusted Automated eXchange of Intelligence Information) are complementary standards for sharing threat intelligence. STIX defines a common language and format for describing cyber threat information—including IoCs, TTPs, threat actors, campaigns, and courses of action. TAXII defines the transport protocol and services for sharing STIX content between organizations, tools, and platforms.

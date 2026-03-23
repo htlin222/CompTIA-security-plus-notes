@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Password Vaulting?
+> A password vault is a locked safe for important passwords. People check out a password when they need it and return it when done, and everything is tracked so you know who used what.
+
 ## Definition
 
 Password vaulting is a PAM control in which privileged account credentials are stored in a centralized, encrypted vault rather than being known to administrators or stored in scripts. Administrators access systems by checking out credentials from the vault for time-limited sessions, and the vault automatically rotates the credentials after each use, ensuring that no user retains persistent knowledge of privileged passwords.

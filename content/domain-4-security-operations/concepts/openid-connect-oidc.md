@@ -10,6 +10,9 @@ aliases:
   - OIDC
 ---
 
+> [!eli5] ELI5: What is OpenID Connect (OIDC)?
+> OpenID Connect lets you use your Google or Apple account to log into other websites. The website asks Google "Is this person real?" and Google answers yes or no.
+
 ## Definition
 
 OpenID Connect (OIDC) is an authentication protocol and identity layer built on top of OAuth 2.0 that enables applications to verify user identity and obtain basic profile information. As an SSO protocol, OIDC allows users to authenticate with an identity provider (like Google or Microsoft) and use those credentials to access multiple service provider applications without re-authenticating.

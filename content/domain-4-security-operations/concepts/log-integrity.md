@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Log Integrity?
+> Log integrity means making sure nobody has changed or deleted the records. It is like a tamper-proof seal on a jar -- if the seal is broken, you know someone opened it.
+
 ## Definition
 
 Log integrity refers to the assurance that log records have not been altered, deleted, or fabricated after their creation. Attackers routinely attempt to modify or delete logs to conceal their activities — protecting log integrity is essential for forensic investigations and compliance auditing. Multiple technical controls can protect logs from tampering.

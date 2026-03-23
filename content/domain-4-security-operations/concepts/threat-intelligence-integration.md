@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Threat Intelligence Integration?
+> This means plugging threat intelligence directly into your security tools so they can use it automatically. Like giving your guard dog a list of scents to watch out for.
+
 ## Definition
 
 Threat intelligence integration in EDR/XDR platforms refers to the built-in capability to automatically cross-reference observed endpoint and network activity against continuously updated threat intelligence feeds. When a file hash, IP address, or behavioral pattern matches a known threat indicator, the platform immediately alerts analysts with full context about the associated threat.

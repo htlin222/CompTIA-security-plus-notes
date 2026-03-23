@@ -13,6 +13,9 @@ aliases:
   - DOT
 ---
 
+> [!eli5] ELI5: What is DNS over HTTPS / DNS over TLS?
+> Normally when your computer looks up a website address, everyone nearby can see what you're looking up. DoH and DoT put that lookup inside a sealed envelope so nobody can peek.
+
 ## Definition
 
 DNS over HTTPS (DoH) and DNS over TLS (DoT) are protocols that encrypt DNS queries, protecting them from eavesdropping, manipulation, and surveillance. Traditional DNS transmits queries in plaintext over UDP port 53, allowing anyone on the network path to see what domains a user is resolving. DoH (port 443) and DoT (port 853) tunnel DNS through encrypted connections, preventing interception.

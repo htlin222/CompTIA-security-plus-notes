@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Botnet?
+> Picture a villain who secretly takes control of thousands of toy robots and commands them all to attack at once. A botnet is a big group of hacked computers that one bad person controls like an army.
+
 ## Definition
 
 A botnet is a network of internet-connected devices that have been compromised by malware and are remotely controlled by a threat actor (the "bot herder") without the device owners' knowledge. Botnets are used to launch DDoS attacks, send spam, distribute malware, conduct credential stuffing, and perform cryptocurrency mining. IoT devices are increasingly recruited into botnets due to their poor security defaults.

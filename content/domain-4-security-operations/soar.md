@@ -11,6 +11,9 @@ aliases:
   - "SOAR"
 ---
 
+> [!eli5] ELI5: What is SOAR?
+> You know how a vending machine automatically gives you a snack when you press a button, without needing a person behind it? SOAR does that for security. When an alert comes in, SOAR follows a recipe of steps automatically -- like blocking a suspicious address, sending a message to the team, and creating a ticket. This way, the security team does not have to do every little step by hand and can respond way faster.
+
 ## Overview
 
 Security Orchestration, Automation, and Response (SOAR) platforms integrate with security tools to automate repetitive tasks, orchestrate workflows across multiple systems, and streamline incident response. SOAR reduces mean time to respond (MTTR) by executing predefined playbooks that would otherwise require manual analyst intervention. It complements SIEM by adding the response layer.

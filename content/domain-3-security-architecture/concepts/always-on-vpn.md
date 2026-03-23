@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Always-on VPN?
+> It's like wearing a seatbelt that buckles itself the moment you sit in the car. An always-on VPN automatically creates a secure connection every time you turn on your device, so you never accidentally browse the internet without protection.
+
 ## Definition
 
 Always-on VPN is a VPN configuration in which the VPN client automatically establishes a tunnel when the device boots, before user login, and maintains the connection throughout the device's operation. This ensures that all traffic is routed through the corporate network, enabling consistent security policy enforcement regardless of where the user is located.

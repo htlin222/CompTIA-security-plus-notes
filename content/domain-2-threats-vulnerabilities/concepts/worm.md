@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Worm?
+> Unlike a virus, a worm doesn't need you to do anything. It crawls from computer to computer all by itself through the network, like a real worm tunneling through the ground from garden to garden.
+
 ## Definition
 
 A worm is self-replicating malware that propagates across networks autonomously—without requiring a host file or user interaction to spread. Worms exploit network vulnerabilities, open shares, or other network connectivity to copy themselves to new systems, often causing significant network performance degradation simply through the volume of their propagation traffic, in addition to whatever malicious payload they carry.

@@ -12,6 +12,9 @@ aliases:
   - "DiD"
 ---
 
+> [!eli5] ELI5: What is Defense in Depth?
+> Think of a castle. It doesn't just have one wall -- it has a moat, then an outer wall, then an inner wall, then guards, then a locked tower. If an attacker gets past one barrier, there's always another one waiting. Defense in depth means protecting computers the same way: with many layers of security stacked on top of each other. No single lock is perfect, but together they make it really, really hard for anyone to get through.
+
 ## Overview
 
 Defense in Depth is a security strategy that employs multiple layers of controls across different domains to protect information assets. If one layer fails, subsequent layers continue to provide protection. This approach recognizes that no single security control is sufficient on its own and draws from military doctrine of creating multiple barriers an adversary must overcome.

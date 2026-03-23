@@ -11,6 +11,9 @@ aliases:
   - IOA
 ---
 
+> [!eli5] ELI5: What are Indicators of Attack?
+> While clues left behind (like footprints) tell you a burglar already came, indicators of attack are like hearing someone jiggle the doorknob right now. They catch bad behavior as it happens.
+
 ## Definition
 
 Indicators of Attack (IoAs) are behavioral signals that suggest an attack is actively occurring, distinct from Indicators of Compromise (IoCs) which typically indicate an attack has already occurred. IoAs focus on attacker behaviors and techniques (TTPs) rather than specific artifacts—enabling detection even when attackers use novel malware or previously unseen tools. IoAs are central to behavioral-based threat detection.

@@ -11,6 +11,9 @@ aliases:
   - "Email Protection"
 ---
 
+> [!eli5] ELI5: What is Email Security?
+> Your mailbox at home sometimes gets junk mail or letters pretending to be from someone they are not. Email security is like having a really smart mail sorter who checks every letter before it reaches you. They look at the return address to make sure it is real, scan for anything dangerous inside, and toss out the fakes. Without this protection, bad people could trick you into opening something harmful just by sending a convincing-looking message.
+
 ## Overview
 
 Email security encompasses the techniques and technologies used to protect email accounts, content, and communications from unauthorized access, loss, or compromise. Email remains the primary attack vector for phishing, malware delivery, and business email compromise (BEC). Effective email security requires multiple layers of technical controls and user awareness.

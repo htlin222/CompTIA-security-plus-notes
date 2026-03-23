@@ -11,6 +11,9 @@ aliases:
   - "Audits and Assessments"
 ---
 
+> [!eli5] ELI5: What are Audits and Assessments?
+> Think of a school health inspection. Someone comes in to check that the cafeteria is clean, the fire exits work, and the playground is safe. An audit is like that official inspection -- someone with a checklist making sure everything meets the rules. An assessment is more like a teacher walking around the school looking for anything that could be improved, even stuff not on the checklist. Both help make sure the school (or a company's computers and data) stays safe and follows the rules.
+
 ## Overview
 
 Audits and assessments are systematic evaluations of an organization's security posture. Audits are formal, often conducted by third parties, and measure compliance against specific standards. Assessments are broader evaluations that identify gaps and recommend improvements. Both are essential for maintaining accountability and demonstrating due diligence to regulators and stakeholders.

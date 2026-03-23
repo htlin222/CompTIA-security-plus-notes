@@ -10,6 +10,9 @@ aliases:
   - MTD
 ---
 
+> [!eli5] ELI5: What is Maximum Tolerable Downtime?
+> It's like how long your fish can survive without being fed. Stay away too long past that limit, and there's no fixing what went wrong.
+
 ## Definition
 
 Maximum Tolerable Downtime (MTD), sometimes called Maximum Tolerable Period of Disruption (MTPD), is the longest period of time a critical business function can be unavailable before the organization suffers irreversible harm — such as bankruptcy, regulatory action, permanent customer loss, or safety emergencies. MTD establishes the absolute outer boundary for recovery; the RTO must always be less than the MTD.

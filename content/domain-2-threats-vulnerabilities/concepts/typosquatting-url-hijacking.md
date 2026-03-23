@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Typosquatting / URL Hijacking?
+> If you accidentally type "gogle.com" instead of "google.com," a bad guy might own that misspelled address and use it to trick you. They set up traps at addresses where people commonly make typos.
+
 ## Definition
 
 Typosquatting and URL hijacking in the DNS context refers to registering domain names that differ from legitimate ones by common typographical errors or slight variations. Users who mistype a URL or click on a misleadingly similar link end up at an attacker-controlled server rather than the legitimate website. These domains are used for phishing, malware distribution, or traffic monetization through advertising.

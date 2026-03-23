@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Threat Containment?
+> Threat containment stops an attack from spreading. If one fish in the tank is sick, you move it to a separate bowl so the other fish stay healthy.
+
 ## Definition
 
 Threat containment in EDR/XDR is the ability to immediately isolate a compromised endpoint from the network — blocking all network communications except those required for the EDR agent to continue communicating with the management platform — with a single click or automated trigger. This limits lateral movement and data exfiltration while preserving the ability to investigate the endpoint.

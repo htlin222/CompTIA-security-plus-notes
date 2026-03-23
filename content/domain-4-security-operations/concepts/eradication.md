@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Eradication?
+> After you contain a problem, eradication is removing it completely -- like pulling a weed out by the roots so it does not grow back.
+
 ## Definition
 
 Eradication is the incident response phase in which all components of the threat are completely removed from the environment. This occurs after containment and involves not just removing the immediate malware or attacker tools, but also closing the initial vulnerability that was exploited, removing persistence mechanisms, and resetting any compromised credentials to prevent re-infection.

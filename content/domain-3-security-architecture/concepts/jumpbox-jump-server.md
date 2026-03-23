@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Jumpbox / jump server?
+> A jumpbox is like a checkpoint booth you must pass through before entering a restricted area. You cannot go straight to the important servers -- you first log into this one secure computer, and only from there can you reach the sensitive systems.
+
 ## Definition
 
 A jumpbox (also called a jump server or bastion host) is a hardened, highly monitored system that serves as the single authorized entry point for administrative access to systems in a secure or isolated network segment. Administrators must first authenticate to the jumpbox before they can access any other systems in the management network, creating a single, auditable chokepoint for privileged access.

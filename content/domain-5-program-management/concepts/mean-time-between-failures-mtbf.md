@@ -10,6 +10,9 @@ aliases:
   - MTBF
 ---
 
+> [!eli5] ELI5: What is Mean Time Between Failures?
+> Think of it as tracking how many days your bike goes before the chain falls off again. A bigger number means your bike is more reliable.
+
 ## Definition
 
 Mean Time Between Failures (MTBF) is a reliability metric that represents the average time a repairable system or component operates between failures. A higher MTBF indicates a more reliable system. MTBF is used in BIA and DR planning to predict how frequently a system is likely to fail and to help justify redundancy investments for critical systems with low MTBF values.

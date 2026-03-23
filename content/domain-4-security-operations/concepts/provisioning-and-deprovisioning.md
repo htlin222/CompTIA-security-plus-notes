@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Provisioning and Deprovisioning?
+> Provisioning is giving a new employee their accounts and access. Deprovisioning is taking it all back when they leave. Like handing out a badge on the first day and collecting it on the last.
+
 ## Definition
 
 Provisioning is the process of creating user accounts and granting appropriate access rights when a user joins an organization or changes roles. Deprovisioning is the reverse — revoking all access and disabling or deleting accounts when a user leaves the organization or changes roles. Both processes must be timely, accurate, and auditable.

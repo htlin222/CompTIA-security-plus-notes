@@ -11,6 +11,9 @@ aliases:
   - RAAS
 ---
 
+> [!eli5] ELI5: What is Ransomware-as-a-Service?
+> Bad guys rent out ready-made ransomware tools to other criminals, like a franchise. You don't need to be a computer expert to launch an attack anymore -- just pay for the kit and split the profits.
+
 ## Definition
 
 Ransomware-as-a-Service (RaaS) is a criminal business model where ransomware developers lease their malware infrastructure, tools, and support to other criminals (affiliates) who conduct the actual attacks. Affiliates typically keep 70-80% of ransom payments, with the remainder going to the RaaS operators. This model has dramatically lowered the technical barrier to entry for ransomware attacks, significantly increasing the overall volume of attacks.

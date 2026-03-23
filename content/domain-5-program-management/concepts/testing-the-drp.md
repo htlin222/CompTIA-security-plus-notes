@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Testing the DRP?
+> A fire drill doesn't mean there's a real fire -- it's practice so everyone knows what to do. Testing the disaster recovery plan works the same way: you practice restoring systems before a real emergency, so you know the plan actually works.
+
 ## Definition
 
 Testing the Disaster Recovery Plan (DRP) ensures that recovery procedures, personnel, and systems will actually work when needed. DRP testing uses the same progression of test types as BCP testing: **tabletop exercises** (discussion-based walkthrough), **simulation exercises** (scenario-based practice without real system changes), **parallel tests** (activating the DR site while production continues normally), and **full interruption tests** (actually switching operations to the DR site). Each type increases realism and confidence at the cost of higher risk and effort.

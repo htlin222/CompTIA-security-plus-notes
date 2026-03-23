@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is NTP Synchronization?
+> NTP makes sure every computer's clock shows the same time. When investigating a problem, matching timestamps is like making sure all the witnesses agree on when things happened.
+
 ## Definition
 
 NTP (Network Time Protocol) synchronization ensures that all systems across an organization use the same accurate time source, keeping their clocks synchronized. Accurate and consistent timestamps are absolutely critical for security operations — without synchronized clocks, correlating events from different systems becomes unreliable, and forensic timelines may be inaccurate.

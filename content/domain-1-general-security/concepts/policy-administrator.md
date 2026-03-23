@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Policy Administrator?
+> The policy administrator is like a hall monitor who opens and closes doors based on instructions from the principal. It doesn't make the rules -- it just carries them out by letting people through or blocking them.
+
 ## Definition
 
 In NIST's Zero Trust Architecture (ZTA), the policy administrator is the component responsible for establishing, configuring, and shutting down the communication paths between subjects (users/devices) and enterprise resources. It acts on decisions made by the policy engine—translating access decisions into concrete actions that enable or block communication, such as issuing session tokens or configuring network paths.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is the Biba Model?
+> You wouldn't let someone copy answers from a messy, unreliable cheat sheet into the official textbook. Biba says you can't read from less trustworthy sources or write to more trustworthy ones, so the good information stays clean.
+
 ## Definition
 
 The Biba Model is a formal access control model that is the integrity-focused counterpart to Bell-LaPadula. It defines two key rules: the Simple Integrity Property ("no read down"—a subject cannot read data at a lower integrity level) and the *-Integrity Property ("no write up"—a subject cannot write to a higher integrity level). This prevents lower-integrity data from contaminating higher-integrity data.

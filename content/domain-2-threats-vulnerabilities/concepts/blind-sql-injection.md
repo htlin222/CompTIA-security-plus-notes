@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Blind SQL Injection?
+> It's like playing 20 questions with a locked diary -- you can't read it directly, but by asking yes-or-no questions, you can slowly figure out what's written inside.
+
 ## Definition
 
 Blind SQL injection is a form of SQL injection in which the application does not return database error messages or query results directly to the attacker. Instead, the attacker infers information by observing how the application behaves differently based on true or false queries (Boolean-based blind SQLi) or by measuring response time delays triggered by conditional SQL statements (Time-based blind SQLi).

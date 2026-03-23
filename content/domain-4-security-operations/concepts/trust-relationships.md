@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Trust Relationships?
+> Trust relationships are formal agreements between organizations to accept each other's identity checks. Like two neighboring towns agreeing to honor each other's library cards.
+
 ## Definition
 
 Trust relationships in federated identity are formal, configured agreements between Identity Providers and Service Providers that define the terms under which identity assertions will be accepted. These relationships include technical configuration (exchange of certificates/metadata) and policy agreements (which user attributes will be shared, what the SP will accept) that enable federated authentication to function.

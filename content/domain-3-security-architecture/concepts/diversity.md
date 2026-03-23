@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Diversity?
+> If everyone on a soccer team wears the same shoes and those shoes break, the whole team is stuck. But if different players wear different brands, one shoe recall will not take out everyone. Diversity in security means using different tools and providers so one flaw does not break everything.
+
 ## Definition
 
 Diversity as a resilience strategy involves using different vendors, technologies, platforms, or network paths so that a single vulnerability, failure, or attack cannot simultaneously compromise all redundant components. When redundant systems use identical software or hardware, a single vulnerability can affect all of them — diversity eliminates this common-mode failure risk.

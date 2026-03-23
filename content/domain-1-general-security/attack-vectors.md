@@ -11,6 +11,9 @@ aliases:
   - "Attack Surface"
 ---
 
+> [!eli5] ELI5: What are Attack Vectors?
+> Picture your house. A burglar could try the front door, climb through a window, sneak in through the garage, or even come down the chimney. Each of those paths into your house is like an attack vector. In the computer world, bad guys look for every possible way in -- emails, websites, USB drives, even tricking people on the phone. The more paths you leave open, the easier it is for someone to break in.
+
 ## Overview
 
 An attack vector is the path or method a threat actor uses to gain unauthorized access to a target system or network. Understanding attack vectors is crucial for identifying vulnerabilities, implementing appropriate controls, and reducing the overall attack surface. The SY0-701 exam tests the ability to recognize common vectors and recommend appropriate mitigations.

@@ -11,6 +11,9 @@ aliases:
   - ISACS
 ---
 
+> [!eli5] ELI5: What are ISACs?
+> ISACs are like neighborhood watch groups for different industries. Banks, hospitals, and energy companies each have their own group where they share warnings about new threats.
+
 ## Definition
 
 Information Sharing and Analysis Centers (ISACs) are industry-specific, nonprofit organizations established to facilitate sharing of cybersecurity threat intelligence among members within a specific industry vertical. ISACs allow organizations to share threat indicators, attack techniques, and defensive strategies that are relevant to their specific sector, enabling faster and more effective collective defense.

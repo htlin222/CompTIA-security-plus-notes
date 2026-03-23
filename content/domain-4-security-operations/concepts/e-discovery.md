@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is E-discovery?
+> When lawyers need to find emails or documents for a court case, e-discovery is the process of searching through all the digital files to find the ones that matter.
+
 ## Definition
 
 E-discovery (electronic discovery) is the process by which electronically stored information (ESI) is identified, collected, preserved, reviewed, and produced in response to a request in legal proceedings such as litigation, regulatory investigations, or audits. Security professionals must understand e-discovery because they are often responsible for preserving and producing relevant data when legal matters arise.

@@ -12,6 +12,9 @@ aliases:
   - "Data Privacy"
 ---
 
+> [!eli5] ELI5: What is Privacy?
+> You know how your diary is yours, and nobody should read it without your permission? Privacy in the computer world means people get to control who sees their personal information -- like their name, address, or health records. Companies that collect this information have to follow rules about how they use it, store it, and who they share it with. It's about respecting that your personal stuff belongs to you.
+
 ## Overview
 
 Privacy in information security refers to an individual's right to control how their personal information is collected, used, shared, and disposed of. Organizations must implement technical and administrative controls to protect personally identifiable information (PII) and comply with privacy regulations. Privacy is distinct from security: security protects data from unauthorized access, while privacy governs how authorized parties handle personal data.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Locker Ransomware?
+> Instead of scrambling your files, this type just locks your whole screen with a big scary message. Your stuff is usually still there -- you just can't get to it until you get past the lock.
+
 ## Definition
 
 Locker ransomware prevents users from accessing their systems by locking the desktop, displaying a full-screen ransom message, and disabling normal user interaction—without necessarily encrypting files. Unlike encryption-based ransomware, locker ransomware typically targets the operating system interface rather than individual files, making it somewhat less severe since files often remain intact on disk.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Security Layers?
+> Picture an onion with many layers. A bad guy has to peel through the fence, then the locked door, then the computer password, then the app password, and finally the scrambled data. Each layer is one more thing standing in their way.
+
 ## Definition
 
 Security layers represent the concentric zones of protection in a defense-in-depth architecture, arranged from the outermost perimeter to the most sensitive inner data layer. Each layer provides independent protection, so that an attacker who breaches one layer still faces additional defenses before reaching the protected asset. The classic model progresses from physical security through network, host, application, and data layers.

@@ -10,6 +10,9 @@ aliases:
   - PFS
 ---
 
+> [!eli5] ELI5: What is Perfect forward secrecy (PFS)?
+> Even if someone steals your master key tomorrow, they still cannot unlock the messages you sent yesterday. PFS uses a different throwaway key for each conversation, so past secrets stay safe no matter what happens later.
+
 ## Definition
 
 Perfect Forward Secrecy (PFS) is a cryptographic property that ensures the compromise of a long-term private key does not expose the session keys used for past encrypted communications. PFS is achieved by using ephemeral key exchange (DHE or ECDHE) to generate unique, short-lived session keys for each session that are discarded after use and cannot be derived from the long-term key.

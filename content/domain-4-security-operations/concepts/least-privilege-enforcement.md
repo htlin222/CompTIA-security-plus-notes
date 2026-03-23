@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Least Privilege Enforcement?
+> Give people only the access they need to do their job and nothing more. A cashier does not need the keys to the safe if they only work the register.
+
 ## Definition
 
 Least privilege enforcement is the ongoing operational practice of ensuring that all users, including administrators and privileged accounts, have only the minimum level of access required to perform their specific job functions — no more. PAM solutions implement and enforce least privilege for privileged accounts by controlling, monitoring, and restricting what actions privileged users can take.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Data retention policies?
+> These are rules about how long you keep old papers before shredding them. Some papers you must keep for years (like tax records), and others you should throw away quickly so they do not pile up and become a problem.
+
 ## Definition
 
 Data retention policies define the duration for which different categories of organizational data must be kept, as well as the procedures for secure disposal when the retention period expires. These policies are driven by legal and regulatory requirements, business needs, and privacy considerations. Retaining data too long creates unnecessary risk; destroying it too early may violate legal obligations.

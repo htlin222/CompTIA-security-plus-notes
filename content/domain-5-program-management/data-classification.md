@@ -11,6 +11,9 @@ aliases:
   - "Data Classification"
 ---
 
+> [!eli5] ELI5: What is Data Classification?
+> Think about how a library organizes books. Some are on open shelves anyone can grab, some are in a special section you need a library card for, and some rare books are locked in a glass case. Data classification works the same way -- a company sorts its information into groups based on how secret or important it is, then decides who can see it and how carefully it needs to be protected. The most sensitive stuff gets the strongest locks.
+
 ## Overview
 
 Data classification is the process of categorizing data based on its sensitivity, value, and regulatory requirements to determine the appropriate level of protection. Proper classification ensures that the most sensitive data receives the strongest controls while avoiding excessive spending on low-value data. Classification is a prerequisite for effective data loss prevention and access control.

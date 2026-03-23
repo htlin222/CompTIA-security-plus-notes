@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are SOC Reports?
+> A SOC report is like a report card for a company's security, written by an outside expert. SOC 1 is about money controls, SOC 2 is about keeping data safe and systems running, and SOC 3 is a short public summary anyone can read.
+
 ## Definition
 
 SOC (System and Organization Controls) reports are independent audit reports issued by CPA firms under SSAE 18 standards, providing assurance about a service organization's controls. **SOC 1** covers controls relevant to financial reporting (for financial statement audits). **SOC 2** covers the Trust Services Criteria (security, availability, processing integrity, confidentiality, privacy) and is the primary tool for evaluating cloud and SaaS providers. **SOC 3** is a simplified, public-facing summary of a SOC 2 report.

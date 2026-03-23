@@ -11,6 +11,9 @@ aliases:
   - SQLI
 ---
 
+> [!eli5] ELI5: What is SQL Injection?
+> A website asks for your name, but instead you type a sneaky command that talks directly to the website's filing cabinet (database). Suddenly you can read, change, or delete other people's information.
+
 ## Definition
 
 SQL injection is one of the most critical and common web application vulnerabilities, occurring when attacker-supplied SQL code is inserted into application queries without proper sanitization, causing the database to execute unintended commands. Successful SQL injection can allow attackers to read sensitive data, modify or delete records, bypass authentication, and in some cases, execute operating system commands.

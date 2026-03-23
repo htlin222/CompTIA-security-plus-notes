@@ -12,6 +12,9 @@ aliases:
   - "IoT Security"
 ---
 
+> [!eli5] ELI5: What is Embedded Systems Security?
+> Think about all the smart gadgets around you -- a thermostat, a traffic light, or a medical device. These are tiny computers built to do one specific job, and most of them cannot be easily updated like your phone or laptop. Keeping these devices safe is tricky because they often run for years without anyone checking on them, and bad guys know they are easy targets. Embedded systems security is about protecting these little computers from being hacked.
+
 ## Overview
 
 Embedded systems are purpose-built computing devices designed for specific functions, including IoT devices, SCADA/ICS systems, medical devices, automotive systems, and smart appliances. These systems often have constrained resources (limited CPU, memory, storage), run real-time operating systems (RTOS), and have long operational lifecycles. Their security challenges include limited patching capabilities, weak default configurations, and lack of built-in security features.

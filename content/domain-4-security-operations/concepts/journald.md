@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is journald?
+> Journald is a diary keeper built into Linux computers. It writes down everything the system does, and you can flip back through the pages to see what happened and when.
+
 ## Definition
 
 journald (systemd-journald) is the logging daemon included with systemd-based Linux distributions that collects, stores, and manages log data from the kernel, boot process, services, and applications. Unlike traditional syslog which stores plain text, journald stores log data in a structured binary format with rich metadata, enabling faster querying and indexed searching.

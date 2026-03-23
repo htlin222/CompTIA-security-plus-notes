@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Confidence Levels?
+> Not every tip is equally trustworthy. Confidence levels are like star ratings -- a five-star tip is very reliable, while a one-star tip might just be a rumor you should double-check.
+
 ## Definition
 
 Confidence levels are ratings assigned to threat intelligence items that reflect the analyst's or source's degree of certainty in the accuracy and reliability of the information. These ratings help analysts prioritize how much weight to give intelligence when making decisions about detections, hunting activities, and defensive measures.

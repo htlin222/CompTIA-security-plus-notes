@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Virus?
+> A computer virus is like a cold -- it hides inside a file, and when you open that file, it spreads to other files. It can't travel on its own; it needs you to pass the infected file along.
+
 ## Definition
 
 A virus is a type of malware that requires a host file or program to function—it attaches itself to or inserts its code into an existing legitimate file (executable, document, script). Unlike worms, viruses do not spread independently; they propagate when the infected file is shared and executed by another user or system. When the infected file runs, the virus executes its payload and may infect additional files.

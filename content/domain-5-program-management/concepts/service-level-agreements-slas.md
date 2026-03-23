@@ -11,6 +11,9 @@ aliases:
   - SLAS
 ---
 
+> [!eli5] ELI5: What are Service Level Agreements?
+> An SLA is a pinky promise written on paper. A company swears your internet will work almost all the time, and if they break that promise, they owe you something back.
+
 ## Definition
 
 A Service Level Agreement (SLA) is a formal contract between a service provider and a customer that defines the expected level of service performance, availability, security obligations, and remedies for non-performance. In security contexts, SLAs establish uptime guarantees (e.g., 99.9% availability), incident response times (e.g., critical incidents responded to within 1 hour), security notification timelines (e.g., breaches reported within 24 hours), and data protection obligations.

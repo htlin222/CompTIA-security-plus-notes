@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is the Quantum Computing Threat?
+> Future super-powerful computers could solve math puzzles so fast that today's locks on secret data would pop right open. That's why people are building new types of locks before those computers arrive.
+
 ## Definition
 
 Quantum computing poses an existential threat to current public-key cryptography systems. Sufficiently powerful quantum computers running Shor's algorithm could efficiently factor large integers (breaking RSA) and solve the discrete logarithm problem (breaking ECC and Diffie-Hellman). While fault-tolerant quantum computers capable of breaking current cryptography don't yet exist, the threat drives ongoing standardization of post-quantum cryptographic algorithms.

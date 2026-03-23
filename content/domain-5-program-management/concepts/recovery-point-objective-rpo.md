@@ -10,6 +10,9 @@ aliases:
   - RPO
 ---
 
+> [!eli5] ELI5: What is Recovery Point Objective?
+> Say you're writing a story and your computer crashes. RPO is how many pages of writing you can afford to lose -- it decides how often you hit "save."
+
 ## Definition
 
 Recovery Point Objective (RPO) is the maximum amount of data loss an organization can tolerate, expressed as a time period. It answers the question: "How much data can we afford to lose?" For example, an RPO of 4 hours means the organization can tolerate losing up to 4 hours of transactions or updates. RPO directly determines how frequently backups or replication must occur — a 4-hour RPO requires backups or synchronization at least every 4 hours.

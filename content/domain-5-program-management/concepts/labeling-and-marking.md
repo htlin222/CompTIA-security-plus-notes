@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Labeling and Marking?
+> You know those "FRAGILE" stickers on packages? Labeling data works the same way -- you put a visible tag on it (like "Confidential" or "Public") so everyone handling it knows how careful to be.
+
 ## Definition
 
 Labeling and marking is the practice of visibly identifying the classification level of data so that anyone who encounters it knows what handling procedures apply. For physical documents, this means stamping or printing classification markings on headers, footers, and covers. For electronic data, it means applying classification metadata tags, watermarks, email banners, or DLP-enforced labels (such as Microsoft Purview sensitivity labels). Proper labeling enables DLP tools to automatically enforce handling restrictions.

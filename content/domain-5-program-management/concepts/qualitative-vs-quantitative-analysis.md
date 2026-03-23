@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Qualitative vs. Quantitative Analysis?
+> Qualitative says "this risk is high." Quantitative says "this risk could cost us $50,000 a year." One uses words and categories; the other uses math and dollar amounts. Both help you decide what to fix first.
+
 ## Definition
 
 Risk analysis can be performed qualitatively (using descriptive categories to rate risk) or quantitatively (using numerical values to calculate risk in financial terms). Qualitative analysis uses expert judgment and scales (High/Medium/Low) and is faster and more accessible. Quantitative analysis uses formulas — Single Loss Expectancy (SLE), Annual Rate of Occurrence (ARO), and Annual Loss Expectancy (ALE) — to express risk in dollar amounts, enabling cost-benefit analysis of security controls.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Bug Bounty Programs?
+> Companies pay friendly people a reward for finding holes in their security. It is better to pay a friend to find the weak spot than let a stranger find it first.
+
 ## Definition
 
 Bug bounty programs are formal, incentive-based programs through which organizations invite external security researchers to find and responsibly disclose vulnerabilities in their systems and applications in exchange for financial rewards or recognition. They extend the organization's testing coverage by leveraging the skills of the global security research community.

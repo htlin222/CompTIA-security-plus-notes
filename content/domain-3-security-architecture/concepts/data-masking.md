@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Data masking?
+> It's like putting a sticker over most of a phone number so only the last few digits show. The full number is still there underneath, but casual viewers cannot see it.
+
 ## Definition
 
 Data masking is a data protection technique that obscures or replaces sensitive data with a similar but non-sensitive substitute, making it usable for non-production purposes such as testing and development without exposing real data. Static masking permanently replaces data, while dynamic masking applies transformations in real time when data is accessed by users who lack authorization to see the full value.

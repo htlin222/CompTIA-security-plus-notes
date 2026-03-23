@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Baseline Establishment?
+> It is like taking a photo of your room when it is perfectly clean. Later, if anything looks different, you know something changed. A baseline is a snapshot of what "normal" looks like.
+
 ## Definition
 
 Baseline establishment is the process of documenting and quantifying normal operational parameters for network traffic, system behavior, and user activity so that security tools and analysts have a reference point for detecting anomalies. A well-defined baseline is foundational to anomaly-based detection systems and threat hunting, as it defines what "normal" looks like in a specific environment.

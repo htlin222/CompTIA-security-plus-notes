@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Attack Surface Management?
+> Think of your house: every door, window, and vent is a way someone could get in. Attack surface management is walking around your house regularly, finding every opening, and closing the ones you don't need.
+
 ## Definition
 
 Attack surface management (ASM) is the continuous process of discovering, inventorying, classifying, and reducing all points where an attacker could interact with a system or organization—the "attack surface." This includes internet-facing assets, internal systems, APIs, shadow IT, cloud resources, and human entry points. Reducing the attack surface is a fundamental security engineering principle.

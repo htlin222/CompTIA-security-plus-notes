@@ -12,6 +12,9 @@ aliases:
   - "Proxies"
 ---
 
+> [!eli5] ELI5: What are Load Balancers and Proxies?
+> Picture a really popular ice cream shop with five windows. A load balancer is like a helper out front who sends each customer to the window with the shortest line, so nobody waits too long. A proxy is more like a middle-man -- you tell the proxy what ice cream you want, and the proxy goes and gets it for you, so the shop never knows who you are. Both help things run smoothly and safely.
+
 ## Overview
 
 Load balancers distribute incoming network traffic across multiple servers to ensure availability, performance, and reliability. Proxies act as intermediaries between clients and servers, providing security, caching, and anonymity. Both are important components of a secure network architecture that supports high availability and controlled access.

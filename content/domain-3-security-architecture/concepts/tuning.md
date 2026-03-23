@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Tuning?
+> It's like adjusting the volume on a smoke detector. Too sensitive, and it goes off every time you make toast. Not sensitive enough, and it might miss a real fire. Tuning means finding the right balance so your security alerts catch real threats without crying wolf.
+
 ## Definition
 
 IDS/IPS tuning is the ongoing process of adjusting detection sensitivity, rule thresholds, and exception lists to optimize the balance between false positives (legitimate traffic incorrectly flagged as malicious) and false negatives (actual attacks that are missed). A poorly tuned IDS/IPS will either overwhelm analysts with false alerts or miss real attacks.

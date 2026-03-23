@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is XML Injection / XXE?
+> The attacker sends a specially crafted document to a website that tricks the server into loading secret files or making requests it shouldn't. It's like handing someone a recipe that secretly tells them to open your diary and read it out loud.
+
 ## Definition
 
 XML External Entity (XXE) injection is an attack against applications that parse XML input, exploiting poorly configured XML parsers that allow the definition and loading of external entities. By injecting a crafted XML document with a malicious external entity reference, attackers can read arbitrary files from the server, perform server-side request forgery (SSRF), cause denial of service (Billion Laughs attack), or in some cases execute code.

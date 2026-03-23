@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Application-Layer Attacks?
+> Instead of blocking the whole road, these attacks walk into a store and keep asking the cashier complicated questions so nobody else can be served. They look like normal customers but are wasting everyone's time on purpose.
+
 ## Definition
 
 Application-layer DoS attacks (Layer 7) target specific web services or applications using seemingly legitimate HTTP, DNS, or other protocol requests to exhaust server resources such as threads, memory, or database connections. Unlike volumetric attacks, these require far less bandwidth because they exploit how the application processes requests rather than overwhelming network capacity.

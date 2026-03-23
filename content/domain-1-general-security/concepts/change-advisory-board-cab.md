@@ -10,6 +10,9 @@ aliases:
   - CAB
 ---
 
+> [!eli5] ELI5: What is a Change Advisory Board (CAB)?
+> Before anyone makes a big change at school -- like tearing down a wall -- a group of teachers, the principal, and the janitor meet to decide if it's a good idea. The CAB is that meeting for computer systems.
+
 ## Definition
 
 The Change Advisory Board (CAB) is a cross-functional committee of stakeholders—typically including IT management, security, operations, and business representatives—who review, evaluate, and approve or reject proposed changes to IT systems and infrastructure. The CAB ensures that changes are properly assessed for risk, have backout plans, and are scheduled appropriately before implementation.

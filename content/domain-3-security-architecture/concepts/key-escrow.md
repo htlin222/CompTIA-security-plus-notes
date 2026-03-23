@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Key escrow?
+> It's like giving a spare house key to a trusted neighbor in case you get locked out. Key escrow means a trusted third party holds a copy of your secret key so it can be recovered if needed -- but you have to really trust that neighbor.
+
 ## Definition
 
 Key escrow is a system in which a copy of a cryptographic key is entrusted to a third party (the escrow agent) for safekeeping and potential recovery. If the primary key holder loses access to their key or if legal authorities need access to encrypted data, the escrowed copy can be retrieved. Key escrow is controversial because it creates a concentrated target for attackers and raises concerns about government access to private communications.

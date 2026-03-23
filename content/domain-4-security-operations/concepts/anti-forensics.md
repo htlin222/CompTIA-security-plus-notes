@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Anti-forensics?
+> When a kid draws on the wall and then tries to wipe it off before Mom sees -- that is anti-forensics. Attackers try to erase their footprints so investigators cannot figure out what happened.
+
 ## Definition
 
 Anti-forensics refers to a collection of techniques used by attackers to destroy, hide, or alter digital evidence in order to prevent or impede forensic investigation. These techniques are designed to cover an attacker's tracks and make it difficult or impossible for investigators to reconstruct what happened during a security incident.

@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Post-incident Review?
+> After something goes wrong, the team sits down and talks about what happened, what went well, and what to do better next time. It is like a game film review after a big match.
+
 ## Definition
 
 The lessons learned review (also called post-incident review or after-action review) is conducted after an incident is resolved to analyze the organization's response, identify what worked well, what failed, and what can be improved in processes, tools, and training. This final phase of the incident response lifecycle is critical for continuous improvement of the security program.

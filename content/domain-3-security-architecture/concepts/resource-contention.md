@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Resource contention?
+> It's like everyone in a house trying to take a shower at the same time -- there is not enough hot water for everyone. Resource contention happens when multiple virtual computers fight over the same limited pool of processing power, memory, or storage.
+
 ## Definition
 
 Resource contention in virtualized environments occurs when multiple virtual machines compete for the same underlying physical resources (CPU, memory, disk I/O, network bandwidth) on a shared host. Severe contention can degrade performance, cause availability issues, and potentially enable side-channel attacks where information about one VM's activity leaks through shared resource usage patterns.

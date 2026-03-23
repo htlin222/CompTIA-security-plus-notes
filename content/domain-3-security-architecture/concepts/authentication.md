@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Authentication?
+> Authentication is proving you are who you say you are, like showing your library card before you can check out a book. For VPNs, it means the network checks your identity before letting you use the secure tunnel.
+
 ## Definition
 
 In the context of VPN security, authentication is the process of verifying the identity of users and devices before granting access to the VPN tunnel and corporate network resources. Strong authentication is critical for VPNs because they create pathways into internal networks from external, potentially hostile environments. Multiple authentication methods are often combined for defense in depth.

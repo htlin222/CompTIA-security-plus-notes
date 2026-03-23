@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Vendor Assessment?
+> Before you let someone babysit your little sister, your parents check their references and make sure they're trustworthy. A vendor assessment is how companies check that an outside partner has good enough security before sharing sensitive data with them.
+
 ## Definition
 
 Vendor assessment (also called third-party risk assessment or vendor due diligence) is the process of evaluating a vendor's security posture before entering a business relationship and on a recurring basis thereafter. Assessment methods include security questionnaires (such as the Standardized Information Gathering — SIG — questionnaire), review of SOC 2 reports, ISO 27001 certificates, penetration test results, and on-site audits for high-criticality vendors. The assessment scope should be commensurate with the risk the vendor poses to the organization.

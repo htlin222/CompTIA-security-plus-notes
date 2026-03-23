@@ -11,6 +11,9 @@ aliases:
   - "Compliance"
 ---
 
+> [!eli5] ELI5: What is Compliance?
+> It's like following the rules at school. There are rules about being quiet in the library, not running in the halls, and turning in homework on time. If you break them, you get in trouble. Compliance means a company follows all the rules it's supposed to -- rules from the government, rules from its own leaders, and rules it promised to follow when working with other companies. Breaking these rules can mean big fines or losing trust.
+
 ## Overview
 
 Compliance is the practice of adhering to laws, regulations, industry standards, and internal policies that govern how an organization handles data and security. Non-compliance can result in fines, legal action, loss of business, and reputational damage. A mature compliance program includes continuous monitoring, regular audits, and clear accountability.

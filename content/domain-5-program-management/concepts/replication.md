@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Replication?
+> It's like writing in two notebooks at the same time so you always have a matching copy. Replication constantly copies data to a second location so that if the first one breaks, you have an up-to-date backup ready to go.
+
 ## Definition
 
 Replication is the process of continuously or near-continuously copying data from a primary system or site to a secondary (replica) system or site, maintaining a synchronized or near-synchronized copy. Unlike traditional backups (which are point-in-time snapshots), replication provides a current or nearly current copy of data, enabling very low RPOs (near zero for synchronous replication). Replication is essential for high-availability and hot-site disaster recovery strategies.

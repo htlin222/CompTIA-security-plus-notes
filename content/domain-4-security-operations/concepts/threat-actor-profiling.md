@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Threat Actor Profiling?
+> Profiling means building a description of who the attacker is -- what they want, how skilled they are, and what tricks they prefer. It is like writing a scouting report on a rival sports team.
+
 ## Definition
 
 Threat actor profiling is the process of developing detailed knowledge of specific adversary groups — including their motivations, technical capabilities, preferred targets, typical tactics and techniques, and historical campaigns. By understanding who is most likely to attack an organization and why, security teams can prioritize defenses against the most relevant threats.

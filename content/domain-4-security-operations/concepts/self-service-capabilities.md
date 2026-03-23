@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Self-service Capabilities?
+> Self-service lets users reset their own passwords or request access without calling the help desk. Like a vending machine where you get what you need without waiting in line.
+
 ## Definition
 
 Self-service identity capabilities allow end users to perform certain identity management tasks themselves — such as resetting their own passwords, updating contact information, or managing MFA devices — without requiring helpdesk intervention. These capabilities improve the user experience and reduce IT support burden while maintaining security through appropriate verification controls.

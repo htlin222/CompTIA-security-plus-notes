@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Dashboards and Reporting?
+> A dashboard is like the scoreboard at a game -- one quick look tells you if your team is winning or losing. Security dashboards show the health of your systems at a glance.
+
 ## Definition
 
 Dashboards and reporting in SIEM platforms provide visual representations of security data, enabling analysts and security managers to quickly understand the current security posture, identify trends, and communicate status to stakeholders. Dashboards offer real-time or near-real-time views, while reports compile historical data for compliance, management briefings, and trend analysis.

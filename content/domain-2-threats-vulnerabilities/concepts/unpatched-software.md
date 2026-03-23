@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Unpatched Software?
+> The company already made a fix for a known problem, but you haven't installed it yet. It's like knowing your fence has a hole and the repair kit is sitting on your porch, but you just haven't gotten around to it.
+
 ## Definition
 
 Unpatched software contains known security vulnerabilities for which the vendor has already released fixes (patches), but the organization has not applied them. This is one of the most commonly exploited vulnerability types in cyberattacks because the vulnerability is publicly known, exploit code is often available, and attackers can scan the internet for vulnerable systems at scale. Timely patching is the most fundamental vulnerability management practice.

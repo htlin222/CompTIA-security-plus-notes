@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is DNS Amplification?
+> It's like mailing a postcard that says "send me your biggest catalog" but writing someone else's address as the return address. The victim gets buried under a mountain of catalogs they never asked for.
+
 ## Definition
 
 DNS amplification is a DDoS attack that exploits open DNS resolvers to generate a large volume of response traffic directed at a victim. The attacker sends small DNS queries (spoofing the victim's IP as the source) for records with large responses (such as DNSSEC-signed zones or ANY queries), causing resolvers to flood the victim with traffic many times larger than the original query.

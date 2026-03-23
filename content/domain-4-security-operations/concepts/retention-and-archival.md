@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Retention and Archival?
+> Retention is deciding how long to keep data, and archival is moving old data to long-term storage. Like keeping this year's schoolwork in your desk and last year's in the attic.
+
 ## Definition
 
 Retention and archival in the context of SIEM and log management refers to the policies and technical implementations for storing security log data for the required duration based on regulatory requirements, forensic investigation needs, and organizational policy. A tiered storage approach keeps recent logs in fast, searchable storage while moving older logs to cheaper archival storage.

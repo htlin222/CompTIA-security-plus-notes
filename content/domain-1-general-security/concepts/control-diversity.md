@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Control Diversity?
+> Don't rely on just one type of protection. Use a mix -- like having both a lock on the door (physical), a rule that says "always lock up" (written policy), and a security camera (technology) all working together.
+
 ## Definition
 
 Control diversity is a defense-in-depth principle that calls for combining different categories of security controls—technical, administrative, and physical—at each layer of defense. By using diverse control types, an organization ensures that a failure or bypass of one control type (e.g., a technical control that is circumvented) does not leave the system completely unprotected, since other control types remain in effect.

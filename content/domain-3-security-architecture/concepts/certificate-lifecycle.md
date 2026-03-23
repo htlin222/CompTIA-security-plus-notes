@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is the Certificate lifecycle?
+> Think of it like a driver's license -- you apply for it, someone checks your info and gives it to you, you use it for a while, you renew it before it expires, and if it gets stolen you cancel it. Certificates go through those same steps.
+
 ## Definition
 
 The certificate lifecycle describes the complete sequence of stages a digital certificate goes through from initial request to final revocation or expiration. Managing certificates across their entire lifecycle is a critical PKI administration function, as improperly managed certificates can create security vulnerabilities (expired certificates causing service outages) or weaken trust (unrevoked compromised certificates).

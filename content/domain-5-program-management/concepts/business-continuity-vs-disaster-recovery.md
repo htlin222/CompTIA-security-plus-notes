@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Business Continuity vs. Disaster Recovery?
+> Business continuity keeps the show going during a storm -- like moving recess indoors. Disaster recovery is fixing the playground after the storm passes. One keeps things running; the other brings things back.
+
 ## Definition
 
 Business Continuity Planning (BCP) focuses on maintaining critical business operations during a disruption — it encompasses people, processes, communications, and technology. Disaster Recovery (DR) is a subset of BCP focused specifically on restoring IT systems, data, and infrastructure after a disruptive event. In short: BCP keeps the business running while DR brings the technology back online.

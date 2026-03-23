@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Directory Services?
+> Think of a school's main office that has a list of every student, teacher, and what rooms they can access. A directory service is that master list for a whole computer network.
+
 ## Definition
 
 Directory services are centralized repositories that store and manage identity information—user accounts, group memberships, computer objects, and policy settings—and provide authentication and authorization services to the network. The most common implementations are Microsoft Active Directory (AD) and LDAP (Lightweight Directory Access Protocol) directories. They are the backbone of enterprise identity management.

@@ -11,6 +11,9 @@ aliases:
   - "AAA"
 ---
 
+> [!eli5] ELI5: What is the AAA Framework?
+> Think of going to a theme park. First, they check your ticket to make sure you're really a guest (that's authentication). Then, the ticket says which rides you're allowed on -- maybe you have a VIP pass or a basic pass (that's authorization). Finally, the park keeps track of which rides you went on and when (that's accounting). Computers use these same three steps to keep track of who's using them and what they're doing.
+
 ## Overview
 
 The AAA (Authentication, Authorization, and Accounting) framework defines how users are identified, what they are permitted to do, and how their actions are tracked. AAA is implemented through protocols like RADIUS, TACACS+, and Kerberos and underpins identity and access management across enterprise environments.

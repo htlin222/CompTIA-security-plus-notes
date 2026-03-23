@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Environmental Factors?
+> Whether you need an umbrella depends on the weather outside and whether you're already inside. Environmental factors are the conditions -- both inside and outside a company -- that affect how much danger it faces.
+
 ## Definition
 
 Environmental factors in risk assessment are the internal and external conditions that influence an organization's threat landscape and risk posture. Internal factors include staffing levels, technology complexity, organizational culture, and security maturity. External factors include regulatory changes, geopolitical instability, economic conditions, industry threat trends, and natural disaster risks. Both must be considered when identifying and prioritizing risks.

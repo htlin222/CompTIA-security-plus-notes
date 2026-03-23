@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Insecure Protocols?
+> Some older ways computers talk to each other are like sending postcards -- anyone who handles them can read what's written. Insecure protocols don't scramble messages, so snoopers can see everything.
+
 ## Definition
 
 Insecure protocols are network communication protocols that transmit data in plaintext without encryption, allowing anyone with network access to capture credentials, session data, and sensitive information using a packet sniffer. These protocols were designed before encryption was a priority and have secure alternatives that should replace them in all security-conscious environments.

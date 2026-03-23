@@ -10,6 +10,9 @@ aliases:
   - MDM
 ---
 
+> [!eli5] ELI5: What is Mobile Device Management?
+> MDM lets a company control phones and tablets from one central place -- pushing updates, setting rules, and even wiping a lost phone clean. It is like a remote control for every device.
+
 ## Definition
 
 Mobile Device Management (MDM) is a software solution that enables IT and security teams to remotely manage, monitor, and secure mobile devices (smartphones, tablets) used for business purposes. MDM enforces security policies, manages application deployment, and provides remote remediation capabilities such as remote wipe for lost or stolen devices.

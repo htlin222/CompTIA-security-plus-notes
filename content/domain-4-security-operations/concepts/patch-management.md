@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Patch Management?
+> Software has flaws, and patches fix them. Patch management is like a schedule for fixing potholes in a road -- you find them, prioritize the dangerous ones, and fill them in.
+
 ## Definition
 
 Patch management is the systematic process of identifying, testing, approving, deploying, and verifying security patches and updates for operating systems, applications, firmware, and other software components. It is the most common and effective vulnerability remediation method, directly addressing the root cause of known vulnerabilities by applying vendor-supplied fixes.

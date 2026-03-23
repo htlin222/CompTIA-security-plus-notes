@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a SYN Flood?
+> When you call someone, there's a "Hello... Hi... Okay let's talk" back and forth. A SYN flood is like calling a million times, saying "Hello" each time, but never saying anything else. The phone line stays tied up until nobody real can get through.
+
 ## Definition
 
 A SYN flood is a denial-of-service attack that exploits the TCP three-way handshake by sending many SYN packets to a target server without completing the handshake (never sending the final ACK). The server allocates resources for each half-open connection and waits for the ACK, filling its connection table (the SYN backlog) until it can no longer accept new legitimate connections.

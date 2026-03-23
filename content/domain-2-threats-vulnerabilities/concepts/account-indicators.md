@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are Account Indicators?
+> If someone tried your locker combination wrong five times in a row, that would be a clue something fishy is going on. Account indicators are those kinds of warning signs for computer accounts.
+
 ## Definition
 
 Account indicators are signs of compromise or malicious activity observed in user account behavior and configuration. They include anomalous authentication patterns (repeated failed logins), unexpected privilege changes, account lockouts, and the appearance of new unauthorized administrator accounts. Monitoring these indicators is essential for detecting credential attacks, insider threats, and post-exploitation activity.

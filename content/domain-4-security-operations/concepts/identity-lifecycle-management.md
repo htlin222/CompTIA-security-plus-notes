@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Identity Lifecycle Management?
+> From the day someone joins a company to the day they leave, their account follows a journey. This manages every step -- creating the account, updating it, and shutting it down when they go.
+
 ## Definition
 
 Identity lifecycle management is the set of processes that govern a digital identity from creation (joining the organization) through modifications (role changes, departmental moves) to termination (leaving the organization). Proper lifecycle management ensures that identities and their access rights are always current, appropriate, and promptly revoked when no longer needed.

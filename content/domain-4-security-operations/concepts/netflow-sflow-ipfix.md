@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What are NetFlow / sFlow / IPFIX?
+> These tools summarize network traffic without reading every single message. It is like counting how many cars pass through an intersection each hour instead of reading every license plate.
+
 ## Definition
 
 NetFlow, sFlow, and IPFIX are network flow monitoring protocols that collect statistical metadata about network traffic flows (source IP, destination IP, ports, protocol, volume, duration) without capturing full packet payloads. This flow data provides visibility into network communication patterns at scale, enabling detection of unusual traffic without the storage overhead of full packet capture.

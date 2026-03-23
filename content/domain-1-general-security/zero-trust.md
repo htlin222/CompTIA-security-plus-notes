@@ -12,6 +12,9 @@ aliases:
   - "ZTA"
 ---
 
+> [!eli5] ELI5: What is Zero Trust?
+> Most buildings work like this: once you're past the front door, everyone trusts you. Zero Trust says "no way." Even if you're already inside the building, you still have to show your badge every time you open a new door, and someone checks whether you should really be there right now. It doesn't matter if you're the CEO or a new employee -- everyone gets checked, every time, for every request. No free passes.
+
 ## Overview
 
 Zero Trust is a security model built on the principle of "never trust, always verify." Unlike traditional perimeter-based security, Zero Trust assumes that threats exist both inside and outside the network and requires continuous verification of every user, device, and connection before granting access. It has become a major focus of the SY0-701 exam due to its growing adoption across industries.

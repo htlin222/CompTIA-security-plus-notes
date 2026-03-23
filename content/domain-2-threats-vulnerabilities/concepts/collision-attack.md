@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is a Collision Attack?
+> Two different kids somehow end up with the exact same fingerprint. A collision attack finds two different files that produce the same digital fingerprint, which lets an attacker swap a fake file for a real one.
+
 ## Definition
 
 A collision attack targets hash functions by finding two distinct inputs that produce the same hash output (a collision). Unlike birthday attacks (which find any collision), practical collision attacks often focus on crafting meaningful documents or data that collide. A successful collision attack against a hash function used in digital signatures allows an attacker to substitute fraudulent data while maintaining a valid signature.

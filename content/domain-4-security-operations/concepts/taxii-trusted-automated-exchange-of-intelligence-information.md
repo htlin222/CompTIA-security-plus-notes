@@ -10,6 +10,9 @@ aliases:
   - TAXII
 ---
 
+> [!eli5] ELI5: What is TAXII?
+> TAXII is the delivery truck that carries threat information between organizations. While STIX is the language, TAXII is how that information actually gets sent from point A to point B.
+
 ## Definition
 
 TAXII (Trusted Automated eXchange of Intelligence Information) is an application protocol for the automated exchange of STIX-formatted threat intelligence between organizations and systems. It defines the transport mechanisms and APIs by which STIX data can be published, subscribed to, and exchanged — enabling automated, machine-speed sharing of threat intelligence without manual intervention.

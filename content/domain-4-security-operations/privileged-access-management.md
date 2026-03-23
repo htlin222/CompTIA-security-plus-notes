@@ -11,6 +11,9 @@ aliases:
   - "PAM"
 ---
 
+> [!eli5] ELI5: What is Privileged Access Management?
+> In a school, the principal has a master key that opens every room. If that key gets lost, someone could go anywhere -- the office, the supply room, everywhere. Privileged access management is about keeping those master keys in a locked safe, only handing them out when absolutely needed, watching what people do with them, and taking them back as soon as possible. The fewer people holding master keys, the safer the building.
+
 ## Overview
 
 Privileged Access Management (PAM) is a set of strategies and technologies for controlling, monitoring, and auditing elevated access to critical systems and data. Privileged accounts (admin, root, service accounts) are prime targets for attackers because they provide broad access. PAM solutions enforce least privilege and provide accountability for privileged actions.

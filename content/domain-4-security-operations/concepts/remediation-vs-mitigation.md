@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Remediation vs. Mitigation?
+> Remediation fixes the actual problem, like patching a hole in the roof. Mitigation reduces the damage without fully fixing it, like putting a bucket under the leak until you can patch it.
+
 ## Definition
 
 In vulnerability management, remediation completely eliminates a vulnerability by fixing the root cause (typically by applying a patch or reconfiguring the system), while mitigation reduces the likelihood of exploitation or the impact of a successful attack without fully eliminating the vulnerability. Organizations use mitigation when full remediation is not immediately possible.

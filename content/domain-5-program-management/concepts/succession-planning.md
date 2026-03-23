@@ -8,6 +8,9 @@ tags:
   - type/sub-topic
 ---
 
+> [!eli5] ELI5: What is Succession Planning?
+> What happens if the team captain gets sick on game day? Succession planning makes sure there's always a trained backup person ready to step in for any important role, so the team can keep playing.
+
 ## Definition
 
 Succession planning in the context of business continuity ensures that critical roles and responsibilities have designated backups who are trained and authorized to step in if key personnel become unavailable due to illness, departure, travel, or a disaster event. Without succession planning, the loss of a single key individual can become a business continuity failure — particularly for specialized roles like CISO, system administrators with unique access, or executives with signing authority.
