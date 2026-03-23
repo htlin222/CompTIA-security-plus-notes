@@ -15,6 +15,7 @@ Metro Credit Union operates with 300 employees across 4 branches, serving 85,000
 Marcus never changed it. Nobody suggested he change it. Marcus simply used "Credit1234" to log in whenever he needed to perform administrative tasks on the database.
 
 But there was a bigger problem: that password was hardcoded in 14 different locations in the environment:
+
 - 8 cron jobs that performed automated backups and maintenance tasks
 - 3 custom applications that connected to the database for reporting
 - 2 monitoring scripts that collected performance metrics
@@ -25,6 +26,7 @@ On Thursday at 3:47 PM, Marcus sent his resignation email to HR: "I'll be leavin
 On Friday morning, the CIO received a meeting request from HR: "Exit interview and asset return for Marcus." That's when it occurred to them that Marcus was the sole person with direct knowledge of the database root password. When asked if the database had a documented root password change procedure, the security team went silent. They didn't have one.
 
 The investigation revealed:
+
 1. **Shared credentials**: The password was shared verbally with no documentation
 2. **Hardcoded in cron jobs**: 8 automated backup and maintenance jobs would break immediately if the password were changed
 3. **Undocumented [[service-account-management]]**: The 3 applications that used the database credentials were supposed to use a service account, not root, but nobody had ever implemented this
@@ -32,6 +34,7 @@ The investigation revealed:
 5. **No [[just-in-time-jit-access]]**: Marcus had permanent access to the root account. There was no time-limited or audited credential issuance mechanism
 
 The CIO ordered an emergency action: change the database root password immediately. But when the team tried to make the change, they realized they needed to:
+
 1. Update all 14 hardcoded password references
 2. Test the backup scripts to ensure they still worked
 3. Test the custom applications to ensure they still connected
@@ -59,12 +62,12 @@ The financial impact: The credit union processes approximately 8,000 transaction
 
 ## Key Takeaways
 
-- **[[Credential-rotation]] must be enforced on a schedule**: The database root password should be rotated quarterly at minimum. Rotating the password forces a systematic update of all locations where it's hardcoded.
-- **[[Service-account-management]] eliminates shared credentials**: Every application that needs database access should have its own service account with minimal necessary privileges. The root account should almost never be used outside of emergencies.
-- **[[Just-in-time-jit-access]] prevents permanent credential exposure**: Instead of permanently holding the database root password, privileged users should request temporary access (30 minutes, 1 hour) for specific tasks. This prevents long-term credential compromise.
-- **[[Password-vaulting]] enables credential rotation without downtime**: A privileged access management system can automatically rotate the database password, update all hardcoded references, and test the changes before placing them in production.
+- **Credential-rotation must be enforced on a schedule**: The database root password should be rotated quarterly at minimum. Rotating the password forces a systematic update of all locations where it's hardcoded.
+- **Service-account-management eliminates shared credentials**: Every application that needs database access should have its own service account with minimal necessary privileges. The root account should almost never be used outside of emergencies.
+- **Just-in-time-jit-access prevents permanent credential exposure**: Instead of permanently holding the database root password, privileged users should request temporary access (30 minutes, 1 hour) for specific tasks. This prevents long-term credential compromise.
+- **Password-vaulting enables credential rotation without downtime**: A privileged access management system can automatically rotate the database password, update all hardcoded references, and test the changes before placing them in production.
 - **Offboarding procedures must include credential revocation**: When an employee leaves, all privileged credentials must be rotated immediately, not at their next scheduled rotation date.
-- **[[Break-glass-accounts]] provide emergency access**: Maintain a separate, high-security root account that can be used only for emergencies, with a different password stored in a physical vault. This prevents a single employee from being a single point of failure.
+- **Break-glass-accounts provide emergency access**: Maintain a separate, high-security root account that can be used only for emergencies, with a different password stored in a physical vault. This prevents a single employee from being a single point of failure.
 
 ## Related Cases
 

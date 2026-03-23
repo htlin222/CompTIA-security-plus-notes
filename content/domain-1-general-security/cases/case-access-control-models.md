@@ -16,7 +16,7 @@ At 4:15 PM on a Thursday in late February 2026, Alex Patel, a junior systems eng
 
 By 9:15 PM that night, someone who should not have had access—a contractor in the IT support team stationed at the Phoenix facility—noticed the unusual file activity in the storage logs and flagged it. The contractor, a former engineer, immediately recognized that the 47 MB file labeled with flight control algorithm variants was highly sensitive. The CISO was contacted. Elena reviewed the access logs and her stomach dropped: the file had been accessed from IP addresses in three states, including at least two that appeared to be residential ISPs (potentially unsecured home networks where employees were working).
 
-The core problem was this: Apex Aerospace had never fully transitioned from [[discretionary-access-control]] (DAC) to [[mandatory-access-control]] (MAC) models. In a DAC system like Windows or traditional Linux, the file owner decides who can access the file. This is convenient for employees but catastrophic for classified information—a junior engineer can casually move sensitive data to a permissive folder without triggering any controls. In contrast, a MAC system like the [[bell-lapadula-model]] enforces information flow rules at the operating system level: a user with clearance level "Secret" can never move a "Top Secret" document into a folder accessible to users with "Confidential" clearance, period. The system blocks it regardless of what the file owner wants.
+The core problem was this: Apex Aerospace had never fully transitioned from discretionary-access-control (DAC) to mandatory-access-control (MAC) models. In a DAC system like Windows or traditional Linux, the file owner decides who can access the file. This is convenient for employees but catastrophic for classified information—a junior engineer can casually move sensitive data to a permissive folder without triggering any controls. In contrast, a MAC system like the [[bell-lapadula-model]] enforces information flow rules at the operating system level: a user with clearance level "Secret" can never move a "Top Secret" document into a folder accessible to users with "Confidential" clearance, period. The system blocks it regardless of what the file owner wants.
 
 Elena pulled together a rapid assessment team and discovered the nightmare: there was no consistent [[data-classification]] enforcement anywhere in the company. Some divisions had classification metadata in SharePoint, but it was not bound to actual access control decisions. The [[bell-lapadula-model]] principle—"no write down" (you cannot write to a lower classification level)—had never been implemented. An "Unclassified" user could not read "Secret" documents, but a "Secret" user could freely write to "Unclassified" storage, which meant classified information could be demoted through careless sharing.
 
@@ -29,6 +29,7 @@ By Monday, Elena's team had secured the immediate exposure: the dataset was clas
 The real reckoning began. Elena's team spent week 1 conducting a baseline access review using automated tools. The results were horrifying: 1,247 user accounts had excessive permissions that didn't match their current job description. A network technician in Phoenix had inherited "Vault_Admin" group membership from a role 11 years ago. A receptionist at the Connecticut facility had read access to classified vendor contracts. An intern in HR had write access to the payroll database. The principle of least privilege had been aspirational at best.
 
 Week 2-4: The team built a new role taxonomy. Instead of the existing sprawl of 347 distinct permissions combinations, they defined 23 job-based roles:
+
 - Manufacturing_Technician (limited read on legacy systems, no cloud access)
 - Product_Engineer_L1 (read access to engineering documents, no classified access)
 - Product_Engineer_L2 (read/write on current-generation designs, no classified)
@@ -57,7 +58,7 @@ The final audit found zero discrepancies in the new access control model. More i
 
 - **No [[data-classification]] enforcement at the storage layer**: The dataset was labeled "Unclassified" in metadata, but that label had no connection to actual file system permissions. A user could read it and move it freely.
 - **Absence of [[bell-lapadula-model]] controls**: The "no write down" principle was never implemented. Anyone could write classified information into lower-classification storage, demoting it through carelessness or malice.
-- **[[Discretionary-access-control]] was the default everywhere**: File owners (employees) decided access levels individually. This works for personal folders but is catastrophic for classified or sensitive data.
+- **Discretionary-access-control was the default everywhere**: File owners (employees) decided access levels individually. This works for personal folders but is catastrophic for classified or sensitive data.
 - **Permission accumulation and drift**: Employees kept permissions from old roles because the access review process was ad-hoc and manual. Five year old permissions coexisted with current ones.
 - **No [[principle-of-least-privilege]] enforcement**: Every employee had at least 4-6 permissions aggregated from past roles. Nobody was regularly challenged to justify why they needed each one.
 - **Lack of [[zero-trust]] model**: The system assumed that "being logged in to the domain" meant you were trustworthy and should have broad access. There was no verification at the resource level.
@@ -65,12 +66,12 @@ The final audit found zero discrepancies in the new access control model. More i
 
 ## Key Takeaways
 
-- **[[Bell-lapadula-model]] and [[biba-model]] are not optional for classified or sensitive data**: Implement mandatory access controls that enforce information flow rules at the operating system or file system level, not just in application logic.
-- **[[Discretionary-access-control]] must be eliminated for sensitive data**: Replace ad-hoc file owner decisions with centralized, role-based access policies enforced by the system.
-- **[[Data-classification]] must be enforced technically, not just in metadata**: A file labeled "Classified" is worthless if the file system allows anyone to read it. Bind classification to actual access controls.
-- **[[Principle-of-least-privilege]] requires automation**: Manual access reviews fail. Implement automated systems that revoke access older than 365 days unless explicitly renewed, or that flag permission combinations that exceed the role baseline.
+- **Bell-lapadula-model and [[biba-model]] are not optional for classified or sensitive data**: Implement mandatory access controls that enforce information flow rules at the operating system or file system level, not just in application logic.
+- **Discretionary-access-control must be eliminated for sensitive data**: Replace ad-hoc file owner decisions with centralized, role-based access policies enforced by the system.
+- **Data-classification must be enforced technically, not just in metadata**: A file labeled "Classified" is worthless if the file system allows anyone to read it. Bind classification to actual access controls.
+- **Principle-of-least-privilege requires automation**: Manual access reviews fail. Implement automated systems that revoke access older than 365 days unless explicitly renewed, or that flag permission combinations that exceed the role baseline.
 - **Role-based access control simplifies everything**: Moving from 347 permission combinations to 23 well-defined roles made the system auditable, maintainable, and enforceable.
-- **[[Authorization]] models must be regularly tested**: Use red team exercises to verify that a user cannot accidentally or intentionally access data outside their clearance level.
+- **Authorization models must be regularly tested**: Use red team exercises to verify that a user cannot accidentally or intentionally access data outside their clearance level.
 
 ## Related Cases
 

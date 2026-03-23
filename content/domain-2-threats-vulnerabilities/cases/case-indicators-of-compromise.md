@@ -22,6 +22,7 @@ Tier 2 analyst Maria Garcia was tasked with triage. Her first actions:
 4. **Determine if it was actual compromise or just blocked attempts**: Had the malware exfiltrated data or just attempted to communicate?
 
 Investigation revealed:
+
 - 47 workstations across 4 subsidiaries had attempted connections to the C2 domains
 - The attempts were blocked by the firewall (the company had previously configured rules to block known APT C2 domains)
 - The [[behavioral-indicators|behavioral patterns]] suggested malware was running on these systems (periodic connection attempts, consistent timing patterns)
@@ -30,6 +31,7 @@ Investigation revealed:
 Maria escalated to the incident response team. The determination: this was a real compromise, not false positives. The systems had been infected with Wizard Spider malware, likely through a phishing campaign.
 
 The remediation:
+
 1. Isolate affected systems
 2. Conduct forensic analysis to determine malware entry point
 3. Identify all affected users and reset their credentials
@@ -56,8 +58,8 @@ The investigation also revealed 12 additional systems with the same malware, for
 
 ## Key Takeaways
 
-- **[[Indicators-of-compromise|IOCs]] from threat intelligence feeds should be ingested into SIEM**: Automatic correlation against known malicious domains/IPs/hashes enables rapid threat hunting
-- **[[Behavioral-indicators]] (periodic connection attempts, consistent timing) suggest active compromise**: IOCs aren't perfect; behavioral analysis provides additional confirmation
+- **IOCs from threat intelligence feeds should be ingested into SIEM**: Automatic correlation against known malicious domains/IPs/hashes enables rapid threat hunting
+- **Behavioral-indicators (periodic connection attempts, consistent timing) suggest active compromise**: IOCs aren't perfect; behavioral analysis provides additional confirmation
 - **Firewall-blocked connections should still trigger alerts**: Even if the firewall stopped the attack, the attempt indicates a compromised endpoint
 - **CISA flash alerts warrant immediate investigation**: When CISA publishes IOCs about targeted campaigns, assume your organization might be affected
 - **Phishing remains the most effective attack vector**: 47 employees clicking malicious attachments led to 59 compromised systems

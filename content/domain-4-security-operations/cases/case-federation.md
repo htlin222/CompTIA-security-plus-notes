@@ -19,6 +19,7 @@ What Rick didn't realize was that FinanceCore's Okta administrator was working f
 On February 2nd, the first FinanceCore user attempted to access GlobalTech's cloud resources through the SAML federation. The SAML assertion from Okta included a claim: `<Group>Finance-Team</Group>`. Azure AD saw the assertion, validated the signature (Okta's certificate was correctly configured), validated the [[trust-relationships]], and found that "Finance-Team" matched the expected group mapping. The user was granted the "Owner" role across all of GlobalTech's production Azure subscriptions and AWS accounts.
 
 Over the next six hours, FinanceCore employees realized they had inherited admin access to:
+
 - $1.2 billion in AWS infrastructure (EC2 instances, RDS databases, S3 buckets containing source code and financial data)
 - GlobalTech's Azure subscriptions with all production Kubernetes clusters
 - Office 365 tenant with access to all company email and SharePoint documents
@@ -47,11 +48,11 @@ The breach was discovered when a GlobalTech security team member noticed unusual
 
 ## Key Takeaways
 
-- **[[Attribute-mapping]] requires explicit semantic documentation**: Document not just "what is mapped to what," but "what does this group actually represent" and "who should be in this group." Get sign-off from both the identity provider and service provider teams.
-- **[[Federation]] trust escalations require least-privilege role assignment**: If federation trusts are used, the roles assigned via federated claims should be highly restricted—"Developer" role in a specific project, not "Owner" role across the organization.
-- **[[Cross-certification]] processes must validate trust chains**: Before enabling any federated trust, conduct a security architecture review that examines: (1) certificate validity, (2) attribute claims, (3) role mappings, (4) scope constraints, and (5) revocation procedures.
+- **Attribute-mapping requires explicit semantic documentation**: Document not just "what is mapped to what," but "what does this group actually represent" and "who should be in this group." Get sign-off from both the identity provider and service provider teams.
+- **Federation trust escalations require least-privilege role assignment**: If federation trusts are used, the roles assigned via federated claims should be highly restricted—"Developer" role in a specific project, not "Owner" role across the organization.
+- **Cross-certification processes must validate trust chains**: Before enabling any federated trust, conduct a security architecture review that examines: (1) certificate validity, (2) attribute claims, (3) role mappings, (4) scope constraints, and (5) revocation procedures.
 - **Test federation in staging with production-like scale**: Stand up a test federation with a subset of users and a limited resource group. Verify that access is exactly as intended before production deployment.
-- **[[Transitive-trust]] must be carefully limited**: Federation often creates transitive trust relationships (if A trusts B, and B trusts C, then C can impersonate A). Validate that the transitive trust doesn't exceed your intended scope.
+- **Transitive-trust must be carefully limited**: Federation often creates transitive trust relationships (if A trusts B, and B trusts C, then C can impersonate A). Validate that the transitive trust doesn't exceed your intended scope.
 - **Group membership must be explicitly managed**: Never assume that a group name means the same thing in two different systems. Explicitly define and manage group membership on both sides of the federation.
 
 ## Related Cases

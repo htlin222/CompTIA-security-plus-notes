@@ -59,12 +59,12 @@ Patricia made a critical decision: she would halt the red team penetration testi
 
 ## Key Takeaways
 
-- **[[Attack-surface-management]] must be automated and continuous**: Do not rely on teams to report their own infrastructure. Automatically scan your IP ranges, domain names, and certificate transparency logs. Compare results weekly against the official inventory.
+- **Attack-surface-management must be automated and continuous**: Do not rely on teams to report their own infrastructure. Automatically scan your IP ranges, domain names, and certificate transparency logs. Compare results weekly against the official inventory.
 - **Default credentials are critical vulnerabilities**: Any service accessible from the internet must require strong authentication AND preferably MFA. Default credentials ("admin/admin") on CI/CD systems are disaster-level findings.
 - **Internet-facing services require explicit approval**: Every service that has a public IP or DNS record should have documented business justification, an assigned owner, and a planned decommissioning date.
 - **Decommissioning must be enforced at the infrastructure level**: Don't rely on teams to remove DNS records and shut down servers. Use infrastructure-as-code to manage lifecycle: if a server isn't in the approved inventory, it should be automatically terminated.
 - **Assume passive reconnaissance will be thorough**: Attackers use Shodan, SSL transparency logs, and reverse IP lookups constantly. Treat passive discovery results as seriously as active scanning results.
-- **[[Human-vectors]] in infrastructure management create huge risks**: Storing credentials in DNS TXT records, wiki pages, and build logs is a common pattern that needs to be detected and eliminated.
+- **Human-vectors in infrastructure management create huge risks**: Storing credentials in DNS TXT records, wiki pages, and build logs is a common pattern that needs to be detected and eliminated.
 - **Periodic red teaming and asset discovery are essential**: Commission external teams every 12-18 months to perform comprehensive reconnaissance and identify drift.
 
 ## Related Cases

@@ -49,7 +49,7 @@ The forensic analysis took three weeks. During that time, two patients' genetic 
 - **Email aliases and distribution lists are critical infrastructure**: They must be audited and validated during every organizational change. Failed alerts are silent breaches.
 - **Default cloud settings are not secure enough**: [[cloud-deployment-models]] requires explicit security hardening: enable KMS encryption, enable versioning, enable access logging, enable CloudTrail, configure bucket policies to deny public access.
 - **ACLs are legacy—use IAM for [[identity-and-access-management]]**: Bucket ACLs allow binary public/private decisions. IAM policies allow role-based, temporary, and context-aware access control that's actually auditable.
-- **[[Shared-responsibility-model]] clarity is essential**: AWS protects the infrastructure; you protect the application, data, identity, and configuration. Document what each team owns, and test that documentation quarterly.
+- **Shared-responsibility-model clarity is essential**: AWS protects the infrastructure; you protect the application, data, identity, and configuration. Document what each team owns, and test that documentation quarterly.
 - **Temporary workarounds become permanent**: Priya's "unblock testing" ACL change was never reverted because nobody had a system to detect configuration drift. Treat temporary security changes the same as you treat temporary code: they must have expiration times and escalation paths.
 - **Breach scope assessment depends on logging**: If CloudTrail had been disabled to "reduce AWS bills," or if access logging had been turned off for "performance," the forensic team would have no way to answer: "How many records were actually accessed?"
 
@@ -59,4 +59,3 @@ The forensic analysis took three weeks. During that time, two patients' genetic 
 - [[case-data-protection]] — Deep dive into encryption strategies that could have prevented the exposure
 - [[case-encryption]] — Understanding key management and customer-managed encryption in cloud environments
 - [[case-virtualization-security]] — How resource isolation principles apply to cloud multi-tenancy
-

@@ -70,8 +70,8 @@ Jennifer's team designed a [[network-segmentation|segmentation]] architecture:
 
 The architecture required changes to each store's network equipment:
 
-1. **Network switch upgrade**: Basic unmanaged switches were replaced with managed switches supporting [[virtual-local-area-network|VLANs]]
-2. **Firewall upgrade**: Basic NAT firewalls were replaced with stateful firewalls supporting [[access-control-lists|ACL-based]] rules between VLANs
+1. **Network switch upgrade**: Basic unmanaged switches were replaced with managed switches supporting VLANs
+2. **Firewall upgrade**: Basic NAT firewalls were replaced with stateful firewalls supporting ACL-based rules between VLANs
 3. **Access point separation**: Guest Wi-Fi access points were configured as separate VLANs, not just SSIDs on the same network
 
 The challenge was coordination and validation. Jennifer couldn't send IT staff to 1,200 stores to reconfigure network equipment. Instead, she executed a phased, remote-friendly approach:
@@ -100,7 +100,7 @@ By May 25, all 1,200 stores had been upgraded. The PCI audit was completed on Ma
 
 PCI certification was maintained.
 
-## The Technical Details
+### The Technical Details
 
 The network configuration was surprisingly complex despite appearing simple:
 
@@ -150,9 +150,9 @@ Firewall Rules:
 
 ## Key Takeaways
 
-- **[[Virtual-local-area-network|VLANs]] alone are not sufficient isolation**: You need both [[virtual-local-area-network|VLAN]] tagging AND firewall rules that enforce [[east-west-traffic-control|traffic control]] between VLANs.
+- **VLANs alone are not sufficient isolation**: You need both VLAN tagging AND firewall rules that enforce [[east-west-traffic-control|traffic control]] between VLANs.
 - **Segmentation must be validated, not assumed**: Test that devices in one segment cannot reach devices in another segment, even though they're on the same switch.
-- **[[Jumpbox-jump-server|Restricted access]] to sensitive zones is better than default-allow**: Instead of "anyone on the office network can access POS devices," implement "only back-office workstations 192.168.1.50-51 can reach POS devices on ports 22,80,443."
+- **Restricted access to sensitive zones is better than default-allow**: Instead of "anyone on the office network can access POS devices," implement "only back-office workstations 192.168.1.50-51 can reach POS devices on ports 22,80,443."
 - **Physical location-based segmentation is viable**: 1,200 identical stores with identical network designs is much easier than designing unique segmentation for each location.
 - **Pre-configuration and turnkey equipment reduces deployment risk**: If you must deploy network changes to many locations, pre-stage everything so field staff just needs to plug in new equipment, not reconfigure it.
 - **Compliance deadlines are effective drivers**: PCI's 60-day remediation deadline forced RetailCorp to act. Without it, security might have remained an unfunded initiative.
@@ -160,6 +160,6 @@ Firewall Rules:
 ## Related Cases
 
 - [[case-firewalls]] — Firewall rules that enforce segmentation
-- [[case-east-west-traffic-control]] — Monitoring and preventing lateral movement
+- case-east-west-traffic-control — Monitoring and preventing lateral movement
 - [[case-zero-trust]] — More sophisticated segmentation models that verify every access
 

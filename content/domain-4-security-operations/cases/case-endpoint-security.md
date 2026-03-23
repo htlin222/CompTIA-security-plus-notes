@@ -19,6 +19,7 @@ What made this a catastrophic breach was the [[full-disk-encryption-fde]] situat
 On the day David enrolled his MacBook Pro in 2021, he received the MDM profile but the encryption policy never triggered. His laptop had been used for three years completely unencrypted. The IT team, seeing no errors in the MDM console, assumed the policy was working. The security team, seeing the policy written in their governance documentation, believed devices were protected. Nobody verified the actual state.
 
 Inside the stolen laptop, in plain text:
+
 - The complete source code for the payment platform (1.2 million lines of Java and Kotlin)
 - API keys for integration with three payment networks (Visa, Mastercard, ACH)
 - Database credentials for the development environment (usernames, passwords, connection strings)
@@ -50,7 +51,7 @@ By the time TechVenture accelerated the launch and brought the product to market
 
 ## Key Takeaways
 
-- **[[Full-disk-encryption-fde]] must be verified, not assumed**: Implement a quarterly MDM compliance check that verifies actual encryption status, not just policy deployment. Devices without encryption should be automatically isolated from the network until remediated.
+- **Full-disk-encryption-fde must be verified, not assumed**: Implement a quarterly MDM compliance check that verifies actual encryption status, not just policy deployment. Devices without encryption should be automatically isolated from the network until remediated.
 - **MDM policies must align with identity sources**: If macOS devices are managed in Apple Business Manager, the MDM policy scopes must target that identity store, not Active Directory. Regularly audit MDM policy application to ensure it's actually being enforced.
 - **Traveling employees with sensitive data need enhanced controls**: For employees traveling internationally with unreleased intellectual property, implement additional controls: laptop full-disk encryption with hardware-backed keys, remote wipe capability, and mandatory device insurance.
 - **[[boot-integrity]] requires secure boot configuration**: Even with encryption, enable UEFI Secure Boot and require BIOS/firmware passwords to prevent attackers from booting from external media and bypassing the encrypted filesystem.

@@ -12,7 +12,7 @@ tags:
 
 Midwest State University's 28-year-old course registration system, CourseReg, serves 32,000 students, 3,200 faculty, and 450 staff. Built in PHP 5.6 in 1998 and "maintained" ever since through minimal patches, the system stores student names, Social Security numbers, home addresses, phone numbers, email addresses, course selections, and academic progress. On March 8, 2026, at 11:43 PM, a researcher named Elena Kovac discovered that the course search functionality was vulnerable to [[blind-sql-injection]].
 
-Elena tested the search field by entering: `PHYS101' AND SLEEP(5)--`. The system took exactly 5 seconds to respond instead of the normal 0.3 seconds. This confirmed the vulnerability. She immediately contacted the university's security office, not realizing that a criminal attacker had likely discovered the same flaw weeks earlier. The system was recording no logs of injection attempts because the [[web-application-firewall]] (WAF) was in "detection-only" mode—alerts were being generated but nobody was reading them. Forensic review later revealed 47 successful injection probes going back 19 days to February 18.
+Elena tested the search field by entering: `PHYS101' AND SLEEP(5)--`. The system took exactly 5 seconds to respond instead of the normal 0.3 seconds. This confirmed the vulnerability. She immediately contacted the university's security office, not realizing that a criminal attacker had likely discovered the same flaw weeks earlier. The system was recording no logs of injection attempts because the web-application-firewall (WAF) was in "detection-only" mode—alerts were being generated but nobody was reading them. Forensic review later revealed 47 successful injection probes going back 19 days to February 18.
 
 The attacker had been running [[blind-sql-injection]] queries to extract the entire student database one character at a time. Using queries like `PHYS101' AND IF(SUBSTRING((SELECT password FROM users LIMIT 1),1,1)='a',SLEEP(5),0)--`, the attacker could determine characters in records by measuring response times. Over 19 days, this tedious technique harvested the `students` table completely: 80,142 records including names, SSNs, home addresses, phone numbers, email addresses, and academic standing. The attacker also successfully extracted the hashed passwords from the `users` table (804 faculty and staff accounts).
 
@@ -50,7 +50,7 @@ What made this breach particularly damaging was the complete absence of [[input-
 
 - **Test for [[blind-sql-injection]] specifically**: Time-based blind injection is often overlooked because it doesn't generate visible errors. Security testing must include [[blind-sql-injection]] payloads like `' AND SLEEP(5)--` to detect this vulnerability class.
 
-- **WAF alerts require a human response**: A [[web-application-firewall]] in detection-only mode is audit bait. Either tune it to block known attacks (moving to enforcement mode) or ensure someone is actively reviewing logs and escalating suspicious patterns.
+- **WAF alerts require a human response**: A web-application-firewall in detection-only mode is audit bait. Either tune it to block known attacks (moving to enforcement mode) or ensure someone is actively reviewing logs and escalating suspicious patterns.
 
 - **Legacy codebase = legacy risk**: Systems older than 10 years without major security overhauls should be treated as high-risk. Plan for periodic [[penetration-testing]], code review, and architecture modernization. At 28 years old, CourseReg should have been retired years earlier.
 

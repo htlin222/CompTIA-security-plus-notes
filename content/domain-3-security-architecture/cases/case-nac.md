@@ -121,14 +121,14 @@ Marcus and Dr. Chen redesigned the rollout:
 
 The revised rollout in March 2024 proceeded smoothly. By the end of the grace period, 98% of devices were compliant. The help desk received 47 tickets instead of 600. Student satisfaction was high. The NAC system successfully improved network security without operational disaster.
 
-## What Went Right (in the Revised Approach)
+## What Went Right
 
 - **Phased rollout caught issues early**: Faculty devices revealed antivirus detection problems before student deployment.
 - **Remediation network provided graceful degradation**: Non-compliant devices could still connect but were isolated and encouraged to become compliant.
 - **Communication prevented surprise and frustration**: Students who knew about NAC weeks in advance prepared their devices and had fewer compliance issues.
 - **Flexible policies matched reality**: Accepting diverse antivirus software and encryption implementations instead of rigidly requiring specific vendors.
 
-## What Could Go Wrong (from the Initial Deployment)
+## What Could Go Wrong
 
 - **Blocking on day one of the semester was catastrophic timing**: Students needed network access to submit assignments, take exams, and access course materials on day one.
 - **No guest network forced students to choose between compliance and access**: A [[guest-networking]] path would have provided remediation options without blocking.
@@ -138,7 +138,7 @@ The revised rollout in March 2024 proceeded smoothly. By the end of the grace pe
 ## Key Takeaways
 
 - **[[8021x|802.1X NAC]] should be rolled out phased, not all at once**: Start with a small cohort, validate policies, discover edge cases, then expand.
-- **[[Guest-networking|Guest networks]] are essential for NAC deployments**: Non-compliant devices should be quarantined to a remediation network, not blocked outright. This reduces help desk load and provides a path to compliance.
+- **Guest networks are essential for NAC deployments**: Non-compliant devices should be quarantined to a remediation network, not blocked outright. This reduces help desk load and provides a path to compliance.
 - **NAC policies must account for device diversity**: BYOD environments include old devices, custom configurations, and non-standard software. Policies should be flexible or have exceptions.
 - **Grace periods prevent operational catastrophe**: When enabling security controls that might block users, provide a grace period (1-2 weeks) to find and fix problems.
 - **Communication is part of security implementation**: Stakeholders (students, faculty, staff) need to understand what's changing, why, and how to prepare. Surprise deployments create friction and undermine trust.

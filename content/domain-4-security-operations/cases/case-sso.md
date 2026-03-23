@@ -26,6 +26,7 @@ As more users' Kerberos tickets expired—creating a "ticket renewal storm"—th
 
 **Phase 3: Business Impact (20:00-47:00)**
 By 4:12 PM (25 minutes after the outage began):
+
 - 3,800 of 4,000 employees had lost access to at least one critical application
 - 1,200 employees couldn't access Salesforce (critical for customer-facing project teams)
 - 2,100 employees couldn't access their Office 365 email
@@ -56,12 +57,12 @@ The incident forced a painful architectural review. Stratton realized they had d
 
 ## Key Takeaways
 
-- **[[Single-point-of-failure-risk]] is inherent in SSO architectures**: [[federation]] and [[sso]] by definition create centralized authentication. Organizations must implement redundancy at the identity provider level (geo-redundant instances, secondary providers) and in applications (local token caching, offline modes).
-- **[[Token-based-authentication]] lifetimes should balance security and resilience**: Extremely short token lifetimes (5 minutes) mean the identity provider must be always available. Longer lifetimes (hours) increase security risk if tokens are compromised. Balance security requirements with availability requirements.
+- **Single-point-of-failure-risk is inherent in SSO architectures**: [[federation]] and [[sso]] by definition create centralized authentication. Organizations must implement redundancy at the identity provider level (geo-redundant instances, secondary providers) and in applications (local token caching, offline modes).
+- **Token-based-authentication lifetimes should balance security and resilience**: Extremely short token lifetimes (5 minutes) mean the identity provider must be always available. Longer lifetimes (hours) increase security risk if tokens are compromised. Balance security requirements with availability requirements.
 - **Applications should implement graceful degradation when identity provider is offline**: Instead of immediately failing, applications should cache the last-known-good authorization state and allow read-only access or limited functionality until the identity provider recovers.
 - **Kerberos provides valuable resilience**: Unlike OAuth/OIDC tokens, Kerberos tickets are valid for 10 hours even if the authentication server is offline. This provides natural resilience that should be leveraged.
 - **Critical business operations should not depend entirely on online authentication**: For applications involved in fiscal close, deal finalization, or other critical-path business processes, implement offline authentication modes or require biannual testing of offline access procedures.
-- **[[Mfa]] adds complexity to [[single-point-of-failure-risk]] mitigation**: If MFA is required, authenticating offline becomes more complex. [[passwordless-authentication]] with hardware keys is more resilient than push-notification MFA during provider outages.
+- **Mfa adds complexity to [[single-point-of-failure-risk]] mitigation**: If MFA is required, authenticating offline becomes more complex. [[passwordless-authentication]] with hardware keys is more resilient than push-notification MFA during provider outages.
 
 ## Related Cases
 

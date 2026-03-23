@@ -57,7 +57,7 @@ After the customization, false positives dropped from 2,800/day to 340/day—a 8
 ## What Went Right
 
 - **Problem detected early**: The alert avalanche was caught on day one, not after months of silent issues. Early adoption pain is better than late-stage surprise.
-- **[[Data-classification]] audit happened first**: Before refining DLP rules, the team understood what data types actually existed and what protection each deserved.
+- **Data-classification audit happened first**: Before refining DLP rules, the team understood what data types actually existed and what protection each deserved.
 - **Business stakeholders participated in design**: Rather than security dictating rules in isolation, research and legal teams helped define what legitimate communication looked like.
 - **Vendor cooperation for customization**: The vendor's professional services team was willing to go beyond the baseline configuration and build pharmaceutical-specific context.
 - **Metrics-driven refinement**: By tracking [[false-positives]] and [[policy-actions]] separately, the team could see the improvement and validate the customization effort.
@@ -72,9 +72,9 @@ After the customization, false positives dropped from 2,800/day to 340/day—a 8
 
 ## Key Takeaways
 
-- **[[False-positives]] will kill adoption faster than actual data breaches**: Alert fatigue causes teams to disable security tools, route around them, or ignore them entirely. Treat [[false-positives]] as a critical metric, not a "tuning problem."
-- **[[Data-classification]] must precede [[data-loss-prevention-dlp]] policy design**: You can't write correct DLP rules without understanding what data types exist, what's public, what's proprietary, and what's regulated. Classification is not optional.
-- **[[Policy-actions]] should be layered (alert → block → escalate)**: Don't jump straight to "block." Start with "log," then "alert," then "block," and measure business impact at each stage.
+- **False-positives will kill adoption faster than actual data breaches**: Alert fatigue causes teams to disable security tools, route around them, or ignore them entirely. Treat [[false-positives]] as a critical metric, not a "tuning problem."
+- **Data-classification must precede [[data-loss-prevention-dlp]] policy design**: You can't write correct DLP rules without understanding what data types exist, what's public, what's proprietary, and what's regulated. Classification is not optional.
+- **Policy-actions should be layered (alert → block → escalate)**: Don't jump straight to "block." Start with "log," then "alert," then "block," and measure business impact at each stage.
 - **Context matters more than patterns**: "Compound identifier + email to external domain" is higher risk than "compound identifier + internal research email." DLP rules that understand sender, recipient, content, and intent are better than pattern matching.
 - **Dedicated DLP analyst role is necessary**: Even after customization, someone needs to monitor alerts, refine rules, and maintain the exception list. Budget for ongoing tuning, not just implementation.
 - **Pilot with reporting mode, not blocking mode**: Always start with DLP in "monitor" mode, measure [[false-positives]], tune the configuration, and only then move to "block" mode after stakeholders agree the rules are accurate.
@@ -85,4 +85,3 @@ After the customization, false positives dropped from 2,800/day to 340/day—a 8
 - [[case-data-classification]] — Understanding information taxonomy so DLP rules match reality
 - [[case-email-security]] — Email-specific threats that DLP addresses, and the detection mechanisms
 - [[case-compliance]] — How [[data-loss-prevention-dlp]] fulfills regulatory data protection requirements
-

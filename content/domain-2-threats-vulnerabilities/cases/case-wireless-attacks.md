@@ -31,22 +31,26 @@ Forensic investigation of the rogue AP infrastructure (MAC addresses, RF fingerp
 By 9:47 AM on February 18, James had notified the Chief Information Security Officer and Chief Medical Officer. The hospital activated its incident response procedure at 10:30 AM. By 11:00 AM, all 11 rogue access points had been physically located and powered down. By noon, the hospital had begun a comprehensive wireless intrusion detection and response initiative:
 
 **Immediate Actions (same day)**:
+
 - All 11 rogue APs were physically disabled.
 - A wireless intrusion detection system (WIDS) was activated on the existing access point infrastructure to monitor for [[rogue-access-point|rogue AP advertisements]] and unauthorized SSID broadcasts.
 - All access point configurations were reviewed for unauthorized modifications.
 
 **Short-term Remediation (48 hours)**:
-- Deploy medical-grade wireless access points with [[wpa3]] encryption and strong pre-shared keys (PSK) rotation.
-- Implement [[network-access-control]] (NAC) to verify that only approved medical devices connect to the "MetroHospital-Medical" SSID.
+
+- Deploy medical-grade wireless access points with wpa3 encryption and strong pre-shared keys (PSK) rotation.
+- Implement network-access-control (NAC) to verify that only approved medical devices connect to the "MetroHospital-Medical" SSID.
 - Deploy wireless IDS sensors (Cisco Meraki MR, Arista, Ubiquiti) throughout the hospital to detect [[evil-twin]] and [[rogue-access-point|rogue AP]] activity in real-time.
 
 **Medium-term Improvements (2–4 weeks)**:
+
 - Implement certificate pinning in medical device firmware: devices will verify the legitimate AP's certificate before connecting, making [[evil-twin]] attacks impossible regardless of SSID matching.
 - Configure hidden SSIDs for sensitive networks ("MetroHospital-Medical" will not broadcast; devices must be pre-configured with the SSID).
-- Enable [[mac-address-filtering]] on medical network APs to restrict access to approved medical device MAC addresses.
+- Enable mac-address-filtering on medical network APs to restrict access to approved medical device MAC addresses.
 - Encrypt telemetry traffic end-to-end using [[encryption|TLS 1.3]] even on the wireless segment.
 
 **Long-term Architecture (ongoing)**:
+
 - Upgrade wireless infrastructure to WiFi 6 (802.11ax) with built-in security improvements.
 - Implement [[network-segmentation|medical device segmentation]] with dedicated VLANs and layer 3 firewall rules for telemetry traffic.
 - Deploy ambient RF monitoring to detect unauthorized transmitters on hospital frequencies.
@@ -59,7 +63,7 @@ The hospital did not discover that any patient data had been exploited for extor
 
 - **Rapid incident response and containment**: Once discovered, the hospital immediately disabled the rogue APs and activated intrusion detection. This prevented further data exfiltration after the initial 14-day exposure window.
 
-- **Comprehensive post-incident wireless security improvements**: Rather than just removing the rogue APs, the hospital implemented layered wireless defenses including [[wpa3]], certificate pinning, MAC address filtering, and wireless IDS. This prevents future [[evil-twin]] attacks.
+- **Comprehensive post-incident wireless security improvements**: Rather than just removing the rogue APs, the hospital implemented layered wireless defenses including wpa3, certificate pinning, MAC address filtering, and wireless IDS. This prevents future [[evil-twin]] attacks.
 
 - **Medical device inventory and asset management**: The ability to identify which devices had connected to the rogue APs (based on wireless logs and device telemetry records) enabled precise impact assessment and patient notification.
 
@@ -71,7 +75,7 @@ The hospital did not discover that any patient data had been exploited for extor
 
 - **Unencrypted telemetry over wireless**: Patient data was transmitted in plaintext over the wireless network. Even on a legitimate network, medical telemetry should be encrypted ([[encryption|TLS 1.3]]) end-to-end. Encryption would have made the captured data useless to the attacker.
 
-- **No [[mac-address-filtering|MAC address filtering]] on sensitive networks**: The rogue APs could accept connections from any device because the hospital had not implemented MAC filtering to restrict access to known medical devices. Whitelisting only approved device MAC addresses would have blocked rogue AP access.
+- **No MAC address filtering on sensitive networks**: The rogue APs could accept connections from any device because the hospital had not implemented MAC filtering to restrict access to known medical devices. Whitelisting only approved device MAC addresses would have blocked rogue AP access.
 
 - **Physical security of wireless infrastructure was insufficient**: The fact that rogue APs could be physically placed in operating rooms, ICU wards, and maintenance areas indicates inadequate physical access controls. Hospitals should restrict access to areas where network devices can be deployed; unauthorized device placement should be detected immediately.
 
@@ -91,7 +95,7 @@ The hospital did not discover that any patient data had been exploited for extor
 
 - **[[case-network-attacks]]** — [[deauthentication-attack|Deauthentication attacks]], [[jamming]], and other wireless layer 2 attacks; understanding the broader wireless threat landscape beyond rogue APs.
 
-- **[[case-wireless-attacks]]** — [[war-driving|War driving]], [[wps-attacks|WPS attacks]], [[krack-key-reinstallation-attack|KRACK]], and [[wpa-wpa2-handshake-capture|WPA/WPA2 handshake capture]]; understanding different wireless attack techniques.
+- **[[case-wireless-attacks]]** — [[war-driving|War driving]], [[wps-attacks|WPS attacks]], [[krack-key-reinstallation-attack|KRACK]], and WPA/WPA2 handshake capture; understanding different wireless attack techniques.
 
 - **[[case-network-monitoring]]** — Deploying wireless IDS, RF monitoring, and behavioral analysis to detect unauthorized access points and radio frequency activity.
 

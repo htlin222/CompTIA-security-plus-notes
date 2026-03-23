@@ -15,6 +15,7 @@ Pinnacle Energy Corporation operates power generation facilities across 12 state
 What the forensics team discovered was alarming. Of the 10,200 people listed in the current HRIS database, there were 11,847 active accounts across all systems (Active Directory, email, VPN, Jenkins CI/CD, AWS, Salesforce, time-tracking systems, badge access, etc.). That meant 1,647 accounts were "orphaned"—belonging to people who were no longer employed at Pinnacle.
 
 When the team dug deeper, the situation was worse. The 1,647 orphaned accounts dated back years:
+
 - 340 accounts from 2023 (people who left more than a year ago)
 - 520 accounts from 2022
 - 510 accounts from 2021
@@ -24,6 +25,7 @@ When the team dug deeper, the situation was worse. The 1,647 orphaned accounts d
 But the truly alarming finding came from correlating the orphaned accounts with VPN access logs. Fourteen of the 1,647 orphaned accounts had active VPN sessions within the last 30 days. Someone was using credentials from employees who no longer worked there to access the company VPN and, by extension, critical industrial control systems (ICS) that managed power generation.
 
 The investigation that followed revealed:
+
 1. **Incomplete offboarding processes**: When employees left, their managers were supposed to submit a termination request that would trigger a checklist of account removals: AD account disable, email deactivation, VPN revocation, etc. But the checklist was manual—a PDF form that was often incomplete or lost. There was no automated enforcement, no system of record tracking which items had been completed.
 
 2. **Decentralized account management**: Every system (AWS, Salesforce, Jenkins, etc.) had its own user management interface and account database. There was no centralized [[directory-services]] or [[provisioning-and-deprovisioning]] system that could revoke access across all systems simultaneously. Revoking a user required manual requests to 8-12 different system administrators.
@@ -55,9 +57,9 @@ The investigation couldn't definitively determine if this was David Torres himse
 
 ## Key Takeaways
 
-- **[[Identity-lifecycle-management]] must be automated from provisioning through deprovisioning**: When an employee is hired in HRIS, an automated workflow should provision accounts in all systems. When terminated, an automated workflow should revoke access in all systems.
+- **Identity-lifecycle-management must be automated from provisioning through deprovisioning**: When an employee is hired in HRIS, an automated workflow should provision accounts in all systems. When terminated, an automated workflow should revoke access in all systems.
 - **Implement centralized [[directory-services]]**: Use a central identity source (Active Directory, Azure AD) as the system of record. All other systems should integrate with this directory so revocation is immediate and consistent.
-- **[[Provisioning-and-deprovisioning]] must enforce completion**: Use workflow automation with approval gates and audit trails. Don't use manual PDF checklists.
+- **Provisioning-and-deprovisioning must enforce completion**: Use workflow automation with approval gates and audit trails. Don't use manual PDF checklists.
 - **Conduct monthly [[identity-governance]] audits**: Reconcile active accounts in each system against the HRIS database monthly. Alert on any accounts that don't match an active employee.
 - **Implement [[attribute-based-access-control-abac]] rules**: Allow access only if an HRIS attribute (department, termination_date, etc.) meets certain criteria. Automatically revoke when attributes change.
 - **Session recording for sensitive systems**: For systems like VPN and ICS access, implement [[session-recording]] to capture not just authentication, but all activity within the session.

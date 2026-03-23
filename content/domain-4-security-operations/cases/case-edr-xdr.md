@@ -15,6 +15,7 @@ Excelsior Manufacturing is a 12,000-person industrial equipment company headquar
 At 8:44 AM, Patricia's laptop (hostname: EXCELSIOR-HR-042, IP: 10.2.87.156) began executing PowerShell commands to enumerate local group memberships and query the Security Account Manager database. The Excelsior XDR platform—a combination of CrowdStrike Falcon, Splunk Enterprise Security, and custom behavioral correlation rules—detected this unusual activity immediately. But instead of alerting on just this single endpoint, the XDR platform performed [[telemetry-correlation-xdr]] across the entire enterprise:
 
 Within seconds, the system correlated three seemingly unrelated events:
+
 1. The PowerShell execution on Patricia's laptop with a [[behavioral-analysis]] score of 87/100 (highly suspicious for an HR user)
 2. Four Azure AD sign-in attempts from an IP address registered in Bucharest, Romania, using Patricia's credentials, occurring at 8:45 AM—just 60 seconds after the PowerShell execution started
 3. A failed Remote Desktop Protocol (RDP) connection from Patricia's laptop to the payroll server (EXCELSIOR-PAY-001) at 8:46 AM, attempting authentication with domain admin credentials
@@ -22,6 +23,7 @@ Within seconds, the system correlated three seemingly unrelated events:
 The XDR platform calculated a composite [[threat-intelligence-integration]] score of 97/100 across the entire kill chain. This wasn't a false positive—it was a coordinated multi-stage attack: (1) initial compromise via phishing, (2) credential harvesting, (3) lateral movement to high-value targets.
 
 Excelsior's SOC responded with [[automated-response]] capabilities. Within 250 milliseconds of the alert reaching the SOAR platform, the system automatically:
+
 - Revoked Patricia's session tokens in Azure AD, terminating the Romania sign-in attempts
 - Isolated Patricia's laptop from the network by disabling its network interface at the Cisco switch level
 - Triggered an emergency password reset for all domain admin accounts
@@ -51,12 +53,12 @@ The forensics team recovered the attack chain: the attacker was part of a sophis
 
 ## Key Takeaways
 
-- **[[Telemetry-correlation-xdr]] requires integration across identity, endpoint, and network domains**: No single data source tells the complete story. PowerShell execution alone doesn't indicate compromise. Azure AD sign-ins from unusual locations alone might be false positive. RDP attempts alone are noisy. But the correlation of all three reveals the attack.
-- **[[Behavioral-analysis]] must understand role-based activity patterns**: Train the XDR platform on normal behavior for HR, finance, engineering, and executive roles. Anomalies relative to role are far more indicative of compromise than anomalies relative to the organization overall.
-- **[[Automated-response]] can only be trusted if the detection is extremely high-confidence**: The 97/100 threat score warranted instant isolation. If Excelsior's alerts were only 70-80% confident, automated endpoint isolation would risk disrupting legitimate work.
-- **[[Threat-intelligence-integration]] reduces false positives**: Knowing that TA-2847 typically targets manufacturing companies and favors credential harvesting attacks allowed the system to weight the anomalies much more heavily.
-- **[[Threat-containment]] requires rapid credential revocation**: Once a user is compromised, their credentials must be revoked across all systems (Azure AD tokens, Kerberos tickets, SSH keys) in seconds, not minutes.
-- **[[Root-cause-analysis]] requires preserving memory forensics**: By capturing Patricia's laptop's memory at 8:47 AM, the forensics team could examine the exact PowerShell code, any in-memory injection vectors, and the source of the malicious URL download.
+- **Telemetry-correlation-xdr requires integration across identity, endpoint, and network domains**: No single data source tells the complete story. PowerShell execution alone doesn't indicate compromise. Azure AD sign-ins from unusual locations alone might be false positive. RDP attempts alone are noisy. But the correlation of all three reveals the attack.
+- **Behavioral-analysis must understand role-based activity patterns**: Train the XDR platform on normal behavior for HR, finance, engineering, and executive roles. Anomalies relative to role are far more indicative of compromise than anomalies relative to the organization overall.
+- **Automated-response can only be trusted if the detection is extremely high-confidence**: The 97/100 threat score warranted instant isolation. If Excelsior's alerts were only 70-80% confident, automated endpoint isolation would risk disrupting legitimate work.
+- **Threat-intelligence-integration reduces false positives**: Knowing that TA-2847 typically targets manufacturing companies and favors credential harvesting attacks allowed the system to weight the anomalies much more heavily.
+- **Threat-containment requires rapid credential revocation**: Once a user is compromised, their credentials must be revoked across all systems (Azure AD tokens, Kerberos tickets, SSH keys) in seconds, not minutes.
+- **Root-cause-analysis requires preserving memory forensics**: By capturing Patricia's laptop's memory at 8:47 AM, the forensics team could examine the exact PowerShell code, any in-memory injection vectors, and the source of the malicious URL download.
 
 ## Related Cases
 

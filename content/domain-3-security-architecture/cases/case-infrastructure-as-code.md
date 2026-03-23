@@ -82,7 +82,7 @@ The incident response team's findings were sobering:
 
 If the credentials had remained valid longer, or if the attacker had found sensitive data, the impact could have been orders of magnitude worse.
 
-## Post-Incident Actions
+### Post-Incident Actions
 
 James and Chief Security Officer Dr. Michelle Wong implemented several changes:
 
@@ -107,12 +107,12 @@ resource "aws_db_instance" "test_postgres" {
 - Added GitHub secret scanning (GitHub's native feature) which automatically detects exposed secrets
 - Configured automatic credential rotation for any detected exposure
 
-**3. [[Configuration-drift]] Detection** (Completed in Week 2):
+**3. Configuration-drift Detection** (Completed in Week 2):
 - Implemented Terraform Cloud with policy-as-code to enforce security guardrails
 - Prevented any Terraform run that included hardcoded secrets
 - Required all changes to use Vault-sourced credentials
 
-**4. [[Immutable-infrastructure]] and [[policy-as-code]]** (Completed in Week 2):
+**4. Immutable-infrastructure and [[policy-as-code]]** (Completed in Week 2):
 - Signed all Terraform runs with GPG, preventing unauthorized changes
 - Implemented Sentinel policies to enforce security: required MFA for account deletion, prevented public S3 buckets, required encryption on all databases
 
@@ -147,15 +147,15 @@ resource "aws_db_instance" "test_postgres" {
 
 - **Never commit credentials, API keys, or database passwords to Git**: Use a secrets management system (Vault, AWS Secrets Manager, Google Secret Manager) that injects credentials at runtime. Treat any committed credential as immediately compromised.
 - **Pre-commit hooks and CI/CD scanning are essential**: Every commit should be scanned for credential patterns before it's pushed. Tools like `git-secrets` and `truffleHog` are free and should be mandatory.
-- **[[Immutable-infrastructure|Immutable infrastructure]] requires signed, versioned changes**: Every Terraform run should be signed and approved by an authorized human. Policy-as-code should prevent overly permissive configurations.
+- **Immutable infrastructure requires signed, versioned changes**: Every Terraform run should be signed and approved by an authorized human. Policy-as-code should prevent overly permissive configurations.
 - **Long-lived credentials are a liability**: Use temporary STS credentials with time limits (1 hour maximum). Access keys should expire after 90 days and be rotated continuously.
 - **Repository security is the first line of defense**: Make repositories private by default. Enable secret scanning. Require branch protection and code review before any change.
 - **Service control policies limit blast radius**: Even if credentials leak, SCPs can prevent account-wide compromise (e.g., no root account operations, no access key creation, no bucket policy changes).
-- **[[Configuration-drift]] detection catches unauthorized changes**: Continuous validation of infrastructure against policy prevents "hidden" attacker modifications.
+- **Configuration-drift detection catches unauthorized changes**: Continuous validation of infrastructure against policy prevents "hidden" attacker modifications.
 
 ## Related Cases
 
 - [[case-cloud-security]] — Broader AWS security patterns that could have prevented this incident
-- [[case-secrets-management]] — Vault and other systems for managing credentials at scale
-- [[case-policy-as-code]] — Automated policy enforcement that prevents insecure infrastructure
+- case-secrets-management — Vault and other systems for managing credentials at scale
+- case-policy-as-code — Automated policy enforcement that prevents insecure infrastructure
 

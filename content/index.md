@@ -36,6 +36,10 @@ Domain 4 (Security Operations) carries the most weight at **28%** and should rec
 - **Operations**: [[incident-response]], [[siem]], [[vulnerability-management]], [[edr-xdr]]
 - **Governance**: [[risk-management]], [[compliance]], [[security-awareness-training]], [[disaster-recovery]]
 
+## Reference
+
+- **[[glossary|Glossary]]** — Alphabetical listing of all security concepts
+
 ## Study Tips
 
 - **Performance-Based Questions (PBQs)** appear at the beginning of the exam — consider flagging them and returning after multiple choice questions

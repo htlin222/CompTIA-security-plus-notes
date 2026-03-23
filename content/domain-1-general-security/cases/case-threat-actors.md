@@ -15,6 +15,7 @@ Precision Semiconductor Designs manufactures custom silicon for aerospace and de
 The email contained a link to a classified intelligence briefing marked "TLP:Amber" (Traffic Light Protocol: limited sharing). The briefing was titled "Emerging Campaign Targeting U.S. Aerospace and Defense Industrial Base." The document contained a detailed technical analysis of a sophisticated threat actor group designated "FrostViper," identified with high confidence as a Russian military intelligence unit (GRU).
 
 The briefing outlined FrostViper's TTPs (Tactics, Techniques, and Procedures):
+
 - Initial access through spear-phishing with custom malware
 - Exploitation of unpatched remote access services (RDP, VPN)
 - Lateral movement using legitimate credentials stolen from initial compromises
@@ -27,6 +28,7 @@ The briefing specifically named Precision Semiconductor Designs as one of 23 tar
 David immediately escalated to the CEO and Board. The message was clear: a sophisticated state-sponsored attacker was actively targeting their company, and the U.S. intelligence community had observed the targeting.
 
 David's immediate questions were:
+
 1. Are we already compromised?
 2. How do we detect FrostViper if they breach us?
 3. What should we do differently?
@@ -36,6 +38,7 @@ Over the next two weeks, David and his team conducted a comprehensive investigat
 **Threat Intelligence Deep Dive**
 
 David's team researched everything public about FrostViper:
+
 - Published research from CrowdStrike, Mandiant, and Recorded Future documented FrostViper's tools and TTPs
 - Open-source intelligence (OSINT) identified FrostViper's command-and-control infrastructure IP addresses and domain names
 - Threat feeds provided indicators of compromise (IOCs): IP addresses, file hashes, email addresses, domains
@@ -44,6 +47,7 @@ David's team researched everything public about FrostViper:
 **Forensic Analysis of Precision's Systems**
 
 David engaged an incident response firm (Mandiant) to conduct a forensic examination looking for any signs of FrostViper presence:
+
 - Review of firewall logs for any connections to FrostViper's known C2 infrastructure: clean
 - Analysis of email gateway logs for any FrostViper phishing attempts: found 3 spear-phishing emails, all blocked by email filters
 - Review of VPN logs for any suspicious access patterns: clean (MFA was required, and Precision's password policies were strong)
@@ -55,17 +59,20 @@ David engaged an incident response firm (Mandiant) to conduct a forensic examina
 David's team evaluated Precision's security controls against FrostViper's known TTPs:
 
 Against spear-phishing (FrostViper's typical initial access):
+
 - Email filtering blocked malicious attachments: effective
 - User security awareness training was below industry standards: vulnerability
 - Lack of endpoint detection and response (EDR): vulnerability
 
 Against exploitation of remote access services:
+
 - VPN required MFA: effective
 - RDP was disabled in most environments: effective
 - Some legacy systems still had RDP enabled without MFA: vulnerability
 - Unpatched systems were present in some departments: vulnerability
 
 Against lateral movement with compromised credentials:
+
 - Network segmentation was minimal: vulnerability
 - Privileged access management (PAM) was not implemented: vulnerability
 - No behavioral analytics on user activity: vulnerability
@@ -84,6 +91,7 @@ David developed a rapid response plan that addressed FrostViper's known TTPs:
 8. **Incident response simulation**: Conduct a tabletop exercise assuming FrostViper had breached the company; practice detection and containment
 
 By April 15, 2026, Precision had implemented most of these changes:
+
 - EDR was deployed to 100% of workstations and servers
 - All RDP had MFA; legacy RDP was decommissioned
 - Network segmentation isolated the design and engineering network
@@ -116,7 +124,7 @@ By May 2026, no FrostViper compromise had been detected at Precision. However, t
 
 ## Key Takeaways
 
-- **[[Nation-state-actors|Nation-state threat actors]] have distinct TTPs that can be detected and defended against**: FrostViper's methods (spear-phishing, exploitation of remote access, lateral movement with credentials, data exfiltration) were predictable and defensible.
+- **Nation-state threat actors have distinct TTPs that can be detected and defended against**: FrostViper's methods (spear-phishing, exploitation of remote access, lateral movement with credentials, data exfiltration) were predictable and defensible.
 - **Threat intelligence must be specific enough to inform defensive decisions**: Generic threat warnings ("APT groups are targeting your industry") are less useful than specific intelligence ("FrostViper is targeting you; here are their IOCs, TTPs, and tools").
 - **Forensic analysis can confirm absence of compromise**: Investigation that looks specifically for FrostViper's known indicators can provide high confidence that a compromise hasn't occurred.
 - **Defense against state-sponsored attackers requires enterprise-grade controls**: MFA, EDR, network segmentation, behavioral analytics, and PAM are not optional when facing sophisticated state-sponsored threats.
@@ -128,4 +136,4 @@ By May 2026, no FrostViper compromise had been detected at Precision. However, t
 
 - [[case-threat-intelligence]] — Deep dive into collecting, analyzing, and operationalizing threat intelligence
 - [[case-incident-response]] — Incident response procedures for state-sponsored attackers
-- [[case-advanced-persistent-threats]] — Understanding APT groups, their motivations, and their methods
+- case-advanced-persistent-threats — Understanding APT groups, their motivations, and their methods

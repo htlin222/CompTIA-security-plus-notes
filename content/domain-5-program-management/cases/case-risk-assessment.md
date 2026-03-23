@@ -13,6 +13,7 @@ tags:
 TechPro Solutions is a $250M mid-market IT services company with 800 employees. The board had recently hired a new risk-focused CFO, Jennifer Wu, who came from a financial services background where quantitative risk management was standard. During her first quarterly meeting with the security team, she asked a deceptively simple question: "What's our annualized loss expectancy from our top security risks?"
 
 The CISO, Marcus Webb, froze. The question had never been asked before in this form. The company had a risk register, but it was qualitative:
+
 - Critical risks: "Unpatched critical vulnerabilities in production systems"
 - High risks: "Third-party vendor security breaches"
 - Medium risks: "Phishing and credential compromise"
@@ -24,6 +25,7 @@ Marcus pulled together his security leadership team. Over the next two weeks, th
 **ALE (Annualized Loss Expectancy) = Probability × Impact (in dollars)**
 
 The first problem emerged immediately: **probability estimation**. For the risk "critical unpatched vulnerabilities in production," Marcus had to estimate:
+
 - What is the probability that a critical vulnerability will be discovered in our systems in a given year?
 - What is the probability that a threat actor will exploit it before we patch?
 - What is the probability that exploitation will result in actual data loss or operational impact?
@@ -31,6 +33,7 @@ The first problem emerged immediately: **probability estimation**. For the risk 
 These probabilities were wildly contentious. Was the probability of critical vulnerability discovery 100% per year? Maybe 50%? The team had no empirical data—it was all guesswork.
 
 The second problem was worse: **impact quantification**. To calculate ALE, Marcus needed to value assets and estimate financial impact of compromise:
+
 - If our main platform is down for 24 hours, what's the revenue loss?
 - If customer data is compromised, what's the likely cost of breach notification, credit monitoring, fines, and litigation?
 - If source code is stolen, what's the competitive impact?
@@ -75,13 +78,13 @@ Jennifer gave him the resources. Over the next six months, Marcus led a comprehe
 
 The first quantitative risk assessment took months, but the results were illuminating. The team estimated:
 
-| Risk | Probability | Impact | ALE (Annual) |
-|------|-------------|--------|--------------|
-| Critical unpatched vulnerability exploited | 0.15 | $2.8M (platform downtime) | $420K |
-| Insider threat—data exfiltration | 0.10 | $6.5M (breach notification + fines) | $650K |
-| Third-party vendor breach | 0.30 | $1.2M (customer notification + remediation) | $360K |
-| Ransomware attack | 0.08 | $4M (recovery + downtime + ransom) | $320K |
-| Phishing and credential compromise | 0.50 | $400K (investigation + remediation) | $200K |
+| Risk                                       | Probability | Impact                                      | ALE (Annual) |
+| ------------------------------------------ | ----------- | ------------------------------------------- | ------------ |
+| Critical unpatched vulnerability exploited | 0.15        | $2.8M (platform downtime)                   | $420K        |
+| Insider threat—data exfiltration           | 0.10        | $6.5M (breach notification + fines)         | $650K        |
+| Third-party vendor breach                  | 0.30        | $1.2M (customer notification + remediation) | $360K        |
+| Ransomware attack                          | 0.08        | $4M (recovery + downtime + ransom)          | $320K        |
+| Phishing and credential compromise         | 0.50        | $400K (investigation + remediation)         | $200K        |
 
 Total ALE: **~$1.95M annually**
 
@@ -121,10 +124,10 @@ The program also had secondary benefits: the annual [[risk-assessment]] became a
 
 ## Key Takeaways
 
-- **[[Qualitative-risk-assessment]] is not enough for mature organizations**: Heat maps are useful for communication, but quantitative [[risk-assessment]] (ALE calculation) is required for investment prioritization and board-level decisions.
+- **Qualitative-risk-assessment is not enough for mature organizations**: Heat maps are useful for communication, but quantitative [[risk-assessment]] (ALE calculation) is required for investment prioritization and board-level decisions.
 - **Asset valuation is prerequisite to risk assessment**: You can't calculate financial impact without knowing what assets are worth. Maintain a current [[vulnerability-assessment]] inventory tied to business value.
 - **Probabilities require supporting data, not guesses**: Use threat intelligence, historical incident data, [[vulnerability-assessment]] results, and industry benchmarks to estimate probabilities rather than inventing numbers.
-- **[[Environmental-factors]] change**: Conduct [[ad-hoc-vs-recurring-vs-continuous]] risk assessments at minimum annually, ideally quarterly, as vulnerabilities, threats, and assets change.
+- **Environmental-factors change**: Conduct [[ad-hoc-vs-recurring-vs-continuous]] risk assessments at minimum annually, ideally quarterly, as vulnerabilities, threats, and assets change.
 - **Risk management is investment management**: When you can quantify risk reduction, board-level funding decisions become based on ROI rather than fear and compliance pressure.
 
 ## Related Cases

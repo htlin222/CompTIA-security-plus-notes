@@ -15,6 +15,7 @@ TicketGenius is the largest online ticket marketplace in North America, processi
 The attack was volumetric—not trying to exploit specific vulnerabilities but simply overwhelming the network with sheer volume. A typical DDoS of 100 Gbps is severe; 400 Gbps is catastrophic.
 
 The on-call Site Reliability Engineer, Marcus Chen, received alerts at 11:16 PM. His immediate actions were:
+
 1. Engage the DDoS mitigation provider (Cloudflare) to scrub the malicious traffic
 2. Alert the incident commander
 3. Monitor whether traffic was being successfully filtered
@@ -24,6 +25,7 @@ Cloudflare reported back at 11:23 PM: "We're seeing the attack. Our scrubbing ce
 The problem was immediately clear: TicketGenius had subscribed to Cloudflare's standard DDoS protection, which covered attacks up to 300 Gbps. This attack exceeded that. The upstream provider had a tier above that (enterprise tier, capable of absorbing 1 Tbps attacks), but TicketGenius wasn't subscribed to it—the cost was three times higher, and nobody had thought the risk warranted the expense.
 
 Marcus made a critical decision: activate the emergency bypass. TicketGenius had a secondary CDN (Amazon CloudFront) that they maintained for backup purposes. Marcus immediately:
+
 1. Updated DNS records to point to CloudFront instead of Cloudflare
 2. Deployed rate limiting rules to CloudFront to block obvious botnet traffic
 3. Enabled CAPTCHA challenges to ensure requests were from humans, not bots
@@ -37,6 +39,7 @@ At midnight EST (the busiest time for a ticketing platform on New Year's Eve), T
 The attack lasted for 14 hours, peaking at 1.2 Tbps at around 2 AM EST (February 1). The attacker appeared to be using a sophisticated botnet that had massive capacity. By 1:30 PM on February 1, the attack ceased as suddenly as it had begun.
 
 The forensic investigation later revealed:
+
 - The botnet included approximately 200,000 IoT devices and servers
 - Attack traffic originated from 150 countries
 - The attack had a cost to the attacker of approximately $0 (using a rented botnet that had likely already been compromised for other malicious purposes)
@@ -60,11 +63,11 @@ The forensic investigation later revealed:
 
 ## Key Takeaways
 
-- **[[Amplification-attack|Volumetric DDoS attacks]] require upstream mitigation**: No individual website can absorb 400+ Gbps. The mitigation must happen at the CDN or ISP level, before traffic reaches your servers.
+- **Volumetric DDoS attacks require upstream mitigation**: No individual website can absorb 400+ Gbps. The mitigation must happen at the CDN or ISP level, before traffic reaches your servers.
 - **DDoS protection tiers matter**: A standard tier sufficient for 300 Gbps attacks is insufficient for targeted, well-funded attackers. Consider your value as a target and pay for protection that covers likely attack sizes.
 - **Failover to secondary providers should be automatic or near-automatic**: 18 minutes is a long time to be unavailable. Implement health checks and automatic DNS failover to backup CDN providers.
 - **Rate limiting is a defense layer, not a complete solution**: Rate limiting can reduce botnet traffic but won't stop a massive DDoS attack. It's one layer in [[defense-in-depth]].
-- **[[Botnet|Botnets]] are rented services for attackers**: An attacker doesn't need to own a botnet. They can rent compromised IoT devices and servers for a few hundred dollars. Defend accordingly.
+- **Botnets are rented services for attackers**: An attacker doesn't need to own a botnet. They can rent compromised IoT devices and servers for a few hundred dollars. Defend accordingly.
 - **New Year's Eve is peak targeting time**: High-value events and holidays attract DDoS attackers. Ensure mitigation capacity during these windows.
 - **Cost-benefit analysis of DDoS protection is complex**: The $3.2M enterprise tier DDoS protection looked expensive at $9M per year until an attack cost $8.7M in a few hours.
 

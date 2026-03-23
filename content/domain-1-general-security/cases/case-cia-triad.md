@@ -83,12 +83,12 @@ The incident highlighted a critical gap in the hospital's approach to the [[cia-
 ## Key Takeaways
 
 - **The [[cia-triad]] requires equal protection of all three pillars**: The hospital had focused on availability and confidentiality but neglected integrity verification. Integrity is just as critical—falsified medical data is more dangerous than unavailable data.
-- **[[Integrity]] assurance requires active verification, not just trusted systems**: Implement digital signatures, checksums, or independent verification of critical data. Database log files aren't enough—you need mechanisms that would detect if someone modifies the log files too.
+- **Integrity assurance requires active verification, not just trusted systems**: Implement digital signatures, checksums, or independent verification of critical data. Database log files aren't enough—you need mechanisms that would detect if someone modifies the log files too.
 - **Backup systems must be isolated and verified**: Backups should be offline or in separate network segments to prevent malware from compromising both primary and backup copies. Backups should be tested regularly to ensure they can be restored cleanly.
 - **Separation of duties applies to maintenance accounts**: Even "maintenance_service" accounts should have restricted permissions. A maintenance account might need to run specific commands or scripts but shouldn't have blanket database modification permissions.
 - **Real-time alerting should detect bulk modifications**: Rules like "flag any account that modifies >N records in M minutes" or "alert on unusual patterns in medical data modifications" would have caught this attack within minutes instead of 72 hours.
 - **Critical systems need network segmentation**: The LIS shouldn't be accessible from the general hospital network. It should be on an isolated VLAN with strict firewall rules allowing only specific, approved connections.
-- **The [[dad-triad]] is sometimes more intuitive than CIA**: Understanding [[disclosure]], [[alteration]], and [[denial]] can sometimes make it clearer why data modification is a critical security concern.
+- **The [[dad-triad]] is sometimes more intuitive than CIA**: Understanding disclosure, alteration, and denial can sometimes make it clearer why data modification is a critical security concern.
 
 ## Related Cases
 

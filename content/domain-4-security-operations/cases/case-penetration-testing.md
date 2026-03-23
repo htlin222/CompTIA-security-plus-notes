@@ -28,7 +28,7 @@ From the print server (running with SYSTEM privileges), the red team was able to
 
 **Phase 3: Domain Admin Compromise (2:30 - 4:31)**
 
-With the SVC_BACKUP service account credentials, the red team could now authenticate to a backup server that had administrative privileges in the Active Directory domain. From that backup server, they deployed a [[persistence]] technique: they created a scheduled task that would execute a remote shell every 30 minutes, ensuring they would maintain access even if the original phishing victims changed their passwords.
+With the SVC_BACKUP service account credentials, the red team could now authenticate to a backup server that had administrative privileges in the Active Directory domain. From that backup server, they deployed a persistence technique: they created a scheduled task that would execute a remote shell every 30 minutes, ensuring they would maintain access even if the original phishing victims changed their passwords.
 
 Finally, at 4:31 PM (4 hours and 31 minutes after initial access), the red team executed their final attack: they used the backup server's administrative privileges to query Active Directory directly and add a newly created fake user account ("john.smith.intern") to the Domain Admins group. They then authenticated as this fake admin account and verified they had full domain administrator access across Sterling's entire Active Directory forest.
 
@@ -47,7 +47,7 @@ When the red team presented their findings to Sterling's executive leadership, t
 ## What Went Right
 
 - **Comprehensive red team engagement**: Hiring an external firm with strict [[rules-of-engagement-roe]] allowed unbiased assessment without the blue team's preconceptions.
-- **[[Testing-types]] included authentic threat patterns**: The red team didn't just "try random exploits"—they followed an attacker's playbook: initial compromise, lateral movement, persistence, privilege escalation.
+- **Testing-types included authentic threat patterns**: The red team didn't just "try random exploits"—they followed an attacker's playbook: initial compromise, lateral movement, persistence, privilege escalation.
 - **Complete attack chain documentation**: The final report provided exact timestamps, attack techniques (mapped to MITRE ATT&CK), and remediation steps for each phase.
 
 ## What Could Go Wrong
@@ -61,12 +61,12 @@ When the red team presented their findings to Sterling's executive leadership, t
 
 ## Key Takeaways
 
-- **[[Red-team-vs-pen-test]] red teams are unbiased assessments of real-world defensive capabilities**: Penetration tests often only test known vulnerabilities. Red teams test whether defenders can actually detect and respond to attacks.
-- **[[Exploitation]] success depends on unpatched vulnerabilities**: The print spooler vulnerability was disclosed seven months prior. A systematic [[vulnerability-management]] program would have eliminated this attack vector.
-- **[[Lateral-movement]] detection requires logging and correlation**: PowerShell logs, Kerberos logs, and network traffic logs must all be collected and correlated to detect multi-step attacks.
-- **[[Privilege-escalation]] via service account compromise indicates missing credential hygiene**: Service accounts with strong, unique passwords and periodic rotation are essential [[privileged-access-management]].
-- **[[Rules-of-engagement-roe]] must be explicit and enforced**: The red team operated under agreed-upon boundaries. Clear ROE prevents unintended collateral damage and ensures the engagement reflects real-world constraints.
-- **[[Persistence]] techniques must be detected and hunted**: Once an attacker achieves admin access, they typically leave persistence mechanisms. Detecting these (scheduled tasks, registry modifications, SSH keys) is critical to full remediation.
+- **Red-team-vs-pen-test red teams are unbiased assessments of real-world defensive capabilities**: Penetration tests often only test known vulnerabilities. Red teams test whether defenders can actually detect and respond to attacks.
+- **Exploitation success depends on unpatched vulnerabilities**: The print spooler vulnerability was disclosed seven months prior. A systematic [[vulnerability-management]] program would have eliminated this attack vector.
+- **Lateral-movement detection requires logging and correlation**: PowerShell logs, Kerberos logs, and network traffic logs must all be collected and correlated to detect multi-step attacks.
+- **Privilege-escalation via service account compromise indicates missing credential hygiene**: Service accounts with strong, unique passwords and periodic rotation are essential [[privileged-access-management]].
+- **Rules-of-engagement-roe must be explicit and enforced**: The red team operated under agreed-upon boundaries. Clear ROE prevents unintended collateral damage and ensures the engagement reflects real-world constraints.
+- **Persistence techniques must be detected and hunted**: Once an attacker achieves admin access, they typically leave persistence mechanisms. Detecting these (scheduled tasks, registry modifications, SSH keys) is critical to full remediation.
 
 ## Related Cases
 

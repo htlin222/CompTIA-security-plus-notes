@@ -15,6 +15,7 @@ DataFlow Analytics deployed a Kubernetes cluster in June to run their data proce
 By July, the security team noticed that their Splunk ingestion rate had jumped from 45 GB/day to 200 GB/day. By September, it had climbed to 800 GB/day. The Splunk licensing model charges based on ingest volume: 50 GB/day = $X per month; 100 GB/day = $2X per month; 1000 GB/day = $10X per month. DataFlow's annual Splunk bill, which had been $180,000 in the previous year, was now tracking toward $540,000—three times the previous cost.
 
 The CIO immediately demanded an investigation. It didn't take long to identify the culprit: the Kubernetes cluster was logging approximately 50,000 events per second, totaling 800 GB/day of mostly redundant, low-value logs:
+
 - Pod startup/shutdown events with full container metadata
 - Network policy enforcement logs for every single network connection
 - Persistent volume operations every time a pod accessed storage
@@ -27,6 +28,7 @@ The Kubernetes logs were technically valuable for **operational debugging** if t
 The security team faced a dilemma: they could reduce the Splunk bill by filtering out the Kubernetes logs entirely, but then they would lose visibility into the cluster for security investigations. Or they could keep ingesting all 800 GB/day, but the budget would be unsustainable.
 
 They chose a third path: implement [[log-aggregation]] filtering. They configured the Kubernetes cluster to ship logs to the ELK Stack for operational troubleshooting, but only send security-relevant logs to Splunk. The filtering rules they implemented:
+
 - Pod startup/shutdown: send to ELK only (operational), not Splunk
 - Network policy enforcement: send to Splunk only when policy enforcement **fails** (security event), not for successful connections
 - Volume access: send to ELK only (operational), not Splunk
@@ -44,7 +46,7 @@ The team implemented [[log-aggregation]] with event normalization: all Kubernete
 ## What Went Right
 
 - **Log filtering based on security relevance**: Distinguishing between operational logs (valuable for troubleshooting but not security-relevant) and security logs (critical for correlation) reduced noise while preserving visibility.
-- **[[Log-aggregation]] with [[normalization]]**: Feeding all logs through a [[normalization]] process made correlation more effective and reduced the complexity of [[correlation-rules]].
+- **Log-aggregation with [[normalization]]**: Feeding all logs through a [[normalization]] process made correlation more effective and reduced the complexity of [[correlation-rules]].
 - **Budget-driven analysis**: The Splunk licensing cost overrun forced a serious conversation about log value, which led to better filtering practices.
 - **Preservation of operational logging**: By routing operational logs to the ELK Stack, the team maintained operational visibility for debugging Kubernetes problems without paying for Splunk ingestion.
 
@@ -58,9 +60,9 @@ The team implemented [[log-aggregation]] with event normalization: all Kubernete
 ## Key Takeaways
 
 - **Distinguish operational logs from security logs**: Not all verbose operational logging is security-relevant. Implement [[log-aggregation]] filtering that routes operational logs to operational systems and security logs to the [[siem]] to reduce noise.
-- **[[Normalization]] is essential for [[correlation-rules]]**: When logs from different sources (Kubernetes, applications, databases, firewalls) are normalized to a common schema, correlation is dramatically more effective. Invest in a normalization layer.
-- **[[Real-time-alerting]] requires low false positive rates**: If 99% of alerts are false positives, the SOC team becomes desensitized and misses real incidents. Better filtering upstream reduces alert fatigue more effectively than post-alert correlation.
-- **[[Retention-and-archival]] can be stratified by relevance**: Security-critical logs (etcd, RBAC failures) can be retained longer and ingested into expensive SIEM systems. Operational logs can be retained in cheaper storage (ELK, S3) for longer periods.
+- **Normalization is essential for [[correlation-rules]]**: When logs from different sources (Kubernetes, applications, databases, firewalls) are normalized to a common schema, correlation is dramatically more effective. Invest in a normalization layer.
+- **Real-time-alerting requires low false positive rates**: If 99% of alerts are false positives, the SOC team becomes desensitized and misses real incidents. Better filtering upstream reduces alert fatigue more effectively than post-alert correlation.
+- **Retention-and-archival can be stratified by relevance**: Security-critical logs (etcd, RBAC failures) can be retained longer and ingested into expensive SIEM systems. Operational logs can be retained in cheaper storage (ELK, S3) for longer periods.
 - **Document and enforce [[log-sources]] configuration**: Each system that generates logs should have documented logging requirements for both operational and security purposes. Security logs should be a deliberate configuration, not an accidental side effect.
 - **Implement [[log-management]] budget controls**: Use licensing models (like Splunk's per-GB model) to create accountability for log volume. Budget overruns force conversations about value and filtering.
 

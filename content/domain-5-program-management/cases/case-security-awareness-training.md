@@ -17,6 +17,7 @@ The company had been conducting quarterly security awareness training for three 
 Patricia engaged an external security firm (Proofpoint) to conduct a phishing simulation campaign. Over two weeks, they sent 1,800 simulated phishing emails to employees across all departments. The emails were realistic: some spoofed email addresses to look like they came from internal systems (fake "password reset required" emails), some used executive impersonation (fake CEO requesting urgent wire transfer), some claimed to be from well-known services (Amazon, Microsoft, Slack).
 
 The results were alarming:
+
 - **Overall click rate: 38%** (684 out of 1,800 employees clicked phishing links)
 - **Sales department: 52% click rate** (182 out of 350 sales staff)
 - **Customer Success: 36% click rate**
@@ -24,12 +25,14 @@ The results were alarming:
 - **Operations: 28% click rate**
 
 Patricia broke down the data further. The types of emails with highest click rates were:
+
 - Executive impersonation (CEO asking for urgent payments): 44% click rate
 - Password reset spoofs: 41% click rate
 - Package delivery failures: 39% click rate
 - DocuSign signature requests: 38% click rate
 
 By role, the vulnerability pattern was clear:
+
 - **Sales staff**: 52% click rate (high urgency, client-focused, less technical)
 - **Finance/accounting**: 44% click rate (transaction-focused, interact with payment systems)
 - **HR**: 38% click rate (employee-focused, deal with credential changes)
@@ -83,6 +86,7 @@ Patricia proposed a complete redesign of the security awareness program:
 **Gamification approach:**
 
 Patricia implemented a point system:
+
 - Successfully report a phishing email to the security team: +10 points
 - Complete a [[role-based-training]] module: +5 points
 - Don't click on a simulation phishing email: +1 point per simulation
@@ -92,23 +96,26 @@ Employees accumulated points toward rewards: gift cards, extra PTO, preferred pa
 **Metrics and [[metrics]] tracking:**
 
 Monthly metrics tracked by department:
+
 - Click rate on phishing simulations (trend down)
 - Reported phishing emails (trend up)
 - Training completion rate (maintain 100%)
 - Awareness scores on spot-check quizzes
 
-**[[Insider-threat-awareness]] integration:**
+**Insider-threat-awareness integration:**
 
 The program also integrated insider threat education:
+
 - What to do if you notice suspicious peer behavior
 - How to handle accidental data exposure
 - Reporting processes for policy violations
 
-**[[Culture-of-security]] building:**
+**Culture-of-security building:**
 
 Patricia launched a "Security Champion" program where selected employees from each department received enhanced training and became ambassadors for their teams. These champions received exclusive training sessions, early warning about emerging threats, and recognition in company all-hands meetings.
 
 After six months of the new program:
+
 - Overall click rate: Down to 22% (from 38%)
 - Sales team click rate: Down to 28% (from 52%)
 - Finance team click rate: Down to 18% (from 44%)
@@ -121,10 +128,10 @@ The executive team was impressed enough to allocate additional budget for the pr
 ## What Went Right
 
 - **Role-based approach**: Rather than treating all employees the same, training was tailored to the actual risks employees faced in their roles.
-- **[[Phishing-simulations]] as ongoing feedback**: Instead of annual testing, simulations became a regular learning tool with immediate feedback.
+- **Phishing-simulations as ongoing feedback**: Instead of annual testing, simulations became a regular learning tool with immediate feedback.
 - **Gamification for engagement**: The point system and rewards made security training something people engaged with, not something they endured.
-- **[[Insider-threat-awareness]] integrated**: Training included reporting mechanisms for suspicious peer behavior, helping catch threats early.
-- **[[Metrics]] demonstrated value**: Quarterly metrics showed improvement, which justified continued investment and helped build [[culture-of-security]].
+- **Insider-threat-awareness integrated**: Training included reporting mechanisms for suspicious peer behavior, helping catch threats early.
+- **Metrics demonstrated value**: Quarterly metrics showed improvement, which justified continued investment and helped build [[culture-of-security]].
 - **Security Champions program**: Elevating peer ambassadors created grassroots security culture that top-down training alone couldn't achieve.
 
 ## What Could Go Wrong
@@ -137,11 +144,11 @@ The executive team was impressed enough to allocate additional budget for the pr
 
 ## Key Takeaways
 
-- **[[Role-based-training]] is more effective than generic training**: Tailor content to the actual risks people face. Sales needs to know executive impersonation; finance needs to know payment fraud; engineering needs to know supply chain attacks.
-- **[[Phishing-simulations]] must be followed by education, not punishment**: When someone clicks a phishing email, the goal is to teach, not shame. Provide immediate feedback explaining the attack and how to recognize it.
-- **[[Training-frequency]] matters more than length**: A 60-minute annual course is less effective than monthly 5-minute modules with quarterly simulations. Frequency builds muscle memory.
-- **[[Gamification]] drives engagement**: Point systems, rewards, and competition motivate people to engage with security training. It becomes something they want to do, not something they have to do.
-- **[[Culture-of-security]] is built through peer influence**: Security Champions and ambassador programs create grassroots culture change that top-down mandates can't achieve. Empower people to be security advocates in their teams.
+- **Role-based-training is more effective than generic training**: Tailor content to the actual risks people face. Sales needs to know executive impersonation; finance needs to know payment fraud; engineering needs to know supply chain attacks.
+- **Phishing-simulations must be followed by education, not punishment**: When someone clicks a phishing email, the goal is to teach, not shame. Provide immediate feedback explaining the attack and how to recognize it.
+- **Training-frequency matters more than length**: A 60-minute annual course is less effective than monthly 5-minute modules with quarterly simulations. Frequency builds muscle memory.
+- **Gamification drives engagement**: Point systems, rewards, and competition motivate people to engage with security training. It becomes something they want to do, not something they have to do.
+- **Culture-of-security is built through peer influence**: Security Champions and ambassador programs create grassroots culture change that top-down mandates can't achieve. Empower people to be security advocates in their teams.
 
 ## Related Cases
 

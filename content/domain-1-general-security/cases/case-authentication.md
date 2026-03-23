@@ -15,11 +15,13 @@ PayCore is a Series B fintech company based in San Francisco that provides payme
 The attack unfolded at 2:15 AM PST on November 17. An automated credential stuffing attack targeting PayCore's engineer login portal (https://git.paycore.dev) used a leaked credential database containing 2.4 billion username/password pairs from a previous breach at an unrelated financial services company. The attackers fired 1.8 million authentication requests at the endpoint over a 45-minute window, using distributed sources to avoid obvious geographic clustering. The login portal had no rate limiting, no CAPTCHA protection, and no alerting configured for brute force patterns.
 
 By 3:02 AM, the attack had successfully compromised three engineering accounts:
-- Sarah Kim (senior backend engineer): password was "PayCore2024!_sarah" (reused from her LinkedIn breach in 2020)
+
+- Sarah Kim (senior backend engineer): password was "PayCore2024!\_sarah" (reused from her LinkedIn breach in 2020)
 - James Rodriguez (DevOps engineer): password was "dragon2015" (a generic pattern from his Yahoo account compromise)
 - Priya Desai (frontend engineer): password was "Password123" (identical to her account at a SaaS tool she used for side projects)
 
 The attackers immediately pivoted after gaining access. They used the compromised accounts to:
+
 1. Clone the main PayCore repository to extract source code
 2. Access the AWS management console and enumerate running services
 3. Query the production database using stored credentials in GitHub repository secrets
@@ -34,11 +36,13 @@ The CISO, Marcus Johnson, immediately convened the security architecture team. H
 The challenge was immediate: FIDO2 (Fast Identity Online 2) is a [[biometric-authentication]] and hardware-based standard that makes phishing and credential theft impossible—when you authenticate with a FIDO2 key, the key verifies the domain you're connecting to before signing the challenge, preventing man-in-the-middle attacks and domain spoofing. But PayCore had never implemented hardware key management at scale. They had no inventory process, no lifecycle management, and no backup authentication method.
 
 Marcus assembled a team:
+
 - Elena Torres (security architect) to design the FIDO2 implementation
 - DevOps team to integrate with GitHub, AWS, and internal tooling
 - HR to coordinate hardware key procurement and distribution
 
 Week 1: Elena designed the phased rollout:
+
 - Phase 1 (Week 2-4): Pilot with 8 volunteers who would test Yubico YubiKey 5 hardware keys
 - Phase 2 (Week 5-8): All 35 engineers would receive YubiKeys; password authentication would be available as fallback
 - Phase 3 (Week 9+): Gradual enforcement—passwords would be deprecated in favor of FIDO2-only access
@@ -46,6 +50,7 @@ Week 1: Elena designed the phased rollout:
 The pilot revealed immediate complications. GitHub's FIDO2 support was solid, but AWS required multiple authentication methods (AWS was recommending virtual MFA in addition to FIDO2, which seemed redundant but was their policy). Some internal tools running on Kubernetes didn't support FIDO2 at all; they still required SSH keys. The SSH key management became its own problem: should engineers have both FIDO2 keys and SSH keys? (Answer: yes, because you can't use FIDO2 to unlock an SSH key without additional tooling like ssh-agent and a bridge protocol).
 
 Week 4: The team pivoted to a hybrid approach:
+
 - GitHub: FIDO2 keys become primary; passwords disabled
 - AWS: FIDO2 keys + virtual MFA (AWS's requirement)
 - SSH (EC2 instances, Kubernetes): FIDO2-backed SSH keys using OpenSSH 8.2+ support for FIDO2 security keys
@@ -56,6 +61,7 @@ Week 8: All 35 engineers had received and configured their YubiKey 5 hardware ke
 But the real test came in week 10 when Elena had to handle the first emergency: an engineer traveling to London for a customer meeting had left both their primary and backup YubiKey at home on their desk. They were locked out of GitHub, AWS, and their development environment. The team established an emergency authentication protocol: the engineer could prove their identity through a video call with the security team, and a temporary [[certificate-based-authentication|certificate-based credential]] would be issued for 24 hours. This taught the team a critical lesson: passwordless doesn't mean "completely inflexible." You need break-glass procedures.
 
 By January 2026 (Week 12 of the program), password-based authentication for engineers was completely eliminated. The statistics were compelling:
+
 - Zero credential stuffing attacks on the engineer portal (previously they were occurring every 3-4 weeks)
 - Zero successful phishing for engineer accounts (previously they were successful ~1x per quarter)
 - Two legitimate emergency credential issues (both handled via the break-glass process in under 2 hours)
@@ -81,7 +87,7 @@ The CISO made a public commitment: in 2026, customer-facing authentication would
 
 ## Key Takeaways
 
-- **[[Biometric-authentication]] and [[certificate-based-authentication]] eliminate credential stuffing and phishing**: FIDO2 keys and passkeys make compromised passwords worthless because they can't be reused.
+- **Biometric-authentication and [[certificate-based-authentication]] eliminate credential stuffing and phishing**: FIDO2 keys and passkeys make compromised passwords worthless because they can't be reused.
 - **Passwordless authentication requires break-glass procedures**: Emergency authentication methods are essential for business continuity. Establish clear procedures for lost/stolen keys (identity verification + short-lived emergency credentials).
 - **Hardware key management is a new operational domain**: Procurement, inventory tracking, revocation, replacement, backup procedures—these are all new operational requirements that require planning and automation.
 - **Phased rollout is essential for integration testing**: Different systems (GitHub, AWS, SSH, internal tools) have different FIDO2 support. Pilot with volunteers before full deployment.

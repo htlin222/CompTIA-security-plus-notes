@@ -50,19 +50,19 @@ The incident lasted 47 minutes before someone thought to check the IPS logs. Dur
 - The help desk was flooded with calls from confused merchants
 - By the time the issue was resolved, it had cost FinServe approximately $180,000 in incident response, customer credits, refund processing, and reputation damage
 
-## Root Cause Analysis
+### Root Cause Analysis
 
 The problem was a combination of three factors:
 
 **1. Overly Broad Rule Design**: The Snort rule looked for "search_query=" as a generic pattern, without context that it was specifically looking for the vulnerable endpoint (`/api/v2/payment_gateway_search`). It matched legitimate uses of the "search_query" parameter in other API responses.
 
-**2. [[Inline-vs-passive-deployment|Inline Deployment Without Testing]]**: The rule was deployed in blocking mode without first running it in monitoring mode to see what it would match. If it had been tested in passive mode for 24 hours, the team would have seen thousands of false positives from Stripe responses before deploying it in blocking mode.
+**2. Inline Deployment Without Testing**: The rule was deployed in blocking mode without first running it in monitoring mode to see what it would match. If it had been tested in passive mode for 24 hours, the team would have seen thousands of false positives from Stripe responses before deploying it in blocking mode.
 
 **3. Missing [[tuning]]**: The rule had never been tuned for the environment. It was a generic threat intelligence rule designed to catch the vulnerability in any context, but FinServe Payments doesn't have payment gateway vulnerabilities (they're a payment processor, not the gateway). The rule was noise.
 
 **4. No correlation with application errors**: The IPS was dropping traffic silently. The application logs showed timeouts and connection resets, but nobody initially looked at IPS logs. There was no automated mechanism to correlate IPS blocks with application errors.
 
-## What Happened Next
+### What Happened Next
 
 FinServe's CISO, Dr. Sarah Martinez, commissioned an immediate review of all IPS rules. They discovered:
 
@@ -87,12 +87,12 @@ Sarah made several architectural decisions:
 - Create correlation rules that alert when IPS blocks correlate with application timeouts or errors
 - Set up automated escalation if drop rate exceeds thresholds
 
-**4. [[Tuning]] Methodology**:
+**4. Tuning Methodology**:
 - Every new IPS rule must be deployed in passive/monitoring mode for 7 days
 - Rules are only moved to blocking mode after tuning and achieving <0.1% false positive rate in the specific environment
 - Weekly rule review meetings to validate that blocked traffic was actually malicious, not legitimate operations
 
-**5. [[Indicators-of-compromise|IoC-Based]] Detection**:
+**5. IoC-Based Detection**:
 - Replace generic signature-based rules with targeted detection of actual [[indicators-of-compromise]] from recent breaches (IP addresses, domain names, file hashes)
 - Focus on rules that detect behavior patterns rather than syntactic patterns (e.g., "account creation + credential theft" rather than "user_id=0 in any URL")
 
@@ -114,10 +114,10 @@ The revised IPS deployment reduced the rule count from 47,000 to 420 rules in bl
 
 ## Key Takeaways
 
-- **[[Inline-vs-passive-deployment|Inline (blocking) IPS requires aggressive tuning]]**: Deploy rules in monitoring mode first, measure false positive rates in your specific environment, and only move to blocking if false positive rate is <0.1%. Generic threat intelligence rules often produce >10% false positives in real environments.
+- **Inline (blocking) IPS requires aggressive tuning**: Deploy rules in monitoring mode first, measure false positive rates in your specific environment, and only move to blocking if false positive rate is <0.1%. Generic threat intelligence rules often produce >10% false positives in real environments.
 - **Environment-specific rule tuning is mandatory**: A rule designed to detect SQL injection on IIS servers will produce massive false positives on a Stripe-integrated payment system. Rules must be tailored to your architecture.
 - **Whitelisting is more effective than pure signature matching**: Create an explicit whitelist of known-good patterns (Stripe API responses, internal tools, legitimate searches) to prevent rules from matching them.
-- **[[Indicators-of-compromise|IoC-based]] detection is better than behavioral signatures**: Rather than looking for "UNION SELECT" anywhere, look for "use of tool X from IP address Y on port Z"—specific [[indicators-of-compromise]] from actual threat intelligence.
+- **IoC-based detection is better than behavioral signatures**: Rather than looking for "UNION SELECT" anywhere, look for "use of tool X from IP address Y on port Z"—specific [[indicators-of-compromise]] from actual threat intelligence.
 - **SIEM correlation is essential for IPS effectiveness**: IPS alerts are only valuable if they can be correlated with other data sources (application logs, network telemetry) to confirm they represent real attacks, not false positives.
 - **False positive rate above 5% means your system is broken**: If your IPS is generating more than 5% false positives, nobody will believe it, and real attacks will be ignored. Aggressive [[tuning]] is not optional.
 

@@ -24,7 +24,7 @@ Angela realized they weren't going to recover using the outdated plan. She pivot
 
 ## What Went Right
 
-- **Documented fallback procedures**: Despite the outdated plan, having *any* [[business-continuity]] documentation allowed the team to at least attempt a systematic recovery rather than complete chaos.
+- **Documented fallback procedures**: Despite the outdated plan, having _any_ [[business-continuity]] documentation allowed the team to at least attempt a systematic recovery rather than complete chaos.
 - **Preserved backups in multiple locations**: The encrypted ransomware couldn't reach backups on physically isolated external drives, enabling eventual data recovery without paying ransom.
 - **Incident escalation**: Angela recognized early that the outdated plan wasn't viable and pivoted to adaptive recovery rather than wasting time trying to follow incorrect procedures.
 - **Staff commitment**: Despite the failures, clinicians, nurses, and IT staff worked together to maintain patient safety through manual processes during the crisis.
@@ -39,11 +39,11 @@ Angela realized they weren't going to recover using the outdated plan. She pivot
 
 ## Key Takeaways
 
-- **[[Business-continuity-vs-disaster-recovery]] requires active maintenance**: Plans age. Update contact lists immediately when staff changes occur. Refresh [[communication-plan]] content annually at minimum.
-- **[[Order-of-restoration]] must be driven by [[critical-business-functions]] impact, not alphabetical convenience**: Conduct a [[business-impact-analysis]] to determine which systems must be recovered first based on organizational mission, not IT convenience.
-- **[[Disaster-recovery]] sites need live validation**: Never assume replication is working or that failover will succeed. Test failover procedures quarterly with a documented recovery time and data loss measurement against your [[recovery-time-objective-rto]] and [[recovery-point-objective-rpo]].
-- **[[Succession-planning]] must include DR site access and procedure authority**: Ensure multiple people can execute recovery steps and have necessary system access documented and tested.
-- **[[After-action-review]] from previous tests must inform plan updates**: Every test failure is a gift—document it and fix the plan before a real incident.
+- **Business-continuity-vs-disaster-recovery requires active maintenance**: Plans age. Update contact lists immediately when staff changes occur. Refresh [[communication-plan]] content annually at minimum.
+- **Order-of-restoration must be driven by [[critical-business-functions]] impact, not alphabetical convenience**: Conduct a [[business-impact-analysis]] to determine which systems must be recovered first based on organizational mission, not IT convenience.
+- **Disaster-recovery sites need live validation**: Never assume replication is working or that failover will succeed. Test failover procedures quarterly with a documented recovery time and data loss measurement against your [[recovery-time-objective-rto]] and [[recovery-point-objective-rpo]].
+- **Succession-planning must include DR site access and procedure authority**: Ensure multiple people can execute recovery steps and have necessary system access documented and tested.
+- **After-action-review from previous tests must inform plan updates**: Every test failure is a gift—document it and fix the plan before a real incident.
 
 ## Related Cases
 

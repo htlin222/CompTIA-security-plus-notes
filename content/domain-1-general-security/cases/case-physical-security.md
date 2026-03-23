@@ -19,6 +19,7 @@ The man walked straight to the building's side entrance and swiped a badge. The 
 Later investigation revealed that the man had cloned a valid access badge from a visitor parking lot. The badge he used belonged to a legitimate HVAC technician who had been contracted to service the building's cooling system six months prior. That technician's badge had never been disabled.
 
 The man passed through three additional access control points:
+
 1. **Point 1 (Side entrance)**: Badge swipe—cloned badge worked
 2. **Point 2 (Interior lobby)**: Javier saw him and asked, "Can I help you?" The man responded, "Here to check the cooling system. PM scheduled." Javier, in transition mode and focused on briefing Marcus, didn't verify the scheduled appointment. The man walked past him.
 3. **Point 3 (Server cage area)**: The biometric scanner required a fingerprint. The man tried three times. The third time, his attempt timed out and the system locked. But during the timeout period, a legitimate DeltaTech technician (Emily Park, who works in the operations center) arrived at the biometric scanner. Emily swiped her badge and placed her fingerprint. The man said, "Thanks, my badge isn't reading properly." Emily, assuming he was a contractor, held the door open for him. (This is a classic tailgating attack, known as "piggybacking" when it's non-malicious.)
@@ -39,6 +40,7 @@ Jennifer reviewed the footage and saw the man entering the server cage at 6:20 A
 4. The rootkit's command and control phone-home was configured but had never established a connection (possibly because the attacker's infrastructure was set up to connect later, or the attacker was caught before activation)
 
 The server belonged to a financial services customer. The IPMI board had direct access to sensitive financial data and systems. If the rootkit had been activated, the attacker could have:
+
 - Stolen financial records
 - Modified trading systems
 - Installed malware on financial servers
@@ -64,21 +66,25 @@ The findings were sobering:
 Jennifer's remediation plan was comprehensive and expensive:
 
 **Phase 1 (Immediate)**
+
 - Disable all expired badges immediately
 - Implement a badge expiration system that automatically deactivates badges 30 days after the intended exit date
 - Require Javier and all security personnel to verify all visitors against a pre-approved appointment list, even during shift changes
 - Post security staff at the biometric scanner entrance with instructions to deny tailgating, period
 
 **Phase 2 (Week 1-2)**
+
 - Install [[access-control-vestibules-mantraps]]: small rooms with two doors where the first door locks behind you before the second door opens (prevents tailgating)
 - Implement a visitor badging system where visitor badges are time-limited and the visitor must be escorted at all times
 
 **Phase 3 (Week 2-4)**
+
 - Upgrade CCTV system with AI-powered behavior analytics that flags unusual activity (people carrying equipment out at odd hours, people in areas they don't normally visit)
 - Implement multi-factor physical authentication: badge + PIN for entry, not just badge swipe
 - Add ultrasonic motion sensors in the server cage that trigger an alert if movement is detected outside of scheduled maintenance windows
 
 **Phase 4 (Ongoing)**
+
 - Quarterly badge audits to ensure all badges match active users/contractors
 - Annual physical security penetration tests where security firms attempt to gain unauthorized access
 - Security training for all employees emphasizing that "helping someone through a door" is a security failure, not a courtesy
@@ -86,6 +92,7 @@ Jennifer's remediation plan was comprehensive and expensive:
 By April 15, the access control vestibules were installed and tested. By May 1, all expired badges had been identified and a process was implemented to ensure badges were disabled within 24 hours of the contractor/visitor's departure.
 
 A post-incident analysis revealed that this was not a random attack. The attacker had demonstrated:
+
 - Knowledge of the data center's layout
 - Knowledge of badge systems (he knew to clone a badge rather than attempt forced entry)
 - Knowledge of the shift change timing (attacking during shift handoff)
@@ -114,7 +121,7 @@ The FBI classified the attack as a sophisticated supply chain targeting attempt 
 ## Key Takeaways
 
 - **Physical security is cyber security**: A data center intrusion is a cyber attack carried out through physical means. Protecting physical access is as critical as protecting network access.
-- **[[Access-control-vestibules-mantraps]] prevent tailgating**: A simple vestibule where the first door locks before the second door opens is an inexpensive control that's nearly impossible to bypass.
+- **Access-control-vestibules-mantraps prevent tailgating**: A simple vestibule where the first door locks before the second door opens is an inexpensive control that's nearly impossible to bypass.
 - **Badge deactivation must be automated**: Manual badge removal is error-prone. Implement systems that automatically deactivate badges on a schedule, and require explicit justification for extensions.
 - **Shift changes are high-risk times**: When security personnel are transitioning, attackers may exploit the distraction. Implement specific protocols for shift changes (e.g., security briefings should be completed before the previous shift leaves).
 - **Multi-factor physical authentication is essential**: Badge + PIN, or badge + biometric, or badge + RFID proximity verification. Don't rely on a single factor.

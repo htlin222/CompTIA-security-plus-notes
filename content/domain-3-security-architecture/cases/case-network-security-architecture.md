@@ -31,10 +31,10 @@ Dr. Whitmore designed a four-tier network architecture with [[defense-in-depth]]
 - 120 programmable logic controllers (PLCs) managing equipment
 - 15 industrial robots with embedded controllers
 - All devices communicate via hardened industrial protocols (Modbus, Profinet, OPC-UA) over dedicated wired networks (no Wi-Fi—too unpredictable for real-time control)
-- This tier is a **closed system**: devices only communicate with each other and with the [[data-collection]] gateway. No external access. No internet. No connection to IT systems except through an [[air-gap|air-gapped]] gateway.
+- This tier is a **closed system**: devices only communicate with each other and with the data-collection gateway. No external access. No internet. No connection to IT systems except through an [[air-gap|air-gapped]] gateway.
 
 **Tier 2: The Manufacturing Gateway (Demilitarized Zone)**
-- A single industrial data collection server (hardened Linux appliance) receives sensor data from the OT network via a one-way [[firewall]] rule
+- A single industrial data collection server (hardened Linux appliance) receives sensor data from the OT network via a one-way firewall rule
 - The gateway runs only one application: a sensor data aggregator that collects metrics and logs them to a time-series database
 - All network traffic to/from the gateway is inspected. Outbound traffic only goes to specific IT systems for data delivery. Inbound traffic is completely blocked—no remote access, no SSH, nothing.
 - The gateway is not directly connected to the IT network; it communicates through an [[air-gap]]-style firewall where packets must pass inspection before being forwarded
@@ -52,7 +52,7 @@ Dr. Whitmore designed a four-tier network architecture with [[defense-in-depth]]
 - Internet gateway
 - Public-facing APIs if needed (e.g., for supplier portals)
 
-The [[firewall]] rules enforce strict [[east-west-vs-north-south-traffic|traffic control]]:
+The firewall rules enforce strict [[east-west-vs-north-south-traffic|traffic control]]:
 
 **North-South Traffic** (data entering/leaving the facility):
 - ✅ OT→Gateway (sensor data outbound): Allowed on specific ports only
@@ -77,7 +77,7 @@ Industrial Protocol Firewall Rules:
 - Drop everything else
 ```
 
-This is different from a traditional [[firewall]] that understands HTTP/TCP/UDP. The protocol firewall understands that Modbus packets larger than 256 bytes are abnormal and might indicate an attack or misconfiguration.
+This is different from a traditional firewall that understands HTTP/TCP/UDP. The protocol firewall understands that Modbus packets larger than 256 bytes are abnormal and might indicate an attack or misconfiguration.
 
 **Physical Segmentation**:
 - The OT network runs on dedicated, isolated switches that are not connected to any other network
@@ -95,12 +95,12 @@ This is different from a traditional [[firewall]] that understands HTTP/TCP/UDP.
 - Analytics, reports, and dashboards are built from this read-only copy, never from the live OT network
 
 **Incident Response**:
-- If a ransomware outbreak is detected in the IT network, the [[firewall]] between IT and Gateway is automatically hardened to allow only heartbeat traffic from OT sensors
+- If a ransomware outbreak is detected in the IT network, the firewall between IT and Gateway is automatically hardened to allow only heartbeat traffic from OT sensors
 - The OT network can continue operating indefinitely on just heartbeat data
 - IT systems can be shut down, wiped, and recovered without affecting manufacturing
 - If an attack is detected in the OT network (e.g., malware on a PLC), that device is physically disconnected from the industrial network, and the line reverts to manual control while IT investigates
 
-## Implementation and Testing
+### Implementation and Testing
 
 The architecture was implemented in Q3 2024. Before go-live, the team conducted three months of testing:
 
@@ -126,7 +126,7 @@ All tests passed. The facility went live in October 2024.
 ## What Went Right
 
 - **Complete isolation of OT from IT security threats**: A corporate data breach does not affect manufacturing operations.
-- **[[Defense-in-depth]] with multiple control layers**: The [[air-gap|air-gapping]], protocol firewall, and network segmentation provide redundant protection.
+- **Defense-in-depth with multiple control layers**: The [[air-gap|air-gapping]], protocol firewall, and network segmentation provide redundant protection.
 - **Deterministic OT operation**: Real-time manufacturing control is not affected by network latency or firewall overhead because the OT network is completely isolated.
 - **Data still flows for analytics**: Despite isolation, manufacturing data flows to IT systems for reporting and optimization.
 - **Physical segmentation prevents misunderstanding**: Having a gateway device and physically separate switches makes the architecture clear and prevents misconfiguration.
@@ -141,16 +141,16 @@ All tests passed. The facility went live in October 2024.
 
 ## Key Takeaways
 
-- **[[Defense-in-depth]] is mandatory for critical infrastructure**: Manufacturing networks need multiple layers of protection—physical segmentation, [[firewall|firewalls]], protocol filtering, monitoring.
-- **[[Network-zones|OT and IT networks should be completely separated]]**: Different security models, different threats, different requirements. Convergence is minimal and one-directional (OT→IT only).
-- **[[Protocol-firewall|Protocol-level filtering]] is more effective than IP-level filtering**: Understanding OT protocols (Modbus, Profinet) allows detection of semantic attacks, not just syntactic malformed packets.
+- **Defense-in-depth is mandatory for critical infrastructure**: Manufacturing networks need multiple layers of protection—physical segmentation, firewalls, protocol filtering, monitoring.
+- **OT and IT networks should be completely separated**: Different security models, different threats, different requirements. Convergence is minimal and one-directional (OT→IT only).
+- **Protocol-level filtering is more effective than IP-level filtering**: Understanding OT protocols (Modbus, Profinet) allows detection of semantic attacks, not just syntactic malformed packets.
 - **Failsafe design is critical for physical systems**: When communication fails, manufacturing equipment should enter a safe state, not continue operating on stale data.
-- **[[East-west-vs-north-south-traffic|Lateral movement must be blocked]]**: Restrict traffic within zones and between zones. This prevents an attacker from using a compromised sensor to attack a PLC.
-- **[[Air-gap|Air-gapping]] is still relevant in modern networks**: Complete isolation of critical OT networks from IT systems, with a gateway that strictly controls information flow, is a proven architecture.
+- **Lateral movement must be blocked**: Restrict traffic within zones and between zones. This prevents an attacker from using a compromised sensor to attack a PLC.
+- **Air-gapping is still relevant in modern networks**: Complete isolation of critical OT networks from IT systems, with a gateway that strictly controls information flow, is a proven architecture.
 
 ## Related Cases
 
-- [[case-firewalls]] — Implementing [[firewall|firewalls]] that understand industrial protocols
+- [[case-firewalls]] — Implementing firewalls that understand industrial protocols
 - [[case-network-segmentation]] — Logical and physical segmentation strategies
 - [[case-hardening]] — Securing the gateway appliance and OT devices themselves
 

@@ -1,3 +1,43 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// Domain color-coding
+$domain-1-color: #5b7b9a; // General Security — blue-gray
+$domain-2-color: #c75c3a; // Threats & Vulnerabilities — red-amber
+$domain-3-color: #3a8c7c; // Security Architecture — teal
+$domain-4-color: #5c5baa; // Security Operations — indigo
+$domain-5-color: #7a8c3a; // Program Management — olive
+
+@each $num, $color in (1, $domain-1-color), (2, $domain-2-color), (3, $domain-3-color), (4, $domain-4-color), (5, $domain-5-color) {
+  body[data-slug^="domain-#{$num}"] {
+    .article-title {
+      border-left: 4px solid $color;
+      padding-left: 0.6rem;
+    }
+    .breadcrumb-container {
+      color: $color;
+      a {
+        color: $color;
+        &:hover {
+          color: darken($color, 12%);
+        }
+      }
+    }
+  }
+}
+
+// Case study visual distinction
+body[data-slug*="/cases/"] {
+  .article-title {
+    border-left: 4px solid #b8860b;
+    padding-left: 0.6rem;
+    &::before {
+      content: "\1F4CB\00a0"; // clipboard emoji
+      font-size: 0.85em;
+    }
+  }
+  article {
+    background: linear-gradient(135deg, rgba(184, 134, 11, 0.03) 0%, transparent 40%);
+    border-radius: 8px;
+    padding: 0.5rem;
+  }
+}

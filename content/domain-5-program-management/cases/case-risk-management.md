@@ -19,11 +19,12 @@ Then came the letter from their cyber insurance carrier, Beazley Cyber Insurance
 The letter was professional but firm:
 
 > "ServiceLogix has experienced a material security incident. To maintain your cyber liability coverage at current rates, you must provide evidence of a formal [[risk-management]] program by March 15. This must include:
+>
 > - A comprehensive [[risk-register]] documenting all significant risks, current control status, and remediation timelines
-> - [[Risk-identification]] methodology and cadence
-> - [[Residual-risk]] assessment showing how controls reduce inherent risk
-> - [[Risk-appetite-vs-risk-tolerance]] statement approved by executive leadership
-> - [[Threat-actors]] and [[vulnerability-management]] baseline
+> - Risk-identification methodology and cadence
+> - Residual-risk assessment showing how controls reduce inherent risk
+> - Risk-appetite-vs-risk-tolerance statement approved by executive leadership
+> - Threat-actors and [[vulnerability-management]] baseline
 > - Documented [[risk-threat-x-vulnerability-x-impact]] analysis
 >
 > If this documentation is not provided by March 15, your renewal premium will be increased 100% (from $240K to $480K annually) and coverage limits will be reduced by 25%."
@@ -35,6 +36,7 @@ David called an emergency meeting with the CEO, CTO, and CFO. They decided to bu
 **Week 1-2: Risk Identification**
 
 Using a combination of [[threat-actors]] research, historical incident data, and [[vulnerability-assessment]] results, they identified 47 potential risks:
+
 - External threat risks (zero-day exploits, advanced persistent threats, supply chain compromises)
 - Internal threat risks (insider threat, privilege misuse, negligent data exposure)
 - Operational risks (system failures, data loss, availability issues)
@@ -42,25 +44,26 @@ Using a combination of [[threat-actors]] research, historical incident data, and
 
 They prioritized these down to 18 risks significant enough to track on the formal [[risk-register]]:
 
-| Risk | Category | Inherent Risk | Current Controls | Residual Risk |
-|------|----------|---------------|------------------|--------------|
-| Zero-day RCE in customer portal | External Threat | Critical | WAF, IDS, patch SLA | High |
-| Supply chain (vendor) breach | External Threat | High | Vendor assessments, [[third-party-risk]] reviews | Medium |
-| Insider data exfiltration | Internal Threat | High | DLP, logging, access controls | Medium-High |
-| Ransomware attack | External Threat | High | Backups, immutable snapshots | Medium |
-| Application vulnerability leading to data leak | External Threat | High | SAST/DAST, security code review | Medium |
-| Credential compromise via phishing | External Threat | Medium | MFA, awareness training | Medium |
-| Cloud misconfigurations | Operational | Medium | IaC scanning, CSPM tool | Low |
-| Database backup failure | Operational | High | 3-2-1 backups, DR testing | Low |
-| Third-party SaaS provider goes out of business | Supply Chain | Medium | Vendor diversity, data export procedures | Low |
+| Risk                                           | Category        | Inherent Risk | Current Controls                                 | Residual Risk |
+| ---------------------------------------------- | --------------- | ------------- | ------------------------------------------------ | ------------- |
+| Zero-day RCE in customer portal                | External Threat | Critical      | WAF, IDS, patch SLA                              | High          |
+| Supply chain (vendor) breach                   | External Threat | High          | Vendor assessments, [[third-party-risk]] reviews | Medium        |
+| Insider data exfiltration                      | Internal Threat | High          | DLP, logging, access controls                    | Medium-High   |
+| Ransomware attack                              | External Threat | High          | Backups, immutable snapshots                     | Medium        |
+| Application vulnerability leading to data leak | External Threat | High          | SAST/DAST, security code review                  | Medium        |
+| Credential compromise via phishing             | External Threat | Medium        | MFA, awareness training                          | Medium        |
+| Cloud misconfigurations                        | Operational     | Medium        | IaC scanning, CSPM tool                          | Low           |
+| Database backup failure                        | Operational     | High          | 3-2-1 backups, DR testing                        | Low           |
+| Third-party SaaS provider goes out of business | Supply Chain    | Medium        | Vendor diversity, data export procedures         | Low           |
 
 For each risk, the team documented:
-- **[[Risk-identification]]**: How was the risk identified? (Threat assessment, historical incident, industry trend)
-- **[[Threat-actors]]**: Who would exploit this risk and why?
-- **[[Vulnerability-management]]**: What vulnerabilities enable this risk?
-- **[[Risk-threat-x-vulnerability-x-impact]]**: Risk = Threat × Vulnerability × Impact. What is the probability and severity?
+
+- **Risk-identification**: How was the risk identified? (Threat assessment, historical incident, industry trend)
+- **Threat-actors**: Who would exploit this risk and why?
+- **Vulnerability-management**: What vulnerabilities enable this risk?
+- **Risk-threat-x-vulnerability-x-impact**: Risk = Threat × Vulnerability × Impact. What is the probability and severity?
 - **Current controls**: What's already in place?
-- **[[Residual-risk]]**: What risk remains after controls?
+- **Residual-risk**: What risk remains after controls?
 - **Remediation plan**: What additional controls would reduce residual risk further?
 
 **Week 2-3: Risk Appetite and Tolerance**
@@ -68,6 +71,7 @@ For each risk, the team documented:
 This was the hardest conversation. The executive team had to answer: "What level of risk can we tolerate?"
 
 For each risk category, they documented [[risk-appetite-vs-risk-tolerance]]:
+
 - **External threats**: Willing to tolerate "Medium" residual risk for controlled risks with strong detective controls (logging, IDS). Not willing to tolerate "High" residual risk without aggressive response procedures.
 - **Supply chain**: Willing to tolerate "Medium" residual risk for critical vendors with strong oversight. Not willing to tolerate "High" without alternatives.
 - **Data loss**: Not willing to tolerate "High" residual risk. All critical data must have verified backups and recovery procedures.
@@ -76,6 +80,7 @@ For each risk category, they documented [[risk-appetite-vs-risk-tolerance]]:
 **Week 3-4: Remediation Roadmap**
 
 For risks with residual risk higher than tolerance, the team developed remediation plans:
+
 - "Insider exfiltration (Medium-High residual)" → Implementation of UEBA tool ($80K) + privileged access management ($120K). Target: Reduce to "Low-Medium" by Q3 2025.
 - "Zero-day RCE (High residual)" → Enhanced threat detection (SOAR platform, $150K) + incident response tabletop exercises. Target: Reduce to "Medium" by Q2 2025.
 - "Ransomware (Medium residual)" → Immutable backups validation + air-gapped recovery environment ($200K). Target: Reduce to "Low" by Q2 2025.
@@ -85,6 +90,7 @@ Each remediation plan included owner, budget, timeline, and success metrics.
 **Week 4: Presentation to Board and Insurance Carrier**
 
 David presented the completed [[risk-register]] to both the board and the insurance carrier. The presentation showed:
+
 1. Systematic [[risk-identification]] process based on threat intelligence and vulnerability assessment
 2. Clear [[risk-threat-x-vulnerability-x-impact]] scoring for each risk
 3. Documented [[risk-appetite-vs-risk-tolerance]] approved by executive leadership
@@ -104,18 +110,18 @@ The insurance carrier reviewed the documentation and approved the renewal at cur
 ## What Could Go Wrong
 
 - **No [[risk-identification]] methodology**: If the team had relied on assumption rather than systematic threat assessment and vulnerability review, the register would have been incomplete.
-- **[[Risk-appetite-vs-risk-tolerance]] determined by IT, not business**: If David had written risk appetite alone, the executive team would have disagreed with priorities. Business approval is essential.
+- **Risk-appetite-vs-risk-tolerance determined by IT, not business**: If David had written risk appetite alone, the executive team would have disagreed with priorities. Business approval is essential.
 - **No remediation roadmap**: A [[risk-register]] without remediation plans is documentation for compliance, not management. Plans with owners and budgets make it actionable.
 - **Set and forget**: The [[risk-register]] must be reviewed and updated quarterly at minimum. New vulnerabilities emerge, threat landscape changes, controls need validation.
-- **Missing [[third-party-risk]]: Supply chain risks often aren't included in risk registers, leaving organizations vulnerable to incidents like the one that triggered this case.
+- \*\*Missing [[third-party-risk]]: Supply chain risks often aren't included in risk registers, leaving organizations vulnerable to incidents like the one that triggered this case.
 
 ## Key Takeaways
 
-- **[[Risk-management]] program requires three components**: [[risk-identification]] (what are the risks?), [[residual-risk]] assessment (how much risk remains?), and remediation planning (what will we do about unacceptable risks?).
-- **[[Risk-appetite-vs-risk-tolerance]] must be business-approved**: Security teams can't unilaterally decide what risks the company is willing to accept. This must be executive-level decision with documented approval.
-- **[[Risk-threat-x-vulnerability-x-impact]] provides structure**: Don't just list risks. Score them systematically: What threat actors target you? What vulnerabilities exist? What would impact be? This enables prioritization.
-- **[[Residual-risk]] is what matters**: Inherent risk (what you'd face with no controls) is theoretical. Residual risk (what remains after controls) is what you're actually managing. Focus on [[residual-risk]].
-- **[[Risk-register]] is a living document**: Update it quarterly. As vulnerabilities are patched, threats change, and controls are implemented, risks evolve. Treat it as active management, not compliance artifact.
+- **Risk-management program requires three components**: [[risk-identification]] (what are the risks?), [[residual-risk]] assessment (how much risk remains?), and remediation planning (what will we do about unacceptable risks?).
+- **Risk-appetite-vs-risk-tolerance must be business-approved**: Security teams can't unilaterally decide what risks the company is willing to accept. This must be executive-level decision with documented approval.
+- **Risk-threat-x-vulnerability-x-impact provides structure**: Don't just list risks. Score them systematically: What threat actors target you? What vulnerabilities exist? What would impact be? This enables prioritization.
+- **Residual-risk is what matters**: Inherent risk (what you'd face with no controls) is theoretical. Residual risk (what remains after controls) is what you're actually managing. Focus on [[residual-risk]].
+- **Risk-register is a living document**: Update it quarterly. As vulnerabilities are patched, threats change, and controls are implemented, risks evolve. Treat it as active management, not compliance artifact.
 
 ## Related Cases
 

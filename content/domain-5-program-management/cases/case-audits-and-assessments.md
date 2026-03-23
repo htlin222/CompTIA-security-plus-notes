@@ -22,7 +22,7 @@ Marcus made a command decision. They would use the existing records—imperfect 
 
 ## What Went Right
 
-- **Transparent escalation and rapid response**: Marcus immediately involved legal and communicated the gap to the auditor rather than attempting to hide the problem, demonstrating [[due-care]] and governance commitment.
+- **Transparent escalation and rapid response**: Marcus immediately involved legal and communicated the gap to the auditor rather than attempting to hide the problem, demonstrating due-care and governance commitment.
 - **Process documentation recovery**: The team leveraged email trails and existing system records to reconstruct a defensible audit trail, showing the practical application of [[evidence-collection]] fundamentals.
 - **Remediation focus**: Rather than dwelling on past failures, the team implemented automated [[audit-scope]] controls and clear [[internal-audit]] procedures that would prevent recurrence—a key factor in the auditor's final assessment.
 - **Stakeholder management**: By involving legal and being transparent with the customer, the company maintained trust and demonstrated mature [[regulatory-audit]] understanding despite the control gap.

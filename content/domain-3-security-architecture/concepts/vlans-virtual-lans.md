@@ -6,6 +6,9 @@ date: 2026-03-20
 tags:
   - domain/3
   - type/sub-topic
+aliases:
+  - VLANs
+  - VLANS
 ---
 
 ## Definition

@@ -31,12 +31,14 @@ Robert assembled his architecture team and gave them a mandate: redesign the net
 
 **Layer 1: Perimeter Defense**
 The existing firewall was good but only protected the edge. The team added:
+
 - Web Application Firewall (WAF) to stop SQL injection and similar web attacks at the application layer
 - API gateway with rate limiting and authentication to prevent automated attacks
 - DDoS mitigation service to absorb large volumetric attacks
 
 **Layer 2: Network Segmentation**
 The team completely re-architected the network:
+
 - Trust zone: Internet-facing servers (web, API, email) in DMZ with strict egress filtering
 - Workstation zone: Employee machines on a separate segment with endpoint protection and network access control (NAC)
 - Database zone: Claims, financial, and sensitive databases on completely isolated network segments
@@ -47,6 +49,7 @@ Between each zone, a stateful firewall enforced rules. The database zone had inc
 
 **Layer 3: Identity and Access**
 The team implemented:
+
 - Multi-factor authentication (MFA) for all remote access (VPN, RDP, SSH)
 - Role-based access control (RBAC) so that compromised database admin credentials couldn't be used to access web servers
 - PAM (Privileged Access Management) so that database admin credentials were never stored; instead, temporary credentials were issued from a hardware security module
@@ -54,18 +57,21 @@ The team implemented:
 
 **Layer 4: Endpoint Detection and Response**
 The team deployed EDR to all workstations and servers:
+
 - Behavior-based detection would have caught the printer's network scanning activity
 - Process execution monitoring would have caught the command execution on the web server
 - File modifications would have alerted on the malware execution
 
 **Layer 5: Data Protection**
 The team implemented:
+
 - Encryption at rest for all databases using keys stored in AWS KMS (separate from the systems that access them)
 - Encryption in transit using TLS 1.3 for all network communication
 - Data loss prevention (DLP) tools that would block attempts to exfiltrate databases through unusual channels
 
 **Layer 6: Monitoring and Alerting**
 The team built a comprehensive monitoring stack:
+
 - Network flow analysis to detect unusual traffic patterns (why is the printer connecting to the database server?)
 - SIEM rules to correlate authentication events, network flows, and endpoint telemetry
 - Behavioral analytics to detect anomalies
@@ -99,12 +105,12 @@ The red team concluded their report: "The network is now defensible. A single co
 
 ## Key Takeaways
 
-- **[[Defense-in-depth]] means multiple layers that each stop different attack vectors**: A single compromised system should not grant access to everything. Each layer should require different credentials, bypass different controls, or traverse different network segments.
+- **Defense-in-depth means multiple layers that each stop different attack vectors**: A single compromised system should not grant access to everything. Each layer should require different credentials, bypass different controls, or traverse different network segments.
 - **Assume every layer will fail**: A firewall will fail (rule misconfiguration), MFA will fail (token compromised), EDR will fail (attacker knows how to evade it). Design systems that survive individual failures.
-- **[[Network-segmentation]] is essential**: Isolate systems that don't need to communicate with each other. Printers don't need to reach databases. Web servers don't need to reach admin systems.
+- **Network-segmentation is essential**: Isolate systems that don't need to communicate with each other. Printers don't need to reach databases. Web servers don't need to reach admin systems.
 - **Default credentials on "internal only" systems are critical vulnerabilities**: If an attacker can reach the system, they will try defaults. Every system needs strong authentication, regardless of whether it's "internal."
 - **Monitoring must detect abnormal behavior, not just policy violations**: A printer connecting to a database server is abnormal and should trigger alerts, even if firewall rules would prevent it.
-- **[[Control-diversity]] is as important as control depth**: Relying only on firewalls is fragile. Combine firewalls, segmentation, identity controls, endpoint monitoring, and data protection. An attacker might bypass one layer but needs to bypass multiple independent layers.
+- **Control-diversity is as important as control depth**: Relying only on firewalls is fragile. Combine firewalls, segmentation, identity controls, endpoint monitoring, and data protection. An attacker might bypass one layer but needs to bypass multiple independent layers.
 - **Administrative control zones need special protection**: Compromise of an administrator's workstation or database admin credentials can bypass many controls. PAM, MFA, and logging are essential for protecting administrative access.
 
 ## Related Cases

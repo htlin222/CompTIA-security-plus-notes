@@ -10,7 +10,7 @@ tags:
 
 ## The Scenario
 
-GlobalBank is a midsized financial institution with $120B in assets under management. Their encryption infrastructure centers on a Thales SafeNet Luna HSM (Hardware Security Module) that generates and stores the cryptographic keys used to encrypt customer account data, trading positions, and internal communications. The [[hardware-security-module|HSM]] is the crown jewel of their security infrastructure—it lives in a locked cage in the primary data center, protected by guards, cameras, and biometric access controls.
+GlobalBank is a midsized financial institution with $120B in assets under management. Their encryption infrastructure centers on a Thales SafeNet Luna HSM (Hardware Security Module) that generates and stores the cryptographic keys used to encrypt customer account data, trading positions, and internal communications. The HSM is the crown jewel of their security infrastructure—it lives in a locked cage in the primary data center, protected by guards, cameras, and biometric access controls.
 
 On a Thursday morning in September 2024, the Chief Information Security Officer, Dr. Amara Okafor, scheduled a disaster recovery drill. The scenario: the primary data center loses power, and the organization must failover to a warm standby site 40 miles away. The entire infrastructure—databases, applications, API servers—is replicated to the standby site. But the encryption keys must be manually transferred.
 
@@ -32,9 +32,10 @@ Samuel got back on the phone with the regional facility. "Yes, we have Box 4287 
 
 Samuel had the proper authorization according to the HSM backup procedures—he was on the list of authorized key custodians. But when he arrived at the Boulder facility at 3 PM with a notarized document from GlobalBank's CEO, the facility manager said: "The access credentials for your account were lost in our system migration when we transferred from First National's systems to Wells Fargo's. You'll need to re-enroll in our safe deposit program and re-establish your account credentials. That usually takes 5-7 business days."
 
-Samuel's heart sank. The disaster recovery drill was now a real problem: the HSM backup keys could not be recovered in a timely manner. And there was a bigger issue: **[[key-rotation|key rotation]] was overdue**. According to [[key-management]] policy, all encryption keys must be rotated every 12 months. The current master key had last been rotated 14 months ago.
+Samuel's heart sank. The disaster recovery drill was now a real problem: the HSM backup keys could not be recovered in a timely manner. And there was a bigger issue: **key rotation was overdue**. According to [[key-management]] policy, all encryption keys must be rotated every 12 months. The current master key had last been rotated 14 months ago.
 
-If the primary data center failed *right now*, GlobalBank would be unable to:
+If the primary data center failed _right now_, GlobalBank would be unable to:
+
 1. Recover the encryption keys needed to access encrypted customer data at the standby site
 2. Decrypt any data encrypted with the 14-month-old master key without first rotating it (since the backup was inaccessible)
 
@@ -45,28 +46,32 @@ Samuel escalated to Dr. Okafor, who called an emergency meeting with the Chief R
 They decided on a multi-phase approach:
 
 **Phase 1: Emergency Key Rotation (Week 1)**
+
 - Generate a new HSM master key (key #2) without using the backup system
 - Begin using key #2 for all new encryption
 - Maintain key #1 (the 14-month-old key) for decryption of existing data until it could be migrated
 - This reduced the window of vulnerability: if the old key became compromised and the backup was inaccessible, only the newest data (encrypted with key #1) would be at risk, not the historical data
 
 **Phase 2: Key Backup Recovery System Overhaul (Week 2-3)**
+
 - Work with Wells Fargo to re-establish account access and retrieve the physical safe deposit box
 - Validate that the backup from the safe deposit box was still valid and could be restored to a test HSM
 - Create redundant backups at multiple locations (not just one bank)
 - Implement automated backup procedures that don't require manual carrier transport
 
-**Phase 3: [[Hardware-security-module|HSM]] Failover Testing (Week 4-5)**
+**Phase 3: HSM Failover Testing (Week 4-5)**
+
 - Deploy a secondary HSM at the standby data center with a copy of the current master key (#2)
 - Perform a full failover drill: simulate primary site failure, retrieve keys, activate standby HSM, decrypt data
 - Test the end-to-end process without the safe deposit box system (using the new backup procedures)
 - Validate that failover could occur within 4 hours
 
 **Phase 4: Key Management Infrastructure Modernization (Ongoing)**
+
 - Moved from manual safe deposit box backup to AWS CloudHSM with geographic replication
 - Implemented [[key-splitting-secret-sharing|Shamir's Secret Sharing]] so that key recovery required multiple custodians (no single person could recover keys)
-- Set up automated key [[key-rotation|rotation]] every 90 days (reduced from 365 days) to minimize exposure window if a key was compromised
-- Integrated [[hardware-security-module|HSM]] with the disaster recovery framework so that failover was automated, not manual
+- Set up automated key rotation every 90 days (reduced from 365 days) to minimize exposure window if a key was compromised
+- Integrated HSM with the disaster recovery framework so that failover was automated, not manual
 
 The total cost of the remediation was substantial:
 
@@ -82,7 +87,7 @@ But the alternative—losing access to encrypted customer data during a disaster
 - **Disaster recovery drill discovered the problem before actual disaster**: If the primary data center had failed without the drill, the key recovery issue would have been discovered in crisis mode with potentially worse outcomes.
 - **Proper authorization and documentation existed**: The key custodians had authority to access the backup, and the procedures were documented (even if not updated).
 - **Banks keep detailed records**: Wells Fargo was able to locate the safe deposit box through historical records, enabling eventual recovery.
-- **Emergency [[key-rotation]] was possible**: The organization could generate a new key without the backup system, allowing continued operations.
+- **Emergency key-rotation was possible**: The organization could generate a new key without the backup system, allowing continued operations.
 - **Regulatory notification wasn't required**: Because this was a test, not an actual data compromise, notification to regulators wasn't necessary.
 
 ## What Could Go Wrong
@@ -95,12 +100,12 @@ But the alternative—losing access to encrypted customer data during a disaster
 
 ## Key Takeaways
 
-- **[[Key-escrow]] backup systems must be tested regularly**: Annual [[key-rotation|key rotation]] should include a full backup recovery test. If the backup can't be recovered in a drill, it won't be available in a real disaster.
+- **Key-escrow backup systems must be tested regularly**: Annual key rotation should include a full backup recovery test. If the backup can't be recovered in a drill, it won't be available in a real disaster.
 - **Key backup location and access must be maintained actively**: Banks change, safe deposit boxes are relocated, account credentials are lost. Maintain current contact information and periodically verify that backups are accessible.
-- **[[Key-rotation]] deadlines must be non-negotiable**: The 14-month-old key represented a 2-month window of compliance violation. Implement automated enforcement—systems should refuse to use keys older than the rotation period.
-- **[[Key-splitting-secret-sharing|Secret sharing]] reduces single-custodian risk**: Shamir's Secret Sharing ensures that no single person can recover keys without at least N other custodians. This prevents both insider threats and single-point-of-failure issues.
+- **Key-rotation deadlines must be non-negotiable**: The 14-month-old key represented a 2-month window of compliance violation. Implement automated enforcement—systems should refuse to use keys older than the rotation period.
+- **Secret sharing reduces single-custodian risk**: Shamir's Secret Sharing ensures that no single person can recover keys without at least N other custodians. This prevents both insider threats and single-point-of-failure issues.
 - **Failover systems must include key failover**: The standby data center must have its own HSM or secure access to a replicated HSM. Key failover can't be manual if [[disaster-recovery|RTO]] is hours, not days.
-- **[[Hardware-security-module|HSM]] management tools should be automated**: Modern HSM solutions like CloudHSM handle geographic replication, automatic backups, and [[key-rotation|rotation]] without manual carrier transport and safe deposit boxes.
+- **HSM management tools should be automated**: Modern HSM solutions like CloudHSM handle geographic replication, automatic backups, and rotation without manual carrier transport and safe deposit boxes.
 
 ## Related Cases
 
@@ -108,4 +113,3 @@ But the alternative—losing access to encrypted customer data during a disaster
 - [[case-certificates]] — Similar key lifecycle and rotation issues for PKI certificates
 - [[case-pki]] — Public key infrastructure that depends on reliable key management
 - [[case-disaster-recovery]] — How key management fits into the broader disaster recovery architecture
-

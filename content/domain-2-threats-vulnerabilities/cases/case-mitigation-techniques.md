@@ -20,13 +20,13 @@ The company's Chief Information Security Officer, Dr. Rajesh Patel, faced an imp
 
 On February 11, 2026, Dr. Patel initiated an emergency meeting with hospital leadership, the vendor, the hospital's Chief Medical Officer, and her security team. The decision: implement aggressive [[compensating-controls]] to reduce risk while waiting for patches. The strategy had three pillars: network isolation, behavioral anomaly detection, and enhanced monitoring. By February 13, 2026, at 6:00 PM, all 450 hospitals had received detailed implementation instructions.
 
-**Network Segmentation**: All CardioWatch devices were moved to a dedicated VLAN with strict firewall rules. Allowed traffic: (1) communication to the hospital EHR system for patient data synchronization, (2) communication to MediDevice's cloud-based monitoring service for remote telemetry, (3) alarm and alert notifications to clinical staff phones. Blocked traffic: any outbound internet access from devices, any peer-to-peer communication between devices, any inbound access from user workstations or the general hospital network. Access to device management interfaces required jumping through a [[jumpbox]] from the DMZ with [[mfa]] authentication.
+**Network Segmentation**: All CardioWatch devices were moved to a dedicated VLAN with strict firewall rules. Allowed traffic: (1) communication to the hospital EHR system for patient data synchronization, (2) communication to MediDevice's cloud-based monitoring service for remote telemetry, (3) alarm and alert notifications to clinical staff phones. Blocked traffic: any outbound internet access from devices, any peer-to-peer communication between devices, any inbound access from user workstations or the general hospital network. Access to device management interfaces required jumping through a jumpbox from the DMZ with [[mfa]] authentication.
 
 **Behavioral Monitoring**: Network sensors were deployed at the egress point of the CardioWatch VLAN to monitor outbound traffic patterns. Alerts were configured for: (1) unexpected outbound connections to unfamiliar IP addresses, (2) large data transfers (suggesting exfiltration), (3) rapid API queries (suggesting brute force or [[credential-stuffing]]), (4) lateral movement attempts to other VLANs.
 
 **Enhanced Encryption**: Device-to-hospital communication was retrofitted with TLS 1.3 termination at the network edge, creating an encrypted tunnel that mitigated the plaintext credential transmission vulnerability (CVE-2026-1236) without requiring device firmware changes.
 
-**API Rate Limiting**: A [[web-application-firewall]] was positioned in front of the device APIs to implement aggressive rate limiting (5 requests per second per device IP, 50 requests per minute per patient record ID). This prevented exploitation of the unauthenticated RCE vulnerability (CVE-2026-1234) through API flooding attacks.
+**API Rate Limiting**: A web-application-firewall was positioned in front of the device APIs to implement aggressive rate limiting (5 requests per second per device IP, 50 requests per minute per patient record ID). This prevented exploitation of the unauthenticated RCE vulnerability (CVE-2026-1234) through API flooding attacks.
 
 **Vendor Coordination**: Dr. Patel negotiated directly with the vendor's VP of Engineering. She provided detailed forensic data showing that competitors were already probing for these vulnerabilities, suggesting active exploitation was imminent. The vendor accelerated their firmware release schedule to March 22, 2026—reducing the exposure window from 90 days to 40 days.
 
@@ -34,7 +34,7 @@ Implementation took 48 hours. By February 15, 2026, all compensating controls we
 
 ## What Went Right
 
-- **Risk-based prioritization of mitigations**: Rather than attempting simultaneous patching (impossible) or accepting unmitigated risk (unacceptable), the team designed layered controls targeting each CVE: [[network-segmentation]] for RCE and lateral movement, TLS encryption for credential exposure, and [[rate-limiting]] for API abuse.
+- **Risk-based prioritization of mitigations**: Rather than attempting simultaneous patching (impossible) or accepting unmitigated risk (unacceptable), the team designed layered controls targeting each CVE: [[network-segmentation]] for RCE and lateral movement, TLS encryption for credential exposure, and rate-limiting for API abuse.
 
 - **Behavioral monitoring without blame**: Deploying network sensors to monitor for actual exploitation attempts, rather than just checking vulnerability status, enabled early detection if any control failed. This shifted focus from "is the device patched?" to "is the device compromised?"
 
@@ -72,7 +72,7 @@ Implementation took 48 hours. By February 15, 2026, all compensating controls we
 
 - **[[case-vulnerability-types]]** — Understanding the attack surface of medical devices, including [[misconfigurations]], [[default-credentials]], and [[unpatched-software]].
 
-- **[[case-network-segmentation]]** — Using VLAN isolation, [[micro-segmentation]], and [[acls]] to contain IoT device compromise and prevent lateral movement.
+- **[[case-network-segmentation]]** — Using VLAN isolation, [[micro-segmentation]], and acls to contain IoT device compromise and prevent lateral movement.
 
 - **[[case-hardening]]** — For devices that cannot be patched, apply [[least-privilege]], [[access-control-lists-acls]], and [[application-allowlisting]] to reduce attack surface.
 

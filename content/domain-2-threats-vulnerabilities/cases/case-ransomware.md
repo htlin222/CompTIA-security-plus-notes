@@ -64,7 +64,7 @@ The predicted threat materialized at 8:47 PM on March 11: the attacker published
 
 ## What Could Go Wrong
 
-- **No offline backup strategy**: Many organizations store backups on network-attached storage or in the cloud, assuming encryption protection. [[encryption-based-ransomware]] can compromise the backup infrastructure and render backups unrecoverable. [[immutable-backups|WORM (write-once-read-many) backups]] stored offline are the only reliable defense.
+- **No offline backup strategy**: Many organizations store backups on network-attached storage or in the cloud, assuming encryption protection. [[encryption-based-ransomware]] can compromise the backup infrastructure and render backups unrecoverable. WORM (write-once-read-many) backups stored offline are the only reliable defense.
 
 - **Unpatched VPN appliance created initial access**: CVE-2024-47575 was published on January 15, 2026, and a patch was available immediately. PMI's patch management process took 54 days to deploy the patch. A [[vulnerability-types|27-day patch deployment SLA]] would have prevented this entire incident.
 
@@ -78,9 +78,9 @@ The predicted threat materialized at 8:47 PM on March 11: the attacker published
 
 ## Key Takeaways
 
-- **[[offline-backup|Offline backups]] are non-negotiable for ransomware resilience**: Ransomware cannot encrypt backups that are disconnected from the network. 3–2–1 backup strategy (3 copies, 2 different media types, 1 offsite) is standard for enterprises; at least 1 copy must be offline and immutable.
+- **Offline backups are non-negotiable for ransomware resilience**: Ransomware cannot encrypt backups that are disconnected from the network. 3–2–1 backup strategy (3 copies, 2 different media types, 1 offsite) is standard for enterprises; at least 1 copy must be offline and immutable.
 
-- **[[immutable-backups|WORM (write-once-read-many) backups]] prevent ransomware from modifying backups**: Even if an attacker compromises backup storage, they cannot encrypt or delete immutable backups. Immutable snapshots and offline vaults should be standard controls.
+- **WORM (write-once-read-many) backups prevent ransomware from modifying backups**: Even if an attacker compromises backup storage, they cannot encrypt or delete immutable backups. Immutable snapshots and offline vaults should be standard controls.
 
 - **[[double-extortion|Double-extortion ransomware]] (encryption + data theft) cannot be defeated by payment**: Attackers steal data and then threaten publication. Paying ransom doesn't prevent the threat publication; it only enriches criminals. Data protection (preventing exfiltration) is more important than decryption capability.
 

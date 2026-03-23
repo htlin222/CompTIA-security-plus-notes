@@ -49,22 +49,26 @@ Rachel mandated a complete redesign of change management within 30 days.
 The remediation included:
 
 **Week 1-2: Define emergency change procedures**
+
 - Define what constitutes an emergency (genuine DDoS attack verified by automated detection, critical system failure, active security incident with ongoing data loss)
 - Create an "emergency change" process: brief (5-minute) verbal approval from the on-call engineering director + immediate documentation post-approval
 - Establish that emergency changes must include a 4-hour rollback window (if the change causes problems, it can be reversed within 4 hours)
 - Require retrospective approval from CAB within 24 hours of the emergency change
 
 **Week 2-3: Implement role-based access**
+
 - Separate "monitor and alert" credentials from "make changes" credentials
 - Require MFA for any firewall change
 - Implement a change approval workflow in ServiceNow that blocks the actual change execution until approval is recorded
 
 **Week 3-4: Add real-time alerting**
+
 - Configure Splunk to alert the security team immediately when any firewall rules are added, modified, or deleted
 - Alert includes the user who made the change, the timestamp, what rule was changed, and what the new configuration is
 - Alert goes to security oncall and the change log, creating an audit trail
 
 **Week 4+: Build testing infrastructure**
+
 - Create a test firewall configuration that mirrors production
 - All non-emergency changes must be tested in the test environment for at least 1 hour before production deployment
 - DDoS attack patterns can be simulated using tools like iperf or actual traffic from a DDoS mitigation service's test platform
@@ -93,10 +97,10 @@ The team also discovered a silver lining: after implementing proper change manag
 
 ## Key Takeaways
 
-- **[[Change-advisory-board-cab]] must have an emergency path**: Define what "emergency" means (genuine active incident, automated detection + manual verification), then create a streamlined approval process (verbal + 4-hour rollback window + post-approval documentation).
-- **[[Change-management]] must be enforced technically, not just by process**: Use [[infrastructure-as-code]] and role-based access so that non-approved changes are technically blocked or require MFA and explicit approval.
+- **Change-advisory-board-cab must have an emergency path**: Define what "emergency" means (genuine active incident, automated detection + manual verification), then create a streamlined approval process (verbal + 4-hour rollback window + post-approval documentation).
+- **Change-management must be enforced technically, not just by process**: Use [[infrastructure-as-code]] and role-based access so that non-approved changes are technically blocked or require MFA and explicit approval.
 - **All configuration changes must be logged and alerted in real-time**: Implement integration between your configuration management system and your SIEM so that changes are visible immediately.
-- **Non-emergency changes must be tested before production**: Use [[blue-green-deployment]] or a mirror test environment to validate changes impact.
+- **Non-emergency changes must be tested before production**: Use blue-green-deployment or a mirror test environment to validate changes impact.
 - **DDoS detection must be automated, not manual**: Implement tools that automatically detect attack patterns and alert the team, rather than relying on subjective interpretation of dashboards.
 - **Emergency procedures require definition and testing**: If you don't define emergency change processes, people will improvise and bypass the official process—then you have no control whatsoever.
 - **Post-incident reviews must be blameless and thorough**: Blaming David would have missed the systemic failure: the process didn't account for emergencies and had no enforcement mechanism.

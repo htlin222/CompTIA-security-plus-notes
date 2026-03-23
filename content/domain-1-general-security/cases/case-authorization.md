@@ -34,14 +34,16 @@ Jennifer gave him six weeks to remediate, or the SOC2 audit would fail.
 
 Marcus assembled a rapid response team. He brought in the Director of Cloud Operations (David Zhang), the security architect (Elena Torres), and a compliance manager. They worked backward from the audit deadline:
 
-Week 1: Discovery and prioritization. Marcus ran an AWS IAM Access Analyzer against all 127 roles and generated a report of unused permissions. The analysis was shocking: 43% of assigned permissions had never been used. Roles granted "EC2:*" (all EC2 actions) but the user only ever created instances. Roles granted write access to production databases but the user only read logs.
+Week 1: Discovery and prioritization. Marcus ran an AWS IAM Access Analyzer against all 127 roles and generated a report of unused permissions. The analysis was shocking: 43% of assigned permissions had never been used. Roles granted "EC2:\*" (all EC2 actions) but the user only ever created instances. Roles granted write access to production databases but the user only read logs.
 
 The team categorized roles into three groups:
+
 - Group A (25 roles): Engineering roles that legitimately needed broad access (but still not "all EC2 actions")
 - Group B (67 roles): Operational roles that should be narrowed significantly
 - Group C (35 roles): Roles that could be completely eliminated and merged into existing roles
 
 Week 2: Role redesign. For each role, the team:
+
 1. Identified who was assigned to it
 2. Interviewed those users about their actual job functions
 3. Determined the minimum AWS actions required
@@ -49,6 +51,7 @@ Week 2: Role redesign. For each role, the team:
 5. Created a new, narrower role or retired the role entirely
 
 For example, "EC2-Instance-All-Access" became:
+
 - "Engineer-EC2-InstanceManagement" (create, start, stop, terminate instances in dev/staging; read in production)
 - "DevOps-EC2-Production-OnCall" (emergency stop/terminate only, with mandatory MFA, logging, and approval workflow)
 - "Infrastructure-Team-EC2-Management" (limited set of operations, no deletion without approval)
@@ -56,12 +59,14 @@ For example, "EC2-Instance-All-Access" became:
 Week 3: Implementation. Elena used AWS CDK (Infrastructure as Code) to define every role with explicit permissions. Every line of code had a comment explaining the business justification. The code required code review and approval before deployment.
 
 The most challenging work was building a governance model. Marcus implemented:
+
 - **Role ownership**: Each role now had a documented owner (usually a team lead) responsible for quarterly review
 - **User attestation**: Every user assigned to a role received a quarterly email asking "Do you still need this role? Confirm or it will be revoked."
 - **Approval workflow**: Any new role or permission change required documented business justification and approval from the role owner AND the security team
 - **Automated review**: AWS Config and custom Lambda functions monitored for roles with unused permissions and alerted the team
 
 Week 4-5: Migration. The team systematically moved every user from old roles to new, narrower roles. They prepared a communication plan:
+
 - Week 4 notification: "Your access is changing. Here's what you'll lose, here's what you'll keep, here's why."
 - Week 5 cutover: Old roles were disabled; new roles were activated. Most users didn't notice because their actual access barely changed—they'd just been granted broad permissions they didn't use.
 - Post-cutover monitoring: The team watched CloudTrail logs for permission denied errors that would indicate roles were too narrow. They discovered three cases where users needed slightly more access and refined the roles.
@@ -69,6 +74,7 @@ Week 4-5: Migration. The team systematically moved every user from old roles to 
 Week 6: Audit remediation. Jennifer returned for follow-up audit work. She sampled 25 of the new roles and verified that every permission was documented with business justification. She spot-checked access reviews to confirm the quarterly user attestation process was real. She approved the remediation work.
 
 The final stats were compelling:
+
 - 127 IAM roles consolidated to 42
 - 89 unnecessary permissions revoked from users
 - 100% of remaining roles had documented business justification
@@ -102,7 +108,7 @@ DynamoCart passed the SOC2 Type II audit with a "green" finding on access contro
 - **Quarterly user attestation is essential**: Users should receive periodic confirmation that they still need their assigned roles. Lack of attestation creates unlimited permission drift.
 - **IAM Access Analyzer and similar tools should run continuously**: Automated detection of unused permissions identifies roles that are too broad before audit finds them.
 - **Segregation of duties requires explicit role design**: Some actions (like deleting production databases) should require approval workflows and MFA, not just role assignment.
-- **[[Principle-of-least-privilege]] requires effort but pays dividends**: The investment in designing 42 well-justified roles is far cheaper than managing 127 roles, investigating permission sprawl, and failing compliance audits.
+- **Principle-of-least-privilege requires effort but pays dividends**: The investment in designing 42 well-justified roles is far cheaper than managing 127 roles, investigating permission sprawl, and failing compliance audits.
 
 ## Related Cases
 

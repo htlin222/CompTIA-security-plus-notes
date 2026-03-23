@@ -19,6 +19,7 @@ The breach went undetected for 8 hours. When the attacker emailed the data sampl
 At 9:15 AM Monday, the CEO walked into the board meeting and announced: "We've been hacked. Customer data for 2.1 million accounts was stolen over the weekend. I'm working with our incident response team to determine the scope." This was the first the CISO, David Kim, was hearing of the breach.
 
 The [[incident-response]] nightmare began immediately. David was summoned to an emergency executive meeting at 9:30 AM. He had:
+
 - No forensic evidence collection yet (the attacker had been on the server for 8 hours already)
 - No understanding of the attack vector or scope (was it just the customer database, or were other systems compromised?)
 - No [[communication-plan]] activated with customers, regulators, or law enforcement
@@ -27,11 +28,12 @@ The [[incident-response]] nightmare began immediately. David was summoned to an 
 - The CEO having already made public statements without security team input
 
 David immediately implemented the NIST IR lifecycle:
-1. **[[Preparation]]** (0-30 minutes): Activated the incident response team. Called in the forensics consultant, the outside counsel, the PR firm, and the third-party incident response company.
 
-2. **[[Detection-and-analysis]]** (30 minutes - 6 hours): The forensics team discovered the attacker had accessed the customer database server, exfiltrated 2.1 million records, and left no other evidence of lateral movement to the payment processing environment (which was air-gapped and isolated, protecting credit card data). The attack vector was a vulnerability (CVE-2024-41833) in the Struts framework that had been patched in a security bulletin two months ago but not applied to the server.
+1. **Preparation** (0-30 minutes): Activated the incident response team. Called in the forensics consultant, the outside counsel, the PR firm, and the third-party incident response company.
 
-3. **[[Containment]]** (6 hours - 12 hours): The team immediately:
+2. **Detection-and-analysis** (30 minutes - 6 hours): The forensics team discovered the attacker had accessed the customer database server, exfiltrated 2.1 million records, and left no other evidence of lateral movement to the payment processing environment (which was air-gapped and isolated, protecting credit card data). The attack vector was a vulnerability (CVE-2024-41833) in the Struts framework that had been patched in a security bulletin two months ago but not applied to the server.
+
+3. **Containment** (6 hours - 12 hours): The team immediately:
    - Took the compromised web server offline
    - Revoked all API keys and credentials that the server had access to
    - Validated that backup systems were running and recovering from before the compromise
@@ -39,7 +41,7 @@ David immediately implemented the NIST IR lifecycle:
    - Engaged with law enforcement (FBI cyber team)
    - Activated GDPR and CCPA notification processes
 
-4. **[[Eradication]]** (12 hours - 48 hours): The forensics team:
+4. **Eradication** (12 hours - 48 hours): The forensics team:
    - Imaged the compromised server for investigation
    - Scanned all other web servers for the same vulnerability
    - Found 7 other servers running the vulnerable Struts version
@@ -47,13 +49,13 @@ David immediately implemented the NIST IR lifecycle:
    - Validated that no other services had been compromised
    - Reset all credentials for the compromised server's service accounts
 
-5. **[[Recovery]]** (48 hours - 7 days):
+5. **Recovery** (48 hours - 7 days):
    - Spun up a replacement customer database server from a clean backup
    - Validated data integrity
    - Restored customer access
    - Conducted full vulnerability scan of the environment to find similar issues
 
-6. **[[Lessons-learned-post-incident-review]]** (7-14 days):
+6. **Lessons-learned-post-incident-review** (7-14 days):
    - The company identified that their patch management process had failed: patches existed but weren't being systematically applied
    - They discovered no vulnerability scanning was being done against production systems
    - The incident highlighted that the PR team should involve the CISO before making public statements about breaches
@@ -80,10 +82,10 @@ The regulatory impact was significant but not catastrophic. StreamVid notified 2
 ## Key Takeaways
 
 - **The CISO must be in the [[communication-plan]] before executives make public breach statements**: Executives should have a mandatory consultation with the CISO before any public disclosure to ensure statements are technically accurate and legally sound.
-- **[[Detection-and-analysis]] must happen before public disclosure**: The company knew "2.1 million records were exfiltrated" but didn't know what else might have been compromised. Initial containment should verify scope before public statements.
-- **[[Containment]] requires immediate isolation of compromised systems**: Taking the server offline and revoking credentials within the first 30 minutes of detection prevents further exfiltration.
-- **[[Eradication]] must include systematic validation across the environment**: Finding 7 other vulnerable servers meant the response required comprehensive scanning, not just patching the originally compromised system.
-- **[[Lessons-learned-post-incident-review]] must result in process changes**: The post-incident review identified broken patch management. The subsequent process improvements prevent recurrence.
+- **Detection-and-analysis must happen before public disclosure**: The company knew "2.1 million records were exfiltrated" but didn't know what else might have been compromised. Initial containment should verify scope before public statements.
+- **Containment requires immediate isolation of compromised systems**: Taking the server offline and revoking credentials within the first 30 minutes of detection prevents further exfiltration.
+- **Eradication must include systematic validation across the environment**: Finding 7 other vulnerable servers meant the response required comprehensive scanning, not just patching the originally compromised system.
+- **Lessons-learned-post-incident-review must result in process changes**: The post-incident review identified broken patch management. The subsequent process improvements prevent recurrence.
 - **Prepare [[communication-plan]] templates in advance**: Pre-drafted customer notification letters, legal disclosure language, and executive talking points accelerate response and improve consistency.
 - **Conduct [[tabletop-exercises]] annually**: A prior mock incident response would have identified communication gaps and built relationships with external partners.
 

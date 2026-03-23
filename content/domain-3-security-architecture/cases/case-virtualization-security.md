@@ -82,11 +82,11 @@ This triggered an emergency operational initiative:
 - Executed phased patching of all 80 hypervisors
 - Completed within two weeks without customer impact or downtime
 
-## Impact Assessment
+### Impact Assessment
 
 The VM sprawl had hidden costs:
 
-- **[[Resource-contention|Resource overconsumption]]**: 327 extra VMs were consuming CPU, RAM, and storage that wasn't being paid for. Estimated waste: $47,000/month
+- **Resource overconsumption**: 327 extra VMs were consuming CPU, RAM, and storage that wasn't being paid for. Estimated waste: $47,000/month
 - **Unpatched systems**: The 30 unidentified VMs had been running without documented ownership or patch management. They were potential entry points for attackers
 - **Compliance risk**: Some of those VMs might be handling customer data without proper security controls, incident response plans, or audit logs
 - **Legal liability**: The 47 unauthorized VMs on customer accounts could have created contractual disputes if a security incident occurred
@@ -110,10 +110,10 @@ The VM sprawl had hidden costs:
 
 - **VM sprawl is the hypervisor equivalent of configuration drift**: Without systematic inventory management, VMs accumulate silently. Implement CMDB syncing with hypervisors to detect divergence.
 - **VM lifecycle management must be enforced**: VMs should have owners, expiration dates, and regular review intervals. Automate deprecation warnings and decommissioning.
-- **[[VM-isolation|VM isolation]] requires understanding what's running**: You can't apply security policies to VMs you don't know exist. Inventory is foundational.
-- **[[VM-escape]] and [[vm-isolation|escape attacks]] create blast radius risk**: Unknown VMs could be compromised without anyone knowing, providing a foothold for further attacks.
-- **[[Snapshot-management|Snapshots]] must be cleaned up**: VM snapshots consume storage and can cause data inconsistency if older snapshots are reverted accidentally. Enforce a retention policy.
-- **[[Resource-contention]] from sprawl wastes money**: Hundreds of VMs consuming resources without being billed represents financial loss. Regular inventory audits catch this waste.
+- **VM isolation requires understanding what's running**: You can't apply security policies to VMs you don't know exist. Inventory is foundational.
+- **VM-escape and [[vm-isolation|escape attacks]] create blast radius risk**: Unknown VMs could be compromised without anyone knowing, providing a foothold for further attacks.
+- **Snapshots must be cleaned up**: VM snapshots consume storage and can cause data inconsistency if older snapshots are reverted accidentally. Enforce a retention policy.
+- **Resource-contention from sprawl wastes money**: Hundreds of VMs consuming resources without being billed represents financial loss. Regular inventory audits catch this waste.
 - **Critical hypervisor patches should force an audit**: Security advisories are opportunities to check the health of your environment. Use patching as a checkpoint for inventory accuracy.
 
 ## Related Cases

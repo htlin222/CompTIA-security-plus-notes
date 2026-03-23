@@ -42,8 +42,8 @@ The cost impact was substantial: $1.8M in immediate compliance infrastructure, $
 
 ## What Went Right
 
-- **Regulatory review happened before deployment**: Had the German privacy office been asked to review *after* 3,000 stores were tokenized, the rewrite would have cost exponentially more.
-- **[[Data-classification]] triggered deeper analysis**: Once the compliance team classified the data as personal data, it triggered full GDPR compliance reviews, preventing piecemeal non-compliance.
+- **Regulatory review happened before deployment**: Had the German privacy office been asked to review _after_ 3,000 stores were tokenized, the rewrite would have cost exponentially more.
+- **Data-classification triggered deeper analysis**: Once the compliance team classified the data as personal data, it triggered full GDPR compliance reviews, preventing piecemeal non-compliance.
 - **Federated analytics path forward existed**: Federated models were mature enough by 2024 that a compliance-respecting architecture was technically achievable, even if expensive.
 - **Cross-border governance structure**: Natalie's role as the German privacy officer ensured early regulatory alignment rather than late-stage surprises.
 
@@ -57,10 +57,10 @@ The cost impact was substantial: $1.8M in immediate compliance infrastructure, $
 
 ## Key Takeaways
 
-- **[[Pseudonymization]] and [[anonymization]] are not interchangeable**: Pseudonymized data in the controller's possession is still personal data under GDPR. Use [[anonymization]] only if you can truly prevent re-identification, and have lawyers review it.
-- **[[Data-retention-policies]] must be enforced by infrastructure, not policy**: Implement automated data deletion, encryption key rotation, and archive purging. Don't rely on teams to "remember" to delete old records.
-- **[[Data-masking]] techniques vary in strength**: k-anonymity, differential privacy, and other [[anonymization]] methods have different privacy guarantees. Understand the tradeoffs for your specific regulatory context.
-- **[[Data-sovereignty]] is more than geographic**: It includes the legal classification of data, the retention rules, the access controls, and the breach notification requirements. Plan these together, not in isolation.
+- **Pseudonymization and [[anonymization]] are not interchangeable**: Pseudonymized data in the controller's possession is still personal data under GDPR. Use [[anonymization]] only if you can truly prevent re-identification, and have lawyers review it.
+- **Data-retention-policies must be enforced by infrastructure, not policy**: Implement automated data deletion, encryption key rotation, and archive purging. Don't rely on teams to "remember" to delete old records.
+- **Data-masking techniques vary in strength**: k-anonymity, differential privacy, and other [[anonymization]] methods have different privacy guarantees. Understand the tradeoffs for your specific regulatory context.
+- **Data-sovereignty is more than geographic**: It includes the legal classification of data, the retention rules, the access controls, and the breach notification requirements. Plan these together, not in isolation.
 - **International data flows require upfront legal review**: If you operate in multiple regulatory regimes, have legal review the technical architecture before implementation begins. Moving personal data across borders after the fact is exponentially more expensive.
 
 ## Related Cases
@@ -69,4 +69,3 @@ The cost impact was substantial: $1.8M in immediate compliance infrastructure, $
 - [[case-data-classification]] — The foundation for [[anonymization]] and [[data-masking]] decisions
 - [[case-encryption]] — Technical mechanisms for [[pseudonymization]] and data protection at rest
 - [[case-privacy]] — Regulatory frameworks that determine what [[anonymization]] means in your jurisdiction
-

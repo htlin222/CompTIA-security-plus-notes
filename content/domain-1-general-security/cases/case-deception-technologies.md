@@ -29,6 +29,7 @@ The honeypots went live on January 15. Redline configured monitoring that would 
 At 3:47 AM PST on January 17 (49 hours later), the first alert fired. The fake Exchange server had received a connection from IP address 45.142.212.88 (geolocated to Moscow). The connection attempted to exploit CVE-2021-44228 (the Log4j vulnerability) by sending specially crafted requests to the OWA (Outlook Web Access) endpoint.
 
 The attacker's first probes were reconnaissance-focused:
+
 - HTTP requests to various OWA paths to enumerate server version
 - Attempts to trigger error messages that would reveal system information
 - Checks for default credentials (admin/admin, test/test)
@@ -37,23 +38,27 @@ The attacker's first probes were reconnaissance-focused:
 Over the next 48 hours, the attack pattern became clear. The attacker was running a structured reconnaissance playbook:
 
 **Phase 1 (Hours 1-6): Service Enumeration**
+
 - Scan the Exchange server for running services
 - Attempt default credentials
 - Trigger version-revealing errors
 - Test for common Exchange vulnerabilities
 
 **Phase 2 (Hours 6-18): Credential Testing**
+
 - Use credentials found in the honeypot file share (which had been deliberately exposed with weak access controls)
 - Attempt to move laterally using credentials found in fake developer dotfiles
 - Test credentials against SSH, RDP, and other services
 
 **Phase 3 (Hours 18-36): Persistence Testing**
+
 - Attempt to install web shells on the Exchange server
 - Try to create new user accounts for future access
 - Plant reverse shells that call back to attacker-controlled servers
 - Test if installed backdoors survive system restarts
 
 **Phase 4 (Hours 36+): Exfiltration Reconnaissance**
+
 - Determine what data is accessible from the compromised Exchange server
 - Test SMB connectivity to internal file shares
 - Attempt to map the network topology
@@ -101,12 +106,12 @@ Jennifer shared this report with her board of directors. The message was clear: 
 
 ## Key Takeaways
 
-- **[[Deception-platforms]] enable observation of attack methodologies without risk to production systems**: Honeypots reveal how attackers work, what tools they use, what vulnerabilities they target, and what credentials they try first.
+- **Deception-platforms enable observation of attack methodologies without risk to production systems**: Honeypots reveal how attackers work, what tools they use, what vulnerabilities they target, and what credentials they try first.
 - **Deception works best when integrated with real intelligence processes**: Observing attackers is valuable only if the intelligence is translated into actual defensive measures. Honeypot data that sits in a report is useless.
 - **High-interaction honeypots capture complete attack sequences**: The more realistic the honeypot (real OS, real vulnerable services, real permissions), the more complete the observable attack. Low-interaction honeypots (simple port listeners) only capture connection attempts.
 - **TTPs revealed by honeypots should inform layered defenses**: If the honeypot revealed that an attacker uses a specific credential-testing tool, deploy rules in your SIEM to detect that tool. If the attacker uses web shells for persistence, deploy EDR. If lateral movement is the next step, deploy network segmentation.
 - **Honeypots must be isolated from real infrastructure**: A honeypot that gets compromised and then used to attack production systems defeats the purpose. Air-gap the honeypot or place it on a strictly segmented network.
-- **[[Defense-in-depth]] is essential for honeypot programs**: Real attackers are sophisticated. The honeypot might be detected and bypassed. Your real defenses must be capable of stopping the attack even if the honeypot fails to detect or slow the attacker.
+- **Defense-in-depth is essential for honeypot programs**: Real attackers are sophisticated. The honeypot might be detected and bypassed. Your real defenses must be capable of stopping the attack even if the honeypot fails to detect or slow the attacker.
 - **Threat intelligence from honeypots has shelf life**: The tools and TTPs observed today might be outdated in 6 months. Honeypot programs should be continuous, not one-time engagements.
 
 ## Related Cases

@@ -21,13 +21,14 @@ Jordan pulled the historical uptime logs. The server had been up for 1,847 conse
 The second problem: dependencies weren't isolated to individual systems. The expense reporting system depended on the payroll system for employee master data and hierarchical approval chains. The financial reporting system depended on expense data. The CRM system pulled commission calculations from payroll. A cascade began to emerge: if payroll went down for 72 hours, the entire revenue recognition process for the current quarter would fail, potentially making quarterly earnings reports late to investors.
 
 When Jordan quantified the impact, she calculated:
+
 - **Hour 1 of payroll outage**: $8,400/hour (direct deposit processing delays, legal exposure)
 - **Hour 1-8**: Additional $3,200/hour (business operations slowdown, expense reporting blockage)
 - **Hour 8-72**: Additional $12,000/hour (financial close delays, commission processing backlog, CRM unable to generate proposals)
 
 A 72-hour outage would cost approximately **$876,000 in direct costs** plus immeasurable reputational damage and potential securities law violations if a quarterly report was delayed.
 
-The CFO's eye widened. The entire conversation shifted. Suddenly, the $90,000 annual cost of a redundant payroll server cluster, a [[recovery-point-objective-rpo]] of 4 hours, and automated failover was not a cost—it was an insurance policy against a catastrophic risk. The [[business-continuity]] team was mobilized. Engineering began virtualizing the payroll system, implementing replication to a hot standby, and testing [[recovery-time-objective-rto]] and [[mean-time-to-recover-mttr]] metrics.
+The CFO's eye widened. The entire conversation shifted. Suddenly, the $90,000 annual cost of a redundant payroll server cluster, a [[recovery-point-objective-rpo]] of 4 hours, and automated failover was not a cost—it was an insurance policy against a catastrophic risk. The [[business-continuity]] team was mobilized. Engineering began virtualizing the payroll system, implementing replication to a hot standby, and testing [[recovery-time-objective-rto]] and mean-time-to-recover-mttr metrics.
 
 Within six months, the payroll system was protected by redundancy and could be recovered in under 15 minutes. The [[business-impact-analysis]] had transformed from an audit exercise into a strategic initiative that fundamentally improved operational resilience.
 
@@ -48,10 +49,10 @@ Within six months, the payroll system was protected by redundancy and could be r
 
 ## Key Takeaways
 
-- **[[Business-impact-analysis]] requires rigorous dependency mapping**: Don't just ask "can system X go down?" Ask "what else breaks if system X goes down?" and "what's the cost chain?"
-- **[[Recovery-time-objective-rto]] and [[recovery-point-objective-rpo]] are driven by business impact, not IT preference**: If the business cannot tolerate a 72-hour outage (and payroll businesses cannot), design [[resilience-and-redundancy]] accordingly.
-- **[[Critical-business-functions]] often depend on unsexy legacy systems**: A forgotten on-prem server can be more critical than your cloud-native microservices. Map everything.
-- **[[Maximum-tolerable-downtime-mtd]] of zero requires redundancy**: For truly business-critical functions like payroll, payroll, HR records, or revenue recognition, zero downtime is often the actual requirement.
+- **Business-impact-analysis requires rigorous dependency mapping**: Don't just ask "can system X go down?" Ask "what else breaks if system X goes down?" and "what's the cost chain?"
+- **Recovery-time-objective-rto and [[recovery-point-objective-rpo]] are driven by business impact, not IT preference**: If the business cannot tolerate a 72-hour outage (and payroll businesses cannot), design [[resilience-and-redundancy]] accordingly.
+- **Critical-business-functions often depend on unsexy legacy systems**: A forgotten on-prem server can be more critical than your cloud-native microservices. Map everything.
+- **Maximum-tolerable-downtime-mtd of zero requires redundancy**: For truly business-critical functions like payroll, payroll, HR records, or revenue recognition, zero downtime is often the actual requirement.
 - **Quantify financial impact to drive investment**: IT budgets are scarce. Business impact quantification in CFO language (dollars, not minutes) wins funding battles for resilience improvements.
 
 ## Related Cases

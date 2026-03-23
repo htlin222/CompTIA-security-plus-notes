@@ -39,7 +39,7 @@ By 4:30 PM, Marcus had convened the security and IT leadership teams. By 6:00 PM
 
 - **Multi-layered response beyond just VPN**: Rather than just requiring a VPN (which would have solved the immediate problem but been inconvenient), the team implemented [[encryption]], [[https-spoofing]] defenses, corporate proxies, and device verification. This created defense-in-depth.
 
-- **Security awareness training was data-driven**: With video evidence of the attack, training materials were far more compelling than theoretical discussions of [[ssl-stripping]]. Employees could see their own credentials being captured and understand the stakes.
+- **Security awareness training was data-driven**: With video evidence of the attack, training materials were far more compelling than theoretical discussions of ssl-stripping. Employees could see their own credentials being captured and understand the stakes.
 
 ## What Could Go Wrong
 
@@ -59,7 +59,7 @@ By 4:30 PM, Marcus had convened the security and IT leadership teams. By 6:00 PM
 
 - **Public Wi-Fi is inherently untrusted**: Assume that all traffic on public Wi-Fi is visible to network-adjacent attackers. Mandatory VPN is the only reliable defense for remote workers.
 
-- **[[man-in-the-middle]] attacks don't require sophisticated tools**: Alex Chen used standard tools available to any security researcher: hostapd (Linux Wi-Fi access point), dnsmasq (DNS server), and Wireshark (packet capture). No custom malware or zero-day exploits were needed. Any technically competent attacker can execute these attacks.
+- **man-in-the-middle attacks don't require sophisticated tools**: Alex Chen used standard tools available to any security researcher: hostapd (Linux Wi-Fi access point), dnsmasq (DNS server), and Wireshark (packet capture). No custom malware or zero-day exploits were needed. Any technically competent attacker can execute these attacks.
 
 - **Credential theft on unsecured networks is immediate**: From initial connection to complete credential compromise: 90 seconds. From credential theft to authenticated access: 2 minutes. From initial attack to reading sensitive business data: 3 minutes. Once credentials are captured, the attacker has the time advantage.
 
@@ -69,7 +69,7 @@ By 4:30 PM, Marcus had convened the security and IT leadership teams. By 6:00 PM
 
 - **[[case-encryption]]** — Understanding [[ssltls-stripping]], [[https-spoofing]], and how cryptographic protections prevent credential theft; learning about [[encryption]] as a defense against on-path attacks.
 
-- **[[case-network-attacks]]** — ARP spoofing, DNS spoofing, and other network-layer attacks that enable [[man-in-the-middle]] conditions; understanding [[arp-spoofingpoisoning]] as a complementary attack to SSL stripping.
+- **[[case-network-attacks]]** — ARP spoofing, DNS spoofing, and other network-layer attacks that enable man-in-the-middle conditions; understanding [[arp-spoofingpoisoning]] as a complementary attack to SSL stripping.
 
 - **[[case-wireless-attacks]]** — Rogue access points, [[evil-twin]] networks, and Wi-Fi eavesdropping; understanding how attackers create the conditions for on-path attacks in the first place.
 

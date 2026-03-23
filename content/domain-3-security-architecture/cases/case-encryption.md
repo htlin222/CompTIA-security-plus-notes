@@ -35,22 +35,26 @@ Dr. Okonkwo proposed a different approach: use a **service mesh** architecture (
 
 On paper, this was perfect. In practice, the challenges were:
 
-**Challenge 1: [[Key-length]] and [[encryption-modes]] selection** (Week 1-2):
+**Challenge 1: Key-length and [[encryption-modes]] selection** (Week 1-2):
+
 - What [[key-length]] for internal mTLS? The team needed to balance security with performance.
-- What [[encryption-modes]]? AES-GCM was the standard, but older services might not support all [[cipher-suite]] options.
+- What [[encryption-modes]]? AES-GCM was the standard, but older services might not support all cipher-suite options.
 - What [[cryptographic-attacks]] needed to be mitigated? The team documented threat models for eavesdropping, man-in-the-middle attacks on internal traffic, and certificate compromise.
 
 **Challenge 2: Certificate generation and rotation** (Week 2-4):
+
 - Istio uses an on-cluster Certificate Authority (CA) to auto-generate certificates for every service
-- But the CA private key needed to be protected. They decided to integrate Istio's CA with [[Hardware-Security-Module|HashiCorp Vault]] running in the cluster
+- But the CA private key needed to be protected. They decided to integrate Istio's CA with HashiCorp Vault running in the cluster
 - Certificate rotation would happen every 90 days automatically, but the team needed to test renewal procedures
 
 **Challenge 3: Gradual rollout without breaking services** (Week 4-8):
+
 - Enabling mTLS cluster-wide would break every service immediately if any service didn't support the new [[encryption-modes]]
-- The team created a [[namespace]]-by-[[namespace]] rollout: enable Istio in one [[namespace]], validate it for one week, then move to the next
-- They discovered three legacy services that didn't support the required [[cipher-suite]]. Those services were upgraded in parallel
+- The team created a namespace-by-namespace rollout: enable Istio in one namespace, validate it for one week, then move to the next
+- They discovered three legacy services that didn't support the required cipher-suite. Those services were upgraded in parallel
 
 **Challenge 4: Observability and monitoring** (Week 8-12):
+
 - With [[encryption-modes|encrypted]] traffic, traditional packet inspection became impossible
 - Istio provides metrics on encrypted connections, but the team needed to ensure no legitimate traffic was being dropped by overly aggressive TLS policies
 - They instrumented application-level metrics to confirm [[hybrid-encryption]] was functioning
@@ -59,15 +63,16 @@ By week 12, all 247 services had mTLS enabled. The audit revisited and confirmed
 
 The audit passed.
 
-But the story doesn't end there. Six months into operation, the team discovered a new challenge: **[[Perfect-forward-secrecy|Perfect Forward Secrecy (PFS)]]. **
+But the story doesn't end there. Six months into operation, the team discovered a new challenge: **Perfect Forward Secrecy (PFS). **
 
 A vendor pointed out that while their certificates rotated every 90 days, if a certificate private key was ever compromised, all traffic encrypted with that key could potentially be decrypted retroactively. Some internal data (customer session tokens, personally identifiable information cached in transient services) should have perfect forward secrecy—even if a key is compromised, traffic from the past cannot be decrypted.
 
-The team evaluated [[ephemeral-keys]]. Istio's TLS implementation already used ephemeral session keys via [[PFS]]-enabled cipher suites (ECDHE), so short-term [[cryptographic-attacks]] actually already had [[Perfect-forward-secrecy]]. But longer-lived keys (service-to-service routing credentials) did not.
+The team evaluated [[ephemeral-keys]]. Istio's TLS implementation already used ephemeral session keys via PFS-enabled cipher suites (ECDHE), so short-term [[cryptographic-attacks]] actually already had Perfect-forward-secrecy. But longer-lived keys (service-to-service routing credentials) did not.
 
 They eventually implemented a stricter [[key-management]] policy:
+
 - Service certificates: 30-day rotation (reduced from 90)
-- Session-level keys: TLS 1.3 with ECDHE (automatic [[Perfect-forward-secrecy]])
+- Session-level keys: TLS 1.3 with ECDHE (automatic Perfect-forward-secrecy)
 - Sensitive service credentials: Vault-managed with 7-day rotation for highest-privilege services
 
 ## What Went Right
@@ -75,7 +80,7 @@ They eventually implemented a stricter [[key-management]] policy:
 - **Compliance review caught the gap before an actual breach**: The auditor's questions led to discovery before attackers could exploit the plaintext traffic.
 - **Service mesh approach scaled to 247 services**: Rather than patching each service individually, Istio provided infrastructure-level encryption without code changes.
 - **Certificate lifecycle was automated**: With automatic rotation and CA management, the team didn't have to manually manage certificates for 247 services.
-- **Phased rollout prevented outages**: Deploying [[namespace]] by [[namespace]] allowed validation and issue discovery before full activation.
+- **Phased rollout prevented outages**: Deploying namespace by namespace allowed validation and issue discovery before full activation.
 - **Monitoring remained effective**: Istio's metrics and logging allowed the team to confirm encryption was functioning without breaking observability.
 
 ## What Could Go Wrong
@@ -88,11 +93,11 @@ They eventually implemented a stricter [[key-management]] policy:
 
 ## Key Takeaways
 
-- **[[Encryption-modes]] selection is not optional for compliance**: SOC 2, PCI DSS, and HIPAA all require explicit encryption in transit. "It's internal" is not a valid exception.
-- **[[Key-length]] and [[cipher-suite]] choices have operational implications**: 256-bit keys use more CPU than 128-bit keys. Some older hardware may not support ECDHE. Document and test these tradeoffs before production rollout.
+- **Encryption-modes selection is not optional for compliance**: SOC 2, PCI DSS, and HIPAA all require explicit encryption in transit. "It's internal" is not a valid exception.
+- **Key-length and cipher-suite choices have operational implications**: 256-bit keys use more CPU than 128-bit keys. Some older hardware may not support ECDHE. Document and test these tradeoffs before production rollout.
 - **Certificate lifecycle automation is essential at scale**: Managing certificates manually for 247 services is not feasible. Use a service mesh, a certificate manager, or a PKI system that auto-rotates credentials.
-- **[[Perfect-forward-secrecy]] requires ephemeral keys**: Static certificates encrypted with AES don't provide PFS. Ensure your [[encryption-modes]] use ECDHE or similar for session-level security.
-- **Gradual rollout is safer than big-bang**: Enable encryption one [[namespace]] or one service tier at a time, validate, and then expand. Full cluster encryption on day one will cause failures.
+- **Perfect-forward-secrecy requires ephemeral keys**: Static certificates encrypted with AES don't provide PFS. Ensure your [[encryption-modes]] use ECDHE or similar for session-level security.
+- **Gradual rollout is safer than big-bang**: Enable encryption one namespace or one service tier at a time, validate, and then expand. Full cluster encryption on day one will cause failures.
 - **Monitoring encrypted traffic requires different tools**: Wireshark and packet analysis can't inspect [[encryption-modes|encrypted]] data. Use application-level metrics, service mesh observability, and certificate chain validation to verify encryption is functioning.
 
 ## Related Cases
@@ -100,4 +105,3 @@ They eventually implemented a stricter [[key-management]] policy:
 - [[case-key-management]] — The infrastructure underlying certificate generation, rotation, and lifecycle
 - [[case-vpn]] — Similar principles of protecting data in transit, but at the network layer instead of the application layer
 - [[case-certificates]] — Understanding X.509 certificates and their role in TLS implementation
-

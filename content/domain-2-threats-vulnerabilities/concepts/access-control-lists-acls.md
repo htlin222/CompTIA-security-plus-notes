@@ -6,6 +6,9 @@ date: 2026-03-20
 tags:
   - domain/2
   - type/sub-topic
+aliases:
+  - ACLs
+  - ACLS
 ---
 
 ## Definition

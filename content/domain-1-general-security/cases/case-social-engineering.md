@@ -39,6 +39,7 @@ The investigation revealed that:
 Richard immediately notified law enforcement (FBI), Sterling's board, and Sterling's cybersecurity insurer. The incident became a case study in emerging threats.
 
 The FBI later informed Sterling that this was part of a coordinated campaign targeting accounting and financial services firms. The attackers had:
+
 - Researched target companies to identify CFOs and CEOs
 - Gathered public information about upcoming deals
 - Created deepfake voices using AI tools (increasingly available and sophisticated)
@@ -64,12 +65,12 @@ The FBI later informed Sterling that this was part of a coordinated campaign tar
 
 ## Key Takeaways
 
-- **[[Deepfake-attacks|Deepfake]] voice and video are now realistic enough to fool humans**: AI-generated voices can mimic tone, accent, and speech patterns. Assume voice alone is not sufficient authentication.
-- **[[Pretexting]] becomes more powerful with specific, credible details**: The attacker's reference to the LinkedIn post about the acquisition made the request seem legitimate. Public information can become ammunition for social engineering.
+- **Deepfake voice and video are now realistic enough to fool humans**: AI-generated voices can mimic tone, accent, and speech patterns. Assume voice alone is not sufficient authentication.
+- **Pretexting becomes more powerful with specific, credible details**: The attacker's reference to the LinkedIn post about the acquisition made the request seem legitimate. Public information can become ammunition for social engineering.
 - **Large financial requests require multi-factor verification**: Never approve large transfers based on a single call. Require in-person confirmation, video call verification, or a pre-established code word.
 - **Multiple approval levels protect against social engineering**: If the wire transfer required approval from both the CFO and the COO, the second approver could have verified the request independently.
 - **Unusual requests should trigger elevated scrutiny**: A wire transfer to an unfamiliar vendor should require more verification than a request from a known partner.
-- **[[Brand-impersonation]] via caller ID spoofing is trivial**: Caller ID can be spoofed. Don't trust caller ID. Verify by calling back to a number from your company directory.
+- **Brand-impersonation via caller ID spoofing is trivial**: Caller ID can be spoofed. Don't trust caller ID. Verify by calling back to a number from your company directory.
 - **Security awareness training must address deepfakes**: Employees should understand that voice, video, and images can all be faked. They should know to verify through secondary channels.
 - **Voice verification protocols must evolve**: Behavioral biometrics (verification based on speech patterns, response patterns, and knowledge of shared history) are more resistant to deepfakes than simple voice recognition.
 

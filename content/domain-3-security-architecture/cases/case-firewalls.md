@@ -14,7 +14,7 @@ Cascade Broadband is a regional ISP serving 120,000 customers across Oregon and 
 
 His report landed like a bomb.
 
-The firewall contained **14,247 individual [[access-control-lists|ACL]] rules**. Of those:
+The firewall contained **14,247 individual ACL rules**. Of those:
 
 - **5,600 rules (39%)** were redundant—more specific rules existed that covered the same traffic
 - **840 rules (6%)** were contradictory—"allow TCP 443" existed alongside "deny TCP 443" in the same ruleset, with ordering determining which one was evaluated first
@@ -37,29 +37,34 @@ Patricia convened a war room with the network operations team, Tim's audit firm,
 Over the next four months, the team executed a comprehensive firewall redesign project:
 
 **Phase 1: Inventory and Classification (Week 1-3)**
-- Created a database of all 14,247 rules with metadata: creation date, last modified date, owner, business justification, [[threat-model]] covered, and criticality
+
+- Created a database of all 14,247 rules with metadata: creation date, last modified date, owner, business justification, threat-model covered, and criticality
 - Categorized rules into logical groups: customer access, employee access, external partner access, DDoS mitigation, threat intelligence-based blocking, legacy access, and "unknown purpose"
 - Identified that 2,100 rules referenced decommissioned networks and could be immediately deleted
 
 **Phase 2: Consolidation and Optimization (Week 4-8)**
-- Merged redundant rules. For example, 33 SSH deny rules were consolidated into a single [[access-control-lists|ACL]] with a list of blocked regions and threat feeds
+
+- Merged redundant rules. For example, 33 SSH deny rules were consolidated into a single ACL with a list of blocked regions and threat feeds
 - Resolved contradictions by determining the business intent and implementing a single, clear rule
-- Implemented [[access-control-lists|object-based]] rule design instead of inline IP addresses, allowing rules to reference groups of networks and services that could be updated without modifying the rule itself
+- Implemented object-based rule design instead of inline IP addresses, allowing rules to reference groups of networks and services that could be updated without modifying the rule itself
 - Reduced the ruleset to 3,200 rules (a 78% reduction)
 
 **Phase 3: Testing and Validation (Week 9-12)**
+
 - Before deploying the new ruleset to production, created an identical test firewall and migrated the consolidated rules
 - Ran a month of parallel capture: the test firewall evaluated all real-world traffic against the new ruleset while the production firewall handled actual traffic
 - Compared allow/deny decisions between the old and new rulesets—any discrepancies were investigated
 - Had customer service teams test critical access paths (FTP, web hosting, DNS) against the new ruleset
 
 **Phase 4: Deployment and Monitoring (Week 13-16)**
+
 - Deployed the consolidated ruleset to production during a maintenance window with a four-hour rollback window available
 - Monitored firewall logs for the first 48 hours for any unexpected blocks
 - Performance improved measurably: firewall latency dropped from 18ms to 4ms, CPU utilization dropped from 65% to 38%
 
 **Phase 5: New Operational Model (Ongoing)**
-- Implemented version control (Git) for the firewall [[access-control-lists]] configuration, with required code reviews before changes
+
+- Implemented version control (Git) for the firewall access-control-lists configuration, with required code reviews before changes
 - Created a quarterly audit process to identify and remove obsolete rules
 - Implemented a "rule deprecation" process: any rule not modified in 18 months was marked as deprecated, and the owner was contacted to confirm it was still needed
 - Set up automated alerting if rule count ever exceeded 5,000 again—an early warning sign of accumulation
@@ -89,16 +94,15 @@ The cost of this project was significant: $180,000 in professional services, 400
 
 ## Key Takeaways
 
-- **[[Access-control-lists]] must be systematically managed, not accumulated**: Treat [[access-control-lists]] like code: version control, code review, testing, and deprecation policies.
-- **Firewall rules should reference objects (networks, services), not inline IPs**: Object-based [[access-control-lists|rule design]] allows you to update network membership without touching rules, reducing accumulation.
+- **Access-control-lists must be systematically managed, not accumulated**: Treat access-control-lists like code: version control, code review, testing, and deprecation policies.
+- **Firewall rules should reference objects (networks, services), not inline IPs**: Object-based rule design allows you to update network membership without touching rules, reducing accumulation.
 - **Periodic rule audits are essential**: A quarterly process to identify and justify unused rules prevents the accumulation that happened at Cascade.
 - **Rule consolidation requires testing**: You cannot safely remove redundant rules without parallel testing or at least extensive validation of rule interactions.
-- **Firewall performance degradation signals rule debt**: If your firewall latency is creeping up or CPU utilization is consistently high, investigate rule count and complexity. Performance improvement is a business case for cleaning up [[access-control-lists]].
+- **Firewall performance degradation signals rule debt**: If your firewall latency is creeping up or CPU utilization is consistently high, investigate rule count and complexity. Performance improvement is a business case for cleaning up access-control-lists.
 - **Contradictory rules must be resolved, not left ambiguous**: "allow X" and "deny X" in the same ruleset is undefined behavior. The first matching rule wins, which means rule order becomes critical and implicit—a maintenance nightmare.
 
 ## Related Cases
 
-- [[case-network-segmentation]] — How [[access-control-lists]] enforce the segmentation strategy
+- [[case-network-segmentation]] — How access-control-lists enforce the segmentation strategy
 - [[case-ids-ips]] — Complementary technology to firewalls for detecting attacks that firewalls allow through
 - [[case-network-security-architecture]] — Architectural design that makes firewall rules simpler and less error-prone
-

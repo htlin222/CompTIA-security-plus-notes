@@ -16,9 +16,10 @@ Three weeks after the migration, the security team detected unusual activity: su
 
 The forensics team began correlating logs across multiple systems. The attack narrative they needed to construct was: (1) how the attacker got initial access, (2) what systems they accessed, (3) what data they exfiltrated, and (4) when the compromise occurred. But as they tried to build the [[timeline-analysis]], they discovered something was deeply wrong.
 
-A login event on server-A was timestamped at 2024-11-18 14:23:47. The same attacker's lateral movement to server-B (based on IP address and username) was logged at 2024-11-18 14:11:22—*before* they logged into server-A, which is impossible. On server-C, the same attacker's activity was logged at 2024-11-18 14:27:15—after both previous events, which made sense. But when they checked the system logs on a load balancer that shouldn't have been directly accessed, there was no record of the attacker's presence at all.
+A login event on server-A was timestamped at 2024-11-18 14:23:47. The same attacker's lateral movement to server-B (based on IP address and username) was logged at 2024-11-18 14:11:22—_before_ they logged into server-A, which is impossible. On server-C, the same attacker's activity was logged at 2024-11-18 14:27:15—after both previous events, which made sense. But when they checked the system logs on a load balancer that shouldn't have been directly accessed, there was no record of the attacker's presence at all.
 
 The forensics team realized the timestamps were inconsistent across systems. They ran a diagnostic test: they synchronized a script to run at an exact moment on all servers and checked the logged timestamps. The results were shocking:
+
 - server-A: 12 minutes fast
 - server-B: 8 minutes slow
 - server-C: 1 minute fast
@@ -51,9 +52,9 @@ The investigation ultimately determined that an attacker had compromised server-
 
 ## Key Takeaways
 
-- **[[Ntp-synchronization]] must be monitored and validated continuously**: Run NTP health checks as part of the monitoring infrastructure. Alert if any server's clock drifts >1 minute from the NTP server. Log the last successful NTP sync time and alert if it exceeds 5 minutes.
-- **[[Centralized-logging]] must use a central time source for timestamp validation**: Configure [[log-forwarding-agents]] to log a central timestamp at the syslog server, not just the timestamp from the originating system. This allows detection of clock skew.
-- **[[Log-retention-policies]] must be long enough for investigation**: Retain logs for at least 30-90 days, depending on regulatory requirements. For security-critical systems (IDS, firewall, PAM), retain for 1+ year.
+- **Ntp-synchronization must be monitored and validated continuously**: Run NTP health checks as part of the monitoring infrastructure. Alert if any server's clock drifts >1 minute from the NTP server. Log the last successful NTP sync time and alert if it exceeds 5 minutes.
+- **Centralized-logging must use a central time source for timestamp validation**: Configure [[log-forwarding-agents]] to log a central timestamp at the syslog server, not just the timestamp from the originating system. This allows detection of clock skew.
+- **Log-retention-policies must be long enough for investigation**: Retain logs for at least 30-90 days, depending on regulatory requirements. For security-critical systems (IDS, firewall, PAM), retain for 1+ year.
 - **Timestamp validation is part of [[digital-forensics]]**: When correlating logs for [[timeline-analysis]], always validate that timestamps are coherent across systems. Use NTP stratum levels and clock sync status as part of log source validation.
 - **Post-migration checklist must include log infrastructure**: When reconfiguring network infrastructure, validate that [[log-management]] systems (syslog servers, NTP time sources) are reachable and working from all endpoints.
 - **Monitor for [[log-integrity]] violations**: Implement systems that detect when log files are deleted, tampered with, or have gaps. This alerts on attacker anti-forensics activities.

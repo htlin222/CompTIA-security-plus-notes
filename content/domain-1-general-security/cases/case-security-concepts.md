@@ -17,6 +17,7 @@ Amara's first week was spent reviewing existing security documentation. What she
 In her initial all-hands address, Rachel asked Amara, "When can you give the engineering team a comprehensive security briefing?" Amara responded, "Two weeks to do it right." Rachel said, "You have 72 hours."
 
 Amara's first decision was to understand what security even meant in the context of Velocity Analytics. She scheduled conversations with 15 key stakeholders: the VP of Engineering, product managers, ops leads, data engineers. Her questions were simple:
+
 - "What does security mean to you?"
 - "What are your biggest security concerns?"
 - "What are your biggest security challenges?"
@@ -35,6 +36,7 @@ Amara realized that before she could build security controls, she needed to esta
 She built a 2-hour engineering briefing covering:
 
 **Part 1: Why Security Matters (30 minutes)**
+
 - The [[cia-triad]]: Confidentiality, Integrity, Availability. How each one matters for Velocity's business.
   - Confidentiality: Customer data breaches destroy trust and violate contracts
   - Integrity: Falsified business intelligence dashboards make customers' decisions wrong
@@ -45,6 +47,7 @@ She built a 2-hour engineering briefing covering:
   - If dashboards were down for a day, retail customers would lose sales (cost: negative NPS, churn)
 
 **Part 2: The Principle of Least Privilege (20 minutes)**
+
 - Every engineer, every service, every database access should be limited to the minimum required for their job
 - Real examples:
   - A junior data engineer shouldn't have access to production database admin functions
@@ -52,6 +55,7 @@ She built a 2-hour engineering briefing covering:
   - A third-party integration shouldn't have access to customer PII, only aggregated data
 
 **Part 3: Defense in Depth (20 minutes)**
+
 - Security isn't one big wall; it's multiple layers. Each layer might fail, but if designed right, an attacker has to breach multiple independent layers.
 - Real examples at Velocity:
   - Layer 1 (perimeter): VPN with MFA to access internal systems
@@ -62,14 +66,16 @@ She built a 2-hour engineering briefing covering:
   - If an attacker breaches the perimeter, the other layers still protect data
 
 **Part 4: Authentication vs. Authorization (15 minutes)**
-- [[Authentication]]: proving who you are (your identity)
-- [[Authorization]]: proving what you're allowed to do (your permissions)
+
+- Authentication: proving who you are (your identity)
+- Authorization: proving what you're allowed to do (your permissions)
 - Both must work for systems to be secure
 - Real examples:
   - You authenticate to AWS (who are you?), then authorization determines which resources you can access
   - You authenticate to GitHub (you're amara@velocityanalytics.com), then authorization determines which repos you can access
 
 **Part 5: Security Risk Assessment (15 minutes)**
+
 - Every system has risks. Security is about identifying risks and deciding whether to accept them, mitigate them, or avoid them.
 - Risk = Likelihood × Impact
 - Real examples at Velocity:
@@ -78,6 +84,7 @@ She built a 2-hour engineering briefing covering:
   - Production database without automated backups: Likelihood=medium (hardware fails, malware encrypts), Impact=catastrophic (business cannot recover). Risk=high. Decision: Implement automated backups.
 
 **Part 6: Practical Security for Engineers (20 minutes)**
+
 - Concrete, actionable guidance:
   - Never commit credentials (passwords, API keys, SSH keys) to version control. Use environment variables or secret management systems.
   - Use MFA for all external-facing systems (GitHub, AWS, production databases)
@@ -86,12 +93,14 @@ She built a 2-hour engineering briefing covering:
   - Report suspicious activity immediately (unusual login, permission changes, unexpected costs)
 
 During the briefing, Amara presented a diagram showing Velocity's data flow and security risks:
+
 1. Customer data flows through the web application
 2. Data is stored in a PostgreSQL database
 3. Data is transformed by batch data processing jobs
 4. Data is served through dashboards
 
 For each component, she mapped it to the [[cia-triad]]:
+
 - Web app needs [[confidentiality]] (data in transit encrypted with TLS), [[integrity]] (data isn't modified), [[availability]] (responds quickly)
 - Database needs [[confidentiality]] (encryption at rest), [[integrity]] (no unauthorized modifications), [[availability]] (backed up and recoverable)
 - Batch jobs need [[confidentiality]] (no leaking data), [[integrity]] (calculations are correct), [[availability]] (run on schedule)
@@ -100,10 +109,11 @@ For each component, she mapped it to the [[cia-triad]]:
 The briefing's impact was immediate. After the session, the VP of Engineering told Amara, "I finally understand why you're asking us to do all this security stuff. It's not theoretical—it directly protects our business."
 
 Within a week, Amara had established a set of foundational security concepts that the entire company could reference:
+
 1. **The [[cia-triad]]** as the framework for evaluating what needs protecting
-2. **[[Principle-of-least-privilege]]** as the guideline for access control
-3. **[[Defense-in-depth]]** as the architecture principle
-4. **[[Risk-assessment]]** as the decision-making framework for security investments
+2. **Principle-of-least-privilege** as the guideline for access control
+3. **Defense-in-depth** as the architecture principle
+4. **Risk-assessment** as the decision-making framework for security investments
 5. **Practical guidance** for engineers on the top 5 things to avoid
 
 These became the foundation for all future security work at Velocity.

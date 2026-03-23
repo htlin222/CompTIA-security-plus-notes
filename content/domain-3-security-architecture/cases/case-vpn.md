@@ -93,7 +93,7 @@ The secondary came back online at 8:03 PM. Both concentrators were now patched. 
 
 The final downtime: **2 hours and 23 minutes of partial impact** (some users couldn't connect to the secondary), not the planned 4 hours, but longer than hoped.
 
-## Post-Incident Analysis
+### Post-Incident Analysis
 
 Jennifer's team identified several design weaknesses:
 
@@ -111,11 +111,11 @@ Jennifer's team identified several design weaknesses:
 - Patching Saturday evening meant it was weekend downtime (good for impact), but also meant less staff was available to handle problems
 - A weekday patch with advance notice and staff on-site might have been easier to manage
 
-**Failure 4: [[Encryption|Encrypted]] Failover Connection State**
+**Failure 4: Encrypted Failover Connection State**
 - When the primary went down, connections in-flight were lost—workers had to manually reconnect
 - Some VPN products support stateful connection failover (the secondary picks up in-flight TCP connections), but Palo Alto GlobalProtect doesn't
 
-## Remediation
+### Remediation
 
 The team began planning upgrades:
 
@@ -133,7 +133,7 @@ The team began planning upgrades:
 - For future critical patches, execute phased rollout: patch secondary first, test, then patch primary
 - This requires true active-active load balancing, not active-passive failover
 
-**4. [[Vpn-concentrator|VPN Concentrator]] Monitoring**
+**4. VPN Concentrator Monitoring**
 - Implement real-time monitoring of CPU, memory, connection count, and error rates
 - Alert if secondary capacity utilization exceeds 80% (signal that it can't handle primary's load)
 - Track connection churn during failover to measure "reconnection storms"
@@ -155,12 +155,12 @@ The team began planning upgrades:
 
 ## Key Takeaways
 
-- **[[Always-on-vpn|Always-On VPN]] requires true redundancy testing**: An active-passive system documented on paper is not the same as an active-passive system tested under full load. Load-test the secondary regularly.
+- **Always-On VPN requires true redundancy testing**: An active-passive system documented on paper is not the same as an active-passive system tested under full load. Load-test the secondary regularly.
 - **Critical vulnerability patches can't wait**: Active exploitation changes the calculus entirely. Downtime to patch is better than downtime from compromise.
 - **Patch windows should account for failover surge**: Plan for all users attempting to reconnect simultaneously. Load-test the failover path, not just the primary.
-- **[[Vpn-concentrator|VPN concentrators]] need capacity headroom**: Running at 87% CPU utilization on the primary concentrator means there's no room for surge traffic or failover load. Target 60-70% for headroom.
+- **VPN concentrators need capacity headroom**: Running at 87% CPU utilization on the primary concentrator means there's no room for surge traffic or failover load. Target 60-70% for headroom.
 - **Phased patching is better than simultaneous**: If possible, patch the secondary first, test failover, then patch the primary. This requires true load balancing, but it's worth it.
-- **[[Encryption|Encrypted]] connection state can't be seamlessly migrated**: GlobalProtect doesn't support stateful failover. Plan for connection drops and automatic reconnection as a standard behavior.
+- **Encrypted connection state can't be seamlessly migrated**: GlobalProtect doesn't support stateful failover. Plan for connection drops and automatic reconnection as a standard behavior.
 - **Weekend patching for visibility, but with support**: Patching at 6 PM on a Saturday meant fewer employees on the system, but also fewer IT staff available. A weekday morning patch might have been better with full staffing.
 
 ## Related Cases

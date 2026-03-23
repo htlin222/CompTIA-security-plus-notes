@@ -6,6 +6,8 @@ date: 2026-03-20
 tags:
   - domain/5
   - type/sub-topic
+aliases:
+  - PIA
 ---
 
 ## Definition
@@ -16,7 +18,7 @@ A Privacy Impact Assessment (PIA), also called a Data Protection Impact Assessme
 
 - GDPR Article 35 mandates DPIAs for: large-scale processing of sensitive data, systematic monitoring of public areas, automated decision-making with significant effects on individuals
 - Key PIA elements: description of processing, necessity/proportionality assessment, risk identification, and proposed risk mitigation measures
-- PIAs should be completed *before* a system is built or a process is implemented — after the fact is too late
+- PIAs should be completed _before_ a system is built or a process is implemented — after the fact is too late
 - PIAs may be required by law (GDPR, some US state laws) or as part of organizational policy for all new projects involving personal data
 - Exam tip: PIAs/DPIAs are a privacy by design tool; they ensure privacy risks are considered during system design, not after deployment
 

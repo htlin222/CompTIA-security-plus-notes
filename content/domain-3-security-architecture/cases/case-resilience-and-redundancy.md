@@ -62,7 +62,7 @@ Power was finally restored at 4:47 PM on January 13—46 hours after the initial
 
 By that time, all customer processing was happening in Nashville. The Atlanta data center was just a dark building with idle equipment.
 
-## Post-Incident Analysis
+### Post-Incident Analysis
 
 In the aftermath, CloudFirst's executives realized several critical failures:
 
@@ -93,7 +93,7 @@ In the aftermath, CloudFirst's executives realized several critical failures:
 - In reality, they shared some common infrastructure upstream
 - A single transformer failure cascaded to both feeds
 
-## Lessons and Remediation
+### Lessons and Remediation
 
 CloudFirst spent $8.4 million on infrastructure improvements to prevent a recurrence:
 
@@ -119,12 +119,12 @@ CloudFirst spent $8.4 million on infrastructure improvements to prevent a recurr
 - Added a third power feed from a different utility company entirely
 - Installed a second UPS system for additional fault tolerance
 
-**5. [[Diversity]] in Infrastructure**
+**5. Diversity in Infrastructure**
 - The company realized having two data centers in different cities was only good if failover actually worked
 - Added a third data center on the West Coast for true geographic diversity
 - Implemented automatic failover based on health checks (not just manual failover)
 
-**6. [[High-availability|HA]] Without Geographic Separation**
+**6. HA Without Geographic Separation**
 - For critical systems that can't afford the latency of geographically distributed failover, implemented local HA with clustering
 - Database clustering within the Atlanta facility provided [[failover]] without geographic distance
 
@@ -144,12 +144,12 @@ CloudFirst spent $8.4 million on infrastructure improvements to prevent a recurr
 
 ## Key Takeaways
 
-- **[[High-availability-ha]] and [[disaster-recovery]] are different**: HA is about fast failover within the same region. DR is about having a remote facility that can take over if the primary is destroyed. Both are needed.
-- **[[Failover]] procedures must be tested regularly**: A procedure that's never been executed under real pressure is just documentation. Test quarterly and record metrics (time to failover, data loss, customer impact).
+- **High-availability-ha and [[disaster-recovery]] are different**: HA is about fast failover within the same region. DR is about having a remote facility that can take over if the primary is destroyed. Both are needed.
+- **Failover procedures must be tested regularly**: A procedure that's never been executed under real pressure is just documentation. Test quarterly and record metrics (time to failover, data loss, customer impact).
 - **Single-point-of-failure analysis must include supplier contracts**: A 72-hour diesel supply is meaningless if the fuel delivery contract expires. Audit supplier agreements like infrastructure.
 - **[[Redundancy]] on critical systems includes their dependencies**: Backup power is only useful if you can get fuel. Backup generators are only useful if cooling systems also survive. Think about second and third-order dependencies.
-- **[[Diversity]] reduces risk of correlated failures**: Two power feeds from the same utility can fail together. Two generators from the same manufacturer might have the same defect. Two data centers in the same region can both experience the same natural disaster.
-- **[[Capacity-planning]] must account for worst-case load**: Generators rated for "100% facility load" might fail if load spikes beyond expectations during stress (cooling systems working overtime, security systems ramped up, etc.).
+- **Diversity reduces risk of correlated failures**: Two power feeds from the same utility can fail together. Two generators from the same manufacturer might have the same defect. Two data centers in the same region can both experience the same natural disaster.
+- **Capacity-planning must account for worst-case load**: Generators rated for "100% facility load" might fail if load spikes beyond expectations during stress (cooling systems working overtime, security systems ramped up, etc.).
 
 ## Related Cases
 

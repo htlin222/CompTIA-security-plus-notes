@@ -25,6 +25,7 @@ The attack was discovered by pure chance. A junior developer, Sarah, noticed tha
 If Jason had delayed responding to Sarah's email by even two hours, the malicious code would have been deployed to production and distributed to thousands of customers' security infrastructure. The attack would have given the attacker access to networks where Proxima's security software was installed—a devastating supply chain attack.
 
 The investigation revealed multiple security failures:
+
 1. **No [[mfa-fatigue-attacks]] detection**: There was no alerting when 47 authentication attempts arrived in rapid succession on a single user's account.
 2. **Weak password reuse prevention**: Jason's password had been compromised in the LinkedIn breach, but he hadn't changed it (LinkedIn breach was months old, but the credentials were only recently leaked on dark web forums).
 3. **Overly permissive admin access**: Jason had both administrative GitHub access and could force-push to protected branches without requiring approval.
@@ -48,10 +49,10 @@ The investigation revealed multiple security failures:
 
 ## Key Takeaways
 
-- **[[Mfa-fatigue-attacks]] require detection, not just prevention**: Implement alerts when a single user receives >5 MFA requests within 5 minutes. Automatically lock the account or require a new authentication challenge (FIDO2 hardware key, not push notification) after 3 failed attempts.
-- **[[Push-notifications]] for MFA should have built-in friction for late-night approvals**: If an authentication request comes in at an unusual time (outside the user's normal working hours), require additional confirmation (PIN code, or require using a hardware security key instead of push notification).
-- **[[Passwordless-authentication]] with hardware keys defeats [[mfa-fatigue-attacks]]**: If Jason had been using a FIDO2 hardware security key for [[something-you-have]] rather than push notifications, the attacker couldn't have remotely triggered an MFA fatigue attack.
-- **[[Privileged-access-management]] must restrict force-pushing**: High-privilege Git operations (force-push, branch deletion, protection rule changes) should require additional approval, MFA re-authentication, and possibly a separate admin account with hardware key.
+- **Mfa-fatigue-attacks require detection, not just prevention**: Implement alerts when a single user receives >5 MFA requests within 5 minutes. Automatically lock the account or require a new authentication challenge (FIDO2 hardware key, not push notification) after 3 failed attempts.
+- **Push-notifications for MFA should have built-in friction for late-night approvals**: If an authentication request comes in at an unusual time (outside the user's normal working hours), require additional confirmation (PIN code, or require using a hardware security key instead of push notification).
+- **Passwordless-authentication with hardware keys defeats [[mfa-fatigue-attacks]]**: If Jason had been using a FIDO2 hardware security key for [[something-you-have]] rather than push notifications, the attacker couldn't have remotely triggered an MFA fatigue attack.
+- **Privileged-access-management must restrict force-pushing**: High-privilege Git operations (force-push, branch deletion, protection rule changes) should require additional approval, MFA re-authentication, and possibly a separate admin account with hardware key.
 - **Build pipeline changes require code review enforcement**: Commits that modify `.github/workflows/` files or other build configuration should be locked to require explicit security team approval.
 - **Supply chain attack resilience requires build artifact verification**: Implement code signing for releases and cryptographic verification of compiler toolchains to prevent subtle backdoor injection.
 

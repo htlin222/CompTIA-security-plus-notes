@@ -15,8 +15,9 @@ TechCore Systems was in the final sprint to launch a critical customer-facing pr
 Two weeks before the launch, the security team was finally asked to audit the golden image as part of final security sign-off. The CISO assigned it to Marcus, who ran a standard [[cis-benchmarks]] scan using a CIS-provided scanning tool against the golden image. The results were devastating: 34% compliance with CIS Benchmarks Level 2.
 
 The issues Marcus discovered:
+
 - SSH was configured to allow root login and password authentication (CIS requires key-based auth and root login disabled)
-- The [[firewall-ruleset]] was disabled on all instances
+- The firewall-ruleset was disabled on all instances
 - Unnecessary services were running: X11 display server, printing daemons, IPv6 if unused
 - [[file-system-permissions]] on critical files (/etc/passwd, /etc/shadow, /etc/sudoers) were permissive
 - No logging agent was installed for centralized [[log-management]]
@@ -32,6 +33,7 @@ Marcus immediately escalated the findings to the product team leadership. The re
 The product team pushed back: "Can't we just deploy as-is and fix it after launch?" The CISO said no. But the product team went to the CTO, who was under enormous pressure from the CEO to hit the launch date. The compromise was rushed: Marcus had 48 hours to produce a remediated golden image, the engineering team would validate it in a single 8-hour staging test, and it would deploy to production.
 
 In those 48 hours, Marcus:
+
 - Implemented [[disable-unnecessary-services-and-ports]] by disabling X11, printing, unnecessary network services
 - Fixed [[file-system-permissions]] on sensitive system files
 - Implemented [[remove-default-accounts-and-passwords]] by disabling root login and enforcing SSH key authentication
@@ -64,11 +66,11 @@ The product launched successfully, but the security posture was compromised by t
 ## Key Takeaways
 
 - **Involve security in base image design from day one**: [[secure-baseline-images]] should be built by a joint team of security, operations, and engineering. Security review should happen before the image goes into production use.
-- **[[Cis-benchmarks]] are minimum baselines, not comprehensive hardening**: CIS provides good low-hanging fruit (SSH config, firewall, file permissions), but [[stig-security-technical-implementation-guide]] compliance requires additional hardening for critical systems.
-- **[[Least-functionality-principle]] should be enforced at the image level**: Remove development tools, debugging utilities, and unnecessary services at build time, not as an afterthought.
-- **[[Remove-default-accounts-and-passwords]] must be automatic**: Golden images should ship with root login disabled, default accounts removed, and SSH key-only authentication, not as optional hardening.
+- **Cis-benchmarks are minimum baselines, not comprehensive hardening**: CIS provides good low-hanging fruit (SSH config, firewall, file permissions), but [[stig-security-technical-implementation-guide]] compliance requires additional hardening for critical systems.
+- **Least-functionality-principle should be enforced at the image level**: Remove development tools, debugging utilities, and unnecessary services at build time, not as an afterthought.
+- **Remove-default-accounts-and-passwords must be automatic**: Golden images should ship with root login disabled, default accounts removed, and SSH key-only authentication, not as optional hardening.
 - **Build-time scanning enables quality gates**: Integrate [[cis-benchmarks]] scanning into the AMI build pipeline so non-compliant images never reach production. Fail the build, don't warn and hope.
-- **[[Registry-and-gpo-hardening]] should be declarative**: Use [[infrastructure-as-code-iac]] to codify hardening rules so they're repeatable, version-controlled, and auditable.
+- **Registry-and-gpo-hardening should be declarative**: Use [[infrastructure-as-code-iac]] to codify hardening rules so they're repeatable, version-controlled, and auditable.
 - **Hardening governance must include [[compliance]] enforcement**: Once hardening is deployed, implement ongoing compliance monitoring to prevent security teams from removing rules under operational pressure.
 
 ## Related Cases

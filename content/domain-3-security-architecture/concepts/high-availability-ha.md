@@ -1,11 +1,13 @@
 ---
 title: "High availability (HA)"
-description: "measured in \"nines\" (99.9% = 8.76 hours downtime/year; 99.999% = 5.26 minutes/year)"
+description: 'measured in "nines" (99.9% = 8.76 hours downtime/year; 99.999% = 5.26 minutes/year)'
 draft: false
 date: 2026-03-20
 tags:
   - domain/3
   - type/sub-topic
+aliases:
+  - HA
 ---
 
 ## Definition

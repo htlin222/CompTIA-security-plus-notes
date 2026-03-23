@@ -43,7 +43,7 @@ The team pivoted to crisis mode:
 
 4. **Export control assessment**: The external counsel conducted a formal review of the Japan collaboration data. While violations appeared to have occurred, the university researchers were classified as non-proliferation-risk parties, and the research was ultimately determined to be dual-use but not strictly controlled under current export regulations. The violations were reported to BIS proactively with a commitment to remediation, likely avoiding enforcement action.
 
-5. **[[Data-protection]] and [[handling-procedures]]**: New policies were implemented requiring classification at file creation, [[labeling-and-marking]] with metadata tags, and access control enforcement tied to classification levels.
+5. **Data-protection and [[handling-procedures]]**: New policies were implemented requiring classification at file creation, [[labeling-and-marking]] with metadata tags, and access control enforcement tied to classification levels.
 
 Six months later, Neuravance had a complete data inventory with formal classifications. All external researcher access was governed by documented agreements specifying exactly what data could be accessed and under what [[handling-procedures]]. The company implemented a [[data-states]] policy ensuring that classified data couldn't be exported to personal cloud storage or printed without audit logging.
 
@@ -59,16 +59,16 @@ Six months later, Neuravance had a complete data inventory with formal classific
 - **No [[data-protection]] baseline**: Companies that don't define classification levels early end up with this exact scenario: years of accumulated data with no way to determine what's sensitive.
 - **External collaborator access without [[handling-procedures]]**: Sharing intellectual property with external researchers without documented access controls and handling requirements is both a security and legal risk.
 - **Missing export control awareness**: Many biotech companies don't understand that certain research data requires export control compliance. This complacency can result in willful violations.
-- **[[Data-states]] without enforcement**: If classification and [[handling-procedures]] exist only in policy but aren't enforced technically (preventing email export, logging access, blocking personal cloud sync), compliance becomes advisory.
+- **Data-states without enforcement**: If classification and [[handling-procedures]] exist only in policy but aren't enforced technically (preventing email export, logging access, blocking personal cloud sync), compliance becomes advisory.
 - **No remediation pathway**: If Sarah had hidden the findings rather than reported them, a later discovery would have made things exponentially worse.
 
 ## Key Takeaways
 
-- **[[Data-classification]] must start early and be mandatory at creation**: Retroactive classification of 14TB is painful. Enforce classification as a metadata requirement when files are created.
-- **[[Classification-criteria]] should tie directly to [[handling-procedures]]**: Each classification level should specify: who can access it, how it can be stored, whether it can be shared externally, how long it must be retained, and how it must be destroyed.
-- **[[Government-military-classifications]] and export control require specialized expertise**: Biotech, aerospace, and defense companies must engage export control specialists. These regulations are complex and violations are severe.
+- **Data-classification must start early and be mandatory at creation**: Retroactive classification of 14TB is painful. Enforce classification as a metadata requirement when files are created.
+- **Classification-criteria should tie directly to [[handling-procedures]]**: Each classification level should specify: who can access it, how it can be stored, whether it can be shared externally, how long it must be retained, and how it must be destroyed.
+- **Government-military-classifications and export control require specialized expertise**: Biotech, aerospace, and defense companies must engage export control specialists. These regulations are complex and violations are severe.
 - **External collaborators need [[labeling-and-marking]] and [[handling-procedures]]**: Sharing data with universities, contractors, or international partners must be governed by explicit agreements that define classification levels and required handling.
-- **[[Data-states]] protection requires technical controls**: Classification in a spreadsheet doesn't prevent exfiltration. Implement DLP tools that enforce handling based on classification tags.
+- **Data-states protection requires technical controls**: Classification in a spreadsheet doesn't prevent exfiltration. Implement DLP tools that enforce handling based on classification tags.
 
 ## Related Cases
 

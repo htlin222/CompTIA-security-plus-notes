@@ -34,22 +34,21 @@ The [[certificate-formats]] transition was clean because Derek had standardized 
 ## What Could Go Wrong
 
 - **Monitoring on decommissioned infrastructure**: The ACME renewal cron job and its alerting were never migrated when the legacy certificate server was retired. This is a classic [[certificate-lifecycle]] failure pattern.
-- **Single certificate point of failure**: One wildcard covering the entire domain meant a single expiration took down all properties. [[Certificate-pinning]] or geographic distribution could have provided fallback options.
+- **Single certificate point of failure**: One wildcard covering the entire domain meant a single expiration took down all properties. Certificate-pinning or geographic distribution could have provided fallback options.
 - **No rehearsed renewal procedure**: The team had never walked through an actual renewal, so they didn't discover the configuration drift until crisis time. [[csr-certificate-signing-request]] procedures should be tested quarterly.
-- **[[Key-escrow]] friction created delays**: The three-hour audit trail and multiple approvals, while necessary for governance, almost caused the deadline to be missed. Emergency procedures need to be faster or have pre-authorized exception pathways.
+- **Key-escrow friction created delays**: The three-hour audit trail and multiple approvals, while necessary for governance, almost caused the deadline to be missed. Emergency procedures need to be faster or have pre-authorized exception pathways.
 - **Interdependent renewal systems**: The cron job failure had no fallback. There should have been a secondary renewal trigger (perhaps a monthly manual audit, or a monitoring system that pre-alerts 90 days before expiration).
 
 ## Key Takeaways
 
-- **[[Certificate-lifecycle]] automation must be monitored at every stage**: Not just "cert is valid," but "renewal was attempted," "renewal succeeded," and "new cert was deployed." Each step needs independent alerting.
-- **[[Certificate-formats]] and [[x509-certificate-fields]] decisions affect recovery**: A diverse certificate strategy reduces single-point-of-failure risk. Consider geographic distribution and alternative formats.
+- **Certificate-lifecycle automation must be monitored at every stage**: Not just "cert is valid," but "renewal was attempted," "renewal succeeded," and "new cert was deployed." Each step needs independent alerting.
+- **Certificate-formats and [[x509-certificate-fields]] decisions affect recovery**: A diverse certificate strategy reduces single-point-of-failure risk. Consider geographic distribution and alternative formats.
 - **Rehearse [[key-escrow]] and emergency procedures quarterly**: A 12-minute margin is too close. Emergency procedures should be tested under time pressure so teams know what to expect.
 - **Retire infrastructure completely**: When decommissioning old systems, audit every dependency—not just application code, but also cron jobs, scheduled tasks, monitoring rules, and certificate renewal pipelines.
-- **[[Revocation]] and renewal are different problems**: Plan for both normal [[certificate-lifecycle]] renewal and emergency reissuance. Different tools and procedures may be needed.
+- **Revocation and renewal are different problems**: Plan for both normal [[certificate-lifecycle]] renewal and emergency reissuance. Different tools and procedures may be needed.
 
 ## Related Cases
 
 - [[case-key-management]] — Understanding the broader context of key lifecycle and escrow policies that affect certificate renewal
 - [[case-pki]] — Deep dive into Public Key Infrastructure and certificate authority hierarchies that constrain renewal options
 - [[case-encryption]] — How certificate selection affects encryption strategy and system resilience
-

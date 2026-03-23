@@ -48,7 +48,7 @@ The financial damage was substantial: fraudulent bookings totaled $470,000 befor
 
 ## Key Takeaways
 
-- **[[credential-stuffing]] is effective because passwords are reused across services**: When LinkedIn, Yahoo, or Netflix are breached, those credentials work elsewhere. Organizations can't prevent external breaches, but they can [[detect|detect]] and [[defend|defend]] against credential stuffing attacks on their own platforms.
+- **[[credential-stuffing]] is effective because passwords are reused across services**: When LinkedIn, Yahoo, or Netflix are breached, those credentials work elsewhere. Organizations can't prevent external breaches, but they can detect and defend against credential stuffing attacks on their own platforms.
 
 - **[[brute-force]] attacks require rate limiting and account lockout**: Limit login attempts per IP (5–10 per minute), limit failures per account (lockout after 5–10 failures), implement CAPTCHA to distinguish bots from humans. These are trivial controls that should be standard on all login forms.
 

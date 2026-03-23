@@ -27,6 +27,7 @@ Traders stared at blank screens. The exchange sent warning messages that Velocit
 The incident response team, receiving alerts from the SOAR platform, immediately began investigating. They recognized the pattern—all 85 servers quarantined simultaneously—and suspected a false positive. But they couldn't quickly re-enable network access to 85 servers. The SOAR platform had to be overridden manually, each server restored individually, and each server's status verified before returning to service.
 
 The recovery took 47 minutes:
+
 - 0:00-5:00: Incident recognition and analysis
 - 5:00-15:00: Manual override of SOAR playbook (required administrative action on each server)
 - 15:00-47:00: Restoration of network connectivity and verification that services had recovered
@@ -50,11 +51,11 @@ During those 47 minutes, Velocity Trading lost approximately $2.1 million in tra
 ## Key Takeaways
 
 - **Automatic destructive actions require extremely high confidence thresholds**: Automatic quarantine should only trigger at 95+ threat scores, not 80+. For critical systems, require human approval even at 95+.
-- **[[Playbooksrunbooks]] must be tested extensively in staging**: Every [[orchestration]] playbook should be validated with: (1) real-world scenarios, (2) intentional false positives, (3) [[case-management]] workflow testing, and (4) disaster scenarios (what if the playbook itself fails?).
-- **[[Blast-radius]] limits protect against cascading failures**: Instead of quarantining all servers matching criteria simultaneously, implement staged quarantine: (1) quarantine 1 server, (2) wait 30 seconds for validation, (3) quarantine the next batch of 5, (4) continue monitoring before escalating.
+- **Playbooksrunbooks must be tested extensively in staging**: Every [[orchestration]] playbook should be validated with: (1) real-world scenarios, (2) intentional false positives, (3) [[case-management]] workflow testing, and (4) disaster scenarios (what if the playbook itself fails?).
+- **Blast-radius limits protect against cascading failures**: Instead of quarantining all servers matching criteria simultaneously, implement staged quarantine: (1) quarantine 1 server, (2) wait 30 seconds for validation, (3) quarantine the next batch of 5, (4) continue monitoring before escalating.
 - **Business context must inform [[automation]] decisions**: A SOAR playbook for a trading platform should not operate the same way as a playbook for a development environment. Critical systems need more stringent approval workflows.
-- **[[Case-management]] workflows should precede destructive actions**: Before quarantining servers, create an incident case that requires human approval. Automated quarantine should only follow approval unless in an active attack scenario.
-- **[[Metrics-and-reporting]] on false positive rates should trigger playbook tuning**: If false positive rates exceed 1%, the threshold or rule logic needs adjustment. Velocity Trading's SOAR should have been monitoring false positive metrics daily.
+- **Case-management workflows should precede destructive actions**: Before quarantining servers, create an incident case that requires human approval. Automated quarantine should only follow approval unless in an active attack scenario.
+- **Metrics-and-reporting on false positive rates should trigger playbook tuning**: If false positive rates exceed 1%, the threshold or rule logic needs adjustment. Velocity Trading's SOAR should have been monitoring false positive metrics daily.
 
 ## Related Cases
 

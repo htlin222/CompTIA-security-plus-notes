@@ -6,6 +6,8 @@ date: 2026-03-20
 tags:
   - domain/1
   - type/sub-topic
+aliases:
+  - SDP
 ---
 
 ## Definition

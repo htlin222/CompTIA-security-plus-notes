@@ -28,7 +28,7 @@ She convened the security leadership team. Over the next two weeks, they conduct
 
 4. **No [[monitoring-and-reporting]] cadence**: There was no established process for reporting security incidents, metrics, or strategic concerns to executive leadership, let alone the board.
 
-5. **[[Security-policies]] were incomplete**: While technical controls existed, many policies hadn't been formally documented, hadn't been through [[policy-lifecycle]] reviews, and hadn't been tied to [[regulations-and-frameworks]].
+5. **Security-policies were incomplete**: While technical controls existed, many policies hadn't been formally documented, hadn't been through [[policy-lifecycle]] reviews, and hadn't been tied to [[regulations-and-frameworks]].
 
 Michelle proposed a governance overhaul. Over the next eight weeks, she:
 
@@ -71,24 +71,24 @@ The SEC inquiry eventually settled with an undertaking to implement enhanced cyb
 - **Board mandate drove urgency**: When the board demanded governance structure, it became a business priority, not a security team wish list.
 - **Expertise-based committee structure**: The Security Committee included board members with cybersecurity, risk, and legal backgrounds, ensuring informed oversight.
 - **Risk register as central artifact**: A formalized [[risk-management]] register that tracked both strategic and tactical issues became the source of truth for board discussions.
-- **[[Due-diligence-vs-due-care]] clarity**: By documenting what the company was doing proactively (due care) and what would happen in response to incidents (due diligence), Michelle established accountability.
+- **Due-diligence-vs-due-care clarity**: By documenting what the company was doing proactively (due care) and what would happen in response to incidents (due diligence), Michelle established accountability.
 - **Metrics aligned to business impact**: Board-level dashboards focused on what matters to executives (incident trends, third-party risk, regulatory exposure, investment ROI), not technical details.
 
 ## What Could Go Wrong
 
 - **No [[board-and-executive-involvement]]**: Many companies try to manage cybersecurity entirely through technical teams without board oversight. When breaches happen, the lack of documented governance becomes regulatory liability.
-- **[[Centralized-vs-decentralized-governance]] drift**: If security decisions aren't formally assigned to specific people or committees, authority becomes unclear and decisions become political rather than risk-driven.
+- **Centralized-vs-decentralized-governance drift**: If security decisions aren't formally assigned to specific people or committees, authority becomes unclear and decisions become political rather than risk-driven.
 - **Metrics without [[monitoring-and-reporting]]**: Building metrics is only half the battle. They must be reported on a defined schedule (quarterly for boards) with clear ownership for discussing trends.
-- **[[Policy-lifecycle]] neglect**: Policies created once and never updated become stale and unenforceable. Governance should include a policy review schedule (usually annual).
+- **Policy-lifecycle neglect**: Policies created once and never updated become stale and unenforceable. Governance should include a policy review schedule (usually annual).
 - **Third-party risk ignored at board level**: This was DataVault's specific failure. The contractor credential compromise was a third-party risk that should have been a board-level discussion topic. [[governance-committees]] must include third-party risk oversight.
 
 ## Key Takeaways
 
-- **[[Board-and-executive-involvement]] in cybersecurity is now non-negotiable**: Public companies, regulated entities, and large enterprises must have board-level cybersecurity oversight. This is becoming standard governance expectation.
-- **[[Governance-committees]] focused on security accelerate decision-making**: A dedicated Security Committee removes cybersecurity from the audit committee's overloaded agenda and ensures expert oversight.
-- **[[Risk-management]] registers must be board-facing**: The board doesn't need to know vulnerability counts; they need to know risk trajectory, strategic threats, and third-party exposure.
-- **[[Roles-and-responsibilities]] must be explicit in writing**: "Someone should handle that" never works. Governance requires written clarity about who is accountable for what security decisions.
-- **[[Security-policies]] and [[policy-lifecycle]] are controls**: Policies aren't administrative overhead. They establish accountability, consistency, and the foundation for [[due-diligence-vs-due-care]] defense.
+- **Board-and-executive-involvement in cybersecurity is now non-negotiable**: Public companies, regulated entities, and large enterprises must have board-level cybersecurity oversight. This is becoming standard governance expectation.
+- **Governance-committees focused on security accelerate decision-making**: A dedicated Security Committee removes cybersecurity from the audit committee's overloaded agenda and ensures expert oversight.
+- **Risk-management registers must be board-facing**: The board doesn't need to know vulnerability counts; they need to know risk trajectory, strategic threats, and third-party exposure.
+- **Roles-and-responsibilities must be explicit in writing**: "Someone should handle that" never works. Governance requires written clarity about who is accountable for what security decisions.
+- **Security-policies and [[policy-lifecycle]] are controls**: Policies aren't administrative overhead. They establish accountability, consistency, and the foundation for [[due-diligence-vs-due-care]] defense.
 
 ## Related Cases
 

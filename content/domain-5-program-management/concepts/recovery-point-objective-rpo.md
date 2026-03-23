@@ -6,6 +6,8 @@ date: 2026-03-20
 tags:
   - domain/5
   - type/sub-topic
+aliases:
+  - RPO
 ---
 
 ## Definition
@@ -18,7 +20,7 @@ Recovery Point Objective (RPO) is the maximum amount of data loss an organizatio
 - Shorter RPO → more frequent backups → higher cost; organizations must balance RPO with backup infrastructure investment
 - Real-time replication achieves near-zero RPO; daily backups support RPO of ~24 hours
 - RPO ≠ RTO: RPO is about data loss; RTO is about system downtime
-- Exam tip: RPO determines *backup frequency*; a 1-hour RPO means backups or replication must occur at least hourly
+- Exam tip: RPO determines _backup frequency_; a 1-hour RPO means backups or replication must occur at least hourly
 
 ## Connections
 

@@ -28,6 +28,7 @@ Patricia had the same conversation weekly:
 **Patricia**: "Sure, let me create that mapping for you." (Internal thought: "I've done this five times this month for different customers.")
 
 Each mapping took 1-2 weeks of work because there was no central framework. The company had various policies and controls scattered across different systems:
+
 - [[iso-27001-27002]] documentation in Google Docs
 - [[pci-dss]] compliance matrix in Excel
 - [[nist-sp-800-53]] control narrative scattered across security team wikis
@@ -40,6 +41,7 @@ Patricia brought this problem to the CISO, Robert Martinez, and the CTO, Sarah K
 **The problem**: FinanceCore had implemented solid security controls (access management, encryption, monitoring, incident response), but the company had no central [[benchmarks-vs-frameworks]] alignment system. They were answering the same questions differently for each framework because there was no "source of truth" for what controls existed and where evidence lived.
 
 **The framework landscape**:
+
 - [[pci-dss]]: 12 requirements, 78 controls → focused on payment card security
 - [[hipaa]]: 18 requirements, 164 controls → focused on health data security
 - [[nist-cybersecurity-framework-csf]]: 5 functions, 22 categories, ~200 practices → focused on overall cybersecurity governance
@@ -78,6 +80,7 @@ Over three months, Robert and Patricia worked with the security and compliance t
 6. **Vendor questionnaire automation**: Patricia built a tool that would accept a customer questionnaire, match questions to controls in the repository, and auto-generate responses with links to evidence. For the 20% of custom questions that didn't fit the template, the team answered manually.
 
 By January 2025, the system was operational:
+
 - **PCI DSS**: Internally maintained (12-week audit cycle)
 - **HIPAA**: Internally maintained with annual independent audit
 - **ISO 27001**: Third-party certified, maintained through annual surveillance audits
@@ -109,9 +112,9 @@ Customer onboarding time dropped from 2-3 weeks to 3-5 days. Patricia's team wen
 ## Key Takeaways
 
 - **Master framework approach reduces complexity**: Instead of maintaining seven separate compliance programs, identify the one framework that best fits your business (ISO 27001 for enterprises, PCI DSS for payment processors, HIPAA for healthcare) and make it master, then map other requirements to it.
-- **[[Benchmarks-vs-frameworks]] serve different purposes**: Benchmarks like [[cis-controls]] describe "what good looks like." Frameworks like ISO describe "how to manage it." Use benchmarks to inform your control design; use frameworks for certification.
+- **Benchmarks-vs-frameworks serve different purposes**: Benchmarks like [[cis-controls]] describe "what good looks like." Frameworks like ISO describe "how to manage it." Use benchmarks to inform your control design; use frameworks for certification.
 - **Control repositories are essential infrastructure**: A central system mapping security controls to [[regulations-and-frameworks]] requirements, with evidence links, enables efficient compliance reporting and reduces manual work.
-- **[[Compliance-automation]] reduces questionnaire burden**: Tools that match customer questionnaires to your control repository and auto-generate responses save enormous time on customer onboarding.
+- **Compliance-automation reduces questionnaire burden**: Tools that match customer questionnaires to your control repository and auto-generate responses save enormous time on customer onboarding.
 - **Certification strategy matters**: Not every framework requires third-party certification. Strategic selection of which frameworks to certify (ISO, SOC 2) versus maintain internally (NIST CSF, CIS) optimizes cost.
 
 ## Related Cases

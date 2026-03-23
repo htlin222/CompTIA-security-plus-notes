@@ -35,12 +35,14 @@ Jennifer explained the technical challenge: Forcing a mass password reset to bcr
 Marcus and Jennifer developed a two-phase upgrade strategy:
 
 **Phase 1: Upgrade on Login (Silent Migration)**
-- Deploy a new authentication system that still accepts MD5-hashed passwords but generates [[digital-signatures|HMAC]] signatures of those hashes using a [[key-management|server-side secret]] key stored in an [[hardware-security-module|HSM]]
+
+- Deploy a new authentication system that still accepts MD5-hashed passwords but generates [[digital-signatures|HMAC]] signatures of those hashes using a [[key-management|server-side secret]] key stored in an HSM
 - When a user logs in with MD5 hash, the system would verify the old hash, then immediately upgrade the password to bcrypt using Argon2 as the [[hashing|password hashing]] algorithm
 - The new bcrypt hash would be stored in a separate table, replacing the old MD5 hash
 - This way, players wouldn't notice any difference, but their passwords would be upgraded to a modern [[hashing]] algorithm upon next login
 
 **Phase 2: Deadline-Based Reset (Forced for Non-Logins)**
+
 - Set a deadline (24 months) for any account still using MD5 to reset the password
 - Accounts that hadn't logged in by the deadline would be transitioned to bcrypt hashes with random [[key-splitting-secret-sharing|shared secrets]] (requiring a password reset on next login)
 
@@ -50,7 +52,7 @@ The implementation required careful [[key-management]]:
 
 2. **Key Rotation**: The signing key would be rotated quarterly. Old keys would be retained to support verification of old hashes, but new passwords would only use the current key.
 
-3. **[[Digital-signatures|HMAC-Based]] Verification**: The system would compute HMAC-SHA256 of each MD5 hash using the HSM key, preventing attackers who gained database access from forging new hashes without the key.
+3. **HMAC-Based Verification**: The system would compute HMAC-SHA256 of each MD5 hash using the HSM key, preventing attackers who gained database access from forging new hashes without the key.
 
 4. **Argon2 Configuration**: New passwords would use Argon2id with memory cost of 64MB, time cost of 3 iterations, and parallelism of 4—providing strong resistance against brute-force attacks while keeping login latency under 100ms.
 
@@ -64,7 +66,7 @@ By September 2025, fewer than 50,000 accounts still used MD5 hashing—all of th
 
 - **Proactive audit caught the problem**: The company didn't wait for a second breach. An objective assessment identified the weakness.
 - **Silent migration didn't disrupt players**: By upgrading passwords on login rather than forcing a reset, the company avoided user friction.
-- **[[Key-management|HSM-based]] signing protected the upgrade process**: The [[digital-signatures|HMAC signing key]] was never exposed to attackers, preventing forgery of new password hashes.
+- **HSM-based signing protected the upgrade process**: The [[digital-signatures|HMAC signing key]] was never exposed to attackers, preventing forgery of new password hashes.
 - **Fallback mechanisms existed**: SMS-based password reset and security questions provided recovery options for users with outdated email addresses.
 - **Clear timeline provided accountability**: The 24-month deadline meant that any remaining MD5 accounts were explicitly accepted as a legacy risk, not an oversight.
 
@@ -74,7 +76,7 @@ By September 2025, fewer than 50,000 accounts still used MD5 hashing—all of th
 - **Mass password reset would cause player churn**: Forcing 8 million players to reset passwords would alienate users and reduce monthly active users significantly—a business-ending scenario.
 - **Weak [[hashing]] algorithm (MD5) allowed crackers years of access**: Between 2018 and 2024, any attacker with the breached database could have cracked a significant percentage of passwords offline.
 - **Unsalted hashes meant identical passwords left identical hashes**: An attacker analyzing the 2018 breach database could identify accounts sharing the same password, revealing patterns or shared credentials.
-- **Missing [[key-rotation]]**: If the HSM signing key had never been rotated, compromise of the key would have compromised the entire upgrade process.
+- **Missing key-rotation**: If the HSM signing key had never been rotated, compromise of the key would have compromised the entire upgrade process.
 
 ## Key Takeaways
 
@@ -82,7 +84,7 @@ By September 2025, fewer than 50,000 accounts still used MD5 hashing—all of th
 - **[[Hashing|Password hashing]] should be computationally expensive**: Modern [[hashing|password hashing]] algorithms (Argon2id, bcrypt) are deliberately slow to resist brute-force attacks. Fast algorithms (MD5, SHA256) should only be used for integrity checking, not password storage.
 - **Salting is mandatory, not optional**: Every password hash must include a cryptographically random salt. This prevents rainbow table attacks and makes crack time proportional to the number of unique passwords, not accounts.
 - **Silent migration via login is the best approach for large user bases**: Forcing a mass password reset is operationally damaging. Upgrading passwords on next login is seamless and achieves 95%+ coverage without user friction.
-- **[[Key-management|HSM-based]] secrets protect the upgrade process**: If the system uses a signing key or secret during password migration, that key must be protected in an HSM. Never store such keys in application code or environment variables.
+- **HSM-based secrets protect the upgrade process**: If the system uses a signing key or secret during password migration, that key must be protected in an HSM. Never store such keys in application code or environment variables.
 - **Long-tail accounts are acceptable risk**: Some inactive accounts will retain weak passwords indefinitely. Setting a deadline (24 months) and then accepting the risk is reasonable governance—better than forcing a reset that will break dormant accounts.
 
 ## Related Cases
@@ -90,4 +92,3 @@ By September 2025, fewer than 50,000 accounts still used MD5 hashing—all of th
 - [[case-encryption]] — Cryptographic principles underlying [[hashing|password hashing]]
 - [[case-key-management]] — The HSM and key rotation strategies that protect password upgrade systems
 - [[case-pki]] — Digital certificates and their hashing-based integrity mechanisms
-

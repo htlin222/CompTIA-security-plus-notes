@@ -6,6 +6,8 @@ date: 2026-03-20
 tags:
   - domain/5
   - type/sub-topic
+aliases:
+  - MTD
 ---
 
 ## Definition

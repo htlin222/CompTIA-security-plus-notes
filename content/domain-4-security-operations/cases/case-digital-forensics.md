@@ -46,12 +46,12 @@ The evidence James captured that morning was later instrumental in securing guil
 
 ## Key Takeaways
 
-- **[[Live-forensics-vs-dead-forensics]] decisions determine what evidence you can recover**: Running memory is the most volatile—capture it first if servers must stay online. Powered-down systems require [[disk-imaging]] but preserve the exact state of the filesystem.
-- **[[Write-blockers]] are non-negotiable for evidence integrity**: Every storage device that contains evidence must be connected through a hardware write-blocker or not accessed at all. Software-based "read-only" mounts are never admissible.
-- **[[Chain-of-custody]] documentation is as important as the evidence itself**: Without precise documentation of who touched the evidence, when, and for how long, the evidence is inadmissible regardless of its quality. Include witness names, exact timestamps, and hashes.
-- **[[Hash-verification]] must be immediate and repeated**: Calculate hashes upon capture, upon transfer to storage, and before submitting to law enforcement or court. Any discrepancy means evidence tampering.
-- **[[Order-of-volatility]] prioritization prevents evidence loss**: Capture RAM first (volatile, lost on shutdown), then disk images (durable but sensitive to filesystem operations), then network traffic logs (semi-volatile).
-- **[[Anti-forensics]] awareness prevents mistakes**: Understand what actions alter timestamps (filesystem operations, backups), what creates new evidence (Windows indexing, macOS metadata), and what destroys it (defragmentation, encryption key destruction).
+- **Live-forensics-vs-dead-forensics decisions determine what evidence you can recover**: Running memory is the most volatile—capture it first if servers must stay online. Powered-down systems require [[disk-imaging]] but preserve the exact state of the filesystem.
+- **Write-blockers are non-negotiable for evidence integrity**: Every storage device that contains evidence must be connected through a hardware write-blocker or not accessed at all. Software-based "read-only" mounts are never admissible.
+- **Chain-of-custody documentation is as important as the evidence itself**: Without precise documentation of who touched the evidence, when, and for how long, the evidence is inadmissible regardless of its quality. Include witness names, exact timestamps, and hashes.
+- **Hash-verification must be immediate and repeated**: Calculate hashes upon capture, upon transfer to storage, and before submitting to law enforcement or court. Any discrepancy means evidence tampering.
+- **Order-of-volatility prioritization prevents evidence loss**: Capture RAM first (volatile, lost on shutdown), then disk images (durable but sensitive to filesystem operations), then network traffic logs (semi-volatile).
+- **Anti-forensics awareness prevents mistakes**: Understand what actions alter timestamps (filesystem operations, backups), what creates new evidence (Windows indexing, macOS metadata), and what destroys it (defragmentation, encryption key destruction).
 
 ## Related Cases
 

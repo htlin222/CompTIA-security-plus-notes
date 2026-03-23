@@ -82,11 +82,11 @@ New instance launches continued, but now they were effective. By 2:40 PM (25 min
 
 The [[active-active-vs-active-passive|active-active]] HAProxy pair had performed well—neither instance bottlenecked. The [[resilience-and-redundancy|scaling mechanisms]] had worked. The problem was entirely the [[health-checks]] logic.
 
-## Post-Incident Review
+### Post-Incident Review
 
 In the aftermath, the team realized several design failures:
 
-**1. [[Health-checks]] Weren't Representative of Real Work**:
+**1. Health-checks Weren't Representative of Real Work**:
 - The original [[health-checks]] endpoint didn't exercise the application's actual code paths
 - It didn't check resource availability (connection pools, thread pools, queue depth)
 - It didn't measure response time or queue wait time
@@ -120,11 +120,11 @@ In the aftermath, the team realized several design failures:
 
 ## Key Takeaways
 
-- **[[Health-checks]] must verify real application health, not just process availability**: A good health check measures queue depth, connection pool availability, recent error rates, and GC pressure—not just "is the process running?"
+- **Health-checks must verify real application health, not just process availability**: A good health check measures queue depth, connection pool availability, recent error rates, and GC pressure—not just "is the process running?"
 - **Health check latency adds to overall system load**: If you have 100 servers and check each one every second, that's 100 requests/second dedicated to health checks. Consider [[caching]] or reducing check frequency under load.
-- **[[Scheduling-algorithms|Weighted load distribution]] is better than round-robin**: When servers have different capacities or are under different load, round-robin causes imbalance. Use [[scheduling-algorithms|least-connections]] or adaptive weighting.
+- **Weighted load distribution is better than round-robin**: When servers have different capacities or are under different load, round-robin causes imbalance. Use [[scheduling-algorithms|least-connections]] or adaptive weighting.
 - **Graceful degradation requires circuit breaker patterns**: When a server becomes overloaded, gradually reducing traffic to it (circuit breaker) is better than dropping it cold and causing a cascade on remaining servers.
-- **[[Active-active-vs-active-passive|Active-active]] is better than passive failover**: With active-active load balancers, no single point of failure can take down the entire system. Both instances actively serve traffic.
+- **Active-active is better than passive failover**: With active-active load balancers, no single point of failure can take down the entire system. Both instances actively serve traffic.
 - **Surge testing should use realistic traffic patterns**: A 10x surge is unusual. Test with expected load patterns, then with 2x, 5x, and 10x to understand where the system breaks and to validate health checks and scaling behavior.
 
 ## Related Cases
