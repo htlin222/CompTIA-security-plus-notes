@@ -1,0 +1,54 @@
+---
+title: "Zero Trust"
+description: "Security model that assumes no implicit trust and verifies every access request continuously"
+draft: false
+date: 2026-03-20
+tags:
+  - domain/1
+  - concept/network
+  - weight/high
+aliases:
+  - "Zero Trust Architecture"
+  - "ZTA"
+---
+
+## Overview
+
+Zero Trust is a security model built on the principle of "never trust, always verify." Unlike traditional perimeter-based security, Zero Trust assumes that threats exist both inside and outside the network and requires continuous verification of every user, device, and connection before granting access. It has become a major focus of the SY0-701 exam due to its growing adoption across industries.
+
+## Key Concepts
+
+- **Core principles**:
+  - Verify explicitly — authenticate and authorize based on all available data points
+  - Use least-privilege access — limit access with just-in-time and just-enough-access (JIT/JEA)
+  - Assume breach — minimize blast radius and segment access; verify end-to-end encryption
+- **Control plane vs. Data plane**
+  - **Control plane** — policy engine and policy administrator that make access decisions
+  - **Data plane** — policy enforcement points that allow or deny traffic based on control plane decisions
+- **[[policy-engine|Policy engine]]** — evaluates access requests against defined policies, risk signals, and threat intelligence
+- **[[policy-administrator|Policy administrator]]** — establishes and removes communication paths based on policy engine decisions
+- **[[policy-enforcement-point-pep|Policy enforcement point (PEP)]]** — gateway that enforces access decisions at the data plane level
+- **[[adaptive-identity|Adaptive identity]]** — authentication and authorization that adjust based on real-time risk assessment
+- **[[implicit-trust-zones|Implicit trust zones]]** — Zero Trust aims to eliminate these; every zone is treated as untrusted
+- **Microsegmentation** — breaking the network into small zones to contain lateral movement (see [[network-segmentation]])
+- **[[software-defined-perimeter-sdp|Software-defined perimeter (SDP)]]** — creates one-to-one connections between users and resources; hides infrastructure
+
+## Exam Tips
+
+> [!tip] Remember
+> Zero Trust = **Control Plane** (decisions) + **Data Plane** (enforcement). Know the three components: Policy Engine, Policy Administrator, Policy Enforcement Point. The exam specifically tests the plane architecture.
+
+> [!tip] Key Distinction
+> Zero Trust is NOT just about the network — it covers identity, devices, applications, data, and infrastructure. If a question mentions "eliminating implicit trust," the answer is Zero Trust.
+
+## Connections
+
+- Relies heavily on [[mfa]] for continuous identity verification at every access request
+- Implemented through [[network-segmentation]] and microsegmentation to limit lateral movement
+- Requires robust [[authentication]] that goes beyond simple credentials
+- Complements [[defense-in-depth]] by adding verification layers within each security tier
+- Supported by [[endpoint-security]] to validate device posture before granting access
+
+## Scenario
+
+> See [[case-zero-trust]] for a practical DevOps scenario applying these concepts.
