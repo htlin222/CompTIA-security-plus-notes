@@ -47,6 +47,58 @@ Incident response (IR) is the organized approach to addressing and managing the 
 - [[digital-forensics]] provides the evidence collection and analysis techniques used during IR
 - [[soar]] automates containment and eradication steps defined in IR playbooks
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Incident Response (4 Questions)
+>
+> **Q1.** A SOC analyst detects ransomware actively encrypting files on a workstation that is connected to a shared network drive containing critical business data. What should the analyst do FIRST?
+>
+> A. Begin eradicating the malware from the workstation
+> B. Isolate the affected workstation from the network to contain the threat
+> C. Restore the encrypted files from the latest backup
+> D. Conduct a lessons learned meeting with the team
+>
+> > [!answer]- Show Answer
+> > **B. Isolate the affected workstation from the network to contain the threat**
+> >
+> > [[containment]] must come before eradication — the analyst must stop the ransomware from spreading to the shared drive and other network resources. Option A skips containment, allowing continued encryption of network files during eradication. Option C is a recovery step that should occur after containment and eradication. Option D is a post-incident activity, not an immediate response action.
+>
+> **Q2.** After successfully containing and eradicating a security breach, the incident response team restores affected systems from clean backups and monitors them for signs of reinfection. Which phase of the NIST IR lifecycle does this represent?
+>
+> A. Preparation
+> B. Detection and Analysis
+> C. Recovery
+> D. Post-Incident Activity
+>
+> > [!answer]- Show Answer
+> > **C. Recovery**
+> >
+> > The [[recovery]] phase involves restoring systems to normal operations and monitoring for signs of re-infection to ensure the threat has been fully eliminated. Option A occurs before any incident and involves building the IR capability. Option B involves identifying and understanding the incident. Option D ([[lessons-learned-post-incident-review|lessons learned]]) occurs after recovery and focuses on documenting improvements.
+>
+> **Q3.** An organization's incident response team conducts a discussion-based exercise where team members walk through a simulated phishing attack scenario, reviewing their roles and response procedures without touching any actual systems. What type of exercise is this?
+>
+> A. Penetration test
+> B. Tabletop exercise
+> C. Red team engagement
+> D. Vulnerability scan
+>
+> > [!answer]- Show Answer
+> > **B. Tabletop exercise**
+> >
+> > [[tabletop-exercises]] are discussion-based simulations that walk through incident response scenarios without interacting with live systems, testing team coordination and procedure familiarity. Option A actively exploits vulnerabilities on real systems. Option C simulates real adversary attacks against production infrastructure. Option D is an automated technical assessment, not a team exercise.
+>
+> **Q4.** During the post-incident review of a data breach, the IR team discovers that the initial containment was delayed by two hours because the on-call analyst could not reach the network team to isolate the affected VLAN. What should the organization improve PRIMARILY based on this finding?
+>
+> A. Deploy more advanced EDR tools
+> B. Update the communication plan with clear escalation paths and emergency contacts
+> C. Increase the frequency of vulnerability scans
+> D. Implement full disk encryption on all servers
+>
+> > [!answer]- Show Answer
+> > **B. Update the communication plan with clear escalation paths and emergency contacts**
+> >
+> > The [[communication-plan]] is critical to incident response effectiveness. The delay was caused by a communication breakdown, not a technical control gap. The [[lessons-learned-post-incident-review|lessons learned]] phase exists specifically to identify and address such process failures. Option A addresses detection capability, not communication. Option C addresses vulnerability discovery, not incident response speed. Option D protects data at rest, unrelated to the communication issue.
+
 ## Scenario
 
 > See [[case-incident-response]] for a practical DevOps scenario applying these concepts.

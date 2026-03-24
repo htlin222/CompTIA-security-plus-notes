@@ -50,6 +50,58 @@ Authorization is the process of determining what an authenticated entity is allo
 - Critical to [[zero-trust]] where authorization is continuously evaluated based on context
 - Managed at scale through [[privileged-access-management]] and [[identity-management]]
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Authorization (4 Questions)
+>
+> **Q1.** A developer implements a third-party application that allows users to grant it read-only access to their cloud storage files without sharing their password. Which protocol is MOST likely being used?
+>
+> A. SAML
+> B. OpenID Connect
+> C. OAuth 2.0
+> D. Kerberos
+>
+> > [!answer]- Show Answer
+> > **C. OAuth 2.0**
+> >
+> > [[oauth-20|OAuth 2.0]] is an authorization framework designed for delegated access — it issues access tokens that allow a third-party application to access resources on behalf of a user without exposing their credentials. SAML is primarily used for federated authentication and single sign-on, not delegated resource access. OpenID Connect adds an authentication layer on top of OAuth but the scenario describes authorization (granting access), not authentication (proving identity). Kerberos is a ticket-based authentication protocol used in Active Directory, not for third-party delegated access.
+>
+> **Q2.** A firewall administrator reviews a rule set and notices that a packet does not match any configured rule. What action will the firewall MOST likely take?
+>
+> A. Allow the traffic and log the event
+> B. Forward the traffic to a honeypot for analysis
+> C. Deny the traffic based on implicit deny
+> D. Queue the traffic for manual administrator review
+>
+> > [!answer]- Show Answer
+> > **C. Deny the traffic based on implicit deny**
+> >
+> > [[implicit-deny|Implicit deny]] is a core security principle stating that if no rule explicitly grants access, access is denied by default. This applies to firewalls, ACLs, and access control systems. Allowing unmatched traffic would violate the principle of least privilege and create a security hole. Forwarding to a honeypot requires an explicit rule and is not default firewall behavior. Queuing for manual review is impractical for real-time network traffic processing and is not standard behavior.
+>
+> **Q3.** A compliance officer discovers that a single database administrator can create user accounts, assign permissions, and approve their own access changes without any oversight. Which authorization principle is MOST directly violated?
+>
+> A. Principle of least privilege
+> B. Separation of duties
+> C. Implicit deny
+> D. Permission inheritance
+>
+> > [!answer]- Show Answer
+> > **B. Separation of duties**
+> >
+> > [[separation-of-duties|Separation of duties]] requires that critical tasks be divided among multiple people to prevent fraud and errors — one person controlling account creation, permission assignment, and self-approval violates this principle. While least privilege may also be partially violated (the DBA may have more access than needed), the core issue is that a single person controls all aspects of a critical process. Implicit deny relates to default access denial, not role separation. Permission inheritance concerns how child objects receive parent permissions, which is unrelated.
+>
+> **Q4.** An organization implements a system where access to financial applications is automatically restricted when a user connects from an unrecognized device or an unusual geographic location. Which authorization concept does this BEST illustrate?
+>
+> A. Role-Based Access Control
+> B. Implicit deny
+> C. Conditional access
+> D. OAuth 2.0 token scoping
+>
+> > [!answer]- Show Answer
+> > **C. Conditional access**
+> >
+> > [[conditional-access|Conditional access]] dynamically adjusts authorization decisions based on real-time risk signals such as device compliance, location, and user behavior — exactly what is described. RBAC assigns permissions based on static role membership, not real-time contextual signals. Implicit deny blocks all traffic not explicitly allowed, but does not evaluate dynamic conditions like location or device posture. OAuth 2.0 token scoping limits what a third-party application can do, not user access based on contextual risk.
+
 ## Scenario
 
 > See [[case-authorization]] for a practical DevOps scenario applying these concepts.

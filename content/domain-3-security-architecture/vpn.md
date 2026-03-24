@@ -48,6 +48,58 @@ A Virtual Private Network (VPN) extends a private network across a public networ
 - Part of the broader [[network-security-architecture]] as a remote access component
 - See also [[network-segmentation]] for controlling what VPN users can access once connected
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: VPN (4 Questions)
+>
+> **Q1.** A remote employee needs to connect to the corporate network from a hotel that blocks most outbound ports except 80 and 443. Which VPN protocol is MOST likely to work in this situation?
+>
+> A. IPSec in tunnel mode
+> B. SSL/TLS VPN using port 443
+> C. L2TP without IPSec
+> D. PPTP
+>
+> > [!answer]- Show Answer
+> > **B. SSL/TLS VPN using port 443**
+> >
+> > [[vpn|SSL/TLS VPNs]] operate over HTTPS (port 443), which is typically allowed through restrictive firewalls and hotel networks. IPSec (A) uses protocols and ports (UDP 500, ESP protocol 50) that are commonly blocked by restrictive firewalls. L2TP without IPSec (C) provides no encryption. PPTP (D) uses port 1723 and GRE protocol, which are commonly blocked and the protocol itself is considered insecure.
+>
+> **Q2.** A company configures its VPN so that only traffic destined for corporate resources goes through the VPN tunnel, while personal browsing goes directly to the internet. Which VPN configuration is this?
+>
+> A. Full tunnel
+> B. Split tunnel
+> C. Always-on VPN
+> D. Site-to-site VPN
+>
+> > [!answer]- Show Answer
+> > **B. Split tunnel**
+> >
+> > [[vpn|Split tunnel]] routes only corporate-destined traffic through the VPN while allowing other traffic to go directly to the internet. Full tunnel (A) routes all traffic through the VPN regardless of destination. Always-on VPN (C) describes automatic connection behavior, not routing policy. Site-to-site VPN (D) connects entire networks together, not individual user routing decisions.
+>
+> **Q3.** An organization connects two office locations using an IPSec VPN. The entire original IP packet, including headers, is encrypted and encapsulated. Which IPSec mode is being used?
+>
+> A. Transport mode
+> B. Tunnel mode
+> C. Aggressive mode
+> D. Main mode
+>
+> > [!answer]- Show Answer
+> > **B. Tunnel mode**
+> >
+> > [[vpn|IPSec tunnel mode]] encrypts the entire original packet including headers and adds new outer headers, which is the standard mode for site-to-site VPNs. Transport mode (A) only encrypts the payload, leaving original headers intact, and is used for host-to-host communication. Aggressive mode (C) and main mode (D) are IKE negotiation phases, not IPSec encapsulation modes.
+>
+> **Q4.** A security policy requires that all company laptops automatically establish a VPN connection whenever they are powered on, ensuring continuous policy enforcement. Which VPN feature satisfies this requirement?
+>
+> A. Split tunnel configuration
+> B. SSL/TLS VPN with browser-based access
+> C. Always-on VPN
+> D. VPN concentrator with load balancing
+>
+> > [!answer]- Show Answer
+> > **C. Always-on VPN**
+> >
+> > [[always-on-vpn|Always-on VPN]] automatically establishes a VPN connection when the device powers on, ensuring that corporate security policies are continuously enforced. Split tunnel (A) is a routing configuration, not an automatic connection feature. Browser-based SSL/TLS VPN (B) requires manual user action to connect. A VPN concentrator (D) terminates VPN connections but does not control whether clients connect automatically.
+
 ## Scenario
 
 > See [[case-vpn]] for a practical DevOps scenario applying these concepts.

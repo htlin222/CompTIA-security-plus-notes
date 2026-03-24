@@ -46,6 +46,58 @@ Security awareness training is a program designed to educate all personnel about
 - Directly reduces risk from social engineering attacks covered in [[risk-management]]
 - See also [[governance]] for how training programs are mandated and funded by leadership
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Security Awareness Training (4 Questions)
+>
+> **Q1.** A company's security team sends a fake phishing email to all employees and tracks who clicks the malicious link. This activity is BEST described as a:
+>
+> A. Penetration test
+> B. Phishing simulation
+> C. Vulnerability assessment
+> D. Social engineering audit
+>
+> > [!answer]- Show Answer
+> > **B. Phishing simulation**
+> >
+> > A [[phishing-simulations|phishing simulation]] is a controlled exercise where fake phishing emails are sent to employees to test awareness and measure click rates. A penetration test (A) attempts to exploit technical vulnerabilities in systems, not test employee behavior. A vulnerability assessment (C) identifies technical weaknesses using scanning tools. A social engineering audit (D) is broader and typically involves multiple attack vectors, not just email.
+>
+> **Q2.** A financial institution's developers keep introducing SQL injection vulnerabilities into production code despite general security training. Which training approach would MOST effectively address this issue?
+>
+> A. Increase the frequency of general awareness training
+> B. Implement role-based training focused on secure coding
+> C. Add gamification elements to existing training
+> D. Send more phishing simulations to the development team
+>
+> > [!answer]- Show Answer
+> > **B. Implement role-based training focused on secure coding**
+> >
+> > [[role-based-training|Role-based training]] ensures that specific roles receive training relevant to their responsibilities. Developers need secure coding training, not just general awareness. Increasing general training frequency (A) would not address the specific technical gap. Gamification (C) improves engagement but does not change the content to cover secure coding. Phishing simulations (D) test email awareness, not coding practices.
+>
+> **Q3.** After implementing a security awareness program, which metric would BEST indicate that employee behavior is improving over time?
+>
+> A. Number of security policies published
+> B. Total training hours completed
+> C. Decrease in phishing simulation click rates over successive campaigns
+> D. Number of security tools deployed
+>
+> > [!answer]- Show Answer
+> > **C. Decrease in phishing simulation click rates over successive campaigns**
+> >
+> > [[metrics|Phishing click rates]] directly measure behavioral change, which is the goal of awareness training. A declining click rate shows employees are recognizing and avoiding threats. Policies published (A) measures documentation, not behavior. Training hours (B) measures participation but not effectiveness. Security tools deployed (D) measures technical investment, not human awareness.
+>
+> **Q4.** An employee reports a suspicious email to the security team. Upon investigation, it turns out to be a legitimate marketing message. The manager wants to reprimand the employee for wasting the security team's time. What is the BEST response from the CISO?
+>
+> A. Agree with the manager and issue a warning to the employee
+> B. Explain that reporting should be encouraged, even for false positives, to maintain a culture of security
+> C. Require the employee to retake security awareness training
+> D. Implement an automated filter so employees do not need to report emails
+>
+> > [!answer]- Show Answer
+> > **B. Explain that reporting should be encouraged, even for false positives, to maintain a culture of security**
+> >
+> > A [[culture-of-security|culture of security]] encourages reporting suspicious activity without fear of punishment, even when reports turn out to be false positives. Reprimanding the employee (A) would discourage future reporting. Requiring retraining (C) punishes correct behavior and could deter others from reporting. Automated filters (D) are useful but should supplement, not replace, human vigilance and reporting.
+
 ## Scenario
 
 > See [[case-security-awareness-training]] for a practical DevOps scenario applying these concepts.

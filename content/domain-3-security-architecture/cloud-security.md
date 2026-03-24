@@ -48,6 +48,58 @@ Cloud security addresses the unique risks and shared responsibilities of deployi
 - See also [[serverless-and-containers]] for securing modern cloud-native deployment models
 - Data protection in the cloud depends on [[encryption]] for data at rest and in transit
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Cloud Security (4 Questions)
+>
+> **Q1.** A company migrates its email system to a SaaS provider. Under the shared responsibility model, which of the following is the customer MOST responsible for?
+>
+> A. Patching the email server operating system
+> B. Managing physical data center security
+> C. Controlling user access and data classification
+> D. Maintaining the hypervisor infrastructure
+>
+> > [!answer]- Show Answer
+> > **C. Controlling user access and data classification**
+> >
+> > In the [[shared-responsibility-model|shared responsibility model]] for SaaS, the provider manages nearly everything including infrastructure, OS, and application. The customer remains responsible for their data and access management. Patching the OS (A), physical security (B), and hypervisor maintenance (D) are all provider responsibilities in a SaaS model.
+>
+> **Q2.** A security team discovers that several cloud storage buckets have been left publicly accessible due to misconfigurations. Which cloud security tool is BEST suited to detect this type of issue?
+>
+> A. CASB (Cloud Access Security Broker)
+> B. CSPM (Cloud Security Posture Management)
+> C. CWPP (Cloud Workload Protection Platform)
+> D. DLP (Data Loss Prevention)
+>
+> > [!answer]- Show Answer
+> > **B. CSPM (Cloud Security Posture Management)**
+> >
+> > [[cloud-security|CSPM]] specifically monitors cloud environments for misconfigurations such as publicly exposed storage buckets. CASB (A) enforces security policies between users and cloud services but focuses on access control and shadow IT. CWPP (C) protects running workloads, not configuration posture. DLP (D) detects unauthorized data transfers but does not identify infrastructure misconfigurations.
+>
+> **Q3.** An organization uses multiple cloud providers to avoid vendor lock-in and increase resilience. Which cloud deployment model does this describe?
+>
+> A. Hybrid cloud
+> B. Community cloud
+> C. Private cloud
+> D. Multi-cloud
+>
+> > [!answer]- Show Answer
+> > **D. Multi-cloud**
+> >
+> > [[cloud-deployment-models|Multi-cloud]] involves using services from multiple cloud providers, which reduces vendor lock-in and increases availability. Hybrid cloud (A) combines on-premises infrastructure with a public cloud, not multiple public providers. Community cloud (B) is shared among organizations with common interests. Private cloud (C) is dedicated to a single organization.
+>
+> **Q4.** A development team stores API keys and database passwords in environment variables within their cloud platform. A security architect recommends a more secure approach. Which solution BEST addresses this concern?
+>
+> A. Encrypting the environment variables with a symmetric key stored in the same environment
+> B. Using a dedicated secrets management service with access controls and audit logging
+> C. Hardcoding the credentials in the application source code
+> D. Sharing credentials via encrypted email to team members
+>
+> > [!answer]- Show Answer
+> > **B. Using a dedicated secrets management service with access controls and audit logging**
+> >
+> > A [[secrets-management|secrets management]] service (such as AWS Secrets Manager or HashiCorp Vault) provides centralized, access-controlled, auditable storage for credentials. Encrypting variables with a key in the same environment (A) still exposes the key alongside the secrets. Hardcoding credentials in source code (C) is the worst practice and risks exposure through version control. Sharing via email (D) creates uncontrolled copies and is not scalable.
+
 ## Scenario
 
 > See [[case-cloud-security]] for a practical DevOps scenario applying these concepts.

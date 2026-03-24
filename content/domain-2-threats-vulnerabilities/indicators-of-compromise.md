@@ -47,6 +47,58 @@ Indicators of Compromise (IoCs) are pieces of forensic evidence — such as file
 - [[threat-intelligence]] provides IoCs from external sources to enhance organizational detection
 - May reveal specific [[malware-types]] through file hashes and behavioral patterns
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Indicators of Compromise (4 Questions)
+>
+> **Q1.** A SOC analyst notices that a workstation makes HTTPS connections to the same external IP address every 60 seconds, regardless of user activity. Which indicator of compromise does this BEST represent?
+>
+> A. Impossible travel
+> B. Beaconing
+> C. Data exfiltration via DNS
+> D. Credential stuffing
+>
+> > [!answer]- Show Answer
+> > **B. Beaconing**
+> >
+> > Regular-interval outbound connections are classic beaconing behavior, indicating [[network-based-indicators|C2 (command and control) communication]] from malware checking in with its controller. Impossible travel (A) refers to logins from geographically distant locations in short timeframes. DNS exfiltration (C) uses DNS queries, not HTTPS connections. Credential stuffing (D) is a [[password-attacks|password attack]], not a network traffic pattern.
+>
+> **Q2.** An incident response team receives a threat intelligence feed containing SHA-256 file hashes, malicious IP addresses, and domain names associated with a new malware campaign. These are distributed using STIX format over TAXII protocol. What category of security data is this?
+>
+> A. Indicators of Attack (IoA)
+> B. Vulnerability disclosures
+> C. Indicators of Compromise (IoC)
+> D. Penetration testing results
+>
+> > [!answer]- Show Answer
+> > **C. Indicators of Compromise (IoC)**
+> >
+> > File hashes, malicious IPs, and domain names shared via [[stixtaxii|STIX/TAXII]] are classic IoCs — forensic artifacts used to detect known threats. IoAs (A) are behavioral signals indicating an active attack in progress, not static artifacts like hashes. Vulnerability disclosures (B) describe software weaknesses, not threat artifacts. Penetration testing results (D) are assessment findings, not threat intelligence data.
+>
+> **Q3.** A security team discovers a new administrator account that no one in IT created, along with several scheduled tasks running PowerShell scripts at 2 AM. Which type of indicators are these?
+>
+> A. Network-based indicators
+> B. Email indicators
+> C. Host-based indicators
+> D. Behavioral indicators
+>
+> > [!answer]- Show Answer
+> > **C. Host-based indicators**
+> >
+> > Unauthorized user accounts and suspicious scheduled tasks are [[host-based-indicators]] — evidence found on the compromised system itself. Network-based indicators (A) involve traffic patterns, IPs, and domains. Email indicators (B) relate to phishing addresses and malicious attachments. Behavioral indicators (D) describe user activity patterns like unusual login times, though the scheduled tasks overlap somewhat — the unauthorized account and system-level artifacts make host-based the BEST answer.
+>
+> **Q4.** After deploying new IoC signatures from a threat feed, a company's SIEM generates hundreds of alerts for legitimate software updates being flagged as malicious. What is this situation BEST described as?
+>
+> A. True positive
+> B. False positive
+> C. Indicator of Attack
+> D. Beaconing
+>
+> > [!answer]- Show Answer
+> > **B. False positive**
+> >
+> > Legitimate activity matching IoC patterns is a [[false-positives|false positive]], requiring tuning to reduce alert fatigue. A true positive (A) would mean the alerts correctly identified actual malicious activity. An Indicator of Attack (C) describes behavioral signals of an active attack, not a detection accuracy issue. Beaconing (D) is a specific C2 communication pattern, not a term for detection errors.
+
 ## Scenario
 
 > See [[case-indicators-of-compromise]] for a practical DevOps scenario applying these concepts.

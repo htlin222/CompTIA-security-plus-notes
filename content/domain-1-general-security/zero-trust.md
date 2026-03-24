@@ -52,6 +52,58 @@ Zero Trust is a security model built on the principle of "never trust, always ve
 - Complements [[defense-in-depth]] by adding verification layers within each security tier
 - Supported by [[endpoint-security]] to validate device posture before granting access
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Zero Trust (4 Questions)
+>
+> **Q1.** An organization redesigns its network so that every access request — whether from inside the corporate office or from a remote location — must be authenticated and authorized before any resource is accessible. No user or device is automatically trusted based on network location. Which security model does this BEST describe?
+>
+> A. Defense in depth
+> B. Perimeter-based security
+> C. Zero Trust
+> D. Network segmentation
+>
+> > [!answer]- Show Answer
+> > **C. Zero Trust**
+> >
+> > [[zero-trust|Zero Trust]] operates on the principle of "never trust, always verify" — every access request is authenticated and authorized regardless of network location, eliminating implicit trust. Defense in depth uses multiple layers of controls but does not specifically require that internal traffic be continuously verified. Perimeter-based security is the opposite approach, trusting traffic once it passes the perimeter. Network segmentation is a technique used within Zero Trust but is not the overarching model described.
+>
+> **Q2.** In a Zero Trust architecture, which component is responsible for evaluating access requests against defined policies, risk signals, and threat intelligence to make allow/deny decisions?
+>
+> A. Policy enforcement point (PEP)
+> B. Policy engine
+> C. Policy administrator
+> D. Data plane gateway
+>
+> > [!answer]- Show Answer
+> > **B. Policy engine**
+> >
+> > The [[policy-engine|policy engine]] evaluates access requests against defined policies, risk signals, and threat intelligence to make access decisions in the control plane. The [[policy-enforcement-point-pep|PEP]] enforces those decisions at the data plane level but does not make the decisions itself. The [[policy-administrator|policy administrator]] establishes and removes communication paths based on the policy engine's decisions but does not evaluate requests. The data plane is where enforcement occurs, not where decisions are made.
+>
+> **Q3.** A security architect is implementing Zero Trust and needs to limit an attacker's ability to move laterally after compromising a single workstation. Which technique MOST directly supports this goal?
+>
+> A. Multi-factor authentication
+> B. Microsegmentation
+> C. Full disk encryption
+> D. Security awareness training
+>
+> > [!answer]- Show Answer
+> > **B. Microsegmentation**
+> >
+> > [[network-segmentation|Microsegmentation]] breaks the network into small zones with individual access controls, directly containing lateral movement by limiting what a compromised host can reach. MFA strengthens identity verification but does not restrict network movement after a host is compromised. Full disk encryption protects data at rest on the device but does not prevent network-based lateral movement. Security awareness training is a preventive administrative control targeting human behavior, not network containment.
+>
+> **Q4.** A Zero Trust implementation requires that a user's access level automatically adjusts when they connect from a new device or an unusual location, potentially requiring additional verification steps. Which Zero Trust concept does this BEST illustrate?
+>
+> A. Implicit trust zones
+> B. Software-defined perimeter
+> C. Adaptive identity
+> D. Policy enforcement point
+>
+> > [!answer]- Show Answer
+> > **C. Adaptive identity**
+> >
+> > [[adaptive-identity|Adaptive identity]] adjusts authentication and authorization requirements based on real-time risk assessment — new devices or unusual locations increase risk signals, triggering additional verification. [[implicit-trust-zones|Implicit trust zones]] are what Zero Trust aims to eliminate, not a feature it implements. A [[software-defined-perimeter-sdp|software-defined perimeter]] creates one-to-one connections between users and resources but does not dynamically adjust authentication requirements. The [[policy-enforcement-point-pep|PEP]] enforces access decisions but does not determine the adaptive risk-based adjustments.
+
 ## Scenario
 
 > See [[case-zero-trust]] for a practical DevOps scenario applying these concepts.

@@ -45,6 +45,58 @@ Threat hunting is the proactive, human-driven process of searching through netwo
 - Findings may escalate into [[incident-response]] when active threats are confirmed
 - Leverages [[indicators-of-compromise]] as starting points for intelligence-driven hunts
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Threat Hunting (4 Questions)
+>
+> **Q1.** A security analyst reads a threat intelligence report about a new APT group targeting organizations in their industry using a specific PowerShell-based attack technique. The analyst decides to search EDR telemetry for evidence of this technique across the environment. What type of threat hunting is this?
+>
+> A. Baseline-driven hunting
+> B. Intelligence-driven hunting
+> C. Automated vulnerability scanning
+> D. Compliance-driven auditing
+>
+> > [!answer]- Show Answer
+> > **B. Intelligence-driven hunting**
+> >
+> > [[intelligence-driven-hunting]] uses threat intelligence reports, IoCs, or known TTPs as starting points for proactive searches. The analyst is using a specific threat report to guide their hunt. Option A ([[baseline-driven-hunting]]) looks for deviations from normal behavior without a specific threat in mind. Option C is automated and reactive, not proactive and human-driven. Option D verifies compliance controls, not adversary presence.
+>
+> **Q2.** A threat hunter notices that a domain controller is making outbound HTTPS connections to an IP address in a country where the organization has no business presence. The SIEM never alerted on this activity because no rule existed for it. This scenario BEST demonstrates why threat hunting is important because:
+>
+> A. It replaces the need for SIEM correlation rules
+> B. It proactively discovers threats that evade automated detection systems
+> C. It eliminates false positives from security tools
+> D. It automates incident response workflows
+>
+> > [!answer]- Show Answer
+> > **B. It proactively discovers threats that evade automated detection systems**
+> >
+> > Threat hunting assumes the network may already be compromised and seeks evidence of adversary activity that automated systems missed. This is a core principle of proactive hunting. Option A is incorrect — hunting complements SIEM, it does not replace it. Successful hunts often result in new SIEM rules. Option C relates to tuning, not hunting. Option D describes [[soar]] capabilities, not threat hunting.
+>
+> **Q3.** A threat hunting team wants to structure their hunts around known adversary behaviors, mapping techniques like "credential dumping" and "lateral movement via SMB" to specific detection opportunities. Which framework is MOST appropriate for organizing these hunts?
+>
+> A. NIST Cybersecurity Framework
+> B. MITRE ATT&CK framework
+> C. ISO 27001
+> D. PCI-DSS
+>
+> > [!answer]- Show Answer
+> > **B. MITRE ATT&CK framework**
+> >
+> > The [[mitre-attck-framework|MITRE ATT&CK framework]] is a knowledge base of adversary tactics, techniques, and procedures (TTPs) specifically designed to structure threat detection and hunting activities. Option A provides high-level cybersecurity guidance, not granular adversary technique mapping. Option C is an information security management standard. Option D is a payment card industry compliance standard.
+>
+> **Q4.** After completing a successful threat hunt that uncovered a compromised service account, the hunting team documents their findings and creates new SIEM detection rules to automatically alert on similar activity in the future. At which level of the hunt maturity model does creating new detection content from hunt results place the organization?
+>
+> A. HM0 — Initial, relying entirely on automated alerts
+> B. HM1 — Minimal, using basic threat intelligence searches
+> C. HM4 — Leading, creating new detection content from hunt findings
+> D. HM2 — Procedural, following documented hunting procedures
+>
+> > [!answer]- Show Answer
+> > **C. HM4 — Leading, creating new detection content from hunt findings**
+> >
+> > The [[hunt-maturity-model]] places organizations that create new automated detection content based on hunt results at the highest maturity level (HM4). This closes the loop between proactive hunting and automated detection. Option A describes organizations that only rely on existing automated alerts. Option B involves basic searches using external intelligence. Option D follows documented procedures but does not necessarily create new detection capabilities.
+
 ## Scenario
 
 > See [[case-threat-hunting]] for a practical DevOps scenario applying these concepts.

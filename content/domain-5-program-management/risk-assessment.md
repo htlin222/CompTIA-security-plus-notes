@@ -44,6 +44,58 @@ A risk assessment is the evaluation phase of risk management where identified th
 - Assessment results drive priorities in [[vulnerability-management]] — high-risk findings get patched first
 - See also [[audits-and-assessments]] for how risk assessments fit into the broader audit and review process
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Risk Assessment (4 Questions)
+>
+> **Q1.** A web server valued at $200,000 faces a threat with an exposure factor of 25% and an annualized rate of occurrence of 2. What is the Annualized Loss Expectancy (ALE)?
+>
+> A. $50,000
+> B. $100,000
+> C. $200,000
+> D. $400,000
+>
+> > [!answer]- Show Answer
+> > **B. $100,000**
+> >
+> > Using the [[quantitative-risk-assessment|quantitative formulas]]: SLE = AV x EF = $200,000 x 0.25 = $50,000. ALE = SLE x ARO = $50,000 x 2 = $100,000. Answer A ($50,000) is the SLE, not the ALE. Answer C ($200,000) is the asset value. Answer D ($400,000) incorrectly doubles the asset value.
+>
+> **Q2.** A security team gathers department heads to rate threats as high, medium, or low based on their experience and judgment. No financial data is used. This approach BEST describes which type of risk assessment?
+>
+> A. Quantitative risk assessment
+> B. Qualitative risk assessment
+> C. Vulnerability assessment
+> D. Threat assessment
+>
+> > [!answer]- Show Answer
+> > **B. Qualitative risk assessment**
+> >
+> > A [[qualitative-risk-assessment|qualitative risk assessment]] uses subjective ratings based on expert judgment rather than numerical values. Quantitative (A) would require dollar values and formulas like SLE and ALE. A vulnerability assessment (C) identifies specific technical weaknesses, not broad risk ratings. A threat assessment (D) evaluates threat sources and capabilities but is narrower in scope than a full risk assessment.
+>
+> **Q3.** An organization's risk assessment reveals that the ALE for a ransomware attack is $500,000, while a proposed email filtering solution costs $75,000 annually. Based on this analysis, what is the BEST recommendation?
+>
+> A. Accept the risk because ransomware is unlikely
+> B. Implement the control because the ALE exceeds the control cost
+> C. Transfer the risk to a cyber insurance provider instead
+> D. Avoid the risk by disconnecting from the internet
+>
+> > [!answer]- Show Answer
+> > **B. Implement the control because the ALE exceeds the control cost**
+> >
+> > When [[quantitative-risk-assessment|ALE exceeds the cost of a control]], implementing the control is financially justified. Accepting the risk (A) is inappropriate when a cost-effective mitigation exists. Transferring to insurance (C) could be part of a strategy but does not address the root cause when a preventive control is available and affordable. Avoiding risk by disconnecting (D) is impractical and would halt business operations.
+>
+> **Q4.** A company performs risk assessments only when a major incident occurs. The security team recommends changing to a scheduled quarterly approach. Which assessment frequency model is the team moving FROM and TO?
+>
+> A. From continuous to recurring
+> B. From recurring to ad hoc
+> C. From ad hoc to recurring
+> D. From continuous to ad hoc
+>
+> > [!answer]- Show Answer
+> > **C. From ad hoc to recurring**
+> >
+> > [[ad-hoc-vs-recurring-vs-continuous|Ad hoc assessments]] are triggered by events (like incidents), while recurring assessments are performed on a fixed schedule (quarterly). The company is moving from event-triggered to scheduled. Moving from continuous to recurring (A) would be a downgrade, not an upgrade. From recurring to ad hoc (B) is the reverse of what is described. From continuous to ad hoc (D) is also the opposite direction.
+
 ## Scenario
 
 > See [[case-risk-assessment]] for a practical DevOps scenario applying these concepts.

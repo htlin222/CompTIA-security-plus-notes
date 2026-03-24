@@ -53,6 +53,58 @@ Social engineering is the art of manipulating people into performing actions or 
 - Physical social engineering (tailgating) addressed through [[physical-security]] controls
 - Credential theft from social engineering feeds into [[password-attacks]]
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Social Engineering (4 Questions)
+>
+> **Q1.** A CFO receives an email that appears to come from the company's external auditor, requesting an urgent wire transfer to a new account before end of business. The email uses the auditor's name, signature block, and references a real ongoing audit. Which type of social engineering attack is this MOST likely?
+>
+> A. Phishing
+> B. Spear phishing
+> C. Whaling
+> D. Vishing
+>
+> > [!answer]- Show Answer
+> > **C. Whaling**
+> >
+> > [[social-engineering|Whaling]] is a form of phishing that specifically targets high-level executives (C-suite), using highly personalized content and often involving financial requests — the CFO being targeted with an urgent wire transfer request is a classic whaling scenario. Spear phishing is targeted at specific individuals but the term "whaling" more precisely describes targeting executives. Generic phishing is untargeted mass email campaigns without personalization. [[vishing|Vishing]] uses voice calls, not email.
+>
+> **Q2.** A security team discovers that a popular industry forum frequently visited by their developers was compromised with a drive-by download exploit. Several developer workstations were infected after visiting the site. Which social engineering technique does this BEST describe?
+>
+> A. Baiting
+> B. Pretexting
+> C. Watering hole attack
+> D. Typosquatting
+>
+> > [!answer]- Show Answer
+> > **C. Watering hole attack**
+> >
+> > A [[watering-hole-attack|watering hole attack]] compromises a website frequently visited by the target group, exploiting the trust users place in familiar sites — the compromised industry forum targeting developers is a textbook example. [[baiting|Baiting]] offers something enticing like a USB drive or free download to lure victims, not compromising a trusted website. [[pretexting|Pretexting]] involves creating a fabricated scenario to extract information through direct interaction. [[typosquatting|Typosquatting]] registers domains similar to legitimate ones to capture mistyped URLs, not compromising legitimate sites.
+>
+> **Q3.** An employee holds the door open for a person carrying a large box who claims to be a delivery driver. The person is actually an unauthorized individual who gains access to the server room. Which physical social engineering technique was used?
+>
+> A. Tailgating
+> B. Piggybacking
+> C. Pretexting
+> D. Shoulder surfing
+>
+> > [!answer]- Show Answer
+> > **B. Piggybacking**
+> >
+> > [[tailgatingpiggybacking|Piggybacking]] occurs when an authorized person knowingly allows someone to follow them through a secured door — the employee intentionally held the door open. Tailgating occurs when someone follows through without the authorized person's knowledge or consent. While pretexting was used as part of the attack (claiming to be a delivery driver), the physical access technique itself is piggybacking. Shoulder surfing involves observing someone's screen or keyboard to steal information, not gaining physical access to a building.
+>
+> **Q4.** An attacker sends text messages to hundreds of employees claiming their corporate benefits enrollment will expire in 24 hours, with a link to a fake enrollment portal that harvests credentials. Which attack type and psychological principle are MOST involved?
+>
+> A. Phishing exploiting authority
+> B. Smishing exploiting urgency
+> C. Vishing exploiting fear
+> D. Spear phishing exploiting scarcity
+>
+> > [!answer]- Show Answer
+> > **B. Smishing exploiting urgency**
+> >
+> > [[smishing|Smishing]] is SMS-based phishing, and the 24-hour deadline creates urgency — a psychological principle that pressures victims into acting quickly without thinking critically. Phishing uses email, not text messages. [[vishing|Vishing]] uses voice calls, not text messages. Spear phishing is targeted at specific individuals, but this attack was sent to hundreds of employees indiscriminately, making it a mass smishing campaign rather than targeted spear phishing.
+
 ## Scenario
 
 > See [[case-social-engineering]] for a practical DevOps scenario applying these concepts.

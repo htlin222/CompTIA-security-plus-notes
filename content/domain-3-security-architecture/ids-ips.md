@@ -50,6 +50,58 @@ Intrusion Detection Systems (IDS) monitor network traffic or host activity to id
 - Complements [[firewalls]] by inspecting allowed traffic for malicious content
 - Related to [[indicators-of-compromise]] which define the patterns IDS/IPS use for detection
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: IDS/IPS (4 Questions)
+>
+> **Q1.** A company wants to automatically block malicious traffic in real time without requiring manual intervention from analysts. Which solution BEST meets this requirement?
+>
+> A. Network-based IDS (NIDS)
+> B. Network-based IPS (NIPS)
+> C. Host-based IDS (HIDS)
+> D. SIEM system
+>
+> > [!answer]- Show Answer
+> > **B. Network-based IPS (NIPS)**
+> >
+> > An [[ids-ips|IPS]] is deployed inline and can automatically block malicious traffic in real time. NIDS (A) detects and alerts but does not block traffic since it operates passively. HIDS (C) monitors individual hosts, not network traffic, and also only alerts. A SIEM (D) correlates and analyzes logs but does not directly block traffic.
+>
+> **Q2.** A newly deployed anomaly-based IDS is generating a large number of alerts for normal business activities. Which term BEST describes these alerts?
+>
+> A. True positives
+> B. False positives
+> C. True negatives
+> D. False negatives
+>
+> > [!answer]- Show Answer
+> > **B. False positives**
+> >
+> > [[ids-ips|False positives]] occur when normal activity is incorrectly flagged as malicious. Anomaly-based systems are particularly prone to this when baselines are not properly established. True positives (A) are correctly identified attacks. True negatives (C) are correctly identified normal traffic. False negatives (D) are missed attacks, which is the most dangerous outcome but not what is described here.
+>
+> **Q3.** A security team wants to detect a novel zero-day attack that has no known signature. Which IDS detection method is MOST likely to identify this threat?
+>
+> A. Signature-based detection
+> B. Anomaly-based (behavioral) detection
+> C. Pattern matching
+> D. Checksum verification
+>
+> > [!answer]- Show Answer
+> > **B. Anomaly-based (behavioral) detection**
+> >
+> > [[ids-ips|Anomaly-based detection]] establishes a baseline of normal behavior and flags deviations, making it capable of detecting previously unknown (zero-day) attacks. Signature-based detection (A) requires known attack patterns and cannot detect zero-days. Pattern matching (C) is a form of signature-based detection with the same limitation. Checksum verification (D) checks file integrity, not network traffic behavior.
+>
+> **Q4.** A network engineer needs to deploy an IDS that monitors traffic on a network segment. The IDS should receive copies of all traffic without being in the direct traffic path. Which deployment method is MOST appropriate?
+>
+> A. Deploy the IDS inline between the firewall and switch
+> B. Connect the IDS to a span port (port mirror) on the switch
+> C. Install the IDS as a host-based agent on each server
+> D. Deploy the IDS as a transparent bridge
+>
+> > [!answer]- Show Answer
+> > **B. Connect the IDS to a span port (port mirror) on the switch**
+> >
+> > An [[ids-ips|IDS operates passively]] and receives copies of traffic via span ports or network taps without being in the direct traffic path. Deploying inline (A) is how an IPS is deployed, not an IDS. Host-based agents (C) create HIDS, not NIDS for network segment monitoring. A transparent bridge (D) is an inline deployment method more suitable for IPS.
+
 ## Scenario
 
 > See [[case-ids-ips]] for a practical DevOps scenario applying these concepts.

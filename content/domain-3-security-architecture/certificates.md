@@ -49,6 +49,58 @@ A digital certificate is an electronic document that uses a digital signature to
 - Contains the public key used for [[encryption]] and digital signature operations
 - See also [[key-management]] for how the private keys associated with certificates are protected
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Certificates (4 Questions)
+>
+> **Q1.** A web administrator needs a single certificate to secure `mail.example.com`, `portal.example.com`, and `api.example.com`. Which certificate type is BEST suited for this requirement?
+>
+> A. Wildcard certificate
+> B. Extended Validation (EV) certificate
+> C. Subject Alternative Name (SAN) certificate
+> D. Self-signed certificate
+>
+> > [!answer]- Show Answer
+> > **C. Subject Alternative Name (SAN) certificate**
+> >
+> > A [[certificates|SAN certificate]] lists multiple specific domains on a single certificate, which is exactly what is needed here. A wildcard certificate (A) covers `*.example.com` subdomains but these are three specific subdomains that could also be served by a SAN, and SAN is more precise and preferred when the exact list is known. An EV certificate (B) provides highest identity assurance but does not inherently cover multiple domains. A self-signed certificate (D) would not be trusted by browsers and is only appropriate for internal testing.
+>
+> **Q2.** A security analyst discovers that a web server's private key has been compromised. What should the administrator do FIRST?
+>
+> A. Reissue the certificate with a longer key length
+> B. Revoke the certificate and request a new one
+> C. Switch from DV to EV validation
+> D. Convert the certificate from PEM to PKCS#12 format
+>
+> > [!answer]- Show Answer
+> > **B. Revoke the certificate and request a new one**
+> >
+> > When a private key is compromised, the FIRST step is to revoke the [[certificates|certificate]] through the CA using [[revocation|CRL or OCSP]] and then generate a new key pair and request a replacement. Reissuing with a longer key (A) does not address the current compromise. Switching validation levels (C) is unrelated to key compromise. Changing the [[certificate-formats|certificate format]] (D) has no security impact on a compromised key.
+>
+> **Q3.** A junior administrator generates a Certificate Signing Request (CSR) and sends it to a Certificate Authority. Which of the following is included in the CSR?
+>
+> A. The CA's private key
+> B. The applicant's private key
+> C. The applicant's public key
+> D. The root certificate chain
+>
+> > [!answer]- Show Answer
+> > **C. The applicant's public key**
+> >
+> > A [[csr-certificate-signing-request|CSR]] contains the applicant's public key and identity information. The CA signs this to create the certificate. The CA's private key (A) is used by the CA to sign, not included in the CSR. The applicant's private key (B) must never leave the applicant's control. The root certificate chain (D) is established by the CA infrastructure, not part of the CSR.
+>
+> **Q4.** A company wants to use HTTPS for its public website and needs the browser address bar to display the organization's verified legal name. Which certificate validation type provides this level of assurance?
+>
+> A. Domain Validation (DV)
+> B. Organization Validation (OV)
+> C. Extended Validation (EV)
+> D. Wildcard Validation
+>
+> > [!answer]- Show Answer
+> > **C. Extended Validation (EV)**
+> >
+> > [[certificates|Extended Validation (EV)]] certificates require the most rigorous identity verification and historically display the organization's legal name in the browser. DV certificates (A) only verify domain ownership with no organization identity. OV certificates (B) verify organization identity but do not provide the same browser-level visual assurance. Wildcard Validation (D) is not a validation level — wildcard refers to a certificate type covering subdomains, not a trust level.
+
 ## Scenario
 
 > See [[case-certificates]] for a practical DevOps scenario applying these concepts.

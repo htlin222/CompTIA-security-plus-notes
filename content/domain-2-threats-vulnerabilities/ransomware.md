@@ -46,6 +46,58 @@ Ransomware is a type of malware that encrypts a victim's files or locks system a
 - Uses [[encryption]] algorithms against the victim — strong crypto makes recovery without keys virtually impossible
 - Delivered through phishing ([[email-security]]) and exploits of [[vulnerability-types]]
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Ransomware (4 Questions)
+>
+> **Q1.** A ransomware group exfiltrates 500 GB of sensitive customer data before encrypting the victim's servers. They demand payment both for the decryption key and to prevent public release of the stolen data. Which ransomware tactic does this BEST describe?
+>
+> A. Locker ransomware
+> B. Single extortion
+> C. Double extortion
+> D. Ransomware-as-a-Service
+>
+> > [!answer]- Show Answer
+> > **C. Double extortion**
+> >
+> > [[double-extortion]] involves both encrypting data and threatening to publish exfiltrated data, creating two separate pressure points for payment. Locker ransomware (A) locks system access but does not exfiltrate data. Single extortion would only involve the encryption demand. Ransomware-as-a-Service (D) is a business model for distributing ransomware, not an extortion tactic.
+>
+> **Q2.** An organization's BEST defense against ransomware rendering their data unrecoverable is which of the following?
+>
+> A. Paying the ransom promptly to receive the decryption key
+> B. Maintaining offline, immutable backups following the 3-2-1 rule
+> C. Installing a host-based firewall on all endpoints
+> D. Deploying full-disk encryption on all servers
+>
+> > [!answer]- Show Answer
+> > **B. Maintaining offline, immutable backups following the 3-2-1 rule**
+> >
+> > Offline/immutable backups ensure data recovery without paying the ransom. The 3-2-1 rule (3 copies, 2 media types, 1 offsite) provides resilience against ransomware destroying accessible backups. Paying the ransom (A) is never recommended — there is no guarantee of decryption, and it funds criminal operations. Host-based firewalls (C) help prevent initial access but do not ensure data recovery. Full-disk encryption (D) protects data confidentiality but does not prevent ransomware from encrypting files on top of it.
+>
+> **Q3.** A criminal organization provides ransomware tools, infrastructure, and payment processing to affiliates who carry out the actual attacks, taking a percentage of each ransom collected. Which model does this describe?
+>
+> A. Double extortion
+> B. Triple extortion
+> C. Ransomware-as-a-Service (RaaS)
+> D. Advanced persistent threat (APT)
+>
+> > [!answer]- Show Answer
+> > **C. Ransomware-as-a-Service (RaaS)**
+> >
+> > [[ransomware-as-a-service-raas|RaaS]] is a criminal business model where developers provide ransomware tools to affiliates for a share of profits. Double extortion (A) and triple extortion (B) are attack tactics, not business models for distributing ransomware. APT (D) refers to sophisticated state-sponsored or organized threat groups, not specifically a ransomware distribution model.
+>
+> **Q4.** During a ransomware incident, investigators discover the malware spread across the entire flat network within minutes before detonating simultaneously on all systems. Which mitigation would have MOST reduced the blast radius of this attack?
+>
+> A. Security awareness training
+> B. Endpoint antivirus
+> C. Network segmentation
+> D. Email filtering
+>
+> > [!answer]- Show Answer
+> > **C. Network segmentation**
+> >
+> > [[network-segmentation]] divides the network into isolated zones, directly limiting [[lateral-movement]] and reducing the blast radius when ransomware detonates. Security awareness training (A) helps prevent initial infection but does not limit spread once malware is inside. Endpoint antivirus (B) may detect ransomware but failed in this scenario, and does not architecturally limit spread. Email filtering (D) blocks phishing delivery but does not prevent lateral movement across a flat network.
+
 ## Scenario
 
 > See [[case-ransomware]] for a practical DevOps scenario applying these concepts.

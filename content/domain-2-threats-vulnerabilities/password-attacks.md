@@ -48,6 +48,58 @@ Password attacks target the most common authentication mechanism â€” passwords â
 - Credential stuffing exploits reuse across services, highlighting the value of [[sso]] reducing password count
 - Password hashes may be obtained through [[network-attacks]] or compromised databases
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Password Attacks (4 Questions)
+>
+> **Q1.** An attacker obtains a database of username/password pairs from a breached social media site and uses them to attempt logins on banking and email services. Which password attack technique is this?
+>
+> A. Password spraying
+> B. Brute force
+> C. Credential stuffing
+> D. Rainbow table attack
+>
+> > [!answer]- Show Answer
+> > **C. Credential stuffing**
+> >
+> > [[credential-stuffing]] uses stolen credentials from one breach to log into other services, exploiting password reuse. Password spraying (A) tries a few common passwords against many accounts, not stolen credential pairs. Brute force (B) systematically tries all possible combinations, not known credentials from breaches. Rainbow table attacks (D) crack password hashes using precomputed tables, not login attempts with plaintext credentials.
+>
+> **Q2.** A security analyst notices that an attacker is trying the password "Winter2026!" against every user account in the organization, then moving to "Password1!" for all accounts. The attacker stays under the lockout threshold of 5 attempts per account. Which attack is this?
+>
+> A. Dictionary attack
+> B. Brute force
+> C. Credential stuffing
+> D. Password spraying
+>
+> > [!answer]- Show Answer
+> > **D. Password spraying**
+> >
+> > [[password-spraying]] tries a small number of common passwords against many accounts to avoid triggering lockout policies. A dictionary attack (A) tries many passwords against a single account. Brute force (B) tries all possible combinations against a target. Credential stuffing (C) uses specific stolen credential pairs, not common passwords against all accounts.
+>
+> **Q3.** An attacker obtains a database of password hashes and discovers they are unsalted. The attacker uses precomputed lookup tables to rapidly reverse the hashes back to plaintext passwords. Which attack technique is being used?
+>
+> A. Pass-the-hash
+> B. Kerberoasting
+> C. Rainbow table attack
+> D. Shoulder surfing
+>
+> > [!answer]- Show Answer
+> > **C. Rainbow table attack**
+> >
+> > [[rainbow-table-attack|Rainbow tables]] are precomputed hash-to-password lookup tables that rapidly crack unsalted hashes. [[salting|Salting]] defeats this attack by making each hash unique. Pass-the-hash (A) uses captured hashes directly for authentication without cracking them. Kerberoasting (B) extracts and cracks Kerberos service ticket hashes from Active Directory, a more specific attack. Shoulder surfing (D) involves physically observing password entry, not hash cracking.
+>
+> **Q4.** A penetration tester extracts NTLM hashes from a compromised Windows workstation and uses them to authenticate to other network resources without ever knowing the actual passwords. Which technique is this?
+>
+> A. Credential stuffing
+> B. Pass-the-hash
+> C. Dictionary attack
+> D. Keylogging
+>
+> > [!answer]- Show Answer
+> > **B. Pass-the-hash**
+> >
+> > [[pass-the-hash]] uses captured NTLM hashes to authenticate directly without knowing the plaintext password, exploiting Windows authentication protocols. Credential stuffing (A) uses known plaintext credentials from breaches, not hash values. A dictionary attack (C) attempts to crack passwords using wordlists, not authenticate with hashes. Keylogging (D) captures keystrokes to obtain plaintext passwords, not use hashes for authentication.
+
 ## Scenario
 
 > See [[case-password-attacks]] for a practical DevOps scenario applying these concepts.

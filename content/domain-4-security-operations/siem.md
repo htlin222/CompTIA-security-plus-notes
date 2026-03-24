@@ -46,6 +46,58 @@ Security Information and Event Management (SIEM) combines Security Information M
 - Enhanced by [[soar]] to automate incident response workflows triggered by SIEM alerts
 - Relies on [[log-management]] for proper collection and forwarding of source data
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: SIEM (4 Questions)
+>
+> **Q1.** A SOC team deploys a new SIEM platform but within the first week, analysts are overwhelmed by thousands of alerts per day, most of which turn out to be benign. What is the MOST likely cause and the BEST remediation?
+>
+> A. The SIEM hardware is undersized and needs more memory
+> B. The correlation rules need tuning to reduce false positives and alert fatigue
+> C. The SIEM should be replaced with an EDR solution
+> D. The SOC team needs to hire more Tier 1 analysts
+>
+> > [!answer]- Show Answer
+> > **B. The correlation rules need tuning to reduce false positives and alert fatigue**
+> >
+> > [[correlation-rules]] must be tuned to match the organization's environment to minimize false positives. A SIEM is only effective when alerts are meaningful and actionable. Option A may help with performance but does not address alert accuracy. Option C replaces detection scope (SIEM covers all sources; EDR covers endpoints only). Option D adds headcount but does not fix the root cause of excessive false alerts.
+>
+> **Q2.** An organization collects logs from firewalls, Windows servers, Linux servers, and cloud applications. Each source uses a different log format. What SIEM function ensures these disparate logs can be searched and correlated effectively?
+>
+> A. Log retention and archival
+> B. Normalization
+> C. Real-time alerting
+> D. Dashboard visualization
+>
+> > [!answer]- Show Answer
+> > **B. Normalization**
+> >
+> > [[normalization]] converts logs from different sources and formats into a common schema, enabling the SIEM to search, compare, and correlate events across all sources effectively. Option A governs how long logs are stored, not how they are formatted. Option C triggers notifications based on rules but requires normalized data to function. Option D presents data visually but depends on normalized data underneath.
+>
+> **Q3.** A SIEM correlation rule detects the following sequence: five failed login attempts on a domain controller from one IP, followed by a successful login from the same IP, followed by an unusual file download from a sensitive file server within 10 minutes. This type of detection is BEST described as:
+>
+> A. Signature-based antivirus detection
+> B. Multi-event correlation across log sources
+> C. Vulnerability scanning
+> D. Network bandwidth monitoring
+>
+> > [!answer]- Show Answer
+> > **B. Multi-event correlation across log sources**
+> >
+> > [[correlation-rules]] in a SIEM connect events from multiple sources (authentication logs, file server logs) across time to detect attack patterns that no single log source would reveal alone. Option A matches known malware signatures on endpoints, not cross-source event patterns. Option C identifies system weaknesses, not active attack sequences. Option D measures traffic volume, not authentication and access patterns.
+>
+> **Q4.** A SIEM platform uses machine learning to establish behavioral baselines for each user and alerts when a user accesses systems they have never accessed before at an unusual time. What is this capability called?
+>
+> A. Vulnerability assessment
+> B. User and Entity Behavior Analytics (UEBA)
+> C. Data loss prevention
+> D. Patch management
+>
+> > [!answer]- Show Answer
+> > **B. User and Entity Behavior Analytics (UEBA)**
+> >
+> > [[user-and-entity-behavior-analytics-ueba|UEBA]] uses machine learning to baseline normal user and entity behavior and detect anomalies such as unusual access patterns, times, or volumes. Option A identifies system weaknesses, not behavioral anomalies. Option C monitors for sensitive data leaving the organization. Option D manages software updates and is unrelated to behavioral analysis.
+
 ## Scenario
 
 > See [[case-siem]] for a practical DevOps scenario applying these concepts.

@@ -46,6 +46,58 @@ Email security encompasses the techniques and technologies used to protect email
 - [[encryption]] technologies (S/MIME, TLS) protect email content confidentiality
 - Phishing emails are a common delivery mechanism for [[malware-types]] and [[ransomware]]
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Email Security (4 Questions)
+>
+> **Q1.** A company's employees are receiving emails that appear to come from the CEO requesting urgent wire transfers. The emails pass basic spam filters because they originate from a lookalike domain. Which combination of controls would BEST prevent these attacks?
+>
+> A. Installing full disk encryption on all workstations
+> B. Implementing DMARC with a reject policy along with anti-phishing controls that detect impersonation
+> C. Deploying a host-based firewall on the email server
+> D. Requiring all employees to use S/MIME encryption
+>
+> > [!answer]- Show Answer
+> > **B. Implementing DMARC with a reject policy along with anti-phishing controls that detect impersonation**
+> >
+> > [[dmarc-domain-based-message-authentication-reporting-conformance|DMARC]] with a reject policy prevents spoofed emails from being delivered, while [[anti-phishing-controls]] with impersonation detection can catch [[business-email-compromise-bec|BEC]] attacks from lookalike domains. Option A protects data at rest, not email delivery. Option C filters network traffic, not email content. Option D encrypts email content but does not prevent spoofing or impersonation.
+>
+> **Q2.** A security administrator is configuring DNS records to prevent email spoofing. Which record type specifies which mail servers are authorized to send email on behalf of the organization's domain?
+>
+> A. DKIM
+> B. DMARC
+> C. SPF
+> D. MX
+>
+> > [!answer]- Show Answer
+> > **C. SPF**
+> >
+> > [[spf-sender-policy-framework|SPF (Sender Policy Framework)]] is a DNS TXT record that lists the IP addresses and mail servers authorized to send email for a domain. Option A ([[dkim-domainkeys-identified-mail|DKIM]]) adds a digital signature for message integrity verification, not sender authorization. Option B ([[dmarc-domain-based-message-authentication-reporting-conformance|DMARC]]) defines the policy for handling SPF/DKIM failures. Option D (MX records) specifies where to deliver incoming mail, not who can send outgoing mail.
+>
+> **Q3.** An organization wants to ensure that the content of sensitive emails between its legal team and an external law firm cannot be read if intercepted in transit. Which technology BEST meets this requirement?
+>
+> A. SPF records
+> B. DMARC policy
+> C. S/MIME encryption
+> D. Secure email gateway spam filtering
+>
+> > [!answer]- Show Answer
+> > **C. S/MIME encryption**
+> >
+> > [[smime|S/MIME]] provides certificate-based end-to-end [[email-encryption]] that protects email content confidentiality both in transit and at rest. Option A verifies sender authorization but does not encrypt content. Option B defines spoofing policies but does not encrypt content. Option D filters malicious content but does not encrypt legitimate communications.
+>
+> **Q4.** A security analyst notices that outbound emails containing credit card numbers are being blocked by the email system before reaching external recipients. Which email security control is MOST likely responsible?
+>
+> A. DKIM signature verification
+> B. Data Loss Prevention scanning
+> C. SPF record validation
+> D. Anti-malware attachment scanning
+>
+> > [!answer]- Show Answer
+> > **B. Data Loss Prevention scanning**
+> >
+> > [[data-loss-prevention-dlp|DLP]] scans outbound email for patterns matching sensitive data such as credit card numbers, PII, and intellectual property, blocking or quarantining messages that violate policy. Option A verifies message integrity on inbound mail, not outbound content. Option C validates sender authorization, not message content. Option D scans for malware in attachments, not sensitive data patterns.
+
 ## Scenario
 
 > See [[case-email-security]] for a practical DevOps scenario applying these concepts.

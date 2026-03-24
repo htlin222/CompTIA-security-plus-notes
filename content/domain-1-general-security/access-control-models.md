@@ -64,6 +64,58 @@ Access control models are formal frameworks that dictate how access decisions ar
 - MAC aligns with [[data-classification]] requirements in government and regulated industries
 - Attribute-based models support [[zero-trust]] by evaluating contextual signals for every access request
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Access Control Models (4 Questions)
+>
+> **Q1.** A defense contractor requires that all employees can only access documents at or below their assigned clearance level, and no user can override these restrictions regardless of their role. Which access control model BEST meets this requirement?
+>
+> A. Discretionary Access Control (DAC)
+> B. Role-Based Access Control (RBAC)
+> C. Mandatory Access Control (MAC)
+> D. Attribute-Based Access Control (ABAC)
+>
+> > [!answer]- Show Answer
+> > **C. Mandatory Access Control (MAC)**
+> >
+> > [[access-control-models|MAC]] uses system-enforced labels and clearance levels where users cannot change access permissions, making it the most restrictive model and ideal for military/government environments. DAC allows the resource owner to decide access, which violates the requirement that no user can override restrictions. RBAC assigns permissions based on roles but does not enforce classification labels. ABAC evaluates multiple attributes but does not inherently enforce hierarchical clearance levels.
+>
+> **Q2.** A hospital IT team needs an access control policy that grants doctors access to patient records only during business hours, from on-premises workstations, and only for patients in their assigned department. Which model provides the MOST granular enforcement of these conditions?
+>
+> A. Role-Based Access Control (RBAC)
+> B. Rule-Based Access Control
+> C. Mandatory Access Control (MAC)
+> D. Attribute-Based Access Control (ABAC)
+>
+> > [!answer]- Show Answer
+> > **D. Attribute-Based Access Control (ABAC)**
+> >
+> > [[access-control-models|ABAC]] evaluates multiple attributes simultaneously — user attributes (department), resource attributes (patient department), environment attributes (time and location) — making it the most granular and flexible model for complex conditional policies. RBAC assigns permissions based on roles but cannot natively enforce time-of-day or location conditions. Rule-based access can enforce simple conditions like time but lacks the multi-attribute evaluation ABAC provides. MAC uses classification labels, not contextual attributes like time and location.
+>
+> **Q3.** A security analyst discovers that a Trojan horse program inherited the file permissions of the user who executed it and exfiltrated sensitive documents the user owned. Which access control model weakness does this exploit PRIMARILY demonstrate?
+>
+> A. RBAC role explosion
+> B. DAC permission inheritance vulnerability
+> C. MAC label downgrade attack
+> D. ABAC attribute spoofing
+>
+> > [!answer]- Show Answer
+> > **B. DAC permission inheritance vulnerability**
+> >
+> > Under [[access-control-models|DAC]], programs run with the permissions of the executing user, so a Trojan horse inherits all the user's access rights — this is a well-known DAC weakness. RBAC role explosion refers to the problem of having too many roles to manage, not malware inheritance. MAC explicitly prevents this scenario because access is determined by system-enforced labels, not user ownership. ABAC attribute spoofing is a theoretical concern about falsifying attributes, not about program inheritance.
+>
+> **Q4.** A security architect needs to explain why the Bell-LaPadula model prevents a user with "Secret" clearance from writing data to an "Unclassified" document. Which principle does this restriction BEST enforce?
+>
+> A. Integrity through "no read down"
+> B. Confidentiality through "no write down"
+> C. Availability through access restrictions
+> D. Non-repudiation through audit logging
+>
+> > [!answer]- Show Answer
+> > **B. Confidentiality through "no write down"**
+> >
+> > The [[bell-lapadula-model|Bell-LaPadula model]] enforces confidentiality with "no read up, no write down." Preventing a Secret-cleared user from writing to an Unclassified document stops classified information from leaking to lower classification levels. "No read down" is a [[biba-model|Biba model]] integrity principle, not Bell-LaPadula. Availability is not the focus of either Bell-LaPadula or Biba. Non-repudiation involves proving who performed an action and is unrelated to classification-based access controls.
+
 ## Scenario
 
 > See [[case-access-control-models]] for a practical DevOps scenario applying these concepts.

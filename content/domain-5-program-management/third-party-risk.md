@@ -42,6 +42,58 @@ Third-party risk arises whenever an organization shares data, systems, or access
 - Related to [[compliance]] because regulations often require organizations to ensure third-party data handling meets standards
 - See also [[security-policies]] for acceptable use and vendor management policy requirements
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Third-Party Risk (4 Questions)
+>
+> **Q1.** A company discovers that its cloud storage provider was breached, exposing customer records that the company had uploaded. Investigation reveals the company never reviewed the provider's security controls before signing the contract. Which third-party risk management failure does this BEST illustrate?
+>
+> A. Lack of right-to-audit clause
+> B. Failure to perform vendor assessment
+> C. Vendor lock-in
+> D. Inadequate offboarding procedures
+>
+> > [!answer]- Show Answer
+> > **B. Failure to perform vendor assessment**
+> >
+> > [[vendor-assessment|Vendor assessment]] is the due diligence process of evaluating a vendor's security posture before onboarding, including reviewing questionnaires, SOC reports, and penetration test results. Not performing this is a fundamental TPRM failure. A right-to-audit clause (A) enables future audits but would not have prevented the initial lack of review. Vendor lock-in (C) is about dependency risk when switching providers. Offboarding (D) addresses end-of-relationship procedures, not pre-contract evaluation.
+>
+> **Q2.** During contract negotiations with a SaaS provider, the legal team insists on including a clause that allows the organization to inspect the provider's security controls annually. This clause is BEST known as a:
+>
+> A. Service Level Agreement
+> B. Data processing agreement
+> C. Right to audit
+> D. Non-disclosure agreement
+>
+> > [!answer]- Show Answer
+> > **C. Right to audit**
+> >
+> > The [[right-to-audit|right to audit]] is a contractual clause that grants the organization permission to audit or inspect the vendor's security controls. A Service Level Agreement (A) defines uptime and performance metrics, not inspection rights. A data processing agreement (B) defines how data is handled and stored. A non-disclosure agreement (D) protects confidential information shared between parties but does not grant audit rights.
+>
+> **Q3.** An organization's primary vendor uses a subcontractor to process sensitive data. The organization has no visibility into the subcontractor's security practices. This situation BEST describes which risk concept?
+>
+> A. Supply chain risk
+> B. Vendor lock-in
+> C. Fourth-party risk
+> D. Contractual compliance failure
+>
+> > [!answer]- Show Answer
+> > **C. Fourth-party risk**
+> >
+> > [[fourth-party-risk|Fourth-party risk]] is the risk from your vendor's vendors (subcontractors), where you may have no visibility or control over their security practices. Supply chain risk (A) is broader and includes hardware, software, and services in the entire chain, but the specific scenario of a vendor's subcontractor is fourth-party risk. Vendor lock-in (B) is about switching costs, not subcontractor visibility. Contractual compliance failure (D) would mean the vendor is violating contract terms, which may or may not be the case here.
+>
+> **Q4.** A company terminates its relationship with a managed security services provider. Which activity is MOST critical during the offboarding process?
+>
+> A. Negotiating a new SLA
+> B. Revoking the provider's access and ensuring secure data destruction
+> C. Conducting a phishing simulation on the provider's staff
+> D. Purchasing cyber insurance to cover the transition period
+>
+> > [!answer]- Show Answer
+> > **B. Revoking the provider's access and ensuring secure data destruction**
+> >
+> > [[offboarding|Offboarding]] requires revoking all access, retrieving or destroying data, and ensuring no residual access remains after the relationship ends. Negotiating a new SLA (A) applies to onboarding a new provider, not terminating an existing one. Conducting a phishing simulation (C) on the provider's staff is not part of offboarding and is outside the organization's authority. Purchasing cyber insurance (D) may be prudent generally but is not the most critical offboarding activity.
+
 ## Scenario
 
 > See [[case-third-party-risk]] for a practical DevOps scenario applying these concepts.

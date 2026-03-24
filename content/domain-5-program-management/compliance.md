@@ -42,6 +42,58 @@ Compliance is the practice of adhering to laws, regulations, industry standards,
 - Driven by external [[regulations-and-frameworks]] that define the specific requirements organizations must meet
 - See also [[governance]] for the organizational structure that enables compliance
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Compliance (4 Questions)
+>
+> **Q1.** A US-based online retailer begins accepting payments from customers in the European Union. Which regulation MOST likely introduces new compliance obligations for this company?
+>
+> A. HIPAA
+> B. SOX
+> C. GDPR
+> D. FERPA
+>
+> > [!answer]- Show Answer
+> > **C. GDPR**
+> >
+> > [[gdpr|GDPR]] applies to any organization that processes personal data of EU residents, regardless of where the company is headquartered. HIPAA (A) covers healthcare information, not retail. SOX (B) governs financial reporting integrity for publicly traded companies. FERPA (D) protects student education records.
+>
+> **Q2.** A company passes its annual security audit and achieves full compliance with PCI DSS. Three months later, it suffers a data breach due to an unpatched server. This scenario BEST illustrates which concept?
+>
+> A. Compliance automation eliminates all risk
+> B. Compliance does not equal security
+> C. External audits are unreliable
+> D. PCI DSS standards are insufficient
+>
+> > [!answer]- Show Answer
+> > **B. Compliance does not equal security**
+> >
+> > [[compliance|Compliance]] means meeting a defined set of requirements at a point in time, but it does not guarantee security against all threats. An organization can be compliant and still have vulnerabilities. Compliance automation (A) helps but cannot eliminate all risk. External audits (C) are valid assessments but only capture a snapshot. PCI DSS (D) is a robust standard; the issue is that compliance is a minimum bar, not a security guarantee.
+>
+> **Q3.** A multinational corporation stores customer data in data centers across three countries. The legal team warns that data handling requirements differ by location. Which compliance consideration is this an example of?
+>
+> A. Contractual compliance
+> B. Compliance monitoring
+> C. Geographic considerations
+> D. Industry standards
+>
+> > [!answer]- Show Answer
+> > **C. Geographic considerations**
+> >
+> > [[geographic-considerations|Geographic considerations]] address the fact that different jurisdictions impose different regulatory requirements, including data sovereignty laws. Contractual compliance (A) covers obligations in business agreements, not jurisdictional differences. Compliance monitoring (B) is the process of checking controls, not a type of requirement. Industry standards (D) apply across geographies and are not specific to jurisdictional variations.
+>
+> **Q4.** An organization's security team deploys a tool that continuously scans system configurations against CIS benchmarks and sends alerts when deviations are detected. This approach BEST represents which compliance concept?
+>
+> A. Compliance reporting
+> B. Compliance automation
+> C. Regulatory compliance
+> D. Internal vs. external compliance
+>
+> > [!answer]- Show Answer
+> > **B. Compliance automation**
+> >
+> > [[compliance-automation|Compliance automation]] uses tools to continuously assess configurations against baselines and flag deviations without manual intervention. Compliance reporting (A) is the documentation submitted to auditors, not the continuous scanning itself. Regulatory compliance (C) refers to meeting legal requirements, which this tool supports but does not specifically describe. Internal vs. external compliance (D) distinguishes between internal policies and regulatory requirements, which is unrelated to the automated scanning approach.
+
 ## Scenario
 
 > See [[case-compliance]] for a practical DevOps scenario applying these concepts.

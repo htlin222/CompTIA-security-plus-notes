@@ -48,6 +48,58 @@ Multi-Factor Authentication (MFA) requires users to present two or more verifica
 - Mitigates [[password-attacks]] — even if credentials are stolen, a second factor is needed
 - Key control in [[privileged-access-management]] for protecting high-risk accounts
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Multi-Factor Authentication (4 Questions)
+>
+> **Q1.** An organization requires employees to enter a password and a four-digit PIN to access the corporate VPN. A security consultant reviews this setup and identifies a weakness. What is the PRIMARY issue?
+>
+> A. The PIN should be at least eight digits long
+> B. Both factors are "something you know," so this is not true multi-factor authentication
+> C. The VPN should use biometric authentication exclusively
+> D. Passwords and PINs should never be used together
+>
+> > [!answer]- Show Answer
+> > **B. Both factors are "something you know," so this is not true multi-factor authentication**
+> >
+> > True MFA requires factors from DIFFERENT categories. A password and a PIN are both [[something-you-know]] factors, making this single-factor authentication with two instances. Option A addresses PIN strength but does not fix the single-factor problem. Option C is impractical for VPN access and eliminates other valid factor types. Option D is incorrect — passwords and PINs can be used together if combined with a factor from a different category.
+>
+> **Q2.** An employee reports receiving dozens of push notification authentication requests on their phone at 2 AM, even though they are not trying to log in. An attacker has obtained the employee's password and is attempting to gain access. What type of attack is this?
+>
+> A. SIM swapping
+> B. MFA fatigue attack
+> C. Credential stuffing
+> D. Keylogging
+>
+> > [!answer]- Show Answer
+> > **B. MFA fatigue attack**
+> >
+> > [[mfa-fatigue-attacks]] involve attackers repeatedly triggering push notifications, hoping the user will accidentally or frustratedly approve one to stop the notifications. Option A involves convincing a carrier to transfer a phone number, not bombarding with push requests. Option C is testing stolen credentials across multiple sites, not targeting push notifications. Option D captures keystrokes, which is how the password was likely obtained initially but is not the current attack.
+>
+> **Q3.** A bank is evaluating biometric authentication for its high-security vault access. The security team is concerned about unauthorized individuals being falsely accepted. Which metric should they prioritize minimizing?
+>
+> A. False Rejection Rate (FRR)
+> B. Crossover Error Rate (CER)
+> C. False Acceptance Rate (FAR)
+> D. Token expiration time
+>
+> > [!answer]- Show Answer
+> > **C. False Acceptance Rate (FAR)**
+> >
+> > For high-security environments, minimizing the [[something-you-are|FAR (False Acceptance Rate)]] is critical because it measures how often unauthorized users are incorrectly granted access. Option A (FRR) measures how often legitimate users are rejected — annoying but not a security breach. Option B (CER) is the balance point between FAR and FRR, not a tuning target for maximum security. Option D relates to token-based authentication, not biometrics.
+>
+> **Q4.** An organization is deploying FIDO2/WebAuthn security keys to replace passwords for employee authentication. Which category BEST describes this approach?
+>
+> A. Single-factor biometric authentication
+> B. Passwordless authentication using public key cryptography
+> C. Knowledge-based authentication
+> D. Time-based one-time password authentication
+>
+> > [!answer]- Show Answer
+> > **B. Passwordless authentication using public key cryptography**
+> >
+> > [[passwordless-authentication|FIDO2/WebAuthn]] uses public key cryptography to eliminate passwords entirely — the private key stays on the device while only the public key is shared with the service. Option A describes biometrics alone, which may be a component but not the full description. Option C describes passwords, PINs, and security questions — the opposite of passwordless. Option D describes [[totp-time-based-one-time-password|TOTP]], which is a different mechanism.
+
 ## Scenario
 
 > See [[case-mfa]] for a practical DevOps scenario applying these concepts.

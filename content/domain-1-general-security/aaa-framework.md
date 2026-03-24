@@ -52,6 +52,58 @@ The AAA (Authentication, Authorization, and Accounting) framework defines how us
 - Accounting feeds into [[log-management]] and [[siem]] for monitoring and incident detection
 - Essential for [[identity-management]] in security operations
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: AAA Framework (4 Questions)
+>
+> **Q1.** A network administrator wants to centrally manage login access for all 200 switches and routers in the enterprise. The solution must encrypt the entire authentication session and allow granular control over which commands each admin can execute. Which protocol is BEST suited for this requirement?
+>
+> A. RADIUS
+> B. TACACS+
+> C. Kerberos
+> D. LDAP
+>
+> > [!answer]- Show Answer
+> > **B. TACACS+**
+> >
+> > [[tacacs|TACACS+]] encrypts the entire payload (not just the password) and separates authentication, authorization, and accounting, making it ideal for device administration with granular command-level control. RADIUS only encrypts the password and combines authentication/authorization, making it less suitable for device admin. Kerberos is a ticket-based protocol used primarily in Active Directory environments, not for network device management. LDAP is a directory service protocol, not an AAA protocol.
+>
+> **Q2.** A company deploys a wireless network and needs to authenticate employees connecting via Wi-Fi and VPN. The chosen protocol should use UDP and handle large volumes of remote user connections efficiently. Which AAA protocol MOST likely meets this need?
+>
+> A. TACACS+
+> B. RADIUS
+> C. Kerberos
+> D. SAML
+>
+> > [!answer]- Show Answer
+> > **B. RADIUS**
+> >
+> > [[radius|RADIUS]] uses UDP (ports 1812/1813), combines authentication and authorization in a single step, and is the standard protocol for network access scenarios like Wi-Fi and VPN. TACACS+ uses TCP and is preferred for device administration rather than network access. Kerberos is used in Active Directory environments for domain authentication, not typically for Wi-Fi/VPN. SAML is a federation protocol for web-based single sign-on, not a network access protocol.
+>
+> **Q3.** After a data breach, an incident response team needs to determine exactly which files a compromised user account accessed and when. Which component of the AAA framework PRIMARILY provides this information?
+>
+> A. Authentication
+> B. Authorization
+> C. Accounting
+> D. Access control
+>
+> > [!answer]- Show Answer
+> > **C. Accounting**
+> >
+> > [[accounting|Accounting]] is the AAA component responsible for logging and tracking user activities, including session duration, commands executed, data accessed, and timestamps — exactly what investigators need for forensic analysis. Authentication only verifies identity at login time. Authorization defines permissions but does not track what was actually accessed. Access control is a broader concept that encompasses authorization models but does not specifically refer to activity logging.
+>
+> **Q4.** An organization uses RADIUS for VPN authentication and TACACS+ for switch management. A security auditor notes that RADIUS only encrypts the password field during transmission. Which security risk does this PRIMARILY introduce?
+>
+> A. Unauthorized command execution on network devices
+> B. Exposure of usernames and accounting data in transit
+> C. Inability to separate authentication from authorization
+> D. Incompatibility with multi-factor authentication
+>
+> > [!answer]- Show Answer
+> > **B. Exposure of usernames and accounting data in transit**
+> >
+> > [[radius|RADIUS]] encrypts only the password, leaving usernames, accounting data, and other attributes visible in transit, which could be captured through network sniffing. Unauthorized command execution relates to authorization controls, not encryption scope. While RADIUS does combine authentication and authorization, that is a design characteristic rather than a risk introduced by partial encryption. RADIUS fully supports MFA — the encryption limitation does not affect MFA compatibility.
+
 ## Scenario
 
 > See [[case-aaa-framework]] for a practical DevOps scenario applying these concepts.

@@ -46,6 +46,58 @@ Key management is the set of policies and procedures governing the entire lifecy
 - Critical to [[pki]] operations where CA private keys must be protected in HSMs
 - See also [[certificates]] for how key management applies to certificate private keys and renewal
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Key Management (4 Questions)
+>
+> **Q1.** A financial institution needs to store its most sensitive cryptographic keys in a tamper-resistant device that also performs cryptographic operations. Which solution BEST meets this requirement?
+>
+> A. Trusted Platform Module (TPM)
+> B. Hardware Security Module (HSM)
+> C. Software key vault on a hardened server
+> D. Encrypted USB drive in a safe
+>
+> > [!answer]- Show Answer
+> > **B. Hardware Security Module (HSM)**
+> >
+> > An [[hardware-security-module-hsm|HSM]] is a dedicated, tamper-resistant hardware device specifically designed to manage cryptographic keys and perform cryptographic operations at scale. A TPM (A) is a chip on the motherboard useful for individual device keys and secure boot, but not designed for enterprise-scale key management. A software key vault (C) lacks the hardware tamper resistance. An encrypted USB drive (D) provides physical storage but no cryptographic processing capability.
+>
+> **Q2.** A security team implements a TLS configuration that generates unique session keys for every connection, ensuring that compromising the server's long-term private key cannot decrypt past sessions. Which concept does this describe?
+>
+> A. Key escrow
+> B. Key splitting
+> C. Perfect forward secrecy (PFS)
+> D. Key wrapping
+>
+> > [!answer]- Show Answer
+> > **C. Perfect forward secrecy (PFS)**
+> >
+> > [[perfect-forward-secrecy-pfs|Perfect forward secrecy]] uses [[ephemeral-keys|ephemeral keys]] for each session, so past session keys cannot be derived from a compromised long-term key. Key escrow (A) involves a third party holding key copies for recovery. Key splitting (B) divides a key among multiple custodians. Key wrapping encrypts keys for secure transport but does not address session key independence.
+>
+> **Q3.** An organization's key management policy requires that no single administrator can access the master encryption key alone. Which technique enforces this requirement?
+>
+> A. Key rotation on a monthly schedule
+> B. Storing the key in a TPM chip
+> C. Key splitting using Shamir's Secret Sharing
+> D. Using ephemeral keys for each transaction
+>
+> > [!answer]- Show Answer
+> > **C. Key splitting using Shamir's Secret Sharing**
+> >
+> > [[key-splitting-secret-sharing|Key splitting (Shamir's Secret Sharing)]] divides a key among multiple custodians so that a threshold number must collaborate to reconstruct it, preventing any single person from accessing it alone. Key rotation (A) replaces keys periodically but does not address single-person access. TPM storage (B) ties the key to hardware but does not enforce multi-person access. Ephemeral keys (D) are temporary session keys, not related to access control.
+>
+> **Q4.** During a security review, an auditor finds that encryption keys are stored in a plaintext configuration file on the application server. Which key management principle is being violated?
+>
+> A. Key rotation
+> B. Secure key storage
+> C. Key generation
+> D. Key distribution
+>
+> > [!answer]- Show Answer
+> > **B. Secure key storage**
+> >
+> > [[key-management|Secure key storage]] requires that keys never be stored in plaintext — they should be protected in HSMs, TPMs, or encrypted key vaults. Key rotation (A) addresses how often keys are replaced, not how they are stored. Key generation (C) concerns how keys are created using secure random number generators. Key distribution (D) addresses how keys are securely transmitted between parties.
+
 ## Scenario
 
 > See [[case-key-management]] for a practical DevOps scenario applying these concepts.

@@ -46,6 +46,58 @@ Denial of Service (DoS) attacks aim to make a system, service, or network unavai
 - Detection relies on [[network-monitoring]] to identify abnormal traffic patterns
 - [[mitigation-techniques]] include rate limiting, CDN protection, and traffic scrubbing
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Denial of Service (4 Questions)
+>
+> **Q1.** A web server is receiving thousands of TCP SYN packets per second from spoofed IP addresses, and its connection table is full. Legitimate users cannot establish new connections. Which BEST describes this attack?
+>
+> A. Slowloris attack
+> B. SYN flood
+> C. DNS amplification
+> D. HTTP flood
+>
+> > [!answer]- Show Answer
+> > **B. SYN flood**
+> >
+> > A [[syn-flood]] sends many TCP SYN packets without completing the three-way handshake, filling the target's connection state table. Slowloris (A) holds connections open with partial HTTP headers, not SYN packets. DNS amplification (C) uses DNS resolvers to reflect and amplify traffic, not direct SYN packets. HTTP flood (D) sends complete HTTP requests, not incomplete TCP handshakes.
+>
+> **Q2.** An attacker sends small DNS queries with a spoofed source IP (set to the victim's address) to thousands of open DNS resolvers. The resolvers send large responses to the victim. Which type of DoS attack does this BEST represent?
+>
+> A. Volumetric SYN flood
+> B. Application-layer attack
+> C. Amplification/reflection attack
+> D. Smurf attack
+>
+> > [!answer]- Show Answer
+> > **C. Amplification/reflection attack**
+> >
+> > This describes a [[amplificationreflection]] attack using DNS resolvers — a small query produces a large response directed at the spoofed victim IP. SYN flood (A) targets connection state tables, not bandwidth through amplification. Application-layer attack (B) targets specific services with legitimate-looking requests. Smurf attack (D) uses ICMP echo requests to broadcast addresses, not DNS queries to resolvers.
+>
+> **Q3.** A security team notices that a web application is becoming unresponsive. Analysis shows hundreds of HTTP connections held open with incomplete headers being sent very slowly. Which attack is MOST likely occurring?
+>
+> A. SYN flood
+> B. UDP flood
+> C. Slowloris
+> D. Ping of Death
+>
+> > [!answer]- Show Answer
+> > **C. Slowloris**
+> >
+> > [[slowloris]] keeps HTTP connections open by slowly sending partial headers, exhausting the web server's connection pool. SYN flood (A) targets TCP connection tables with incomplete handshakes, not HTTP-level connections. UDP flood (B) is a volumetric attack using UDP packets, not slow HTTP headers. Ping of Death (D) sends malformed ICMP packets to crash systems, not hold HTTP connections open.
+>
+> **Q4.** After a major DDoS attack, a security architect recommends multiple countermeasures. Which combination provides the MOST comprehensive DDoS defense strategy?
+>
+> A. Antivirus software and host-based firewalls
+> B. CDN/DDoS mitigation service, rate limiting, and SYN cookies
+> C. Full-disk encryption and VPN tunnels
+> D. Intrusion detection system and vulnerability scanning
+>
+> > [!answer]- Show Answer
+> > **B. CDN/DDoS mitigation service, rate limiting, and SYN cookies**
+> >
+> > This combination addresses multiple DDoS categories: CDN services absorb [[volumetric-attacks]], rate limiting mitigates [[application-layer-attacks]], and SYN cookies defend against [[syn-flood]] protocol attacks. Antivirus and host firewalls (A) are endpoint protections, not DDoS defenses. Encryption and VPNs (C) protect confidentiality, not availability. IDS and vulnerability scanning (D) detect and identify issues but do not actively mitigate DDoS traffic.
+
 ## Scenario
 
 > See [[case-denial-of-service]] for a practical DevOps scenario applying these concepts.

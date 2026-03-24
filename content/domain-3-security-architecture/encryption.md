@@ -53,6 +53,58 @@ Encryption is the process of converting readable data (plaintext) into an unread
 - See also [[key-management]] for the lifecycle of cryptographic keys
 - Related to [[hashing]] which provides integrity rather than confidentiality
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Encryption (4 Questions)
+>
+> **Q1.** A security architect needs to encrypt a large database backup file as quickly as possible. Which encryption approach is BEST for this task?
+>
+> A. RSA with a 4096-bit key
+> B. AES-256 symmetric encryption
+> C. Diffie-Hellman key exchange
+> D. ECC digital signature
+>
+> > [!answer]- Show Answer
+> > **B. AES-256 symmetric encryption**
+> >
+> > [[encryption|Symmetric encryption]] with AES-256 is fast and efficient for bulk data encryption, making it ideal for large files. RSA (A) is asymmetric and far too slow for encrypting large data directly. Diffie-Hellman (C) is a key exchange protocol, not an encryption algorithm. ECC digital signature (D) provides authentication and integrity, not confidentiality for bulk data.
+>
+> **Q2.** During a TLS handshake, the client and server use asymmetric encryption to establish a session. Once the session is established, they switch to symmetric encryption for data transfer. Which term BEST describes this approach?
+>
+> A. Stream cipher encryption
+> B. Block cipher encryption
+> C. Hybrid encryption
+> D. Homomorphic encryption
+>
+> > [!answer]- Show Answer
+> > **C. Hybrid encryption**
+> >
+> > [[hybrid-encryption|Hybrid encryption]] uses asymmetric cryptography to securely exchange a symmetric session key, then switches to symmetric encryption for the actual data transfer, combining the strengths of both. Stream cipher (A) and block cipher (B) are types of symmetric ciphers, not the overall approach. Homomorphic encryption (D) allows computation on encrypted data, which is unrelated to TLS session establishment.
+>
+> **Q3.** A developer encrypts sensitive images using ECB (Electronic Codebook) mode and a security auditor flags this as a vulnerability. What is the PRIMARY concern with ECB mode?
+>
+> A. ECB mode does not use any encryption key
+> B. ECB mode produces identical ciphertext blocks for identical plaintext blocks, revealing patterns
+> C. ECB mode is too slow for image encryption
+> D. ECB mode only works with asymmetric algorithms
+>
+> > [!answer]- Show Answer
+> > **B. ECB mode produces identical ciphertext blocks for identical plaintext blocks, revealing patterns**
+> >
+> > [[encryption-modes|ECB mode]] encrypts each block independently, so identical plaintext blocks produce identical ciphertext blocks, which leaks data patterns. This is especially visible with images. ECB does use a key (A). ECB is actually fast since blocks can be processed in parallel (C). ECB is a mode for symmetric block ciphers, not limited to asymmetric (D), but the issue is its pattern-leaking behavior.
+>
+> **Q4.** An organization needs to implement encryption for data in transit between its web servers and client browsers. Which protocol should be used?
+>
+> A. BitLocker
+> B. TLS
+> C. LUKS
+> D. FileVault
+>
+> > [!answer]- Show Answer
+> > **B. TLS**
+> >
+> > [[encryption|TLS (Transport Layer Security)]] is the standard protocol for encrypting data in transit between web servers and browsers (HTTPS). BitLocker (A) is a Windows full-disk encryption tool for data at rest. LUKS (C) is a Linux disk encryption standard for data at rest. FileVault (D) is macOS full-disk encryption for data at rest. All three incorrect options protect data at rest, not in transit.
+
 ## Scenario
 
 > See [[case-encryption]] for a practical DevOps scenario applying these concepts.

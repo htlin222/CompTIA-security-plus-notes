@@ -62,6 +62,58 @@ Threat actors are individuals or groups that pose a risk to an organization's se
 - Defending against threat actors requires understanding their TTPs via [[threat-intelligence]]
 - Insider threats are mitigated through [[security-awareness-training]] and [[privileged-access-management]]
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Threat Actors (4 Questions)
+>
+> **Q1.** A cybersecurity analyst discovers that an attacker has maintained persistent access to the organization's network for over 18 months, using custom-developed malware and zero-day exploits to exfiltrate intellectual property. Which threat actor type is MOST likely responsible?
+>
+> A. Hacktivist
+> B. Script kiddie
+> C. Nation-state actor (APT)
+> D. Organized crime
+>
+> > [!answer]- Show Answer
+> > **C. Nation-state actor (APT)**
+> >
+> > [[nation-state-actors|Nation-state actors]] (Advanced Persistent Threats) exhibit the highest sophistication, use custom malware and zero-day exploits, maintain long dwell times, and are motivated by espionage — all characteristics described in the scenario. Hacktivists are ideologically motivated and typically use disruptive tactics (DDoS, defacement) rather than long-term stealthy espionage. Script kiddies lack the sophistication to develop custom malware or discover zero-day exploits. Organized crime is financially motivated and typically seeks quick monetization, not 18 months of patient data exfiltration.
+>
+> **Q2.** A disgruntled former contractor who still has active VPN credentials downloads and leaks confidential customer data two weeks after their contract ends. Which threat actor attributes BEST describe this individual?
+>
+> A. External, low sophistication, financially motivated
+> B. Internal, high sophistication, ideologically motivated
+> C. Internal, varies in sophistication, revenge-motivated
+> D. External, high sophistication, espionage-motivated
+>
+> > [!answer]- Show Answer
+> > **C. Internal, varies in sophistication, revenge-motivated**
+> >
+> > Former contractors with active credentials are classified as [[threat-actors|insider threats]] — they are internal actors who already have legitimate access. Revenge is a common motivation for disgruntled former employees/contractors. They are not external because they have legitimate access credentials and knowledge of internal systems. The scenario does not indicate financial motivation. Espionage and high sophistication point to nation-state actors, not a single disgruntled contractor.
+>
+> **Q3.** A group of attackers defaces a multinational corporation's website and publishes internal emails to protest the company's environmental practices. Which threat actor category and PRIMARY motivation BEST fit this scenario?
+>
+> A. Nation-state actor — espionage
+> B. Organized crime — financial gain
+> C. Hacktivist — ideology
+> D. Insider threat — revenge
+>
+> > [!answer]- Show Answer
+> > **C. Hacktivist — ideology**
+> >
+> > [[threat-actors|Hacktivists]] are ideologically or politically motivated attackers who use tactics like website defacement and data leaks to embarrass targets and draw attention to their cause — protesting environmental practices is a classic hacktivist motivation. Nation-state actors pursue espionage or sabotage on behalf of governments, not public protest. Organized crime seeks financial gain, not ideological statements. Insider threats originate from within the organization, and the scenario describes an external activist group.
+>
+> **Q4.** A teenager uses a publicly available exploit kit downloaded from a hacking forum to scan the internet for vulnerable web servers and deface any sites they can access. Which threat actor type does this BEST represent, and what is their PRIMARY characteristic?
+>
+> A. Hacktivist — ideological motivation
+> B. Script kiddie — low sophistication using pre-built tools
+> C. Insider threat — legitimate access abuse
+> D. Organized crime — structured financial operation
+>
+> > [!answer]- Show Answer
+> > **B. Script kiddie — low sophistication using pre-built tools**
+> >
+> > [[threat-actors|Script kiddies/unskilled attackers]] have low sophistication and rely on pre-built tools and exploit kits created by others — the teenager using a downloaded exploit kit for opportunistic attacks is the defining example. Hacktivists have a specific ideological or political cause driving their actions, not random defacement for notoriety. Insider threats have legitimate organizational access, which an external teenager does not. Organized crime involves structured, well-funded groups pursuing financial gain, not individual opportunistic attacks.
+
 ## Scenario
 
 > See [[case-threat-actors]] for a practical DevOps scenario applying these concepts.

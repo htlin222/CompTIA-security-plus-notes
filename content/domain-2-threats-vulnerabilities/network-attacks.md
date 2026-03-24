@@ -47,6 +47,58 @@ Network attacks target the infrastructure, protocols, and communications that co
 - [[dns-attacks]] target the name resolution infrastructure critical to network operations
 - [[network-monitoring]] detects anomalous traffic patterns that indicate network attacks in progress
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Network Attacks (4 Questions)
+>
+> **Q1.** A network administrator notices that a switch has begun flooding all traffic to every port, behaving like a hub. Investigation reveals the CAM table is full of bogus MAC addresses. Which attack is MOST likely occurring?
+>
+> A. ARP spoofing
+> B. VLAN hopping
+> C. MAC flooding
+> D. IP spoofing
+>
+> > [!answer]- Show Answer
+> > **C. MAC flooding**
+> >
+> > [[mac-flooding]] overwhelms a switch's CAM table with fake MAC addresses, forcing it into hub mode where traffic is broadcast to all ports. ARP spoofing (A) manipulates ARP caches to redirect traffic but does not fill the CAM table. VLAN hopping (B) exploits trunk port configurations to access other VLANs, not the CAM table. IP spoofing (D) forges source IP addresses but operates at Layer 3, not Layer 2 switching.
+>
+> **Q2.** An attacker connects a device to the corporate network that begins responding to DHCP requests before the legitimate DHCP server, providing clients with a malicious default gateway. Which attack does this describe?
+>
+> A. Evil twin
+> B. Rogue DHCP server
+> C. DNS amplification
+> D. Replay attack
+>
+> > [!answer]- Show Answer
+> > **B. Rogue DHCP server**
+> >
+> > A [[rogue-dhcp-server]] provides malicious network settings (gateway, DNS) to clients, enabling traffic interception. An evil twin (A) is a fake wireless access point, not a DHCP server on a wired network. DNS amplification (C) uses DNS resolvers for DDoS attacks. A replay attack (D) retransmits captured traffic, not DHCP responses.
+>
+> **Q3.** An attacker crafts Ethernet frames with two 802.1Q VLAN tags to send traffic from the default native VLAN to a restricted VLAN that should be inaccessible. Which attack technique is this?
+>
+> A. MAC flooding
+> B. ARP poisoning
+> C. VLAN hopping (double tagging)
+> D. IP spoofing
+>
+> > [!answer]- Show Answer
+> > **C. VLAN hopping (double tagging)**
+> >
+> > [[vlan-hopping]] via double tagging uses two 802.1Q headers so the switch strips the first tag and forwards the frame to the target VLAN. MAC flooding (A) fills the CAM table but does not cross VLAN boundaries. ARP poisoning (B) manipulates ARP caches within a single broadcast domain. IP spoofing (D) forges source IP addresses at Layer 3, not VLAN tags at Layer 2.
+>
+> **Q4.** A security team wants to prevent ARP spoofing attacks on the corporate LAN. Which Layer 2 defense mechanism BEST addresses this threat?
+>
+> A. Network address translation (NAT)
+> B. Dynamic ARP Inspection (DAI)
+> C. Full-disk encryption
+> D. Web application firewall
+>
+> > [!answer]- Show Answer
+> > **B. Dynamic ARP Inspection (DAI)**
+> >
+> > Dynamic ARP Inspection validates ARP packets against the DHCP snooping binding table, preventing [[arp-spoofingpoisoning|ARP spoofing]] attacks. NAT (A) translates IP addresses for routing purposes but does not validate ARP messages. Full-disk encryption (C) protects data at rest, not Layer 2 traffic. A WAF (D) protects web applications at Layer 7, not Layer 2 network communications.
+
 ## Scenario
 
 > See [[case-network-attacks]] for a practical DevOps scenario applying these concepts.

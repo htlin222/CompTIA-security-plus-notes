@@ -50,6 +50,58 @@ Mitigation techniques are the security controls and strategies applied to reduce
 - [[penetration-testing]] validates whether mitigation techniques are effective
 - Feeds into [[risk-management]] as the "treat" option in risk response strategies
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Mitigation Techniques (4 Questions)
+>
+> **Q1.** After a ransomware incident, a security architect recommends dividing the flat corporate network into separate zones for finance, engineering, and guest access. Which mitigation technique does this BEST represent?
+>
+> A. Application allowlisting
+> B. Network segmentation
+> C. Configuration management
+> D. Security awareness training
+>
+> > [!answer]- Show Answer
+> > **B. Network segmentation**
+> >
+> > Dividing a flat network into isolated zones is [[network-segmentation]], which limits lateral movement and reduces the blast radius of attacks like ransomware. Application allowlisting (A) restricts which software can execute, not network zones. Configuration management (C) maintains consistent system settings, not network topology. Security awareness training (D) educates users but does not address network architecture.
+>
+> **Q2.** A critical production server runs legacy software that cannot be patched due to vendor restrictions. The security team implements enhanced monitoring, strict firewall rules, and an IDS specifically for this server. What type of control is being applied?
+>
+> A. Preventive control
+> B. Compensating control
+> C. Deterrent control
+> D. Physical control
+>
+> > [!answer]- Show Answer
+> > **B. Compensating control**
+> >
+> > [[compensating-controls]] are alternative measures implemented when the primary control (patching) cannot be applied. Enhanced monitoring and strict rules compensate for the inability to patch. A preventive control (A) would be the patch itself. A deterrent control (C) discourages attackers but does not substitute for a missing primary control. A physical control (D) involves tangible barriers like locks, not logical network measures.
+>
+> **Q3.** An organization follows this priority when addressing a newly discovered vulnerability: first attempt to patch, then segment if patching is delayed, then document acceptance if neither is feasible. Which mitigation principle does this order BEST reflect?
+>
+> A. Defense in depth
+> B. Risk response hierarchy: eliminate, reduce, then accept
+> C. Least privilege
+> D. Zero trust architecture
+>
+> > [!answer]- Show Answer
+> > **B. Risk response hierarchy: eliminate, reduce, then accept**
+> >
+> > This follows the mitigation order of preference: eliminate the vulnerability through [[patching]], reduce impact through [[network-segmentation]], or accept the risk with documentation. Defense in depth (A) means layering multiple controls simultaneously, not a prioritized sequence. Least privilege (C) restricts access to the minimum necessary but does not describe a vulnerability response order. Zero trust (D) is an architectural model, not a risk response strategy.
+>
+> **Q4.** A company wants to ensure that only approved corporate applications can run on employee workstations, blocking any unauthorized executables. Which mitigation technique is MOST appropriate?
+>
+> A. Network segmentation
+> B. Encryption
+> C. Application allowlisting
+> D. Patching
+>
+> > [!answer]- Show Answer
+> > **C. Application allowlisting**
+> >
+> > [[application-allowlisting]] permits only approved software to execute, which is stronger than blocklisting because it blocks everything not explicitly allowed. Network segmentation (A) isolates network zones but does not control which applications run on endpoints. Encryption (B) protects data confidentiality, not application execution. Patching (D) fixes known vulnerabilities but does not prevent unauthorized software from running.
+
 ## Scenario
 
 > See [[case-mitigation-techniques]] for a practical DevOps scenario applying these concepts.

@@ -46,6 +46,58 @@ Audits and assessments are systematic evaluations of an organization's security 
 - See also [[regulations-and-frameworks]] for the specific standards against which audits measure
 - Related to [[hardening]] as audit findings often drive remediation of system configurations
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Audits and Assessments (4 Questions)
+>
+> **Q1.** A financial services company needs to demonstrate to regulators that its security controls have been operating effectively over the past six months. Which type of report would BEST satisfy this requirement?
+>
+> A. SOC 2 Type I
+> B. SOC 2 Type II
+> C. SOC 3
+> D. Internal vulnerability scan report
+>
+> > [!answer]- Show Answer
+> > **B. SOC 2 Type II**
+> >
+> > [[soc-reports|SOC 2 Type II]] covers control effectiveness over a defined time period, which is exactly what regulators need to see for ongoing assurance. SOC 2 Type I (A) only evaluates controls at a single point in time and does not demonstrate sustained operation. SOC 3 (C) is a general-use public summary without the detail regulators require. An internal vulnerability scan report (D) shows technical findings but does not attest to the effectiveness of security controls as a whole.
+>
+> **Q2.** An organization's CISO wants to determine whether an attacker could actually exploit the weaknesses found in a recent automated scan. What should the security team perform NEXT?
+>
+> A. Risk assessment
+> B. Security posture assessment
+> C. Penetration test
+> D. Another vulnerability assessment with different tools
+>
+> > [!answer]- Show Answer
+> > **C. Penetration test**
+> >
+> > A [[audits-and-assessments|penetration test]] goes beyond identifying vulnerabilities by actively attempting to exploit them, confirming real-world impact. A risk assessment (A) evaluates likelihood and impact but does not prove exploitability. A security posture assessment (B) is a broad review, not focused on exploitation. Running another vulnerability assessment (D) would only find more weaknesses without confirming whether existing ones are exploitable.
+>
+> **Q3.** A mid-size company is preparing for its first external audit. The audit team requests documentation including system configurations, access control lists, and policy documents. Which audit concept does this activity PRIMARILY represent?
+>
+> A. Attestation
+> B. Findings and remediation
+> C. Evidence collection
+> D. Audit scope definition
+>
+> > [!answer]- Show Answer
+> > **C. Evidence collection**
+> >
+> > [[evidence-collection|Evidence collection]] is the process of gathering logs, configurations, policies, and other artifacts that auditors examine to evaluate controls. Attestation (A) is the formal declaration issued after the audit is complete. Findings and remediation (B) are the output of the audit, not the input. Audit scope definition (D) determines what will be examined but does not involve gathering the actual documentation.
+>
+> **Q4.** A healthcare organization conducts quarterly security reviews using its own compliance team but has never engaged an outside firm. A new regulation now requires independent verification of controls. Which assessment approach must the organization add?
+>
+> A. Increased frequency of internal audits
+> B. Automated compliance monitoring
+> C. External audit by an independent third party
+> D. Self-assessment questionnaires
+>
+> > [!answer]- Show Answer
+> > **C. External audit by an independent third party**
+> >
+> > [[external-audit|External audits]] provide independent, objective verification that cannot be achieved through internal processes alone, which is what the regulation requires. Increasing internal audit frequency (A) does not address the independence requirement. Automated compliance monitoring (B) improves efficiency but is still an internal control. Self-assessment questionnaires (D) are completed by the organization itself and lack the independent verification regulators demand.
+
 ## Scenario
 
 > See [[case-audits-and-assessments]] for a practical DevOps scenario applying these concepts.

@@ -50,6 +50,58 @@ Data protection involves implementing controls to ensure that data remains confi
 - [[encryption]] is the primary technical control for protecting data at rest and in transit
 - See also [[privacy]] for regulatory requirements around personal data protection
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Data Protection (4 Questions)
+>
+> **Q1.** A healthcare organization needs to decommission old hard drives that contain patient records. The drives are SSDs. Which data destruction method is MOST appropriate?
+>
+> A. Degaussing
+> B. Overwriting with multiple passes
+> C. Physical destruction (shredding)
+> D. Reformatting the drives
+>
+> > [!answer]- Show Answer
+> > **C. Physical destruction (shredding)**
+> >
+> > For SSDs, [[data-protection|physical destruction]] is the most reliable method. Degaussing (A) only works on magnetic media and has no effect on SSDs. Overwriting (B) is unreliable on SSDs due to wear leveling and spare blocks that may retain data. Reformatting (D) does not securely erase data and leaves recoverable remnants.
+>
+> **Q2.** A payment processing company wants to protect stored credit card numbers while still allowing customer service representatives to verify the last four digits. Which technique BEST meets this requirement?
+>
+> A. Anonymization
+> B. Tokenization
+> C. Data masking
+> D. Full disk encryption
+>
+> > [!answer]- Show Answer
+> > **C. Data masking**
+> >
+> > [[data-masking|Data masking]] obscures portions of data while leaving part visible (such as showing only the last four digits), which is exactly what is needed. Anonymization (A) irreversibly removes identifying information entirely. Tokenization (B) replaces the entire value with a non-sensitive token — it does not allow viewing partial data. Full disk encryption (D) protects data at rest but does not address display-level data visibility.
+>
+> **Q3.** An organization is encrypting a large database before migrating it to the cloud. Once migration is complete, they want the option to render the old on-premises copy unrecoverable without physical destruction. Which method BEST achieves this?
+>
+> A. Degaussing the database server
+> B. Cryptographic erasure
+> C. Data masking the database fields
+> D. Pseudonymization of all records
+>
+> > [!answer]- Show Answer
+> > **B. Cryptographic erasure**
+> >
+> > [[data-protection|Cryptographic erasure]] destroys the encryption key, rendering the encrypted data permanently unrecoverable without physical destruction. Degaussing (A) only works on magnetic media and would not work if the server uses SSDs. Data masking (C) obscures data for display but does not destroy it. Pseudonymization (D) replaces identifiers with pseudonyms but is reversible with the mapping key.
+>
+> **Q4.** A security analyst discovers that sensitive employee records are being processed in memory on an application server. The data is already encrypted at rest and in transit. Which additional control BEST protects this data?
+>
+> A. Implementing TLS 1.3 for network connections
+> B. Adding BitLocker full disk encryption
+> C. Using secure enclaves for processing
+> D. Applying data classification labels
+>
+> > [!answer]- Show Answer
+> > **C. Using secure enclaves for processing**
+> >
+> > Data in use (being processed in memory) requires protection through [[data-protection|secure enclaves]] or process isolation. TLS 1.3 (A) protects data in transit, which is already covered. BitLocker (B) protects data at rest, which is also already covered. Data classification labels (C) are administrative controls that guide handling but do not technically protect data during processing.
+
 ## Scenario
 
 > See [[case-data-protection]] for a practical DevOps scenario applying these concepts.

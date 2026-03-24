@@ -41,6 +41,58 @@ A Business Impact Analysis (BIA) is a systematic process for determining the pot
 - Feeds into [[disaster-recovery]] to determine which systems need the fastest recovery and what replication strategy to use
 - Supports [[risk-management]] by quantifying the financial impact of threats in dollar terms
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Business Impact Analysis (4 Questions)
+>
+> **Q1.** A company's payment processing system has a Maximum Tolerable Downtime of 8 hours. The disaster recovery team sets the Recovery Time Objective to 10 hours. What is the PRIMARY problem with this plan?
+>
+> A. The RPO has not been defined
+> B. The RTO exceeds the MTD
+> C. The MTBF is too low
+> D. The MTTR has not been calculated
+>
+> > [!answer]- Show Answer
+> > **B. The RTO exceeds the MTD**
+> >
+> > [[recovery-time-objective-rto|RTO]] must always be less than [[maximum-tolerable-downtime-mtd|MTD]]. If recovery takes longer than the maximum tolerable downtime, the organization will suffer irreversible damage. Not defining RPO (A) is a concern but not the primary problem here. MTBF (C) measures reliability of components, not recovery planning. MTTR (D) is useful but the critical issue is the RTO/MTD mismatch.
+>
+> **Q2.** A hospital's electronic health records system must not lose more than 15 minutes of patient data in a disaster. Which BIA metric defines this requirement?
+>
+> A. Recovery Time Objective (RTO)
+> B. Maximum Tolerable Downtime (MTD)
+> C. Recovery Point Objective (RPO)
+> D. Mean Time to Repair (MTTR)
+>
+> > [!answer]- Show Answer
+> > **C. Recovery Point Objective (RPO)**
+> >
+> > [[recovery-point-objective-rpo|RPO]] defines the maximum acceptable data loss measured in time. Fifteen minutes of data loss means backups or replication must occur at least every 15 minutes. RTO (A) measures how quickly a system must be restored, not data loss. MTD (B) is the maximum time a function can be down before irreversible harm. MTTR (D) is the average repair time for a failed component.
+>
+> **Q3.** During a BIA workshop, a team identifies that the customer-facing web portal depends on a single DNS provider with no backup. Which BIA concept does this BEST illustrate?
+>
+> A. Impact categories
+> B. Dependencies
+> C. Single point of failure
+> D. Critical business function
+>
+> > [!answer]- Show Answer
+> > **C. Single point of failure**
+> >
+> > A [[single-point-of-failure-spof|single point of failure (SPOF)]] is any component whose failure would bring down an entire system, and a sole DNS provider with no redundancy fits this exactly. Dependencies (B) describe upstream and downstream system relationships, which is related but broader. Impact categories (A) classify the type of damage (financial, reputational) rather than architectural weaknesses. Critical business function (D) refers to the portal itself, not the specific vulnerability in its infrastructure.
+>
+> **Q4.** An organization is conducting a BIA and needs to determine which business processes to analyze first. Which factor should PRIMARILY drive this prioritization?
+>
+> A. The cost of implementing backup systems
+> B. The financial and operational impact of disruption
+> C. The age of the technology supporting each process
+> D. The number of employees involved in each process
+>
+> > [!answer]- Show Answer
+> > **B. The financial and operational impact of disruption**
+> >
+> > The core purpose of a [[business-impact-analysis|BIA]] is to quantify the impact of disruption to prioritize recovery efforts. Processes with the highest financial and operational impact should be analyzed first. Implementation costs (A) are relevant to recovery planning but not to BIA prioritization. Technology age (C) may correlate with risk but does not directly measure business impact. Employee count (D) does not determine criticality -- a small team may run a mission-critical function.
+
 ## Scenario
 
 > See [[case-business-impact-analysis]] for a practical DevOps scenario applying these concepts.

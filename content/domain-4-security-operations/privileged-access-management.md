@@ -45,6 +45,58 @@ Privileged Access Management (PAM) is a set of strategies and technologies for c
 - Helps detect compromises through [[log-management]] by recording privileged session activity
 - [[hardening]] includes restricting and monitoring privileged access as a key security baseline
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Privileged Access Management (4 Questions)
+>
+> **Q1.** An organization's database administrators currently share a single root password that has not been changed in over a year. A security audit recommends implementing PAM controls. Which action should be taken FIRST?
+>
+> A. Deploy session recording software on all endpoints
+> B. Store the root credential in an encrypted password vault with individual checkout and automatic rotation
+> C. Disable the root account entirely
+> D. Require all DBAs to use personal laptops for database access
+>
+> > [!answer]- Show Answer
+> > **B. Store the root credential in an encrypted password vault with individual checkout and automatic rotation**
+> >
+> > [[password-vaulting]] with individual checkout provides accountability (who used the credential and when) and [[credential-rotation]] eliminates the risk of a stale, shared password. Option A adds monitoring but does not fix the shared credential problem. Option C would disrupt operations if no alternative privileged access method is in place. Option D introduces BYOD risks and does not address the credential management issue.
+>
+> **Q2.** A cloud administrator needs emergency access to a production system during a critical outage, but the normal PAM approval workflow is unavailable because the approval server is also down. Which PAM mechanism is designed for this situation?
+>
+> A. Just-in-time access provisioning
+> B. Break-glass account
+> C. Credential rotation policy
+> D. Role-based access control
+>
+> > [!answer]- Show Answer
+> > **B. Break-glass account**
+> >
+> > [[break-glass-accounts]] are emergency access accounts specifically designed for situations when normal access paths fail. They come with heightened monitoring and audit requirements. Option A ([[just-in-time-jit-access|JIT access]]) requires the approval workflow to be functioning. Option C is a scheduled credential management process, not an emergency access method. Option D defines access based on roles but does not provide emergency access mechanisms.
+>
+> **Q3.** A security team discovers that a service account used by an automated backup application has domain administrator privileges and its password has never been changed. What is the MOST significant risk?
+>
+> A. The backup application may run slower with a domain admin account
+> B. If compromised, the service account provides an attacker full control over the entire domain
+> C. The service account will generate excessive log entries
+> D. The backup application license may not support privileged accounts
+>
+> > [!answer]- Show Answer
+> > **B. If compromised, the service account provides an attacker full control over the entire domain**
+> >
+> > [[service-account-management]] is critical because service accounts often have excessive privileges and rarely rotate passwords, making them high-value targets. A domain admin service account with a static password is an extreme [[least-privilege-enforcement|least privilege]] violation. Option A is incorrect — privilege level does not affect performance. Option C may generate some additional audit events but is not the primary risk. Option D is a licensing concern, not a security risk.
+>
+> **Q4.** An organization implements a PAM solution that grants administrators elevated access only when a ticket is approved, and automatically revokes access after 4 hours. All actions during the session are recorded. Which PAM capability does the time-limited access represent?
+>
+> A. Password vaulting
+> B. Session recording
+> C. Just-in-time access
+> D. Separation of duties
+>
+> > [!answer]- Show Answer
+> > **C. Just-in-time access**
+> >
+> > [[just-in-time-jit-access|Just-in-time (JIT) access]] grants privileged access only when needed and automatically revokes it after a set period, minimizing the window of exposure. Option A ([[password-vaulting]]) stores credentials securely but does not inherently limit access duration. Option B ([[session-recording]]) is also described in the scenario but the question asks specifically about the time-limited access. Option D requires multiple people for sensitive operations, which is a separate control.
+
 ## Scenario
 
 > See [[case-privileged-access-management]] for a practical DevOps scenario applying these concepts.

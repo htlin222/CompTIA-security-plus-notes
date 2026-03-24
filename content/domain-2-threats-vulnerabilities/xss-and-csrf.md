@@ -52,6 +52,58 @@ Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF) are client-side
 - Discovered during [[penetration-testing]] web application assessments
 - [[mitigation-techniques]] include CSP headers, token-based defenses, and secure cookie attributes
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Cross-Site Scripting and Cross-Site Request Forgery (4 Questions)
+>
+> **Q1.** An attacker posts a comment on a popular forum that contains a hidden JavaScript snippet. Every user who views the comment has their session cookie silently sent to the attacker's server. Which type of XSS attack is this?
+>
+> A. Reflected XSS
+> B. Stored (Persistent) XSS
+> C. DOM-based XSS
+> D. CSRF
+>
+> > [!answer]- Show Answer
+> > **B. Stored (Persistent) XSS**
+> >
+> > [[stored-persistent-xss|Stored XSS]] permanently saves the malicious script on the server (in this case, the forum post), affecting all users who view it. Reflected XSS (A) requires the victim to click a crafted URL — the script is not stored on the server. DOM-based XSS (C) modifies the DOM client-side without server involvement. CSRF (D) tricks browsers into making unwanted requests, not injecting scripts into pages.
+>
+> **Q2.** A user clicks a link in a phishing email that contains a malicious JavaScript payload in the URL parameter. The web application reflects this input back in the response page without sanitization, executing the script in the user's browser. Which attack type is this?
+>
+> A. Stored XSS
+> B. Reflected XSS
+> C. CSRF
+> D. SQL injection
+>
+> > [!answer]- Show Answer
+> > **B. Reflected XSS**
+> >
+> > [[reflected-xss|Reflected XSS]] includes the malicious script in a URL parameter that the server reflects back in the response without sanitization, requiring the victim to click a crafted link. Stored XSS (A) persists the script on the server permanently. CSRF (C) submits forged requests using the victim's session, not script injection. SQL injection (D) targets database queries, not client-side script execution.
+>
+> **Q3.** An attacker creates a webpage with a hidden form that automatically submits a fund transfer request to a banking site when visited. The attack works because the victim is currently logged into the banking site in another tab. Which attack is this?
+>
+> A. Reflected XSS
+> B. DOM-based XSS
+> C. Cross-Site Request Forgery (CSRF)
+> D. Session replay
+>
+> > [!answer]- Show Answer
+> > **C. Cross-Site Request Forgery (CSRF)**
+> >
+> > [[mechanism|CSRF]] tricks the victim's browser into making an authenticated request to a site where the user is already logged in, exploiting the site's trust in the user's session. Reflected XSS (A) injects script via URL parameters, not hidden form submissions. DOM-based XSS (B) modifies the client-side DOM, not forged cross-site requests. Session replay (D) retransmits captured authentication data, not browser-initiated forged requests.
+>
+> **Q4.** A developer wants to prevent session cookie theft through XSS attacks. Which defense MOST directly protects session cookies from JavaScript access?
+>
+> A. Anti-CSRF tokens
+> B. Content Security Policy (CSP) headers
+> C. HttpOnly cookie flag
+> D. SameSite cookie attribute
+>
+> > [!answer]- Show Answer
+> > **C. HttpOnly cookie flag**
+> >
+> > The HttpOnly flag prevents JavaScript from accessing session cookies via `document.cookie`, directly mitigating XSS-based cookie theft. Anti-CSRF tokens (A) protect against CSRF attacks, not XSS cookie theft. CSP headers (B) restrict which scripts can execute and help mitigate XSS broadly, but do not specifically prevent cookie access. The SameSite attribute (D) prevents cookies from being sent in cross-site requests (CSRF defense), not JavaScript access to cookies.
+
 ## Scenario
 
 > See [[case-xss-and-csrf]] for a practical DevOps scenario applying these concepts.

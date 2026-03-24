@@ -46,6 +46,58 @@ Log management is the practice of collecting, centralizing, storing, and analyzi
 - [[incident-response]] depends on complete and accurate logs for detection and analysis phases
 - Supports [[compliance]] by providing audit trails required by regulations
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Log Management (4 Questions)
+>
+> **Q1.** A forensic investigator is trying to correlate events across a web server, a firewall, and an authentication server. The timestamps in the logs from each system differ by several minutes, making it impossible to establish an accurate timeline. What is the MOST likely cause?
+>
+> A. The log files have been tampered with by an attacker
+> B. The systems are not synchronized to a common NTP time source
+> C. The log retention policies differ across the systems
+> D. The systems are using different log formats
+>
+> > [!answer]- Show Answer
+> > **B. The systems are not synchronized to a common NTP time source**
+> >
+> > [[ntp-synchronization]] is critical for log correlation — without consistent timestamps across all systems, event correlation becomes unreliable. Option A is possible but less likely than a configuration oversight. Option C affects how long logs are kept, not timestamp accuracy. Option D affects log parsing but not timestamp consistency.
+>
+> **Q2.** A security team discovers that an attacker gained access to a server and deleted all local security logs to cover their tracks. Which control would BEST prevent this from impacting the investigation?
+>
+> A. Increasing the local log file size limit
+> B. Forwarding logs in real time to a centralized, secured logging server
+> C. Encrypting the local log files on the server
+> D. Configuring more verbose logging on the server
+>
+> > [!answer]- Show Answer
+> > **B. Forwarding logs in real time to a centralized, secured logging server**
+> >
+> > [[centralized-logging]] with real-time [[log-forwarding-agents|log forwarding]] ensures that copies of all logs exist on a separate, secured system that attackers cannot easily access. Even if local logs are deleted, the forwarded copies remain intact. Option A only delays the problem — larger files can still be deleted. Option C prevents reading but not deletion. Option D generates more detail but is equally vulnerable to local deletion.
+>
+> **Q3.** A compliance officer asks the security team how long firewall logs are retained. The team discovers there is no formal policy and logs are automatically overwritten after 30 days. The organization is subject to PCI-DSS requirements. What is the PRIMARY concern?
+>
+> A. The firewall logs are using too much storage space
+> B. The organization may fail compliance audits due to insufficient log retention
+> C. The firewall is generating too many log entries
+> D. The log format is not compatible with the SIEM platform
+>
+> > [!answer]- Show Answer
+> > **B. The organization may fail compliance audits due to insufficient log retention**
+> >
+> > [[log-retention-policies]] must align with regulatory requirements. PCI-DSS requires at least one year of log retention with three months immediately available. Without formal policies, the organization risks compliance violations. Option A is an operational concern, not a compliance risk. Option C relates to log volume, not retention. Option D relates to integration, not regulatory compliance.
+>
+> **Q4.** A Windows domain controller shows Event ID 4625 occurring 500 times within five minutes from a single source IP, followed by a single Event ID 4624 from the same IP. What does this pattern MOST likely indicate?
+>
+> A. A scheduled service restarting and re-authenticating normally
+> B. A successful brute-force password attack after many failed attempts
+> C. A misconfigured NTP synchronization setting
+> D. Normal Active Directory replication traffic
+>
+> > [!answer]- Show Answer
+> > **B. A successful brute-force password attack after many failed attempts**
+> >
+> > [[windows-event-log|Event ID 4625]] indicates failed logon attempts and [[windows-event-log|Event ID 4624]] indicates a successful logon. Five hundred failures followed by a success from the same IP is the classic signature of a brute-force attack. Option A would not generate hundreds of failures from one IP. Option C relates to time synchronization, not authentication events. Option D involves machine accounts, not repeated failures from a single source.
+
 ## Scenario
 
 > See [[case-log-management]] for a practical DevOps scenario applying these concepts.

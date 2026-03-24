@@ -48,6 +48,58 @@ Application attacks exploit vulnerabilities in software applications — particu
 - Application-level weaknesses are categorized under [[vulnerability-types]]
 - Web Application Firewalls (WAFs) as part of [[hardening]] mitigate many application attacks
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Application Attacks (4 Questions)
+>
+> **Q1.** A developer discovers that an attacker submitted a username field containing `../../../../etc/shadow` through the application's file download feature. Which type of application attack is MOST likely being attempted?
+>
+> A. Buffer overflow
+> B. SQL injection
+> C. Directory traversal
+> D. Server-side request forgery
+>
+> > [!answer]- Show Answer
+> > **C. Directory traversal**
+> >
+> > The `../` sequences are the hallmark of a [[directory-traversal]] attack, where the attacker navigates outside the intended directory to access sensitive system files. Buffer overflow (A) involves exceeding memory boundaries, not path manipulation. SQL injection (B) targets database queries with SQL syntax, not file paths. SSRF (D) tricks the server into making requests to internal resources, but the `../` pattern specifically indicates directory traversal.
+>
+> **Q2.** A web application checks whether a temporary file exists, then reads it a few milliseconds later. An attacker exploits the gap between the check and the read to swap the file with a malicious one. What type of vulnerability is this?
+>
+> A. Race condition / TOCTOU
+> B. Integer overflow
+> C. Session replay
+> D. Resource exhaustion
+>
+> > [!answer]- Show Answer
+> > **A. Race condition / TOCTOU**
+> >
+> > This describes a classic [[race-condition-toctou]] (Time-of-Check to Time-of-Use) vulnerability, where the attacker exploits the timing gap between verifying a condition and acting on it. Integer overflow (B) involves exceeding the maximum value of a numeric variable. Session replay (C) involves retransmitting captured authentication data. Resource exhaustion (D) involves consuming system resources to cause denial of service.
+>
+> **Q3.** An organization's REST API has no rate limiting and returns full user objects including passwords hashes when queried. Which BEST describes this vulnerability category?
+>
+> A. Privilege escalation
+> B. API attack surface
+> C. Buffer overflow
+> D. Session hijacking
+>
+> > [!answer]- Show Answer
+> > **B. API attack surface**
+> >
+> > The combination of no rate limiting and excessive data exposure are classic [[api-attacks]] vulnerabilities from the OWASP API Security Top 10. Privilege escalation (A) involves gaining higher access than authorized, not data overexposure. Buffer overflow (C) is a memory safety issue unrelated to API design. Session hijacking (D) involves stealing session tokens, not exploiting API design flaws.
+>
+> **Q4.** A penetration tester gains access to a standard user account and then exploits a vulnerable SUID binary to obtain root shell access. Which type of application attack does this BEST represent?
+>
+> A. Horizontal privilege escalation
+> B. Vertical privilege escalation
+> C. Server-side request forgery
+> D. Resource exhaustion
+>
+> > [!answer]- Show Answer
+> > **B. Vertical privilege escalation**
+> >
+> > Moving from a standard user account to root represents [[privilege-escalation]] in the vertical direction — gaining higher-level access than originally authorized. Horizontal privilege escalation (A) involves accessing another user's data at the same privilege level, not moving to root. SSRF (C) involves tricking the server into making internal requests. Resource exhaustion (D) involves consuming system resources to cause denial of service.
+
 ## Scenario
 
 > See [[case-application-attacks]] for a practical DevOps scenario applying these concepts.

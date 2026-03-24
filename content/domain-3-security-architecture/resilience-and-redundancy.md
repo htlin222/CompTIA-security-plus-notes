@@ -52,6 +52,58 @@ Resilience is the ability of a system to continue operating during adverse condi
 - [[load-balancers-and-proxies]] implement server redundancy and failover at the network level
 - See also [[cloud-security]] where resilience is achieved through multi-region and multi-AZ deployments
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Resilience and Redundancy (4 Questions)
+>
+> **Q1.** A database administrator needs a RAID configuration that can survive the failure of one disk while providing storage efficiency across a minimum of three disks. Which RAID level BEST meets this requirement?
+>
+> A. RAID 0
+> B. RAID 1
+> C. RAID 5
+> D. RAID 10
+>
+> > [!answer]- Show Answer
+> > **C. RAID 5**
+> >
+> > [[resilience-and-redundancy|RAID 5]] uses striping with distributed parity across a minimum of three disks and can survive one disk failure while providing good storage efficiency. RAID 0 (A) provides striping with no redundancy — any disk failure causes total data loss. RAID 1 (B) mirrors between two disks but does not provide storage efficiency. RAID 10 (D) requires a minimum of four disks and uses mirroring plus striping, offering less storage efficiency.
+>
+> **Q2.** A company's primary data center experiences a power outage. The UPS systems keep servers running for 15 minutes while diesel generators start up and provide long-term power. Which resilience concept does this demonstrate?
+>
+> A. Geographic redundancy
+> B. Power redundancy with layered backup systems
+> C. Network link aggregation
+> D. Non-persistence through revert to snapshot
+>
+> > [!answer]- Show Answer
+> > **B. Power redundancy with layered backup systems**
+> >
+> > [[resilience-and-redundancy|Power redundancy]] uses UPS for short-term battery backup and generators for long-term power, providing layered protection against outages. Geographic redundancy (A) involves multiple data center locations. Link aggregation (C) combines network connections for bandwidth and redundancy. Non-persistence (D) relates to rebuilding systems from known-good images, not power backup.
+>
+> **Q3.** An organization deploys two identical web server clusters — both actively serving traffic simultaneously. If one cluster fails, the other handles all requests. Which high availability configuration is this?
+>
+> A. Active-passive
+> B. Active-active
+> C. Cold standby
+> D. Manual failover
+>
+> > [!answer]- Show Answer
+> > **B. Active-active**
+> >
+> > [[active-active-vs-active-passive|Active-active]] means both nodes are actively serving traffic simultaneously, with either capable of handling the full load if the other fails. Active-passive (A) has a standby node that only activates when the primary fails. Cold standby (C) requires manual startup of the backup system. Manual failover (D) requires human intervention, which is not described in this scenario.
+>
+> **Q4.** A security architect recommends using different firewall vendors at the network perimeter and internal boundaries to reduce the risk of a single vulnerability affecting all firewalls. Which resilience concept does this represent?
+>
+> A. Scalability
+> B. Non-persistence
+> C. Diversity
+> D. Capacity planning
+>
+> > [!answer]- Show Answer
+> > **C. Diversity**
+> >
+> > [[diversity|Diversity]] means using different vendors, technologies, or paths to avoid common-mode failures — a vulnerability in one vendor's product will not affect the other. Scalability (A) refers to adding resources to handle growth. Non-persistence (B) involves rebuilding systems from known-good images. Capacity planning (D) ensures sufficient resources for current and future demands but does not address vendor diversification.
+
 ## Scenario
 
 > See [[case-resilience-and-redundancy]] for a practical DevOps scenario applying these concepts.

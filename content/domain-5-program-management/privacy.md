@@ -46,6 +46,58 @@ Privacy in information security refers to an individual's right to control how t
 - Closely related to [[data-classification]] which identifies and labels personal data requiring privacy protections
 - See also [[compliance]] for how privacy requirements are monitored and enforced
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Privacy (4 Questions)
+>
+> **Q1.** A healthcare application development team replaces patient names with randomly generated tokens in their test database. The mapping between tokens and real names is stored in a separate secured system. This technique is BEST described as:
+>
+> A. Anonymization
+> B. Pseudonymization
+> C. Data minimization
+> D. Data masking
+>
+> > [!answer]- Show Answer
+> > **B. Pseudonymization**
+> >
+> > [[anonymization-vs-pseudonymization|Pseudonymization]] replaces identifying information with artificial identifiers while maintaining a reversible mapping. Since the token-to-name mapping is preserved, the data can be re-identified. Anonymization (A) is irreversible -- no mapping exists to reconnect data to individuals. Data minimization (C) is about collecting only necessary data, not replacing identifiers. Data masking (D) obscures data in place but typically refers to display-level obfuscation rather than a token-based replacement with a separate key.
+>
+> **Q2.** A European customer requests that an online retailer delete all personal data associated with their account. Under which privacy principle is the company MOST likely obligated to comply?
+>
+> A. Purpose limitation
+> B. Data portability
+> C. Right to be forgotten (erasure)
+> D. Consent
+>
+> > [!answer]- Show Answer
+> > **C. Right to be forgotten (erasure)**
+> >
+> > The [[privacy|right to be forgotten]] under GDPR grants individuals the right to request deletion of their personal data. Purpose limitation (A) restricts data collection to stated purposes but does not address deletion requests. Data portability (B) allows individuals to receive their data in a usable format, not delete it. Consent (C) is about obtaining permission before collecting data, not post-collection deletion.
+>
+> **Q3.** A software company is building a new mobile application that will collect user location data. The privacy officer recommends integrating consent mechanisms and data minimization controls into the initial design. This approach BEST represents which privacy concept?
+>
+> A. Privacy Impact Assessment
+> B. Data breach notification
+> C. Privacy by design
+> D. Data sovereignty
+>
+> > [!answer]- Show Answer
+> > **C. Privacy by design**
+> >
+> > [[privacy-by-design|Privacy by design]] means embedding privacy controls into systems from the beginning rather than adding them later. Building consent and minimization into the initial design is the textbook example. A Privacy Impact Assessment (A) evaluates how a project affects privacy but is an assessment, not a design approach. Data breach notification (B) is about responding to incidents, not building privacy into systems. Data sovereignty (D) concerns the laws of the country where data is stored.
+>
+> **Q4.** A multinational company stores EU customer data on servers located in the United States. The legal team raises concerns that US law enforcement could access this data under US jurisdiction. Which privacy concept does this concern PRIMARILY relate to?
+>
+> A. Data minimization
+> B. Data sovereignty
+> C. Anonymization
+> D. Purpose limitation
+>
+> > [!answer]- Show Answer
+> > **B. Data sovereignty**
+> >
+> > [[data-sovereignty|Data sovereignty]] means data is subject to the laws of the country where it is stored. Storing EU data in the US exposes it to US legal jurisdiction, creating a conflict with EU privacy expectations. Data minimization (A) addresses the volume of data collected, not its geographic location. Anonymization (C) makes data non-identifiable but does not resolve jurisdictional concerns. Purpose limitation (D) restricts how data is used, not where it is stored.
+
 ## Scenario
 
 > See [[case-privacy]] for a practical DevOps scenario applying these concepts.

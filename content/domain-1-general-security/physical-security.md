@@ -56,6 +56,58 @@ Physical security encompasses the tangible controls that protect an organization
 - Environmental controls support [[resilience-and-redundancy]] goals for facility uptime
 - Access badges and biometrics tie into [[authentication]] as physical identity verification
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Physical Security (4 Questions)
+>
+> **Q1.** After a social engineering assessment reveals that unauthorized individuals frequently follow employees through the main entrance, which physical control should an organization implement FIRST to address this specific vulnerability?
+>
+> A. CCTV cameras at all entrances
+> B. Access control vestibule (mantrap)
+> C. Biometric fingerprint scanners
+> D. Increased perimeter lighting
+>
+> > [!answer]- Show Answer
+> > **B. Access control vestibule (mantrap)**
+> >
+> > An [[access-control-vestibules-mantraps|access control vestibule (mantrap)]] is a dual-door chamber that allows only one door to be open at a time and admits one person per authentication — it directly prevents tailgating. CCTV cameras record activity for review but do not physically prevent unauthorized entry. Biometric scanners strengthen authentication but do not prevent someone from following an authorized person through a single door. Increased lighting deters criminal activity in outdoor areas but does not address the tailgating problem at building entrances.
+>
+> **Q2.** A data center manager needs to select a fire suppression system for a room containing critical servers and networking equipment. Which system type is BEST suited to protect the electronics?
+>
+> A. Wet pipe system
+> B. Dry pipe system
+> C. Clean agent system (FM-200)
+> D. Sprinkler with pre-action valve
+>
+> > [!answer]- Show Answer
+> > **C. Clean agent system (FM-200)**
+> >
+> > [[environmental-controls|Clean agent systems]] like FM-200 suppress fire without leaving residue or water, making them safe for electronics in data centers and server rooms. Wet pipe systems always contain water and would damage electronic equipment. Dry pipe systems still release water when activated — they just hold it back with a valve for cold environments. Pre-action sprinklers also ultimately release water and are designed to prevent accidental discharge, not to protect sensitive electronics.
+>
+> **Q3.** A government facility needs to prevent adversaries from intercepting electromagnetic emanations from classified workstations. Which physical security measure BEST addresses this threat?
+>
+> A. Privacy screens on monitors
+> B. Cable locks on all equipment
+> C. Faraday cage around the secure room
+> D. Infrared motion sensors
+>
+> > [!answer]- Show Answer
+> > **C. Faraday cage around the secure room**
+> >
+> > A [[faraday-cage|Faraday cage]] blocks electromagnetic signals from entering or leaving an enclosed space, preventing eavesdropping on electromagnetic emanations from electronic equipment. [[screen-filtersprivacy-screens|Privacy screens]] prevent shoulder surfing (visual eavesdropping) but do not block electromagnetic signals. [[cable-locks|Cable locks]] prevent physical theft of equipment but do not address signal emanation. Infrared motion sensors detect physical movement for intrusion detection and have nothing to do with electromagnetic shielding.
+>
+> **Q4.** A facility security officer is evaluating perimeter fencing options for a high-security compound. What is the MINIMUM fence height recommended for deterring a determined intruder?
+>
+> A. 3 feet — basic deterrent
+> B. 6 feet — difficult to climb
+> C. 8 feet or higher — serious security
+> D. 4 feet — standard commercial height
+>
+> > [!answer]- Show Answer
+> > **C. 8 feet or higher — serious security**
+> >
+> > [[fencing|Fencing]] standards indicate that 8 feet or higher provides serious security appropriate for high-security facilities and deters determined intruders. A 3-foot fence is only a basic deterrent marking boundaries. A 6-foot fence is difficult to climb but may not deter a determined intruder at a high-security compound. A 4-foot fence is not a standard security classification and provides minimal deterrence.
+
 ## Scenario
 
 > See [[case-physical-security]] for a practical DevOps scenario applying these concepts.

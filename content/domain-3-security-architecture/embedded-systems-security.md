@@ -54,6 +54,58 @@ Embedded systems are purpose-built computing devices designed for specific funct
 - Firmware integrity relies on concepts from [[hashing]] and digital signatures
 - See also [[resilience-and-redundancy]] for ensuring availability of critical embedded systems in industrial environments
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Embedded Systems Security (4 Questions)
+>
+> **Q1.** A water treatment facility connects its SCADA system to the corporate network for remote monitoring. Which security control should be implemented FIRST?
+>
+> A. Install antivirus software on the SCADA controllers
+> B. Place the SCADA system on an isolated network segment
+> C. Upgrade all SCADA devices to the latest consumer-grade OS
+> D. Enable remote desktop access for all operators
+>
+> > [!answer]- Show Answer
+> > **B. Place the SCADA system on an isolated network segment**
+> >
+> > [[network-segmentation|Network segmentation]] is the FIRST and most critical control for [[embedded-systems-security|SCADA/ICS systems]]. Isolating these devices prevents lateral movement from the corporate network. Antivirus (A) often cannot run on resource-constrained SCADA controllers. Upgrading to consumer-grade OS (C) is impractical since SCADA systems run specialized RTOS software. Enabling remote desktop (D) increases the attack surface rather than reducing it.
+>
+> **Q2.** A hospital's security team discovers that several IoT medical devices are still using factory default credentials. What is the PRIMARY risk of this situation?
+>
+> A. The devices will consume excessive network bandwidth
+> B. Attackers can easily gain unauthorized access to the devices
+> C. The devices cannot receive firmware updates
+> D. The devices will be incompatible with network encryption
+>
+> > [!answer]- Show Answer
+> > **B. Attackers can easily gain unauthorized access to the devices**
+> >
+> > Default credentials on [[embedded-systems-security|IoT devices]] are publicly known and easily exploited, making unauthorized access the primary risk. Bandwidth consumption (A) is a performance concern, not a direct consequence of default credentials. Firmware update capability (C) is unrelated to credential configuration. Network encryption compatibility (D) is not affected by authentication credentials.
+>
+> **Q3.** An organization has legacy industrial sensors that cannot be updated or patched and do not support encryption. Which security approach is MOST appropriate to protect these devices?
+>
+> A. Replace all sensors with modern encrypted alternatives immediately
+> B. Place a security wrapper around the devices and segment the network
+> C. Connect the sensors directly to the internet for cloud-based monitoring
+> D. Disable all network connectivity and rely on manual data collection
+>
+> > [!answer]- Show Answer
+> > **B. Place a security wrapper around the devices and segment the network**
+> >
+> > [[embedded-systems-security|Wrappers]] place security controls around devices that cannot be directly secured, combined with network segmentation to limit exposure. Immediate replacement (A) may not be feasible due to cost, availability, or operational requirements. Connecting directly to the internet (C) maximizes the attack surface. Disabling connectivity (D) eliminates the monitoring capability the network provides.
+>
+> **Q4.** A manufacturing company is evaluating the security of its embedded control systems. Which characteristic of these systems makes them MOST difficult to secure compared to traditional IT systems?
+>
+> A. They use TCP/IP networking protocols
+> B. They have constrained resources that prevent running standard security software
+> C. They are located in climate-controlled server rooms
+> D. They are managed by the IT department
+>
+> > [!answer]- Show Answer
+> > **B. They have constrained resources that prevent running standard security software**
+> >
+> > [[embedded-systems-security|Embedded systems]] have limited CPU, memory, and storage, which prevents running traditional security tools like antivirus or host-based firewalls. Using TCP/IP (A) is common across both IT and embedded systems. Being in server rooms (C) is not typical of embedded systems, which are often in operational environments. Being managed by IT (D) would actually improve security; most embedded systems are managed by OT teams with less security focus.
+
 ## Scenario
 
 > See [[case-embedded-systems-security]] for a practical DevOps scenario applying these concepts.

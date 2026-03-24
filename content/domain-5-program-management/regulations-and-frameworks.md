@@ -44,6 +44,58 @@ Regulations are legally binding requirements imposed by governments, while frame
 - Works alongside [[governance]] to shape internal security policies and standards
 - See also [[audits-and-assessments]] for how adherence to frameworks is verified
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Regulations and Frameworks (4 Questions)
+>
+> **Q1.** A US federal agency is required to implement a comprehensive set of security and privacy controls for its information systems. Which framework is the agency MOST likely required to follow?
+>
+> A. PCI DSS
+> B. NIST SP 800-53
+> C. ISO 27001
+> D. CIS Controls
+>
+> > [!answer]- Show Answer
+> > **B. NIST SP 800-53**
+> >
+> > [[nist-sp-800-53|NIST SP 800-53]] provides a comprehensive catalog of security and privacy controls specifically designed for federal information systems. PCI DSS (A) applies to organizations handling payment card data, not federal agencies specifically. ISO 27001 (C) is an international standard for ISMS that is certifiable but not mandated for US federal systems. CIS Controls (D) are prioritized best practices but are not the authoritative control set for federal agencies.
+>
+> **Q2.** A hospital's compliance officer needs to ensure that all systems handling patient records meet regulatory requirements. Which regulation applies MOST directly to this scenario?
+>
+> A. GDPR
+> B. SOX
+> C. HIPAA
+> D. GLBA
+>
+> > [!answer]- Show Answer
+> > **C. HIPAA**
+> >
+> > [[hipaa|HIPAA]] is the US law specifically designed to protect Protected Health Information (PHI) and applies to covered entities like hospitals. GDPR (A) protects EU personal data broadly but is not specific to healthcare in the US. SOX (B) governs financial reporting integrity for publicly traded companies. GLBA (D) requires financial institutions to protect customer financial information.
+>
+> **Q3.** A company wants to achieve an internationally recognized certification for its information security management system to build customer trust. Which standard should it pursue?
+>
+> A. NIST CSF
+> B. CIS Controls
+> C. ISO 27001
+> D. CSA Cloud Controls Matrix
+>
+> > [!answer]- Show Answer
+> > **C. ISO 27001**
+> >
+> > [[iso-27001-27002|ISO 27001]] is the international standard for ISMS that is certifiable, meaning organizations can undergo an audit and receive formal certification. NIST CSF (A) is a voluntary framework widely adopted in the US but does not offer formal certification. CIS Controls (B) are prioritized best practices without a certification program. CSA CCM (D) is cloud-specific and used as a supplementary framework, not a primary certification path.
+>
+> **Q4.** A security analyst is asked to explain the difference between the CIS Benchmarks and the NIST Cybersecurity Framework to a new team member. Which distinction is MOST accurate?
+>
+> A. CIS Benchmarks are legally required; NIST CSF is voluntary
+> B. CIS Benchmarks provide specific configuration guides; NIST CSF is a broader program framework
+> C. NIST CSF applies only to cloud environments; CIS Benchmarks apply to on-premises systems
+> D. Both are identical in scope and purpose
+>
+> > [!answer]- Show Answer
+> > **B. CIS Benchmarks provide specific configuration guides; NIST CSF is a broader program framework**
+> >
+> > [[benchmarks-vs-frameworks|Benchmarks vs. frameworks]] is a key distinction: benchmarks like CIS provide prescriptive, system-specific configuration guidance, while frameworks like NIST CSF provide a broad structure for organizing an entire security program. CIS Benchmarks are not legally required (A); they are voluntary best practices. NIST CSF is not limited to cloud (C); it applies across all environments. The two are fundamentally different in scope and purpose (D).
+
 ## Scenario
 
 > See [[case-regulations-and-frameworks]] for a practical DevOps scenario applying these concepts.

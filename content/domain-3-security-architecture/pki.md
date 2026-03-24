@@ -46,6 +46,58 @@ Public Key Infrastructure (PKI) is a comprehensive system for creating, distribu
 - Relies on [[encryption]] (asymmetric cryptography) as its underlying technology
 - See also [[key-management]] for the lifecycle of the keys within a PKI ecosystem
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: PKI (4 Questions)
+>
+> **Q1.** A security architect is designing a PKI and wants to protect the root CA from compromise. Which practice is MOST critical?
+>
+> A. Keep the root CA online for real-time certificate issuance
+> B. Take the root CA offline and use intermediate CAs for day-to-day issuance
+> C. Use a self-signed certificate for the root CA and share its private key with all administrators
+> D. Deploy the root CA on a cloud-hosted virtual machine for redundancy
+>
+> > [!answer]- Show Answer
+> > **B. Take the root CA offline and use intermediate CAs for day-to-day issuance**
+> >
+> > The [[pki|root CA]] should be kept offline to minimize its exposure to attacks. Intermediate CAs handle daily certificate issuance; if compromised, only their branch of the hierarchy is affected. Keeping the root CA online (A) unnecessarily exposes the most critical component. Sharing the root private key (C) violates fundamental key security principles. Deploying on a cloud VM (D) increases the attack surface for the most sensitive PKI component.
+>
+> **Q2.** A user's browser displays a certificate warning when visiting a website. The browser reports that the certificate has been revoked. Which PKI mechanism MOST likely provided this real-time revocation status?
+>
+> A. Certificate Revocation List (CRL)
+> B. Online Certificate Status Protocol (OCSP)
+> C. Certificate Signing Request (CSR)
+> D. Key escrow
+>
+> > [!answer]- Show Answer
+> > **B. Online Certificate Status Protocol (OCSP)**
+> >
+> > [[pki|OCSP]] provides real-time certificate validity checking, which is more efficient and current than CRL. CRL (A) is a periodically published list rather than a real-time check. A CSR (C) is used to request a certificate, not to check revocation status. Key escrow (D) relates to key recovery by a third party, not certificate revocation.
+>
+> **Q3.** A browser trusts a website's certificate because the certificate was signed by an intermediate CA, which was signed by a root CA that the browser already trusts. Which PKI concept does this demonstrate?
+>
+> A. Certificate pinning
+> B. Cross-certification
+> C. Chain of trust
+> D. OCSP stapling
+>
+> > [!answer]- Show Answer
+> > **C. Chain of trust**
+> >
+> > The [[chain-of-trust|chain of trust]] is the hierarchy where each certificate is signed by the CA above it — the leaf certificate is signed by an intermediate CA, which is signed by the root CA that the browser trusts. Certificate pinning (A) hardcodes expected certificates to prevent MITM. Cross-certification (B) enables two separate CAs to trust each other. OCSP stapling (D) is a method for servers to provide revocation status during the TLS handshake.
+>
+> **Q4.** An organization wants to reduce the latency of certificate revocation checks during TLS handshakes. The web server should periodically retrieve its own revocation status and present it to clients. Which technique achieves this?
+>
+> A. Downloading the full CRL to each client browser
+> B. OCSP stapling
+> C. Certificate pinning
+> D. Cross-certification between CAs
+>
+> > [!answer]- Show Answer
+> > **B. OCSP stapling**
+> >
+> > [[pki|OCSP stapling]] allows the web server to periodically check its own certificate status and include (staple) the OCSP response in the TLS handshake, reducing client-side latency. Downloading full CRLs (A) is bandwidth-intensive and adds latency. Certificate pinning (C) restricts which certificates are accepted but does not address revocation check latency. Cross-certification (D) enables inter-CA trust but is unrelated to revocation performance.
+
 ## Scenario
 
 > See [[case-pki]] for a practical DevOps scenario applying these concepts.

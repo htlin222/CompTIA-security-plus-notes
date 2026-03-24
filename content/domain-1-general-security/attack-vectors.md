@@ -63,6 +63,58 @@ An attack vector is the path or method a threat actor uses to gain unauthorized 
 - Network-based vectors defended by [[firewalls]], [[ids-ips]], and [[network-segmentation]]
 - Supply chain vectors addressed through [[third-party-risk]] management programs
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Attack Vectors (4 Questions)
+>
+> **Q1.** A security team discovers that a widely used open-source library included in their application was compromised at the source repository, and malicious code was distributed through the normal update process. Which attack vector does this BEST describe?
+>
+> A. Vulnerable software vector
+> B. File-based vector
+> C. Supply chain vector
+> D. Open service port vector
+>
+> > [!answer]- Show Answer
+> > **C. Supply chain vector**
+> >
+> > A [[attack-vectors|supply chain attack]] compromises a trusted vendor, library, or update mechanism to reach the ultimate target — exactly what happened with the compromised open-source library distributed through normal updates (similar to SolarWinds or compromised npm packages). A vulnerable software vector involves exploiting unpatched or unsupported software, not a compromised trusted source. File-based vectors involve malicious documents or media, not poisoned software repositories. Open service port vectors involve unnecessary services listening on the network.
+>
+> **Q2.** An employee finds a USB flash drive labeled "Payroll Q4" in the company parking lot and plugs it into a workstation. The drive immediately executes a keystroke injection payload. Which type of attack vector and tool is MOST likely involved?
+>
+> A. File-based vector using a malicious macro
+> B. Removable device vector using a Rubber Ducky
+> C. Message-based vector using a phishing attachment
+> D. Human vector using social engineering
+>
+> > [!answer]- Show Answer
+> > **B. Removable device vector using a Rubber Ducky**
+> >
+> > A [[attack-vectors|Rubber Ducky]] is a USB device that emulates a keyboard and executes keystroke injection payloads automatically when plugged in — this is a classic removable device vector combined with a USB drop attack. A malicious macro requires the user to open a file and enable macros, not automatic keystroke injection. A message-based vector uses email or messaging, not physical media. While social engineering enticed the employee to plug in the drive, the attack vector itself is the removable device, not the human element.
+>
+> **Q3.** A penetration tester identifies that a target organization has multiple internet-facing servers running Telnet, FTP, and an outdated web server on non-standard ports. Which attack vector category should the tester's report PRIMARILY highlight?
+>
+> A. Vulnerable software vectors
+> B. Supply chain vectors
+> C. Open service ports
+> D. Image-based vectors
+>
+> > [!answer]- Show Answer
+> > **C. Open service ports**
+> >
+> > [[open-service-ports|Open service ports]] with unnecessary services (Telnet, FTP) listening on the network increase the attack surface and provide entry points for attackers. While the outdated web server also represents a vulnerable software vector, the primary finding described is unnecessary services exposed on the network. Supply chain vectors involve compromised third-party software or hardware, which is not described here. Image-based vectors involve steganography or exploiting image parsers, which is unrelated.
+>
+> **Q4.** A threat intelligence analyst observes that attackers are hiding command-and-control instructions within the metadata of JPEG images posted on a public website. Which attack vector is this technique MOST closely associated with?
+>
+> A. Message-based vector
+> B. File-based vector
+> C. Image-based vector
+> D. Voice-based vector
+>
+> > [!answer]- Show Answer
+> > **C. Image-based vector**
+> >
+> > Hiding data within images (steganography) is the defining characteristic of [[attack-vectors|image-based vectors]], which exploit image files to conceal malicious code or communication channels. Message-based vectors involve email, SMS, or instant messaging as the delivery mechanism, not embedded image data. File-based vectors typically involve malicious documents like Office macros or PDFs, not steganographic techniques in images. Voice-based vectors use phone calls or voice deepfakes for social engineering.
+
 ## Scenario
 
 > See [[case-attack-vectors]] for a practical DevOps scenario applying these concepts.

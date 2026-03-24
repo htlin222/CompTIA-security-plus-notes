@@ -49,6 +49,58 @@ The CIA Triad is the foundational model in information security that defines thr
 - Redundancy and disaster recovery ensure availability (see [[resilience-and-redundancy]], [[disaster-recovery]])
 - [[defense-in-depth]] layers controls to protect all three CIA properties simultaneously
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: CIA Triad (4 Questions)
+>
+> **Q1.** A hospital's electronic health records system is hit by a ransomware attack that encrypts all patient data and threatens to publish it unless a ransom is paid. Which elements of the CIA triad are PRIMARILY compromised?
+>
+> A. Confidentiality and Integrity
+> B. Integrity and Availability
+> C. Confidentiality and Availability
+> D. Confidentiality, Integrity, and Availability
+>
+> > [!answer]- Show Answer
+> > **C. Confidentiality and Availability**
+> >
+> > Ransomware primarily attacks [[availability|Availability]] by locking users out of their data, and in double-extortion schemes threatens [[confidentiality|Confidentiality]] by publishing stolen data. While data integrity could be affected if files are corrupted, the primary attack targets are access denial (Availability) and data exposure threats (Confidentiality). Option A misses Availability, which is the most direct impact of encryption-based ransomware. Option B misses Confidentiality, which is threatened by the data leak extortion. Option D overstates the impact — Integrity is not the primary target.
+>
+> **Q2.** A security engineer implements SHA-256 checksums on all software packages before deployment to ensure they have not been tampered with during transfer. Which CIA triad element does this control PRIMARILY protect?
+>
+> A. Confidentiality
+> B. Integrity
+> C. Availability
+> D. Non-repudiation
+>
+> > [!answer]- Show Answer
+> > **B. Integrity**
+> >
+> > [[hashing|Hashing]] algorithms like SHA-256 verify that data has not been altered — this directly protects [[integrity|Integrity]] by detecting unauthorized modifications during transfer. Confidentiality would require encryption to prevent unauthorized viewing, not hashing. Availability ensures systems are accessible when needed, which checksums do not address. Non-repudiation proves who performed an action (typically via digital signatures), and while related to hashing, the primary purpose of checksums is integrity verification.
+>
+> **Q3.** A financial services company deploys redundant servers across two data centers with automatic failover, ensuring their trading platform remains operational even if one site goes offline. Which CIA triad element is this architecture PRIMARILY designed to protect?
+>
+> A. Confidentiality
+> B. Integrity
+> C. Availability
+> D. Non-repudiation
+>
+> > [!answer]- Show Answer
+> > **C. Availability**
+> >
+> > Redundancy, failover clusters, and geographically distributed data centers are classic [[availability|Availability]] controls that ensure authorized users can access systems when needed. Confidentiality controls prevent unauthorized disclosure (encryption, access controls), not service continuity. Integrity controls prevent unauthorized data modification (hashing, digital signatures), not infrastructure redundancy. Non-repudiation ensures actions cannot be denied and is achieved through logging and digital signatures, not redundant infrastructure.
+>
+> **Q4.** An attacker intercepts and modifies a wire transfer instruction between a bank and a payment processor, changing the destination account number. Which element of the CIA triad is MOST directly attacked, and what is the corresponding DAD triad term?
+>
+> A. Confidentiality — Disclosure
+> B. Integrity — Alteration
+> C. Availability — Destruction
+> D. Integrity — Disclosure
+>
+> > [!answer]- Show Answer
+> > **B. Integrity — Alteration**
+> >
+> > Modifying data in transit (changing the account number) is a direct attack on [[integrity|Integrity]], and the corresponding [[dad-triad|DAD triad]] opposite is Alteration. Confidentiality/Disclosure would apply if the attacker viewed the data without modifying it. Availability/Destruction would apply if the attacker prevented the transaction from being processed at all. Integrity/Disclosure is an incorrect pairing — Integrity's opposite in the DAD triad is Alteration, not Disclosure.
+
 ## Scenario
 
 > See [[case-cia-triad]] for a practical DevOps scenario applying these concepts.

@@ -49,6 +49,58 @@ Hardening is the process of securing a system by reducing its attack surface thr
 - Supports [[compliance]] requirements by following recognized security standards (CIS, STIG)
 - [[automation-and-scripting]] ensures hardening configurations are applied consistently at scale
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Hardening (4 Questions)
+>
+> **Q1.** A security auditor discovers that several production servers are running with default administrator credentials and have unnecessary services such as FTP and Telnet enabled. Which hardening step should be performed FIRST?
+>
+> A. Install an EDR agent on all servers
+> B. Change default credentials and disable unnecessary services
+> C. Implement full disk encryption
+> D. Deploy a SIEM to monitor the servers
+>
+> > [!answer]- Show Answer
+> > **B. Change default credentials and disable unnecessary services**
+> >
+> > [[remove-default-accounts-and-passwords|Removing default credentials]] and [[disable-unnecessary-services-and-ports|disabling unnecessary services]] are fundamental hardening steps that directly eliminate known attack vectors. Default credentials are publicly documented and easily exploited. Option A adds detection but does not fix the root vulnerability. Option C protects data at rest but does not address the exposed services. Option D provides monitoring but does not remediate the immediate risk.
+>
+> **Q2.** An organization needs to ensure that all Windows workstations across its 50 branch offices enforce the same security settings, including password policies, screen lock timers, and disabled USB storage. What is the BEST approach?
+>
+> A. Sending a policy document to each branch office manager for manual implementation
+> B. Configuring Group Policy Objects (GPOs) through Active Directory
+> C. Installing third-party antivirus software on all workstations
+> D. Enabling BitLocker on all workstations
+>
+> > [!answer]- Show Answer
+> > **B. Configuring Group Policy Objects (GPOs) through Active Directory**
+> >
+> > [[registry-and-gpo-hardening|GPO hardening]] through Active Directory centrally enforces security settings consistently across all domain-joined workstations regardless of location. Option A relies on manual compliance and is error-prone at scale. Option C addresses malware but not configuration enforcement. Option D provides encryption but does not enforce the specific security policies mentioned.
+>
+> **Q3.** A security team is building golden images for deploying new servers. They want to ensure every server starts with a secure configuration aligned with industry standards. Which resource should they PRIMARILY reference for configuration guidelines?
+>
+> A. The server vendor's default installation documentation
+> B. CIS Benchmarks for the specific operating system
+> C. The organization's acceptable use policy
+> D. OWASP Top 10 vulnerability list
+>
+> > [!answer]- Show Answer
+> > **B. CIS Benchmarks for the specific operating system**
+> >
+> > [[cis-benchmarks|CIS Benchmarks]] provide industry-standard, detailed security configuration guidelines for specific operating systems and applications, making them the ideal reference for building [[secure-baseline-images|secure baseline images]]. Option A provides default settings which are never considered secure. Option C governs user behavior, not technical configurations. Option D focuses on web application vulnerabilities, not OS hardening.
+>
+> **Q4.** Six months after deploying hardened server images, a security scan reveals that several servers have drifted from their original secure configurations — new services have been enabled and firewall rules relaxed. What control would BEST prevent this issue?
+>
+> A. Conducting annual penetration tests
+> B. Implementing automated configuration management with drift detection
+> C. Requiring administrators to sign an acceptable use agreement
+> D. Increasing the frequency of vulnerability scans to daily
+>
+> > [!answer]- Show Answer
+> > **B. Implementing automated configuration management with drift detection**
+> >
+> > Hardening is not a one-time activity. Automated [[configuration-management]] with drift detection continuously monitors systems and can alert on or automatically remediate configuration changes that deviate from the [[secure-baseline-images|secure baseline]]. Option A is periodic and would not catch drift between tests. Option C is a policy control that does not technically enforce configurations. Option D identifies vulnerabilities but does not enforce configuration compliance.
+
 ## Scenario
 
 > See [[case-hardening]] for a practical DevOps scenario applying these concepts.

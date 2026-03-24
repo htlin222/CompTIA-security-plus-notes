@@ -52,6 +52,58 @@ Defense in Depth is a security strategy that employs multiple layers of controls
 - Aligns with [[zero-trust]] by not relying on any single trust boundary
 - Informed by [[security-concepts]] like least privilege and separation of duties across all layers
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Defense in Depth (4 Questions)
+>
+> **Q1.** An organization deploys firewalls at the network perimeter, endpoint protection on all workstations, encrypts sensitive data at rest, and conducts monthly security awareness training. Which security strategy does this combination of controls BEST illustrate?
+>
+> A. Zero Trust architecture
+> B. Defense in depth
+> C. Implicit deny
+> D. Network segmentation
+>
+> > [!answer]- Show Answer
+> > **B. Defense in depth**
+> >
+> > [[defense-in-depth|Defense in depth]] uses multiple layers of controls (perimeter, host, data, policies) across different domains so that if one layer fails, subsequent layers continue to provide protection — exactly what is described. Zero Trust focuses on continuous verification and eliminating implicit trust, not layered controls specifically. Implicit deny is a single access control principle, not a comprehensive strategy. Network segmentation is one component within a defense-in-depth strategy, not the overarching approach.
+>
+> **Q2.** A security auditor categorizes an organization's controls and finds that background checks, security policies, and incident response procedures all fall into the same category. Which type of control do these represent?
+>
+> A. Technical controls
+> B. Physical controls
+> C. Administrative controls
+> D. Corrective controls
+>
+> > [!answer]- Show Answer
+> > **C. Administrative controls**
+> >
+> > [[administrative-controls|Administrative controls]] include policies, procedures, training, and background checks — all people-and-process-oriented measures that guide security behavior. [[technical-controls|Technical controls]] are technology-based (firewalls, encryption, IDS), which none of the listed items are. [[physical-controls|Physical controls]] are tangible barriers (locks, fences, guards), which are also not listed. Corrective controls describe when a control acts relative to an incident (after the fact), not the type of control — background checks and policies are preventive, not corrective.
+>
+> **Q3.** A company uses Cisco firewalls at the perimeter, Palo Alto firewalls for internal segmentation, and Fortinet for the DMZ. Which defense-in-depth principle does this approach BEST demonstrate?
+>
+> A. Control diversity
+> B. Separation of duties
+> C. Vendor diversity
+> D. Least privilege
+>
+> > [!answer]- Show Answer
+> > **C. Vendor diversity**
+> >
+> > [[vendor-diversity|Vendor diversity]] means using products from multiple vendors so that a vulnerability in one vendor's product does not compromise all layers — the use of Cisco, Palo Alto, and Fortinet at different network points exemplifies this. [[control-diversity|Control diversity]] means combining different types of controls (technical + administrative + physical), not using different vendors for the same control type. Separation of duties divides critical tasks among multiple people, not technology vendors. Least privilege limits access permissions and is unrelated to firewall vendor selection.
+>
+> **Q4.** A security architect needs to add a detective control to the application layer of their defense-in-depth strategy. Which control would BEST fulfill this requirement?
+>
+> A. Input validation on web forms
+> B. Web application firewall (WAF) logging and alerting
+> C. Code review during development
+> D. Encryption of data at rest
+>
+> > [!answer]- Show Answer
+> > **B. Web application firewall (WAF) logging and alerting**
+> >
+> > WAF logging and alerting is a [[preventive-detective-corrective|detective control]] at the application layer — it monitors and alerts on suspicious activity to detect attacks in progress. Input validation is a preventive control that blocks malicious input before it is processed. Code review is a preventive control applied during development, not at runtime. Encryption of data at rest is a preventive control at the data layer, not a detective control at the application layer.
+
 ## Scenario
 
 > See [[case-defense-in-depth]] for a practical DevOps scenario applying these concepts.

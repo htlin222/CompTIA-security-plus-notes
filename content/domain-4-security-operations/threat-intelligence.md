@@ -48,6 +48,58 @@ Threat intelligence is the collection, processing, and analysis of data about cu
 - Informs [[threat-hunting]] hypotheses about where and how to look for adversaries
 - Intelligence about threat actors overlaps with understanding [[threat-actors]] motivations and capabilities
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Threat Intelligence (4 Questions)
+>
+> **Q1.** A CISO needs to brief the board of directors on emerging cyber risks targeting their financial services industry, including which nation-state actors are most active and what their motivations are. Which level of threat intelligence is MOST appropriate for this audience?
+>
+> A. Technical intelligence
+> B. Tactical intelligence
+> C. Operational intelligence
+> D. Strategic intelligence
+>
+> > [!answer]- Show Answer
+> > **D. Strategic intelligence**
+> >
+> > [[strategic-intelligence]] provides high-level trends and risk assessments designed for executive decision-making, covering who is attacking, why, and what industries are targeted. Option A ([[technical-intelligence]]) provides specific IoCs like IP addresses and hashes — too granular for executives. Option B ([[tactical-intelligence]]) details adversary TTPs for security teams. Option C ([[operational-intelligence]]) describes specific campaigns for operational defenders.
+>
+> **Q2.** A security team receives a threat feed containing IP addresses, file hashes, and domain names associated with a known malware campaign. They want to automatically block these indicators across their firewalls and EDR platforms. What standard format is this threat data MOST likely shared in?
+>
+> A. CSV spreadsheet
+> B. STIX/TAXII
+> C. PDF report
+> D. Syslog format
+>
+> > [!answer]- Show Answer
+> > **B. STIX/TAXII**
+> >
+> > [[stix-structured-threat-information-expression|STIX]] is the standardized language for describing threat information, and [[taxii-trusted-automated-exchange-of-intelligence-information|TAXII]] is the protocol for exchanging it — together they enable automated ingestion of threat data into security tools. Option A is a generic format without standardized threat intelligence structure. Option C is human-readable but not machine-parseable for automated blocking. Option D is for log transmission, not structured threat intelligence.
+>
+> **Q3.** A security analyst receives threat intelligence from multiple sources: a commercial feed, an open-source OSINT feed, and an industry ISAC. One source reports a suspicious IP as malicious while another reports it as benign. How should the analyst handle this conflicting information?
+>
+> A. Always trust the commercial feed since it is paid
+> B. Assess the confidence level and source credibility of each report before acting
+> C. Block the IP immediately since any report of malicious activity is sufficient
+> D. Ignore all threat intelligence feeds and rely solely on internal detection
+>
+> > [!answer]- Show Answer
+> > **B. Assess the confidence level and source credibility of each report before acting**
+> >
+> > [[confidence-levels]] and source credibility assessment are essential when consuming threat intelligence. Not all sources are equally reliable, and analysts must evaluate the quality and context of each report. Option A assumes paid equals accurate, which is not always true. Option C could lead to blocking legitimate traffic based on unreliable data. Option D abandons the value of external threat intelligence entirely.
+>
+> **Q4.** A healthcare organization wants to receive threat intelligence specifically about cyber threats targeting hospitals and medical devices. Which type of organization would BEST provide this industry-specific intelligence?
+>
+> A. A general-purpose antivirus vendor
+> B. A Health-sector Information Sharing and Analysis Center (Health-ISAC)
+> C. The organization's internal help desk
+> D. A cloud service provider's status page
+>
+> > [!answer]- Show Answer
+> > **B. A Health-sector Information Sharing and Analysis Center (Health-ISAC)**
+> >
+> > [[information-sharing-and-analysis-centers-isacs|ISACs]] are industry-specific organizations that facilitate sharing of threat intelligence among peer organizations within the same sector. Health-ISAC focuses specifically on healthcare threats. Option A provides general threat intelligence, not healthcare-specific. Option C handles internal support issues, not external threat intelligence. Option D provides service availability information, not threat intelligence.
+
 ## Scenario
 
 > See [[case-threat-intelligence]] for a practical DevOps scenario applying these concepts.

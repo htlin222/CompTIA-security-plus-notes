@@ -48,6 +48,58 @@ Wireless attacks exploit the inherent vulnerability of data transmitted over rad
 - Rogue APs and evil twins bypass controls that [[network-monitoring]] should detect through wireless IDS
 - Wireless vulnerabilities are a category covered under [[vulnerability-types]]
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Wireless Attacks (4 Questions)
+>
+> **Q1.** An attacker sets up a Wi-Fi access point in a coffee shop with the same SSID as the legitimate free Wi-Fi network. Unsuspecting customers connect to the attacker's AP, allowing all their traffic to be intercepted. Which wireless attack is this?
+>
+> A. Rogue access point
+> B. Evil twin
+> C. Deauthentication attack
+> D. War driving
+>
+> > [!answer]- Show Answer
+> > **B. Evil twin**
+> >
+> > An [[evil-twin]] mimics a legitimate network's SSID to trick users into connecting, enabling traffic interception. A rogue access point (A) is an unauthorized AP connected to the corporate network, creating a backdoor — it does not necessarily mimic an existing SSID. A deauthentication attack (C) disconnects clients from a network but does not set up a fake AP. War driving (D) scans for wireless networks while moving through an area but does not involve setting up a fake AP.
+>
+> **Q2.** A security team notices that wireless clients are repeatedly being disconnected from the corporate Wi-Fi. Packet analysis reveals forged 802.11 deauthentication frames being broadcast. Which attack is occurring, and which protocol improvement addresses it?
+>
+> A. RFID cloning; WPA2-Enterprise
+> B. Evil twin; DNSSEC
+> C. Deauthentication attack; 802.11w / WPA3
+> D. Jamming; frequency hopping
+>
+> > [!answer]- Show Answer
+> > **C. Deauthentication attack; 802.11w / WPA3**
+> >
+> > A [[deauthentication-attack]] sends forged deauth frames to disconnect clients. 802.11w (Protected Management Frames), incorporated into WPA3, authenticates management frames to prevent this. RFID cloning (A) involves duplicating access badges, not Wi-Fi disconnections. Evil twin (B) is a fake AP, not forged deauth frames, and DNSSEC protects DNS, not Wi-Fi. Jamming (D) floods the RF spectrum with noise rather than sending specific deauth frames.
+>
+> **Q3.** An attacker captures the WPA2 4-way handshake between a client and access point, then performs offline brute-force cracking to recover the pre-shared key. Which defense BEST prevents this attack from succeeding?
+>
+> A. Disabling SSID broadcast
+> B. Using a long, complex passphrase
+> C. Enabling WPS for easier connection
+> D. Reducing wireless transmit power
+>
+> > [!answer]- Show Answer
+> > **B. Using a long, complex passphrase**
+> >
+> > A strong passphrase makes offline brute-force cracking of a captured [[wpawpa2-handshake-capture|WPA2 handshake]] computationally infeasible. Disabling SSID broadcast (A) provides minimal security through obscurity and does not prevent handshake capture. Enabling WPS (C) actually introduces additional vulnerabilities through its PIN-based authentication. Reducing transmit power (D) limits range but does not prevent an attacker within range from capturing handshakes.
+>
+> **Q4.** An employee copies the RFID data from a coworker's building access badge using a portable reader, then programs a blank card with the copied data to gain physical access. Which wireless attack is this?
+>
+> A. Bluesnarfing
+> B. NFC eavesdropping
+> C. RFID cloning
+> D. Evil twin
+>
+> > [!answer]- Show Answer
+> > **C. RFID cloning**
+> >
+> > [[rfid-cloning]] involves copying RFID badge data to create unauthorized duplicate access cards, enabling physical access bypass. Bluesnarfing (A) is a Bluetooth attack for stealing data from a device, not duplicating RFID badges. NFC eavesdropping (B) involves intercepting NFC communications, not cloning access cards. Evil twin (D) is a Wi-Fi attack using a fake access point, not a physical access card duplication.
+
 ## Scenario
 
 > See [[case-wireless-attacks]] for a practical DevOps scenario applying these concepts.

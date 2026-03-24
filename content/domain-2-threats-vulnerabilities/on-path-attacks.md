@@ -47,6 +47,58 @@ On-path attacks (formerly called man-in-the-middle attacks) occur when an attack
 - [[wireless-attacks]] like evil twin APs are a common setup for on-path attacks
 - [[encryption]] and proper certificate validation are the primary defenses against interception
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: On-Path Attacks (4 Questions)
+>
+> **Q1.** A user connects to their bank's website over HTTPS, but an attacker on the same network has performed ARP poisoning and is intercepting traffic. The attacker downgrades the connection to HTTP so they can read the traffic in plaintext. Which on-path technique is being used?
+>
+> A. DNS spoofing
+> B. Session hijacking
+> C. SSL/TLS stripping
+> D. Man-in-the-Browser
+>
+> > [!answer]- Show Answer
+> > **C. SSL/TLS stripping**
+> >
+> > [[ssltls-stripping|SSL/TLS stripping]] downgrades an HTTPS connection to HTTP, allowing the on-path attacker to read plaintext traffic. DNS spoofing (A) redirects DNS responses to malicious servers but does not downgrade HTTPS to HTTP. Session hijacking (B) steals session tokens but does not describe the HTTPS-to-HTTP downgrade mechanism. Man-in-the-Browser (D) is browser malware that modifies transactions locally, not a network-level downgrade attack.
+>
+> **Q2.** A corporate security team wants to prevent on-path attackers from successfully performing SSL stripping attacks against employee web browsing. Which defense is MOST effective?
+>
+> A. Deploying a network IDS
+> B. Configuring HSTS (HTTP Strict Transport Security) headers
+> C. Installing antivirus software
+> D. Using longer SSL certificate key lengths
+>
+> > [!answer]- Show Answer
+> > **B. Configuring HSTS (HTTP Strict Transport Security) headers**
+> >
+> > HSTS instructs browsers to always use HTTPS, preventing the downgrade to HTTP that [[ssltls-stripping|SSL stripping]] requires. Network IDS (A) can detect but not prevent SSL stripping in real time. Antivirus (C) protects against malware, not network-level protocol downgrade attacks. Longer certificate key lengths (D) strengthen encryption but do not prevent the connection from being downgraded to unencrypted HTTP.
+>
+> **Q3.** An attacker compromises a user's browser with malware that silently modifies the destination account number during an online banking transfer, while the user sees the correct account number on screen. Which on-path attack variant is this?
+>
+> A. ARP spoofing
+> B. SSL/TLS interception
+> C. Relay attack
+> D. Man-in-the-Browser (MitB)
+>
+> > [!answer]- Show Answer
+> > **D. Man-in-the-Browser (MitB)**
+> >
+> > [[man-in-the-browser-mitb|MitB]] is browser-resident malware that modifies transactions in real time while displaying the original values to the user. ARP spoofing (A) is a network-level technique for positioning between hosts, not modifying browser content. SSL/TLS interception (B) decrypts and re-encrypts traffic at the network level, not within the browser. Relay attacks (C) forward authentication exchanges, typically in NFC/RFID contexts, not web banking transactions.
+>
+> **Q4.** CompTIA's SY0-701 exam uses the term "on-path attack" instead of the older terminology. Which attack description BEST matches the core concept of an on-path attack?
+>
+> A. An attacker floods a target with traffic to exhaust its resources
+> B. An attacker positions themselves between two communicating parties to intercept or alter data
+> C. An attacker guesses passwords through repeated login attempts
+> D. An attacker exploits a software vulnerability to execute arbitrary code
+>
+> > [!answer]- Show Answer
+> > **B. An attacker positions themselves between two communicating parties to intercept or alter data**
+> >
+> > The defining characteristic of an on-path attack (formerly man-in-the-middle) is the attacker's position between two communicating parties, enabling interception or modification of traffic while both sides believe they are communicating directly. Flooding with traffic (A) describes a [[denial-of-service]] attack. Guessing passwords (B) describes [[password-attacks]]. Exploiting software vulnerabilities (D) describes [[application-attacks]], not traffic interception.
+
 ## Scenario
 
 > See [[case-on-path-attacks]] for a practical DevOps scenario applying these concepts.

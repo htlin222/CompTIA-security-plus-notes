@@ -46,6 +46,58 @@ Network monitoring involves continuously observing network traffic, bandwidth ut
 - Complements [[edr-xdr]] by providing the network perspective that endpoint agents cannot see
 - Anomalies detected may trigger [[incident-response]] investigation and containment procedures
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Network Monitoring (4 Questions)
+>
+> **Q1.** A security analyst wants to determine which internal hosts are communicating with external IP addresses and how much data they are transferring, without capturing full packet contents. Which technology is BEST suited for this requirement?
+>
+> A. Full packet capture with Wireshark
+> B. NetFlow analysis
+> C. Host-based IDS
+> D. SNMP polling
+>
+> > [!answer]- Show Answer
+> > **B. NetFlow analysis**
+> >
+> > [[netflow-sflow-ipfix|NetFlow]] collects metadata about network traffic flows — source, destination, ports, and volume — without capturing full packet contents, making it ideal for traffic analysis at scale. Option A captures full packets, which provides more detail than needed and requires massive storage. Option C monitors individual endpoints, not network-wide traffic patterns. Option D monitors device status and performance metrics, not traffic flow details.
+>
+> **Q2.** A network engineer needs to send a copy of all traffic passing through a core switch to a network-based IDS for analysis. The engineer does not want to affect the switch's performance or the original traffic flow. Which method is MOST appropriate?
+>
+> A. Installing a network tap on the switch uplink
+> B. Configuring a host-based firewall on the switch
+> C. Enabling SNMP traps on the switch
+> D. Deploying full disk encryption on the IDS server
+>
+> > [!answer]- Show Answer
+> > **A. Installing a network tap on the switch uplink**
+> >
+> > [[network-taps]] are hardware devices that copy network traffic for monitoring without affecting the original traffic flow or switch performance. Option B is a device-level control, not a traffic copying mechanism. Option C sends alerts about device events, not copies of traffic. Option D protects data at rest on the IDS, unrelated to traffic copying.
+>
+> **Q3.** A security team establishes a normal traffic baseline for the corporate network. Two weeks later, monitoring tools detect a 300% increase in DNS query volume from a single workstation during non-business hours. What does this anomaly MOST likely suggest?
+>
+> A. The workstation is performing a scheduled software update
+> B. The workstation may be compromised and using DNS tunneling for data exfiltration
+> C. The DNS server is experiencing a hardware failure
+> D. The workstation's NTP configuration is incorrect
+>
+> > [!answer]- Show Answer
+> > **B. The workstation may be compromised and using DNS tunneling for data exfiltration**
+> >
+> > Excessive DNS queries from a single host during off-hours is a strong indicator of [[protocol-analysis|DNS tunneling]], where attackers encode data within DNS queries for command-and-control communication or data exfiltration. [[baseline-establishment|Baseline deviation]] detection makes this anomaly visible. Option A would generate HTTP/HTTPS traffic, not excessive DNS queries. Option C would affect all workstations, not just one. Option D would cause time drift, not DNS query spikes.
+>
+> **Q4.** An organization uses SNMPv2c to monitor all network devices. A security auditor flags this as a vulnerability. What is the PRIMARY security concern?
+>
+> A. SNMPv2c uses too much network bandwidth
+> B. SNMPv2c transmits community strings in cleartext without encryption or strong authentication
+> C. SNMPv2c cannot monitor network device performance
+> D. SNMPv2c is incompatible with modern network switches
+>
+> > [!answer]- Show Answer
+> > **B. SNMPv2c transmits community strings in cleartext without encryption or strong authentication**
+> >
+> > [[snmp-simple-network-management-protocol|SNMPv2c]] sends community strings (essentially passwords) in plaintext, allowing attackers to intercept them and gain read or write access to network devices. Only SNMPv3 adds encryption and proper authentication. Option A is not a significant concern with SNMP. Option C is incorrect — SNMPv2c is fully capable of performance monitoring. Option D is incorrect — SNMPv2c is widely supported.
+
 ## Scenario
 
 > See [[case-network-monitoring]] for a practical DevOps scenario applying these concepts.

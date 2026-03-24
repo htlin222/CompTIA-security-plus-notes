@@ -48,6 +48,58 @@ Penetration testing is an authorized, simulated cyberattack performed to evaluat
 - May uncover [[application-attacks]] such as SQL injection and XSS in web applications
 - Results inform [[hardening]] priorities for systems and network infrastructure
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Penetration Testing (4 Questions)
+>
+> **Q1.** A company hires an external security firm to test its defenses. The testers are given employee-level network credentials and a network diagram but no source code access. Which type of penetration test is this?
+>
+> A. Black box
+> B. White box
+> C. Gray box
+> D. Red team engagement
+>
+> > [!answer]- Show Answer
+> > **C. Gray box**
+> >
+> > [[testing-types|Gray box]] testing provides the tester with partial knowledge — some credentials and documentation but not full transparency into all systems and code. Option A (black box) provides no prior knowledge at all. Option B (white box) provides full access including source code, architecture diagrams, and credentials. Option D is an extended adversary simulation, not a defined knowledge-level test type.
+>
+> **Q2.** Before beginning a penetration test, the testing team and the client sign a document specifying which systems can be tested, the testing window, prohibited techniques, and emergency contact procedures. What is this document called?
+>
+> A. Service Level Agreement (SLA)
+> B. Non-Disclosure Agreement (NDA)
+> C. Rules of Engagement (ROE)
+> D. Acceptable Use Policy (AUP)
+>
+> > [!answer]- Show Answer
+> > **C. Rules of Engagement (ROE)**
+> >
+> > The [[rules-of-engagement-roe|Rules of Engagement]] is the legal document that defines the scope, boundaries, timing, allowed techniques, and escalation procedures for a penetration test. Option A defines service delivery expectations, not testing parameters. Option B protects confidential information but does not define testing scope. Option D governs general user behavior on systems, not penetration testing activities.
+>
+> **Q3.** During a penetration test, an ethical hacker compromises a low-privilege user workstation and then uses that machine's network access to reach and exploit an internal database server that was not directly accessible from outside the network. What technique does this describe?
+>
+> A. Social engineering
+> B. Pivoting
+> C. Vulnerability scanning
+> D. Port mirroring
+>
+> > [!answer]- Show Answer
+> > **B. Pivoting**
+> >
+> > [[pivoting]] is the technique of using a compromised system as a launchpad to access and attack other systems in the internal network that are not directly reachable from the attacker's initial position. Option A manipulates people, not network paths. Option C identifies vulnerabilities but does not involve using one system to reach another. Option D copies network traffic for monitoring, unrelated to attack progression.
+>
+> **Q4.** An organization runs both quarterly penetration tests and a year-round bug bounty program. What is the PRIMARY advantage of the bug bounty program over traditional penetration testing?
+>
+> A. Bug bounties are always less expensive than penetration tests
+> B. Bug bounties provide continuous testing by a diverse pool of researchers with varied skill sets
+> C. Bug bounty researchers have better tools than professional penetration testers
+> D. Bug bounties eliminate the need for rules of engagement
+>
+> > [!answer]- Show Answer
+> > **B. Bug bounties provide continuous testing by a diverse pool of researchers with varied skill sets**
+> >
+> > [[bug-bounty-programs]] leverage crowdsourced, ongoing testing from researchers with diverse backgrounds and techniques, providing broader coverage than time-boxed pen tests. Option A is not always true — bounty payouts can exceed pen test costs. Option C is incorrect — tools are generally similar. Option D is wrong — bug bounty programs still require scope definitions and legal agreements.
+
 ## Scenario
 
 > See [[case-penetration-testing]] for a practical DevOps scenario applying these concepts.

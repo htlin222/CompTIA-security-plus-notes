@@ -46,6 +46,58 @@ A firewall is a network security device or software that monitors and controls i
 - Works alongside [[ids-ips]] which detects and prevents threats that pass through firewall rules
 - See also [[network-segmentation]] for how firewalls enforce zone boundaries within the network
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: Firewalls (4 Questions)
+>
+> **Q1.** A company needs a firewall that can inspect encrypted web traffic, identify applications regardless of port, and block intrusions. Which firewall type BEST meets these requirements?
+>
+> A. Packet filtering firewall
+> B. Stateful inspection firewall
+> C. Next-Generation Firewall (NGFW)
+> D. Web Application Firewall (WAF)
+>
+> > [!answer]- Show Answer
+> > **C. Next-Generation Firewall (NGFW)**
+> >
+> > An [[firewalls|NGFW]] combines stateful inspection, deep packet inspection, IPS capabilities, and application awareness, meeting all the stated requirements. A packet filtering firewall (A) only inspects headers and cannot identify applications. A stateful firewall (B) tracks connections but lacks application awareness and IPS. A WAF (D) is specifically designed for web application attacks (SQLi, XSS) and does not provide the full range of capabilities described.
+>
+> **Q2.** A network administrator creates firewall rules but forgets to add a rule for a new service. Users report they cannot access the service. Which firewall principle explains this behavior?
+>
+> A. Stateful inspection
+> B. Implicit deny
+> C. Deep packet inspection
+> D. NAT traversal
+>
+> > [!answer]- Show Answer
+> > **B. Implicit deny**
+> >
+> > [[firewalls|Implicit deny]] is the default rule at the bottom of every firewall rule set — any traffic not explicitly permitted is blocked. Stateful inspection (A) tracks connection states but does not explain the default blocking behavior. Deep packet inspection (C) examines packet payloads but does not block unmatched traffic by default. NAT traversal (D) relates to routing traffic through NAT devices, not default deny behavior.
+>
+> **Q3.** A web application is experiencing SQL injection attacks despite having a network firewall in place. Which additional firewall should be deployed to address this specific threat?
+>
+> A. A second packet filtering firewall
+> B. A stateful inspection firewall
+> C. A Web Application Firewall (WAF)
+> D. A host-based firewall on each client
+>
+> > [!answer]- Show Answer
+> > **C. A Web Application Firewall (WAF)**
+> >
+> > A [[firewalls|WAF]] operates at Layer 7 and specifically protects web applications against attacks like SQL injection and XSS by inspecting HTTP/HTTPS traffic content. A second packet filtering firewall (A) cannot inspect application-layer payloads. A stateful firewall (B) tracks connections but does not analyze web application content. Host-based firewalls on clients (D) protect individual endpoints, not the web application server from injection attacks.
+>
+> **Q4.** A firewall administrator places a more specific permit rule below a broader deny rule in the rule set. Traffic matching the specific rule is still being blocked. What is the MOST likely cause?
+>
+> A. The firewall requires a reboot to apply new rules
+> B. Firewall rules are processed top-down, and the deny rule matches first
+> C. The permit rule uses the wrong encryption protocol
+> D. The firewall has exceeded its maximum rule capacity
+>
+> > [!answer]- Show Answer
+> > **B. Firewall rules are processed top-down, and the deny rule matches first**
+> >
+> > [[firewalls|Firewall rules]] are processed in order from top to bottom, and the first matching rule is applied. Since the broader deny rule is above the permit rule, it matches first and blocks the traffic. Firewalls typically apply rules immediately without rebooting (A). Encryption protocol (C) is unrelated to rule ordering. Rule capacity limits (D) would prevent adding rules, not cause incorrect matching.
+
 ## Scenario
 
 > See [[case-firewalls]] for a practical DevOps scenario applying these concepts.

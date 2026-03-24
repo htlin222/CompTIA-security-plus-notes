@@ -46,6 +46,58 @@ DNS attacks exploit the Domain Name System — the internet's directory service 
 - DNS tunneling can be detected through [[network-monitoring]] and DNS query log analysis
 - [[on-path-attacks]] can intercept and modify DNS responses to redirect victims
 
+## Practice Questions
+
+> [!qbank]- Q-Bank: DNS Attacks (4 Questions)
+>
+> **Q1.** A security analyst discovers unusually large TXT record queries at regular intervals from an internal workstation to an unfamiliar external domain. Which DNS attack technique is MOST likely being used?
+>
+> A. DNS cache poisoning
+> B. DNS tunneling
+> C. DNS amplification
+> D. Typosquatting
+>
+> > [!answer]- Show Answer
+> > **B. DNS tunneling**
+> >
+> > Regular, large DNS queries (especially TXT records) to an external domain are classic indicators of [[dns-tunneling]], which encodes data within DNS queries to exfiltrate data or establish C2 channels. DNS cache poisoning (A) injects false records into a resolver's cache, not unusual query patterns. DNS amplification (C) uses open resolvers to flood a victim with large responses, not internal-to-external exfiltration. Typosquatting (D) involves registering look-alike domains, not unusual DNS query patterns.
+>
+> **Q2.** An organization deploys DNSSEC across its domains. Which type of DNS attack does DNSSEC PRIMARILY protect against?
+>
+> A. DNS tunneling
+> B. DNS cache poisoning
+> C. DNS amplification
+> D. Domain hijacking via social engineering
+>
+> > [!answer]- Show Answer
+> > **B. DNS cache poisoning**
+> >
+> > [[dnssec-dns-security-extensions|DNSSEC]] adds digital signatures to DNS records, allowing resolvers to verify authenticity and integrity — directly preventing [[dns-poisoning-dns-cache-poisoning|DNS cache poisoning]]. DNSSEC does not prevent DNS tunneling (A), which uses valid DNS queries for data exfiltration. DNS amplification (C) is a DDoS technique that DNSSEC does not address. Domain hijacking via social engineering (D) targets registrar accounts, not DNS record integrity.
+>
+> **Q3.** Users at a company report being redirected to a phishing site when visiting their bank's website. Investigation reveals the company's DNS resolver has incorrect A records for the bank's domain. No changes were made to the resolver configuration. What attack has MOST likely occurred?
+>
+> A. DNS tunneling
+> B. Typosquatting
+> C. DNS cache poisoning
+> D. DNS amplification
+>
+> > [!answer]- Show Answer
+> > **C. DNS cache poisoning**
+> >
+> > Incorrect records appearing in a resolver's cache without configuration changes indicates [[dns-poisoning-dns-cache-poisoning|DNS cache poisoning]], where an attacker injected false DNS records. DNS tunneling (A) involves data exfiltration, not record manipulation. Typosquatting (B) requires users to mistype a URL, but users are typing the correct domain. DNS amplification (D) is a DDoS technique, not a redirection attack.
+>
+> **Q4.** A security team wants to prevent eavesdropping on DNS queries between clients and the organization's DNS resolver. Which solution BEST addresses this requirement?
+>
+> A. DNSSEC
+> B. DNS over HTTPS (DoH)
+> C. Longer DNS TTL values
+> D. Split-horizon DNS
+>
+> > [!answer]- Show Answer
+> > **B. DNS over HTTPS (DoH)**
+> >
+> > [[dns-over-https-doh-dns-over-tls-dot|DoH]] encrypts DNS queries to prevent eavesdropping, providing confidentiality for DNS traffic. DNSSEC (A) provides integrity and authenticity through digital signatures but does NOT encrypt DNS queries. Longer TTL values (C) reduce query frequency but do not encrypt traffic. Split-horizon DNS (D) provides different responses to internal vs. external clients but does not encrypt queries.
+
 ## Scenario
 
 > See [[case-dns-attacks]] for a practical DevOps scenario applying these concepts.
