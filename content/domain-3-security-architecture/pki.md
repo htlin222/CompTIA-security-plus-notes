@@ -34,6 +34,10 @@ Public Key Infrastructure (PKI) is a comprehensive system for creating, distribu
 - **[[certificate-pinning|Certificate pinning]]** — application hardcodes the expected certificate or public key to prevent MITM with rogue certs
 - **[[key-escrow|Key escrow]]** — a third party holds a copy of the private key for recovery purposes
 - **[[cross-certification|Cross-certification]]** — two CAs trust each other's certificates for interoperability
+- **DV (Domain Validation) certificate** — verifies domain ownership only; quickest and cheapest
+- **EV (Extended Validation) certificate** — thorough identity verification; displays organization name in browser
+- **SAN (Subject Alternative Name)** — certificate field allowing multiple domain names on a single certificate
+- **[[certificate-formats|Certificate formats]]** — DER (binary), PEM (Base64-encoded), PKCS#12/PFX (includes private key), PKCS#7 (certificate chain)
 
 ## Exam Tips
 

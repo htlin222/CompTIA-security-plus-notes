@@ -31,6 +31,8 @@ Penetration testing is an authorized, simulated cyberattack performed to evaluat
 - **[[pivoting|Pivoting]]**: Using a compromised system as a launchpad to attack internal networks
 - **[[bug-bounty-programs|Bug bounty programs]]**: Crowdsourced testing where external researchers report vulnerabilities for rewards
 - **[[red-team-vs-pen-test|Red team vs. pen test]]**: Red teams simulate real adversaries over extended periods; pen tests are time-boxed technical assessments
+- **[[wardriving|Wardriving]]**: Scanning for wireless networks from a moving vehicle using a laptop and antenna
+- **[[warflying|Warflying]]**: Scanning for wireless networks using a drone for broader coverage
 
 ## Exam Tips
 

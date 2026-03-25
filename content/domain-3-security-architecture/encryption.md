@@ -39,6 +39,10 @@ Encryption is the process of converting readable data (plaintext) into an unread
   - **In transit** — TLS/SSL, IPSec, SSH
   - **In use** — homomorphic encryption, secure enclaves (emerging)
 - **[[key-length|Key length]]** — longer keys = stronger encryption; AES-256 is the current gold standard
+- **Key stretching** — techniques that make weak keys stronger by applying hash functions multiple times (bcrypt, PBKDF2)
+- **Lightweight cryptography** — algorithms designed for resource-constrained IoT and embedded devices
+- **[[perfect-forward-secrecy-pfs|Perfect Forward Secrecy (PFS)]]** — ensures session keys are not compromised even if the server's private key is later exposed; uses [[ephemeral-keys|ephemeral Diffie-Hellman]]
+- **NTRU** — post-quantum lattice-based cryptographic algorithm resistant to quantum computing attacks
 
 ## Exam Tips
 

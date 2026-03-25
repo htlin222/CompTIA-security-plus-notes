@@ -40,6 +40,9 @@ Resilience is the ability of a system to continue operating during adverse condi
 - **[[capacity-planning|Capacity planning]]** — ensuring sufficient resources to handle peak loads and growth
 - **[[scalability|Scalability]]** — vertical (scale up: more resources) vs. horizontal (scale out: more instances)
 - **[[non-persistence|Non-persistence]]** — systems rebuilt from known-good images; live boot media, revert to snapshot
+- **NIC teaming** — combining multiple network interfaces for redundancy and increased throughput
+- **SAN replication** — copying storage area network data between sites for disaster recovery
+- **Backup types** — full (all data), incremental (changes since last backup), differential (changes since last full backup)
 
 ## Exam Tips
 

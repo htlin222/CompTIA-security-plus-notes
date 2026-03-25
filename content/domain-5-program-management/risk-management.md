@@ -33,6 +33,11 @@ Risk management is the continuous cycle of identifying threats and vulnerabiliti
 - **[[risk-register|Risk register]]** — a living document tracking identified risks, owners, responses, and status
 - **[[risk-matrix-heat-map|Risk matrix (heat map)]]** — plots likelihood vs. impact to prioritize risks visually
 - **[[qualitative-vs-quantitative-analysis|Qualitative vs. quantitative analysis]]** — qualitative uses categories (high/medium/low); quantitative uses dollar values (SLE, ALE, ARO)
+- **RTO (Recovery Time Objective)** — maximum acceptable time to restore a system after failure
+- **RPO (Recovery Point Objective)** — maximum acceptable data loss measured in time (how far back you can afford to lose)
+- **MTTR (Mean Time to Repair)** — average time to fix a failed component
+- **MTBF (Mean Time Between Failures)** — average time between system failures; higher is better
+- **Mission-essential functions** — operations that must be performed during and after a disruption
 
 ## Exam Tips
 

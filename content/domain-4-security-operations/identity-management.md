@@ -28,6 +28,7 @@ Identity management (IdM) is the framework of policies, processes, and technolog
 - **[[identity-governance|Identity governance]]**: Periodic access reviews and certification to ensure least privilege is maintained
 - **[[self-service-capabilities|Self-service capabilities]]**: Password resets and profile updates reduce helpdesk burden while maintaining security
 - **[[privileged-accounts|Privileged accounts]]**: Service accounts, admin accounts, and root accounts require additional controls
+- **[[identity-provider-idp|IdP (Identity Provider)]]**: Trusted service that creates and manages user identities and provides authentication tokens
 
 ## Exam Tips
 

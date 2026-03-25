@@ -27,6 +27,8 @@ Security governance is the set of responsibilities, policies, and procedures an 
 - **[[centralized-vs-decentralized-governance|Centralized vs. decentralized governance]]** — centralized offers consistency; decentralized gives business units flexibility
 - **[[monitoring-and-reporting|Monitoring and reporting]]** — KPIs and KRIs measure governance effectiveness and communicate risk to leadership
 - **[[due-diligence-vs-due-care|Due diligence vs. due care]]** — diligence is researching and understanding risks; care is acting on that knowledge
+- **Control types by category** — managerial (policies, risk assessments), operational (training, procedures, guards), technical (firewalls, encryption, ACLs)
+- **Control types by function** — preventive (block threats), detective (identify incidents), corrective (fix after incident), deterrent (discourage), compensating (alternative when primary control isn't feasible), physical (locks, fences, cameras)
 
 ## Exam Tips
 

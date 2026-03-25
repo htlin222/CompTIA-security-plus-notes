@@ -37,6 +37,7 @@ Data protection involves implementing controls to ensure that data remains confi
   - **Degaussing** — magnetic field destroys data on magnetic media; does not work on SSDs
   - **Physical destruction** — shredding, incineration, pulverizing
   - **Cryptographic erasure** — destroying the encryption key renders encrypted data unrecoverable
+- **Data minimization** — collecting and retaining only the minimum data necessary for the stated purpose
 
 ## Exam Tips
 

@@ -29,6 +29,9 @@ Log management is the practice of collecting, centralizing, storing, and analyzi
 - **[[log-integrity|Log integrity]]**: Protecting logs from tampering using write-once storage, hashing, or digital signatures
 - **[[windows-event-log|Windows Event Log]]**: Security, System, and Application logs; Event IDs like 4625 (failed login) and 4624 (successful login)
 - **[[journald|journald]]**: Linux systemd journal for structured logging
+- **[[rsyslog|rsyslog]]**: Enhanced syslog daemon with TCP support, filtering, and database output
+- **[[syslog-ng|syslog-ng]]**: Advanced syslog with content-based filtering, flexible configuration, and TLS encryption
+- **[[journalctl|journalctl]]**: Queries systemd journal; filters by unit, priority, or time range
 
 ## Exam Tips
 

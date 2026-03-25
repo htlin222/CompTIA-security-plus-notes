@@ -34,6 +34,8 @@ Privacy in information security refers to an individual's right to control how t
 - **[[anonymization-vs-pseudonymization|Anonymization vs. pseudonymization]]** — anonymization is irreversible; pseudonymization replaces identifiers but can be reversed with a key
 - **[[data-breach-notification|Data breach notification]]** — regulations often require notifying affected individuals and authorities within a set timeframe
 - **[[data-sovereignty|Data sovereignty]]** — data is subject to the laws of the country where it is stored
+- **Tokenization** — substituting sensitive data elements with non-sensitive tokens
+- **Data masking** — obscuring specific data within a database to protect it in non-production environments
 
 ## Exam Tips
 

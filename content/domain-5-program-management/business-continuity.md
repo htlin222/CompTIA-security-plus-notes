@@ -36,6 +36,8 @@ Business Continuity Planning (BCP) is the proactive process of creating systems 
   - **Parallel test** — recovery systems run alongside production
   - **Full interruption test** — production systems are shut down; most thorough but riskiest
 - **[[after-action-review|After-action review]]** — lessons learned documented after each test or actual incident
+- **COOP (Continuity of Operations Plan)** — government term for maintaining essential functions during emergencies
+- **DRP (Disaster Recovery Plan)** — specific procedures for recovering IT systems after a disaster
 
 ## Exam Tips
 

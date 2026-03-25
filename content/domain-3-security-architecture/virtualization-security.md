@@ -32,6 +32,9 @@ Virtualization allows multiple virtual machines (VMs) to run on a single physica
 - **[[hardening-the-hypervisor|Hardening the hypervisor]]** — patching, disabling unnecessary services, restricting management access, enabling secure boot
 - **[[live-migration-security|Live migration security]]** — encrypting VM data during migration between hosts to prevent interception
 - **[[sandboxing|Sandboxing]]** — using VMs as isolated environments for testing suspicious code or malware analysis
+- **Thin client** — lightweight endpoint that relies on server-side processing; reduces local attack surface
+- **Container security** — containers share the host OS kernel; a kernel exploit could compromise all containers
+- **Orchestration** — automated management and coordination of containers/VMs (Kubernetes, Docker Swarm)
 
 ## Exam Tips
 

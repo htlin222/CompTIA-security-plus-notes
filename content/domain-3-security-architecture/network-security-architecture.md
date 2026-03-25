@@ -31,6 +31,10 @@ Network security architecture is the design and structure of network defenses th
 - **[[secure-access-service-edge-sase|Secure Access Service Edge (SASE)]]** — cloud-delivered convergence of network and security services
 - **[[micro-segmentation|Micro-segmentation]]** — granular segmentation within a network, often at the workload level
 - **[[implicit-deny|Implicit deny]]** — the default stance; all traffic is blocked unless explicitly allowed
+- **[[ssltls-offloading|SSL/TLS offloading]]** — terminating encrypted connections at a load balancer or proxy to reduce backend server load
+- **Broadcast storm prevention** — loop protection and BPDU guard on switches to prevent network loops
+- **DHCP snooping** — switch feature that filters untrusted DHCP messages to prevent rogue DHCP servers
+- **[[unified-threat-management-utm|UTM (Unified Threat Management)]]** — single appliance combining firewall, IDS/IPS, antivirus, content filtering, and VPN
 
 ## Exam Tips
 

@@ -36,6 +36,7 @@ A Virtual Private Network (VPN) extends a private network across a public networ
 - **Tunnel mode vs. transport mode (IPSec):**
   - **Tunnel mode** — encrypts entire original packet including headers; used for site-to-site
   - **Transport mode** — encrypts only the payload; used for host-to-host
+- **L2TP (Layer 2 Tunneling Protocol)** — often paired with IPSec for encryption; does not provide encryption on its own
 
 ## Exam Tips
 

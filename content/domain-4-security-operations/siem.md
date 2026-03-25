@@ -28,6 +28,9 @@ Security Information and Event Management (SIEM) combines Security Information M
 - **[[retention-and-archival|Retention and archival]]**: Storing log data for compliance requirements and forensic investigations
 - **[[user-and-entity-behavior-analytics-ueba|User and Entity Behavior Analytics (UEBA)]]**: Machine learning that baselines normal behavior and detects anomalies
 - **[[common-siem-platforms|Common SIEM platforms]]**: Splunk, Microsoft Sentinel, IBM QRadar, Elastic Security
+- **[[syslog|Syslog]]**: Standard protocol for forwarding log messages (UDP 514, TCP 514, or TLS 6514)
+- **[[syslog-severity-levels|Syslog severity levels]]**: 0=Emergency, 1=Alert, 2=Critical, 3=Error, 4=Warning, 5=Notice, 6=Info, 7=Debug
+- **[[journalctl|journalctl]]**: Linux command for querying systemd journal logs
 
 ## Exam Tips
 

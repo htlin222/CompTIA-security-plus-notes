@@ -30,6 +30,12 @@ Digital forensics is the process of identifying, preserving, collecting, analyzi
 - **[[live-forensics-vs-dead-forensics|Live forensics vs. dead forensics]]**: Live = analyzing a running system (captures volatile data); dead = analyzing powered-off media
 - **[[e-discovery|E-discovery]]**: Legal process of identifying and collecting electronically stored information (ESI) for litigation
 - **[[anti-forensics|Anti-forensics]]**: Techniques attackers use to hinder forensic analysis (encryption, log wiping, timestomping)
+- **[[rfc-3227|RFC 3227]]**: Guidelines for evidence collection and archiving; establishes order of volatility
+- **[[time-offsets|Time offsets]]**: Accounting for time zone differences and clock drift when correlating forensic evidence
+- **[[ftk-imager|FTK Imager]]**: Forensic imaging tool for creating bit-for-bit disk copies
+- **[[autopsy|Autopsy]]**: Open-source digital forensics platform for analyzing disk images
+- **[[dd|dd]]**: Unix command for creating raw disk images (`dd if=/dev/sda of=image.dd`)
+- **[[memdump|memdump]]**: Tool for capturing volatile memory (RAM) contents for analysis
 
 ## Exam Tips
 

@@ -35,6 +35,12 @@ Cloud security addresses the unique risks and shared responsibilities of deployi
 - **[[multitenancy-risks|Multitenancy risks]]** — data isolation between tenants; side-channel attacks; resource contention
 - **[[api-security|API security]]** — cloud services are API-driven; securing APIs is critical to cloud security
 - **[[secrets-management|Secrets management]]** — storing credentials, keys, and tokens securely in cloud environments
+- **Edge computing** — processing data near the source rather than in a centralized cloud data center
+- **Fog computing** — extends cloud computing to the network edge, providing local processing and storage
+- **VPC (Virtual Private Cloud)** — isolated virtual network within a public cloud provider
+- **Transit gateway** — centralized hub connecting multiple VPCs and on-premises networks
+- **Availability zones** — physically separate data centers within a cloud region for redundancy
+- **SWG (Secure Web Gateway)** — filters unwanted software and enforces corporate policy for web traffic
 
 ## Exam Tips
 

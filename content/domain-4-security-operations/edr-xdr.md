@@ -29,6 +29,8 @@ Endpoint Detection and Response (EDR) continuously monitors endpoints to detect 
 - **[[telemetry-correlation-xdr|Telemetry correlation (XDR)]]**: Combines data from endpoints, network, cloud, and email to detect multi-vector attacks
 - **[[threat-intelligence-integration|Threat intelligence integration]]**: EDR/XDR platforms cross-reference activity with known threat indicators
 - **[[fileless-malware-detection|Fileless malware detection]]**: Identifies threats that operate in memory without writing to disk
+- **[[ngfw|NGFW (Next-Generation Firewall)]]**: Integrates with EDR/XDR for network-level threat correlation
+- **[[remote-attestation|Remote attestation]]**: Verifying endpoint integrity by having the TPM sign boot measurements for a remote server to validate
 
 ## Exam Tips
 

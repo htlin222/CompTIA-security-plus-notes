@@ -38,6 +38,8 @@ Network Access Control (NAC) is a security solution that enforces policies on de
   - **Authentication server** — RADIUS server that validates credentials
 - **[[remediation-network|Remediation network]]** — quarantine VLAN where non-compliant devices are placed to receive updates
 - **[[guest-networking|Guest networking]]** — NAC can direct unknown or personal devices to an isolated guest network
+- **EAP variants** — EAP-TLS (mutual certificate auth, most secure), PEAP (server certificate + password), EAP-FAST (Cisco, uses PAC), EAP-TTLS (server cert, flexible inner auth)
+- **WPA3-Enterprise** — uses 192-bit security mode with EAP-TLS for enterprise wireless NAC
 
 ## Exam Tips
 

@@ -36,6 +36,13 @@ Security policies are high-level, management-approved documents that establish t
   - **BYOD policy** — rules for personal devices accessing corporate resources
 - **[[policy-lifecycle|Policy lifecycle]]** — create, approve, distribute, enforce, review, revise, retire
 - **[[exception-process|Exception process]]** — formal mechanism for requesting and approving deviations from policy
+- **Job rotation** — periodically rotating personnel through different roles to detect fraud and reduce single points of failure
+- **Mandatory vacations** — requiring employees to take time off so others perform their duties, exposing potential fraud
+- **Clean desk policy** — requiring employees to secure all sensitive materials when leaving their workspace
+- **NDA (Non-Disclosure Agreement)** — legal contract prohibiting sharing of confidential information
+- **Background checks** — pre-employment screening including criminal history, credit checks, and reference verification
+- **EOL (End of Life)** — vendor no longer sells the product but may still provide support
+- **EOSL (End of Service Life)** — vendor no longer provides patches, updates, or support; critical security risk
 
 ## Exam Tips
 

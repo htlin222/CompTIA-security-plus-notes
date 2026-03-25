@@ -34,6 +34,7 @@ Security awareness training is a program designed to educate all personnel about
 - **[[metrics|Metrics]]** — phishing click rates, training completion rates, incident report volumes, time to report
 - **[[culture-of-security|Culture of security]]** — training should foster a culture where reporting suspicious activity is encouraged, not punished
 - **[[insider-threat-awareness|Insider threat awareness]]** — recognizing behavioral indicators of potential insider threats
+- **Social media analysis** — reviewing employee social media for oversharing of corporate information
 
 ## Exam Tips
 

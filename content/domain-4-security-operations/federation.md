@@ -29,6 +29,8 @@ Federation is a system of trust between separate organizations or security domai
 - **[[transitive-trust|Transitive trust]]**: If A trusts B and B trusts C, A may transitionally trust C — this can introduce risk
 - **[[attribute-mapping|Attribute mapping]]**: Translating identity attributes (role, department) between different organizational schemas
 - **[[cross-certification|Cross-certification]]**: Two CAs establish mutual trust by signing each other's certificates
+- **[[attestation|Attestation]]**: Process of validating that a device or identity claim is genuine and trustworthy
+- **[[radius-federation|RADIUS federation]]**: Extending RADIUS authentication across organizational boundaries (e.g., eduroam)
 
 ## Exam Tips
 

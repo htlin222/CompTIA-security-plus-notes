@@ -42,6 +42,10 @@ Embedded systems are purpose-built computing devices designed for specific funct
   - **Encryption** — use lightweight cryptographic protocols where possible
   - **Physical security** — many embedded systems are in accessible locations
   - **Wrappers** — placing security controls around devices that cannot be directly secured
+- **FPGA (Field-Programmable Gate Array)** — reprogrammable hardware that can be customized after manufacturing
+- **Zigbee** — low-power, low-data-rate wireless protocol for IoT mesh networks (home automation, industrial sensors)
+- **Narrowband IoT (NB-IoT)** — cellular technology optimized for low-power, wide-area IoT connectivity
+- **Baseband** — firmware that manages radio communications on mobile devices
 
 ## Exam Tips
 

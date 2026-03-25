@@ -30,6 +30,9 @@ Third-party risk arises whenever an organization shares data, systems, or access
 - **[[vendor-lock-in|Vendor lock-in]]** — dependency risk when switching providers is costly or technically difficult
 - **[[offboarding|Offboarding]]** — revoking access, retrieving data, and ensuring secure data destruction when a vendor relationship ends
 - **[[fourth-party-risk|Fourth-party risk]]** — risk from your vendor's vendors; you may not have visibility into their supply chain
+- **MOU (Memorandum of Understanding)** — less formal agreement outlining mutual intentions between parties
+- **MSA (Master Service Agreement)** — overarching contract governing all future transactions between parties
+- **BPA (Business Partners Agreement)** — defines responsibilities and profit/loss sharing between business partners
 
 ## Exam Tips
 

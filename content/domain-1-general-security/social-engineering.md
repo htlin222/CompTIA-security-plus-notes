@@ -31,9 +31,10 @@ Social engineering is the art of manipulating people into performing actions or 
 - **[[tailgatingpiggybacking|Tailgating/Piggybacking]]** — following an authorized person through a secured door
   - Tailgating = without their knowledge; Piggybacking = with their consent
 - **[[watering-hole-attack|Watering hole attack]]** — compromising a website frequently visited by the target group
-- **[[typosquatting|Typosquatting]]** — registering domains similar to legitimate ones to capture mistyped URLs
+- **[[typosquatting|Typosquatting]]** — also known as **URL hijacking**; registering domains similar to legitimate ones to capture mistyped URLs; relies on common typing errors
 - **[[brand-impersonation|Brand impersonation]]** — creating fake websites, emails, or social media profiles mimicking trusted brands
-- **[[influence-campaigns|Influence campaigns]]** — large-scale disinformation operations to manipulate public opinion
+- **[[influence-campaigns|Influence campaigns]]** — large-scale disinformation operations to manipulate public opinion; may include **hybrid warfare** combining cyber operations with disinformation
+- **Credential harvesting** — collecting usernames and passwords via fake login pages or forms, often delivered through phishing campaigns
 - **Psychological principles exploited**:
   - Authority, urgency, scarcity, social proof, likability, fear, intimidation, consensus
 

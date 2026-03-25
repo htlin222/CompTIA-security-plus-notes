@@ -31,6 +31,8 @@ Threat intelligence is the collection, processing, and analysis of data about cu
 - **[[information-sharing-and-analysis-centers-isacs|Information Sharing and Analysis Centers (ISACs)]]**: Industry-specific organizations for sharing threat intelligence
 - **[[threat-actor-profiling|Threat actor profiling]]**: Understanding adversary motivation, capability, and intent
 - **[[confidence-levels|Confidence levels]]**: Rating how reliable and accurate a piece of intelligence is
+- **[[sentiment-analysis|Sentiment analysis]]**: Analyzing social media and public discourse to identify emerging threats or threat actor motivations
+- **[[nvd|NVD (National Vulnerability Database)]]**: US government repository of vulnerability data based on CVE identifiers
 
 ## Exam Tips
 

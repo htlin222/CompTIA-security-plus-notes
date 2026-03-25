@@ -38,6 +38,7 @@ Intrusion Detection Systems (IDS) monitor network traffic or host activity to id
   - **False negative** — missed an actual attack (most dangerous)
 - **[[tuning|Tuning]]** — adjusting sensitivity and rules to reduce false positives without increasing false negatives
 - **[[inline-vs-passive-deployment|Inline vs. passive deployment]]** — IPS must be inline to block; IDS can be passive via port mirroring
+- **[[file-integrity-monitoring|FIM (File Integrity Monitoring)]]** — detects unauthorized changes to critical system files
 
 ## Exam Tips
 

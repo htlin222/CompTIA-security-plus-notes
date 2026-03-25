@@ -30,6 +30,12 @@ Incident response (IR) is the organized approach to addressing and managing the 
 - **[[chain-of-custody|Chain of custody]]**: Maintaining evidence integrity for legal proceedings
 - **[[communication-plan|Communication plan]]**: Who to notify (management, legal, law enforcement, customers, regulators)
 - **[[tabletop-exercises|Tabletop exercises]]**: Discussion-based simulations that walk through IR scenarios without touching systems
+- **[[nist-sp-800-61|NIST SP 800-61]]**: Computer Security Incident Handling Guide; defines the IR lifecycle
+- **[[picerl|PICERL]]**: Mnemonic for IR phases: Preparation, Identification, Containment, Eradication, Recovery, Lessons Learned
+- **[[exercise-types|Exercise types]]**: Tabletop (discussion-based), walkthrough (step-by-step review), simulation (hands-on practice)
+- **[[mitre-attck-framework|MITRE ATT&CK]]**: Knowledge base of adversary tactics, techniques, and procedures (TTPs) based on real-world observations
+- **[[diamond-model|Diamond Model]]**: Intrusion analysis using four vertices: adversary, capability, infrastructure, victim
+- **[[cyber-kill-chain|Cyber Kill Chain]]**: Lockheed Martin model: Reconnaissance → Weaponization → Delivery → Exploitation → Installation → C2 → Actions on Objectives
 
 ## Exam Tips
 

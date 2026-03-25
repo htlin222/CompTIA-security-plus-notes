@@ -39,6 +39,12 @@ Physical security encompasses the tangible controls that protect an organization
 - **[[secure-areas|Secure areas]]** — server rooms, data centers, wiring closets; require restricted access
 - **[[environmental-controls|Environmental controls]]** — fire suppression (wet pipe, dry pipe, clean agent), HVAC, humidity control
 - **[[faraday-cage|Faraday cage]]** — blocks electromagnetic signals; prevents eavesdropping and signal leakage
+- **USB data blocker** — device that blocks data pins on USB connections, allowing only power (prevents juice jacking)
+- **Juice jacking** — attack using compromised USB charging stations to steal data or install malware
+- **FM-200** — clean agent fire suppression system safe for use around electronic equipment; replaces older Halon systems
+- **Protected Distribution System (PDS)** — hardened conduit system for securing network cabling against tapping or interception
+- **Data destruction methods** — overwriting, degaussing (using magnetic fields to erase), physical destruction (shredding, incineration)
+- **Purging vs. sanitization** — purging removes data so it cannot be reconstructed; sanitization makes media suitable for reuse
 
 ## Exam Tips
 

@@ -29,6 +29,11 @@ Endpoint security encompasses the tools, policies, and practices used to protect
 - **[[patch-management|Patch management]]**: Keeping OS and applications up to date to close known vulnerabilities
 - **[[mobile-device-management-mdm|Mobile Device Management (MDM)]]**: Centralized control of mobile endpoints — remote wipe, enforce policies, manage apps
 - **[[boot-integrity|Boot integrity]]**: Secure Boot, Measured Boot, and TPM ensure the system hasn't been tampered with at startup
+- **[[tpm|TPM (Trusted Platform Module)]]**: Hardware chip storing cryptographic keys; enables secure boot and disk encryption
+- **[[secure-boot|Secure boot]]**: UEFI firmware verifies that boot software is signed by a trusted authority
+- **[[measured-boot|Measured boot]]**: Records each boot component's hash in the TPM for later verification (does not block, just logs)
+- **[[trusted-boot|Trusted boot]]**: Kernel verifies the integrity of drivers and startup files during the boot process
+- **[[sed|SED (Self-Encrypting Drive)]]**: Drive with built-in hardware encryption; data is always encrypted at rest
 
 ## Exam Tips
 

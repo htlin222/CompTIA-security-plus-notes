@@ -28,6 +28,10 @@ Threat hunting is the proactive, human-driven process of searching through netwo
 - **[[indicators-of-attack-ioa|Indicators of Attack (IoA)]]**: Behavioral indicators that suggest an active attack in progress (more proactive than IoCs)
 - **[[advisary-emulation|Advisary emulation]]**: Simulating known threat actor behavior to test detection capabilities
 - **[[hunt-maturity-model|Hunt maturity model]]**: Levels from HM0 (initial, relies on automated alerts) to HM4 (leading, creates new detection content)
+- **[[theharvester|theHarvester]]**: OSINT tool for gathering emails, subdomains, hosts, and names from public sources
+- **[[dnsenum|dnsenum]]**: DNS enumeration tool for discovering DNS records and subdomains
+- **[[nessus|Nessus]]**: Commercial vulnerability scanner for identifying security weaknesses
+- **[[cuckoo-sandbox|Cuckoo Sandbox]]**: Open-source automated malware analysis system that runs suspicious files in isolated environments
 
 ## Exam Tips
 

@@ -32,6 +32,12 @@ Regulations are legally binding requirements imposed by governments, while frame
 - **[[cis-controls|CIS Controls]]** — prioritized list of cybersecurity best practices (formerly SANS Top 20)
 - **[[csa-cloud-controls-matrix-ccm|CSA Cloud Controls Matrix (CCM)]]** — cloud-specific security control framework
 - **[[benchmarks-vs-frameworks|Benchmarks vs. frameworks]]** — benchmarks are specific configuration guides; frameworks are broader programs
+- **ISO 27701** — privacy information management extension to ISO 27001/27002
+- **ISO 31000** — risk management framework and guidelines
+- **SSAE SOC 2** — audit standard for service organizations covering security, availability, processing integrity, confidentiality, privacy
+- **CSA (Cloud Security Alliance)** — organization providing best practices for cloud security
+- **[[cis-controls|CIS Benchmarks]]** — prescriptive configuration guides for hardening systems
+- **NIST RMF (Risk Management Framework)** — 7-step process: Prepare, Categorize, Select, Implement, Assess, Authorize, Monitor
 
 ## Exam Tips
 

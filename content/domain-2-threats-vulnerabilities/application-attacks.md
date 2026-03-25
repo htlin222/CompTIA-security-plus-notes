@@ -31,6 +31,10 @@ Application attacks exploit vulnerabilities in software applications — particu
 - **[[resource-exhaustion|Resource exhaustion]]**: Consuming all available memory, CPU, disk, or connections to cause denial of service
 - **Injection attacks**: Inserting malicious input into application commands — covered in detail in [[injection-attacks]]
 - **[[server-side-request-forgery-ssrf|Server-Side Request Forgery (SSRF)]]**: Tricking the server into making requests to internal resources on behalf of the attacker
+- **[[xml-injection-xxe|XML injection]]** — inserting malicious XML content to manipulate XML parsers and data processing
+- **[[ldap-injection|LDAP injection]]** — exploiting web applications that construct LDAP queries from user input
+- **[[dll-injection|DLL injection]]** — injecting malicious Dynamic Link Libraries into running processes to execute arbitrary code
+- **[[pass-the-hash|Pass the hash]]** — using captured password hashes to authenticate without knowing the plaintext password
 
 ## Exam Tips
 

@@ -33,6 +33,10 @@ Data classification is the process of categorizing data based on its sensitivity
 - **[[labeling-and-marking|Labeling and marking]]** — applying headers, footers, watermarks, or metadata tags to classified data
 - **[[handling-procedures|Handling procedures]]** — storage, transmission, retention, and destruction rules per classification level
 - **[[declassification|Declassification]]** — reducing the classification level when sensitivity decreases over time
+- **Information life cycle** — creation, classification, storage, usage, archival, destruction
+- **[[privacy-impact-assessment-pia|PIA (Privacy Impact Assessment)]]** — analysis of how personally identifiable information is collected, used, shared, and protected
+- **DPO (Data Protection Officer)** — role responsible for ensuring the organization's compliance with privacy regulations
+- **Pseudo-anonymization** — replacing identifying fields with artificial identifiers; reversible with the right key (unlike full anonymization)
 
 ## Exam Tips
 

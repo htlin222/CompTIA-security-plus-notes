@@ -29,6 +29,11 @@ Network monitoring involves continuously observing network traffic, bandwidth ut
 - **[[baseline-establishment|Baseline establishment]]**: Defining normal network behavior to identify deviations and anomalies
 - **[[protocol-analysis|Protocol analysis]]**: Inspecting traffic to detect protocol misuse or tunneling (e.g., DNS tunneling for data exfiltration)
 - **[[network-based-idsips|Network-based IDS/IPS]]**: Inline or passive devices that inspect network traffic for known attack signatures and anomalies
+- **[[tcpdump|tcpdump]]**: Command-line packet capture tool (`tcpdump -i eth0 -w capture.pcap`)
+- **[[tcpreplay|tcpreplay]]**: Replays captured network traffic for testing IDS/IPS rules
+- **[[wireshark|Wireshark]]**: GUI-based protocol analyzer for deep packet inspection
+- **[[pathping|pathping]]**: Windows command combining ping and traceroute with statistics at each hop
+- **[[hping|hping]]**: Packet crafting tool for TCP/IP auditing and firewall testing
 
 ## Exam Tips
 

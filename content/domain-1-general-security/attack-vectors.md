@@ -46,6 +46,9 @@ An attack vector is the path or method a threat actor uses to gain unauthorized 
   - SolarWinds-style attacks through trusted update mechanisms
 - **[[human-vectors|Human vectors]]** — social engineering exploiting human psychology
 - **[[attack-surface-management|Attack surface management]]** — continuously identifying and reducing exposure across all vectors
+- **Bluetooth-based vectors**
+  - **Bluejacking** — sending unsolicited messages to Bluetooth-enabled devices (annoying, not data theft)
+  - **Bluesnarfing** — unauthorized access to data on Bluetooth devices (contacts, emails, calendars)
 
 ## Exam Tips
 

@@ -29,6 +29,8 @@ Automation and scripting in security operations involves using programmatic tool
 - **[[guardrails|Guardrails]]**: Safety controls in automation to prevent unintended actions (approval gates, rollback capabilities)
 - **[[benefits|Benefits]]**: Speed, consistency, scalability, reduced human error, better documentation
 - **[[risks|Risks]]**: Automation of bad processes amplifies mistakes; credential management for automated tools; single point of failure
+- **[[curl|curl]]**: Command-line tool for transferring data via URLs; useful for API testing and web reconnaissance
+- **[[openssl|OpenSSL]]**: Toolkit for TLS/SSL operations; certificate creation, testing connections (`openssl s_client -connect host:443`)
 
 ## Exam Tips
 

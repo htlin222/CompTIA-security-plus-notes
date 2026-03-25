@@ -28,6 +28,9 @@ Privileged Access Management (PAM) is a set of strategies and technologies for c
 - **[[service-account-management|Service account management]]**: Tracking and securing non-human accounts used by applications and scripts
 - **[[least-privilege-enforcement|Least privilege enforcement]]**: Ensuring even administrators only have access to what their role requires
 - **[[separation-of-duties|Separation of duties]]**: Requiring multiple privileged users to complete sensitive operations
+- **[[pap|PAP (Password Authentication Protocol)]]**: Sends passwords in cleartext; insecure, should be avoided
+- **[[chap|CHAP (Challenge-Handshake Authentication Protocol)]]**: Uses challenge/response with hashing; more secure than PAP
+- **[[ms-chapv2|MS-CHAPv2]]**: Microsoft's enhanced CHAP with mutual authentication
 
 ## Exam Tips
 

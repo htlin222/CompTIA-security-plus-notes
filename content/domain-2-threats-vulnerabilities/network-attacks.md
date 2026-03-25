@@ -30,6 +30,9 @@ Network attacks target the infrastructure, protocols, and communications that co
 - **[[amplification-attack|Amplification attack]]**: Using protocols like DNS, NTP, or memcached to amplify a small request into a massive response directed at the victim
 - **[[ip-spoofing|IP spoofing]]**: Forging the source IP address of packets to impersonate another system or hide the attacker's identity
 - **[[port-scanning|Port scanning]]**: Enumerating open ports and services on target systems (reconnaissance phase)
+- **[[bluetooth-attacks|Bluejacking]]** — sending unsolicited messages via Bluetooth (nuisance, not data theft)
+- **[[bluetooth-attacks|Bluesnarfing]]** — unauthorized access to data through Bluetooth connections (more serious than bluejacking)
+- **Broadcast storm** — excessive broadcast traffic overwhelming a network segment
 
 ## Exam Tips
 

@@ -45,6 +45,7 @@ Threat actors are individuals or groups that pose a risk to an organization's se
   - **Resources/Funding** — determines tools, persistence, and capabilities
   - **Intent/Motivation** — financial gain, espionage, disruption, ideology, revenge
 - **Attack surface** — the totality of points where an attacker can try to enter (see [[attack-vectors]])
+- **Wardriving** / **Warflying** — scanning for wireless networks from a moving vehicle or drone to identify vulnerable access points
 
 ## Exam Tips
 

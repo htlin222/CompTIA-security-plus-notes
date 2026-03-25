@@ -31,6 +31,10 @@ Multi-Factor Authentication (MFA) requires users to present two or more verifica
 - **[[push-notifications|Push notifications]]**: Authentication apps send approve/deny prompts to registered devices
 - **[[passwordless-authentication|Passwordless authentication]]**: FIDO2/WebAuthn uses public key cryptography to eliminate passwords entirely
 - **[[mfa-fatigue-attacks|MFA fatigue attacks]]**: Attackers bombard users with push notifications hoping they approve one
+- **[[biometric-types|Biometric types]]**: Retinal scan (blood vessel pattern), iris scan (colored ring pattern), facial recognition, voice recognition, gait analysis (walking pattern), vein/vascular pattern
+- **[[far|FAR (False Acceptance Rate)]]**: Probability of incorrectly accepting an unauthorized user (Type II error)
+- **[[frr|FRR (False Rejection Rate)]]**: Probability of incorrectly rejecting an authorized user (Type I error)
+- **[[cer|CER (Crossover Error Rate)]]**: Point where FAR equals FRR; lower CER indicates more accurate biometric system
 
 ## Exam Tips
 

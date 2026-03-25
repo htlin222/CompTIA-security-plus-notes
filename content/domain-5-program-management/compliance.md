@@ -29,6 +29,9 @@ Compliance is the practice of adhering to laws, regulations, industry standards,
 - **[[internal-vs-external-compliance|Internal vs. external compliance]]** — internal policies may exceed regulatory minimums
 - **[[compliance-automation|Compliance automation]]** — tools that continuously assess configurations against baselines and flag deviations
 - **[[geographic-considerations|Geographic considerations]]** — different jurisdictions have different requirements; data sovereignty matters
+- **[[gdpr|GDPR]]** — EU regulation; applies to any organization handling EU citizens' data regardless of location; fines up to 4% of annual global revenue
+- **[[pci-dss|PCI DSS]]** — Payment Card Industry Data Security Standard; 12 requirements for handling cardholder data
+- **[[hipaa|HIPAA]]** — US regulation protecting health information (PHI); requires administrative, physical, and technical safeguards
 
 ## Exam Tips
 
