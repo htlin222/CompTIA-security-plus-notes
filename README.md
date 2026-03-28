@@ -1,3 +1,7 @@
+![GitHub stars](https://img.shields.io/github/stars/htlin222/CompTIA-security-plus-notes?style=flat-square)
+![Last commit](https://img.shields.io/github/last-commit/htlin222/CompTIA-security-plus-notes?style=flat-square)
+![License](https://img.shields.io/github/license/htlin222/CompTIA-security-plus-notes?style=flat-square)
+
 # CompTIA Security+ SY0-701 Study Notes
 
 [![Deploy Quartz to GitHub Pages](https://github.com/htlin222/CompTIA-security-plus-notes/actions/workflows/deploy.yaml/badge.svg)](https://github.com/htlin222/CompTIA-security-plus-notes/actions/workflows/deploy.yaml)
