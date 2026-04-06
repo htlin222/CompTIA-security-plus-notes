@@ -14,6 +14,13 @@ aliases:
 
 > [!eli5] ELI5: What is Defense in Depth?
 > Think of a castle. It doesn't just have one wall -- it has a moat, then an outer wall, then an inner wall, then guards, then a locked tower. If an attacker gets past one barrier, there's always another one waiting. Defense in depth means protecting computers the same way: with many layers of security stacked on top of each other. No single lock is perfect, but together they make it really, really hard for anyone to get through.
+>
+> > [!eli5] ELI5: Defense in Depth (繁體中文版)
+> > 深度防禦就像城堡的防禦：有護城河、城牆、守衛，最後還有保險箱。即使一層壞了，還有其他層保護。
+> >
+> > ```ascii
+> > [攻擊者] --[實體防禦]--[網路防禦]--[主機防禦]--[資料]
+> > ```
 
 ## Overview
 
@@ -107,3 +114,8 @@ Defense in Depth is a security strategy that employs multiple layers of controls
 ## Scenario
 
 > See [[case-defense-in-depth]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [1.1 – Security Controls](https://www.youtube.com/watch?v=STM3EUvL7wg)

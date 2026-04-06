@@ -47,3 +47,8 @@ Domain 4 (Security Operations) carries the most weight at **28%** and should rec
 - Practice mapping scenarios to the correct domain and concept
 - Know the difference between similar terms (e.g., authentication vs. authorization, IDS vs. IPS, RPO vs. RTO)
 - Review acronyms thoroughly — the exam uses them extensively
+
+## Course Resources
+
+- **Professor Messer's CompTIA SY0-701 Security+ Training Course**
+  - [Full YouTube Playlist](https://www.youtube.com/playlist?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv)

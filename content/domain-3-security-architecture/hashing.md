@@ -14,6 +14,13 @@ aliases:
 
 > [!eli5] ELI5: What is Hashing?
 > Think of hashing like a fingerprint for data. Just like every person has a unique fingerprint, hashing takes any piece of information and creates a unique code for it. If even one tiny thing changes in the original data, the fingerprint looks completely different. This makes it easy to check if something has been tampered with. Unlike encryption, you cannot turn the fingerprint back into the original -- it is a one-way process.
+>
+> > [!eli5] ELI5: Hashing (繁體中文版)
+> > 雜湊就像是資料的指紋。即便是超大的檔案，經過雜湊運算後都會得到一段簡短且唯一的字串，只要檔案改動一點點，指紋就會完全不同。
+> >
+> > ```ascii
+> > [大檔案] --(雜湊運算)--> [唯一的指紋]
+> > ```
 
 ## Overview
 
@@ -106,3 +113,8 @@ Hashing is a one-way cryptographic function that converts input data of any size
 ## Scenario
 
 > See [[case-hashing]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [1.4 – Hashing and Digital Signatures](https://www.youtube.com/watch?v=EcGmQjl6XEo)

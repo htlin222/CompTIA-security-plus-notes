@@ -102,3 +102,8 @@ Network security architecture is the design and structure of network defenses th
 ## Scenario
 
 > See [[case-network-security-architecture]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [3.2 – Secure Infrastructures](https://www.youtube.com/watch?v=l64La1xYXL4)

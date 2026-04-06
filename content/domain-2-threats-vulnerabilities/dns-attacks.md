@@ -13,6 +13,13 @@ aliases:
 
 > [!eli5] ELI5: What are DNS Attacks?
 > The internet has a phone book that turns website names (like "google.com") into the actual addresses computers use. DNS attacks mess with that phone book. It's like if someone secretly changed the phone number next to your friend's name so that when you call them, you actually reach a stranger pretending to be your friend. The stranger could trick you into sharing secrets. DNS attacks redirect people to fake websites without them ever knowing the address was swapped.
+>
+> > [!eli5] ELI5: DNS Attacks (繁體中文版)
+> > DNS 攻擊就像是改掉了電話簿裡的地址。當你想去 A 網站時，壞人把你導向了他們偽造的 B 網站。
+> >
+> > ```ascii
+> > [你] --(問地址)--> [被污染的 DNS] --(回傳假地址)--> [釣魚網站]
+> > ```
 
 ## Overview
 
@@ -101,3 +108,8 @@ DNS attacks exploit the Domain Name System — the internet's directory service 
 ## Scenario
 
 > See [[case-dns-attacks]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [2.4 – DNS Attacks](https://www.youtube.com/watch?v=BoxeL5ybOXI)

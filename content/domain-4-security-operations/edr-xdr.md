@@ -103,3 +103,8 @@ Endpoint Detection and Response (EDR) continuously monitors endpoints to detect 
 ## Scenario
 
 > See [[case-edr-xdr]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [4.5 – Endpoint Security](https://www.youtube.com/watch?v=83pCkSSj1IQ)

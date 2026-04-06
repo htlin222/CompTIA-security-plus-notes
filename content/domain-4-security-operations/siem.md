@@ -13,6 +13,13 @@ aliases:
 
 > [!eli5] ELI5: What is SIEM?
 > Think of a giant bulletin board in a security guard's office where every camera, door sensor, and alarm in the building reports what it sees. A SIEM is that bulletin board for computers. It collects alerts from every device across the entire network, puts them all in one place, and connects the dots. If the front door alarm and a camera alert happen at the same time, the SIEM figures out they are probably related and warns the security team.
+>
+> > [!eli5] ELI5: SIEM (繁體中文版)
+> > SIEM 就像是公司的總控中心。它會收集所有監視器 (日誌) 的畫面，一旦發現哪裡有小偷，就會立刻發出警報。
+> >
+> > ```ascii
+> > [日誌 A/B/C] --(彙整)--> |SIEM 控制台| --(警報)--> [管理員]
+> > ```
 
 ## Overview
 
@@ -104,3 +111,8 @@ Security Information and Event Management (SIEM) combines Security Information M
 ## Scenario
 
 > See [[case-siem]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [4.4 – Security Tools](https://www.youtube.com/watch?v=nNiNTviiacU)

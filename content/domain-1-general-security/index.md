@@ -43,3 +43,8 @@ Domain 1 concepts appear throughout the exam in applied contexts:
 - **Zero Trust and Defense in Depth** are implemented through Domain 3's [[network-segmentation]], [[firewalls]], and [[cloud-security]]
 - **Social Engineering** is countered by Domain 5's [[security-awareness-training]] and [[security-policies]]
 - **Change Management** aligns with Domain 5's [[governance]] and [[compliance]] requirements
+
+## Course Resources
+
+- **Professor Messer's CompTIA SY0-701 Security+ Training Course**
+  - [Full YouTube Playlist](https://www.youtube.com/playlist?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv)

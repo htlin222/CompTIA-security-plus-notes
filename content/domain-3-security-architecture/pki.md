@@ -14,6 +14,13 @@ aliases:
 > [!eli5] ELI5: What is PKI?
 > Imagine a post office that hands out special ID badges. Before two people can send each other secret letters, they go to the post office and get an official badge that proves who they are. The post office keeps track of all the badges and can cancel one if it gets stolen. PKI (Public Key Infrastructure) is the whole system -- the post office, the badges, and the rules -- that lets computers prove their identity and communicate securely.
 
+> [!eli5] ELI5: PKI (繁體中文版)
+> PKI 就像是發行身分證的一整套系統。它決定了誰能發證、怎麼驗證、以及如果證件弄丟了要怎麼作廢。
+>
+> ```ascii
+> [CA] --(核發)--> [數位證書] --(加密/簽章)--> [通訊]
+> ```
+
 ## Overview
 
 Public Key Infrastructure (PKI) is a comprehensive system for creating, distributing, managing, storing, and revoking digital certificates. PKI binds public keys to identities through a trusted Certificate Authority (CA), enabling secure communications, authentication, and digital signatures. PKI underpins HTTPS, email encryption, code signing, VPNs, and many other security services.
@@ -105,3 +112,8 @@ Public Key Infrastructure (PKI) is a comprehensive system for creating, distribu
 ## Scenario
 
 > See [[case-pki]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [1.4 – Public Key Infrastructure](https://www.youtube.com/watch?v=xHAMEF7-inQ)

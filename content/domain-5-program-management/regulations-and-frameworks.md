@@ -105,3 +105,8 @@ Regulations are legally binding requirements imposed by governments, while frame
 ## Scenario
 
 > See [[case-regulations-and-frameworks]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [5.1 – Security Governance](https://www.youtube.com/watch?v=KiEptGbnEBc&list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv&index=105)

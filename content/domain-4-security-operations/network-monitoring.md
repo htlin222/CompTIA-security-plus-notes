@@ -106,3 +106,8 @@ Network monitoring involves continuously observing network traffic, bandwidth ut
 ## Scenario
 
 > See [[case-network-monitoring]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [4.4 – Security Monitoring](https://www.youtube.com/watch?v=np2WI_rM-Ok)

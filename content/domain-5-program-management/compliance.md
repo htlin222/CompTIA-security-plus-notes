@@ -13,6 +13,13 @@ aliases:
 
 > [!eli5] ELI5: What is Compliance?
 > It's like following the rules at school. There are rules about being quiet in the library, not running in the halls, and turning in homework on time. If you break them, you get in trouble. Compliance means a company follows all the rules it's supposed to -- rules from the government, rules from its own leaders, and rules it promised to follow when working with other companies. Breaking these rules can mean big fines or losing trust.
+>
+> > [!eli5] ELI5: Compliance (繁體中文版)
+> > 合規就是「遵守法規」。不管你喜不喜歡，法律規定要怎麼保護資料，公司就得照做。
+> >
+> > ```ascii
+> > [公司政策] ==(符合)==> [法律法規]
+> > ```
 
 ## Overview
 
@@ -100,3 +107,8 @@ Compliance is the practice of adhering to laws, regulations, industry standards,
 ## Scenario
 
 > See [[case-compliance]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [5.4 – Compliance](https://www.youtube.com/watch?v=KiEptGbnEBc&list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv&index=116)

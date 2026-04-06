@@ -14,6 +14,13 @@ aliases:
 
 > [!eli5] ELI5: What is Privacy?
 > You know how your diary is yours, and nobody should read it without your permission? Privacy in the computer world means people get to control who sees their personal information -- like their name, address, or health records. Companies that collect this information have to follow rules about how they use it, store it, and who they share it with. It's about respecting that your personal stuff belongs to you.
+>
+> > [!eli5] ELI5: Privacy (繁體中文版)
+> > 隱私就是「保護個人秘密」。確保公司不會亂用你的個人資料，並且只在有需要的時候才看。
+> >
+> > ```ascii
+> > [個人資料] --|隱私權政策|--> [安全存取]
+> > ```
 
 ## Overview
 
@@ -103,3 +110,8 @@ Privacy in information security refers to an individual's right to control how t
 ## Scenario
 
 > See [[case-privacy]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [5.4 – Privacy](https://www.youtube.com/watch?v=KiEptGbnEBc&list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv&index=117)

@@ -48,3 +48,8 @@ Domain 3 covers the design and implementation of secure network architectures, c
 - [[encryption]] and [[pki]] are foundational to [[authentication]] and [[data-classification]] across all domains
 - Resilience designs support Domain 5's [[business-continuity]] and [[disaster-recovery]] planning
 - Cloud security models connect to Domain 5's [[third-party-risk]] and [[compliance]] requirements
+
+## Course Resources
+
+- **Professor Messer's CompTIA SY0-701 Security+ Training Course**
+  - [Full YouTube Playlist](https://www.youtube.com/playlist?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv)

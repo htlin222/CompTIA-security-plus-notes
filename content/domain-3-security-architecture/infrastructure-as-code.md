@@ -14,6 +14,13 @@ aliases:
 > [!eli5] ELI5: What is Infrastructure as Code?
 > Remember how LEGO instructions let you rebuild the same model perfectly every time? Infrastructure as Code works the same way for computers. Instead of setting up servers by hand (and maybe making mistakes), you write a set of instructions that a computer follows automatically. If something breaks, you just run the instructions again and get a perfect copy. This makes it much easier to keep everything safe and consistent.
 
+> [!eli5] ELI5: Infrastructure as Code (繁體中文版)
+> IaC 就是用寫劇本的方式來蓋房子。只要寫好程式碼，電腦就能自動幫你蓋好成千上萬個伺服器，而且保證每一台都長得一模一樣。
+>
+> ```ascii
+> [IaC 程式碼] --(自動部署)--> [伺服器群組]
+> ```
+
 ## Overview
 
 Infrastructure as Code (IaC) is the practice of defining and managing infrastructure (servers, networks, storage) through code and automation rather than manual configuration. IaC enables consistent, repeatable, and auditable deployments. From a security perspective, IaC allows organizations to enforce security baselines, detect configuration drift, and rapidly rebuild compromised systems from known-good templates.
@@ -103,3 +110,8 @@ Infrastructure as Code (IaC) is the practice of defining and managing infrastruc
 ## Scenario
 
 > See [[case-infrastructure-as-code]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [3.1 – Infrastructure Considerations](https://www.youtube.com/watch?v=Ap3Z_0ZdqpQ)

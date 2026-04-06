@@ -103,3 +103,8 @@ Disaster Recovery (DR) is the subset of business continuity that specifically ad
 ## Scenario
 
 > See [[case-disaster-recovery]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [3.4 – Recovery Testing](https://www.youtube.com/watch?v=IhT7Odu4xHc)

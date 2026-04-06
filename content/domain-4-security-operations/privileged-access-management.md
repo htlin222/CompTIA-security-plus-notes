@@ -103,3 +103,8 @@ Privileged Access Management (PAM) is a set of strategies and technologies for c
 ## Scenario
 
 > See [[case-privileged-access-management]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [4.6 – Access Controls](https://www.youtube.com/watch?v=9ANHcZwJfdQ)

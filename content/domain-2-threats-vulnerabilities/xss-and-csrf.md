@@ -14,6 +14,13 @@ aliases:
 
 > [!eli5] ELI5: What are Cross-Site Scripting and Cross-Site Request Forgery?
 > These are two tricks that bad guys play on websites. Cross-site scripting is like someone taping a fake "Push this button for candy" sign on a school wall -- when kids push it, something bad happens. The website accidentally shows the attacker's trick to everyone who visits. Cross-site request forgery is different -- it's like someone secretly sending a letter to the principal with your name on it, asking to do something you never agreed to. Both attacks trick your web browser into doing things you didn't mean to do.
+>
+> > [!eli5] ELI5: XSS and CSRF (繁體中文版)
+> > XSS 是壞人在網站上貼一段惡意腳本，讓去逛那個網站的人中招。CSRF 則是騙你在不知情的情況下，用你已經登入的身分去執行某些動作 (像是轉帳)。
+> >
+> > ```ascii
+> > [壞人] --(貼惡意代碼)--> [網站] --(使用者造訪)--> [受害者]
+> > ```
 
 ## Overview
 
@@ -107,3 +114,8 @@ Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF) are client-side
 ## Scenario
 
 > See [[case-xss-and-csrf]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [2.3 – Cross-site Scripting](https://www.youtube.com/watch?v=PKgw0CLZIhE)

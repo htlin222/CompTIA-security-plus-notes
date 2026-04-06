@@ -13,6 +13,13 @@ aliases:
 
 > [!eli5] ELI5: What is VPN?
 > It's like having a secret underground tunnel between your house and your friend's house. Even though cars drive on the regular roads above, your tunnel is hidden and only you two can use it. A VPN creates a private, secret tunnel through the regular internet so that nobody can spy on the information you are sending back and forth. Everything inside the tunnel is scrambled so even if someone found it, they could not read it.
+>
+> > [!eli5] ELI5: VPN (繁體中文版)
+> > VPN 就像是在公共網路上挖了一條只有你通行的私人隧道。你在這條隧道裡傳輸的東西，路人即便看得到也摸不著。
+> >
+> > ```ascii
+> > [家裡] ===(加密隧道)=== [公司]
+> > ```
 
 ## Overview
 
@@ -104,3 +111,8 @@ A Virtual Private Network (VPN) extends a private network across a public networ
 ## Scenario
 
 > See [[case-vpn]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [3.2 – Secure Communication](https://www.youtube.com/watch?v=uU3e_ntg-3g)

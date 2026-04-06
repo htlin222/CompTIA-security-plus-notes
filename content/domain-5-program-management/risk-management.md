@@ -13,6 +13,13 @@ aliases:
 
 > [!eli5] ELI5: What is Risk Management?
 > When you ride your bike, you wear a helmet, check the brakes, and avoid busy roads. You can't prevent every possible accident, but you take steps to lower the chances. Risk management is a company doing the same thing with its computers and data -- finding dangers, deciding which ones matter most, and choosing the best way to handle each one. The goal isn't zero risk (that's impossible) but bringing risk down to a level everyone is comfortable with.
+>
+> > [!eli5] ELI5: Risk Management (繁體中文版)
+> > 風險管理就是「權衡利弊」。評估哪些壞事可能發生、機率多高、損失多少，然後決定是要花錢防範、還是承擔後果。
+> >
+> > ```ascii
+> > [風險] --> [評估機率/損失] --> [決定對策]
+> > ```
 
 ## Overview
 
@@ -106,3 +113,8 @@ Risk management is the continuous cycle of identifying threats and vulnerabiliti
 ## Scenario
 
 > See [[case-risk-management]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [5.2 – Risk Management](https://www.youtube.com/watch?v=KiEptGbnEBc&list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv&index=110)

@@ -101,3 +101,8 @@ Key management is the set of policies and procedures governing the entire lifecy
 ## Scenario
 
 > See [[case-key-management]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [1.4 – Key Exchange](https://www.youtube.com/watch?v=U6BWn81P5Ec)

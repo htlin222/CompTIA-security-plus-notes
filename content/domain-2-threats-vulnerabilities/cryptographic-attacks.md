@@ -13,6 +13,13 @@ aliases:
 
 > [!eli5] ELI5: What are Cryptographic Attacks?
 > Think of a secret code you and your best friend use to pass notes in class. Cryptographic attacks are when someone figures out how to crack your code and read your private messages. Maybe they notice patterns, or maybe your code is too simple. Some attackers even trick you into using an easier code that's simpler to break. This is why computers need really strong codes (called encryption) to keep secrets safe, and why old, weak codes need to be replaced with better ones.
+>
+> > [!eli5] ELI5: Cryptographic Attacks (繁體中文版)
+> > 加密攻擊是想辦法破解被鎖起來的訊息。壞人可能會利用數學上的弱點，或是在你加密的過程中偷看一些線索。
+> >
+> > ```ascii
+> > [加密後的訊息] --(破解/攻擊)--> [原始訊息]
+> > ```
 
 ## Overview
 
@@ -102,3 +109,8 @@ Cryptographic attacks target weaknesses in cryptographic algorithms, implementat
 ## Scenario
 
 > See [[case-cryptographic-attacks]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [2.4 – Cryptographic Attacks](https://www.youtube.com/watch?v=7aJaEQy6Yoc)

@@ -13,6 +13,13 @@ aliases:
 
 > [!eli5] ELI5: What is Endpoint Security?
 > Every laptop, phone, and tablet in a company is like a door into a building. Endpoint security means putting a strong lock, an alarm, and a guard at each of those doors. If someone tries to sneak in through any single device, the protection catches them. It is not enough to just guard the front gate when there are hundreds of doors -- you need protection on every single one.
+>
+> > [!eli5] ELI5: Endpoint Security (繁體中文版)
+> > 端點安全就是保護每一台電腦。就像給每個人的房間都裝上防盜鎖和警報器，防止小偷從任何一扇窗戶溜進來。
+> >
+> > ```ascii
+> > [電腦/手機] --|防毒/防火牆|--> [網路]
+> > ```
 
 ## Overview
 
@@ -106,3 +113,8 @@ Endpoint security encompasses the tools, policies, and practices used to protect
 ## Scenario
 
 > See [[case-endpoint-security]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [4.5 – Endpoint Security](https://www.youtube.com/watch?v=83pCkSSj1IQ)

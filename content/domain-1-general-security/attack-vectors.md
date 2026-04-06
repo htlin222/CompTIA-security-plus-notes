@@ -13,6 +13,13 @@ aliases:
 
 > [!eli5] ELI5: What are Attack Vectors?
 > Picture your house. A burglar could try the front door, climb through a window, sneak in through the garage, or even come down the chimney. Each of those paths into your house is like an attack vector. In the computer world, bad guys look for every possible way in -- emails, websites, USB drives, even tricking people on the phone. The more paths you leave open, the easier it is for someone to break in.
+>
+> > [!eli5] ELI5: Attack Vectors (繁體中文版)
+> > 攻擊媒介就是壞人進入你家的方式。可能是窗戶 (電子郵件)、門縫 (隨身碟)、或是騙你開門 (社交工程)。
+> >
+> > ```ascii
+> > [攻擊者] --(Email/USB/社交工程)--> [目標系統]
+> > ```
 
 ## Overview
 
@@ -121,3 +128,8 @@ An attack vector is the path or method a threat actor uses to gain unauthorized 
 ## Scenario
 
 > See [[case-attack-vectors]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [2.2 – Common Threat Vectors](https://www.youtube.com/watch?v=4lAbGpTDZ18)

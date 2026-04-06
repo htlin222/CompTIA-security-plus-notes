@@ -13,6 +13,13 @@ aliases:
 
 > [!eli5] ELI5: What is Governance?
 > Every school has a principal who sets the rules, teachers who enforce them, and a student handbook that explains what's expected. Security governance works the same way for a company. The leaders at the top decide what the security rules should be, who's in charge of what, and how much risk the company is okay with. Without this structure, everyone would make up their own rules and things would get messy fast.
+>
+> > [!eli5] ELI5: Governance (繁體中文版)
+> > 治理就是「管理規則」。由公司高層決定安全的大方向，然後大家照著規則走，確保公司資產安全。
+> >
+> > ```ascii
+> > [高層決策] --> [安全政策] --> [員工執行]
+> > ```
 
 ## Overview
 
@@ -97,3 +104,8 @@ Security governance is the set of responsibilities, policies, and procedures an 
 ## Scenario
 
 > See [[case-governance]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [5.1 – Security Governance](https://www.youtube.com/watch?v=KiEptGbnEBc&list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv&index=105)

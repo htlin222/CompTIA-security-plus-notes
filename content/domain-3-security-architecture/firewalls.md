@@ -13,6 +13,13 @@ aliases:
 
 > [!eli5] ELI5: What are Firewalls?
 > A firewall is like a bouncer at the door of a club. It checks everyone trying to come in or go out and only lets through the people who are on the list. If someone suspicious shows up, the bouncer turns them away. On a computer network, a firewall checks all the data trying to enter or leave and blocks anything that looks dangerous or breaks the rules.
+>
+> > [!eli5] ELI5: Firewalls (繁體中文版)
+> > 防火牆就像是公司的警衛，它會檢查所有進出的包裹，只允許符合安全規則的包裹通過，把可疑的擋在門外。
+> >
+> > ```ascii
+> > [外部網路] --|防火牆|--> [內部網路]
+> > ```
 
 ## Overview
 
@@ -101,3 +108,8 @@ A firewall is a network security device or software that monitors and controls i
 ## Scenario
 
 > See [[case-firewalls]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [3.2 – Firewall Types](https://www.youtube.com/watch?v=mq1HRM-zGtQ)

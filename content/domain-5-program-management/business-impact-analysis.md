@@ -96,3 +96,8 @@ A Business Impact Analysis (BIA) is a systematic process for determining the pot
 ## Scenario
 
 > See [[case-business-impact-analysis]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [5.2 – Business Impact Analysis](https://www.youtube.com/watch?v=KiEptGbnEBc&list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv&index=113)

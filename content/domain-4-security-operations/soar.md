@@ -13,6 +13,13 @@ aliases:
 
 > [!eli5] ELI5: What is SOAR?
 > You know how a vending machine automatically gives you a snack when you press a button, without needing a person behind it? SOAR does that for security. When an alert comes in, SOAR follows a recipe of steps automatically -- like blocking a suspicious address, sending a message to the team, and creating a ticket. This way, the security team does not have to do every little step by hand and can respond way faster.
+>
+> > [!eli5] ELI5: SOAR (繁體中文版)
+> > SOAR 就像是自動報警器。一旦發現小偷 (SIEM 發出警報)，它會自動鎖上大門並通報警察，完全不需要人工操作。
+> >
+> > ```ascii
+> > [警報] --> |SOAR 自動處理| --(執行)--> [鎖門/通報]
+> > ```
 
 ## Overview
 
@@ -99,3 +106,8 @@ Security Orchestration, Automation, and Response (SOAR) platforms integrate with
 ## Scenario
 
 > See [[case-soar]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [4.4 – Security Tools](https://www.youtube.com/watch?v=nNiNTviiacU)

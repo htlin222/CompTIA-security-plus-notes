@@ -13,6 +13,15 @@ aliases:
 
 > [!eli5] ELI5: What is Change Management?
 > Before your school repaints the cafeteria or moves all the desks around, they don't just do it randomly. Someone writes a plan, the principal approves it, they pick a time when students aren't there, and they make sure they can put things back if it goes wrong. Change management for computers works the same way -- every change gets planned, approved, and tested so nothing accidentally breaks.
+>
+> > [!eli5] ELI5: Change Management (繁體中文版)
+> > 變更管理就是「先報告，再動手」。在修理或改動重要的東西前，先計畫好、讓人審查，並想好如果修壞了要怎麼復原。
+> >
+> > ```ascii
+> > [變更請求] --> [審查小組] --> [實施變更] --> [確認結果]
+> >                                |
+> >                         (失敗時) [復原計畫]
+> > ```
 
 ## Overview
 
@@ -112,3 +121,8 @@ Change management is a structured process for proposing, evaluating, approving, 
 ## Scenario
 
 > See [[case-change-management]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [1.3 – Change Management](https://www.youtube.com/watch?v=48wRbMdHFVI)

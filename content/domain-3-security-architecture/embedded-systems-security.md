@@ -113,3 +113,8 @@ Embedded systems are purpose-built computing devices designed for specific funct
 ## Scenario
 
 > See [[case-embedded-systems-security]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [3.1 – Other Infrastructure Concepts](https://www.youtube.com/watch?v=HDiNPPrGhzE)

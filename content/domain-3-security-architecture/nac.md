@@ -107,3 +107,8 @@ Network Access Control (NAC) is a security solution that enforces policies on de
 ## Scenario
 
 > See [[case-nac]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [3.2 – Network Appliances](https://www.youtube.com/watch?v=WlOslEy3ztg)

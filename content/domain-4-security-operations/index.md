@@ -49,3 +49,8 @@ Domain 4 is the **largest domain** on the SY0-701 exam at **28%**, covering the 
 - [[vulnerability-management]] informs Domain 5's [[risk-management]] and [[risk-assessment]] processes
 - [[email-security]] directly counters Domain 1's [[social-engineering]] attacks
 - [[security-awareness-training]] in Domain 5 reduces the operational burden documented here
+
+## Course Resources
+
+- **Professor Messer's CompTIA SY0-701 Security+ Training Course**
+  - [Full YouTube Playlist](https://www.youtube.com/playlist?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv)

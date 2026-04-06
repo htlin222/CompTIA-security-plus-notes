@@ -14,6 +14,13 @@ aliases:
 > [!eli5] ELI5: What is Incident Response?
 > Think about a fire drill at school. Before any fire happens, you practice what to do: who calls for help, which exit to use, where to meet outside. Incident response is a plan like that, but for cyberattacks. It spells out what the team should do step by step when something bad happens -- how to spot the problem, stop it from spreading, clean it up, and learn from it so it does not happen again.
 
+> [!eli5] ELI5: 應變流程 (繁體中文版)
+> 應變流程就像火災演習。發生問題時，先隔離 (滅火)、清除 (打掃)、最後檢討改進 (避免下次火災)。
+>
+> ```ascii
+> [發生事件] -> [抑制/隔離] -> [根除] -> [復原]
+> ```
+
 ## Overview
 
 Incident response (IR) is the organized approach to addressing and managing the aftermath of a security breach or cyberattack. The goal is to handle the situation in a way that limits damage, reduces recovery time and costs, and preserves evidence for potential legal action. A well-defined IR plan is essential for every organization and is heavily tested on the SY0-701 exam.
@@ -108,3 +115,8 @@ Incident response (IR) is the organized approach to addressing and managing the 
 ## Scenario
 
 > See [[case-incident-response]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [4.8 – Incident Response](https://www.youtube.com/watch?v=KiEptGbnEBc&list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv&index=101)

@@ -13,6 +13,13 @@ aliases:
 
 > [!eli5] ELI5: What are Network Attacks?
 > Think of computer networks like roads that connect buildings in a city. Network attacks are when bad guys mess with those roads -- they might put up fake detour signs to redirect traffic, block the road so nobody can get through, or secretly listen in on conversations happening in passing cars. Every time your computer sends information to another computer, it travels along these "roads," and attackers look for ways to intercept, redirect, or block that information before it reaches its destination.
+>
+> > [!eli5] ELI5: Network Attacks (繁體中文版)
+> > 網路攻擊是在資料傳輸的過程中搞鬼。壞人可能在半路攔截你的訊息、假冒成別人、或是在你的網路線路裡塞滿垃圾。
+> >
+> > ```ascii
+> > [你的電腦] <--(攔截/攻擊)--> [網路] <--> [伺服器]
+> > ```
 
 ## Overview
 
@@ -105,3 +112,8 @@ Network attacks target the infrastructure, protocols, and communications that co
 ## Scenario
 
 > See [[case-network-attacks]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [2.4 – Malicious Code](https://www.youtube.com/watch?v=xDhUBQ_lnUA)

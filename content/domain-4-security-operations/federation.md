@@ -103,3 +103,8 @@ Federation is a system of trust between separate organizations or security domai
 ## Scenario
 
 > See [[case-federation]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [4.6 – Identity and Access Management](https://www.youtube.com/watch?v=ZoOyyqhptik)

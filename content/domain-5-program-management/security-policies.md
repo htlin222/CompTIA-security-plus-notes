@@ -110,3 +110,8 @@ Security policies are high-level, management-approved documents that establish t
 ## Scenario
 
 > See [[case-security-policies]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [5.1 – Security Policies](https://www.youtube.com/watch?v=KiEptGbnEBc&list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv&index=105)

@@ -101,3 +101,8 @@ Identity management (IdM) is the framework of policies, processes, and technolog
 ## Scenario
 
 > See [[case-identity-management]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [4.6 – Identity and Access Management](https://www.youtube.com/watch?v=ZoOyyqhptik)

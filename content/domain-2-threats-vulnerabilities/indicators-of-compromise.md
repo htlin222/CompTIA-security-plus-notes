@@ -13,6 +13,13 @@ aliases:
 
 > [!eli5] ELI5: What are Indicators of Compromise?
 > After a burglar breaks into a house, they leave clues behind -- a broken window, muddy footprints, things moved around. Indicators of compromise are the digital clues that tell you a computer or network has been broken into. Maybe there are strange files that shouldn't be there, or a program is running at 3 AM when nobody's working. Security teams look for these clues the same way detectives look for evidence, so they can figure out what happened and stop it from getting worse.
+>
+> > [!eli5] ELI5: Indicators of Compromise (繁體中文版)
+> > 入侵指標 (IoC) 就像是小偷闖進家裡後留下的腳印或指紋。在電腦世界裡，這可能是奇怪的檔案、陌生的連線紀錄或是系統變慢。
+> >
+> > ```ascii
+> > [系統] --(異常跡象)--> [腳印/指紋] --(發現入侵者)
+> > ```
 
 ## Overview
 
@@ -102,3 +109,8 @@ Indicators of Compromise (IoCs) are pieces of forensic evidence — such as file
 ## Scenario
 
 > See [[case-indicators-of-compromise]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [2.4 – Indicators of Compromise](https://www.youtube.com/watch?v=x72hG9GvkaQ)

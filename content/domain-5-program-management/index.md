@@ -44,3 +44,8 @@ Domain 5 addresses the management, governance, and oversight aspects of a securi
 - [[governance]] sets the policies that Domain 4's [[incident-response]] and [[hardening]] procedures follow
 - [[data-classification]] drives Domain 3's [[dlp]] and [[data-protection]] controls
 - [[threat-actors]] from Domain 1 are a key input to [[risk-assessment]] and [[risk-management]] decisions
+
+## Course Resources
+
+- **Professor Messer's CompTIA SY0-701 Security+ Training Course**
+  - [Full YouTube Playlist](https://www.youtube.com/playlist?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv)

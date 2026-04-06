@@ -13,6 +13,13 @@ aliases:
 
 > [!eli5] ELI5: What are Application Attacks?
 > You know how some apps on your phone ask you to type things in, like your name or a search? Application attacks are when a bad person types in sneaky, harmful instructions instead of normal words. It's like someone slipping a fake note into a suggestion box that tricks the person reading it into doing something wrong. These attacks work because the app trusts what you type without double-checking, so the bad instructions get followed just like real ones. That's why apps need to carefully check everything people type in.
+>
+> > [!eli5] ELI5: Application Attacks (繁體中文版)
+> > 應用程式攻擊是利用軟體程式碼裡的漏洞。就像是房子雖然鎖了門，但窗戶沒關好，壞人就能從沒人想到的地方溜進去。
+> >
+> > ```ascii
+> > [攻擊者] --(漏洞)--> [應用程式] --(控制系統)
+> > ```
 
 ## Overview
 
@@ -107,3 +114,8 @@ Application attacks exploit vulnerabilities in software applications — particu
 ## Scenario
 
 > See [[case-application-attacks]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [2.4 – Application Attacks](https://www.youtube.com/watch?v=yRSqIGjeb7s)

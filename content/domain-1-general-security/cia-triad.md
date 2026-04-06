@@ -15,6 +15,23 @@ aliases:
 > [!eli5] ELI5: What is the CIA Triad?
 > The CIA Triad is the three big promises of keeping information safe. Confidentiality means only the right people can see your secret diary. Integrity means nobody can sneak in and change what you wrote. Availability means you can always open your diary when you need it. Every security rule and tool exists to protect at least one of these three things. If any one of them breaks, your information is in trouble.
 
+> [!eli5] ELI5: CIA 三要素 (繁體中文版)
+> 想像你有一個秘密寶盒：
+> 1. **機密性 (Confidentiality)**：只有你有鑰匙能打開看裡面的東西，別人看不到。
+> 2. **完整性 (Integrity)**：沒人能偷偷換掉或弄壞裡面的東西，內容保證正確。
+> 3. **可用性 (Availability)**：當你想看的時候，寶盒隨時都在那裡讓你打開。
+> 任何安全規則都是為了保護這三件事。
+>
+> ```ascii
+>       [機密性 Confidentiality]
+>              / \
+>             /   \
+>            / CIA \
+>           / 三要素 \
+>          /_________\
+> [完整性 Integrity] [可用性 Availability]
+> ```
+
 ## Overview
 
 The CIA Triad is the foundational model in information security that defines three core objectives: Confidentiality (preventing unauthorized disclosure), Integrity (preventing unauthorized modification), and Availability (ensuring authorized access when needed). Every security control, policy, and architecture decision can be mapped back to protecting one or more of these three properties.
@@ -104,3 +121,8 @@ The CIA Triad is the foundational model in information security that defines thr
 ## Scenario
 
 > See [[case-cia-triad]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [1.2 – The CIA Triad](https://www.youtube.com/watch?v=SBcDGb9l6yo)

@@ -13,6 +13,13 @@ aliases:
 
 > [!eli5] ELI5: What are Password Attacks?
 > Your password is like the combination to your locker. Password attacks are all the different ways someone might try to figure out that combination. They could try every single number one by one (brute force), guess common ones like "1234" (dictionary attack), or find a list of combinations that leaked from another school (credential stuffing). Some attackers don't even try to guess -- they just watch you type it in. That's why using long, unique passwords and not reusing them matters so much.
+>
+> > [!eli5] ELI5: Password Attacks (繁體中文版)
+> > 密碼攻擊就是壞人想辦法猜出你的密碼。他們可能會一個一個試 (暴力破解)、用常見的密碼清單 (字典攻擊)、或是拿別家公司流出的資料來試 (憑證填充)。
+> >
+> > ```ascii
+> > [攻擊者] --(猜密碼)--> [你的帳號] --(成功?)--> [存取資料]
+> > ```
 
 ## Overview
 
@@ -103,3 +110,8 @@ Password attacks target the most common authentication mechanism — passwords �
 ## Scenario
 
 > See [[case-password-attacks]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [2.4 – Password Attacks](https://www.youtube.com/watch?v=-ZfbifHwEVE)

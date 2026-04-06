@@ -43,3 +43,8 @@ Domain 2 focuses on identifying and understanding the threats and vulnerabilitie
 - [[social-engineering]] from Domain 1 is a primary delivery mechanism for many Domain 2 attacks
 - Vulnerability management and mitigation connect to Domain 4's [[vulnerability-management]] and [[penetration-testing]]
 - Compliance frameworks in Domain 5 ([[regulations-and-frameworks]]) mandate protections against these threats
+
+## Course Resources
+
+- **Professor Messer's CompTIA SY0-701 Security+ Training Course**
+  - [Full YouTube Playlist](https://www.youtube.com/playlist?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv)

@@ -13,6 +13,14 @@ aliases:
 
 > [!eli5] ELI5: What are Threat Actors?
 > Threat actors are the different kinds of "bad guys" in the computer world. Some are like professional burglars backed by a whole country's government. Some are criminals looking to steal money. Some are angry employees who already have the keys. Others are just bored kids trying to show off. Knowing which type you're dealing with helps you figure out what they're after and how to defend against them, because each group has different skills and goals.
+>
+> > [!eli5] ELI5: Threat Actors (繁體中文版)
+> > 威脅行為者就是那些想搞破壞或偷東西的人。包括業餘駭客 (指令小子)、商業間諜、內部員工、甚至是國家級的專業組織。
+> >
+> > ```ascii
+> > [內部威脅] <--- [系統] ---> [外部威脅]
+> >                           (駭客/國家/組織)
+> > ```
 
 ## Overview
 
@@ -118,3 +126,8 @@ Threat actors are individuals or groups that pose a risk to an organization's se
 ## Scenario
 
 > See [[case-threat-actors]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [2.1 – Threat Actors](https://www.youtube.com/watch?v=6xUH0t6ugIM)

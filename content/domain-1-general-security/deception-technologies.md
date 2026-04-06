@@ -14,6 +14,14 @@ aliases:
 
 > [!eli5] ELI5: What are Deception Technologies?
 > It's like setting up a fake treasure chest in your room. If someone sneaks in and opens it, an alarm goes off -- and now you know someone was snooping. Security teams do the same thing with computers: they create fake files, fake passwords, and even fake computers that look real. No normal person would ever touch them, so if anyone does, it means a bad guy is in the system. It's a clever trap that catches intruders early.
+>
+> > [!eli5] ELI5: Deception Technologies (繁體中文版)
+> > 欺敵技術就像是「假錢包」或「誘餌」。放一個假的系統在那裡讓壞人去攻擊，這樣你就能發現他們，同時保護真的系統。
+> >
+> > ```ascii
+> > [攻擊者] ----> [真系統 (隱藏)]
+> >            \--> [誘餌系統 (蜜罐)]
+> > ```
 
 ## Overview
 
@@ -110,3 +118,8 @@ Deception technologies are security tools and techniques that use decoy systems,
 ## Scenario
 
 > See [[case-deception-technologies]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [1.2 – Deception and Disruption](https://www.youtube.com/watch?v=X_qfMVty4ts)

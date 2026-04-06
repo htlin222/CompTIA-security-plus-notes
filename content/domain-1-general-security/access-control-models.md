@@ -17,6 +17,15 @@ aliases:
 
 > [!eli5] ELI5: What are Access Control Models?
 > You know how some classrooms let the teacher decide who can borrow supplies (the teacher picks), while other classrooms have strict rules posted on the wall that nobody can change? Access control models are like different sets of rules for deciding who gets to use what. Some let the owner choose, some follow strict labels, and some give access based on your job or role. Each set of rules works better in different situations.
+>
+> > [!eli5] ELI5: Access Control Models (繁體中文版)
+> > 存取控制模型是決定誰能看什麼的不同規則。有的由檔案主人決定 (DAC)，有的由公司職位決定 (RBAC)，有的由國家安全等級決定 (MAC)。
+> >
+> > ```ascii
+> > [使用者] --> [控制規則] --> [資源]
+> >             / | \
+> >           DAC RBAC MAC
+> > ```
 
 ## Overview
 
@@ -119,3 +128,8 @@ Access control models are formal frameworks that dictate how access decisions ar
 ## Scenario
 
 > See [[case-access-control-models]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [1.2 – Authentication, Authorization, and Accounting](https://www.youtube.com/watch?v=AhaZtj5P2a8)

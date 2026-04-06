@@ -105,3 +105,8 @@ Containers package applications with their dependencies into isolated units that
 ## Scenario
 
 > See [[case-serverless-and-containers]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [3.1 – Other Infrastructure Concepts](https://www.youtube.com/watch?v=HDiNPPrGhzE)

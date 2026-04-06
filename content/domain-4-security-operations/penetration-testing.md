@@ -105,3 +105,8 @@ Penetration testing is an authorized, simulated cyberattack performed to evaluat
 ## Scenario
 
 > See [[case-penetration-testing]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [4.3 – Penetration Testing](https://www.youtube.com/watch?v=-LevHAzXgFs)

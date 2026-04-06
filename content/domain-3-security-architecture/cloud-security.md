@@ -13,6 +13,13 @@ aliases:
 
 > [!eli5] ELI5: What is Cloud Security?
 > You know how you might store your toys at a friend's house? You trust your friend to keep them safe, but you still want to make sure the door is locked and nobody else can take them. Cloud security is the same idea -- when companies store their data on someone else's computers (the cloud), they need rules and locks to keep that data safe, even though they do not own the building where it lives.
+>
+> > [!eli5] ELI5: Cloud Security (繁體中文版)
+> > 雲端安全就是保護放在別人電腦裡的資料。你需要搞清楚哪些是你的責任 (資料和存取控制)，哪些是雲端公司的責任 (實體伺服器)。
+> >
+> > ```ascii
+> > [雲端公司 (基礎設施)] <--> [你 (資料/權限)]
+> > ```
 
 ## Overview
 
@@ -109,3 +116,8 @@ Cloud security addresses the unique risks and shared responsibilities of deployi
 ## Scenario
 
 > See [[case-cloud-security]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [3.1 – Cloud Infrastructures](https://www.youtube.com/watch?v=8qpQ8Q6xxiU)

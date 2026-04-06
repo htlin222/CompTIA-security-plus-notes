@@ -14,6 +14,13 @@ aliases:
 
 > [!eli5] ELI5: What are Certificates?
 > Think of a digital certificate like a school ID card. The school (a trusted authority) creates the card with your name and photo so everyone knows you are who you say you are. On the internet, certificates work the same way -- a trusted organization creates a digital ID that proves a website or person is real. Without it, you would never know if you were talking to the real website or a fake one pretending to be it.
+>
+> > [!eli5] ELI5: Certificates (繁體中文版)
+> > 數位證書就像是網路上的身分證，由大家都信任的發證機構簽署，證明網站真的是它所說的那個人。
+> >
+> > ```ascii
+> > [瀏覽器] --(檢查證書)--> [發證機構 CA]
+> > ```
 
 ## Overview
 
@@ -104,3 +111,8 @@ A digital certificate is an electronic document that uses a digital signature to
 ## Scenario
 
 > See [[case-certificates]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [1.4 – Certificates](https://www.youtube.com/watch?v=cLa94BZH_9s)

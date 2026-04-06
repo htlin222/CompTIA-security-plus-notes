@@ -13,6 +13,15 @@ aliases:
 
 > [!eli5] ELI5: What is the AAA Framework?
 > Think of going to a theme park. First, they check your ticket to make sure you're really a guest (that's authentication). Then, the ticket says which rides you're allowed on -- maybe you have a VIP pass or a basic pass (that's authorization). Finally, the park keeps track of which rides you went on and when (that's accounting). Computers use these same three steps to keep track of who's using them and what they're doing.
+>
+> > [!eli5] ELI5: AAA Framework (繁體中文版)
+> > AAA 就像是進入管制區的流程。1. 認證 (Authentication)：確認「你是誰」 (檢查證件)；2. 授權 (Authorization)：確認「你能做什麼」 (你有哪裡的鑰匙)；3. 紀錄 (Accounting)：記下「你做了什麼」 (攝影機紀錄)。
+> >
+> > ```ascii
+> > [使用者] --1.身分驗證--> [管理系統] --2.權限控制--> [資源]
+> >            ^                       |
+> >            |----------3.行為紀錄-------|
+> > ```
 
 ## Overview
 
@@ -107,3 +116,8 @@ The AAA (Authentication, Authorization, and Accounting) framework defines how us
 ## Scenario
 
 > See [[case-aaa-framework]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [1.2 – Authentication, Authorization, and Accounting](https://www.youtube.com/watch?v=AhaZtj5P2a8)

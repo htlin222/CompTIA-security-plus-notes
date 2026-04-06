@@ -99,3 +99,8 @@ A risk assessment is the evaluation phase of risk management where identified th
 ## Scenario
 
 > See [[case-risk-assessment]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [5.2 – Risk Analysis](https://www.youtube.com/watch?v=KiEptGbnEBc&list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv&index=111)

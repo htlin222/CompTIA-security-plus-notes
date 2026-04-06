@@ -104,3 +104,8 @@ Data classification is the process of categorizing data based on its sensitivity
 ## Scenario
 
 > See [[case-data-classification]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [3.3 – Data Types and Classifications](https://www.youtube.com/watch?v=R0W0_gZCVzk)

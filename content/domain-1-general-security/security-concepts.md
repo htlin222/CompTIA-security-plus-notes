@@ -13,6 +13,15 @@ aliases:
 
 > [!eli5] ELI5: What are Security Concepts?
 > Security concepts are the basic rules everyone follows to keep information safe -- kind of like the safety rules you learn on the first day of school. They include ideas like "only share secrets with people who need to know," "don't give anyone more power than they need," and "keep records of who did what." These simple ideas guide every decision about protecting computers and data, no matter how big or complicated the system gets.
+>
+> > [!eli5] ELI5: Security Concepts (繁體中文版)
+> > 安全概念就是大家為了保護資訊而遵守的基本規則，就像在學校學的安全守則一樣：只與需要知道的人分享秘密、不給予超過必要的權力、並記錄誰做了什麼。
+> >
+> > ```ascii
+> > [安全守則] --> [機密性]
+> >       |      --> [完整性]
+> >       |      --> [可用性]
+> > ```
 
 ## Overview
 
@@ -99,3 +108,8 @@ Security concepts form the bedrock of the CompTIA Security+ exam, encompassing t
 ## Scenario
 
 > See [[case-security-concepts]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [1.1 – Security Controls](https://www.youtube.com/watch?v=STM3EUvL7wg)

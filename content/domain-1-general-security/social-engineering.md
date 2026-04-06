@@ -13,6 +13,13 @@ aliases:
 
 > [!eli5] ELI5: What is Social Engineering?
 > Instead of picking a lock, what if a burglar just tricked you into handing over the key? That's social engineering. Bad guys use lies, fake stories, and pressure to get people to give up passwords, open dangerous files, or let strangers into secure places. They play on feelings like trust, fear, and helpfulness. It works because even the strongest computer security can be beaten when a person gets fooled.
+>
+> > [!eli5] ELI5: Social Engineering (繁體中文版)
+> > 社交工程就是「騙術」。不靠破解電腦，而是靠騙人來得到秘密。比如假裝是老闆叫你給密碼。
+> >
+> > ```ascii
+> > [騙子] --(心理操縱)--> [受害者] --(洩漏密碼)--> [系統]
+> > ```
 
 ## Overview
 
@@ -109,3 +116,8 @@ Social engineering is the art of manipulating people into performing actions or 
 ## Scenario
 
 > See [[case-social-engineering]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [2.2 – Other Social Engineering Attacks](https://www.youtube.com/watch?v=akoDmeV3LQo)

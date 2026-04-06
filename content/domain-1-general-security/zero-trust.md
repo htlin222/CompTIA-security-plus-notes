@@ -14,6 +14,13 @@ aliases:
 
 > [!eli5] ELI5: What is Zero Trust?
 > Most buildings work like this: once you're past the front door, everyone trusts you. Zero Trust says "no way." Even if you're already inside the building, you still have to show your badge every time you open a new door, and someone checks whether you should really be there right now. It doesn't matter if you're the CEO or a new employee -- everyone gets checked, every time, for every request. No free passes.
+>
+> > [!eli5] ELI5: Zero Trust (繁體中文版)
+> > 零信任就是「永不信任，始終驗證」。就像在銀行裡，即便你已經在大廳了，去保險庫前還是要重新檢查你的身分和權限，絕不因為你在內部就相信你。
+> >
+> > ```ascii
+> > [外部/內部] --(驗證)--> [政策決策點] --(驗證)--> [資源]
+> > ```
 
 ## Overview
 
@@ -107,3 +114,8 @@ Zero Trust is a security model built on the principle of "never trust, always ve
 ## Scenario
 
 > See [[case-zero-trust]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [1.2 – Zero Trust](https://www.youtube.com/watch?v=zC_Pndpg8-c)

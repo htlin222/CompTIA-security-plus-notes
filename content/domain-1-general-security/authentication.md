@@ -13,6 +13,17 @@ aliases:
 
 > [!eli5] ELI5: What is Authentication?
 > It's like when your school asks you to show your student ID before letting you into the building. They need to prove you are who you say you are. You might show your face, type a password, scan your fingerprint, or tap a special card. Sometimes you need more than one of these -- like both a password and a fingerprint -- to make it really hard for someone to pretend to be you.
+>
+> > [!eli5] ELI5: Authentication (繁體中文版)
+> > 認證就是證明你真的是你所說的那個人。常見方式有：你知道的東西 (密碼)、你擁有的東西 (手機)、你就是的東西 (指紋)。
+> >
+> > ```ascii
+> > [你] --證明身分--> [系統]
+> >  |
+> >  |-- 知道什麼 (密碼)
+> >  |-- 擁有什麼 (鑰匙)
+> >  |-- 是什麼 (指紋)
+> > ```
 
 ## Overview
 
@@ -107,3 +118,8 @@ Authentication is the process of verifying that an entity (user, device, or serv
 ## Scenario
 
 > See [[case-authentication]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [1.2 – Authentication, Authorization, and Accounting](https://www.youtube.com/watch?v=AhaZtj5P2a8)

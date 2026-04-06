@@ -14,6 +14,13 @@ aliases:
 
 > [!eli5] ELI5: What is Denial of Service?
 > Picture a school water fountain. Normally, everyone takes turns getting a drink. But what if a hundred kids all crowded around the fountain at once, blocking everyone else? Nobody who actually needs a drink can get one. That's what a denial-of-service attack does to websites and computers -- it floods them with so much fake traffic that real people can't use them anymore. Sometimes attackers even get thousands of hijacked computers to join in at once, making it way harder to stop.
+>
+> > [!eli5] ELI5: Denial of Service (繁體中文版)
+> > 阻斷服務攻擊 (DoS) 就像是有一群人不停地打電話去同一家餐廳，讓真正的客人打不進去，導致餐廳無法正常運作。
+> >
+> > ```ascii
+> > [一堆攻擊者] --(塞爆流量)--> [伺服器] --(癱瘓)
+> > ```
 
 ## Overview
 
@@ -101,3 +108,8 @@ Denial of Service (DoS) attacks aim to make a system, service, or network unavai
 ## Scenario
 
 > See [[case-denial-of-service]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [2.4 – Denial of Service](https://www.youtube.com/watch?v=Z7OntvK--PQ)

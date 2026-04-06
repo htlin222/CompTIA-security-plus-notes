@@ -14,6 +14,13 @@ aliases:
 
 > [!eli5] ELI5: What are Mitigation Techniques?
 > When your house has problems -- maybe the lock is broken or a window won't close -- you fix them so burglars can't get in. Mitigation techniques are all the different ways we fix and protect computers from bad guys. Some fixes are like installing a better lock (patching software). Others are like adding a security camera (monitoring). Some are like teaching your family not to open the door for strangers (security training). The more layers of protection you add, the harder it is for anyone to break in.
+>
+> > [!eli5] ELI5: Mitigation Techniques (繁體中文版)
+> > 緩解技術就是用來減輕攻擊傷害的方法。雖然不能百分之百防止，但可以增加壞人的難度，或是縮小被破壞後的損失。
+> >
+> > ```ascii
+> > [攻擊] --|緩解措施|--> [縮小傷害/阻擋成功]
+> > ```
 
 ## Overview
 
@@ -105,3 +112,8 @@ Mitigation techniques are the security controls and strategies applied to reduce
 ## Scenario
 
 > See [[case-mitigation-techniques]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [2.5 – Mitigation Techniques](https://www.youtube.com/watch?v=Fc8ZJfmapbI)

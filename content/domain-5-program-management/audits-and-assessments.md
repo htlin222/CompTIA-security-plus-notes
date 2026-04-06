@@ -101,3 +101,8 @@ Audits and assessments are systematic evaluations of an organization's security 
 ## Scenario
 
 > See [[case-audits-and-assessments]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [5.5 – Audits and Assessments](https://www.youtube.com/watch?v=KiEptGbnEBc&list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv&index=118)

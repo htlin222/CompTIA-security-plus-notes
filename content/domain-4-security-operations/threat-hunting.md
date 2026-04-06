@@ -104,3 +104,8 @@ Threat hunting is the proactive, human-driven process of searching through netwo
 ## Scenario
 
 > See [[case-threat-hunting]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [4.3 – Threat Intelligence](https://www.youtube.com/watch?v=86fruE9jkKk)

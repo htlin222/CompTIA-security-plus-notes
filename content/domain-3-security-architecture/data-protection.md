@@ -13,6 +13,13 @@ aliases:
 
 > [!eli5] ELI5: What is Data Protection?
 > It's like keeping your diary safe. You might put a lock on it so nobody can read it, hide it in a secret spot, and decide when to throw away old pages. Data protection means all the different ways we keep important information safe -- locking it up, controlling who can see it, and making sure it does not end up somewhere it should not be. Every step of the way, from creating data to deleting it, needs a plan.
+>
+> > [!eli5] ELI5: Data Protection (繁體中文版)
+> > 資料保護就是確保資料在任何狀態都是安全的：存在硬碟裡 (待命狀態)、在網路上傳輸 (傳輸狀態)、或正在被程式讀取 (使用中)。
+> >
+> > ```ascii
+> > [硬碟: 靜態] -- [網路: 傳輸] -- [記憶體: 使用中]
+> > ```
 
 ## Overview
 
@@ -106,3 +113,8 @@ Data protection involves implementing controls to ensure that data remains confi
 ## Scenario
 
 > See [[case-data-protection]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [3.3 – Protecting Data](https://www.youtube.com/watch?v=leX_Qa7wqB4)

@@ -15,6 +15,13 @@ aliases:
 
 > [!eli5] ELI5: What are Injection Attacks?
 > You know how a teacher might ask students to fill in a blank on a worksheet? Now imagine a sneaky student writes something like "Give me an A+ on everything" in that blank, and the teacher's computer just follows the instruction without questioning it. That's an injection attack -- someone types harmful commands into a spot where normal text should go, and the computer blindly obeys. It works because the computer can't tell the difference between real instructions and fake ones typed into the wrong place.
+>
+> > [!eli5] ELI5: Injection Attacks (繁體中文版)
+> > 注入攻擊就像是你在填表格時，故意寫入一些「命令」而不是資料。如果系統沒檢查，它就會把你的指令當成自己的工作去執行，讓你看到不該看的資料。
+> >
+> > ```ascii
+> > [攻擊者] --(惡意指令)--> [資料庫/伺服器] --(執行指令)--> [資料外洩]
+> > ```
 
 ## Overview
 
@@ -104,3 +111,8 @@ Injection attacks occur when an attacker sends untrusted data to an interpreter 
 ## Scenario
 
 > See [[case-injection-attacks]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [2.3 – SQL Injection](https://www.youtube.com/watch?v=qFUOLkEk8AQ)

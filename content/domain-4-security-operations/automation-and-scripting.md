@@ -13,6 +13,13 @@ aliases:
 
 > [!eli5] ELI5: What is Automation and Scripting?
 > You know how you can set up dominoes so that knocking one over makes the rest fall automatically? Security automation is like that -- you write instructions once, and the computer follows those steps every single time without getting tired or making mistakes. Instead of a person clicking buttons all day to check if every door and window is locked, a script does it in seconds. This frees up the security team to focus on the tricky problems that need a real human brain.
+>
+> > [!eli5] ELI5: Automation and Scripting (繁體中文版)
+> > 自動化與腳本就是「自動掃地機」。只要寫好程式，電腦就會自動重複做那些無聊又累人的安全檢查，不會偷懶也不會出錯。
+> >
+> > ```ascii
+> > [任務 A/B/C] --(腳本自動執行)--> [完成結果]
+> > ```
 
 ## Overview
 
@@ -103,3 +110,8 @@ Automation and scripting in security operations involves using programmatic tool
 ## Scenario
 
 > See [[case-automation-and-scripting]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [4.7 – Scripting and Automation](https://www.youtube.com/watch?v=R9ojg881dLs)

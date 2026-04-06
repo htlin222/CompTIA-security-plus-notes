@@ -13,6 +13,13 @@ aliases:
 
 > [!eli5] ELI5: What is Encryption?
 > You know how some kids write secret notes using a code only their best friend knows? Encryption works the same way. It scrambles your message so that anyone who intercepts it just sees nonsense. Only the person with the right "key" can unscramble it and read the original message. This is one of the most important ways we keep information private on computers and the internet.
+>
+> > [!eli5] ELI5: Encryption (繁體中文版)
+> > 加密就像是把你的信件變成看不懂的亂碼，只有擁有正確鑰匙的人才能把它還原成原本的內容。
+> >
+> > ```ascii
+> > [原文] --(鑰匙)--> [亂碼] --(鑰匙)--> [原文]
+> > ```
 
 ## Overview
 
@@ -112,3 +119,8 @@ Encryption is the process of converting readable data (plaintext) into an unread
 ## Scenario
 
 > See [[case-encryption]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [1.4 – Encryption Technologies](https://www.youtube.com/watch?v=u61J0xR_XPU)

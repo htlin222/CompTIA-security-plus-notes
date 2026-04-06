@@ -16,6 +16,13 @@ aliases:
 > [!eli5] ELI5: What are Resilience and Redundancy?
 > Have you ever noticed that airplanes have two engines when they really only need one to fly? That extra engine is redundancy -- a backup in case the first one fails. Resilience is the plane's ability to keep flying safely even when something goes wrong. In the computer world, this means having backup systems, extra copies of important data, and plans that kick in automatically so everything keeps working even during problems.
 
+> [!eli5] ELI5: 韌性與冗餘 (繁體中文版)
+> 韌性與冗餘就是「備份」。當一台機器壞了，另一台能立刻補上，確保生意不會因為意外而中斷。
+>
+> ```ascii
+> [伺服器 A (工作中)] \__(自動切換)__ [伺服器 B (備用)]
+> ```
+
 ## Overview
 
 Resilience is the ability of a system to continue operating during adverse conditions, while redundancy eliminates single points of failure by duplicating critical components. Together, they ensure high availability and minimize downtime. Resilient architectures combine redundant hardware, diverse network paths, automated failover, and geographic distribution to withstand failures, attacks, and disasters.
@@ -110,3 +117,8 @@ Resilience is the ability of a system to continue operating during adverse condi
 ## Scenario
 
 > See [[case-resilience-and-redundancy]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [3.4 – Resiliency](https://www.youtube.com/watch?v=sb0dRaQbuBA)

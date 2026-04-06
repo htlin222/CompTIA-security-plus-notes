@@ -101,3 +101,8 @@ Email security encompasses the techniques and technologies used to protect email
 ## Scenario
 
 > See [[case-email-security]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [4.5 – Email Security](https://www.youtube.com/watch?v=v6ht9efsnRI)

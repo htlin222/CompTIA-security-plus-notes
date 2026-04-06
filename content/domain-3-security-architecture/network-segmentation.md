@@ -100,3 +100,8 @@ Network segmentation is the practice of dividing a network into smaller, isolate
 ## Scenario
 
 > See [[case-network-segmentation]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [2.5 – Segmentation and Access Control](https://www.youtube.com/watch?v=yDeDGCh_PDs)

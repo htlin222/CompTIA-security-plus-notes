@@ -104,3 +104,8 @@ Log management is the practice of collecting, centralizing, storing, and analyzi
 ## Scenario
 
 > See [[case-log-management]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [4.9 – Log Data](https://www.youtube.com/watch?v=KiEptGbnEBc&list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv&index=104)

@@ -104,3 +104,8 @@ Hardening is the process of securing a system by reducing its attack surface thr
 ## Scenario
 
 > See [[case-hardening]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [4.1 – Hardening Targets](https://www.youtube.com/watch?v=YQKbs0ug0XQ)

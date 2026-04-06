@@ -13,6 +13,16 @@ aliases:
 
 > [!eli5] ELI5: What is Authorization?
 > Once the school knows who you are, authorization is about what you're allowed to do. A regular student can go to class but can't walk into the principal's office and read private files. A teacher can go places students can't. Authorization is the set of rules that says "you're allowed to do this, but not that." On computers, it works the same way -- after you log in, the system checks what you're actually permitted to see and change.
+>
+> > [!eli5] ELI5: Authorization (繁體中文版)
+> > 授權是在你進門後，決定你能去哪些房間。你可能有大門鑰匙，但不能進去財務室。這就是權限管理。
+> >
+> > ```ascii
+> > [已登入者] --> [權限清單] --> [允許存取?]
+> >                  |
+> >                  |-- 檔案 A (V)
+> >                  |-- 檔案 B (X)
+> > ```
 
 ## Overview
 
@@ -105,3 +115,8 @@ Authorization is the process of determining what an authenticated entity is allo
 ## Scenario
 
 > See [[case-authorization]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [1.2 – Authentication, Authorization, and Accounting](https://www.youtube.com/watch?v=AhaZtj5P2a8)

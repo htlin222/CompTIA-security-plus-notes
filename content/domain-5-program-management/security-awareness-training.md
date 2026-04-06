@@ -13,6 +13,13 @@ aliases:
 
 > [!eli5] ELI5: What is Security Awareness Training?
 > At school, you learn not to talk to strangers and not to share your passwords. Security awareness training is the grown-up version of that. Companies teach their workers how to spot tricks like fake emails, what to do if something looks suspicious, and why following the security rules matters. Since people are often the easiest target for bad guys, teaching everyone to be careful is one of the cheapest and best ways to stay safe.
+>
+> > [!eli5] ELI5: Security Awareness Training (繁體中文版)
+> > 安全意識培訓就是「防詐騙宣導」。教大家不要亂點連結、不要隨便給密碼，讓每個人都成為公司的安全守衛。
+> >
+> > ```ascii
+> > [員工] <--(培訓/演習)-- [安全觀念]
+> > ```
 
 ## Overview
 
@@ -102,3 +109,8 @@ Security awareness training is a program designed to educate all personnel about
 ## Scenario
 
 > See [[case-security-awareness-training]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [5.6 – Security Awareness](https://www.youtube.com/watch?v=KiEptGbnEBc&list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv&index=120)

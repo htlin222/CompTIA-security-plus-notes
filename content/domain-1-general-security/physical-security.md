@@ -13,6 +13,13 @@ aliases:
 
 > [!eli5] ELI5: What is Physical Security?
 > Physical security is all the real-world stuff that keeps bad people away from your computers and buildings -- fences around the property, locks on the doors, cameras watching the hallways, and guards checking who comes in. Even the best password in the world won't help if someone can just walk up to a computer and steal it. That's why protecting the actual building and the equipment inside it is just as important as protecting what's on the screen.
+>
+> > [!eli5] ELI5: Physical Security (繁體中文版)
+> > 實體安全就是保護你看得到的東西。比如門鎖、監視器、警衛，甚至是防止人跟著你進門的旋轉門。
+> >
+> > ```ascii
+> > [圍籬] -- [大門] -- [監視器] -- [伺服器房]
+> > ```
 
 ## Overview
 
@@ -117,3 +124,8 @@ Physical security encompasses the tangible controls that protect an organization
 ## Scenario
 
 > See [[case-physical-security]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [1.2 – Physical Security](https://www.youtube.com/watch?v=YtT8q2mUM9c)

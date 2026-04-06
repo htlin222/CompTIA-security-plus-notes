@@ -102,3 +102,8 @@ Virtualization allows multiple virtual machines (VMs) to run on a single physica
 ## Scenario
 
 > See [[case-virtualization-security]] for a practical DevOps scenario applying these concepts.
+
+## Resources
+
+- **Professor Messer's SY0-701 Security+ Course**
+  - [2.3 – Virtualization Vulnerabilities](https://www.youtube.com/watch?v=t2JrPrzRDLA)
